@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:redstone_ore"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "lit": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

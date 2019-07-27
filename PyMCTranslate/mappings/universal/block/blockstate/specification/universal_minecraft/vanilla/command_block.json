@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "conditional": [
+            "false",
+            "true"
+        ],
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "mode": [
+            "impulse",
+            "chain",
+            "repeating"
+        ]
+    },
+    "defaults": {
+        "conditional": "false",
+        "facing": "north",
+        "mode": "impulse"
+    }
+}

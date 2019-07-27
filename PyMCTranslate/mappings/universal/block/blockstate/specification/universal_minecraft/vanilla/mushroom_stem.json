@@ -1,0 +1,41 @@
+{
+    "properties": {
+        "down": [
+            "true",
+            "false"
+        ],
+        "east": [
+            "true",
+            "false"
+        ],
+        "north": [
+            "true",
+            "false"
+        ],
+        "south": [
+            "true",
+            "false"
+        ],
+        "up": [
+            "true",
+            "false"
+        ],
+        "west": [
+            "true",
+            "false"
+        ],
+        "material": [
+            "red",
+            "brown"
+        ]
+    },
+    "defaults": {
+        "down": "true",
+        "east": "true",
+        "north": "true",
+        "south": "true",
+        "up": "true",
+        "west": "true",
+        "material": "red"
+    }
+}

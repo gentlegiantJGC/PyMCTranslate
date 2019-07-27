@@ -1,0 +1,48 @@
+{
+    "properties": {
+        "material": [
+            "cobblestone",
+            "mossy_cobblestone",
+            "andesite",
+            "brick",
+            "diorite",
+            "end_stone_brick",
+            "granite",
+            "mossy_stone_brick",
+            "nether_brick",
+            "prismarine",
+            "red_nether_brick",
+            "red_sandstone",
+            "sandstone",
+            "stone_brick"
+        ],
+        "east": [
+            "true",
+            "false"
+        ],
+        "north": [
+            "true",
+            "false"
+        ],
+        "south": [
+            "true",
+            "false"
+        ],
+        "up": [
+            "true",
+            "false"
+        ],
+        "west": [
+            "true",
+            "false"
+        ]
+    },
+    "defaults": {
+        "material": "cobblestone",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "true",
+        "west": "false"
+    }
+}

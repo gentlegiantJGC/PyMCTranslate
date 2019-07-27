@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wall"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "cobblestone",
+                "mossy_cobblestone"
+            ]
+        }
+    }
+]

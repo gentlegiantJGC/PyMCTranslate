@@ -1,0 +1,39 @@
+[
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "birch"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:pressure_plate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:pressure_plate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

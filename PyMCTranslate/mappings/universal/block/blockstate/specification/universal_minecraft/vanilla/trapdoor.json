@@ -1,0 +1,38 @@
+{
+    "properties": {
+        "material": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle",
+            "acacia",
+            "dark_oak",
+            "iron"
+        ],
+        "facing": [
+            "north",
+            "south",
+            "west",
+            "east"
+        ],
+        "half": [
+            "top",
+            "bottom"
+        ],
+        "open": [
+            "true",
+            "false"
+        ],
+        "powered": [
+            "true",
+            "false"
+        ]
+    },
+    "defaults": {
+        "material": "oak",
+        "facing": "north",
+        "half": "bottom",
+        "open": "false",
+        "powered": "false"
+    }
+}

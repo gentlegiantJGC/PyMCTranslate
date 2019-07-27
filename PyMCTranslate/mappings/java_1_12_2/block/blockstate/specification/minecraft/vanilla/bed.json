@@ -1,0 +1,49 @@
+{
+    "properties": {
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "occupied": [
+            "true",
+            "false"
+        ],
+        "part": [
+            "foot",
+            "head"
+        ],
+        "color": [
+            "white",
+            "orange",
+            "magenta",
+            "light_blue",
+            "yellow",
+            "lime",
+            "pink",
+            "gray",
+            "light_gray",
+            "cyan",
+            "purple",
+            "blue",
+            "brown",
+            "green",
+            "red",
+            "black"
+        ]
+    },
+    "defaults": {
+        "facing": "north",
+        "occupied": "false",
+        "part": "foot",
+        "color": "red"
+    },
+    "nbt_identifier": "minecraft:bed",
+    "nbt": {
+        "": {
+            "type": "compound",
+            "val": {}
+        }
+    }
+}

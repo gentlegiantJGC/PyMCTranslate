@@ -1,0 +1,249 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "south",
+                            "open": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "west",
+                            "open": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "north",
+                            "open": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "east",
+                            "open": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "south",
+                            "open": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "west",
+                            "open": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "north",
+                            "open": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "east",
+                            "open": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "south",
+                            "open": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "west",
+                            "open": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "north",
+                            "open": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "east",
+                            "open": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "south",
+                            "open": "true",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "west",
+                            "open": "true",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "north",
+                            "open": "true",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "facing": "east",
+                            "open": "true",
+                            "powered": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

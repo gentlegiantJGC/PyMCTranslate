@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "conditional": [
+            "false",
+            "true"
+        ],
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ]
+    },
+    "defaults": {
+        "conditional": "false",
+        "facing": "north"
+    }
+}

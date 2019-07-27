@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:hopper"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "enabled": [
+                "true",
+                "false"
+            ],
+            "facing": [
+                "down",
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

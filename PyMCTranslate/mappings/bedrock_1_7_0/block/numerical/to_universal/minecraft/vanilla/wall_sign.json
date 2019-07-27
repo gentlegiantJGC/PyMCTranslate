@@ -1,0 +1,57 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_sign"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_sign"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_sign"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_sign"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

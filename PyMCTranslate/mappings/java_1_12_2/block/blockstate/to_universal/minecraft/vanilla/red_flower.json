@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:plant"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "poppy",
+                "blue_orchid",
+                "allium",
+                "azure_bluet",
+                "red_tulip",
+                "orange_tulip",
+                "white_tulip",
+                "pink_tulip",
+                "oxeye_daisy"
+            ]
+        }
+    }
+]

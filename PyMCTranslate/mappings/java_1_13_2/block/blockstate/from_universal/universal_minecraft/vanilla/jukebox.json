@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:jukebox"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "has_record": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

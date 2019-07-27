@@ -1,0 +1,1327 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:note_block"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "note": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24"
+            ]
+        }
+    },
+    {
+        "function": "multiblock",
+        "options": {
+            "coords": [
+                0,
+                -1,
+                0
+            ],
+            "functions": [
+                {
+                    "function": "map_block_name",
+                    "options": {
+                        "minecraft:log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:log2": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:stripped_oak_log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:stripped_spruce_log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:stripped_birch_log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:stripped_jungle_log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:stripped_acacia_log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:stripped_dark_oak_log": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:planks": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:wooden_slab": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:double_wooden_slab": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:oak_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:spruce_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:birch_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jungle_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:acacia_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_oak_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:fence": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:fence_gate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:spruce_fence_gate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:birch_fence_gate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jungle_fence_gate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_oak_fence_gate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:acacia_fence_gate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:wooden_door": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:spruce_door": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:birch_door": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jungle_door": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:acacia_door": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_oak_door": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:wooden_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:acacia_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:birch_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_oak_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jungle_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:spruce_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:trapdoor": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:acacia_trapdoor": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:birch_trapdoor": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_oak_trapdoor": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jungle_trapdoor": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:spruce_trapdoor": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:standing_sign": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:wall_sign": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:noteblock": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:bookshelf": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:chest": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:trapped_chest": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:crafting_table": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jukebox": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:brown_mushroom_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:red_mushroom_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:daylight_detector": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:daylight_detector_inverted": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:standing_banner": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:wall_banner": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:wooden_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:acacia_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:birch_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_oak_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:jungle_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:spruce_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "bass"
+                                }
+                            }
+                        ],
+                        "minecraft:sand": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "snare"
+                                }
+                            }
+                        ],
+                        "minecraft:gravel": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "snare"
+                                }
+                            }
+                        ],
+                        "minecraft:soul_sand": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "snare"
+                                }
+                            }
+                        ],
+                        "minecraft:concretepowder": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "snare"
+                                }
+                            }
+                        ],
+                        "minecraft:glass": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:glass_pane": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:stained_glass": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:stained_glass_pane": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:glowstone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:beacon": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:sealantern": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:hard_glass": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:hard_glass_pane": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:hard_stained_glass": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:hard_stained_glass_pane": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "hat"
+                                }
+                            }
+                        ],
+                        "minecraft:stone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:cobblestone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:bedrock": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:gold_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:iron_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:coal_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:lapis_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:lapis_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:dispenser": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:sandstone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stone_slab": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:double_stone_slab": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:brick_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:mossy_cobblestone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:obsidian": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:mob_spawner": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:diamond_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:furnace": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:lit_furnace": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stone_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stone_pressure_plate": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:redstone_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:lit_redstone_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stone_button": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:netherrack": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stonebrick": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:brick_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stone_brick_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:nether_brick": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:nether_brick_fence": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:nether_brick_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:enchanting_table": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:end_portal_frame": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:end_stone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:dragon_egg": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:dropper": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:sandstone_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:emerald_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:ender_chest": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:cobblestone_wall": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:quartz_ore": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:quartz_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:quartz_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stained_hardened_clay": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:prismarine": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:hardened_clay": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:red_sandstone": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:red_sandstone_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stone_slab2": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:double_stone_slab2": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:chemical_heat": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:purpur_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:purpur_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:end_bricks": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:magma": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:red_nether_brick": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:bone_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:purple_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:white_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:orange_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:magenta_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:light_blue_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:yellow_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:lime_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:pink_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:gray_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:silver_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:cyan_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:blue_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:brown_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:green_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:red_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:black_glazed_terracotta": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:concrete": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:chemistry_table": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:stonecutter": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:glowingobsidian": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:observer": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:prismarine_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:dark_prismarine_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:prismarine_bricks_stairs": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ],
+                        "minecraft:coral_block": [
+                            {
+                                "function": "new_properties",
+                                "options": {
+                                    "instrument": "basedrum"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]

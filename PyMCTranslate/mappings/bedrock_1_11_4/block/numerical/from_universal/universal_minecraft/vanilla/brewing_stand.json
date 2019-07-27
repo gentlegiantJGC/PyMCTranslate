@@ -1,0 +1,159 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "has_bottle_2": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "has_bottle_1": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "has_bottle_0": {
+                                                "false": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "has_bottle_0": {
+                                                "false": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "has_bottle_1": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "has_bottle_0": {
+                                                "false": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "has_bottle_0": {
+                                                "false": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brewing_stand"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

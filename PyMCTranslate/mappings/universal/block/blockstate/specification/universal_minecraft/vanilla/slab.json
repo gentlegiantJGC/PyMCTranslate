@@ -1,0 +1,50 @@
+{
+    "properties": {
+        "material": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle",
+            "acacia",
+            "dark_oak",
+            "petrified_oak",
+            "brick",
+            "stone",
+            "cobblestone",
+            "stone_brick",
+            "sandstone",
+            "red_sandstone",
+            "nether_brick",
+            "quartz",
+            "purpur",
+            "prismarine",
+            "prismarine_brick",
+            "dark_prismarine",
+            "andesite",
+            "cut_red_sandstone",
+            "cut_sandstone",
+            "diorite",
+            "end_stone_brick",
+            "granite",
+            "mossy_cobblestone",
+            "mossy_stone_brick",
+            "polished_andesite",
+            "polished_diorite",
+            "polished_granite",
+            "red_nether_brick",
+            "smooth_quartz",
+            "smooth_red_sandstone",
+            "smooth_sandstone",
+            "smooth_stone"
+        ],
+        "type": [
+            "top",
+            "bottom",
+            "double"
+        ]
+    },
+    "defaults": {
+        "material": "oak",
+        "type": "bottom"
+    }
+}

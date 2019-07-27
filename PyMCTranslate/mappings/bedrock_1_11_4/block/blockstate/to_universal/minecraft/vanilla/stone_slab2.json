@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "red_sandstone",
+                "purpur",
+                "prismarine",
+                "prismarine_brick",
+                "dark_prismarine"
+            ],
+            "type": [
+                "bottom",
+                "top"
+            ]
+        }
+    }
+]

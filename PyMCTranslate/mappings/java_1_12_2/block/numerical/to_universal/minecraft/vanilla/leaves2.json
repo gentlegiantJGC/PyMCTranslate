@@ -1,0 +1,121 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia",
+                            "decayable": "true",
+                            "check_decay": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "decayable": "true",
+                            "check_decay": "false"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia",
+                            "decayable": "false",
+                            "check_decay": "false"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "decayable": "false",
+                            "check_decay": "false"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia",
+                            "decayable": "true",
+                            "check_decay": "true"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "decayable": "true",
+                            "check_decay": "true"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia",
+                            "decayable": "false",
+                            "check_decay": "true"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:leaves"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "decayable": "false",
+                            "check_decay": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,165 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "north_south",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "east_west",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_east",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_west",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_north",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_south",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "north_south",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "east_west",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_east",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_west",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_north",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:powered_rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_south",
+                            "powered": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:end_portal_frame"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "eye": [
+                "true",
+                "false"
+            ],
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

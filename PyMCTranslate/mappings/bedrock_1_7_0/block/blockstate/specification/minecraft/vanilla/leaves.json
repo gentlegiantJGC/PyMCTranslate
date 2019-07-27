@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "material": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle"
+        ],
+        "decayable": [
+            "true",
+            "false"
+        ],
+        "check_decay": [
+            "true",
+            "false"
+        ]
+    },
+    "defaults": {
+        "material": "oak",
+        "decayable": "true",
+        "check_decay": "true"
+    }
+}

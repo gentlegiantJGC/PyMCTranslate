@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "type": [
+            "normal",
+            "sticky"
+        ]
+    },
+    "defaults": {
+        "facing": "north",
+        "type": "normal"
+    }
+}

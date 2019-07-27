@@ -1,0 +1,18 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "purpur"
+            ],
+            "type": [
+                "bottom",
+                "top"
+            ]
+        }
+    }
+]

@@ -1,0 +1,113 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "stone",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "sandstone",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "petrified_oak_slab",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "cobblestone",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "brick",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "stone_brick",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "nether_brick",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "type": "double"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

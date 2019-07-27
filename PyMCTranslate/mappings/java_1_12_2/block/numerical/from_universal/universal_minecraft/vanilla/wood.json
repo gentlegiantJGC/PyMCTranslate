@@ -1,0 +1,81 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "12"
+                        }
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "13"
+                        }
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "14"
+                        }
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "15"
+                        }
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:log2"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "12"
+                        }
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:log2"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "13"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

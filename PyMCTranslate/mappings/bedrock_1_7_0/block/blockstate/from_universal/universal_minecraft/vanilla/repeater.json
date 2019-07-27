@@ -1,0 +1,38 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "powered": {
+                "false": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:unpowered_repeater"
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:powered_repeater"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "delay": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

@@ -1,0 +1,155 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "stone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_button"
+                    }
+                ],
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wooden_button"
+                    }
+                ]
+            },
+            "powered": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "face": {
+                                "ceiling": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "0"
+                                        }
+                                    }
+                                ],
+                                "floor": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "5"
+                                        }
+                                    }
+                                ],
+                                "wall": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "facing": {
+                                                "east": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ],
+                                                "west": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "south": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ],
+                                                "north": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "face": {
+                                "ceiling": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "8"
+                                        }
+                                    }
+                                ],
+                                "floor": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "13"
+                                        }
+                                    }
+                                ],
+                                "wall": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "facing": {
+                                                "east": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ],
+                                                "west": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    }
+                                                ],
+                                                "south": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    }
+                                                ],
+                                                "north": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

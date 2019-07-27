@@ -1,0 +1,35 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "purpur",
+                            "type": "bottom"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "purpur",
+                            "type": "top"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

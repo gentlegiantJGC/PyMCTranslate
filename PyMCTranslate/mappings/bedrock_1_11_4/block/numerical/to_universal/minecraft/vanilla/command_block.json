@@ -1,0 +1,177 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "down",
+                            "conditional": "false",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "up",
+                            "conditional": "false",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "conditional": "false",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "conditional": "false",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "conditional": "false",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "conditional": "false",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "down",
+                            "conditional": "true",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "up",
+                            "conditional": "true",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "conditional": "true",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "conditional": "true",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "conditional": "true",
+                            "mode": "impulse"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:command_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "conditional": "true",
+                            "mode": "impulse"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

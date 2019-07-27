@@ -1,0 +1,87 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "oak",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "spruce",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "birch",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak",
+                            "type": "double"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

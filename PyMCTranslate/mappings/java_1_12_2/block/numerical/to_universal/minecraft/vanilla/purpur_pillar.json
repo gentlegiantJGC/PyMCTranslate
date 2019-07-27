@@ -1,0 +1,45 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:purpur_pillar"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "y"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:purpur_pillar"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "x"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:purpur_pillar"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "z"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

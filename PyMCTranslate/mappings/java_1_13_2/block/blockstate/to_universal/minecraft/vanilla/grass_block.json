@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:grass_block"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "snowy": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

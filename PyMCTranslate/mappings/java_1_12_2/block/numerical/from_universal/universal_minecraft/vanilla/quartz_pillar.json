@@ -1,0 +1,43 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:quartz_block"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "block_data": "2"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "y": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stained_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "down",
+                            "color": "lime"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stained_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "up",
+                            "color": "lime"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stained_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "color": "lime"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stained_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "color": "lime"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stained_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "color": "lime"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stained_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "color": "lime"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

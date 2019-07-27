@@ -1,0 +1,31 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:lava"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "level": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "falling": [
+                "false",
+                "true"
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "flowing": "false"
+        }
+    }
+]

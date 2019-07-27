@@ -1,0 +1,644 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "double": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "material": {
+                                "stone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "stone"
+                                        }
+                                    }
+                                ],
+                                "sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "sandstone"
+                                        }
+                                    }
+                                ],
+                                "petrified_oak_slab": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "petrified_oak_slab"
+                                        }
+                                    }
+                                ],
+                                "cobblestone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "cobblestone"
+                                        }
+                                    }
+                                ],
+                                "brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "brick"
+                                        }
+                                    }
+                                ],
+                                "stone_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "stone_brick"
+                                        }
+                                    }
+                                ],
+                                "nether_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "nether_brick"
+                                        }
+                                    }
+                                ],
+                                "quartz": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "quartz"
+                                        }
+                                    }
+                                ],
+                                "oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "oak"
+                                        }
+                                    }
+                                ],
+                                "spruce": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "spruce"
+                                        }
+                                    }
+                                ],
+                                "birch": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "birch"
+                                        }
+                                    }
+                                ],
+                                "jungle": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "jungle"
+                                        }
+                                    }
+                                ],
+                                "acacia": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "acacia"
+                                        }
+                                    }
+                                ],
+                                "dark_oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "dark_oak"
+                                        }
+                                    }
+                                ],
+                                "red_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "red_sandstone"
+                                        }
+                                    }
+                                ],
+                                "purpur": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:purpur_double_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "purpur"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "bottom": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "material": {
+                                "stone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "stone",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "sandstone",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "petrified_oak_slab": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "petrified_oak_slab",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "cobblestone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "cobblestone",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "brick",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "stone_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "stone_brick",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "nether_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "nether_brick",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "quartz": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "quartz",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "oak",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "spruce": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "spruce",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "birch": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "birch",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "jungle": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "jungle",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "acacia": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "acacia",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "dark_oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "dark_oak",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "red_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "red_sandstone",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ],
+                                "purpur": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:purpur_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "purpur",
+                                            "type": "bottom"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "top": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "material": {
+                                "stone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "stone",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "sandstone",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "petrified_oak_slab": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "petrified_oak_slab",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "cobblestone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "cobblestone",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "brick",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "stone_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "stone_brick",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "nether_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "nether_brick",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "quartz": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "quartz",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "oak",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "spruce": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "spruce",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "birch": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "birch",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "jungle": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "jungle",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "acacia": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "acacia",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "dark_oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wooden_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "dark_oak",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "red_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "red_sandstone",
+                                            "type": "top"
+                                        }
+                                    }
+                                ],
+                                "purpur": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:purpur_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "purpur",
+                                            "type": "top"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

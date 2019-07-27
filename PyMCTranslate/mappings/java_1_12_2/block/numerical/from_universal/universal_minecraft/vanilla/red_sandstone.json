@@ -1,0 +1,45 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "variant": {
+                "normal": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "chiseled": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ],
+                "cut": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "y": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purpur_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purpur_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "6"
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purpur_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "10"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

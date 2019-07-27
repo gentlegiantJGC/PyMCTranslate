@@ -1,0 +1,51 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "variant": {
+                "normal": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stone_bricks"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "normal"
+                        }
+                    }
+                ],
+                "cracked": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stone_bricks"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "cracked"
+                        }
+                    }
+                ],
+                "mossy": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stone_bricks"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "mossy"
+                        }
+                    }
+                ],
+                "chiseled": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:chiseled_stone_bricks"
+                    }
+                ]
+            }
+        }
+    }
+]

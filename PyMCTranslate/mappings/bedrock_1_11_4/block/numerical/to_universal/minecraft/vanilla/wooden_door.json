@@ -1,0 +1,1071 @@
+[
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "oak"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "false",
+                            "facing": "east"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "false",
+                            "facing": "south"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "false",
+                            "facing": "west"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "false",
+                            "facing": "north"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "true",
+                            "facing": "east"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "true",
+                            "facing": "south"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "true",
+                            "facing": "west"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower",
+                            "open": "true",
+                            "facing": "north"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "8": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "9": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "false",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "10": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "left"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "11": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "powered": "true",
+                                                                    "hinge": "right"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "upper",
+                            "powered": "false",
+                            "hinge": "left"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "0": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "1": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "2": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "3": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "4": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "5": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "6": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "7": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "east"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "upper",
+                            "powered": "false",
+                            "hinge": "right"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "0": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "1": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "2": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "3": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "4": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "5": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "6": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "7": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "south"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "upper",
+                            "powered": "true",
+                            "hinge": "left"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "0": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "1": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "2": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "3": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "4": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "5": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "6": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "7": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "west"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:door"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "upper",
+                            "powered": "true",
+                            "hinge": "right"
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": {
+                            "coords": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "functions": [
+                                {
+                                    "function": "map_block_name",
+                                    "options": {
+                                        "minecraft:wooden_door": [
+                                            {
+                                                "function": "map_properties",
+                                                "options": {
+                                                    "block_data": {
+                                                        "0": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "1": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "2": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "3": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "4": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "5": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "6": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "7": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "open": "false",
+                                                                    "facing": "north"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "material": [
+            "stone",
+            "sandstone",
+            "petrified_oak_slab",
+            "cobblestone",
+            "brick",
+            "stone_brick",
+            "nether_brick",
+            "quartz"
+        ],
+        "type": [
+            "bottom",
+            "top"
+        ]
+    },
+    "defaults": {
+        "material": "stone",
+        "type": "bottom"
+    }
+}

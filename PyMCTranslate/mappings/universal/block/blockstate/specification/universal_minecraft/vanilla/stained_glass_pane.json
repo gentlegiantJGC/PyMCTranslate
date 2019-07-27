@@ -1,0 +1,45 @@
+{
+    "properties": {
+        "color": [
+            "white",
+            "orange",
+            "magenta",
+            "light_blue",
+            "yellow",
+            "lime",
+            "pink",
+            "gray",
+            "light_gray",
+            "cyan",
+            "purple",
+            "blue",
+            "brown",
+            "green",
+            "red",
+            "black"
+        ],
+        "east": [
+            "true",
+            "false"
+        ],
+        "north": [
+            "true",
+            "false"
+        ],
+        "south": [
+            "true",
+            "false"
+        ],
+        "west": [
+            "true",
+            "false"
+        ]
+    },
+    "defaults": {
+        "color": "white",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "west": "false"
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sapling"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "oak",
+                "spruce",
+                "birch",
+                "jungle",
+                "acacia",
+                "dark_oak"
+            ],
+            "stage": [
+                "0",
+                "1"
+            ]
+        }
+    }
+]

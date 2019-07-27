@@ -1,0 +1,357 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bed"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "part": {
+                "foot": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "occupied": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "facing": {
+                                                "south": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "west": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ],
+                                                "north": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "east": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "facing": {
+                                                "south": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "west": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ],
+                                                "north": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    }
+                                                ],
+                                                "east": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "head": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "occupied": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "facing": {
+                                                "south": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    }
+                                                ],
+                                                "west": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ],
+                                                "north": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    }
+                                                ],
+                                                "east": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "facing": {
+                                                "south": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    }
+                                                ],
+                                                "west": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    }
+                                                ],
+                                                "north": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    }
+                                                ],
+                                                "east": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "15"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "color": {
+                "white": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 0
+                        }
+                    }
+                ],
+                "orange": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 1
+                        }
+                    }
+                ],
+                "magenta": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 2
+                        }
+                    }
+                ],
+                "light_blue": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 3
+                        }
+                    }
+                ],
+                "yellow": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 4
+                        }
+                    }
+                ],
+                "lime": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 5
+                        }
+                    }
+                ],
+                "pink": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 6
+                        }
+                    }
+                ],
+                "gray": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 7
+                        }
+                    }
+                ],
+                "light_gray": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 8
+                        }
+                    }
+                ],
+                "cyan": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 9
+                        }
+                    }
+                ],
+                "purple": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 10
+                        }
+                    }
+                ],
+                "blue": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 11
+                        }
+                    }
+                ],
+                "brown": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 12
+                        }
+                    }
+                ],
+                "green": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 13
+                        }
+                    }
+                ],
+                "red": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 14
+                        }
+                    }
+                ],
+                "black": [
+                    {
+                        "function": "new_nbt",
+                        "options": {
+                            "key": "color",
+                            "type": "int",
+                            "value": 15
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

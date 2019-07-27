@@ -1,0 +1,141 @@
+[
+    {
+        "function": "map_input_nbt",
+        "options": {
+            "": {
+                "type": "compound",
+                "keys": {}
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:white_banner"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "white": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:white_banner"
+                    }
+                ],
+                "orange": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:orange_banner"
+                    }
+                ],
+                "magenta": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:magenta_banner"
+                    }
+                ],
+                "light_blue": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_blue_banner"
+                    }
+                ],
+                "yellow": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_banner"
+                    }
+                ],
+                "lime": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lime_banner"
+                    }
+                ],
+                "pink": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pink_banner"
+                    }
+                ],
+                "gray": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:gray_banner"
+                    }
+                ],
+                "light_gray": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_gray_banner"
+                    }
+                ],
+                "cyan": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cyan_banner"
+                    }
+                ],
+                "purple": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purple_banner"
+                    }
+                ],
+                "blue": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blue_banner"
+                    }
+                ],
+                "brown": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brown_banner"
+                    }
+                ],
+                "green": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:green_banner"
+                    }
+                ],
+                "red": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_banner"
+                    }
+                ],
+                "black": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:black_banner"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "rotation": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+            ]
+        }
+    }
+]

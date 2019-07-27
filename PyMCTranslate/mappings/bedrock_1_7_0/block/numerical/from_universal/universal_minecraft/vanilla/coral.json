@@ -1,0 +1,53 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "tube": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "brain": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ],
+                "bubble": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ],
+                "fire": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "horn": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

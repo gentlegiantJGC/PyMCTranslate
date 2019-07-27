@@ -1,0 +1,130 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:white_stained_glass_pane"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "white": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:white_stained_glass_pane"
+                    }
+                ],
+                "orange": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:orange_stained_glass_pane"
+                    }
+                ],
+                "magenta": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:magenta_stained_glass_pane"
+                    }
+                ],
+                "light_blue": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_blue_stained_glass_pane"
+                    }
+                ],
+                "yellow": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_stained_glass_pane"
+                    }
+                ],
+                "lime": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lime_stained_glass_pane"
+                    }
+                ],
+                "pink": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pink_stained_glass_pane"
+                    }
+                ],
+                "gray": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:gray_stained_glass_pane"
+                    }
+                ],
+                "light_gray": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_gray_stained_glass_pane"
+                    }
+                ],
+                "cyan": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cyan_stained_glass_pane"
+                    }
+                ],
+                "purple": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purple_stained_glass_pane"
+                    }
+                ],
+                "blue": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blue_stained_glass_pane"
+                    }
+                ],
+                "brown": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brown_stained_glass_pane"
+                    }
+                ],
+                "green": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:green_stained_glass_pane"
+                    }
+                ],
+                "red": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_stained_glass_pane"
+                    }
+                ],
+                "black": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:black_stained_glass_pane"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "true",
+                "false"
+            ],
+            "north": [
+                "true",
+                "false"
+            ],
+            "south": [
+                "true",
+                "false"
+            ],
+            "west": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

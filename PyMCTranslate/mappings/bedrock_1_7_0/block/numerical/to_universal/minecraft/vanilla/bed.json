@@ -1,0 +1,385 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "occupied": "false",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "occupied": "false",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "occupied": "false",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "occupied": "false",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "occupied": "true",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "occupied": "true",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "occupied": "true",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "occupied": "true",
+                            "part": "foot"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "occupied": "false",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "occupied": "false",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "occupied": "false",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "occupied": "false",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south",
+                            "occupied": "true",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west",
+                            "occupied": "true",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north",
+                            "occupied": "true",
+                            "part": "head"
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bed"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east",
+                            "occupied": "true",
+                            "part": "head"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "map_input_nbt",
+        "options": {
+            "": {
+                "type": "compound",
+                "keys": {
+                    "color": {
+                        "type": "byte",
+                        "functions": [
+                            {
+                                "function": "map_nbt",
+                                "options": {
+                                    "cases": {
+                                        "0": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "white"
+                                                }
+                                            }
+                                        ],
+                                        "1": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "orange"
+                                                }
+                                            }
+                                        ],
+                                        "2": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "magenta"
+                                                }
+                                            }
+                                        ],
+                                        "3": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "light_blue"
+                                                }
+                                            }
+                                        ],
+                                        "4": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "yellow"
+                                                }
+                                            }
+                                        ],
+                                        "5": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "lime"
+                                                }
+                                            }
+                                        ],
+                                        "6": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "pink"
+                                                }
+                                            }
+                                        ],
+                                        "7": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "gray"
+                                                }
+                                            }
+                                        ],
+                                        "8": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "light_gray"
+                                                }
+                                            }
+                                        ],
+                                        "9": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "cyan"
+                                                }
+                                            }
+                                        ],
+                                        "10": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "purple"
+                                                }
+                                            }
+                                        ],
+                                        "11": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "blue"
+                                                }
+                                            }
+                                        ],
+                                        "12": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "brown"
+                                                }
+                                            }
+                                        ],
+                                        "13": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "green"
+                                                }
+                                            }
+                                        ],
+                                        "14": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "red"
+                                                }
+                                            }
+                                        ],
+                                        "15": [
+                                            {
+                                                "function": "new_properties",
+                                                "options": {
+                                                    "color": "black"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "default": []
+                                }
+                            }
+                        ],
+                        "self_default": []
+                    }
+                }
+            }
+        }
+    }
+]
