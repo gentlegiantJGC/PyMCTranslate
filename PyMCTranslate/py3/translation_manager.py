@@ -170,7 +170,7 @@ class Version:
 						self.numerical_block_map[block_id] = block_string
 
 			elif self.block_format == 'blockstate':
-				self._subversions['blockstate'] = SubVersion(f'{version_path}/block/blockstate', translation_handler)
+				self._subversions['blockstate'] = SubVersion(f'{self._version_path}/block/blockstate', self._translation_manager)
 			self._loaded = True
 
 	@property
