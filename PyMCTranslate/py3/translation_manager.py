@@ -91,12 +91,14 @@ class TranslationManager:
 
 		# Create a class for each of the versions and store them
 		for version_name in directories(mappings_path):
-			version = Version(f'{mappings_path}/{version_name}', self)
-			self._versions.setdefault(version.platform, {})
-			self._versions[version.platform].setdefault(version.version_number, version)
+			if os.path.isfile(f'{mappings_path}/{version_name}/__init__.json'):
+				version = Version(f'{mappings_path}/{version_name}', self)
+				self._versions.setdefault(version.platform, {})
+				self._versions[version.platform].setdefault(version.version_number, version)
 
 	def platforms(self) -> List[str]:
-		"""Get a list of all the platforms there are Version classes for"""
+		"""Get a list of all the platforms there are Version classes for.
+		Currently these are 'java', 'bedrock' and 'universal'"""
 		return list(self._versions.keys())
 
 	def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
@@ -135,26 +137,32 @@ class Version:
 	There will be an instance of this class for each unique combination of platform and version number.
 	This is tot to be mistaken with SubVersion which is a level deeper than this.
 	"""
-	def __init__(self, version_path: str, translation_handler: TranslationManager):
-		if os.path.isfile(f'{version_path}/__init__.json'):
-			with open(f'{version_path}/__init__.json') as f:
-				init_file = json.load(f)
-			assert isinstance(init_file['platform'], str)
-			self._platform = init_file['platform']
-			assert isinstance(init_file['version'], list) and len(init_file['version']) == 3
-			self._version_number = tuple(init_file['version'])
-			assert isinstance(init_file['block_format'], str)
-			self._block_format = init_file['block_format']
+	def __init__(self, version_path: str, translation_manager: TranslationManager):
+		self._version_path = version_path
+		self._translation_manager = translation_manager
+		self._loaded = False
 
-			self._subversions = {}
-			self.numerical_block_map: Dict[str, str] = None
-			self.numerical_block_map_inverse: Dict[str, str] = None
+		# unpack the __init__.json file
+		with open(f'{version_path}/__init__.json') as f:
+			init_file = json.load(f)
+		assert isinstance(init_file['platform'], str), f'The platform name defined in {version_path}/__init__.json is not a string'
+		self._platform = init_file['platform']
+		assert isinstance(init_file['version'], list) and len(init_file['version']) == 3, f'The version number defined in {version_path}/__init__.json is incorrectly formatted'
+		self._version_number = tuple(init_file['version'])
+		assert isinstance(init_file['block_format'], str)
+		self._block_format = init_file['block_format']
 
+		self._subversions = {}
+		self.numerical_block_map: Dict[str, str] = None
+		self.numerical_block_map_inverse: Dict[str, str] = None
+
+	def load(self):
+		if not self._loaded:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
-					self._subversions[block_format] = SubVersion(f'{version_path}/block/{block_format}', translation_handler)
+					self._subversions[block_format] = SubVersion(f'{self._version_path}/block/{block_format}', self._translation_manager)
 				if self.block_format == 'numerical':
-					with open(f'{version_path}/__numerical_block_map__.json') as f:
+					with open(f'{self._version_path}/__numerical_block_map__.json') as f:
 						self.numerical_block_map_inverse = json.load(f)
 					self.numerical_block_map = {}
 					for block_string, block_id in self.numerical_block_map_inverse.items():
@@ -163,6 +171,7 @@ class Version:
 
 			elif self.block_format == 'blockstate':
 				self._subversions['blockstate'] = SubVersion(f'{version_path}/block/blockstate', translation_handler)
+			self._loaded = True
 
 	@property
 	def block_format(self) -> str:
@@ -177,6 +186,7 @@ class Version:
 		return self._version_number
 
 	def get(self, force_blockstate: bool = False) -> 'SubVersion':
+		self.load()
 		assert isinstance(force_blockstate, bool), 'force_blockstate must be a bool type'
 		if force_blockstate:
 			return self._subversions['blockstate']
