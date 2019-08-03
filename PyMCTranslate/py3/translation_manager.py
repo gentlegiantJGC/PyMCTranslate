@@ -261,7 +261,7 @@ class SubVersion:
 		except KeyError:
 			raise KeyError(f'Specification for {mode} {namespace}:{name} does not exist')
 
-	def to_universal(self, level, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+	def to_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		if isinstance(object_input, Block):
 			mode = 'block'
 		elif isinstance(object_input, Entity):
@@ -270,7 +270,7 @@ class SubVersion:
 			raise AssertionError('object_input must be a Block or an Entity')
 		try:
 			output, extra_output, extra_needed, cacheable = convert(
-				level,
+				world,
 				object_input,
 				self.get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_to_universal(mode, object_input.namespace, object_input.base_name),
@@ -282,10 +282,10 @@ class SubVersion:
 			info(f'Failed converting blockstate to universal\n{e}')
 			return object_input, None, False
 
-	def from_universal(self, level, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+	def from_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
 
-		:param level:
+		:param world:
 		:param object_input:
 		:param location:
 		:return:
@@ -298,7 +298,7 @@ class SubVersion:
 			raise Exception
 		try:
 			output, extra_output, extra_needed, cacheable = convert(
-				level,
+				world,
 				object_input,
 				self._version_container.get('universal', (1, 0, 0)).get().get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_from_universal(mode, object_input.namespace, object_input.base_name),
@@ -309,6 +309,7 @@ class SubVersion:
 		except Exception as e:
 			info(f'Failed converting blockstate from universal\n{e}')
 			return object_input, None, False
+
 
 from PyMCTranslate.py3.convert import convert
 
