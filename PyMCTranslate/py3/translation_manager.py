@@ -74,12 +74,22 @@ def files(path: str) -> Generator[str, None, None]:
 
 class TranslationManager:
 	"""
-	Container for the different versions
-	A version in this context is a version of the game from a specific platform (ie platform and version number need to be the same)
+	Container and manager for the different translation versions
+	A version in this context is a version of the game from a specific platform
+	(ie a unique combination of platform and version number)
 	"""
 	def __init__(self, mappings_path: str):
+		"""
+		Call this class with the path to the mapping json files.
+		Note if you are a developer using this library you can call PyMCTranslate.new_translation_handler()
+		to get a new instance of this class with the default mappings set up for you.
+
+		:param mappings_path: The path to the mapping directory
+		"""
+		# Storage for each of the Version classes
 		self._versions: Dict[str, Dict[Tuple[int, int, int], 'Version']] = {}
 
+		# Create a class for each of the versions and store them
 		for version_name in directories(mappings_path):
 			version = Version(f'{mappings_path}/{version_name}', self)
 			self._versions.setdefault(version.platform, {})
@@ -143,7 +153,9 @@ class TranslationManager:
 
 class Version:
 	"""
-	Container for the data from each game and platform version. Not to be mistaken with SubVersion
+	Container for the version data.
+	There will be an instance of this class for each unique combination of platform and version number.
+	This is tot to be mistaken with SubVersion which is a level deeper than this.
 	"""
 	def __init__(self, version_path: str, translation_handler: TranslationManager):
 		if os.path.isfile(f'{version_path}/__init__.json'):
@@ -227,9 +239,12 @@ class Version:
 
 class SubVersion:
 	"""
-	Within each unique game version there may be more than one format
-	(if it is numerical or pseudo-numerical it will have both a numerical and blockstate format)
-	This is the container where that data will be stored.
+	A class to store sub-version data
+	This is where things get a little confusing.
+	Each version has a "native" format but the numerical formats (ones that rely on a data value rather than properties)
+	also have an abstracted "blockstate" format.
+	As such each version will always have a blockstate format but some may also have a numerical format as well.
+	This class will store data for one of these sub-versions.
 	"""
 	def __init__(self, sub_version_path: str, version_container: VersionContainer):
 		self._version_container = version_container
