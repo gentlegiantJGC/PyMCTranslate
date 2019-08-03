@@ -100,7 +100,12 @@ class TranslationManager:
 		return list(self._versions.keys())
 
 	def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
-		"""Get a list of all the version numbers there are Version classes for, for a given platform"""
+		"""
+		Get a list of all the version numbers there are Version classes for, for a given platform
+		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
+		:return: The a list of version numbers (tuples) for a given platform. Throws an AssertionError if the platform is not present.
+		"""
+		assert platform in self._versions, f'The requested platform "{platform}" is not present'
 		return list(self._versions[platform].keys())
 
 	def get_version(self, platform: str, version_number: Tuple[int, int, int]) -> 'Version':
@@ -108,7 +113,7 @@ class TranslationManager:
 		A method to get a Version class
 		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
 		:param version_number: The version number (use TranslationManager.version_numbers to get version numbers for a given platforms)
-		:return: The version class for the given inputs. Throws an AssertionError if it does not exist.
+		:return: The Version class for the given inputs. Throws an AssertionError if it does not exist.
 		"""
 		assert platform in self._versions and version_number in self._versions[platform], f'The requested version "({platform}, {version_number})" is not present'
 		return self._versions[platform][version_number]
