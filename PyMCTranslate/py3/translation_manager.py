@@ -95,22 +95,33 @@ class TranslationManager:
 			self._versions.setdefault(version.platform, {})
 			self._versions[version.platform].setdefault(version.version_number, version)
 
-	def get_version(self, platform: str, version_number: Tuple[int, int, int]):
-		"""Internal method to pick a Version class"""
-		assert platform in self._versions and version_number in self._versions[platform]
-		return self._versions[platform][version_number]
-
-	def get_sub_version(self, platform: str, version_number: Tuple[int, int, int], force_blockstate=False):
-		"""Internal method to pick a SubVersion class"""
-		return self.get_version(platform, version_number).get(force_blockstate)
-
 	def platforms(self) -> List[str]:
 		"""Get a list of all the platforms there are Version classes for"""
 		return list(self._versions.keys())
 
 	def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
-		"""Get a list of all the version numbers there are Version classes for for a given platform"""
+		"""Get a list of all the version numbers there are Version classes for, for a given platform"""
 		return list(self._versions[platform].keys())
+
+	def get_version(self, platform: str, version_number: Tuple[int, int, int]) -> 'Version':
+		"""
+		A method to get a Version class
+		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
+		:param version_number: The version number (use TranslationManager.version_numbers to get version numbers for a given platforms)
+		:return: The version class for the given inputs. Throws an AssertionError if it does not exist.
+		"""
+		assert platform in self._versions and version_number in self._versions[platform], f'The requested version "({platform}, {version_number})" is not present'
+		return self._versions[platform][version_number]
+
+	def get_sub_version(self, platform: str, version_number: Tuple[int, int, int], force_blockstate=False) -> 'SubVersion':
+		"""
+		A method to get a SubVersion class
+		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
+		:param version_number: The version number (use TranslationManager.version_numbers to get version numbers for a given platforms)
+		:param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+		:return: The SubVersion class for the given inputs. Throws an AssertionError if it does not exist.
+		"""
+		return self.get_version(platform, version_number).get(force_blockstate)
 
 
 class Version:
