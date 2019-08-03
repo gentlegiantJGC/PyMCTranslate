@@ -9,7 +9,7 @@ log_level = 0  # 0 for no logs, 1 or higher for warnings, 2 or higher for info, 
 """
 Structure:
 
-VersionContainer
+TranslationManager
 	Version : bedrock_1_7_0
 		SubVersion : numerical
 			minecraft, other_namespace
@@ -67,7 +67,7 @@ def files(path: str) -> Generator[str, None, None]:
 			yield file_name
 
 
-class VersionContainer:
+class TranslationManager:
 	"""
 	Container for the different versions
 	A version in this context is a version of the game from a specific platform (ie platform and version number need to be the same)
@@ -109,7 +109,7 @@ class Version:
 	"""
 	Container for the data from each game and platform version. Not to be mistaken with SubVersion
 	"""
-	def __init__(self, version_path: str, version_container: VersionContainer):
+	def __init__(self, version_path: str, translation_handler: TranslationManager):
 		if os.path.isfile(f'{version_path}/__init__.json'):
 			with open(f'{version_path}/__init__.json') as f:
 				init_file = json.load(f)
@@ -126,7 +126,7 @@ class Version:
 
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
-					self._subversions[block_format] = SubVersion(f'{version_path}/block/{block_format}', version_container)
+					self._subversions[block_format] = SubVersion(f'{version_path}/block/{block_format}', translation_handler)
 				if self.block_format == 'numerical':
 					with open(f'{version_path}/__numerical_block_map__.json') as f:
 						self.numerical_block_map_inverse = json.load(f)
@@ -136,7 +136,7 @@ class Version:
 						self.numerical_block_map[block_id] = block_string
 
 			elif self.block_format == 'blockstate':
-				self._subversions['blockstate'] = SubVersion(f'{version_path}/block/blockstate', version_container)
+				self._subversions['blockstate'] = SubVersion(f'{version_path}/block/blockstate', translation_handler)
 
 	@property
 	def block_format(self) -> str:
@@ -302,7 +302,7 @@ from .convert import convert
 
 if __name__ == '__main__':
 	print('Loading mappings...')
-	block_mappings = VersionContainer(r'..\mappings')
+	block_mappings = TranslationManager(r'..\mappings')
 	print('\tFinished')
 	info('==== bedrock_1_7_0 ====')
 	for data in range(16):
