@@ -95,6 +95,15 @@ class TranslationManager:
 			self._versions.setdefault(version.platform, {})
 			self._versions[version.platform].setdefault(version.version_number, version)
 
+	def _get_version(self, platform: str, version_number: Tuple[int, int, int]):
+		"""Internal method to pick a Version class"""
+		assert platform in self._versions and version_number in self._versions[platform]
+		return self._versions[platform][version_number]
+
+	def _get_sub_version(self, platform: str, version_number: Tuple[int, int, int], force_blockstate=False):
+		"""Internal method to pick a SubVersion class"""
+		return self._get_version(platform, version_number).get(force_blockstate)
+
 	def platforms(self) -> List[str]:
 		"""Get a list of all the platforms there are Version classes for"""
 		return list(self._versions.keys())
@@ -105,10 +114,7 @@ class TranslationManager:
 
 	def blocks
 
-	def _get_version(self, platform: str, version_number: Tuple[int, int, int]):
-		"""Internal method to pick a """
-		assert platform in self._versions and version_number in self._versions[platform]
-		return self._versions[platform][version_number]
+
 
 	def to_universal(
 		self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity],
