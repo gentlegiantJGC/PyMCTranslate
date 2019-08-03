@@ -1,5 +1,5 @@
 from typing import Dict, Union, Tuple
-from .nbt import NBT
+from PyMCTranslate.py3.helpers.nbt import NBT
 import copy
 import re
 

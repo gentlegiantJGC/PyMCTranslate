@@ -1,8 +1,11 @@
 from typing import Union, Tuple
-from .helpers.objects import Block, BlockEntity, Entity
-from .helpers.nbt import from_spec
-from .translation_manager import SubVersion
-from .helpers.nbt import NBT
+try:
+	from amulet.api.block import Block
+except:
+	from PyMCTranslate.py3.api.block import Block
+from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
+from PyMCTranslate.py3.helpers.nbt import from_spec, NBT  # TODO: switch this out for a proper NBT library
+from PyMCTranslate.py3.translation_manager import SubVersion
 
 
 def get_blockentity(level, location: Tuple[int, int, int]) -> BlockEntity:

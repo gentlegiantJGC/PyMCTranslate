@@ -1,5 +1,5 @@
 import os
-from .py3.translation_handler import TranslationManager
+from PyMCTranslate.py3.translation_manager import TranslationManager
 
 
 def new_translation_handler() -> TranslationManager:

@@ -6,8 +6,8 @@ import copy
 try:
 	from amulet.api.block import Block
 except:
-	from .api.block import Block
-from .helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
+	from PyMCTranslate.py3.api.block import Block
+from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
 
 log_level = 0  # 0 for no logs, 1 or higher for warnings, 2 or higher for info, 3 or higher for debug
 
@@ -333,7 +333,7 @@ class SubVersion:
 			info(f'Failed converting blockstate from universal\n{e}')
 			return object_input, None, False
 
-from .convert import convert
+from PyMCTranslate.py3.convert import convert
 
 
 if __name__ == '__main__':
