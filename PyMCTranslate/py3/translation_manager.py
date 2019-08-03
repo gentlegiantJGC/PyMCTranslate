@@ -1,8 +1,13 @@
 import json
 import os
 from typing import Union, Tuple, Generator, List, Dict
-from .helpers.objects import Block, BlockEntity, Entity
 import copy
+
+try:
+	from amulet.api.block import Block
+except:
+	from .api.block import Block
+from .helpers.objects import Block, BlockEntity, Entity
 
 log_level = 0  # 0 for no logs, 1 or higher for warnings, 2 or higher for info, 3 or higher for debug
 
@@ -73,36 +78,67 @@ class TranslationManager:
 	A version in this context is a version of the game from a specific platform (ie platform and version number need to be the same)
 	"""
 	def __init__(self, mappings_path: str):
-		self._versions = {}
+		self._versions: Dict[str, Dict[Tuple[int, int, int], 'Version']] = {}
 
 		for version_name in directories(mappings_path):
 			version = Version(f'{mappings_path}/{version_name}', self)
+			self._versions.setdefault(version.platform, {})
+			self._versions[version.platform].setdefault(version.version_number, version)
 
-			if version.platform not in self._versions:
-				self._versions[version.platform] = {}
-			if version.version_number not in self._versions[version.platform]:
-				self._versions[version.platform][version.version_number] = version
-
-	@property
 	def platforms(self) -> List[str]:
+		"""Get a list of all the platforms there are Version classes for"""
 		return list(self._versions.keys())
 
 	def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
+		"""Get a list of all the version numbers there are Version classes for for a given platform"""
 		return list(self._versions[platform].keys())
 
-	def get(self, platform: str, version_number: Tuple[int, int, int], force_blockstate: bool = None):
+	def blocks
+
+	def _get_version(self, platform: str, version_number: Tuple[int, int, int]):
+		"""Internal method to pick a """
 		assert platform in self._versions and version_number in self._versions[platform]
-		version: Version = self._versions[platform][version_number]
-		if force_blockstate is not None:
-			return version.get(force_blockstate)
-		else:
-			return version
+		return self._versions[platform][version_number]
 
-	def to_universal(self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity], force_blockstate: bool = False, location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
-		return self.get(platform, version_number).to_universal(level, object_input, force_blockstate, location)
+	def to_universal(
+		self,
+		level,
+		platform: str,
+		version_number: Tuple[int, int, int],
+		object_input: Union[Block, Entity],
+		force_blockstate: bool = False,
+		location: Tuple[int, int, int] = None
+	) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+		"""Convert an object to the universal format"""
+		return self._get_version(
+			platform,
+			version_number
+		).to_universal(
+			level,
+			object_input,
+			force_blockstate,
+			location
+		)
 
-	def from_universal(self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity], force_blockstate: bool = False, location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
-		return self.get(platform, version_number).from_universal(level, object_input, force_blockstate, location)
+	def from_universal(
+		self,
+		level,
+		platform: str,
+		version_number: Tuple[int, int, int],
+		object_input: Union[Block, Entity],
+		force_blockstate: bool = False,
+		location: Tuple[int, int, int] = None
+	) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+		"""Convert an object from the universal format"""
+		return self._get_version(
+			platform,
+			version_number
+		).from_universal(
+			level,
+			object_input,
+			force_blockstate,
+			location
+		)
 
 
 class Version:

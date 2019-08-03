@@ -1,7 +1,7 @@
 from typing import Union, Tuple
 from .helpers.objects import Block, BlockEntity, Entity
 from .helpers.nbt import from_spec
-from .data_version_handler import SubVersion
+from .translation_manager import SubVersion
 from .helpers.nbt import NBT
 
 
