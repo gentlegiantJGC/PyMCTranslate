@@ -7,7 +7,7 @@ try:
 	from amulet.api.block import Block
 except:
 	from .api.block import Block
-from .helpers.objects import Block, BlockEntity, Entity
+from .helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
 
 log_level = 0  # 0 for no logs, 1 or higher for warnings, 2 or higher for info, 3 or higher for debug
 
