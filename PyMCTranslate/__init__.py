@@ -1,4 +1,9 @@
 import os
-from .py3.data_version_handler import VersionContainer
+from .py3.translation_handler import TranslationHandler
 
-version_container = VersionContainer(os.path.join(os.path.dirname(__file__), 'mappings'))
+
+def new_translation_handler() -> TranslationHandler:
+	"""Returns a new TranslationHandler with the default files.
+	Each unique world should have a new TranslationHandler because there is the
+	functionality to register custom (mod) blocks making each handler unique."""
+	return TranslationHandler(os.path.join(os.path.dirname(__file__), 'mappings'))
