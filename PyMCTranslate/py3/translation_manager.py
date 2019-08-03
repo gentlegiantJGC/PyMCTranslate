@@ -112,36 +112,6 @@ class TranslationManager:
 		"""Get a list of all the version numbers there are Version classes for for a given platform"""
 		return list(self._versions[platform].keys())
 
-	def blocks
-
-
-
-	def to_universal(
-		self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity],
-		force_blockstate: bool = False, location: Tuple[int, int, int] = None
-	) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
-		"""Convert an object to the universal format"""
-		return self._get_version(
-			platform, version_number
-		).to_universal(
-			level, object_input, force_blockstate, location
-		)
-
-	def from_universal(
-		self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity],
-		force_blockstate: bool = False, location: Tuple[int, int, int] = None
-	) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
-		"""Convert an object from the universal format"""
-		return self._get_version(
-			platform,
-			version_number
-		).from_universal(
-			level,
-			object_input,
-			force_blockstate,
-			location
-		)
-
 
 class Version:
 	"""
@@ -201,32 +171,6 @@ class Version:
 				return self._subversions['blockstate']
 			else:
 				raise NotImplemented
-
-	def to_universal(self, level, object_input: Union[Block, Entity], force_blockstate: bool = False, location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
-		if isinstance(object_input, Block):
-			if self.block_format == 'numerical' and not force_blockstate:
-				assert object_input.base_name.isnumeric(), 'For the numerical block_format base_name must be an int converted to a string'
-				namespace, base_name = self.numerical_block_map[object_input.base_name].split(':')
-				object_input = Block(None, namespace, base_name, object_input.properties)
-		elif isinstance(object_input, Entity):
-			raise NotImplemented
-		else:
-			raise Exception
-		return self.get(force_blockstate).to_universal(level, object_input, location)
-
-	def from_universal(self, level, object_input: Union[Block, Entity], force_blockstate: bool = False, location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
-		assert isinstance(object_input, (Block, Entity)), f'Input must be a Block or an Entity. Got "{type(object_input)}" instead.'
-
-		output, extra_output, extra_needed = self.get(force_blockstate).from_universal(level, object_input, location)
-		if isinstance(output, Block):
-			if self.block_format == 'numerical':
-				namespace, base_name = '', self.numerical_block_map_inverse[output.base_name]
-				output = Block(None, namespace, base_name, object_input.properties)
-		elif isinstance(object_input, Entity):
-			raise NotImplemented
-		else:
-			raise Exception
-		return output, extra_output, extra_needed
 
 
 class SubVersion:
