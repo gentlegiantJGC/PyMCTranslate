@@ -111,33 +111,19 @@ class TranslationManager:
 		return self._versions[platform][version_number]
 
 	def to_universal(
-		self,
-		level,
-		platform: str,
-		version_number: Tuple[int, int, int],
-		object_input: Union[Block, Entity],
-		force_blockstate: bool = False,
-		location: Tuple[int, int, int] = None
+		self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity],
+		force_blockstate: bool = False, location: Tuple[int, int, int] = None
 	) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""Convert an object to the universal format"""
 		return self._get_version(
-			platform,
-			version_number
+			platform, version_number
 		).to_universal(
-			level,
-			object_input,
-			force_blockstate,
-			location
+			level, object_input, force_blockstate, location
 		)
 
 	def from_universal(
-		self,
-		level,
-		platform: str,
-		version_number: Tuple[int, int, int],
-		object_input: Union[Block, Entity],
-		force_blockstate: bool = False,
-		location: Tuple[int, int, int] = None
+		self, level, platform: str, version_number: Tuple[int, int, int], object_input: Union[Block, Entity],
+		force_blockstate: bool = False, location: Tuple[int, int, int] = None
 	) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""Convert an object from the universal format"""
 		return self._get_version(
