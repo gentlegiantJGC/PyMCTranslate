@@ -2,7 +2,7 @@ import os
 from PyMCTranslate.py3.translation_manager import TranslationManager
 
 
-def new_translation_handler() -> TranslationManager:
+def new_translation_manager() -> TranslationManager:
 	"""Returns a new TranslationManager with the default files.
 	Each unique world should have a new TranslationManager because there is the
 	functionality to register custom (mod) blocks making each handler unique."""

@@ -81,7 +81,7 @@ class TranslationManager:
 	def __init__(self, mappings_path: str):
 		"""
 		Call this class with the path to the mapping json files.
-		Note if you are a developer using this library you can call PyMCTranslate.new_translation_handler()
+		Note if you are a developer using this library you can call PyMCTranslate.new_translation_manager()
 		to get a new instance of this class with the default mappings set up for you.
 
 		:param mappings_path: The path to the mapping directory
