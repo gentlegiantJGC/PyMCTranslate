@@ -157,10 +157,17 @@ class Version:
 		self._subversions = {}
 		self.numerical_block_map: Dict[str, str] = None
 		self.numerical_block_map_inverse: Dict[str, str] = None
+		if self.platform == 'java' and os.path.isfile(os.path.join(version_path, '__waterloggable__.json')):
+			with open(version_path, '__waterloggable__.json') as f:
+				self._waterloggable = set(json.load(f))
+		else:
+			self._waterloggable = None
 
 	def _load(self):
-		"""Internal method to load the data related to this class.
-		This allows loading to be deferred until it is needed (if at all)"""
+		"""
+		Internal method to load the data related to this class.
+		This allows loading to be deferred until it is needed (if at all)
+		"""
 		if not self._loaded:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
@@ -218,6 +225,18 @@ class Version:
 				return self._subversions['blockstate']
 			else:
 				raise NotImplemented
+
+	def is_waterloggable(self, namespace_str: str):
+		"""
+		A method to check if a block can be waterlogged.
+		This method is only valid for Java blockstate format worlds,
+		Other formats either don't have waterlogged blocks or don't have a limit on what can be stacked.
+		:param namespace_str: "<namespace>:<base_name>"
+		:return: Bool. True if it can be waterlogged. False if not or another format.
+		"""
+		if isinstance(self._waterloggable, set):
+			return namespace_str in self._waterloggable
+		return False
 
 
 class SubVersion:
