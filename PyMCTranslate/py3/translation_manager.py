@@ -159,6 +159,8 @@ class Version:
 		self.numerical_block_map_inverse: Dict[str, str] = None
 
 	def _load(self):
+		"""Internal method to load the data related to this class.
+		This allows loading to be deferred until it is needed (if at all)"""
 		if not self._loaded:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
@@ -200,6 +202,11 @@ class Version:
 		return self._version_number
 
 	def get(self, force_blockstate: bool = False) -> 'SubVersion':
+		"""
+		A method to get a SubVersion class
+		:param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+		:return: The SubVersion class for the given inputs.
+		"""
 		self._load()
 		assert isinstance(force_blockstate, bool), 'force_blockstate must be a bool type'
 		if force_blockstate:
