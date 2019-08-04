@@ -248,8 +248,8 @@ class SubVersion:
 	As such each version will always have a blockstate format but some may also have a numerical format as well.
 	This class will store data for one of these sub-versions.
 	"""
-	def __init__(self, sub_version_path: str, version_container: VersionContainer):
-		self._version_container = version_container
+	def __init__(self, sub_version_path: str, translation_manager: TranslationManager):
+		self._translation_manager = translation_manager
 		self._mappings = {
 			"block": {
 				'to_universal': {},
@@ -314,7 +314,7 @@ class SubVersion:
 				object_input,
 				self.get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_to_universal(mode, object_input.namespace, object_input.base_name),
-				self._version_container.get('universal', (1, 0, 0)).get(),
+				self._translation_manager.get('universal', (1, 0, 0)).get(),
 				location
 			)
 			return output, extra_output, extra_needed
@@ -340,7 +340,7 @@ class SubVersion:
 			output, extra_output, extra_needed, cacheable = convert(
 				world,
 				object_input,
-				self._version_container.get('universal', (1, 0, 0)).get().get_specification(mode, object_input.namespace, object_input.base_name),
+				self._translation_manager.get('universal', (1, 0, 0)).get().get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_from_universal(mode, object_input.namespace, object_input.base_name),
 				self,
 				location
