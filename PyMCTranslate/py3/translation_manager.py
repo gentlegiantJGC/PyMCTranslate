@@ -97,8 +97,10 @@ class TranslationManager:
 				self._versions[version.platform].setdefault(version.version_number, version)
 
 	def platforms(self) -> List[str]:
-		"""Get a list of all the platforms there are Version classes for.
-		Currently these are 'java', 'bedrock' and 'universal'"""
+		"""
+		Get a list of all the platforms there are Version classes for.
+		Currently these are 'java', 'bedrock' and 'universal'
+		"""
 		return list(self._versions.keys())
 
 	def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
@@ -175,14 +177,26 @@ class Version:
 
 	@property
 	def block_format(self) -> str:
+		"""
+		The format of the blocks in the native SubVersion for this version.
+		This will be one of 'numerical', 'pseudo-numerical', 'blocksate' or 'nbt-blockstate'
+		"""
 		return self._block_format
 
 	@property
 	def platform(self) -> str:
+		"""
+		The platform name of the version this class instance holds the data of.
+		Currently these are 'java', 'bedrock' and 'universal'
+		"""
 		return self._platform
 
 	@property
 	def version_number(self) -> Tuple[int, int, int]:
+		"""
+		The version number of the version this class instance holds the data of.
+		Currently these are 'java', 'bedrock' and 'universal'
+		"""
 		return self._version_number
 
 	def get(self, force_blockstate: bool = False) -> 'SubVersion':
