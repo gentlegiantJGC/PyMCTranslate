@@ -58,7 +58,7 @@ def directories(path: str) -> Generator[str, None, None]:
 	:param path: str: the path to an existing directory on the current system
 	"""
 	for dir_name in os.listdir(path):
-		if os.path.isdir(f'{path}/{dir_name}'):
+		if os.path.isdir(os.path.join(path, dir_name)):
 			yield dir_name
 
 
@@ -68,7 +68,7 @@ def files(path: str) -> Generator[str, None, None]:
 	:param path: str: the path to an existing directory on the current system
 	"""
 	for file_name in os.listdir(path):
-		if os.path.isfile(f'{path}/{file_name}'):
+		if os.path.isfile(os.path.join(path, file_name)):
 			yield file_name
 
 
@@ -91,8 +91,8 @@ class TranslationManager:
 
 		# Create a class for each of the versions and store them
 		for version_name in directories(mappings_path):
-			if os.path.isfile(f'{mappings_path}/{version_name}/__init__.json'):
-				version = Version(f'{mappings_path}/{version_name}', self)
+			if os.path.isfile(os.path.join(mappings_path, version_name, '__init__.json')):
+				version = Version(os.path.join(mappings_path, version_name), self)
 				self._versions.setdefault(version.platform, {})
 				self._versions[version.platform].setdefault(version.version_number, version)
 
@@ -145,7 +145,7 @@ class Version:
 		self._loaded = False
 
 		# unpack the __init__.json file
-		with open(f'{version_path}/__init__.json') as f:
+		with open(os.path.join(version_path, '__init__.json')) as f:
 			init_file = json.load(f)
 		assert isinstance(init_file['platform'], str), f'The platform name defined in {version_path}/__init__.json is not a string'
 		self._platform = init_file['platform']
@@ -171,9 +171,9 @@ class Version:
 		if not self._loaded:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
-					self._subversions[block_format] = SubVersion(f'{self._version_path}/block/{block_format}', self._translation_manager)
+					self._subversions[block_format] = SubVersion(os.path.join(self._version_path, 'block', block_format), self._translation_manager)
 				if self.block_format == 'numerical':
-					with open(f'{self._version_path}/__numerical_block_map__.json') as f:
+					with open(os.path.join(self._version_path, '__numerical_block_map__.json')) as f:
 						self.numerical_block_map_inverse = json.load(f)
 					self.numerical_block_map = {}
 					for block_string, block_id in self.numerical_block_map_inverse.items():
@@ -181,7 +181,7 @@ class Version:
 						self.numerical_block_map[block_id] = block_string
 
 			elif self.block_format == 'blockstate':
-				self._subversions['blockstate'] = SubVersion(f'{self._version_path}/block/blockstate', self._translation_manager)
+				self._subversions['blockstate'] = SubVersion(os.path.join(self._version_path, 'block', 'blockstate'), self._translation_manager)
 			self._loaded = True
 
 	@property
@@ -267,13 +267,13 @@ class SubVersion:
 		}
 		assert os.path.isdir(sub_version_path), f'{sub_version_path} is not a valid path'
 		for method in ['to_universal', 'from_universal', 'specification']:
-			if os.path.isdir(f'{sub_version_path}/{method}'):
-				for namespace in directories(f'{sub_version_path}/{method}'):
+			if os.path.isdir(os.path.join(sub_version_path, method)):
+				for namespace in directories(os.path.join(sub_version_path, method)):
 					self._mappings["block"][method][namespace] = {}
-					for group_name in directories(f'{sub_version_path}/{method}/{namespace}'):
-						for block in files(f'{sub_version_path}/{method}/{namespace}/{group_name}'):
+					for group_name in directories(os.path.join(sub_version_path, method, namespace)):
+						for block in files(os.path.join(sub_version_path, method, namespace, group_name)):
 							if block.endswith('.json'):
-								with open(f'{sub_version_path}/{method}/{namespace}/{group_name}/{block}') as f:
+								with open(os.path.join(sub_version_path, method, namespace, group_name, block)) as f:
 									self._mappings["block"][method][namespace][block[:-5]] = json.load(f)
 
 	@property
