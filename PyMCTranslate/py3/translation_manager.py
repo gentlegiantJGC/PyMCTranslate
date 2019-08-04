@@ -158,7 +158,7 @@ class Version:
 		self.numerical_block_map: Dict[str, str] = None
 		self.numerical_block_map_inverse: Dict[str, str] = None
 
-	def load(self):
+	def _load(self):
 		if not self._loaded:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
@@ -200,7 +200,7 @@ class Version:
 		return self._version_number
 
 	def get(self, force_blockstate: bool = False) -> 'SubVersion':
-		self.load()
+		self._load()
 		assert isinstance(force_blockstate, bool), 'force_blockstate must be a bool type'
 		if force_blockstate:
 			return self._subversions['blockstate']
