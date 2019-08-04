@@ -314,7 +314,7 @@ class SubVersion:
 				object_input,
 				self.get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_to_universal(mode, object_input.namespace, object_input.base_name),
-				self._translation_manager.get('universal', (1, 0, 0)).get(),
+				self._translation_manager.get_sub_version('universal', (1, 0, 0)),
 				location
 			)
 			return output, extra_output, extra_needed
@@ -340,7 +340,7 @@ class SubVersion:
 			output, extra_output, extra_needed, cacheable = convert(
 				world,
 				object_input,
-				self._translation_manager.get('universal', (1, 0, 0)).get().get_specification(mode, object_input.namespace, object_input.base_name),
+				self._translation_manager.get_sub_version('universal', (1, 0, 0)).get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_from_universal(mode, object_input.namespace, object_input.base_name),
 				self,
 				location
@@ -354,17 +354,17 @@ class SubVersion:
 from PyMCTranslate.py3.convert import convert
 
 
-if __name__ == '__main__':
-	print('Loading mappings...')
-	block_mappings = TranslationManager(r'..\mappings')
-	print('\tFinished')
-	info('==== bedrock_1_7_0 ====')
-	for data in range(16):
-		print(
-			block_mappings.to_universal(None, 'bedrock', (1, 7, 0), Block(None, 'minecraft', 'log', {'block_data': str(data)}))[0]
-		)
-	info('==== java_1_12_2 ====')
-	for data in range(16):
-		print(
-			block_mappings.to_universal(None, 'java', (1, 12, 2), Block(None, 'minecraft', '17', {'block_data': str(data)}))[0]
-		)
+# if __name__ == '__main__':
+# 	print('Loading mappings...')
+# 	block_mappings = TranslationManager(r'..\mappings')
+# 	print('\tFinished')
+# 	info('==== bedrock_1_7_0 ====')
+# 	for data in range(16):
+# 		print(
+# 			block_mappings.to_universal(None, 'bedrock', (1, 7, 0), Block(None, 'minecraft', 'log', {'block_data': str(data)}))[0]
+# 		)
+# 	info('==== java_1_12_2 ====')
+# 	for data in range(16):
+# 		print(
+# 			block_mappings.to_universal(None, 'java', (1, 12, 2), Block(None, 'minecraft', '17', {'block_data': str(data)}))[0]
+# 		)
