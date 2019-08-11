@@ -17,18 +17,36 @@
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak"
+                        }
                     }
                 ],
                 "y": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak"
+                        }
                     }
                 ],
                 "z": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak"
+                        }
                     }
                 ],
                 "all": [
@@ -39,7 +57,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "axis": "y"
+                            "axis": "y",
+                            "material": "dark_oak"
                         }
                     }
                 ]
