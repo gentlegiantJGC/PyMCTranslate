@@ -338,6 +338,16 @@ class SubVersion:
 			raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
 
 	def to_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+		"""
+		A method to convert a given Block or Entity object to the Universal format.
+		:param world: An instance of the world to reach back into as needed
+		:param object_input: The object to convert
+		:param location: The location of the object in the world. Optional (only needed if the extra_needed flag is true)
+		:return: output, extra_output, extra_needed
+			output - a Block or Entity instance
+			extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
+			extra_needed - bool specifying if the location is needed to fully define the output
+		"""
 		if isinstance(object_input, Block):
 			mode = 'block'
 		elif isinstance(object_input, Entity):
@@ -360,18 +370,21 @@ class SubVersion:
 
 	def from_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
-
-		:param world:
-		:param object_input:
-		:param location:
-		:return:
+		A method to convert a given Block or Entity object from the Universal format to the format of this class instance.
+		:param world: An instance of the world to reach back into as needed
+		:param object_input: The object to convert
+		:param location: The location of the object in the world. Optional (only needed if the extra_needed flag is true)
+		:return: output, extra_output, extra_needed
+			output - a Block or Entity instance
+			extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
+			extra_needed - bool specifying if the location is needed to fully define the output
 		"""
 		if isinstance(object_input, Block):
 			mode = 'block'
 		elif isinstance(object_input, Entity):
-			raise NotImplemented
+			mode = 'entity'
 		else:
-			raise Exception
+			raise Exception('Only "block" and "entity" are valid modes')
 		try:
 			output, extra_output, extra_needed, cacheable = convert(
 				world,
