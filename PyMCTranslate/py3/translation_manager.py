@@ -153,6 +153,7 @@ class Version:
 		self._version_number = tuple(init_file['version'])
 		assert isinstance(init_file['block_format'], str)
 		self._block_format = init_file['block_format']
+		self._has_abstract_format = self._block_format in ['numerical', 'pseudo-numerical']
 
 		self._subversions = {}
 		self.numerical_block_map: Dict[str, str] = None
@@ -188,7 +189,7 @@ class Version:
 	def block_format(self) -> str:
 		"""
 		The format of the blocks in the native SubVersion for this version.
-		This will be one of 'numerical', 'pseudo-numerical', 'blocksate' or 'nbt-blockstate'
+		This will be one of 'numerical', 'pseudo-numerical', 'blockstate' or 'nbt-blockstate'
 		"""
 		return self._block_format
 
@@ -199,6 +200,11 @@ class Version:
 		Currently these are 'java', 'bedrock' and 'universal'
 		"""
 		return self._platform
+
+	@property
+	def has_abstract_format(self) -> bool:
+		"""Property to access if the version has a second abstracted format"""
+		return self._has_abstract_format
 
 	@property
 	def version_number(self) -> Tuple[int, int, int]:
