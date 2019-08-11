@@ -355,7 +355,7 @@ class SubVersion:
 		else:
 			raise AssertionError('object_input must be a Block or an Entity')
 		try:
-			output, extra_output, extra_needed, cacheable = convert(
+			output, extra_output, extra_needed, cacheable = translate(
 				world,
 				object_input,
 				self.get_specification(mode, object_input.namespace, object_input.base_name),
@@ -386,7 +386,7 @@ class SubVersion:
 		else:
 			raise Exception('Only "block" and "entity" are valid modes')
 		try:
-			output, extra_output, extra_needed, cacheable = convert(
+			output, extra_output, extra_needed, cacheable = translate(
 				world,
 				object_input,
 				self._translation_manager.get_sub_version('universal', (1, 0, 0)).get_specification(mode, object_input.namespace, object_input.base_name),
@@ -400,7 +400,7 @@ class SubVersion:
 			return object_input, None, False
 
 
-from PyMCTranslate.py3.convert import convert
+from PyMCTranslate.py3._translate import translate
 
 
 # if __name__ == '__main__':
