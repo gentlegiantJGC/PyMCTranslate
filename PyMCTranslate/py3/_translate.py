@@ -160,18 +160,43 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 		function_name = translate_function['function']
 
 		if 'new_block' == function_name:
+			# {
+			# 	"function": "new_block",
+			# 	"options": "<namespace>:<base_name>"
+			# }
 			output_name: str = translate_function["options"]
 			output_type = 'block'
 
-		if 'new_entity' == function_name:
+		elif 'new_entity' == function_name:
+			# {
+			# 	"function": "new_entity",
+			# 	"options": "<namespace>:<base_name>"
+			# }
 			output_name: str = translate_function["options"]
 			output_type = 'entity'
 
-		if 'new_properties' == function_name:
+		elif 'new_properties' == function_name:
+			# {
+			# 	"function": "new_properties",
+			# 	"options": {
+			# 		"<property_name>": "<property_value",
+			# 		"<nbt_property_name>": ['snbt', "<SNBT_Object>"]    # eg "val", "54b", "0.0d"
+			# 	}
+			# }
 			for key, val in translate_function["options"].items():
-				new_data['properties'][key] = val
+				if isinstance(val, str):
+					new_data['properties'][key] = val
+				# elif isinstance(val, list) and val[0] == 'snbt': TODO implement this when from_snbt gets implemented
+				# 	new_data['properties'][key] = NBT.from_snbt(val[1])
 
-		if 'carry_properties' == function_name:
+		elif 'carry_properties' == function_name:
+			# {
+			# 	"function": "carry_properties",
+			# 	"options": {
+			# 		"<property_name>": ["<property_value"],
+			# 		"<nbt_property_name>": ['TAG_String("<property_value>")']
+			# 	}
+			# }
 			assert isinstance(block_input, Block), 'The block input is not a block'
 			for key in translate_function["options"]:
 				if key in block_input.properties:
@@ -179,7 +204,22 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					if str(val) in translate_function["options"][key]:
 						new_data['properties'][key] = val
 
-		if 'map_properties' == function_name:
+		elif 'map_properties' == function_name:
+			# {
+			# 	"function": "map_properties",
+			# 	"options": {
+			# 		"<property_name>": {
+			# 			"<property_value": [
+			# 				<functions>
+			# 			]
+			# 		},
+			# 		"<nbt_property_name>": {
+			# 			'TAG_String("<property_value>")': [
+			# 				<functions>
+			# 			]
+			# 		}
+			# 	}
+			# }
 			assert isinstance(block_input, Block), 'The block input is not a block'
 			for key in translate_function["options"]:
 				if key in block_input.properties:
@@ -187,7 +227,16 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					if val in translate_function["options"][key]:
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"][key][val], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
-		if 'multiblock' == function_name:
+		elif 'multiblock' == function_name:
+			# {
+			# 	"function": "multiblock",
+			# 	"options": [
+			# 		{
+			# 			"coords": [dx, dy, dz],
+			# 			"functions": <functions>
+			# 		}
+			# 	]
+			# }
 			cacheable = False
 			if location is None:
 				extra_needed = True
@@ -201,13 +250,33 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					block_input_, nbt_input_ = get_block_at(world, (x + dx, y + dy, z + dz))
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input_, nbt_input_, multiblock['functions'], (x + dx, y + dy, z + dz), nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
-		if 'map_block_name' == function_name:
+		elif 'map_block_name' == function_name:
+			# {
+			# 	"function": "map_block_name",
+			# 	"options": {
+			# 		"<namespace>:<base_name>": [
+			# 			<functions>
+			# 		]
+			# 	}
+			# }
 			assert isinstance(block_input, Block), 'The block input is not a block'
 			block_name = f'{block_input.namespace}:{block_input.base_name}'
 			if block_name in translate_function["options"]:
 				output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"][block_name], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
-		if 'map_input_nbt' == function_name:
+		elif 'map_input_nbt' == function_name:
+			# This is a special function unlike the others. See _convert_map_input_nbt for more information
+			# {
+			# 	"function": "map_input_nbt",
+			# 	"options": {
+			# 		"": {
+			# 			"type": "compound",
+			# 			"keys": {
+			# 				...
+			# 			}
+			# 		}
+			# 	}
+			# }
 			cacheable = False
 			if nbt_input is None:
 				extra_needed = True
@@ -218,7 +287,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 				}
 				output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(world, block_input, nbt_input, outer_mapping, location, [], (output_name, output_type, new_data, extra_needed, cacheable))
 
-		if 'new_nbt' == function_name:
+		elif 'new_nbt' == function_name:
 			new_nbts = translate_function["options"]
 			if isinstance(new_nbts, dict):
 				new_nbts = [new_nbts]
@@ -230,7 +299,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 				path = new_nbt.get('path', path) + [[new_nbt['key'], new_nbt['value']]]
 				new_data['nbt'].append([path, new_nbt['value']])
 
-		if 'carry_nbt' == function_name:
+		elif 'carry_nbt' == function_name:
 			cacheable = False
 			if nbt_input is None:
 				extra_needed = True
@@ -248,7 +317,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					# perhaps this should be done in the compiler rather than at runtime
 				new_data['nbt'].append([path + [key, nbt_type], val])
 
-		if 'map_nbt' == function_name:
+		elif 'map_nbt' == function_name:
 			cacheable = False
 			if nbt_input is None:
 				extra_needed = True
