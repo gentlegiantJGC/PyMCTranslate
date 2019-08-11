@@ -337,12 +337,13 @@ class SubVersion:
 		except KeyError:
 			raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
 
-	def to_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+	def to_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
 		A method to translate a given Block or Entity object to the Universal format.
 		:param world: An instance of the world to reach back into as needed
 		:param object_input: The object to translate
 		:param location: The location of the object in the world. Optional (only needed if the extra_needed flag is true)
+		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
 		:return: output, extra_output, extra_needed
 			output - a Block or Entity instance
 			extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
@@ -361,19 +362,21 @@ class SubVersion:
 				self.get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_to_universal(mode, object_input.namespace, object_input.base_name),
 				self._translation_manager.get_sub_version('universal', (1, 0, 0)),
-				location
+				location,
+				extra_input
 			)
 			return output, extra_output, extra_needed
 		except Exception as e:
 			info(f'Failed converting blockstate to universal\n{e}')
 			return object_input, None, False
 
-	def from_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+	def from_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
 		A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
 		:param world: An instance of the world to reach back into as needed
 		:param object_input: The object to translate
 		:param location: The location of the object in the world. Optional (only needed if the extra_needed flag is true)
+		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
 		:return: output, extra_output, extra_needed
 			output - a Block or Entity instance
 			extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
@@ -384,7 +387,7 @@ class SubVersion:
 		elif isinstance(object_input, Entity):
 			mode = 'entity'
 		else:
-			raise Exception('Only "block" and "entity" are valid modes')
+			raise Exception('object_input must be a Block or an Entity')
 		try:
 			output, extra_output, extra_needed, cacheable = translate(
 				world,
@@ -392,7 +395,8 @@ class SubVersion:
 				self._translation_manager.get_sub_version('universal', (1, 0, 0)).get_specification(mode, object_input.namespace, object_input.base_name),
 				self.get_mapping_from_universal(mode, object_input.namespace, object_input.base_name),
 				self,
-				location
+				location,
+				extra_input
 			)
 			return output, extra_output, extra_needed
 		except Exception as e:

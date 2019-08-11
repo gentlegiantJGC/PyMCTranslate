@@ -44,7 +44,7 @@ def translate(level, object_input: Union[Block, Entity], input_spec: dict, mappi
 		:param mappings: the mapping file for the input_object
 		:param output_version: A way for the function to look at the specification being converted to. (used to load default properties)
 		:param location: (x, y, z) only used for Blocks if data beyond the object_input is needed
-		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool. Not compatible with location
+		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
 		:return: output, extra_output, extra_needed, cacheable
 			extra_needed: a bool to specify if more data is needed beyond the object_input
 			cacheable: a bool to specify if the result can be cached to reduce future processing
