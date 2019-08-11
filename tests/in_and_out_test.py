@@ -75,6 +75,18 @@ if __name__ == '__main__':
 							print(f'Universal output 2: {universal_output2}')
 							continue
 						if str(input_blockstate) != str(back_out):
+							if version.platform == 'java' and version.version_number[1] >= 13:
+								props1 = input_blockstate.properties
+								props2 = back_out.properties
+								if 'waterlogged' in props1:
+									del props1['waterlogged']
+								if 'waterlogged' in props2:
+									del props2['waterlogged']
+								if str(Block(namespace=input_blockstate.namespace, base_name=input_blockstate.base_name, properties=props1))\
+									==\
+									str(Block(namespace=back_out.namespace, base_name=back_out.base_name, properties=props2)):
+									continue
+
 							print(f"Conversion error: {input_blockstate} != {back_out} {platform_name} {version_number}")
 							print(f'Universal output: {universal_output}')
 							print(f'Numerical output: {numerical_output}')
