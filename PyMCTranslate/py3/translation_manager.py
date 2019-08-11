@@ -405,19 +405,3 @@ class SubVersion:
 
 
 from PyMCTranslate.py3._translate import translate
-
-
-# if __name__ == '__main__':
-# 	print('Loading mappings...')
-# 	block_mappings = TranslationManager(r'..\mappings')
-# 	print('\tFinished')
-# 	info('==== bedrock_1_7_0 ====')
-# 	for data in range(16):
-# 		print(
-# 			block_mappings.to_universal(None, 'bedrock', (1, 7, 0), Block(None, 'minecraft', 'log', {'block_data': str(data)}))[0]
-# 		)
-# 	info('==== java_1_12_2 ====')
-# 	for data in range(16):
-# 		print(
-# 			block_mappings.to_universal(None, 'java', (1, 12, 2), Block(None, 'minecraft', '17', {'block_data': str(data)}))[0]
-# 		)
