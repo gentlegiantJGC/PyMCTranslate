@@ -339,9 +339,9 @@ class SubVersion:
 
 	def to_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
-		A method to convert a given Block or Entity object to the Universal format.
+		A method to translate a given Block or Entity object to the Universal format.
 		:param world: An instance of the world to reach back into as needed
-		:param object_input: The object to convert
+		:param object_input: The object to translate
 		:param location: The location of the object in the world. Optional (only needed if the extra_needed flag is true)
 		:return: output, extra_output, extra_needed
 			output - a Block or Entity instance
@@ -370,9 +370,9 @@ class SubVersion:
 
 	def from_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
-		A method to convert a given Block or Entity object from the Universal format to the format of this class instance.
+		A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
 		:param world: An instance of the world to reach back into as needed
-		:param object_input: The object to convert
+		:param object_input: The object to translate
 		:param location: The location of the object in the world. Optional (only needed if the extra_needed flag is true)
 		:return: output, extra_output, extra_needed
 			output - a Block or Entity instance

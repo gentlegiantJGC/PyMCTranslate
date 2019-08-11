@@ -1,4 +1,4 @@
-from typing import Union, Tuple
+from typing import Union, Tuple, List
 try:
 	from amulet.api.block import Block
 except:
@@ -34,10 +34,9 @@ def index_nbt(nbt: NBT, nbt_path: Tuple[Tuple[Union[str, int], str], ...]):
 	return nbt
 
 
-def convert(level, object_input: Union[Block, Entity], input_spec: dict, mappings: dict, output_version: SubVersion, location: Tuple[int, int, int] = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
+def translate(level, object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, location: Tuple[int, int, int] = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
 	"""
-		A demonstration function on how to read the json files to convert into or out of the numerical block_format
-		You should implement something along these lines into you own code if you want to read them.
+		A function to translate the object input to the output version
 
 		:param level: a view into the level to access additional data
 		:param object_input: the Block or Entity object to be converted
@@ -54,7 +53,7 @@ def convert(level, object_input: Union[Block, Entity], input_spec: dict, mapping
 			Entity, None, bool, bool
 	"""
 
-	# set up for the _convert function which does the actual conversion
+	# set up for the _translate function which does the actual conversion
 	if isinstance(object_input, Block):
 		if 'nbt' in input_spec and location is not None:
 			# if the block location in the world is defined then load the BlockEntity from the world
@@ -82,9 +81,9 @@ def convert(level, object_input: Union[Block, Entity], input_spec: dict, mapping
 		raise Exception
 
 	# run the conversion
-	output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings, location)
+	output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings, location)
 
-	# sort out the outputs from the _convert function
+	# sort out the outputs from the _translate function
 	extra_output = None
 	if output_type == 'block':
 		# we should have a block output
@@ -111,13 +110,13 @@ def convert(level, object_input: Union[Block, Entity], input_spec: dict, mapping
 		namespace, base_name = output_name.split(':', 1)
 		spec = output_version.get_specification('entity', namespace, base_name)
 		output = Entity(namespace, base_name, (0.0, 0.0, 0.0), from_spec(spec['nbt']))
-		# TODO: merge new['nbt'] into nbt_output and convert to an entity
+		# TODO: merge new['nbt'] into nbt_output and translate to an entity
 	else:
 		raise Exception
 	return output, extra_output, extra_needed, cacheable
 
 
-def _convert(level, block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: dict, location: Tuple[int, int, int] = None, nbt_path: Tuple[Tuple[Union[str, int], str], ...] = None, inherited: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
+def _translate(level, block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: List[dict], location: Tuple[int, int, int] = None, nbt_path: Tuple[Tuple[Union[str, int], str], ...] = None, inherited: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
 	"""
 	:param level:
 	:param block_input:
@@ -185,7 +184,7 @@ def _convert(level, block_input: Union[Block, None], nbt_input: Union[Entity, Bl
 			if key in block_input.properties:
 				val = block_input.properties[key]
 				if val in mappings['map_properties'][key]:
-					output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings['map_properties'][key][val], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+					output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['map_properties'][key][val], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 
 	if 'multiblock' in mappings:
 		cacheable = False
@@ -199,13 +198,13 @@ def _convert(level, block_input: Union[Block, None], nbt_input: Union[Entity, Bl
 				dx, dy, dz = multiblock['coords']
 				x, y, z = location
 				block_input_, nbt_input_ = get_block_at(level, (x + dx, y + dy, z + dz))
-				output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input_, nbt_input_, multiblock, (x + dx, y + dy, z + dz), nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+				output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input_, nbt_input_, multiblock, (x + dx, y + dy, z + dz), nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 
 	if 'map_block_name' in mappings:
 		assert isinstance(block_input, Block), 'The block input is not a block'
 		block_name = f'{block_input.namespace}:{block_input.base_name}'
 		if block_name in mappings['map_block_name']:
-			output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings['map_block_name'][block_name], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+			output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['map_block_name'][block_name], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 
 	if 'map_input_nbt' in mappings:
 		cacheable = False
@@ -260,13 +259,13 @@ def _convert(level, block_input: Union[Block, None], nbt_input: Union[Entity, Bl
 				elif isinstance(path, str) and path in nbt:
 					nbt = nbt[path]
 				else:
-					output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings['map_nbt'].get('default', {}), location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+					output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['map_nbt'].get('default', {}), location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 					break
 			val = str(nbt.value)
 			if val in mappings['map_nbt']['cases']:
-				output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings['map_nbt']['cases'][val], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+				output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['map_nbt']['cases'][val], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 		else:
-			output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings['map_nbt'].get('default', {}), location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+			output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['map_nbt'].get('default', {}), location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 
 	return output_name, output_type, new, extra_needed, cacheable
 
@@ -298,21 +297,21 @@ def _convert_map_input_nbt(level, block_input: Union[Block, None], nbt_input: Un
 
 	datatype = mappings['type']
 	if 'functions' in mappings:
-		output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings['functions'], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+		output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['functions'], location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 	if datatype == nbt.datatype:
 		if datatype == 'compound':
 			for key in nbt.val:
 				if key in mappings.get('keys', {}):
 					output_name, output_type, new, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['keys'][key], location, nbt_path + [[key, nbt.val[key].datatype]], (output_name, output_type, new, extra_needed, cacheable))
 				else:
-					output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[key, nbt.val[key].datatype]], (output_name, output_type, new, extra_needed, cacheable))
+					output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[key, nbt.val[key].datatype]], (output_name, output_type, new, extra_needed, cacheable))
 
 		elif datatype == 'list':
 			for index in nbt.val:
 				if str(index) in mappings.get('index', {}):
 					output_name, output_type, new, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, nbt_path + [index, nbt.val[index].datatype], (output_name, output_type, new, extra_needed, cacheable))
 				else:
-					output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[index, nbt.val[index].datatype]], (output_name, output_type, new, extra_needed, cacheable))
+					output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[index, nbt.val[index].datatype]], (output_name, output_type, new, extra_needed, cacheable))
 
 		# elif datatype in ('byte', 'short', 'int', 'long', 'float', 'double', 'string'):
 		# 	pass
@@ -323,9 +322,9 @@ def _convert_map_input_nbt(level, block_input: Union[Block, None], nbt_input: Un
 				if str(index) in mappings.get('index', {}):
 					output_name, output_type, new, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, nbt_path + [index, datatype.replace('_array', '')], (output_name, output_type, new, extra_needed, cacheable))
 				else:
-					output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[index, datatype.replace('_array', '')]], (output_name, output_type, new, extra_needed, cacheable))
+					output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[index, datatype.replace('_array', '')]], (output_name, output_type, new, extra_needed, cacheable))
 
 	else:
-		output_name, output_type, new, extra_needed, cacheable = _convert(level, block_input, nbt_input, mappings.get('self_default', {"carry_nbt": {}}), location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
+		output_name, output_type, new, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('self_default', {"carry_nbt": {}}), location, nbt_path, (output_name, output_type, new, extra_needed, cacheable))
 
 	return output_name, output_type, new, extra_needed, cacheable
