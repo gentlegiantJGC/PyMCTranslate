@@ -3,6 +3,21 @@
         "function": "map_properties",
         "options": {
             "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:vine"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "east": "false",
+                            "north": "false",
+                            "west": "false",
+                            "south": "false"
+                        }
+                    }
+                ],
                 "1": [
                     {
                         "function": "new_block",
