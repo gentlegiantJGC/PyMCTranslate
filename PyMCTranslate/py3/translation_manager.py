@@ -54,7 +54,7 @@ def warn(msg: str):
 
 def directories(path: str) -> Generator[str, None, None]:
 	"""
-	A generator of only directories in the given directory
+	A generator of only directories in the given directory.
 	:param path: str: the path to an existing directory on the current system
 	"""
 	for dir_name in os.listdir(path):
@@ -64,7 +64,7 @@ def directories(path: str) -> Generator[str, None, None]:
 
 def files(path: str) -> Generator[str, None, None]:
 	"""
-	A generator of only files in the given directory
+	A generator of only files in the given directory.
 	:param path: str: the path to an existing directory on the current system
 	"""
 	for file_name in os.listdir(path):
@@ -74,7 +74,7 @@ def files(path: str) -> Generator[str, None, None]:
 
 class TranslationManager:
 	"""
-	Container and manager for the different translation versions
+	Container and manager for the different translation versions.
 	A version in this context is a version of the game from a specific platform
 	(ie a unique combination of platform and version number)
 	"""
@@ -105,7 +105,7 @@ class TranslationManager:
 
 	def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
 		"""
-		Get a list of all the version numbers there are Version classes for, for a given platform
+		Get a list of all the version numbers there are Version classes for, for a given platform.
 		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
 		:return: The a list of version numbers (tuples) for a given platform. Throws an AssertionError if the platform is not present.
 		"""
@@ -114,7 +114,7 @@ class TranslationManager:
 
 	def get_version(self, platform: str, version_number: Tuple[int, int, int]) -> 'Version':
 		"""
-		A method to get a Version class
+		A method to get a Version class.
 		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
 		:param version_number: The version number (use TranslationManager.version_numbers to get version numbers for a given platforms)
 		:return: The Version class for the given inputs. Throws an AssertionError if it does not exist.
@@ -124,7 +124,7 @@ class TranslationManager:
 
 	def get_sub_version(self, platform: str, version_number: Tuple[int, int, int], force_blockstate=False) -> 'SubVersion':
 		"""
-		A method to get a SubVersion class
+		A method to get a SubVersion class.
 		:param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
 		:param version_number: The version number (use TranslationManager.version_numbers to get version numbers for a given platforms)
 		:param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
@@ -210,7 +210,7 @@ class Version:
 
 	def get(self, force_blockstate: bool = False) -> 'SubVersion':
 		"""
-		A method to get a SubVersion class
+		A method to get a SubVersion class.
 		:param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
 		:return: The SubVersion class for the given inputs.
 		"""
@@ -241,7 +241,7 @@ class Version:
 
 class SubVersion:
 	"""
-	A class to store sub-version data
+	A class to store sub-version data.
 	This is where things get a little confusing.
 	Each version has a "native" format but the numerical formats (ones that rely on a data value rather than properties)
 	also have an abstracted "blockstate" format.
@@ -252,6 +252,11 @@ class SubVersion:
 		self._translation_manager = translation_manager
 		self._mappings = {
 			"block": {
+				'to_universal': {},
+				'from_universal': {},
+				'specification': {}
+			},
+			"entity": {
 				'to_universal': {},
 				'from_universal': {},
 				'specification': {}
@@ -276,30 +281,61 @@ class SubVersion:
 								with open(os.path.join(sub_version_path, method, namespace, group_name, block)) as f:
 									self._mappings["block"][method][namespace][block[:-5]] = json.load(f)
 
-	@property
-	def namespaces(self) -> List[str]:
-		return list(self._mappings['block']['specification'].keys())
+	def namespaces(self, mode: str) -> List[str]:
+		"""
+		A list of all the namespaces present in a given mode.
+		:param mode:str: should be "block" or "entity"
+		:return: A list of all the namespaces
+		"""
+		return list(self._mappings[mode]['specification'].keys())
 
-	def block_names(self, namespace: str) -> List[str]:
-		return list(self._mappings['block']['specification'][namespace])
+	def base_names(self, mode: str, namespace: str) -> List[str]:
+		"""
+		A list of all the base names present in a given mode and namespace.
+		:param mode:str: should be "block" or "entity"
+		:param namespace: A namespace string as found using the namespaces method
+		:return: A list of base names
+		"""
+		return list(self._mappings[mode]['specification'][namespace])
 
-	def get_specification(self, mode: str, namespace: str, name: str) -> dict:
+	def get_specification(self, mode: str, namespace: str, base_name: str) -> dict:
+		"""
+		Get the specification file for the requested object.
+		:param mode:str: should be "block" or "entity"
+		:param namespace: A namespace string as found using the namespaces method
+		:param base_name: A base name string as found using the base_name method
+		:return: A dictionary containing the specification for the object
+		"""
 		try:
-			return copy.deepcopy(self._mappings[mode]['specification'][namespace][name])
+			return copy.deepcopy(self._mappings[mode]['specification'][namespace][base_name])
 		except KeyError:
-			raise KeyError(f'Specification for {mode} {namespace}:{name} does not exist')
+			raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
 
-	def get_mapping_to_universal(self, mode: str, namespace: str, name: str) -> dict:
+	def get_mapping_to_universal(self, mode: str, namespace: str, base_name: str) -> List[dict]:
+		"""
+		Get the mapping file for the requested object from this version format to the universal format.
+		:param mode:str: should be "block" or "entity"
+		:param namespace: A namespace string as found using the namespaces method
+		:param base_name: A base name string as found using the base_name method
+		:return: A list of mapping functions to apply to the object
+		"""
 		try:
-			return copy.deepcopy(self._mappings[mode]['to_universal'][namespace][name])
+			return copy.deepcopy(self._mappings[mode]['to_universal'][namespace][base_name])
 		except KeyError:
-			raise KeyError(f'Mapping to universal for {mode} {namespace}:{name} does not exist')
+			raise KeyError(f'Mapping to universal for {mode} {namespace}:{base_name} does not exist')
 
-	def get_mapping_from_universal(self, mode: str, namespace: str, name: str) -> dict:
+	def get_mapping_from_universal(self, mode: str, namespace: str, base_name: str) -> List[dict]:
+		"""
+		Get the mapping file for the requested object from the universal format to this version format.
+		:param mode:str: should be "block" or "entity"
+		:param namespace: A namespace string as found using the namespaces method
+		:param base_name: A base name string as found using the base_name method
+		:return: A list of mapping functions to apply to the object
+		"""
 		try:
-			return copy.deepcopy(self._mappings[mode]['from_universal'][namespace][name])
+			return copy.deepcopy(self._mappings[mode]['from_universal'][namespace][base_name])
 		except KeyError:
-			raise KeyError(f'Specification for {mode} {namespace}:{name} does not exist')
+			raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
 
 	def to_universal(self, world, object_input: Union[Block, Entity], location: Tuple[int, int, int] = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		if isinstance(object_input, Block):
