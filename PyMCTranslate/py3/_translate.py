@@ -10,6 +10,7 @@ from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switc
 from PyMCTranslate.py3.helpers.nbt import from_spec
 from PyMCTranslate.py3.translation_manager import SubVersion
 
+
 def get_blockentity(level, location: Tuple[int, int, int]) -> BlockEntity:
 	"""Reach back into the level and pull the block entity from the given location
 	Should return a BlockEntity class or None if there is no BlockEntity at the given location
@@ -19,11 +20,13 @@ def get_blockentity(level, location: Tuple[int, int, int]) -> BlockEntity:
 	else:
 		raise Exception('level is None and more data needed from it')
 
+
 def get_block_at(level, location: Tuple[int, int, int]) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
 	"""Should return the Block instance in the input format at location"""
 	return None, None
 
-nbt_type_map: Dict[str, Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]] = {
+
+_datatype_to_nbt = {
 	'byte': TAG_Byte,
 	'short': TAG_Short,
 	'int': TAG_Int,
@@ -38,10 +41,36 @@ nbt_type_map: Dict[str, Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float,
 	'long_array': TAG_Long_Array
 }
 
+_nbt_to_datatype = {
+	'TAG_Byte': 'byte',
+	'TAG_Short': 'short',
+	'TAG_Int': 'int',
+	'TAG_Long': 'long',
+	'TAG_Float': 'float',
+	'TAG_Double': 'double',
+	'TAG_Byte_Array': 'byte_array',
+	'TAG_String': 'string',
+	'TAG_List': 'list',
+	'TAG_Compound': 'compound',
+	'TAG_Int_Array': 'int_array',
+	'TAG_Long_Array': 'long_array'
+}
+
+
+def datatype_to_nbt(datatype: str) -> Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]:
+	return _datatype_to_nbt[datatype]
+
+
+def nbt_to_datatype(
+	nbt: Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]
+) -> str:
+	return _nbt_to_datatype[nbt.__class__.__name__]
+
+
 def index_nbt(nbt: Union[TAG_Compound, TAG_List], nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]]):
 	outer_name, outer_type, nbt_path = nbt_path
 	# TODO: check the outer name
-	if not type(nbt) == nbt_type_map[outer_type]:
+	if not isinstance(nbt, datatype_to_nbt(outer_type)):
 		return None
 	for path, nbt_type in nbt_path:
 		if isinstance(path, int) and isinstance(nbt, TAG_List) and len(nbt) > path:
@@ -306,20 +335,27 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 			# {
 			# 	"function": "map_input_nbt",
 			#   "outer_name": "",  # defaults to this if undefined
-			#   "outer_type": "compound",  # defaults to this if undefined
 			# 	"options": {
-			# 		...
+			# 		"type": "<nbt type>",  # check that the nbt is of this type
+			# 		"self_default": [],  # if the type is different run these functions : defaults to [{"function": "carry_nbt"}] which carries everything
+			# 	    "functions": [],  # functions to run if defined
+			#
+			# 		"keys": {  # only for compound type
+			# 	        str: {nested options format}
+			# 		},
+			#       "index": {  # only for list or array types
+			# 	        str(<int>): {nested options format}     (type should not be defined for nested array types)
+			# 	    },
+			# 	    "nested_default": []  # only for compound, list or array types.
+			# 	        If nested key/index is not in respective dictionary run these functions on them.
+			#           If undefined defaults to [{"function": "carry_nbt"}] which carries everything
 			# 	}
 			# }
 			cacheable = False
 			if nbt_input is None:
 				extra_needed = True
 			else:
-				outer_mapping = {
-					'type': 'compound',
-					'keys': translate_function["options"]
-				}
-				output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(world, block_input, nbt_input, outer_mapping, location, [], (output_name, output_type, new_data, extra_needed, cacheable))
+				output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(world, block_input, nbt_input, translate_function["options"], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'new_nbt' == function_name:
 			# when used outside map_input_nbt
@@ -395,15 +431,16 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					raise Exception('This code should not be run because it should be caught by other code before it gets here.')
 				val = nbt.value
 
-				outer_name = translate_function["options"].get('outer_name', '')
-				outer_type = translate_function["options"].get('outer_type', 'compound')
-				path = translate_function["options"].get('path', nbt_path[2][:-1])
-				key = translate_function["options"].get('key', nbt_path[2][-1][0])
-				nbt_type = translate_function["options"].get('type', nbt_path[2][-1][1])
+				options = translate_function.get('options', {})
+				outer_name = options.get('outer_name', '')
+				outer_type = options.get('outer_type', 'compound')
+				path = options.get('path', nbt_path[2][:-1])
+				key = options.get('key', nbt_path[2][-1][0])
+				nbt_type = options.get('type', nbt_path[2][-1][1])
 
 				# TODO: some kind of check to make sure that the input data type nbt_path[-1][1] can be cast to nbt_type
 					# perhaps this should be done in the compiler rather than at runtime
-				new_data['nbt'].append((outer_name, outer_type, path, key, nbt_type_map[nbt_type](val)))
+				new_data['nbt'].append((outer_name, outer_type, path, key, datatype_to_nbt(nbt_type)(val)))
 
 		elif 'map_nbt' == function_name:
 			# "map_nbt": {  # based on the input nbt value at path (should only be used with end stringable datatypes)
@@ -468,38 +505,43 @@ def _convert_map_input_nbt(level, block_input: Union[Block, None], nbt_input: Un
 		extra_needed = False  # used to determine if extra data is required (and thus to do block by block)
 		cacheable = True    # cacheable until proven otherwise
 
-	nbt = index_nbt(nbt_input.nbt, nbt_path) # nbt_path should always exist in nbt_input.nbt because the calling code should check that
+	nbt = index_nbt(nbt_input.nbt, nbt_path)  # nbt_path should always exist in nbt_input.nbt because the calling code should check that
 
 	datatype = mappings['type']
+
 	if 'functions' in mappings:
+		# run functions if present
 		output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['functions'], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
-	if datatype == nbt.datatype:
+
+	if isinstance(nbt, datatype_to_nbt(datatype)):
+		# datatypes match
 		if datatype == 'compound':
-			for key in nbt.val:
+			for key in nbt.value:
 				if key in mappings.get('keys', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['keys'][key], location, nbt_path + [[key, nbt.val[key].datatype]], (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['keys'][key], location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[key, nbt.val[key].datatype]], (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif datatype == 'list':
-			for index in nbt.val:
+			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, nbt_path + [index, nbt.val[index].datatype], (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[index, nbt.val[index].datatype]], (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		# elif datatype in ('byte', 'short', 'int', 'long', 'float', 'double', 'string'):
 		# 	pass
 
 		elif datatype in ('byte_array', 'int_array', 'long_array'):
-			# TODO: needs some work as the contained object is not a seperate NBT type
-			for index, val in enumerate(nbt.val):
+			nested_datatype = datatype.replace('_array', '')
+			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, nbt_path + [index, datatype.replace('_array', '')], (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', {"carry_nbt": {}}), location, nbt_path + [[index, datatype.replace('_array', '')]], (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 	else:
-		output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('self_default', {"carry_nbt": {}}), location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+		# datatypes do not match. Run self_default
+		output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('self_default', [{"function": "carry_nbt"}]), location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
