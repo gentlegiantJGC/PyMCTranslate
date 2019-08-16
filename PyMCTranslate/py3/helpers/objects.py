@@ -1,9 +1,15 @@
 from typing import Tuple
-from PyMCTranslate.py3.helpers.nbt import NBT
+from amulet_nbt import NBTFile
 
 
 class Entity:
-	def __init__(self, namespace: str, base_name: str, location: Tuple[float, float, float], nbt: NBT):
+	def __init__(
+		self,
+		namespace: str,
+		base_name: str,
+		location: Tuple[float, float, float],
+		nbt: NBTFile
+	):
 		self._namespace = namespace
 		self._base_name = base_name
 		assert all(isinstance(coord, float) for coord in location), 'Location must be a tuple of floats'
@@ -29,11 +35,11 @@ class Entity:
 		self._base_name = base_name
 
 	@property
-	def nbt(self):
+	def nbt(self) -> NBTFile:
 		return self._nbt
 
 	@nbt.setter
-	def nbt(self, nbt):
+	def nbt(self, nbt: NBTFile):
 		self._nbt = nbt
 
 	@property
@@ -62,7 +68,13 @@ class Entity:
 
 
 class BlockEntity:
-	def __init__(self, namespace: str, base_name: str, location: Tuple[int, int, int], nbt: NBT):
+	def __init__(
+		self,
+		namespace: str,
+		base_name: str,
+		location: Tuple[int, int, int],
+		nbt: NBTFile
+	):
 		self._namespace = namespace
 		self._base_name = base_name
 		assert all(isinstance(coord, int) for coord in location), 'Location must be a tuple of ints'
@@ -88,11 +100,11 @@ class BlockEntity:
 		self._base_name = base_name
 
 	@property
-	def nbt(self):
+	def nbt(self) -> NBTFile:
 		return self._nbt
 
 	@nbt.setter
-	def nbt(self, nbt):
+	def nbt(self, nbt: NBTFile):
 		self._nbt = nbt
 
 	@property

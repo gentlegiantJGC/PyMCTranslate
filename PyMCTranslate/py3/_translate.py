@@ -1,10 +1,10 @@
-from typing import Union, Tuple, List, Dict
+from typing import Union, Tuple, List
 try:
 	from amulet.api.block import Block
-except:
+except ImportError:
 	from PyMCTranslate.py3.api.block import Block
 import amulet_nbt
-from amulet_nbt import TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
+from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
 from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
 from PyMCTranslate.py3.helpers.nbt import from_spec
@@ -56,6 +56,9 @@ _nbt_to_datatype = {
 	'TAG_Long_Array': 'long_array'
 }
 
+_int_to_nbt = [None, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]
+_int_to_datatype = [None, 'byte', 'short', 'int', 'long', 'float', 'double', 'byte_array', 'string', 'list', 'compound', 'int_array', 'long_array']
+
 
 def datatype_to_nbt(datatype: str) -> Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]:
 	return _datatype_to_nbt[datatype]
@@ -67,11 +70,11 @@ def nbt_to_datatype(
 	return _nbt_to_datatype[nbt.__class__.__name__]
 
 
-def index_nbt(nbt: Union[TAG_Compound, TAG_List], nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]]):
+def index_nbt(nbt: NBTFile, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]]):
 	outer_name, outer_type, nbt_path = nbt_path
-	# TODO: check the outer name
-	if not isinstance(nbt, datatype_to_nbt(outer_type)):
+	if not isinstance(nbt, NBTFile) or nbt.name != outer_name or not isinstance(nbt.value, datatype_to_nbt(outer_type)):
 		return None
+
 	for path, nbt_type in nbt_path:
 		if isinstance(path, int) and isinstance(nbt, TAG_List) and len(nbt) > path:
 			nbt = nbt[path]
@@ -80,6 +83,80 @@ def index_nbt(nbt: Union[TAG_Compound, TAG_List], nbt_path: Tuple[str, str, List
 		else:
 			return None
 	return nbt
+
+
+def nbt_from_list(
+	outer_name: str,
+	outer_type: str,
+	nbt_list: List[
+		Tuple[
+			str,
+			str,
+			List[
+				Tuple[
+					Union[str, int], str
+				]
+			],
+			Union[str, int],
+			Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]
+		]
+	]
+) -> NBTFile:
+
+	nbt_object = datatype_to_nbt(outer_type)()
+
+	for nbt_entry in nbt_list:
+		outer_name_, outer_type_, nbt_path, data_path, data = nbt_entry
+		if outer_name == outer_name_ and outer_type == outer_type_:
+			nbt_temp: Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array] = nbt_object
+			for path, nbt_type in nbt_path:
+				# if the nested NBT object does not exist then create it
+				if isinstance(nbt_temp, TAG_Compound):
+					if path not in nbt_temp or nbt_to_datatype(nbt_temp[path]) != nbt_type:
+						nbt_temp[path] = datatype_to_nbt(nbt_type)()
+
+				elif isinstance(nbt_temp, TAG_List):
+					# if the list is a different type to nbt_type replace it with nbt_type
+					if _int_to_datatype[int(nbt_temp.list_data_type)] != nbt_type and len(nbt_temp) > 0:
+						nbt_temp.list_data_type = datatype_to_nbt(nbt_type).tag_id
+						for index in range(len(nbt_temp)):
+							nbt_temp[index] = datatype_to_nbt(nbt_type)()
+
+					# pad out the list to the length of path
+					if path + 1 > len(nbt_temp):
+						# pad out the list to the length of the index
+						for _ in range(path + 1 - len(nbt_temp)):
+							nbt_temp.insert(datatype_to_nbt(nbt_type)())
+					# we now should have a TAG_List of the same type as nbt_type and length as path
+
+				nbt_temp = nbt_temp[path]
+
+			if isinstance(nbt_temp, TAG_Compound):
+				nbt_temp[data_path] = data
+
+			elif isinstance(nbt_temp, TAG_List):
+				# if the list is a different type to data replace it with type(data)
+				if nbt_temp.list_data_type != data.tag_id and len(nbt_temp) > 0:
+					nbt_temp.list_data_type = data.tag_id
+					for index in range(len(nbt_temp)):
+						nbt_temp[index] = data.__class__()
+
+				# pad out the list to the length of path
+				if data_path + 1 > len(nbt_temp):
+					# pad out the list to the length of the index
+					for _ in range(data_path + 1 - len(nbt_temp)):
+						nbt_temp.insert(datatype_to_nbt(nbt_type)())
+				# we now should have a TAG_List of the same type as nbt_type and length as data_path
+				nbt_temp[data_path] = data
+
+			# TODO:
+			# elif isinstance(nbt_temp, TAG_Byte_Array) and isinstance(data, TAG_Byte):
+			# 	# pad to the length of data_path if less than the current length
+			# 	# nbt_temp[data_path] = data.value
+			# elif isinstance(nbt_temp, TAG_Int_Array) and isinstance(data, TAG_Int):
+			# elif isinstance(nbt_temp, TAG_Long_Array) and isinstance(data, TAG_Long):
+
+	return NBTFile(nbt_object)
 
 
 def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, location: Tuple[int, int, int] = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
@@ -145,20 +222,31 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 
 		if 'nbt' in spec:
 			namespace, base_name = spec['nbt_identifier'].split(':', 1)
-			extra_output = BlockEntity(namespace, base_name, (0, 0, 0), from_spec(spec['nbt']))
-			# not quite sure how to handle coordinates here. I could populate it will location but this is not always given
+
+			nbt = nbt_from_list(
+				spec.get('outer_name', ''),
+				spec.get('outer_type', 'compound'),
+				new_data['nbt']
+			)
+
+			extra_output = BlockEntity(namespace, base_name, (0, 0, 0), nbt)
+			# not quite sure how to handle coordinates here. I could populate it with location but this is not always given
 			# it makes sense to me to have the wrapper program set the coordinates so none are missed.
-			# for new_nbt in new['nbt']:
-				# merge into extra_output
-			# TODO: merge new['nbt'] into extra_output
 
 	elif output_type == 'entity':
 		# we should have an entity output
 		# create the entity object based on output_name and new['nbt']
 		namespace, base_name = output_name.split(':', 1)
 		spec = output_version.get_specification('entity', namespace, base_name)
-		output = Entity(namespace, base_name, (0.0, 0.0, 0.0), from_spec(spec['nbt']))
-		# TODO: merge new['nbt'] into nbt_output and translate to an entity
+
+		nbt = nbt_from_list(
+			spec.get('outer_name', ''),
+			spec.get('outer_type', 'compound'),
+			new_data['nbt']
+		)
+
+		output = Entity(namespace, base_name, (0.0, 0.0, 0.0), nbt)
+
 	else:
 		raise Exception
 	return output, extra_output, extra_needed, cacheable
@@ -175,7 +263,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 	:return:
 		output_name - string of the object being output
 		output_type - string of the type output name is (should be 'block' or 'entity')
-		new - a dictionary that looks like this {'properties': {}, 'nbt': # TODO: work out NBT}
+		new - a dictionary that looks like this {'properties': {}, 'nbt': []}
 		extra_needed - bool. Specifies if more data is needed (ie if location needs to be given to do a full map)
 		cacheable - bool. Specifies if the input object is cachable. Only true for simple Blocks without BlockEntities
 	"""
