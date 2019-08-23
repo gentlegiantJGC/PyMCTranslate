@@ -22,16 +22,9 @@
     "defaults": {
         "block_data": "0"
     },
-    "nbt_identifier": "minecraft:noteblock",
-    "nbt": {
-        "": {
-            "type": "compound",
-            "val": {
-                "note": {
-                    "type": "byte",
-                    "val": 0
-                }
-            }
-        }
-    }
+    "nbt_identifier": [
+        "minecraft",
+        "noteblock"
+    ],
+    "snbt": "{note:0b}"
 }

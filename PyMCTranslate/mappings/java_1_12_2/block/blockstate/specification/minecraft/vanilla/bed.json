@@ -39,11 +39,9 @@
         "part": "foot",
         "color": "red"
     },
-    "nbt_identifier": "minecraft:bed",
-    "nbt": {
-        "": {
-            "type": "compound",
-            "val": {}
-        }
-    }
+    "nbt_identifier": [
+        "minecraft",
+        "bed"
+    ],
+    "snbt": "{}"
 }

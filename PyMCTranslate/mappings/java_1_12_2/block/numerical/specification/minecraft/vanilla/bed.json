@@ -22,16 +22,9 @@
     "defaults": {
         "block_data": "0"
     },
-    "nbt_identifier": "minecraft:bed",
-    "nbt": {
-        "": {
-            "type": "compound",
-            "val": {
-                "color": {
-                    "type": "int",
-                    "val": 14
-                }
-            }
-        }
-    }
+    "nbt_identifier": [
+        "minecraft",
+        "bed"
+    ],
+    "snbt": "{color: 14}"
 }
