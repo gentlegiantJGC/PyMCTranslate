@@ -1,4 +1,4 @@
-# Minecraft-Universal-Block-Mappings
+# PyMCTranslate
 This project is a library of block mappings that can be used to convert from any Minecraft format into any other Minecraft format. (That is the plan anyway).
 
 It does this by converting the local block definition into the Universal format which is a format separate to any version and then from that into the output format.
