@@ -100,10 +100,14 @@ def nbt_from_list(
 			Union[str, int],
 			Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]
 		]
-	]
+	],
+	default_template: str = None
 ) -> NBTFile:
 
-	nbt_object = datatype_to_nbt(outer_type)()
+	if default_template is not None:
+		nbt_object = amulet_nbt.from_spec(default_template)
+	else:
+		nbt_object = datatype_to_nbt(outer_type)()
 
 	for nbt_entry in nbt_list:
 		outer_name_, outer_type_, nbt_path, data_path, data = nbt_entry
@@ -159,7 +163,7 @@ def nbt_from_list(
 	return NBTFile(nbt_object)
 
 
-def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, location: Tuple[int, int, int] = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
+def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, location: Tuple[int, int, int] = None, extra_input: BlockEntity = None, pre_populate_defaults: bool = True) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
 	"""
 		A function to translate the object input to the output version
 
@@ -220,14 +224,23 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 			properties[key] = val
 		output = Block(None, namespace, base_name, properties)
 
-		if 'nbt' in spec:
-			namespace, base_name = spec['nbt_identifier'].split(':', 1)
+		if 'snbt' in spec:
+			namespace, base_name = spec.get('nbt_identifier', ['unknown', 'unknown'])
 
-			nbt = nbt_from_list(
-				spec.get('outer_name', ''),
-				spec.get('outer_type', 'compound'),
-				new_data['nbt']
-			)
+			if pre_populate_defaults:
+				nbt = nbt_from_list(
+					spec.get('outer_name', ''),
+					spec.get('outer_type', 'compound'),
+					new_data['nbt'],
+					spec.get('snbt', '{}')
+				)
+
+			else:
+				nbt = nbt_from_list(
+					spec.get('outer_name', ''),
+					spec.get('outer_type', 'compound'),
+					new_data['nbt']
+				)
 
 			extra_output = BlockEntity(namespace, base_name, (0, 0, 0), nbt)
 			# not quite sure how to handle coordinates here. I could populate it with location but this is not always given
@@ -239,11 +252,20 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 		namespace, base_name = output_name.split(':', 1)
 		spec = output_version.get_specification('entity', namespace, base_name)
 
-		nbt = nbt_from_list(
-			spec.get('outer_name', ''),
-			spec.get('outer_type', 'compound'),
-			new_data['nbt']
-		)
+		if pre_populate_defaults:
+			nbt = nbt_from_list(
+				spec.get('outer_name', ''),
+				spec.get('outer_type', 'compound'),
+				new_data['nbt'],
+				spec.get('snbt', '{}')
+			)
+
+		else:
+			nbt = nbt_from_list(
+				spec.get('outer_name', ''),
+				spec.get('outer_type', 'compound'),
+				new_data['nbt']
+			)
 
 		output = Entity(namespace, base_name, (0.0, 0.0, 0.0), nbt)
 
