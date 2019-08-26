@@ -1,15 +1,13 @@
 {
     "properties": {
         "portal_axis": [
-            "unknown",
-            "x",
-            "z"
+            "\"unknown\"",
+            "\"x\"",
+            "\"z\""
         ]
     },
-    "properties_nbt": {
-        "portal_axis": "string"
-    },
     "defaults": {
-        "portal_axis": "unknown"
-    }
+        "portal_axis": "\"unknown\""
+    },
+    "nbt_properties": true
 }

@@ -1,24 +1,21 @@
 {
     "properties": {
         "button_pressed_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "facing_direction": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
         ]
     },
-    "properties_nbt": {
-        "button_pressed_bit": "byte",
-        "facing_direction": "int"
-    },
     "defaults": {
-        "button_pressed_bit": 0,
-        "facing_direction": 0
-    }
+        "button_pressed_bit": "0b",
+        "facing_direction": "0"
+    },
+    "nbt_properties": true
 }

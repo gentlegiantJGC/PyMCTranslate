@@ -1,25 +1,22 @@
 {
     "properties": {
         "cauldron_liquid": [
-            "water",
-            "lava"
+            "\"water\"",
+            "\"lava\""
         ],
         "fill_level": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
         ]
     },
-    "properties_nbt": {
-        "cauldron_liquid": "string",
-        "fill_level": "int"
-    },
     "defaults": {
-        "cauldron_liquid": "water",
-        "fill_level": 0
-    }
+        "cauldron_liquid": "\"water\"",
+        "fill_level": "0"
+    },
+    "nbt_properties": true
 }

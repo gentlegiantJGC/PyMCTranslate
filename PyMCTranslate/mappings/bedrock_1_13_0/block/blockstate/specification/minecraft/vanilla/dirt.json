@@ -1,14 +1,12 @@
 {
     "properties": {
         "dirt_type": [
-            "normal",
-            "coarse"
+            "\"normal\"",
+            "\"coarse\""
         ]
     },
-    "properties_nbt": {
-        "dirt_type": "string"
-    },
     "defaults": {
-        "dirt_type": "normal"
-    }
+        "dirt_type": "\"normal\""
+    },
+    "nbt_properties": true
 }

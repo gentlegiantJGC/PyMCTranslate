@@ -1,23 +1,20 @@
 {
     "properties": {
         "age": [
-            0,
-            1,
-            2
+            "0",
+            "1",
+            "2"
         ],
         "direction": [
-            0,
-            1,
-            2,
-            3
+            "0",
+            "1",
+            "2",
+            "3"
         ]
     },
-    "properties_nbt": {
-        "age": "int",
-        "direction": "int"
-    },
     "defaults": {
-        "age": 0,
-        "direction": 0
-    }
+        "age": "0",
+        "direction": "0"
+    },
+    "nbt_properties": true
 }

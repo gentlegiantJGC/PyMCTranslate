@@ -1,26 +1,23 @@
 {
     "properties": {
         "stone_slab_type_3": [
-            "end_stone_brick",
-            "smooth_red_sandstone",
-            "polished_andesite",
-            "andesite",
-            "diorite",
-            "polished_diorite",
-            "granite",
-            "polished_granite"
+            "\"end_stone_brick\"",
+            "\"smooth_red_sandstone\"",
+            "\"polished_andesite\"",
+            "\"andesite\"",
+            "\"diorite\"",
+            "\"polished_diorite\"",
+            "\"granite\"",
+            "\"polished_granite\""
         ],
         "top_slot_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "stone_slab_type_3": "string",
-        "top_slot_bit": "byte"
-    },
     "defaults": {
-        "stone_slab_type_3": "end_stone_brick",
-        "top_slot_bit": 0
-    }
+        "stone_slab_type_3": "\"end_stone_brick\"",
+        "top_slot_bit": "0b"
+    },
+    "nbt_properties": true
 }

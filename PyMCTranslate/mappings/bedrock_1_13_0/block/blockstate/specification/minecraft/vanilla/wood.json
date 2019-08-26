@@ -1,31 +1,27 @@
 {
     "properties": {
         "pillar_axis": [
-            "y",
-            "x",
-            "z"
+            "\"y\"",
+            "\"x\"",
+            "\"z\""
         ],
         "stripped_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "wood_type": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle",
-            "acacia",
-            "dark_oak"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\""
         ]
     },
-    "properties_nbt": {
-        "pillar_axis": "string",
-        "stripped_bit": "byte",
-        "wood_type": "string"
-    },
     "defaults": {
-        "pillar_axis": "y",
-        "stripped_bit": 0,
-        "wood_type": "oak"
-    }
+        "pillar_axis": "\"y\"",
+        "stripped_bit": "0b",
+        "wood_type": "\"oak\""
+    },
+    "nbt_properties": true
 }

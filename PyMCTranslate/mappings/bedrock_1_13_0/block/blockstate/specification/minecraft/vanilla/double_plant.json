@@ -1,24 +1,21 @@
 {
     "properties": {
         "double_plant_type": [
-            "sunflower",
-            "syringa",
-            "grass",
-            "fern",
-            "rose",
-            "paeonia"
+            "\"sunflower\"",
+            "\"syringa\"",
+            "\"grass\"",
+            "\"fern\"",
+            "\"rose\"",
+            "\"paeonia\""
         ],
         "upper_block_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "double_plant_type": "string",
-        "upper_block_bit": "byte"
-    },
     "defaults": {
-        "double_plant_type": "sunflower",
-        "upper_block_bit": 0
-    }
+        "double_plant_type": "\"sunflower\"",
+        "upper_block_bit": "0b"
+    },
+    "nbt_properties": true
 }

@@ -1,28 +1,24 @@
 {
     "properties": {
         "old_leaf_type": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\""
         ],
         "persistent_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "update_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "old_leaf_type": "string",
-        "persistent_bit": "byte",
-        "update_bit": "byte"
-    },
     "defaults": {
-        "old_leaf_type": "oak",
-        "persistent_bit": 0,
-        "update_bit": 0
-    }
+        "old_leaf_type": "\"oak\"",
+        "persistent_bit": "0b",
+        "update_bit": "0b"
+    },
+    "nbt_properties": true
 }

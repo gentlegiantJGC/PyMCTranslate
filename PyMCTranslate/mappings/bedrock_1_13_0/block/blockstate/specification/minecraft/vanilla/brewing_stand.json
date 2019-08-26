@@ -1,26 +1,22 @@
 {
     "properties": {
         "brewing_stand_slot_a_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "brewing_stand_slot_b_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "brewing_stand_slot_c_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "brewing_stand_slot_a_bit": "byte",
-        "brewing_stand_slot_b_bit": "byte",
-        "brewing_stand_slot_c_bit": "byte"
-    },
     "defaults": {
-        "brewing_stand_slot_a_bit": 0,
-        "brewing_stand_slot_b_bit": 0,
-        "brewing_stand_slot_c_bit": 0
-    }
+        "brewing_stand_slot_a_bit": "0b",
+        "brewing_stand_slot_b_bit": "0b",
+        "brewing_stand_slot_c_bit": "0b"
+    },
+    "nbt_properties": true
 }

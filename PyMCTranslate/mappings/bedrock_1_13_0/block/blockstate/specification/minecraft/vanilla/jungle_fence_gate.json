@@ -1,28 +1,24 @@
 {
     "properties": {
         "direction": [
-            0,
-            1,
-            2,
-            3
+            "0",
+            "1",
+            "2",
+            "3"
         ],
         "in_wall_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "open_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "direction": "int",
-        "in_wall_bit": "byte",
-        "open_bit": "byte"
-    },
     "defaults": {
-        "direction": 0,
-        "in_wall_bit": 0,
-        "open_bit": 0
-    }
+        "direction": "0",
+        "in_wall_bit": "0b",
+        "open_bit": "0b"
+    },
+    "nbt_properties": true
 }

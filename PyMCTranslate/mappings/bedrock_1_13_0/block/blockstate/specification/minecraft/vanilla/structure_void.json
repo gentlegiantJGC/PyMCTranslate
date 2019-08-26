@@ -1,14 +1,12 @@
 {
     "properties": {
         "structure_void_type": [
-            "void",
-            "air"
+            "\"void\"",
+            "\"air\""
         ]
     },
-    "properties_nbt": {
-        "structure_void_type": "string"
-    },
     "defaults": {
-        "structure_void_type": "void"
-    }
+        "structure_void_type": "\"void\""
+    },
+    "nbt_properties": true
 }

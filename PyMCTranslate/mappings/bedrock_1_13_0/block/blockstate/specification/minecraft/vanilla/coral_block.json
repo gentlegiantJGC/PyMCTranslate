@@ -1,23 +1,20 @@
 {
     "properties": {
         "coral_color": [
-            "blue",
-            "pink",
-            "purple",
-            "red",
-            "yellow"
+            "\"blue\"",
+            "\"pink\"",
+            "\"purple\"",
+            "\"red\"",
+            "\"yellow\""
         ],
         "dead_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "coral_color": "string",
-        "dead_bit": "byte"
-    },
     "defaults": {
-        "coral_color": "blue",
-        "dead_bit": 0
-    }
+        "coral_color": "\"blue\"",
+        "dead_bit": "0b"
+    },
+    "nbt_properties": true
 }

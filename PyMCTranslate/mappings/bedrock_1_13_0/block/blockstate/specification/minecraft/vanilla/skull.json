@@ -1,24 +1,21 @@
 {
     "properties": {
         "facing_direction": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
         ],
         "no_drop_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "facing_direction": "int",
-        "no_drop_bit": "byte"
-    },
     "defaults": {
-        "facing_direction": 0,
-        "no_drop_bit": 0
-    }
+        "facing_direction": "0",
+        "no_drop_bit": "0b"
+    },
+    "nbt_properties": true
 }

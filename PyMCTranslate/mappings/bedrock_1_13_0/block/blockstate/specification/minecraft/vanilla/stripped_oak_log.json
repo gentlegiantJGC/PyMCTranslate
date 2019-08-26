@@ -1,15 +1,13 @@
 {
     "properties": {
         "pillar_axis": [
-            "y",
-            "x",
-            "z"
+            "\"y\"",
+            "\"x\"",
+            "\"z\""
         ]
     },
-    "properties_nbt": {
-        "pillar_axis": "string"
-    },
     "defaults": {
-        "pillar_axis": "y"
-    }
+        "pillar_axis": "\"y\""
+    },
+    "nbt_properties": true
 }

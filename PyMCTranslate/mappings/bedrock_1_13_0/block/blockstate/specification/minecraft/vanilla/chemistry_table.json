@@ -1,24 +1,21 @@
 {
     "properties": {
         "chemistry_table_type": [
-            "compound_creator",
-            "material_reducer",
-            "element_constructor",
-            "lab_table"
+            "\"compound_creator\"",
+            "\"material_reducer\"",
+            "\"element_constructor\"",
+            "\"lab_table\""
         ],
         "direction": [
-            0,
-            1,
-            2,
-            3
+            "0",
+            "1",
+            "2",
+            "3"
         ]
     },
-    "properties_nbt": {
-        "chemistry_table_type": "string",
-        "direction": "int"
-    },
     "defaults": {
-        "chemistry_table_type": "compound_creator",
-        "direction": 0
-    }
+        "chemistry_table_type": "\"compound_creator\"",
+        "direction": "0"
+    },
+    "nbt_properties": true
 }

@@ -1,16 +1,14 @@
 {
     "properties": {
         "age": [
-            0,
-            1,
-            2,
-            3
+            "0",
+            "1",
+            "2",
+            "3"
         ]
     },
-    "properties_nbt": {
-        "age": "int"
-    },
     "defaults": {
-        "age": 0
-    }
+        "age": "0"
+    },
+    "nbt_properties": true
 }

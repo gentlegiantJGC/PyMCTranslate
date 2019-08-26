@@ -1,21 +1,18 @@
 {
     "properties": {
         "new_log_type": [
-            "acacia",
-            "dark_oak"
+            "\"acacia\"",
+            "\"dark_oak\""
         ],
         "pillar_axis": [
-            "y",
-            "x",
-            "z"
+            "\"y\"",
+            "\"x\"",
+            "\"z\""
         ]
     },
-    "properties_nbt": {
-        "new_log_type": "string",
-        "pillar_axis": "string"
-    },
     "defaults": {
-        "new_log_type": "acacia",
-        "pillar_axis": "y"
-    }
+        "new_log_type": "\"acacia\"",
+        "pillar_axis": "\"y\""
+    },
+    "nbt_properties": true
 }

@@ -1,26 +1,23 @@
 {
     "properties": {
         "covered_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "height": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
         ]
     },
-    "properties_nbt": {
-        "covered_bit": "byte",
-        "height": "int"
-    },
     "defaults": {
-        "covered_bit": 0,
-        "height": 0
-    }
+        "covered_bit": "0b",
+        "height": "0"
+    },
+    "nbt_properties": true
 }

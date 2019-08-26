@@ -1,24 +1,21 @@
 {
     "properties": {
         "color_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "torch_facing_direction": [
-            "unknown",
-            "west",
-            "east",
-            "north",
-            "south",
-            "top"
+            "\"unknown\"",
+            "\"west\"",
+            "\"east\"",
+            "\"north\"",
+            "\"south\"",
+            "\"top\""
         ]
     },
-    "properties_nbt": {
-        "color_bit": "byte",
-        "torch_facing_direction": "string"
-    },
     "defaults": {
-        "color_bit": 0,
-        "torch_facing_direction": "unknown"
-    }
+        "color_bit": "0b",
+        "torch_facing_direction": "\"unknown\""
+    },
+    "nbt_properties": true
 }

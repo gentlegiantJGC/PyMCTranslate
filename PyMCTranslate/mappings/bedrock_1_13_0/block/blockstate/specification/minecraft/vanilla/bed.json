@@ -1,28 +1,24 @@
 {
     "properties": {
         "direction": [
-            0,
-            1,
-            2,
-            3
+            "0",
+            "1",
+            "2",
+            "3"
         ],
         "head_piece_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "occupied_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "direction": "int",
-        "head_piece_bit": "byte",
-        "occupied_bit": "byte"
-    },
     "defaults": {
-        "direction": 0,
-        "head_piece_bit": 0,
-        "occupied_bit": 0
-    }
+        "direction": "0",
+        "head_piece_bit": "0b",
+        "occupied_bit": "0b"
+    },
+    "nbt_properties": true
 }

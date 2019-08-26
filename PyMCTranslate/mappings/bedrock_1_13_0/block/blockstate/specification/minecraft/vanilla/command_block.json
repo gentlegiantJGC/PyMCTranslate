@@ -1,24 +1,21 @@
 {
     "properties": {
         "conditional_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "facing_direction": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
         ]
     },
-    "properties_nbt": {
-        "conditional_bit": "byte",
-        "facing_direction": "int"
-    },
     "defaults": {
-        "conditional_bit": 0,
-        "facing_direction": 0
-    }
+        "conditional_bit": "0b",
+        "facing_direction": "0"
+    },
+    "nbt_properties": true
 }

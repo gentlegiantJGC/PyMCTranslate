@@ -1,14 +1,12 @@
 {
     "properties": {
         "update_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "update_bit": "byte"
-    },
     "defaults": {
-        "update_bit": 0
-    }
+        "update_bit": "0b"
+    },
+    "nbt_properties": true
 }

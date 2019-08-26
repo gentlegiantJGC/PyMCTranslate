@@ -1,14 +1,12 @@
 {
     "properties": {
         "hanging": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "hanging": "byte"
-    },
     "defaults": {
-        "hanging": 0
-    }
+        "hanging": "0b"
+    },
+    "nbt_properties": true
 }

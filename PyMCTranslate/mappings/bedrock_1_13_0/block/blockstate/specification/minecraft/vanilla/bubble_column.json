@@ -1,14 +1,12 @@
 {
     "properties": {
         "drag_down": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "drag_down": "byte"
-    },
     "defaults": {
-        "drag_down": 0
-    }
+        "drag_down": "0b"
+    },
+    "nbt_properties": true
 }

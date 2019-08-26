@@ -1,18 +1,16 @@
 {
     "properties": {
         "structure_block_type": [
-            "data",
-            "save",
-            "load",
-            "corner",
-            "invalid",
-            "export"
+            "\"data\"",
+            "\"save\"",
+            "\"load\"",
+            "\"corner\"",
+            "\"invalid\"",
+            "\"export\""
         ]
     },
-    "properties_nbt": {
-        "structure_block_type": "string"
-    },
     "defaults": {
-        "structure_block_type": "data"
-    }
+        "structure_block_type": "\"data\""
+    },
+    "nbt_properties": true
 }

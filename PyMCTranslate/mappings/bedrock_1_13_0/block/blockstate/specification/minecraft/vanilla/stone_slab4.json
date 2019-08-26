@@ -1,23 +1,20 @@
 {
     "properties": {
         "stone_slab_type_4": [
-            "mossy_stone_brick",
-            "smooth_quartz",
-            "stone",
-            "cut_sandstone",
-            "cut_red_sandstone"
+            "\"mossy_stone_brick\"",
+            "\"smooth_quartz\"",
+            "\"stone\"",
+            "\"cut_sandstone\"",
+            "\"cut_red_sandstone\""
         ],
         "top_slot_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "stone_slab_type_4": "string",
-        "top_slot_bit": "byte"
-    },
     "defaults": {
-        "stone_slab_type_4": "mossy_stone_brick",
-        "top_slot_bit": 0
-    }
+        "stone_slab_type_4": "\"mossy_stone_brick\"",
+        "top_slot_bit": "0b"
+    },
+    "nbt_properties": true
 }

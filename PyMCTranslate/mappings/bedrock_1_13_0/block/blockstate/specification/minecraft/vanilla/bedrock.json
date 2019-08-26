@@ -1,14 +1,12 @@
 {
     "properties": {
         "infiniburn_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "infiniburn_bit": "byte"
-    },
     "defaults": {
-        "infiniburn_bit": 0
-    }
+        "infiniburn_bit": "0b"
+    },
+    "nbt_properties": true
 }

@@ -1,24 +1,21 @@
 {
     "properties": {
         "rail_data_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "rail_direction": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
         ]
     },
-    "properties_nbt": {
-        "rail_data_bit": "byte",
-        "rail_direction": "int"
-    },
     "defaults": {
-        "rail_data_bit": 0,
-        "rail_direction": 0
-    }
+        "rail_data_bit": "0b",
+        "rail_direction": "0"
+    },
+    "nbt_properties": true
 }

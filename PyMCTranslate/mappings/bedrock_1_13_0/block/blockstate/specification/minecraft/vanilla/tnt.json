@@ -1,20 +1,17 @@
 {
     "properties": {
         "allow_underwater_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "explode_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "allow_underwater_bit": "byte",
-        "explode_bit": "byte"
-    },
     "defaults": {
-        "allow_underwater_bit": 0,
-        "explode_bit": 0
-    }
+        "allow_underwater_bit": "0b",
+        "explode_bit": "0b"
+    },
+    "nbt_properties": true
 }

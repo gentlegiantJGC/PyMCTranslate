@@ -1,28 +1,24 @@
 {
     "properties": {
         "attached_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "direction": [
-            0,
-            1,
-            2,
-            3
+            "0",
+            "1",
+            "2",
+            "3"
         ],
         "powered_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ]
     },
-    "properties_nbt": {
-        "attached_bit": "byte",
-        "direction": "int",
-        "powered_bit": "byte"
-    },
     "defaults": {
-        "attached_bit": 0,
-        "direction": 0,
-        "powered_bit": 0
-    }
+        "attached_bit": "0b",
+        "direction": "0",
+        "powered_bit": "0b"
+    },
+    "nbt_properties": true
 }

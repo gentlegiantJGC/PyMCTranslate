@@ -1,15 +1,13 @@
 {
     "properties": {
         "prismarine_block_type": [
-            "default",
-            "dark",
-            "bricks"
+            "\"default\"",
+            "\"dark\"",
+            "\"bricks\""
         ]
     },
-    "properties_nbt": {
-        "prismarine_block_type": "string"
-    },
     "defaults": {
-        "prismarine_block_type": "default"
-    }
+        "prismarine_block_type": "\"default\""
+    },
+    "nbt_properties": true
 }

@@ -1,14 +1,12 @@
 {
     "properties": {
         "sand_type": [
-            "normal",
-            "red"
+            "\"normal\"",
+            "\"red\""
         ]
     },
-    "properties_nbt": {
-        "sand_type": "string"
-    },
     "defaults": {
-        "sand_type": "normal"
-    }
+        "sand_type": "\"normal\""
+    },
+    "nbt_properties": true
 }

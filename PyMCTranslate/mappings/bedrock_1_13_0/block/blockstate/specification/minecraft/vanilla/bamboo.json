@@ -1,27 +1,23 @@
 {
     "properties": {
         "age_bit": [
-            0,
-            1
+            "0b",
+            "1b"
         ],
         "bamboo_leaf_size": [
-            "no_leaves",
-            "small_leaves",
-            "large_leaves"
+            "\"no_leaves\"",
+            "\"small_leaves\"",
+            "\"large_leaves\""
         ],
         "bamboo_stalk_thickness": [
-            "thin",
-            "thick"
+            "\"thin\"",
+            "\"thick\""
         ]
     },
-    "properties_nbt": {
-        "age_bit": "byte",
-        "bamboo_leaf_size": "string",
-        "bamboo_stalk_thickness": "string"
-    },
     "defaults": {
-        "age_bit": 0,
-        "bamboo_leaf_size": "no_leaves",
-        "bamboo_stalk_thickness": "thin"
-    }
+        "age_bit": "0b",
+        "bamboo_leaf_size": "\"no_leaves\"",
+        "bamboo_stalk_thickness": "\"thin\""
+    },
+    "nbt_properties": true
 }
