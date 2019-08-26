@@ -220,6 +220,12 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 		namespace, base_name = output_name.split(':', 1)
 		spec = output_version.get_specification('block', namespace, base_name)
 		properties = spec.get('defaults', {})
+
+		# cast to NBT if needed
+		if 'properties_nbt' in spec:
+			for property_name, property_type in spec['properties_nbt'].items():
+				properties[property_name] = datatype_to_nbt(property_type)(properties[property_name])
+
 		for key, val in new_data['properties'].items():
 			properties[key] = val
 		output = Block(None, namespace, base_name, properties)
