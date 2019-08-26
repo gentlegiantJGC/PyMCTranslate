@@ -35,6 +35,11 @@ if __name__ == '__main__':
 							print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 							continue
 
+						if not universal_output.namespace.startswith('universal_'):
+							print(f'Universal is not universal_ {platform_name} {version_number}')
+							print(f'Blockstate input: {input_blockstate}')
+							print(f'Universal output: {universal_output}')
+
 						if numerical_version is not None:
 							# universal to abstract
 							try:
@@ -63,6 +68,13 @@ if __name__ == '__main__':
 						else:
 							numerical_output = None
 							universal_output2 = universal_output
+
+						if not universal_output2.namespace.startswith('universal_'):
+							print(f'Universal is not universal_ {platform_name} {version_number}')
+							print(f'Blockstate input: {input_blockstate}')
+							print(f'Universal output: {universal_output}')
+							print(f'Numerical output: {numerical_output}')
+							print(f'Universal output 2: {universal_output2}')
 
 						# universal to numerical
 						try:
