@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "output_lit_bit": [
+            0,
+            1
+        ],
+        "output_subtract_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "direction": "int",
+        "output_lit_bit": "byte",
+        "output_subtract_bit": "byte"
+    },
+    "defaults": {
+        "direction": 0,
+        "output_lit_bit": 0,
+        "output_subtract_bit": 0
+    }
+}

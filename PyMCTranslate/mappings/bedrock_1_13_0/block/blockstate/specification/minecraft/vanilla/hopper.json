@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "facing_direction": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "toggle_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "facing_direction": "int",
+        "toggle_bit": "byte"
+    },
+    "defaults": {
+        "facing_direction": 0,
+        "toggle_bit": 0
+    }
+}

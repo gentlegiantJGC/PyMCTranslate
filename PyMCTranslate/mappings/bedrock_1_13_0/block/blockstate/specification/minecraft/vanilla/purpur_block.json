@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "chisel_type": [
+            "default",
+            "chiseled",
+            "lines",
+            "smooth"
+        ],
+        "pillar_axis": [
+            "y",
+            "x",
+            "z"
+        ]
+    },
+    "properties_nbt": {
+        "chisel_type": "string",
+        "pillar_axis": "string"
+    },
+    "defaults": {
+        "chisel_type": "default",
+        "pillar_axis": "y"
+    }
+}

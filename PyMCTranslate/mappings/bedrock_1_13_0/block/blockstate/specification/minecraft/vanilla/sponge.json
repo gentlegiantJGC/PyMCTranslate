@@ -1,0 +1,14 @@
+{
+    "properties": {
+        "sponge_type": [
+            "dry",
+            "wet"
+        ]
+    },
+    "properties_nbt": {
+        "sponge_type": "string"
+    },
+    "defaults": {
+        "sponge_type": "dry"
+    }
+}

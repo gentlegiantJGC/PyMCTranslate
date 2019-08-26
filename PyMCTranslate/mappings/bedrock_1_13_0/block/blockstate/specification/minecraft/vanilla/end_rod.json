@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "facing_direction": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "properties_nbt": {
+        "facing_direction": "int"
+    },
+    "defaults": {
+        "facing_direction": 0
+    }
+}

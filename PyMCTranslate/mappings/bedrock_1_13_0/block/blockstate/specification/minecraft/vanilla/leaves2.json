@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "new_leaf_type": [
+            "acacia",
+            "dark_oak"
+        ],
+        "persistent_bit": [
+            0,
+            1
+        ],
+        "update_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "new_leaf_type": "string",
+        "persistent_bit": "byte",
+        "update_bit": "byte"
+    },
+    "defaults": {
+        "new_leaf_type": "acacia",
+        "persistent_bit": 0,
+        "update_bit": 0
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "damage": [
+            "undamaged",
+            "slightly_damaged",
+            "very_damaged",
+            "broken"
+        ],
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "properties_nbt": {
+        "damage": "string",
+        "direction": "int"
+    },
+    "defaults": {
+        "damage": "undamaged",
+        "direction": 0
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "stone_slab_type_2": [
+            "red_sandstone",
+            "purpur",
+            "prismarine_rough",
+            "prismarine_dark",
+            "prismarine_brick",
+            "mossy_cobblestone",
+            "smooth_sandstone",
+            "red_nether_brick"
+        ],
+        "top_slot_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "stone_slab_type_2": "string",
+        "top_slot_bit": "byte"
+    },
+    "defaults": {
+        "stone_slab_type_2": "red_sandstone",
+        "top_slot_bit": 0
+    }
+}

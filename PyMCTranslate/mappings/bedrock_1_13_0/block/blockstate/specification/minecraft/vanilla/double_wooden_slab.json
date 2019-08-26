@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "top_slot_bit": [
+            0,
+            1
+        ],
+        "wood_type": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle",
+            "acacia",
+            "dark_oak"
+        ]
+    },
+    "properties_nbt": {
+        "top_slot_bit": "byte",
+        "wood_type": "string"
+    },
+    "defaults": {
+        "top_slot_bit": 0,
+        "wood_type": "oak"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "end_portal_eye_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "direction": "int",
+        "end_portal_eye_bit": "byte"
+    },
+    "defaults": {
+        "direction": 0,
+        "end_portal_eye_bit": 0
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "properties": {
+        "age_bit": [
+            0,
+            1
+        ],
+        "bamboo_leaf_size": [
+            "no_leaves",
+            "small_leaves",
+            "large_leaves"
+        ],
+        "bamboo_stalk_thickness": [
+            "thin",
+            "thick"
+        ]
+    },
+    "properties_nbt": {
+        "age_bit": "byte",
+        "bamboo_leaf_size": "string",
+        "bamboo_stalk_thickness": "string"
+    },
+    "defaults": {
+        "age_bit": 0,
+        "bamboo_leaf_size": "no_leaves",
+        "bamboo_stalk_thickness": "thin"
+    }
+}

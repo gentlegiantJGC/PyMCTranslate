@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "old_leaf_type": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle"
+        ],
+        "persistent_bit": [
+            0,
+            1
+        ],
+        "update_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "old_leaf_type": "string",
+        "persistent_bit": "byte",
+        "update_bit": "byte"
+    },
+    "defaults": {
+        "old_leaf_type": "oak",
+        "persistent_bit": 0,
+        "update_bit": 0
+    }
+}

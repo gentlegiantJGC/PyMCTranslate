@@ -1,0 +1,34 @@
+{
+    "properties": {
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "door_hinge_bit": [
+            0,
+            1
+        ],
+        "open_bit": [
+            0,
+            1
+        ],
+        "upper_block_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "direction": "int",
+        "door_hinge_bit": "byte",
+        "open_bit": "byte",
+        "upper_block_bit": "byte"
+    },
+    "defaults": {
+        "direction": 0,
+        "door_hinge_bit": 0,
+        "open_bit": 0,
+        "upper_block_bit": 0
+    }
+}

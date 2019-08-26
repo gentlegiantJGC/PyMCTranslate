@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "color_bit": [
+            0,
+            1
+        ],
+        "torch_facing_direction": [
+            "unknown",
+            "west",
+            "east",
+            "north",
+            "south",
+            "top"
+        ]
+    },
+    "properties_nbt": {
+        "color_bit": "byte",
+        "torch_facing_direction": "string"
+    },
+    "defaults": {
+        "color_bit": 0,
+        "torch_facing_direction": "unknown"
+    }
+}

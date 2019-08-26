@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "wood_type": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle",
+            "acacia",
+            "dark_oak"
+        ]
+    },
+    "properties_nbt": {
+        "wood_type": "string"
+    },
+    "defaults": {
+        "wood_type": "oak"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "properties": {
+        "composter_fill_level": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "properties_nbt": {
+        "composter_fill_level": "int"
+    },
+    "defaults": {
+        "composter_fill_level": 0
+    }
+}

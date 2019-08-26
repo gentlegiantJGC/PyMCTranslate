@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "age_bit": [
+            0,
+            1
+        ],
+        "sapling_type": [
+            "oak",
+            "spruce",
+            "birch",
+            "jungle",
+            "acacia",
+            "dark_oak"
+        ]
+    },
+    "properties_nbt": {
+        "age_bit": "byte",
+        "sapling_type": "string"
+    },
+    "defaults": {
+        "age_bit": 0,
+        "sapling_type": "oak"
+    }
+}

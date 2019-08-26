@@ -1,0 +1,32 @@
+{
+    "properties": {
+        "attached_bit": [
+            0,
+            1
+        ],
+        "disarmed_bit": [
+            0,
+            1
+        ],
+        "powered_bit": [
+            0,
+            1
+        ],
+        "suspended_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "attached_bit": "byte",
+        "disarmed_bit": "byte",
+        "powered_bit": "byte",
+        "suspended_bit": "byte"
+    },
+    "defaults": {
+        "attached_bit": 0,
+        "disarmed_bit": 0,
+        "powered_bit": 0,
+        "suspended_bit": 0
+    }
+}

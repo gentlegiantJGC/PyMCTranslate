@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "deprecated": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "pillar_axis": [
+            "y",
+            "x",
+            "z"
+        ]
+    },
+    "properties_nbt": {
+        "deprecated": "int",
+        "pillar_axis": "string"
+    },
+    "defaults": {
+        "deprecated": 0,
+        "pillar_axis": "y"
+    }
+}

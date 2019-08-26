@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "upside_down_bit": [
+            0,
+            1
+        ],
+        "weirdo_direction": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "properties_nbt": {
+        "upside_down_bit": "byte",
+        "weirdo_direction": "int"
+    },
+    "defaults": {
+        "upside_down_bit": 0,
+        "weirdo_direction": 0
+    }
+}

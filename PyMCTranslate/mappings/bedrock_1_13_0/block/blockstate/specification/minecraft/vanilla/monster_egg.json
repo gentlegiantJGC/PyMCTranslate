@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "monster_egg_stone_type": [
+            "stone",
+            "cobblestone",
+            "stone_brick",
+            "mossy_stone_brick",
+            "cracked_stone_brick",
+            "chiseled_stone_brick"
+        ]
+    },
+    "properties_nbt": {
+        "monster_egg_stone_type": "string"
+    },
+    "defaults": {
+        "monster_egg_stone_type": "stone"
+    }
+}

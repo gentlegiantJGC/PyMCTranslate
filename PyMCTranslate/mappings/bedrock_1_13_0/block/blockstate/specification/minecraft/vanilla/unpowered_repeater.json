@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "repeater_delay": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "properties_nbt": {
+        "direction": "int",
+        "repeater_delay": "int"
+    },
+    "defaults": {
+        "direction": 0,
+        "repeater_delay": 0
+    }
+}

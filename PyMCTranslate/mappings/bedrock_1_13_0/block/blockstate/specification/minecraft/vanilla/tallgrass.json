@@ -1,0 +1,16 @@
+{
+    "properties": {
+        "tall_grass_type": [
+            "default",
+            "tall",
+            "fern",
+            "snow"
+        ]
+    },
+    "properties_nbt": {
+        "tall_grass_type": "string"
+    },
+    "defaults": {
+        "tall_grass_type": "default"
+    }
+}

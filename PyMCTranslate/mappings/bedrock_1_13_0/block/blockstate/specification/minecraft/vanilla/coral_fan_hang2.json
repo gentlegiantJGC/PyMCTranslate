@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "coral_direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "coral_hang_type_bit": [
+            0,
+            1
+        ],
+        "dead_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "coral_direction": "int",
+        "coral_hang_type_bit": "byte",
+        "dead_bit": "byte"
+    },
+    "defaults": {
+        "coral_direction": 0,
+        "coral_hang_type_bit": 0,
+        "dead_bit": 0
+    }
+}

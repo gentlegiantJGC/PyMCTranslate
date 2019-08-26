@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "coral_color": [
+            "blue",
+            "pink",
+            "purple",
+            "red",
+            "yellow"
+        ],
+        "coral_fan_direction": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "coral_color": "string",
+        "coral_fan_direction": "int"
+    },
+    "defaults": {
+        "coral_color": "blue",
+        "coral_fan_direction": 0
+    }
+}

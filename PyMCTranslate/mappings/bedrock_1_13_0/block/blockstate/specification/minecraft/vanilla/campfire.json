@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "extinguished": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "direction": "int",
+        "extinguished": "byte"
+    },
+    "defaults": {
+        "direction": 0,
+        "extinguished": 0
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "attachment": [
+            "standing",
+            "hanging",
+            "side",
+            "multiple"
+        ],
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "properties_nbt": {
+        "attachment": "string",
+        "direction": "int"
+    },
+    "defaults": {
+        "attachment": "standing",
+        "direction": 0
+    }
+}

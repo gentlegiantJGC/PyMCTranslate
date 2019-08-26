@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "flower_type": [
+            "poppy",
+            "orchid",
+            "allium",
+            "houstonia",
+            "tulip_red",
+            "tulip_orange",
+            "tulip_white",
+            "tulip_pink",
+            "oxeye",
+            "cornflower",
+            "lily_of_the_valley"
+        ]
+    },
+    "properties_nbt": {
+        "flower_type": "string"
+    },
+    "defaults": {
+        "flower_type": "poppy"
+    }
+}

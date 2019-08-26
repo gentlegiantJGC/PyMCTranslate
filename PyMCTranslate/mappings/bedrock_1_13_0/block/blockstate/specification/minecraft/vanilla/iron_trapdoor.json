@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "direction": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "open_bit": [
+            0,
+            1
+        ],
+        "upside_down_bit": [
+            0,
+            1
+        ]
+    },
+    "properties_nbt": {
+        "direction": "int",
+        "open_bit": "byte",
+        "upside_down_bit": "byte"
+    },
+    "defaults": {
+        "direction": 0,
+        "open_bit": 0,
+        "upside_down_bit": 0
+    }
+}

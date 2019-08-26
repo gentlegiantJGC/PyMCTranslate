@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "stone_brick_type": [
+            "default",
+            "mossy",
+            "cracked",
+            "chiseled",
+            "smooth"
+        ]
+    },
+    "properties_nbt": {
+        "stone_brick_type": "string"
+    },
+    "defaults": {
+        "stone_brick_type": "default"
+    }
+}
