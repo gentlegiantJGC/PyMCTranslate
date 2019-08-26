@@ -181,7 +181,7 @@ class Version:
 						assert isinstance(block_id, int) and isinstance(block_string, str)
 						self.numerical_block_map[block_id] = block_string
 
-			elif self.block_format == 'blockstate':
+			elif self.block_format in ['blockstate', 'nbt-blockstate']:
 				self._subversions['blockstate'] = SubVersion(os.path.join(self._version_path, 'block', 'blockstate'), self._translation_manager)
 			self._loaded = True
 
