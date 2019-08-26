@@ -399,7 +399,10 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 			assert isinstance(block_input, Block), 'The block input is not a block'
 			for key in translate_function["options"]:
 				if key in block_input.properties:
-					val = str(block_input.properties[key])
+					if isinstance(block_input.properties[key], (TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array)):
+						val = block_input.properties[key].to_snbt()
+					else:
+						val = str(block_input.properties[key])
 					if val in translate_function["options"][key]:
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"][key][val], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
