@@ -222,9 +222,9 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 		properties = spec.get('defaults', {})
 
 		# cast to NBT if needed
-		if 'properties_nbt' in spec:
-			for property_name, property_type in spec['properties_nbt'].items():
-				properties[property_name] = datatype_to_nbt(property_type)(properties[property_name])
+		# TODO: uncomment this when from_snbt implemented
+		# if spec.get('nbt_properties', False):
+		# 	properties = {prop: amulet_nbt.from_snbt(val) for prop, val in properties.items()}
 
 		for key, val in new_data['properties'].items():
 			properties[key] = val
