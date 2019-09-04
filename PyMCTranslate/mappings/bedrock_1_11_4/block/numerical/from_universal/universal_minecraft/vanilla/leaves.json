@@ -2,13 +2,13 @@
     {
         "function": "map_properties",
         "options": {
-            "decayable": {
+            "persistent": {
                 "false": [
                     {
                         "function": "map_properties",
                         "options": {
                             "check_decay": {
-                                "true": [
+                                "false": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -89,7 +89,7 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "true": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -179,7 +179,7 @@
                         "function": "map_properties",
                         "options": {
                             "check_decay": {
-                                "true": [
+                                "false": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -260,7 +260,7 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "true": [
                                     {
                                         "function": "map_properties",
                                         "options": {

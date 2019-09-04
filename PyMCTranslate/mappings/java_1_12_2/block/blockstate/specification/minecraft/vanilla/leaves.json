@@ -6,7 +6,7 @@
             "birch",
             "jungle"
         ],
-        "decayable": [
+        "persistent": [
             "true",
             "false"
         ],
@@ -17,7 +17,7 @@
     },
     "defaults": {
         "material": "oak",
-        "decayable": "true",
+        "persistent": "false",
         "check_decay": "true"
     }
 }

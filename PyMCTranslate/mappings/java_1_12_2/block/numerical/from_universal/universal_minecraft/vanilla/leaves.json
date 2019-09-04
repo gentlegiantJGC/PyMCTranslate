@@ -7,8 +7,8 @@
                     {
                         "function": "map_properties",
                         "options": {
-                            "decayable": {
-                                "true": [
+                            "persistent": {
+                                "false": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -89,7 +89,7 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "true": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -178,8 +178,8 @@
                     {
                         "function": "map_properties",
                         "options": {
-                            "decayable": {
-                                "true": [
+                            "persistent": {
+                                "false": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -260,7 +260,7 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "true": [
                                     {
                                         "function": "map_properties",
                                         "options": {
