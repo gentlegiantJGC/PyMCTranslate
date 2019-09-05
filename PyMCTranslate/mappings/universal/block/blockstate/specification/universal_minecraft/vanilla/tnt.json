@@ -3,9 +3,14 @@
         "unstable": [
             "true",
             "false"
+        ],
+        "underwater": [
+            "true",
+            "false"
         ]
     },
     "defaults": {
-        "unstable": "false"
+        "unstable": "false",
+        "underwater": "false"
     }
 }
