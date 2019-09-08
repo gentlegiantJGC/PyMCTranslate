@@ -1,120 +1,98 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:snow_layer"
+        "options": "minecraft:anvil"
     },
     {
         "function": "map_properties",
         "options": {
-            "covered_bit": {
-                "0": [
+            "damage": {
+                "normal": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "covered_bit": [
+                            "damage": [
                                 "snbt",
-                                "0b"
+                                "\"undamaged\""
                             ]
                         }
                     }
                 ],
-                "1": [
+                "chipped": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "covered_bit": [
+                            "damage": [
                                 "snbt",
-                                "1b"
+                                "\"slightly_damaged\""
+                            ]
+                        }
+                    }
+                ],
+                "damaged": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": [
+                                "snbt",
+                                "\"very_damaged\""
+                            ]
+                        }
+                    }
+                ],
+                "broken": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": [
+                                "snbt",
+                                "\"broken\""
                             ]
                         }
                     }
                 ]
             },
-            "layers": {
-                "1": [
+            "facing": {
+                "south": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
+                            "direction": [
                                 "snbt",
                                 "0"
                             ]
                         }
                     }
                 ],
-                "2": [
+                "west": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
+                            "direction": [
                                 "snbt",
                                 "1"
                             ]
                         }
                     }
                 ],
-                "3": [
+                "north": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
+                            "direction": [
                                 "snbt",
                                 "2"
                             ]
                         }
                     }
                 ],
-                "4": [
+                "east": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
+                            "direction": [
                                 "snbt",
                                 "3"
-                            ]
-                        }
-                    }
-                ],
-                "5": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "height": [
-                                "snbt",
-                                "4"
-                            ]
-                        }
-                    }
-                ],
-                "6": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "height": [
-                                "snbt",
-                                "5"
-                            ]
-                        }
-                    }
-                ],
-                "7": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "height": [
-                                "snbt",
-                                "6"
-                            ]
-                        }
-                    }
-                ],
-                "8": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "height": [
-                                "snbt",
-                                "7"
                             ]
                         }
                     }

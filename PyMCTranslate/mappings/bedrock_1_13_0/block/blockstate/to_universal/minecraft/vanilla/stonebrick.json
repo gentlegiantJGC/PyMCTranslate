@@ -1,41 +1,49 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonebrick"
+        "options": "universal_minecraft:stonebrick"
     },
     {
         "function": "map_properties",
         "options": {
-            "variant": {
-                "normal": [
+            "stone_brick_type": {
+                "\"default\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "block_data": "0"
+                            "variant": "normal"
                         }
                     }
                 ],
-                "mossy": [
+                "\"mossy\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "block_data": "1"
+                            "variant": "mossy"
                         }
                     }
                 ],
-                "cracked": [
+                "\"cracked\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "block_data": "2"
+                            "variant": "cracked"
                         }
                     }
                 ],
-                "chiseled": [
+                "\"chiseled\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "block_data": "3"
+                            "variant": "chiseled"
+                        }
+                    }
+                ],
+                "\"smooth\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "smooth"
                         }
                     }
                 ]

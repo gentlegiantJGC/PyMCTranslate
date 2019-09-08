@@ -42,7 +42,13 @@
                 "3": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:chiseled_stone_bricks"
+                        "options": "universal_minecraft:stone_bricks"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "chiseled"
+                        }
                     }
                 ]
             }

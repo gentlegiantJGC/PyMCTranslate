@@ -1,20 +1,35 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:snow_layer"
+        "options": "universal_minecraft:snow"
     },
     {
         "function": "map_properties",
         "options": {
             "covered_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "covered_bit": "0"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "covered_bit": "1"
+                        }
+                    }
+                ]
+            },
+            "height": {
                 "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "covered_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "layers": "1"
                         }
                     }
                 ],
@@ -22,23 +37,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "covered_bit": [
-                                "snbt",
-                                "1b"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "layers": {
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "height": [
-                                "snbt",
-                                "0"
-                            ]
+                            "layers": "2"
                         }
                     }
                 ],
@@ -46,10 +45,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
-                                "snbt",
-                                "1"
-                            ]
+                            "layers": "3"
                         }
                     }
                 ],
@@ -57,10 +53,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
-                                "snbt",
-                                "2"
-                            ]
+                            "layers": "4"
                         }
                     }
                 ],
@@ -68,10 +61,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
-                                "snbt",
-                                "3"
-                            ]
+                            "layers": "5"
                         }
                     }
                 ],
@@ -79,10 +69,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
-                                "snbt",
-                                "4"
-                            ]
+                            "layers": "6"
                         }
                     }
                 ],
@@ -90,10 +77,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
-                                "snbt",
-                                "5"
-                            ]
+                            "layers": "7"
                         }
                     }
                 ],
@@ -101,21 +85,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "height": [
-                                "snbt",
-                                "6"
-                            ]
-                        }
-                    }
-                ],
-                "8": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "height": [
-                                "snbt",
-                                "7"
-                            ]
+                            "layers": "8"
                         }
                     }
                 ]
