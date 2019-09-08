@@ -1,0 +1,95 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "stone_slab_type_3": {
+                "\"end_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "end_stone_brick"
+                        }
+                    }
+                ],
+                "\"smooth_red_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "smooth_red_sandstone"
+                        }
+                    }
+                ],
+                "\"polished_andesite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "polished_andesite"
+                        }
+                    }
+                ],
+                "\"andesite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "andesite"
+                        }
+                    }
+                ],
+                "\"diorite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "diorite"
+                        }
+                    }
+                ],
+                "\"polished_diorite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "polished_diorite"
+                        }
+                    }
+                ],
+                "\"granite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "granite"
+                        }
+                    }
+                ],
+                "\"polished_granite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "polished_granite"
+                        }
+                    }
+                ]
+            },
+            "top_slot_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "double"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "double"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

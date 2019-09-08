@@ -1,0 +1,57 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:red_sandstone"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "variant": {
+                "normal": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sand_stone_type": [
+                                "snbt",
+                                "\"default\""
+                            ]
+                        }
+                    }
+                ],
+                "chiseled": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sand_stone_type": [
+                                "snbt",
+                                "\"heiroglyphs\""
+                            ]
+                        }
+                    }
+                ],
+                "cut": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sand_stone_type": [
+                                "snbt",
+                                "\"cut\""
+                            ]
+                        }
+                    }
+                ],
+                "smooth": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sand_stone_type": [
+                                "snbt",
+                                "\"smooth\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

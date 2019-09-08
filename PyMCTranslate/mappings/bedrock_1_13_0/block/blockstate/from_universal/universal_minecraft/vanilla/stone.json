@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:stone"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "stone_type": [
+                "snbt",
+                "\"stone\""
+            ]
+        }
+    }
+]

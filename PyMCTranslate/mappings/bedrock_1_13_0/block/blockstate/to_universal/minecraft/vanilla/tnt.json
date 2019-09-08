@@ -1,0 +1,47 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tnt"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "allow_underwater_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "underwater": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "underwater": "true"
+                        }
+                    }
+                ]
+            },
+            "explode_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "unstable": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "unstable": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

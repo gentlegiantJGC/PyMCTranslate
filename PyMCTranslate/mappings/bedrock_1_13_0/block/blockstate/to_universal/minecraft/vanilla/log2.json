@@ -1,0 +1,55 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:log"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "new_log_type": {
+                "\"acacia\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia"
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak"
+                        }
+                    }
+                ]
+            },
+            "pillar_axis": {
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "y"
+                        }
+                    }
+                ],
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "x"
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "z"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

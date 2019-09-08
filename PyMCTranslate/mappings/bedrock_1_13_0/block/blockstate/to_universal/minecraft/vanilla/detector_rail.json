@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:detector_rail"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "rail_data_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "true"
+                        }
+                    }
+                ]
+            },
+            "rail_direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "north_south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "east_west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_east"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_west"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_north"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "shape": "ascending_south"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

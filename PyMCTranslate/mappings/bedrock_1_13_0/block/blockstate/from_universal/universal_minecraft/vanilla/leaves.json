@@ -1,0 +1,135 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:leaves"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "oak": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "old_leaf_type": [
+                                "snbt",
+                                "\"oak\""
+                            ]
+                        }
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "old_leaf_type": [
+                                "snbt",
+                                "\"spruce\""
+                            ]
+                        }
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "old_leaf_type": [
+                                "snbt",
+                                "\"birch\""
+                            ]
+                        }
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "old_leaf_type": [
+                                "snbt",
+                                "\"jungle\""
+                            ]
+                        }
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:leaves2"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "new_leaf_type": [
+                                "snbt",
+                                "\"acacia\""
+                            ]
+                        }
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:leaves2"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "new_leaf_type": [
+                                "snbt",
+                                "\"dark_oak\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "persistent": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "persistent_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "persistent_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "check_decay": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "update_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "update_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

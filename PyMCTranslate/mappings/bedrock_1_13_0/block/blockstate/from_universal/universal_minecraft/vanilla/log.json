@@ -1,0 +1,176 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:log"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "sripped": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "material": {
+                                "oak": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "old_log_type": [
+                                                "snbt",
+                                                "\"oak\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "spruce": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "old_log_type": [
+                                                "snbt",
+                                                "\"spruce\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "birch": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "old_log_type": [
+                                                "snbt",
+                                                "\"birch\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "jungle": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "old_log_type": [
+                                                "snbt",
+                                                "\"jungle\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "acacia": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:log2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "new_log_type": [
+                                                "snbt",
+                                                "\"acacia\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "dark_oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:log2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "new_log_type": [
+                                                "snbt",
+                                                "\"dark_oak\""
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "material": {
+                                "spruce": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_spruce_log"
+                                    }
+                                ],
+                                "birch": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_birch_log"
+                                    }
+                                ],
+                                "jungle": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_jungle_log"
+                                    }
+                                ],
+                                "acacia": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_acacia_log"
+                                    }
+                                ],
+                                "dark_oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_dark_oak_log"
+                                    }
+                                ],
+                                "oak": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_oak_log"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "axis": {
+                "y": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"y\""
+                            ]
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"x\""
+                            ]
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"z\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
