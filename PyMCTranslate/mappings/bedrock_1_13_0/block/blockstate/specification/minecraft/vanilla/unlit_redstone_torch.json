@@ -1,16 +1,16 @@
 {
     "properties": {
         "torch_facing_direction": [
-            "\"unknown\"",
+            "\"top\"",
             "\"west\"",
             "\"east\"",
             "\"north\"",
             "\"south\"",
-            "\"top\""
+            "\"unknown\""
         ]
     },
     "defaults": {
-        "torch_facing_direction": "\"unknown\""
+        "torch_facing_direction": "\"top\""
     },
     "nbt_properties": true
 }
