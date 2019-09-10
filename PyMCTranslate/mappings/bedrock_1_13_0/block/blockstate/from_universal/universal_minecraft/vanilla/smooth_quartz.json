@@ -1,0 +1,55 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:quartz_block"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "chisel_type": [
+                "snbt",
+                "\"smooth\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "y": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"y\""
+                            ]
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"x\""
+                            ]
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"z\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
