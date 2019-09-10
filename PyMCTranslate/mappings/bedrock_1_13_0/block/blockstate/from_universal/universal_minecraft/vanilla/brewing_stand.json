@@ -1,0 +1,83 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:brewing_stand"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "has_bottle_0": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brewing_stand_slot_a_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brewing_stand_slot_a_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "has_bottle_1": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brewing_stand_slot_b_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brewing_stand_slot_b_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "has_bottle_2": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brewing_stand_slot_c_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brewing_stand_slot_c_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

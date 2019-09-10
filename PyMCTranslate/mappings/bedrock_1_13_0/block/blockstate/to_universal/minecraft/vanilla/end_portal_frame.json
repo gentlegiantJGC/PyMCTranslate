@@ -1,0 +1,63 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:end_portal_frame"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            },
+            "end_portal_eye_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "eye": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "eye": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

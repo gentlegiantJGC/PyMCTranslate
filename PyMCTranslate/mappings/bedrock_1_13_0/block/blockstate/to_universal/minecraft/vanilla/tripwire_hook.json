@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tripwire_hook"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "attached_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached": "true"
+                        }
+                    }
+                ]
+            },
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            },
+            "powered_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

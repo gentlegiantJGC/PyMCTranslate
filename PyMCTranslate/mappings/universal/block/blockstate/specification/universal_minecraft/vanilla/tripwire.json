@@ -8,15 +8,19 @@
             "true",
             "false"
         ],
+        "powered": [
+            "true",
+            "false"
+        ],
+        "suspended": [
+            "true",
+            "false"
+        ],
         "east": [
             "true",
             "false"
         ],
         "north": [
-            "true",
-            "false"
-        ],
-        "powered": [
             "true",
             "false"
         ],
@@ -32,9 +36,10 @@
     "defaults": {
         "attached": "false",
         "disarmed": "false",
+        "powered": "false",
+        "suspended": "true",
         "east": "false",
         "north": "false",
-        "powered": "false",
         "south": "false",
         "west": "false"
     }

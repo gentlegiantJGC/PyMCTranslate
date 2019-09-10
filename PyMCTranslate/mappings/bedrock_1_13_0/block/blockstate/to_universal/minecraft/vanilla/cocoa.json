@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:cocoa"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "age": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "0"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "1"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "2"
+                        }
+                    }
+                ]
+            },
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

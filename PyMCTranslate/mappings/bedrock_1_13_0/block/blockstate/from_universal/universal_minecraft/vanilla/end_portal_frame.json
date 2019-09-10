@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:end_portal_frame"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "eye": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "end_portal_eye_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "end_portal_eye_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
