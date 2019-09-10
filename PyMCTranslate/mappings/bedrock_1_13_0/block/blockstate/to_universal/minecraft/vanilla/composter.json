@@ -1,75 +1,81 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "universal_minecraft:composter"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "down": [
+            "composter_fill_level": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "level": "0"
                         }
                     }
                 ],
-                "up": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "level": "1"
                         }
                     }
                 ],
-                "north": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "level": "2"
                         }
                     }
                 ],
-                "south": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "level": "3"
                         }
                     }
                 ],
-                "west": [
+                "4": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "level": "4"
                         }
                     }
                 ],
-                "east": [
+                "5": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "level": "5"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "6"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "7"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "8"
                         }
                     }
                 ]

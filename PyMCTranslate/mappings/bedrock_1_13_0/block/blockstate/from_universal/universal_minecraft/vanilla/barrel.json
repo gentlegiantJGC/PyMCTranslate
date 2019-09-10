@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "minecraft:barrel"
     },
     {
         "function": "map_properties",
@@ -69,6 +69,30 @@
                             "facing_direction": [
                                 "snbt",
                                 "5"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "open": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": [
+                                "snbt",
+                                "1b"
                             ]
                         }
                     }

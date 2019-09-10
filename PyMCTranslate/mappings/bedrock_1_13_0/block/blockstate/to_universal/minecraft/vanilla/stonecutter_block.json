@@ -1,75 +1,57 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "universal_minecraft:stonecutter"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "down": [
+            "facing_direction": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "facing": "down"
                         }
                     }
                 ],
-                "up": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "facing": "up"
                         }
                     }
                 ],
-                "north": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "facing": "north"
                         }
                     }
                 ],
-                "south": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "facing": "south"
                         }
                     }
                 ],
-                "west": [
+                "4": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "facing": "west"
                         }
                     }
                 ],
-                "east": [
+                "5": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "facing": "east"
                         }
                     }
                 ]

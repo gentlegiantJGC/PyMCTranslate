@@ -1,28 +1,28 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "minecraft:lectern"
     },
     {
         "function": "map_properties",
         "options": {
             "facing": {
-                "down": [
+                "south": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "0"
                             ]
                         }
                     }
                 ],
-                "up": [
+                "west": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "1"
                             ]
@@ -33,31 +33,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "2"
-                            ]
-                        }
-                    }
-                ],
-                "south": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
-                        }
-                    }
-                ],
-                "west": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
                             ]
                         }
                     }
@@ -66,9 +44,33 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
-                                "5"
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "powered": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": [
+                                "snbt",
+                                "1b"
                             ]
                         }
                     }

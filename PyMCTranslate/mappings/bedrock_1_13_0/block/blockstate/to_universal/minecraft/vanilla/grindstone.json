@@ -1,75 +1,75 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "universal_minecraft:grindstone"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "down": [
+            "attachment": {
+                "\"standing\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "face": "floor"
                         }
                     }
                 ],
-                "up": [
+                "\"hanging\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "face": "ceiling"
                         }
                     }
                 ],
-                "north": [
+                "\"side\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "face": "wall"
                         }
                     }
                 ],
-                "south": [
+                "\"multiple\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "face": "multiple"
+                        }
+                    }
+                ]
+            },
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
                         }
                     }
                 ],
-                "west": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "facing": "west"
                         }
                     }
                 ],
-                "east": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
                         }
                     }
                 ]

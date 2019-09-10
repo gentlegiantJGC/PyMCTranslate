@@ -1,75 +1,59 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "universal_minecraft:lectern"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "down": [
+            "direction": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "facing": "south"
                         }
                     }
                 ],
-                "up": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "facing": "west"
                         }
                     }
                 ],
-                "north": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "facing": "north"
                         }
                     }
                 ],
-                "south": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "facing": "east"
+                        }
+                    }
+                ]
+            },
+            "powered_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "false"
                         }
                     }
                 ],
-                "west": [
+                "1b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
-                            ]
-                        }
-                    }
-                ],
-                "east": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "powered": "true"
                         }
                     }
                 ]

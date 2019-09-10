@@ -1,28 +1,74 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "minecraft:grindstone"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "down": [
+            "face": {
+                "floor": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "attachment": [
+                                "snbt",
+                                "\"standing\""
+                            ]
+                        }
+                    }
+                ],
+                "ceiling": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"hanging\""
+                            ]
+                        }
+                    }
+                ],
+                "wall": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"side\""
+                            ]
+                        }
+                    }
+                ],
+                "multiple": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"multiple\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
                                 "snbt",
                                 "0"
                             ]
                         }
                     }
                 ],
-                "up": [
+                "west": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "1"
                             ]
@@ -33,31 +79,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "2"
-                            ]
-                        }
-                    }
-                ],
-                "south": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
-                        }
-                    }
-                ],
-                "west": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
                             ]
                         }
                     }
@@ -66,9 +90,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
-                                "5"
+                                "3"
                             ]
                         }
                     }

@@ -1,28 +1,28 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stonecutter_block"
+        "options": "minecraft:bed"
     },
     {
         "function": "map_properties",
         "options": {
             "facing": {
-                "down": [
+                "south": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "0"
                             ]
                         }
                     }
                 ],
-                "up": [
+                "west": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "1"
                             ]
@@ -33,31 +33,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
                                 "2"
-                            ]
-                        }
-                    }
-                ],
-                "south": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
-                        }
-                    }
-                ],
-                "west": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
                             ]
                         }
                     }
@@ -66,9 +44,57 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
+                            "direction": [
                                 "snbt",
-                                "5"
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "part": {
+                "foot": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "head_piece_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "head": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "head_piece_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "occupied": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "occupied_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "occupied_bit": [
+                                "snbt",
+                                "1b"
                             ]
                         }
                     }

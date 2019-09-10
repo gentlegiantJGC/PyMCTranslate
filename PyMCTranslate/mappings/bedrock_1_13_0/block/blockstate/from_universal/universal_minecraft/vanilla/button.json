@@ -1,0 +1,144 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:wooden_button"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_button"
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_button"
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_button"
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_button"
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_button"
+                    }
+                ]
+            },
+            "face": {
+                "ceiling": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "floor": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "wall": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": [
+                                                "snbt",
+                                                "2"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": [
+                                                "snbt",
+                                                "3"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": [
+                                                "snbt",
+                                                "4"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": [
+                                                "snbt",
+                                                "5"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "powered": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "button_pressed_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "button_pressed_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
