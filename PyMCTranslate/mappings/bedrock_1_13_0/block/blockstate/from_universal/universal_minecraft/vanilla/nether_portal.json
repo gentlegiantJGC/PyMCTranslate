@@ -1,0 +1,46 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:portal"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "unknown": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "portal_axis": [
+                                "snbt",
+                                "\"unknown\""
+                            ]
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "portal_axis": [
+                                "snbt",
+                                "\"x\""
+                            ]
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "portal_axis": [
+                                "snbt",
+                                "\"z\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
