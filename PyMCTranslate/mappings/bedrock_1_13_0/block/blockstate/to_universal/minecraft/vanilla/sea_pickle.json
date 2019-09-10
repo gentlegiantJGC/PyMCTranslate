@@ -1,0 +1,63 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sea_pickle"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "cluster_count": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "1"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "2"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "3"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "4"
+                        }
+                    }
+                ]
+            },
+            "dead_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

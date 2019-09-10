@@ -1,0 +1,189 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:carpet"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "white": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"white\""
+                            ]
+                        }
+                    }
+                ],
+                "orange": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"orange\""
+                            ]
+                        }
+                    }
+                ],
+                "magenta": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"magenta\""
+                            ]
+                        }
+                    }
+                ],
+                "light_blue": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"light_blue\""
+                            ]
+                        }
+                    }
+                ],
+                "yellow": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"yellow\""
+                            ]
+                        }
+                    }
+                ],
+                "lime": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"lime\""
+                            ]
+                        }
+                    }
+                ],
+                "pink": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"pink\""
+                            ]
+                        }
+                    }
+                ],
+                "gray": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"gray\""
+                            ]
+                        }
+                    }
+                ],
+                "light_gray": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"silver\""
+                            ]
+                        }
+                    }
+                ],
+                "cyan": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"cyan\""
+                            ]
+                        }
+                    }
+                ],
+                "purple": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"purple\""
+                            ]
+                        }
+                    }
+                ],
+                "blue": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"blue\""
+                            ]
+                        }
+                    }
+                ],
+                "brown": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"brown\""
+                            ]
+                        }
+                    }
+                ],
+                "green": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"green\""
+                            ]
+                        }
+                    }
+                ],
+                "red": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"red\""
+                            ]
+                        }
+                    }
+                ],
+                "black": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": [
+                                "snbt",
+                                "\"black\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

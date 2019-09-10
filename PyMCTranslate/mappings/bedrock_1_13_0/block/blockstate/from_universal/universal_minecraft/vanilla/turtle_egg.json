@@ -1,0 +1,92 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:turtle_egg"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "hatch": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cracked_state": [
+                                "snbt",
+                                "\"no_cracks\""
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cracked_state": [
+                                "snbt",
+                                "\"cracked\""
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cracked_state": [
+                                "snbt",
+                                "\"max_cracked\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "turtle_egg_count": {
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": [
+                                "snbt",
+                                "\"one_egg\""
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": [
+                                "snbt",
+                                "\"two_egg\""
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": [
+                                "snbt",
+                                "\"three_egg\""
+                            ]
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": [
+                                "snbt",
+                                "\"four_egg\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

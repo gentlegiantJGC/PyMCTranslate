@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:turtle_egg"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "cracked_state": {
+                "\"no_cracks\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hatch": "0"
+                        }
+                    }
+                ],
+                "\"cracked\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hatch": "1"
+                        }
+                    }
+                ],
+                "\"max_cracked\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hatch": "2"
+                        }
+                    }
+                ]
+            },
+            "turtle_egg_count": {
+                "\"one_egg\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": "1"
+                        }
+                    }
+                ],
+                "\"two_egg\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": "2"
+                        }
+                    }
+                ],
+                "\"three_egg\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": "3"
+                        }
+                    }
+                ],
+                "\"four_egg\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "turtle_egg_count": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

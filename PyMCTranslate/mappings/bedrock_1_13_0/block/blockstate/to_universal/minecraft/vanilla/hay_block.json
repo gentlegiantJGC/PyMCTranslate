@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:hay_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "deprecated": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": "0"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": "1"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": "2"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": "3"
+                        }
+                    }
+                ]
+            },
+            "pillar_axis": {
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "y"
+                        }
+                    }
+                ],
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "x"
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "z"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

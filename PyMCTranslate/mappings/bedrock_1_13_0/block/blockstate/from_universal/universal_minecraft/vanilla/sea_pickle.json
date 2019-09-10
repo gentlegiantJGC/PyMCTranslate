@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sea_pickle"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "pickles": {
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cluster_count": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cluster_count": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cluster_count": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cluster_count": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dead": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
