@@ -1,0 +1,127 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bell"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "attachment": {
+                "floor": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"standing\""
+                            ]
+                        }
+                    }
+                ],
+                "hanging": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"hanging\""
+                            ]
+                        }
+                    }
+                ],
+                "side": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"side\""
+                            ]
+                        }
+                    }
+                ],
+                "multiple": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"multiple\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "enabled": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "toggle_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "toggle_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

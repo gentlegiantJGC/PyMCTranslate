@@ -1,0 +1,97 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:bell"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "attachment": {
+                "\"standing\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "floor"
+                        }
+                    }
+                ],
+                "\"hanging\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "ceiling"
+                        }
+                    }
+                ],
+                "\"side\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "single_wall"
+                        }
+                    }
+                ],
+                "\"multiple\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "double_wall"
+                        }
+                    }
+                ]
+            },
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            },
+            "toggle_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "enabled": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "enabled": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

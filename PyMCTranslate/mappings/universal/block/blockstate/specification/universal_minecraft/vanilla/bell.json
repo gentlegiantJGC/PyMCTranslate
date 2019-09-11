@@ -11,10 +11,15 @@
             "south",
             "west",
             "east"
+        ],
+        "enabled": [
+            "false",
+            "true"
         ]
     },
     "defaults": {
         "attachment": "floor",
-        "facing": "north"
+        "facing": "north",
+        "enabled": "false"
     }
 }

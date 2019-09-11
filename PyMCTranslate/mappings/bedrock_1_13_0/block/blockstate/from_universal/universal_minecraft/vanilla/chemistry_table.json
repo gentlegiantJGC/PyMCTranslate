@@ -1,0 +1,103 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:chemistry_table"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "chemistry_table_type": {
+                "compound_creator": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "chemistry_table_type": [
+                                "snbt",
+                                "\"compound_creator\""
+                            ]
+                        }
+                    }
+                ],
+                "material_reducer": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "chemistry_table_type": [
+                                "snbt",
+                                "\"material_reducer\""
+                            ]
+                        }
+                    }
+                ],
+                "element_constructor": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "chemistry_table_type": [
+                                "snbt",
+                                "\"element_constructor\""
+                            ]
+                        }
+                    }
+                ],
+                "lab_table": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "chemistry_table_type": [
+                                "snbt",
+                                "\"lab_table\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

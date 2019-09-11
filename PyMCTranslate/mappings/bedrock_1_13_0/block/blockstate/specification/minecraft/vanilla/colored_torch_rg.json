@@ -5,17 +5,17 @@
             "1b"
         ],
         "torch_facing_direction": [
-            "\"unknown\"",
+            "\"top\"",
             "\"west\"",
             "\"east\"",
             "\"north\"",
             "\"south\"",
-            "\"top\""
+            "\"unknown\""
         ]
     },
     "defaults": {
         "color_bit": "0b",
-        "torch_facing_direction": "\"unknown\""
+        "torch_facing_direction": "\"top\""
     },
     "nbt_properties": true
 }
