@@ -7,10 +7,10 @@
         "function": "map_properties",
         "options": {
             "lit": {
-                "true": [
+                "false": [
                     {
                         "function": "new_block",
-                        "options": "minecraft:lit_redstone_lamp"
+                        "options": "minecraft:redstone_lamp"
                     }
                 ]
             }

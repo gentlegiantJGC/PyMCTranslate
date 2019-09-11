@@ -1,0 +1,85 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:command_block"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "mode": "chain"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "conditional_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "conditional": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "conditional": "true"
+                        }
+                    }
+                ]
+            },
+            "facing_direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "down"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "up"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

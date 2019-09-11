@@ -1,12 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:beetroots"
+        "options": "universal_minecraft:chorus_flower"
     },
     {
         "function": "map_properties",
         "options": {
-            "block_data": {
+            "age": {
                 "0": [
                     {
                         "function": "new_properties",
@@ -19,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "2"
+                            "age": "1"
                         }
                     }
                 ],
@@ -27,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "4"
+                            "age": "2"
                         }
                     }
                 ],
@@ -35,7 +35,23 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "7"
+                            "age": "3"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "4"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "5"
                         }
                     }
                 ]
