@@ -1,0 +1,92 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "tube": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"blue\""
+                            ]
+                        }
+                    }
+                ],
+                "brain": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"pink\""
+                            ]
+                        }
+                    }
+                ],
+                "bubble": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"purple\""
+                            ]
+                        }
+                    }
+                ],
+                "fire": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"red\""
+                            ]
+                        }
+                    }
+                ],
+                "horn": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"yellow\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dead": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

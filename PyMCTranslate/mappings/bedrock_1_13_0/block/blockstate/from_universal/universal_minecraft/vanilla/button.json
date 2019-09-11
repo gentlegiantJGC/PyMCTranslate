@@ -7,6 +7,18 @@
         "function": "map_properties",
         "options": {
             "material": {
+                "stone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_button"
+                    }
+                ],
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wooden_button"
+                    }
+                ],
                 "acacia": [
                     {
                         "function": "new_block",
