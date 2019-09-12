@@ -1,0 +1,105 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:door"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "dark_oak"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            },
+            "door_hinge_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hinge": "left"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hinge": "right"
+                        }
+                    }
+                ]
+            },
+            "open_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open": "true"
+                        }
+                    }
+                ]
+            },
+            "upper_block_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "upper"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
