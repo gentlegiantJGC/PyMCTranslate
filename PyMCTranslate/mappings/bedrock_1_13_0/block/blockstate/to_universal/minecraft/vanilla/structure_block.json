@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:structure_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "structure_block_type": {
+                "\"data\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "data"
+                        }
+                    }
+                ],
+                "\"save\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "save"
+                        }
+                    }
+                ],
+                "\"load\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "load"
+                        }
+                    }
+                ],
+                "\"corner\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "corner"
+                        }
+                    }
+                ],
+                "\"invalid\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "invalid"
+                        }
+                    }
+                ],
+                "\"export\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "export"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:structure_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mode": {
+                "data": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_block_type": [
+                                "snbt",
+                                "\"data\""
+                            ]
+                        }
+                    }
+                ],
+                "save": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_block_type": [
+                                "snbt",
+                                "\"save\""
+                            ]
+                        }
+                    }
+                ],
+                "load": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_block_type": [
+                                "snbt",
+                                "\"load\""
+                            ]
+                        }
+                    }
+                ],
+                "corner": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_block_type": [
+                                "snbt",
+                                "\"corner\""
+                            ]
+                        }
+                    }
+                ],
+                "invalid": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_block_type": [
+                                "snbt",
+                                "\"invalid\""
+                            ]
+                        }
+                    }
+                ],
+                "export": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_block_type": [
+                                "snbt",
+                                "\"export\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
