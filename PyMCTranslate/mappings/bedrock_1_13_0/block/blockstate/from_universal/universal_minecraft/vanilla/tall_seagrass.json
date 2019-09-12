@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:seagrass"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "half": {
+                "upper": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sea_grass_type": [
+                                "snbt",
+                                "\"double_top\""
+                            ]
+                        }
+                    }
+                ],
+                "lower": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sea_grass_type": [
+                                "snbt",
+                                "\"double_bot\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
