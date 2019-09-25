@@ -156,8 +156,8 @@ class Version:
 		self._has_abstract_format = self._block_format in ['numerical', 'pseudo-numerical']
 
 		self._subversions = {}
-		self.numerical_block_map: Dict[str, str] = None
-		self.numerical_block_map_inverse: Dict[str, str] = None
+		self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
+		self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
 		if self.platform == 'java' and os.path.isfile(os.path.join(version_path, '__waterloggable__.json')):
 			with open(version_path, '__waterloggable__.json') as f:
 				self._waterloggable = set(json.load(f))
@@ -175,11 +175,11 @@ class Version:
 					self._subversions[block_format] = SubVersion(os.path.join(self._version_path, 'block', block_format), self._translation_manager)
 				if self.block_format == 'numerical':
 					with open(os.path.join(self._version_path, '__numerical_block_map__.json')) as f:
-						self.numerical_block_map_inverse = json.load(f)
-					self.numerical_block_map = {}
-					for block_string, block_id in self.numerical_block_map_inverse.items():
-						assert isinstance(block_id, int) and isinstance(block_string, str)
-						self.numerical_block_map[block_id] = block_string
+						self._numerical_block_map_inverse = {tuple(block_str.split(':', 1)): block_id for block_str, block_id in json.load(f).items()}
+					self._numerical_block_map = {}
+					for block_tuple, block_id in self._numerical_block_map_inverse.items():
+						assert isinstance(block_id, int) and isinstance(block_tuple, str)
+						self._numerical_block_map[block_id] = block_tuple
 
 			elif self.block_format in ['blockstate', 'nbt-blockstate']:
 				self._subversions['blockstate'] = SubVersion(os.path.join(self._version_path, 'block', 'blockstate'), self._translation_manager)
@@ -243,6 +243,28 @@ class Version:
 		if isinstance(self._waterloggable, set):
 			return namespace_str in self._waterloggable
 		return False
+
+	def ints_to_block(self, block_id: int, block_data: int) -> Block:
+		if block_id in self._numerical_block_map:
+			namespace, base_name = self._numerical_block_map[block_id]
+			return Block(namespace=namespace, base_name=base_name, properties={"block_data": str(block_data)})
+		else:
+			return Block(namespace="minecraft", base_name="numerical", properties={"block_id": str(block_id), "block_data": str(block_data)})
+
+	def block_to_ints(self, block: Block) -> Union[None, Tuple[int, int]]:
+		block_tuple = (block.namespace, block.base_name)
+		if block_tuple in self._numerical_block_map_inverse:
+			if "block_data" in block.properties and isinstance(block.properties["block_data"], str) and block.properties["block_data"].isnumeric():
+				return self._numerical_block_map_inverse[block_tuple], int(block.properties["block_data"])
+		elif block_tuple == ("minecraft", "numerical"):
+			if "block_id" in block.properties and isinstance(block.properties["block_id"], str) and block.properties["block_id"].isnumeric()\
+				and "block_data" in block.properties and isinstance(block.properties["block_data"], str) and block.properties["block_data"].isnumeric():
+				return int(block.properties["block_id"]), int(block.properties["block_data"])
+
+	def add_numeric_block(self, block_id: int, block_str: str):
+		block_tuple = block_str.split(':', 1)
+		self._numerical_block_map[block_id] = block_tuple
+		self._numerical_block_map_inverse[block_tuple] = block_id
 
 
 class SubVersion:
