@@ -178,7 +178,7 @@ class Version:
 						self._numerical_block_map_inverse = {tuple(block_str.split(':', 1)): block_id for block_str, block_id in json.load(f).items()}
 					self._numerical_block_map = {}
 					for block_tuple, block_id in self._numerical_block_map_inverse.items():
-						assert isinstance(block_id, int) and isinstance(block_tuple, str)
+						assert isinstance(block_id, int) and isinstance(block_tuple, tuple) and all(isinstance(a, str) for a in block_tuple)
 						self._numerical_block_map[block_id] = block_tuple
 
 			elif self.block_format in ['blockstate', 'nbt-blockstate']:
