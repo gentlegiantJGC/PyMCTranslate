@@ -3,7 +3,8 @@ from PyMCTranslate.py3.api.block import Block
 import itertools
 import amulet_nbt as nbt
 
-test_block_list = [['bedrock', (1, 13, 0), 'minecraft:stained_glass']]
+test_block_list = None
+print_extra_needed = False
 
 
 def in_and_out(platform_name, version_number, version, blockstate_version, numerical_version, input_blockstate):
@@ -15,7 +16,8 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		print(f'Blockstate input: {input_blockstate}')
 		return
 	if extra_needed or extra_output is not None:
-		print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
+		if print_extra_needed:
+			print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 		return
 
 	if not universal_output.namespace.startswith('universal_'):
@@ -33,7 +35,8 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 			print(f'Universal output: {universal_output}')
 			return
 		if extra_needed or extra_output is not None:
-			print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
+			if print_extra_needed:
+				print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 			return
 
 		# blockstate to universal
@@ -46,7 +49,8 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 			print(f'Numerical output: {numerical_output}')
 			return
 		if extra_needed or extra_output is not None:
-			print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
+			if print_extra_needed:
+				print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 			return
 	else:
 		numerical_output = None
