@@ -11,7 +11,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "double"
+                            "type": "double",
+                            "top_slot_bit": "0"
                         }
                     }
                 ],
@@ -19,7 +20,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "double"
+                            "type": "double",
+                            "top_slot_bit": "1"
                         }
                     }
                 ]
