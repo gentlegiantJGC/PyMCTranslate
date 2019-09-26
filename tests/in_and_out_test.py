@@ -8,7 +8,7 @@ print_extra_needed = False
 
 
 def in_and_out(platform_name, version_number, version, blockstate_version, numerical_version, input_blockstate):
-	# native to universal
+	# blockstate to universal
 	try:
 		universal_output, extra_output, extra_needed = blockstate_version.to_universal(None, input_blockstate)
 	except:
@@ -26,7 +26,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		print(f'Universal output: {universal_output}')
 
 	if numerical_version is not None:
-		# universal to abstract
+		# universal to numerical
 		try:
 			numerical_output, extra_output, extra_needed = numerical_version.from_universal(None, universal_output)
 		except:
@@ -39,7 +39,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 				print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 			return
 
-		# blockstate to universal
+		# numerical to universal
 		try:
 			universal_output2, extra_output, extra_needed = numerical_version.to_universal(None, numerical_output)
 		except:
@@ -63,7 +63,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		print(f'Numerical output: {numerical_output}')
 		print(f'Universal output 2: {universal_output2}')
 
-	# universal to numerical
+	# universal to blockstate
 	try:
 		back_out, extra_output, extra_needed = blockstate_version.from_universal(None, universal_output2)
 	except:
