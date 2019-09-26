@@ -7,7 +7,6 @@ import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
 from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
-from PyMCTranslate.py3.helpers.nbt import from_spec
 from PyMCTranslate.py3.translation_manager import SubVersion
 
 
@@ -190,7 +189,7 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 			if extra_input is None:
 				# if there is no BlockEntity at location create it based off the specification
 				namespace, base_name = input_spec['nbt_identifier'].split(':', 1)
-				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), amulet_nbt.from_snbt(input_spec['nbt']))
+				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), NBTFile(amulet_nbt.from_snbt(input_spec['nbt'])))
 			# if the BlockEntity is already defined in extra_input continue with that
 
 			# if location and extra_input are both None then continue with the mapping as normal but without the BlockEntity.
@@ -222,9 +221,8 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 		properties = spec.get('defaults', {})
 
 		# cast to NBT if needed
-		# TODO: uncomment this when from_snbt implemented
-		# if spec.get('nbt_properties', False):
-		# 	properties = {prop: amulet_nbt.from_snbt(val) for prop, val in properties.items()}
+		if spec.get('nbt_properties', False):
+			properties = {prop: amulet_nbt.from_snbt(val) for prop, val in properties.items()}
 
 		for key, val in new_data['properties'].items():
 			properties[key] = val
