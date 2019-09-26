@@ -105,7 +105,7 @@ def nbt_from_list(
 ) -> NBTFile:
 
 	if default_template is not None:
-		nbt_object = amulet_nbt.from_spec(default_template)
+		nbt_object = amulet_nbt.from_snbt(default_template)
 	else:
 		nbt_object = datatype_to_nbt(outer_type)()
 
@@ -190,7 +190,7 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 			if extra_input is None:
 				# if there is no BlockEntity at location create it based off the specification
 				namespace, base_name = input_spec['nbt_identifier'].split(':', 1)
-				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), from_spec(input_spec['nbt']))
+				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), amulet_nbt.from_snbt(input_spec['nbt']))
 			# if the BlockEntity is already defined in extra_input continue with that
 
 			# if location and extra_input are both None then continue with the mapping as normal but without the BlockEntity.
