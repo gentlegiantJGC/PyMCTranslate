@@ -753,6 +753,126 @@
                                         }
                                     }
                                 ],
+                                "red_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"red_sandstone\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "purpur": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"purpur\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "prismarine": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"prismarine_rough\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "dark_prismarine": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"prismarine_dark\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "prismarine_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"prismarine_brick\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "mossy_cobblestone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"mossy_cobblestone\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "smooth_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"smooth_sandstone\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "red_nether_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"red_nether_brick\""
+                                            ]
+                                        }
+                                    }
+                                ],
                                 "end_stone_brick": [
                                     {
                                         "function": "new_block",
@@ -1140,6 +1260,126 @@
                                             "wood_type": [
                                                 "snbt",
                                                 "\"dark_oak\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "red_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"red_sandstone\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "purpur": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"purpur\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "prismarine": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"prismarine_rough\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "dark_prismarine": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"prismarine_dark\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "prismarine_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"prismarine_brick\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "mossy_cobblestone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"mossy_cobblestone\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "smooth_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"smooth_sandstone\""
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "red_nether_brick": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "stone_slab_type_2": [
+                                                "snbt",
+                                                "\"red_nether_brick\""
                                             ]
                                         }
                                     }

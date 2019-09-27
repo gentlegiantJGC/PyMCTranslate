@@ -6,68 +6,68 @@
     {
         "function": "map_properties",
         "options": {
-            "stone_slab_type": {
-                "\"smooth_stone\"": [
+            "stone_slab_type_2": {
+                "\"red_sandstone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "smooth_stone"
+                            "material": "red_sandstone"
                         }
                     }
                 ],
-                "\"sandstone\"": [
+                "\"purpur\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "sandstone"
+                            "material": "purpur"
                         }
                     }
                 ],
-                "\"wood\"": [
+                "\"prismarine_rough\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "petrified_oak"
+                            "material": "prismarine"
                         }
                     }
                 ],
-                "\"cobblestone\"": [
+                "\"prismarine_dark\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "cobblestone"
+                            "material": "dark_prismarine"
                         }
                     }
                 ],
-                "\"brick\"": [
+                "\"prismarine_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "brick"
+                            "material": "prismarine_brick"
                         }
                     }
                 ],
-                "\"stone_brick\"": [
+                "\"mossy_cobblestone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "stone_brick"
+                            "material": "mossy_cobblestone"
                         }
                     }
                 ],
-                "\"quartz\"": [
+                "\"smooth_sandstone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "quartz"
+                            "material": "smooth_sandstone"
                         }
                     }
                 ],
-                "\"nether_brick\"": [
+                "\"red_nether_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "nether_brick"
+                            "material": "red_nether_brick"
                         }
                     }
                 ]
