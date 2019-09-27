@@ -12,6 +12,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 	try:
 		universal_output, extra_output, extra_needed = blockstate_version.to_universal(None, input_blockstate)
 	except:
+		print('=' * 150)
 		print(f'error to universal {platform_name} {version_number}')
 		print(f'Blockstate input: {input_blockstate}')
 		return
@@ -21,7 +22,8 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		return
 
 	if not universal_output.namespace.startswith('universal_'):
-		print(f'Universal is not universal_ {platform_name} {version_number}')
+		print('=' * 150)
+		print(f'Universal is not "universal_" {platform_name} {version_number}')
 		print(f'Blockstate input: {input_blockstate}')
 		print(f'Universal output: {universal_output}')
 
@@ -30,6 +32,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		try:
 			numerical_output, extra_output, extra_needed = numerical_version.from_universal(None, universal_output)
 		except:
+			print('=' * 150)
 			print(f'error from universal to numerical {platform_name} {version_number}')
 			print(f'Blockstate input: {input_blockstate}')
 			print(f'Universal output: {universal_output}')
@@ -43,6 +46,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		try:
 			universal_output2, extra_output, extra_needed = numerical_version.to_universal(None, numerical_output)
 		except:
+			print('=' * 150)
 			print(f'error from universal to blockstate {platform_name} {version_number}')
 			print(f'Blockstate input: {input_blockstate}')
 			print(f'Universal output: {universal_output}')
@@ -57,6 +61,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 		universal_output2 = universal_output
 
 	if not universal_output2.namespace.startswith('universal_'):
+		print('=' * 150)
 		print(f'Universal is not universal_ {platform_name} {version_number}')
 		print(f'Blockstate input: {input_blockstate}')
 		print(f'Universal output: {universal_output}')
@@ -67,6 +72,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 	try:
 		back_out, extra_output, extra_needed = blockstate_version.from_universal(None, universal_output2)
 	except:
+		print('=' * 150)
 		print(f'error from universal {platform_name} {version_number}')
 		print(f'Blockstate input: {input_blockstate}')
 		print(f'Universal output: {universal_output}')
@@ -86,6 +92,7 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 					str(Block(namespace=back_out.namespace, base_name=back_out.base_name, properties=props2)):
 				return
 
+		print('=' * 150)
 		print(f"Conversion error: {input_blockstate} != {back_out} {platform_name} {version_number}")
 		print(f'Universal output: {universal_output}')
 		print(f'Numerical output: {numerical_output}')
