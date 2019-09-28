@@ -1,4 +1,4 @@
-from typing import Union, Tuple, List
+from typing import Union, Tuple, List, Callable, Dict
 try:
 	from amulet.api.block import Block
 except ImportError:
@@ -10,34 +10,27 @@ from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switc
 from PyMCTranslate.py3.translation_manager import SubVersion
 
 
-def get_blockentity(level, location: Tuple[int, int, int]) -> BlockEntity:
-	"""Reach back into the level and pull the block entity from the given location
-	Should return a BlockEntity class or None if there is no BlockEntity at the given location
+def get_block_at(relative_location: Tuple[int, int, int]) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
+	"""A callback to access data from the world
+	Implement a function with this specification and give it to the translate function
+	to have the code reach back into the world if required.
 	"""
-	if level is not None:
-		return level.tileEntityAt(*location)
-	else:
-		raise Exception('level is None and more data needed from it')
-
-
-def get_block_at(level, location: Tuple[int, int, int]) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
-	"""Should return the Block instance in the input format at location"""
 	return None, None
 
 
 _datatype_to_nbt = {
-	'byte': TAG_Byte,
-	'short': TAG_Short,
-	'int': TAG_Int,
-	'long': TAG_Long,
-	'float': TAG_Float,
-	'double': TAG_Double,
-	'byte_array': TAG_Byte_Array,
-	'string': TAG_String,
-	'list': TAG_List,
-	'compound': TAG_Compound,
-	'int_array': TAG_Int_Array,
-	'long_array': TAG_Long_Array
+	'byte': TAG_Byte.__class__,
+	'short': TAG_Short.__class__,
+	'int': TAG_Int.__class__,
+	'long': TAG_Long.__class__,
+	'float': TAG_Float.__class__,
+	'double': TAG_Double.__class__,
+	'byte_array': TAG_Byte_Array.__class__,
+	'string': TAG_String.__class__,
+	'list': TAG_List.__class__,
+	'compound': TAG_Compound.__class__,
+	'int_array': TAG_Int_Array.__class__,
+	'long_array': TAG_Long_Array.__class__
 }
 
 _nbt_to_datatype = {
@@ -59,7 +52,7 @@ _int_to_nbt = [None, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Doub
 _int_to_datatype = [None, 'byte', 'short', 'int', 'long', 'float', 'double', 'byte_array', 'string', 'list', 'compound', 'int_array', 'long_array']
 
 
-def datatype_to_nbt(datatype: str) -> Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]:
+def datatype_to_nbt(datatype: str) -> Union[TAG_Byte.__class__, TAG_Short.__class__, TAG_Int.__class__, TAG_Long.__class__, TAG_Float.__class__, TAG_Double.__class__, TAG_Byte_Array.__class__, TAG_String.__class__, TAG_List.__class__, TAG_Compound.__class__, TAG_Int_Array.__class__, TAG_Long_Array.__class__]:
 	return _datatype_to_nbt[datatype]
 
 
@@ -148,7 +141,7 @@ def nbt_from_list(
 				if data_path + 1 > len(nbt_temp):
 					# pad out the list to the length of the index
 					for _ in range(data_path + 1 - len(nbt_temp)):
-						nbt_temp.insert(datatype_to_nbt(nbt_type)())
+						nbt_temp.insert(data.__class__())
 				# we now should have a TAG_List of the same type as nbt_type and length as data_path
 				nbt_temp[data_path] = data
 
@@ -162,16 +155,15 @@ def nbt_from_list(
 	return NBTFile(nbt_object)
 
 
-def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, location: Tuple[int, int, int] = None, extra_input: BlockEntity = None, pre_populate_defaults: bool = True) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
+def translate(object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, get_block_callback: Callable = None, extra_input: BlockEntity = None, pre_populate_defaults: bool = True) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
 	"""
 		A function to translate the object input to the output version
 
-		:param world: a view into the level to access additional data
 		:param object_input: the Block or Entity object to be converted
 		:param input_spec: the specification for the object_input from the input block_format
 		:param mappings: the mapping file for the input_object
 		:param output_version: A way for the function to look at the specification being converted to. (used to load default properties)
-		:param location: (x, y, z) only used for Blocks if data beyond the object_input is needed
+		:param get_block_callback: see get_block_at function at the top for a template
 		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
 		:return: output, extra_output, extra_needed, cacheable
 			extra_needed: a bool to specify if more data is needed beyond the object_input
@@ -183,17 +175,17 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 
 	# set up for the _translate function which does the actual conversion
 	if isinstance(object_input, Block):
-		if 'nbt' in input_spec and location is not None:
-			# if the block location in the world is defined then load the BlockEntity from the world
-			extra_input = get_blockentity(world, location)
+		if extra_input is None and 'nbt' in input_spec and get_block_callback is not None:
+			# if the callback function is defined then load the BlockEntity from the world
+			extra_input = get_block_callback((0, 0, 0))[1]
 			if extra_input is None:
-				# if there is no BlockEntity at location create it based off the specification
+				# if BlockEntity is still None create it based off the specification
 				namespace, base_name = input_spec['nbt_identifier'].split(':', 1)
 				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), NBTFile(amulet_nbt.from_snbt(input_spec['nbt'])))
 			# if the BlockEntity is already defined in extra_input continue with that
 
-			# if location and extra_input are both None then continue with the mapping as normal but without the BlockEntity.
-			# The mappings will do as much as it can and will return the extra_needed flag as True telling the caller to find the location if possible
+		# if callback and extra_input are both None then continue with the mapping as normal but without the BlockEntity.
+		# The mappings will do as much as it can and will return the extra_needed flag as True telling the caller to run with callback if possible
 		block_input = object_input
 		if extra_input is not None:
 			assert isinstance(extra_input, BlockEntity)
@@ -209,7 +201,7 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 		raise Exception
 
 	# run the conversion
-	output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, mappings, location)
+	output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings, get_block_callback)
 
 	# sort out the outputs from the _translate function
 	extra_output = None
@@ -247,7 +239,7 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 				)
 
 			extra_output = BlockEntity(namespace, base_name, (0, 0, 0), nbt)
-			# not quite sure how to handle coordinates here. I could populate it with location but this is not always given
+			# not quite sure how to handle coordinates here.
 			# it makes sense to me to have the wrapper program set the coordinates so none are missed.
 
 	elif output_type == 'entity':
@@ -278,21 +270,32 @@ def translate(world, object_input: Union[Block, Entity], input_spec: dict, mappi
 	return output, extra_output, extra_needed, cacheable
 
 
-def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: List[dict], location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
+def _translate(
+		block_input: Union[Block, None],
+		nbt_input: Union[Entity, BlockEntity, None],
+		mappings: List[dict],
+		get_block_callback: Callable = None,
+		relative_location: Tuple[int, int, int] = None,
+		nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None,
+		inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None
+) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
 	"""
-	:param world:
 	:param block_input:
 	:param nbt_input:
 	:param mappings:
-	:param location:
+	:param get_block_callback:
+	:param relative_location:
 	:param inherited_data:
 	:return:
 		output_name - string of the object being output
 		output_type - string of the type output name is (should be 'block' or 'entity')
 		new - a dictionary that looks like this {'properties': {}, 'nbt': []}
-		extra_needed - bool. Specifies if more data is needed (ie if location needs to be given to do a full map)
+		extra_needed - bool. Specifies if more data is needed (ie if the block callback needs to be given to do a full map)
 		cacheable - bool. Specifies if the input object is cachable. Only true for simple Blocks without BlockEntities
 	"""
+	if relative_location is None:
+		relative_location = (0, 0, 0)
+
 	if inherited_data is not None:
 		output_name, output_type, new_data, extra_needed, cacheable = inherited_data
 	else:
@@ -408,7 +411,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					else:
 						val = str(block_input.properties[key])
 					if val in translate_function["options"][key]:
-						output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"][key][val], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"][key][val], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'multiblock' == function_name:
 			# {
@@ -421,17 +424,16 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 			# 	]
 			# }
 			cacheable = False
-			if location is None:
+			if get_block_callback is None:
 				extra_needed = True
 			else:
 				multiblocks = translate_function["options"]
 				if isinstance(multiblocks, dict):
 					multiblocks = [multiblocks]
 				for multiblock in multiblocks:
-					dx, dy, dz = multiblock['coords']
-					x, y, z = location
-					block_input_, nbt_input_ = get_block_at(world, (x + dx, y + dy, z + dz))
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input_, nbt_input_, multiblock['functions'], (x + dx, y + dy, z + dz), nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+					new_location = (relative_location[0] + multiblock['coords'][0], relative_location[1] + multiblock['coords'][1], relative_location[2] + multiblock['coords'][2])
+					block_input_, nbt_input_ = get_block_at(new_location)
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input_, nbt_input_, multiblock['functions'], get_block_callback ,new_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'map_block_name' == function_name:
 			# {
@@ -445,7 +447,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 			assert isinstance(block_input, Block), 'The block input is not a block'
 			block_name = f'{block_input.namespace}:{block_input.base_name}'
 			if block_name in translate_function["options"]:
-				output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"][block_name], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+				output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"][block_name], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'map_input_nbt' == function_name:
 			# This is a special function unlike the others. See _convert_map_input_nbt for more information
@@ -472,7 +474,7 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 			if nbt_input is None:
 				extra_needed = True
 			else:
-				output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(world, block_input, nbt_input, translate_function["options"], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+				output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, translate_function["options"], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'new_nbt' == function_name:
 			# when used outside map_input_nbt
@@ -573,16 +575,16 @@ def _translate(world, block_input: Union[Block, None], nbt_input: Union[Entity, 
 					nbt = index_nbt(nbt_input.nbt, nbt_path)
 					nbt_hash = nbt.to_snbt()
 					if nbt_hash in translate_function["options"]['cases']:
-						output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"]['cases'][nbt_hash], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"]['cases'][nbt_hash], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 						run_default = False
 
 				if run_default:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(world, block_input, nbt_input, translate_function["options"].get('default', {}), location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"].get('default', {}), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
 
 
-def _convert_map_input_nbt(level, block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: dict, location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
+def _convert_map_input_nbt(block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
 	if nbt_path is None:
 		nbt_path = ('', 'compound', [])
 	if inherited_data is not None:
@@ -628,23 +630,23 @@ def _convert_map_input_nbt(level, block_input: Union[Block, None], nbt_input: Un
 
 	if 'functions' in mappings:
 		# run functions if present
-		output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings['functions'], location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+		output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['functions'], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 	if isinstance(nbt, datatype_to_nbt(datatype)):
 		# datatypes match
 		if datatype == 'compound':
 			for key in nbt.value:
 				if key in mappings.get('keys', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['keys'][key], location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, mappings['keys'][key], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif datatype == 'list':
 			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		# elif datatype in ('byte', 'short', 'int', 'long', 'float', 'double', 'string'):
 		# 	pass
@@ -653,12 +655,12 @@ def _convert_map_input_nbt(level, block_input: Union[Block, None], nbt_input: Un
 			nested_datatype = datatype.replace('_array', '')
 			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(level, block_input, nbt_input, mappings['index'][str(index)], location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 	else:
 		# datatypes do not match. Run self_default
-		output_name, output_type, new_data, extra_needed, cacheable = _translate(level, block_input, nbt_input, mappings.get('self_default', [{"function": "carry_nbt"}]), location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+		output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('self_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
