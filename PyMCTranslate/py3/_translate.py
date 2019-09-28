@@ -432,7 +432,7 @@ def _translate(
 					multiblocks = [multiblocks]
 				for multiblock in multiblocks:
 					new_location = (relative_location[0] + multiblock['coords'][0], relative_location[1] + multiblock['coords'][1], relative_location[2] + multiblock['coords'][2])
-					block_input_, nbt_input_ = get_block_at(new_location)
+					block_input_, nbt_input_ = get_block_callback(new_location)
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input_, nbt_input_, multiblock['functions'], get_block_callback ,new_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'map_block_name' == function_name:
