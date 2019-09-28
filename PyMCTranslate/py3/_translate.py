@@ -564,7 +564,7 @@ def _translate(
 		elif 'map_nbt' == function_name:
 			# "map_nbt": {  # based on the input nbt value at path (should only be used with end stringable datatypes)
 			# 	"cases": {}  # if the data is in here then do the nested functions
-			# 	"default": {},  # if the data is not in cases or cases is not defined then do these functions
+			# 	"default": [],  # if the data is not in cases or cases is not defined then do these functions
 			# }
 			cacheable = False
 			if nbt_input is None:
@@ -579,7 +579,7 @@ def _translate(
 						run_default = False
 
 				if run_default:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"].get('default', {}), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"].get('default', []), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
 
