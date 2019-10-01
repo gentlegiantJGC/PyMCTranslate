@@ -449,10 +449,10 @@ def _translate(
 			if block_name in translate_function["options"]:
 				output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"][block_name], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
-		elif 'map_input_nbt' == function_name:
-			# This is a special function unlike the others. See _convert_map_input_nbt for more information
+		elif 'walk_input_nbt' == function_name:
+			# This is a special function unlike the others. See _convert_walk_input_nbt for more information
 			# {
-			# 	"function": "map_input_nbt",
+			# 	"function": "walk_input_nbt",
 			#   "outer_name": "",  # defaults to this if undefined
 			# 	"options": {
 			# 		"type": "<nbt type>",  # check that the nbt is of this type
@@ -474,10 +474,10 @@ def _translate(
 			if nbt_input is None:
 				extra_needed = True
 			else:
-				output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, translate_function["options"], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+				output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, translate_function["options"], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'new_nbt' == function_name:
-			# when used outside map_input_nbt
+			# when used outside walk_input_nbt
 			# {
 			# 	"function": "new_nbt",
 			# 	"options": [
@@ -493,7 +493,7 @@ def _translate(
 			# 	]
 			# }
 
-			# when used inside map_input_nbt
+			# when used inside walk_input_nbt
 			# {
 			# 	"function": "new_nbt",
 			# 	"options": [
@@ -527,7 +527,7 @@ def _translate(
 				new_data['nbt'].append((outer_name, outer_type, path, new_nbt['key'], amulet_nbt.from_snbt(new_nbt['value'])))
 
 		elif 'carry_nbt' == function_name:
-			# only works within map_input_nbt
+			# only works within walk_input_nbt
 			# {
 			# 	"function": "carry_nbt",
 			# 	"options": {
@@ -584,7 +584,7 @@ def _translate(
 	return output_name, output_type, new_data, extra_needed, cacheable
 
 
-def _convert_map_input_nbt(block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
+def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
 	if nbt_path is None:
 		nbt_path = ('', 'compound', [])
 	if inherited_data is not None:
@@ -637,14 +637,14 @@ def _convert_map_input_nbt(block_input: Union[Block, None], nbt_input: Union[Ent
 		if datatype == 'compound':
 			for key in nbt.value:
 				if key in mappings.get('keys', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, mappings['keys'][key], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['keys'][key], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif datatype == 'list':
 			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
@@ -655,7 +655,7 @@ def _convert_map_input_nbt(block_input: Union[Block, None], nbt_input: Union[Ent
 			nested_datatype = datatype.replace('_array', '')
 			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
-					output_name, output_type, new_data, extra_needed, cacheable = _convert_map_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 
