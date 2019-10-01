@@ -1,5 +1,12 @@
 [
     {
+        "function": "map_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {}
+        }
+    },
+    {
         "function": "new_block",
         "options": "universal_minecraft:dispenser"
     },
