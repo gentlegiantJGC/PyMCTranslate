@@ -5,26 +5,28 @@
     },
     {
         "function": "multiblock",
-        "options": {
-            "coords": [
-                0,
-                1,
-                0
-            ],
-            "functions": [
-                {
-                    "function": "map_block_name",
-                    "options": {
-                        "minecraft:kelp": [
-                            {
-                                "function": "new_block",
-                                "options": "universal_minecraft:kelp_plant"
-                            }
-                        ]
+        "options": [
+            {
+                "coords": [
+                    0,
+                    1,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:kelp": [
+                                {
+                                    "function": "new_block",
+                                    "options": "universal_minecraft:kelp_plant"
+                                }
+                            ]
+                        }
                     }
-                }
-            ]
-        }
+                ]
+            }
+        ]
     },
     {
         "function": "map_properties",
