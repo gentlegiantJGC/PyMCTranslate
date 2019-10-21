@@ -78,21 +78,21 @@ class TranslationManager:
 	A version in this context is a version of the game from a specific platform
 	(ie a unique combination of platform and version number)
 	"""
-	def __init__(self, mappings_path: str):
+	def __init__(self, json_path: str):
 		"""
 		Call this class with the path to the mapping json files.
 		Note if you are a developer using this library you can call PyMCTranslate.new_translation_manager()
 		to get a new instance of this class with the default mappings set up for you.
 
-		:param mappings_path: The path to the mapping directory
+		:param json_path: The path to the json directory
 		"""
 		# Storage for each of the Version classes
 		self._versions: Dict[str, Dict[Tuple[int, int, int], 'Version']] = {}
 
 		# Create a class for each of the versions and store them
-		for version_name in directories(mappings_path):
-			if os.path.isfile(os.path.join(mappings_path, version_name, '__init__.json')):
-				version = Version(os.path.join(mappings_path, version_name), self)
+		for version_name in directories(os.path.join(json_path, 'versions')):
+			if os.path.isfile(os.path.join(json_path, 'versions', version_name, '__init__.json')):
+				version = Version(os.path.join(json_path, 'versions', version_name), self)
 				self._versions.setdefault(version.platform, {})
 				self._versions[version.platform].setdefault(version.version_number, version)
 
@@ -227,7 +227,7 @@ class Version:
 		else:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				return self._subversions['numerical']
-			elif self.block_format == 'blockstate':
+			elif self.block_format in ['blockstate', 'nbt-blockstate']:
 				return self._subversions['blockstate']
 			else:
 				raise NotImplemented
