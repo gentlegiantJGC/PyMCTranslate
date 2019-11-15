@@ -82,10 +82,12 @@ class NumericalRegistry:
 		self._to_str[value] = key
 		self._to_int[key] = value
 
-	def to_str(self, value: int, default=None):
+	def private_to_str(self, value: int, default=None):
+		"""PRIVATE: Use the method in the Version class"""
 		return self._to_str.get(value, default)
 
-	def to_int(self, key: str, default=None):
+	def private_to_int(self, key: str, default=None):
+		"""PRIVATE: Use the method in the Version class"""
 		return self._to_int.get(key, default)
 
 	def __contains__(self, item):
@@ -346,7 +348,7 @@ class Version:
 
 	def ints_to_block(self, block_id: int, block_data: int) -> Block:
 		if block_id in self._translation_manager.blocks:
-			namespace, base_name = self._translation_manager.blocks.to_str(block_id).split(':', 1)
+			namespace, base_name = self._translation_manager.blocks.private_to_str(block_id).split(':', 1)
 		elif block_id in self._numerical_block_map:
 			namespace, base_name = self._numerical_block_map[block_id]
 		else:
@@ -359,7 +361,7 @@ class Version:
 		block_data = None
 		block_tuple = (block.namespace, block.base_name)
 		if block.namespaced_name in self._translation_manager.blocks:
-			block_id = self._translation_manager.blocks.to_int(block.namespaced_name)
+			block_id = self._translation_manager.blocks.private_to_int(block.namespaced_name)
 		elif block_tuple in self._numerical_block_map_inverse:
 			block_id = self._numerical_block_map_inverse[block_tuple]
 		elif block_tuple == ("minecraft", "numerical") and "block_id" in block.properties and\
