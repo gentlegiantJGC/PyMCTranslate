@@ -8,6 +8,8 @@ try:
 except:
 	from PyMCTranslate.py3.api.block import Block
 from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
+from PyMCTranslate.py3.biomes import BiomeVersionManager, BiomeWorldManager
+from PyMCTranslate.py3.registry import NumericalRegistry
 
 log_level = 0  # 0 for no logs, 1 or higher for warnings, 2 or higher for info, 3 or higher for debug
 
@@ -72,30 +74,7 @@ def files(path: str) -> Generator[str, None, None]:
 			yield file_name
 
 
-class NumericalRegistry:
-	def __init__(self):
-		self._to_str: Dict[int, str] = {}
-		self._to_int: Dict[str, int] = {}
 
-	def register(self, key: str, value: int):
-		assert isinstance(key, str) and isinstance(value, int), 'key must be a string and value must be an int'
-		self._to_str[value] = key
-		self._to_int[key] = value
-
-	def private_to_str(self, value: int, default=None):
-		"""PRIVATE: Use the method in the Version class"""
-		return self._to_str.get(value, default)
-
-	def private_to_int(self, key: str, default=None):
-		"""PRIVATE: Use the method in the Version class"""
-		return self._to_int.get(key, default)
-
-	def __contains__(self, item):
-		if isinstance(item, int):
-			return item in self._to_str
-		elif isinstance(item, str):
-			return item in self._to_int
-		return False
 
 
 class TranslationManager:
@@ -122,6 +101,7 @@ class TranslationManager:
 			Tuple[int, int, int]
 		] = {}
 
+		self.biomes = BiomeWorldManager()
 		self.blocks = NumericalRegistry()
 
 		# Create a class for each of the versions and store them
@@ -257,6 +237,7 @@ class Version:
 				self._waterloggable = set(json.load(f))
 		else:
 			self._waterloggable = None
+		self.biomes = BiomeVersionManager(os.path.join(self._version_path, '__biome_data__.json'), translation_manager)
 
 	def _load(self):
 		"""
