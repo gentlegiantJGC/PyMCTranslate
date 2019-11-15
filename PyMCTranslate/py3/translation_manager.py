@@ -72,6 +72,30 @@ def files(path: str) -> Generator[str, None, None]:
 			yield file_name
 
 
+class NumericalRegistry:
+	def __init__(self):
+		self._to_str: Dict[int, str] = {}
+		self._to_int: Dict[str, int] = {}
+
+	def register(self, key: str, value: int):
+		assert isinstance(key, str) and isinstance(value, int), 'key must be a string and value must be an int'
+		self._to_str[value] = key
+		self._to_int[key] = value
+
+	def to_str(self, value: int, default=None):
+		return self._to_str.get(value, default)
+
+	def to_int(self, key: str, default=None):
+		return self._to_int.get(key, default)
+
+	def __contains__(self, item):
+		if isinstance(item, int):
+			return item in self._to_str
+		elif isinstance(item, str):
+			return item in self._to_int
+		return False
+
+
 class TranslationManager:
 	"""
 	Container and manager for the different translation versions.
@@ -95,6 +119,8 @@ class TranslationManager:
 			],
 			Tuple[int, int, int]
 		] = {}
+
+		self.blocks = NumericalRegistry()
 
 		# Create a class for each of the versions and store them
 		for version_name in directories(os.path.join(json_path, 'versions')):
@@ -319,26 +345,32 @@ class Version:
 		return False
 
 	def ints_to_block(self, block_id: int, block_data: int) -> Block:
-		if block_id in self._numerical_block_map:
+		if block_id in self._translation_manager.blocks:
+			namespace, base_name = self._translation_manager.blocks.to_str(block_id).split(':', 1)
+		elif block_id in self._numerical_block_map:
 			namespace, base_name = self._numerical_block_map[block_id]
-			return Block(namespace=namespace, base_name=base_name, properties={"block_data": str(block_data)})
 		else:
 			return Block(namespace="minecraft", base_name="numerical", properties={"block_id": str(block_id), "block_data": str(block_data)})
 
-	def block_to_ints(self, block: Block) -> Union[None, Tuple[int, int]]:
-		block_tuple = (block.namespace, block.base_name)
-		if block_tuple in self._numerical_block_map_inverse:
-			if "block_data" in block.properties and isinstance(block.properties["block_data"], str) and block.properties["block_data"].isnumeric():
-				return self._numerical_block_map_inverse[block_tuple], int(block.properties["block_data"])
-		elif block_tuple == ("minecraft", "numerical"):
-			if "block_id" in block.properties and isinstance(block.properties["block_id"], str) and block.properties["block_id"].isnumeric()\
-				and "block_data" in block.properties and isinstance(block.properties["block_data"], str) and block.properties["block_data"].isnumeric():
-				return int(block.properties["block_id"]), int(block.properties["block_data"])
+		return Block(namespace=namespace, base_name=base_name, properties={"block_data": str(block_data)})
 
-	def add_numeric_block(self, block_id: int, block_str: str):
-		block_tuple = block_str.split(':', 1)
-		self._numerical_block_map[block_id] = block_tuple
-		self._numerical_block_map_inverse[block_tuple] = block_id
+	def block_to_ints(self, block: Block) -> Union[None, Tuple[int, int]]:
+		block_id = None
+		block_data = None
+		block_tuple = (block.namespace, block.base_name)
+		if block.namespaced_name in self._translation_manager.blocks:
+			block_id = self._translation_manager.blocks.to_int(block.namespaced_name)
+		elif block_tuple in self._numerical_block_map_inverse:
+			block_id = self._numerical_block_map_inverse[block_tuple]
+		elif block_tuple == ("minecraft", "numerical") and "block_id" in block.properties and\
+			isinstance(block.properties["block_id"], str) and block.properties["block_id"].isnumeric():
+			block_id = int(block.properties["block_id"])
+
+		if "block_data" in block.properties and isinstance(block.properties["block_data"], str) and block.properties["block_data"].isnumeric():
+			block_data = int(block.properties["block_data"])
+
+		if block_id is not None and block_data is not None:
+			return (block_id, block_data)
 
 
 class SubVersion:
