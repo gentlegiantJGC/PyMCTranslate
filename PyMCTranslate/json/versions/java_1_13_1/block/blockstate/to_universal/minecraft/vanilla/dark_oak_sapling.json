@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sapling"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "dark_oak"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "stage": [
+                "0",
+                "1"
+            ]
+        }
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:stained_shulker_box"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "color": "white"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west",
+                "up",
+                "down"
+            ]
+        }
+    }
+]

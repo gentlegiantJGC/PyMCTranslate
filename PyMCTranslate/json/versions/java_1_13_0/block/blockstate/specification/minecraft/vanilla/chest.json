@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "facing": [
+            "north",
+            "south",
+            "west",
+            "east"
+        ],
+        "type": [
+            "single",
+            "left",
+            "right"
+        ]
+    },
+    "defaults": {
+        "facing": "north",
+        "type": "single"
+    }
+}

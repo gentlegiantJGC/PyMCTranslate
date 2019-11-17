@@ -1,0 +1,38 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "normal": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    }
+                ],
+                "sticky": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west",
+                "up",
+                "down"
+            ],
+            "short": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

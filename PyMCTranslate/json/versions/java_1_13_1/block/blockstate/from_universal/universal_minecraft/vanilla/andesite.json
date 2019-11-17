@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:andesite"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "polished": {
+                "false": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:andesite"
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_andesite"
+                    }
+                ]
+            }
+        }
+    }
+]

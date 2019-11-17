@@ -1,0 +1,48 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:command_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mode": {
+                "impulse": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:command_block"
+                    }
+                ],
+                "chain": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:chain_command_block"
+                    }
+                ],
+                "repeating": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:repeating_command_block"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "conditional": [
+                "true",
+                "false"
+            ],
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west",
+                "up",
+                "down"
+            ]
+        }
+    }
+]

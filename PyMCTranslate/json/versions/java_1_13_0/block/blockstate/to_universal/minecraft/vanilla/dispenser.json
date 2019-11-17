@@ -1,0 +1,30 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {}
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:dispenser"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west",
+                "up",
+                "down"
+            ],
+            "triggered": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

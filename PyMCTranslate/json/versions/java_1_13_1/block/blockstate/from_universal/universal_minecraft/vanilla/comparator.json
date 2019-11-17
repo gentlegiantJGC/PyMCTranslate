@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:comparator"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ],
+            "mode": [
+                "compare",
+                "subtract"
+            ],
+            "powered": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]
