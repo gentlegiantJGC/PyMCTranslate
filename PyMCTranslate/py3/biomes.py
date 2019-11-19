@@ -32,7 +32,7 @@ class BiomeVersionManager:
         self._biome_from_universal: Dict[str, str] = biome_data['universal2version']
 
     def to_universal(self, biome: Union[int, str]) -> int:
-        if not isinstance(biome, int) and numpy.issubdtype(biome, numpy.integer):
+        if not isinstance(biome, int) and numpy.issubdtype(biome.__class__, numpy.integer):
             biome = int(biome)
         if isinstance(biome, int):
             if biome in self._translation_manager.biomes:
@@ -54,13 +54,13 @@ class BiomeVersionManager:
         return self._translation_manager.biomes.universal.to_int(universal_biome)
 
     def from_universal(self, biome: Union[int, str]) -> int:
-        if not isinstance(biome, int) and numpy.issubdtype(biome, numpy.integer):
+        if not isinstance(biome, int) and numpy.issubdtype(biome.__class__, numpy.integer):
             biome = int(biome)
         if isinstance(biome, int):
             if biome in self._translation_manager.biomes.universal:
                 biome = self._translation_manager.biomes.universal.to_str(biome)
             else:
-                raise Exception(f'Unregistered universal biome id {biome} found')
+                biome = 'universal_minecraft:plains'
 
         # biome is now the universal string
 
@@ -69,15 +69,15 @@ class BiomeVersionManager:
         else:
             version_biome = biome
 
-        if biome in self._translation_manager.biomes:
-            biome = self._translation_manager.biomes.private_to_int(biome)
-        elif biome in self._biome_str_to_int:
-            biome = self._biome_str_to_int[biome]
+        if version_biome in self._translation_manager.biomes:
+            version_biome = self._translation_manager.biomes.private_to_int(version_biome)
+        elif version_biome in self._biome_str_to_int:
+            version_biome = self._biome_str_to_int[version_biome]
         else:
-            print(f'Error processing biome {biome}. Setting to plains.')
-            biome = self.from_universal('minecraft:plains')  # TODO: perhaps find a way to assign default dynamically
+            print(f'Error processing biome {version_biome}. Setting to plains.')
+            version_biome = self.from_universal('minecraft:plains')  # TODO: perhaps find a way to assign default dynamically
 
-        return biome
+        return version_biome
 
 
 class BiomeWorldManager(NumericalRegistry):
