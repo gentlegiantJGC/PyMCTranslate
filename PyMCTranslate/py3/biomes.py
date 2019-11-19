@@ -2,6 +2,7 @@ from typing import Union, Dict, TYPE_CHECKING
 if TYPE_CHECKING:
     from .translation_manager import TranslationManager
 import json
+import numpy
 
 from PyMCTranslate.py3.registry import NumericalRegistry
 
@@ -31,6 +32,8 @@ class BiomeVersionManager:
         self._biome_from_universal: Dict[str, str] = biome_data['universal2version']
 
     def to_universal(self, biome: Union[int, str]) -> int:
+        if not isinstance(biome, int) and numpy.issubdtype(biome, numpy.integer):
+            biome = int(biome)
         if isinstance(biome, int):
             if biome in self._translation_manager.biomes:
                 biome = self._translation_manager.biomes.private_to_str(biome)
@@ -51,6 +54,8 @@ class BiomeVersionManager:
         return self._translation_manager.biomes.universal.to_int(universal_biome)
 
     def from_universal(self, biome: Union[int, str]) -> int:
+        if not isinstance(biome, int) and numpy.issubdtype(biome, numpy.integer):
+            biome = int(biome)
         if isinstance(biome, int):
             if biome in self._translation_manager.biomes.universal:
                 biome = self._translation_manager.biomes.universal.to_str(biome)
