@@ -3,7 +3,7 @@ from __future__ import annotations
 import copy
 from sys import getsizeof
 import re
-from typing import Dict, Iterable, List, Tuple, Union, overload
+from typing import Dict, Iterable, List, Tuple, Union, overload, Generator
 
 
 class Block:
@@ -61,6 +61,7 @@ class Block:
     """
 
     __slots__ = (
+        "_namespaced_name",
         "_namespace",
         "_base_name",
         "_properties",
@@ -85,6 +86,10 @@ class Block:
         self._blockstate = blockstate
         self._namespace = namespace
         self._base_name = base_name
+        if namespace is None or base_name is None:
+            self._namespaced_name = None
+        else:
+            self._namespaced_name = f'{namespace}:{base_name}'
 
         if namespace is not None and base_name is not None and properties is None:
             properties = {}
@@ -98,6 +103,17 @@ class Block:
 
         if blockstate:
             self._gen_blockstate()
+
+    @property
+    def namespaced_name(self) -> str:
+        """
+        The namespace:base_name of the blockstate represented by the Block object (IE: `minecraft:stone`)
+
+        :return: The namespace:base_name of the blockstate
+        """
+        if self._namespaced_name is None:
+            self._parse_blockstate_string()
+        return self._namespaced_name
 
     @property
     def namespace(self) -> str:
@@ -144,6 +160,22 @@ class Block:
         return self._blockstate
 
     @property
+    def base_block(self) -> Block:
+        """
+        Returns the block without any extra blocks
+
+        :return: A Block object
+        """
+        if len(self.extra_blocks) == 0:
+            return self
+        else:
+            return Block(
+                namespace=self.namespace,
+                base_name=self.base_name,
+                properties=self.properties
+            )
+
+    @property
     def extra_blocks(self) -> Union[Tuple, Tuple[Block]]:
         """
         Returns a tuple of the extra blocks contained in the Block instance
@@ -153,7 +185,7 @@ class Block:
         return self._extra_blocks
 
     def _gen_blockstate(self):
-        self._blockstate = f"{self.namespace}:{self.base_name}"
+        self._namespaced_name = self._blockstate = f"{self.namespace}:{self.base_name}"
         if self.properties:
             props = [f"{key}={value}" for key, value in sorted(self.properties.items())]
             self._blockstate = f"{self._blockstate}[{','.join(props)}]"
@@ -223,6 +255,14 @@ class Block:
             return False
 
         return self.blockstate == other.blockstate and self._compare_extra_blocks(other)
+
+    def __gt__(self, other: Block) -> bool:
+        """
+        Allows blocks to be sorted so numpy.unique can be used on them
+        """
+        if self.__class__ != other.__class__:
+            return False
+        return self.blockstate > other.blockstate
 
     def __hash__(self) -> int:
         """
@@ -360,12 +400,19 @@ class BlockManager:
     def __contains__(self, item: Block) -> bool:
         return item in self._block_to_index_map
 
+    def blocks(self) -> Tuple[Block]:
+        return tuple(self._index_to_block)
+
+    def items(self) -> Generator[Tuple[int, Block]]:
+        for index, block in enumerate(self._index_to_block):
+            yield index, block
+
     @overload
     def __getitem__(self, item: Block) -> int:
         ...
 
     @overload
-    def __getitem__(self, item: Int) -> Block:
+    def __getitem__(self, item: int) -> Block:
         ...
 
     def __getitem__(self, item):
