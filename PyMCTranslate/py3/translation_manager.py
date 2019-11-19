@@ -74,9 +74,6 @@ def files(path: str) -> Generator[str, None, None]:
 			yield file_name
 
 
-
-
-
 class TranslationManager:
 	"""
 	Container and manager for the different translation versions.
