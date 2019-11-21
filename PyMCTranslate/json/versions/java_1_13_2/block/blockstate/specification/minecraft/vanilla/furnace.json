@@ -1,10 +1,15 @@
 {
+    "nbt_identifier": [
+        "minecraft",
+        "furnace"
+    ],
+    "snbt": "{Items: []}",
     "properties": {
         "facing": [
             "north",
+            "east",
             "south",
-            "west",
-            "east"
+            "west"
         ],
         "lit": [
             "true",
