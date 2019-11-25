@@ -5,9 +5,13 @@ import copy
 
 try:
 	from amulet.api.block import Block
-except:
+	from amulet.api.block_entity import BlockEntity
+	from amulet.api.entity import Entity
+except ImportError:
 	from PyMCTranslate.py3.api.block import Block
-from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
+	from PyMCTranslate.py3.api.block_entity import BlockEntity
+	from PyMCTranslate.py3.api.entity import Entity
+
 from PyMCTranslate.py3.biomes import BiomeVersionManager, BiomeWorldManager
 from PyMCTranslate.py3.registry import NumericalRegistry
 
