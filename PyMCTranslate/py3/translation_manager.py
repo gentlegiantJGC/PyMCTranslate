@@ -230,11 +230,19 @@ class Version:
 		self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
 		self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
 		if self.platform == 'java' and os.path.isfile(os.path.join(version_path, '__waterloggable__.json')):
-			with open(version_path, '__waterloggable__.json') as f:
+			with open(os.path.join(version_path, '__waterloggable__.json')) as f:
 				self._waterloggable = set(json.load(f))
 		else:
 			self._waterloggable = None
 		self.biomes = BiomeVersionManager(os.path.join(self._version_path, '__biome_data__.json'), translation_manager)
+
+		if init_file['block_entity_format'] == "str-id":
+			with open(os.path.join(version_path, '__block_entity_map__.json')) as f:
+				self.block_entity_map: Dict[str: str] = json.load(f)
+				self.block_entity_map_inverse: Dict[str: str] = {val: key for key, val in self.block_entity_map.items()}
+		else:
+			self.block_entity_map = None
+			self.block_entity_map_inverse = None
 
 	def _load(self):
 		"""
@@ -480,7 +488,7 @@ class SubVersion:
 			return output, extra_output, extra_needed
 		except Exception as e:
 			info(f'Failed converting blockstate to universal\n{e}')
-			return object_input, None, False
+			return object_input, None, True
 
 	def from_universal(self, object_input: Union[Block, Entity], get_block_callback: Callable = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
 		"""
@@ -511,7 +519,7 @@ class SubVersion:
 			return output, extra_output, extra_needed
 		except Exception as e:
 			info(f'Failed converting blockstate from universal\n{e}')
-			return object_input, None, False
+			return object_input, None, True
 
 
 from PyMCTranslate.py3._translate import translate
