@@ -1,12 +1,16 @@
 from typing import Union, Tuple, List, Callable, Dict
 try:
 	from amulet.api.block import Block
+	from amulet.api.block_entity import BlockEntity
+	from amulet.api.entity import Entity
 except ImportError:
 	from PyMCTranslate.py3.api.block import Block
+	from PyMCTranslate.py3.api.block_entity import BlockEntity
+	from PyMCTranslate.py3.api.entity import Entity
+
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
-from PyMCTranslate.py3.helpers.objects import BlockEntity, Entity  # TODO: switch these for more full ones in API
 from PyMCTranslate.py3.translation_manager import SubVersion
 
 
