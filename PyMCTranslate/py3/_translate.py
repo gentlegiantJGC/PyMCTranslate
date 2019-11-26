@@ -179,13 +179,13 @@ def translate(object_input: Union[Block, Entity], input_spec: dict, mappings: Li
 
 	# set up for the _translate function which does the actual conversion
 	if isinstance(object_input, Block):
-		if extra_input is None and 'nbt' in input_spec and get_block_callback is not None:
+		if extra_input is None and 'snbt' in input_spec and get_block_callback is not None:
 			# if the callback function is defined then load the BlockEntity from the world
 			extra_input = get_block_callback((0, 0, 0))[1]
 			if extra_input is None:
 				# if BlockEntity is still None create it based off the specification
-				namespace, base_name = input_spec['nbt_identifier'].split(':', 1)
-				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), NBTFile(amulet_nbt.from_snbt(input_spec['nbt'])))
+				namespace, base_name = input_spec['nbt_identifier']
+				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), NBTFile(amulet_nbt.from_snbt(input_spec['snbt'])))
 			# if the BlockEntity is already defined in extra_input continue with that
 
 		# if callback and extra_input are both None then continue with the mapping as normal but without the BlockEntity.

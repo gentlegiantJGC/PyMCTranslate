@@ -15,5 +15,10 @@
     "defaults": {
         "facing": "north",
         "type": "single"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "chest"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }

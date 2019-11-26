@@ -3,7 +3,46 @@
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
-            "keys": {},
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "keys": {
+                        "Age": {
+                            "type": "long",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "ExactTeleport": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "ExitPortal": {
+                            "type": "compound",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
             "nested_default": []
         }
     },

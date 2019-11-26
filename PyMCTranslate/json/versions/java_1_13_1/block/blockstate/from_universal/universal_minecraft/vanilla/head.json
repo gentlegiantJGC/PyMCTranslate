@@ -3,7 +3,24 @@
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
-            "keys": {},
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "keys": {
+                        "Owner": {
+                            "type": "compound",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
             "nested_default": []
         }
     },

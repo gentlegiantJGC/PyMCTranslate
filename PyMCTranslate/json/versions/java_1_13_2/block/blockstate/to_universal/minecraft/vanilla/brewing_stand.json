@@ -20,11 +20,10 @@
                         }
                     ]
                 },
-                "Items": {
-                    "type": "list",
+                "BrewTime": {
+                    "type": "short",
                     "functions": [
                         {
-                            "todo": "this",
                             "function": "carry_nbt",
                             "options": {
                                 "path": [
@@ -37,8 +36,8 @@
                         }
                     ]
                 },
-                "BrewTime": {
-                    "type": "int",
+                "Items": {
+                    "type": "list",
                     "functions": [
                         {
                             "function": "carry_nbt",
@@ -54,6 +53,22 @@
                     ]
                 },
                 "Lock": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "CustomName": {
                     "type": "string",
                     "functions": [
                         {
