@@ -7,13 +7,14 @@
                 "utags": {
                     "type": "compound",
                     "keys": {
-                        "target_uuid": {
+                        "java_target_uuid": {
                             "type": "compound",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
                                     "options": {
-                                        "path": []
+                                        "path": [],
+                                        "key": "target_uuid"
                                     }
                                 }
                             ]
