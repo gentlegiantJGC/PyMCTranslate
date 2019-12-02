@@ -20,5 +20,10 @@
         "head_piece_bit": "0b",
         "occupied_bit": "0b"
     },
-    "nbt_properties": true
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "bed"
+    ],
+    "snbt": "{isMovable: 1b}"
 }
