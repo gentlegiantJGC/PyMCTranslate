@@ -20,5 +20,10 @@
         "output_lit_bit": "0b",
         "output_subtract_bit": "0b"
     },
-    "nbt_properties": true
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "comparator"
+    ],
+    "snbt": "{OutputSignal: 0, isMovable: 1b}"
 }
