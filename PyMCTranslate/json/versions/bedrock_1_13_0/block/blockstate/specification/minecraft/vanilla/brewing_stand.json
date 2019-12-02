@@ -18,5 +18,10 @@
         "brewing_stand_slot_b_bit": "0b",
         "brewing_stand_slot_c_bit": "0b"
     },
-    "nbt_properties": true
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "brewing_stand"
+    ],
+    "snbt": "{CookTime: 0s, FuelAmount: 0s, FuelTotal: 0s, Items: [], isMovable: 1b}"
 }

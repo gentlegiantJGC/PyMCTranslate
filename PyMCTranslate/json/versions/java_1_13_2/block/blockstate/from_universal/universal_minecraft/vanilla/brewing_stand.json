@@ -8,12 +8,13 @@
                     "type": "compound",
                     "keys": {
                         "Fuel": {
-                            "type": "byte",
+                            "type": "short",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
                                     "options": {
-                                        "path": []
+                                        "path": [],
+                                        "type": "byte"
                                     }
                                 }
                             ]

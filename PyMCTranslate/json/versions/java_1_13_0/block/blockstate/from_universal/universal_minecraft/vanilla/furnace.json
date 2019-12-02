@@ -7,17 +7,6 @@
                 "utags": {
                     "type": "compound",
                     "keys": {
-                        "CookTime": {
-                            "type": "short",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "BurnTime": {
                             "type": "short",
                             "functions": [
@@ -29,7 +18,7 @@
                                 }
                             ]
                         },
-                        "RecipesUsedSize": {
+                        "CookTime": {
                             "type": "short",
                             "functions": [
                                 {
@@ -41,6 +30,17 @@
                             ]
                         },
                         "CookTimeTotal": {
+                            "type": "short",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "RecipesUsedSize": {
                             "type": "short",
                             "functions": [
                                 {
