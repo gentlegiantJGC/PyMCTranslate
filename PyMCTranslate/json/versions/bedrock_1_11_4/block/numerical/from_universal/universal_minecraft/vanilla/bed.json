@@ -1,11 +1,223 @@
 [
     {
-        "function": "new_block",
-        "options": "minecraft:bed"
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "keys": {
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
     },
     {
         "function": "map_properties",
         "options": {
+            "color": {
+                "white": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "0b"
+                            }
+                        ]
+                    }
+                ],
+                "orange": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "1b"
+                            }
+                        ]
+                    }
+                ],
+                "magenta": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "2b"
+                            }
+                        ]
+                    }
+                ],
+                "light_blue": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "3b"
+                            }
+                        ]
+                    }
+                ],
+                "yellow": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "4b"
+                            }
+                        ]
+                    }
+                ],
+                "lime": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "5b"
+                            }
+                        ]
+                    }
+                ],
+                "pink": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "6b"
+                            }
+                        ]
+                    }
+                ],
+                "gray": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "7b"
+                            }
+                        ]
+                    }
+                ],
+                "light_gray": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "8b"
+                            }
+                        ]
+                    }
+                ],
+                "cyan": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "9b"
+                            }
+                        ]
+                    }
+                ],
+                "purple": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "10b"
+                            }
+                        ]
+                    }
+                ],
+                "blue": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "11b"
+                            }
+                        ]
+                    }
+                ],
+                "brown": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "12b"
+                            }
+                        ]
+                    }
+                ],
+                "green": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "13b"
+                            }
+                        ]
+                    }
+                ],
+                "red": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "14b"
+                            }
+                        ]
+                    }
+                ],
+                "black": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "color",
+                                "value": "15b"
+                            }
+                        ]
+                    }
+                ]
+            },
             "part": {
                 "foot": [
                     {
@@ -189,185 +401,11 @@
                         }
                     }
                 ]
-            },
-            "color": {
-                "white": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "0b"
-                            }
-                        ]
-                    }
-                ],
-                "orange": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "1b"
-                            }
-                        ]
-                    }
-                ],
-                "magenta": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "2b"
-                            }
-                        ]
-                    }
-                ],
-                "light_blue": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "3b"
-                            }
-                        ]
-                    }
-                ],
-                "yellow": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "4b"
-                            }
-                        ]
-                    }
-                ],
-                "lime": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "5b"
-                            }
-                        ]
-                    }
-                ],
-                "pink": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "6b"
-                            }
-                        ]
-                    }
-                ],
-                "gray": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "7b"
-                            }
-                        ]
-                    }
-                ],
-                "light_gray": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "8b"
-                            }
-                        ]
-                    }
-                ],
-                "cyan": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "9b"
-                            }
-                        ]
-                    }
-                ],
-                "purple": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "10b"
-                            }
-                        ]
-                    }
-                ],
-                "blue": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "11b"
-                            }
-                        ]
-                    }
-                ],
-                "brown": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "12b"
-                            }
-                        ]
-                    }
-                ],
-                "green": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "13b"
-                            }
-                        ]
-                    }
-                ],
-                "red": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "14b"
-                            }
-                        ]
-                    }
-                ],
-                "black": [
-                    {
-                        "function": "new_nbt",
-                        "options": [
-                            {
-                                "key": "color",
-                                "value": "15b"
-                            }
-                        ]
-                    }
-                ]
             }
         }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:bed"
     }
 ]

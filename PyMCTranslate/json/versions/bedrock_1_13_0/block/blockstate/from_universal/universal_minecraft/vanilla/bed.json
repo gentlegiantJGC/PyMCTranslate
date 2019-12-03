@@ -38,10 +38,6 @@
         }
     },
     {
-        "function": "new_block",
-        "options": "minecraft:bed"
-    },
-    {
         "function": "map_properties",
         "options": {
             "color": {
@@ -51,7 +47,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "0"
+                                "value": "0b"
                             }
                         ]
                     }
@@ -62,7 +58,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "1"
+                                "value": "1b"
                             }
                         ]
                     }
@@ -73,7 +69,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "2"
+                                "value": "2b"
                             }
                         ]
                     }
@@ -84,7 +80,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "3"
+                                "value": "3b"
                             }
                         ]
                     }
@@ -95,7 +91,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "4"
+                                "value": "4b"
                             }
                         ]
                     }
@@ -106,7 +102,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "5"
+                                "value": "5b"
                             }
                         ]
                     }
@@ -117,7 +113,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "6"
+                                "value": "6b"
                             }
                         ]
                     }
@@ -128,7 +124,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "7"
+                                "value": "7b"
                             }
                         ]
                     }
@@ -139,7 +135,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "8"
+                                "value": "8b"
                             }
                         ]
                     }
@@ -150,7 +146,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "9"
+                                "value": "9b"
                             }
                         ]
                     }
@@ -161,7 +157,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "10"
+                                "value": "10b"
                             }
                         ]
                     }
@@ -172,7 +168,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "11"
+                                "value": "11b"
                             }
                         ]
                     }
@@ -183,7 +179,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "12"
+                                "value": "12b"
                             }
                         ]
                     }
@@ -194,7 +190,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "13"
+                                "value": "13b"
                             }
                         ]
                     }
@@ -205,7 +201,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "14"
+                                "value": "14b"
                             }
                         ]
                     }
@@ -216,7 +212,7 @@
                         "options": [
                             {
                                 "key": "color",
-                                "value": "15"
+                                "value": "15b"
                             }
                         ]
                     }
@@ -317,5 +313,9 @@
                 ]
             }
         }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:bed"
     }
 ]
