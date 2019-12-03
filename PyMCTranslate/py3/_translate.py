@@ -23,18 +23,18 @@ def get_block_at(relative_location: Tuple[int, int, int]) -> Tuple[Union[Block, 
 
 
 _datatype_to_nbt = {
-	'byte': TAG_Byte.__class__,
-	'short': TAG_Short.__class__,
-	'int': TAG_Int.__class__,
-	'long': TAG_Long.__class__,
-	'float': TAG_Float.__class__,
-	'double': TAG_Double.__class__,
-	'byte_array': TAG_Byte_Array.__class__,
-	'string': TAG_String.__class__,
-	'list': TAG_List.__class__,
-	'compound': TAG_Compound.__class__,
-	'int_array': TAG_Int_Array.__class__,
-	'long_array': TAG_Long_Array.__class__
+	'byte': TAG_Byte,
+	'short': TAG_Short,
+	'int': TAG_Int,
+	'long': TAG_Long,
+	'float': TAG_Float,
+	'double': TAG_Double,
+	'byte_array': TAG_Byte_Array,
+	'string': TAG_String,
+	'list': TAG_List,
+	'compound': TAG_Compound,
+	'int_array': TAG_Int_Array,
+	'long_array': TAG_Long_Array
 }
 
 _nbt_to_datatype = {
@@ -70,6 +70,7 @@ def index_nbt(nbt: NBTFile, nbt_path: Tuple[str, str, List[Tuple[Union[str, int]
 	outer_name, outer_type, nbt_path = nbt_path
 	if not isinstance(nbt, NBTFile) or nbt.name != outer_name or not isinstance(nbt.value, datatype_to_nbt(outer_type)):
 		return None
+	nbt = nbt.value
 
 	for path, nbt_type in nbt_path:
 		if isinstance(path, int) and isinstance(nbt, TAG_List) and len(nbt) > path:
@@ -159,7 +160,15 @@ def nbt_from_list(
 	return NBTFile(nbt_object)
 
 
-def translate(object_input: Union[Block, Entity], input_spec: dict, mappings: List[dict], output_version: SubVersion, get_block_callback: Callable = None, extra_input: BlockEntity = None, pre_populate_defaults: bool = True) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
+def translate(
+		object_input: Union[Block, Entity], 
+		input_spec: dict, 
+		mappings: List[dict], 
+		output_version: SubVersion, 
+		get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
+		extra_input: BlockEntity = None, 
+		pre_populate_defaults: bool = True
+) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
 	"""
 		A function to translate the object input to the output version
 
@@ -179,6 +188,8 @@ def translate(object_input: Union[Block, Entity], input_spec: dict, mappings: Li
 
 	# set up for the _translate function which does the actual conversion
 	if isinstance(object_input, Block):
+		block_input = object_input
+
 		if extra_input is None and 'snbt' in input_spec and get_block_callback is not None:
 			# if the callback function is defined then load the BlockEntity from the world
 			extra_input = get_block_callback((0, 0, 0))[1]
@@ -186,21 +197,21 @@ def translate(object_input: Union[Block, Entity], input_spec: dict, mappings: Li
 				# if BlockEntity is still None create it based off the specification
 				namespace, base_name = input_spec['nbt_identifier']
 				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), NBTFile(amulet_nbt.from_snbt(input_spec['snbt'])))
-			# if the BlockEntity is already defined in extra_input continue with that
+			nbt_input = extra_input.nbt
 
-		# if callback and extra_input are both None then continue with the mapping as normal but without the BlockEntity.
-		# The mappings will do as much as it can and will return the extra_needed flag as True telling the caller to run with callback if possible
-		block_input = object_input
-		if extra_input is not None:
+		elif extra_input is not None:
+			# if the BlockEntity is already defined in extra_input continue with that
 			assert isinstance(extra_input, BlockEntity)
-			nbt_input = extra_input
+			nbt_input = extra_input.nbt
 		else:
+			# if callback and extra_input are both None then continue with the mapping as normal but without the BlockEntity.
+			# The mappings will do as much as it can and will return the extra_needed flag as True telling the caller to run with callback if possible
 			nbt_input = None
 
 	elif isinstance(object_input, Entity):
 		assert extra_input is None, 'When an Entity is the first input the extra input must be None'
 		block_input = None
-		nbt_input = object_input
+		nbt_input = object_input.nbt
 	else:
 		raise Exception
 
@@ -276,7 +287,7 @@ def translate(object_input: Union[Block, Entity], input_spec: dict, mappings: Li
 
 def _translate(
 		block_input: Union[Block, None],
-		nbt_input: Union[Entity, BlockEntity, None],
+		nbt_input: Union[NBTFile, None],
 		mappings: List[dict],
 		get_block_callback: Callable = None,
 		relative_location: Tuple[int, int, int] = None,
@@ -549,7 +560,7 @@ def _translate(
 			if nbt_input is None:
 				extra_needed = True
 			elif nbt_path is not None:
-				nbt = index_nbt(nbt_input.nbt, nbt_path)
+				nbt = index_nbt(nbt_input, nbt_path)
 				if nbt is None:
 					raise Exception('This code should not be run because it should be caught by other code before it gets here.')
 				val = nbt.value
@@ -576,7 +587,7 @@ def _translate(
 			elif nbt_path is not None:
 				run_default = True
 				if 'cases' in translate_function["options"]:
-					nbt = index_nbt(nbt_input.nbt, nbt_path)
+					nbt = index_nbt(nbt_input, nbt_path)
 					nbt_hash = nbt.to_snbt()
 					if nbt_hash in translate_function["options"]['cases']:
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"]['cases'][nbt_hash], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
@@ -588,7 +599,7 @@ def _translate(
 	return output_name, output_type, new_data, extra_needed, cacheable
 
 
-def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[Entity, BlockEntity, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
+def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NBTFile, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
 	if nbt_path is None:
 		nbt_path = ('', 'compound', [])
 	if inherited_data is not None:
@@ -628,7 +639,7 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[En
 		extra_needed = False  # used to determine if extra data is required (and thus to do block by block)
 		cacheable = True    # cacheable until proven otherwise
 
-	nbt = index_nbt(nbt_input.nbt, nbt_path)  # nbt_path should always exist in nbt_input.nbt because the calling code should check that
+	nbt = index_nbt(nbt_input, nbt_path)  # nbt_path should always exist in nbt_input because the calling code should check that
 
 	datatype = mappings['type']
 
