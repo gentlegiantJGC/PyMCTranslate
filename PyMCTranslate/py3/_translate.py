@@ -253,7 +253,7 @@ def translate(
 					new_data['nbt']
 				)
 
-			extra_output = BlockEntity(namespace, base_name, (0, 0, 0), nbt)
+			extra_output = BlockEntity(namespace, base_name, 0, 0, 0, nbt)
 			# not quite sure how to handle coordinates here.
 			# it makes sense to me to have the wrapper program set the coordinates so none are missed.
 
@@ -278,7 +278,7 @@ def translate(
 				new_data['nbt']
 			)
 
-		output = Entity(namespace, base_name, (0.0, 0.0, 0.0), nbt)
+		output = Entity(namespace, base_name, 0.0, 0.0, 0.0, nbt)
 
 	else:
 		raise Exception
