@@ -256,7 +256,7 @@ class Version:
 		if not self._loaded:
 			if self.block_format in ['numerical', 'pseudo-numerical']:
 				for block_format in ['blockstate', 'numerical']:
-					self._subversions[block_format] = SubVersion(os.path.join(self._version_path, 'block', block_format), self._translation_manager)
+					self._subversions[block_format] = SubVersion(self._translation_manager, self, os.path.join(self._version_path, 'block', block_format), block_format == 'blockstate')
 				if self.block_format == 'numerical':
 					with open(os.path.join(self._version_path, '__numerical_block_map__.json')) as f:
 						self._numerical_block_map_inverse = {tuple(block_str.split(':', 1)): block_id for block_str, block_id in json.load(f).items()}
@@ -266,8 +266,11 @@ class Version:
 						self._numerical_block_map[block_id] = block_tuple
 
 			elif self.block_format in ['blockstate', 'nbt-blockstate']:
-				self._subversions['blockstate'] = SubVersion(os.path.join(self._version_path, 'block', 'blockstate'), self._translation_manager)
+				self._subversions['blockstate'] = SubVersion(self._translation_manager, self, os.path.join(self._version_path, 'block', 'blockstate'), True)
 			self._loaded = True
+
+	def __repr__(self):
+		return f'PyMCTranslate.Version({self.platform}, {self.version_number})'
 
 	@property
 	def block_format(self) -> str:
@@ -374,8 +377,11 @@ class SubVersion:
 	As such each version will always have a blockstate format but some may also have a numerical format as well.
 	This class will store data for one of these sub-versions.
 	"""
-	def __init__(self, sub_version_path: str, translation_manager: TranslationManager):
+	def __init__(self, translation_manager: TranslationManager, parent_version: Version, sub_version_path: str, is_blockstate: bool):
 		self._translation_manager = translation_manager
+		self._parent_version = parent_version
+		self._is_blockstate = is_blockstate
+
 		self._mappings = {
 			"block": {
 				'to_universal': {},
@@ -406,6 +412,27 @@ class SubVersion:
 							if block.endswith('.json'):
 								with open(os.path.join(sub_version_path, method, namespace, group_name, block)) as f:
 									self._mappings["block"][method][namespace][block[:-5]] = json.load(f)
+
+	def __repr__(self):
+		return f'PyMCTranslate.Version({self._parent_version.platform}, {self._parent_version.version_number}, )'
+
+	@property
+	def is_blockstate(self) -> bool:
+		"""
+		Does this sub-version store data in blockstate format
+		:return: bool
+		"""
+		return self._is_blockstate
+
+	@property
+	def is_abstract(self) -> bool:
+		"""
+		Does the sub-version hold data related to the abstract format (True) or the native format (False)
+		The formats with a numerical data value also have an abstract format implemented modeled on the blockstate format.
+		Will return False for the native numerical format and blockstate if that is the native format.
+		:return: bool
+		"""
+		return self._parent_version.has_abstract_format and self.is_blockstate
 
 	def namespaces(self, mode: str) -> List[str]:
 		"""
