@@ -14,5 +14,10 @@
     "defaults": {
         "facing": "north",
         "lit": "false"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "furnace"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }

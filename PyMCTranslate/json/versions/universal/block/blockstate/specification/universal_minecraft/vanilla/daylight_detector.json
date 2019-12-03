@@ -26,5 +26,10 @@
     "defaults": {
         "inverted": "false",
         "power": "0"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "daylight_detector"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }

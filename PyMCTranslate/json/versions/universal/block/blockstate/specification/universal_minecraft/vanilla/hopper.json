@@ -15,5 +15,10 @@
     "defaults": {
         "enabled": "true",
         "facing": "down"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "hopper"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }
