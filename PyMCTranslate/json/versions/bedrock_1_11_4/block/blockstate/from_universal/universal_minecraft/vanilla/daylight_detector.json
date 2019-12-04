@@ -44,5 +44,43 @@
                 ]
             }
         }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "keys": {
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
     }
 ]
