@@ -1,9 +1,4 @@
 {
-    "nbt_identifier": [
-        "minecraft",
-        "bed"
-    ],
-    "snbt": "{color: 14b, isMovable: 1b}",
     "properties": {
         "block_data": [
             "0",
@@ -26,5 +21,10 @@
     },
     "defaults": {
         "block_data": "0"
-    }
+    },
+    "nbt_identifier": [
+        "minecraft",
+        "bed"
+    ],
+    "snbt": "{color: 14b, isMovable: 1b}"
 }
