@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "facing": [
+            "south",
+            "west",
+            "north",
+            "east"
+        ],
+        "mode": [
+            "compare",
+            "subtract"
+        ],
+        "powered": [
+            "false",
+            "true"
+        ]
+    },
+    "defaults": {
+        "facing": "south",
+        "mode": "compare",
+        "powered": "false"
+    },
+    "snbt": "{OutputSignal: 0}",
+    "nbt_identifier": [
+        "minecraft",
+        "comparator"
+    ]
+}
