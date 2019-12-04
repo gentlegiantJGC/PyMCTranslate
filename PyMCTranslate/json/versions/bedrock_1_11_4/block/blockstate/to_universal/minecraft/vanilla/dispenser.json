@@ -19,5 +19,45 @@
                 "false"
             ]
         }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Items": {
+                    "type": "list",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
     }
 ]
