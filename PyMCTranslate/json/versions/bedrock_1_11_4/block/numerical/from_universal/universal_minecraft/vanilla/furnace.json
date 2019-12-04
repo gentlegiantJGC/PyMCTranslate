@@ -3,16 +3,16 @@
         "function": "map_properties",
         "options": {
             "lit": {
-                "false": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:furnace"
-                    }
-                ],
                 "true": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lit_furnace"
+                    }
+                ],
+                "false": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:furnace"
                     }
                 ]
             },
