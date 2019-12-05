@@ -17,5 +17,10 @@
         "facing_direction": "0",
         "toggle_bit": "0b"
     },
-    "nbt_properties": true
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "hopper"
+    ],
+    "snbt": "{TransferCooldown: 0, isMovable: 1b, Items: []}"
 }
