@@ -1,0 +1,13 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:end_portal"
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {}
+        }
+    }
+]

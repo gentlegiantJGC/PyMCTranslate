@@ -1,0 +1,22 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:end_portal"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {}
+        }
+    }
+]
