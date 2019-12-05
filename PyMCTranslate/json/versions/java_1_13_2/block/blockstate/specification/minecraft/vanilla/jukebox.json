@@ -1,9 +1,4 @@
 {
-    "nbt_identifier": [
-        "minecraft",
-        "jukebox"
-    ],
-    "snbt": "{}",
     "properties": {
         "has_record": [
             "true",
@@ -12,5 +7,10 @@
     },
     "defaults": {
         "has_record": "false"
-    }
+    },
+    "snbt": "{}",
+    "nbt_identifier": [
+        "minecraft",
+        "jukebox"
+    ]
 }

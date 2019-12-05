@@ -1,5 +1,18 @@
 [
     {
+        "function": "new_block",
+        "options": "minecraft:jukebox"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "has_record": [
+                "true",
+                "false"
+            ]
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -35,19 +48,6 @@
                     "nested_default": []
                 }
             }
-        }
-    },
-    {
-        "function": "new_block",
-        "options": "minecraft:jukebox"
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "has_record": [
-                "true",
-                "false"
-            ]
         }
     }
 ]

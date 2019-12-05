@@ -7,7 +7,24 @@
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
-            "keys": {}
+            "keys": {
+                "RecordItem": {
+                    "type": "compound",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
         }
     }
 ]

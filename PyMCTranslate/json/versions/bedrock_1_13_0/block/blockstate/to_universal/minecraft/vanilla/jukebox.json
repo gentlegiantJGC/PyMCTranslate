@@ -1,5 +1,9 @@
 [
     {
+        "function": "new_block",
+        "options": "universal_minecraft:jukebox"
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -38,9 +42,5 @@
                 }
             }
         }
-    },
-    {
-        "function": "new_block",
-        "options": "universal_minecraft:jukebox"
     }
 ]
