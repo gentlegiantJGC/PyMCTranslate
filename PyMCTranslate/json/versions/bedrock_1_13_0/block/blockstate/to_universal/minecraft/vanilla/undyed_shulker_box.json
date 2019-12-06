@@ -1,5 +1,15 @@
 [
     {
+        "function": "new_block",
+        "options": "universal_minecraft:shulker_box"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "color": "default"
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -54,9 +64,5 @@
                 }
             }
         }
-    },
-    {
-        "function": "new_block",
-        "options": "universal_minecraft:shulker_box"
     }
 ]

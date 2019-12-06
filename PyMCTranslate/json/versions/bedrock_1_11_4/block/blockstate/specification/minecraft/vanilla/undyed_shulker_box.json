@@ -1,1 +1,20 @@
-{}
+{
+    "properties": {
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ]
+    },
+    "defaults": {
+        "facing": "up"
+    },
+    "snbt": "{Findable: 0b, isMovable: 1b, Items: []}",
+    "nbt_identifier": [
+        "minecraft",
+        "shulker_box"
+    ]
+}

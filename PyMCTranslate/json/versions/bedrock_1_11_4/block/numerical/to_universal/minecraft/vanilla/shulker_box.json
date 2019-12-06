@@ -6,7 +6,7 @@
                 "0": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -18,7 +18,7 @@
                 "1": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -30,7 +30,7 @@
                 "2": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -42,7 +42,7 @@
                 "3": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -54,7 +54,7 @@
                 "4": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -66,7 +66,7 @@
                 "5": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -78,7 +78,7 @@
                 "6": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -90,7 +90,7 @@
                 "7": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -102,7 +102,7 @@
                 "8": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -114,7 +114,7 @@
                 "9": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -126,7 +126,7 @@
                 "10": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -138,7 +138,7 @@
                 "11": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -150,7 +150,7 @@
                 "12": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -162,7 +162,7 @@
                 "13": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -174,7 +174,7 @@
                 "14": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -186,7 +186,7 @@
                 "15": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:stained_shulker_box"
+                        "options": "universal_minecraft:shulker_box"
                     },
                     {
                         "function": "new_properties",
@@ -195,6 +195,62 @@
                         }
                     }
                 ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Findable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Items": {
+                    "type": "list",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
             }
         }
     }
