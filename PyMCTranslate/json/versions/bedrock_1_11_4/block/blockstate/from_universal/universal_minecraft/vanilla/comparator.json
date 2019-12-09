@@ -1,0 +1,84 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:unpowered_comparator"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "south",
+                "west",
+                "north",
+                "east"
+            ],
+            "mode": [
+                "compare",
+                "subtract"
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "powered": {
+                "false": [],
+                "true": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:powered_comparator"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "keys": {
+                        "OutputSignal": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    }
+]
