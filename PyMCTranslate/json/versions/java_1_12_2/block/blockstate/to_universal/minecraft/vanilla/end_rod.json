@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:end_rod"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "down",
+                "up",
+                "south",
+                "north",
+                "east",
+                "west"
+            ]
+        }
+    }
+]
