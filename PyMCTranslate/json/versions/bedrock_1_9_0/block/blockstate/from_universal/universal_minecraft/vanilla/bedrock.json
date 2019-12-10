@@ -2,5 +2,14 @@
     {
         "function": "new_block",
         "options": "minecraft:bedrock"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "infiniburn": [
+                "false",
+                "true"
+            ]
+        }
     }
 ]

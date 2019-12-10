@@ -4,9 +4,26 @@
         "options": "minecraft:bedrock"
     },
     {
-        "function": "new_properties",
+        "function": "map_properties",
         "options": {
-            "block_data": "0"
+            "infiniburn": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ]
+            }
         }
     }
 ]
