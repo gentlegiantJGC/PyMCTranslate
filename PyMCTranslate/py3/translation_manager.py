@@ -129,6 +129,8 @@ class TranslationManager:
 		"""
 		if platform == 'anvil':
 			platform = 'java'
+		elif platform == 'leveldb':
+			platform = 'bedrock'
 		if isinstance(version_number, list):
 			version_number = tuple(version_number)
 		assert platform in self._versions, f'The requested platform "({platform})" is not present'
