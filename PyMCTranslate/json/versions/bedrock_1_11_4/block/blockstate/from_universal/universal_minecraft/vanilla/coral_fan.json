@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral_fan"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "up",
+                "west",
+                "east",
+                "north",
+                "south"
+            ],
+            "dead": [
+                "false",
+                "true"
+            ],
+            "type": [
+                "tube",
+                "brain",
+                "bubble",
+                "fire",
+                "horn"
+            ]
+        }
+    }
+]

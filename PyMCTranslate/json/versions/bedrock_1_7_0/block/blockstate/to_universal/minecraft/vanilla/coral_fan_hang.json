@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:coral_fan"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "west",
+                "east",
+                "north",
+                "south"
+            ],
+            "dead": [
+                "false",
+                "true"
+            ],
+            "type": [
+                "tube",
+                "brain"
+            ]
+        }
+    }
+]

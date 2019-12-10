@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "facing": [
+            "west",
+            "east",
+            "north",
+            "south"
+        ],
+        "dead": [
+            "false",
+            "true"
+        ],
+        "type": [
+            "tube",
+            "brain"
+        ]
+    },
+    "defaults": {
+        "facing": "west",
+        "dead": "false",
+        "type": "tube"
+    }
+}
