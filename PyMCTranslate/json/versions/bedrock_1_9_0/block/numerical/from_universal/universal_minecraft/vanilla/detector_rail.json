@@ -1,0 +1,171 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "powered": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "shape": {
+                                "north_south": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "0"
+                                        }
+                                    }
+                                ],
+                                "east_west": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "1"
+                                        }
+                                    }
+                                ],
+                                "ascending_east": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "2"
+                                        }
+                                    }
+                                ],
+                                "ascending_west": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "3"
+                                        }
+                                    }
+                                ],
+                                "ascending_north": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "4"
+                                        }
+                                    }
+                                ],
+                                "ascending_south": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "5"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "shape": {
+                                "north_south": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "8"
+                                        }
+                                    }
+                                ],
+                                "east_west": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "9"
+                                        }
+                                    }
+                                ],
+                                "ascending_east": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "10"
+                                        }
+                                    }
+                                ],
+                                "ascending_west": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "11"
+                                        }
+                                    }
+                                ],
+                                "ascending_north": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "12"
+                                        }
+                                    }
+                                ],
+                                "ascending_south": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:detector_rail"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "13"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

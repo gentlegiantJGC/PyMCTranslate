@@ -1,0 +1,157 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:lever"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "false",
+                "true"
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "face": {
+                "ceiling": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "position": "ceiling_south"
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "ceiling_south"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "ceiling_south"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "ceiling_east"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "ceiling_east"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "floor": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "position": "floor_south"
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "floor_south"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "floor_south"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "floor_east"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "floor_east"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "wall": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "wall_north"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "wall_south"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "wall_west"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "position": "wall_east"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,151 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:cauldron"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "cauldron_liquid": {
+                "water": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lava_cauldron"
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "level": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "0"
+                                        }
+                                    }
+                                ],
+                                "0.5": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "1"
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "2"
+                                        }
+                                    }
+                                ],
+                                "1.5": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "3"
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "4"
+                                        }
+                                    }
+                                ],
+                                "2.5": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "5"
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "6"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "lava": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lava_cauldron"
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "level": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "8"
+                                        }
+                                    }
+                                ],
+                                "0.5": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "9"
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "10"
+                                        }
+                                    }
+                                ],
+                                "1.5": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "11"
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "12"
+                                        }
+                                    }
+                                ],
+                                "2.5": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "13"
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "14"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

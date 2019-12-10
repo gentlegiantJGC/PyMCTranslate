@@ -1,0 +1,66 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "spruce",
+                            "axis": "y"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "spruce",
+                            "axis": "x"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "spruce",
+                            "axis": "z"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wood"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "spruce"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "stripped": "true"
+        }
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "0"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "1"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "2"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "3"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

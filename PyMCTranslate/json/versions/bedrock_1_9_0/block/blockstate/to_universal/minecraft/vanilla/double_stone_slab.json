@@ -1,0 +1,27 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "stone",
+                "sandstone",
+                "petrified_oak_slab",
+                "cobblestone",
+                "brick",
+                "stone_brick",
+                "quartz",
+                "nether_brick"
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "double"
+        }
+    }
+]

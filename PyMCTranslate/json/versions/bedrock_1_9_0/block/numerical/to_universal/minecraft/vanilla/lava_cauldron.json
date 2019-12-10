@@ -1,0 +1,99 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "0"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "0.5"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "1"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "1.5"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "2"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "2.5"
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:cauldron"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "3"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "cauldron_liquid": "lava"
+        }
+    }
+]

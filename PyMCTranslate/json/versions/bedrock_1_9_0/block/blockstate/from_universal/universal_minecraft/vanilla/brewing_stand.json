@@ -1,0 +1,108 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:brewing_stand"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "has_bottle_0": [
+                "true",
+                "false"
+            ],
+            "has_bottle_1": [
+                "true",
+                "false"
+            ],
+            "has_bottle_2": [
+                "true",
+                "false"
+            ]
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "keys": {
+                        "Fuel": {
+                            "type": "short",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [],
+                                        "key": "FuelAmount",
+                                        "type": "byte"
+                                    }
+                                }
+                            ]
+                        },
+                        "BrewTime": {
+                            "type": "short",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [],
+                                        "key": "CookTime"
+                                    }
+                                }
+                            ]
+                        },
+                        "FuelTotal": {
+                            "type": "short",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "Items": {
+                            "type": "list",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    }
+]

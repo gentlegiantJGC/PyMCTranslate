@@ -1,0 +1,33 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:nether_portal"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "x"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:nether_portal"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "z"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

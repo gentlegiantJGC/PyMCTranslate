@@ -1,0 +1,31 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:fence_gate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "spruce"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "south",
+                "west",
+                "north",
+                "east"
+            ],
+            "open": [
+                "false",
+                "true"
+            ],
+            "in_wall": [
+                "false",
+                "true"
+            ]
+        }
+    }
+]
