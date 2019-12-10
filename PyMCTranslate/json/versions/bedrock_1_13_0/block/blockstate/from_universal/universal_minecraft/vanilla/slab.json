@@ -158,6 +158,10 @@
                                 ],
                                 "oak": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_wooden_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "wood_type": [
