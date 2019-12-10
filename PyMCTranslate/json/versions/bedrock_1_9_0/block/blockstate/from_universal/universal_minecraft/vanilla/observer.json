@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:observer"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "false",
+                "true"
+            ],
+            "facing": [
+                "up",
+                "down",
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]
