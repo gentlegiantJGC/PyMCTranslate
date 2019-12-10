@@ -3,15 +3,6 @@ import os
 from typing import Union, Tuple, Generator, List, Dict, Callable
 import copy
 
-try:
-	from amulet.api.block import Block
-	from amulet.api.block_entity import BlockEntity
-	from amulet.api.entity import Entity
-except ImportError:
-	from PyMCTranslate.py3.api.block import Block
-	from PyMCTranslate.py3.api.block_entity import BlockEntity
-	from PyMCTranslate.py3.api.entity import Entity
-
 from PyMCTranslate.py3.biomes import BiomeVersionManager, BiomeWorldManager
 from PyMCTranslate.py3.registry import NumericalRegistry
 
@@ -339,7 +330,7 @@ class Version:
 			return namespace_str in self._waterloggable
 		return False
 
-	def ints_to_block(self, block_id: int, block_data: int) -> Block:
+	def ints_to_block(self, block_id: int, block_data: int) -> 'Block':
 		if block_id in self._translation_manager.blocks:
 			namespace, base_name = self._translation_manager.blocks.private_to_str(block_id).split(':', 1)
 		elif block_id in self._numerical_block_map:
@@ -349,7 +340,7 @@ class Version:
 
 		return Block(namespace=namespace, base_name=base_name, properties={"block_data": str(block_data)})
 
-	def block_to_ints(self, block: Block) -> Union[None, Tuple[int, int]]:
+	def block_to_ints(self, block: 'Block') -> Union[None, Tuple[int, int]]:
 		block_id = None
 		block_data = None
 		block_tuple = (block.namespace, block.base_name)
@@ -365,7 +356,7 @@ class Version:
 			block_data = int(block.properties["block_data"])
 
 		if block_id is not None and block_data is not None:
-			return (block_id, block_data)
+			return block_id, block_data
 
 
 class SubVersion:
@@ -490,7 +481,7 @@ class SubVersion:
 		except KeyError:
 			raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
 
-	def to_universal(self, object_input: Union[Block, Entity], get_block_callback: Callable = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+	def to_universal(self, object_input: Union['Block', 'Entity'], get_block_callback: Callable = None, extra_input: 'BlockEntity' = None) -> Tuple[Union['Block', 'Entity'], Union['BlockEntity', None], bool]:
 		"""
 		A method to translate a given Block or Entity object to the Universal format.
 		:param object_input: The object to translate
@@ -521,7 +512,7 @@ class SubVersion:
 			info(f'Failed converting blockstate to universal\n{e}')
 			return object_input, None, True
 
-	def from_universal(self, object_input: Union[Block, Entity], get_block_callback: Callable = None, extra_input: BlockEntity = None) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool]:
+	def from_universal(self, object_input: Union['Block', 'Entity'], get_block_callback: Callable = None, extra_input: 'BlockEntity' = None) -> Tuple[Union['Block', 'Entity'], Union['BlockEntity', None], bool]:
 		"""
 		A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
 		:param object_input: The object to translate
@@ -554,3 +545,11 @@ class SubVersion:
 
 
 from PyMCTranslate.py3._translate import translate
+try:
+	from amulet.api.block import Block
+	from amulet.api.block_entity import BlockEntity
+	from amulet.api.entity import Entity
+except ImportError:
+	from PyMCTranslate.py3.api.block import Block
+	from PyMCTranslate.py3.api.block_entity import BlockEntity
+	from PyMCTranslate.py3.api.entity import Entity
