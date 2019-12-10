@@ -1,13 +1,13 @@
 [
     {
+        "function": "new_block",
+        "options": "minecraft:wall_banner"
+    },
+    {
         "function": "map_properties",
         "options": {
             "facing": {
                 "north": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:wall_banner"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -17,10 +17,6 @@
                 ],
                 "south": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:wall_banner"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "block_data": "3"
@@ -29,10 +25,6 @@
                 ],
                 "west": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:wall_banner"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "block_data": "4"
@@ -40,10 +32,6 @@
                     }
                 ],
                 "east": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:wall_banner"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
