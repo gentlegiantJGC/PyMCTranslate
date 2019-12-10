@@ -1,0 +1,267 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:tripwire"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "disarmed": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "attached": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "suspended": {
+                                                "false": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "0"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "1"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "2"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "3"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "suspended": {
+                                                "false": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "4"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "5"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "6"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "7"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "attached": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "suspended": {
+                                                "false": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "8"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "9"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "10"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "11"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "suspended": {
+                                                "false": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "12"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "13"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "true": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "powered": {
+                                                                "false": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "14"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "true": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "block_data": "15"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
