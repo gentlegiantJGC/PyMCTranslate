@@ -1,0 +1,39 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:seagrass"
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tall_seagrass"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "upper"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tall_seagrass"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "lower"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
