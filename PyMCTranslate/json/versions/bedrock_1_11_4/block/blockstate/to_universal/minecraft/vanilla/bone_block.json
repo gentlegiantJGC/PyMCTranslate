@@ -1,0 +1,16 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:bone_block"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "disarmed": [
+                "y",
+                "x",
+                "z"
+            ]
+        }
+    }
+]
