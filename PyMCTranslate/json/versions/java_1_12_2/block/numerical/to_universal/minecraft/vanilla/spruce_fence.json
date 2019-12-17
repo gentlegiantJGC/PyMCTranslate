@@ -11,8 +11,105 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "spruce"
+                            "material": "spruce",
+                            "north": "true",
+                            "east": "true",
+                            "south": "true",
+                            "west": "true"
                         }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:air": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "north": "false"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:air": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "south": "false"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:air": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "west": "false"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:air": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "east": "false"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
