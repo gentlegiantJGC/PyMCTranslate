@@ -1,4 +1,5 @@
-from typing import Union, Tuple, List, Callable, Dict
+from typing import Union, Tuple, List, Callable, Dict, TYPE_CHECKING
+
 try:
 	from amulet.api.block import Block
 	from amulet.api.block_entity import BlockEntity
@@ -8,10 +9,15 @@ except ImportError:
 	from PyMCTranslate.py3.api.block_entity import BlockEntity
 	from PyMCTranslate.py3.api.entity import Entity
 
+from ..py3 import lua
+
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
 from PyMCTranslate.py3.translation_manager import SubVersion
+
+if TYPE_CHECKING:
+	from numpy import ndarray
 
 
 def get_block_at(relative_location: Tuple[int, int, int]) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
@@ -577,10 +583,14 @@ def _translate(
 				new_data['nbt'].append((outer_name, outer_type, path, key, datatype_to_nbt(nbt_type)(val)))
 
 		elif 'map_nbt' == function_name:
-			# "map_nbt": {  # based on the input nbt value at path (should only be used with end stringable datatypes)
-			# 	"cases": {}  # if the data is in here then do the nested functions
-			# 	"default": [],  # if the data is not in cases or cases is not defined then do these functions
+			# {
+			# 	"function": "map_nbt",
+			# 	"options": {  # based on the input nbt value at path (should only be used with end stringable datatypes)
+			# 		"cases": {},  # if the data is in here then do the nested functions
+			# 		"default": []  # if the data is not in cases or cases is not defined then do these functions
+			# 	}
 			# }
+
 			cacheable = False
 			if nbt_input is None:
 				extra_needed = True
@@ -596,7 +606,74 @@ def _translate(
 				if run_default:
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"].get('default', []), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
+		elif 'lua' == function_name:
+			# {
+			# 	"function": "lua",  # when all the other functions fail you this should do what you need. Use as sparingly as possible
+			# 	"options": {
+			# 		"input": ["namespace", "base_name", "properties", "nbt"],  # all of these inputs and output are optional. Change these lists to modify
+			# 		"output": ["output_name", "output_type", "new_properties", "new_nbt"],
+			# 		"function": "function_name"  # this links to a lua funciton in the lua directory with the file name function_name.lua
+			# 	}
+			# }
+
+			# this would be in function_name.lua
+			# function(namespace, base_name, properties, nbt) return "minecraft:air", "block", {"property_name": "property_name"}, [] end
+
+			# usage examples:
+			#   splitting and merging strings in signs
+
+			cacheable = False
+
+			options = translate_function["options"]
+
+			function_inputs = []
+			for inp in options.get("inputs", []):
+				if inp == "namspace":
+					function_inputs.append(block_input.namespace)
+				elif inp == "base_name":
+					function_inputs.append(block_input.base_name)
+				elif inp == "properties":
+					function_inputs.append(block_input.properties)
+				elif inp == "nbt":
+					if nbt_input is None:
+						extra_needed = True
+					function_inputs.append(objectify_nbt(nbt_input))
+
+			function_output = lua.run(options["function"], function_inputs)
+			if not isinstance(function_output, tuple):
+				function_output = (function_output, )
+
+			for out, out_name in zip(function_output, options["output"]):
+				if out_name == 'output_name':
+					assert isinstance(out, str)
+					output_name = out
+				elif out_name == 'output_type':
+					assert isinstance(out, str)
+					output_type = out
+				elif out_name == 'new_properties':
+					assert isinstance(out, dict)
+					for key, val in out.items():
+						new_data['properties'][key] = val
+				elif out_name == 'new_nbt':
+					assert isinstance(out, list)
+					new_data['properties'] += out
+
 	return output_name, output_type, new_data, extra_needed, cacheable
+
+
+def objectify_nbt(nbt: NBTFile) -> dict:
+	return _objectify_nbt(nbt.value.value)
+
+
+def _objectify_nbt(nbt: Union[dict, list, int, str, 'ndarray']) -> Union[dict, list, int, str]:
+	if isinstance(nbt, dict):
+		return {key: _objectify_nbt(nbt_) for key, nbt_ in nbt.items()}
+	elif isinstance(nbt, list):
+		return [_objectify_nbt(nbt_) for nbt_ in nbt]
+	elif isinstance(nbt, (int, str)):
+		return nbt
+	else: # numpy array
+		return list(nbt)
 
 
 def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NBTFile, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
