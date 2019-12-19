@@ -202,7 +202,7 @@ def translate(
 			if extra_input is None:
 				# if BlockEntity is still None create it based off the specification
 				namespace, base_name = input_spec['nbt_identifier']
-				extra_input = BlockEntity(namespace, base_name, (0, 0, 0), NBTFile(amulet_nbt.from_snbt(input_spec['snbt'])))
+				extra_input = BlockEntity(namespace, base_name, 0, 0, 0, NBTFile(amulet_nbt.from_snbt(input_spec['snbt'])))
 			nbt_input = extra_input.nbt
 
 		elif extra_input is not None:
