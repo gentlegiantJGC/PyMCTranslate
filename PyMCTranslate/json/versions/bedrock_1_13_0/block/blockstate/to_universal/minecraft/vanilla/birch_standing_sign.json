@@ -4,22 +4,6 @@
         "options": {
             "type": "compound",
             "keys": {
-                "Text": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "TextOwner": {
                     "type": "string",
                     "functions": [
@@ -37,6 +21,18 @@
                     ]
                 }
             }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_sign_2u"
         }
     },
     {

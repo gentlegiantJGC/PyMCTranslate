@@ -7,17 +7,6 @@
                 "utags": {
                     "type": "compound",
                     "keys": {
-                        "Text": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "TextOwner": {
                             "type": "string",
                             "functions": [
@@ -46,6 +35,18 @@
                     "nested_default": []
                 }
             }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_sign_fu"
         }
     },
     {
