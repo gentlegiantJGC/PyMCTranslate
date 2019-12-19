@@ -3,7 +3,7 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "north": [
+                "south": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -11,7 +11,7 @@
                         }
                     }
                 ],
-                "south": [
+                "north": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -19,7 +19,7 @@
                         }
                     }
                 ],
-                "west": [
+                "east": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -27,7 +27,7 @@
                         }
                     }
                 ],
-                "east": [
+                "west": [
                     {
                         "function": "new_properties",
                         "options": {
