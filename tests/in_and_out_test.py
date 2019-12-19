@@ -1,9 +1,13 @@
 import PyMCTranslate
-from PyMCTranslate.py3.api.block import Block
 import itertools
 import amulet_nbt as nbt
 
 test_block_list = None
+try:
+	from amulet.api.block import Block
+except ImportError:
+	from PyMCTranslate.py3.api.block import Block
+
 print_extra_needed = False
 
 
