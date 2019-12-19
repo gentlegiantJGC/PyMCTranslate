@@ -9,7 +9,7 @@ except ImportError:
 	from PyMCTranslate.py3.api.block_entity import BlockEntity
 	from PyMCTranslate.py3.api.entity import Entity
 
-from ..py3 import lua
+from ..py3 import code_functions
 
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
@@ -642,7 +642,7 @@ def _translate(
 						extra_needed = True
 					function_inputs.append(objectify_nbt(nbt_input))
 
-			function_output = lua.run(options["function"], function_inputs)
+			function_output = code_functions.run(options["function"], function_inputs)
 			if not isinstance(function_output, tuple):
 				function_output = (function_output, )
 
