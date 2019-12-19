@@ -606,9 +606,9 @@ def _translate(
 				if run_default:
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"].get('default', []), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
-		elif 'lua' == function_name:
+		elif 'code' == function_name:
 			# {
-			# 	"function": "lua",  # when all the other functions fail you this should do what you need. Use as sparingly as possible
+			# 	"function": "code",  # when all the other functions fail you this should do what you need. Use as sparingly as possible
 			# 	"options": {
 			# 		"input": ["namespace", "base_name", "properties", "nbt"],  # all of these inputs and output are optional. Change these lists to modify
 			# 		"output": ["output_name", "output_type", "new_properties", "new_nbt"],
@@ -616,8 +616,11 @@ def _translate(
 			# 	}
 			# }
 
-			# this would be in function_name.lua
-			# function(namespace, base_name, properties, nbt) return "minecraft:air", "block", {"property_name": "property_name"}, [] end
+			# this function was originally designed to be lua code but I have now switched it to python because lua is hard :(
+			# Might swap back one day
+			# this would be in function_name.py
+			# def main(namespace, base_name, properties, nbt)
+			#   return "minecraft:air", "block", {"property_name": "property_name"}, []
 
 			# usage examples:
 			#   splitting and merging strings in signs
@@ -661,19 +664,20 @@ def _translate(
 	return output_name, output_type, new_data, extra_needed, cacheable
 
 
-def objectify_nbt(nbt: NBTFile) -> dict:
-	return _objectify_nbt(nbt.value.value)
+def objectify_nbt(nbt: NBTFile) -> List[str, dict]:
+	return _objectify_nbt(nbt.value)
 
 
-def _objectify_nbt(nbt: Union[dict, list, int, str, 'ndarray']) -> Union[dict, list, int, str]:
+def _objectify_nbt(nbt: amulet_nbt._TAG_Value) -> List[str, Union[dict, list, int, str]]:
+	nbt_type = nbt_to_datatype(nbt)
 	if isinstance(nbt, dict):
-		return {key: _objectify_nbt(nbt_) for key, nbt_ in nbt.items()}
+		return [nbt_type, {key: _objectify_nbt(nbt_) for key, nbt_ in nbt.items()}]
 	elif isinstance(nbt, list):
-		return [_objectify_nbt(nbt_) for nbt_ in nbt]
+		return [nbt_type, [_objectify_nbt(nbt_) for nbt_ in nbt]]
 	elif isinstance(nbt, (int, str)):
-		return nbt
+		return [nbt_type, nbt]
 	else: # numpy array
-		return list(nbt)
+		return [nbt_type, list(nbt)]
 
 
 def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NBTFile, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
