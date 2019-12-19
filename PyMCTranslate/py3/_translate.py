@@ -62,12 +62,12 @@ _int_to_nbt = [None, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Doub
 _int_to_datatype = [None, 'byte', 'short', 'int', 'long', 'float', 'double', 'byte_array', 'string', 'list', 'compound', 'int_array', 'long_array']
 
 
-def datatype_to_nbt(datatype: str) -> Union[TAG_Byte.__class__, TAG_Short.__class__, TAG_Int.__class__, TAG_Long.__class__, TAG_Float.__class__, TAG_Double.__class__, TAG_Byte_Array.__class__, TAG_String.__class__, TAG_List.__class__, TAG_Compound.__class__, TAG_Int_Array.__class__, TAG_Long_Array.__class__]:
+def datatype_to_nbt(datatype: str) -> amulet_nbt._TAG_Value.__class__:
 	return _datatype_to_nbt[datatype]
 
 
 def nbt_to_datatype(
-	nbt: Union[TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array]
+	nbt: amulet_nbt._TAG_Value
 ) -> str:
 	return _nbt_to_datatype[nbt.__class__.__name__]
 
@@ -659,25 +659,38 @@ def _translate(
 						new_data['properties'][key] = val
 				elif out_name == 'new_nbt':
 					assert isinstance(out, list)
-					new_data['properties'] += out
+					for val in out:
+						assert len(val) == 5
+						new_data['properties'].append(tuple(val[:4]) + (unobjectify_nbt(val[5]), ))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
 
 
-def objectify_nbt(nbt: NBTFile) -> List[str, dict]:
+def objectify_nbt(nbt: NBTFile) -> Tuple[str, dict]:
 	return _objectify_nbt(nbt.value)
 
 
-def _objectify_nbt(nbt: amulet_nbt._TAG_Value) -> List[str, Union[dict, list, int, str]]:
+def _objectify_nbt(nbt: amulet_nbt._TAG_Value) -> Tuple[str, Union[dict, list, int, str]]:
 	nbt_type = nbt_to_datatype(nbt)
 	if isinstance(nbt, dict):
-		return [nbt_type, {key: _objectify_nbt(nbt_) for key, nbt_ in nbt.items()}]
+		return (nbt_type, {key: _objectify_nbt(nbt_) for key, nbt_ in nbt.items()})
 	elif isinstance(nbt, list):
-		return [nbt_type, [_objectify_nbt(nbt_) for nbt_ in nbt]]
+		return (nbt_type, [_objectify_nbt(nbt_) for nbt_ in nbt])
 	elif isinstance(nbt, (int, str)):
-		return [nbt_type, nbt]
+		return (nbt_type, nbt)
 	else: # numpy array
-		return [nbt_type, list(nbt)]
+		return (nbt_type, list(nbt))
+
+
+def unobjectify_nbt(nbt: Tuple[str, Union[dict, list, int, str, 'ndarray']]):
+	nbt_type, nbt = nbt
+	nbt_class = datatype_to_nbt(nbt_type)
+	if nbt_type == "compound":
+		return nbt_class({key: unobjectify_nbt(val) for key, val in nbt.items()})
+	elif nbt_type == 'list':
+		return nbt_class([unobjectify_nbt(val) for val in nbt])
+	elif nbt_type in ['byte', 'short', 'int', 'long', 'float', 'double', 'string', 'byte_array', 'int_array', 'long_array']:
+		return nbt_class(nbt)
 
 
 def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NBTFile, None], mappings: dict, get_block_callback: Callable, relative_location: Tuple[int, int, int] = None, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]] = None, inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
