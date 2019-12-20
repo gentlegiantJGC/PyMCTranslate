@@ -631,7 +631,7 @@ def _translate(
 			options = translate_function["options"]
 
 			function_inputs = []
-			for inp in options.get("inputs", []):
+			for inp in options.get("input", []):
 				if inp == "namspace":
 					function_inputs.append(block_input.namespace)
 				elif inp == "base_name":
@@ -673,12 +673,13 @@ def objectify_nbt(nbt: NBTFile) -> Tuple[str, dict]:
 
 def _objectify_nbt(nbt: amulet_nbt._TAG_Value) -> Tuple[str, Union[dict, list, int, str]]:
 	nbt_type = nbt_to_datatype(nbt)
-	if isinstance(nbt, dict):
-		return (nbt_type, {key: _objectify_nbt(nbt_) for key, nbt_ in nbt.items()})
-	elif isinstance(nbt, list):
-		return (nbt_type, [_objectify_nbt(nbt_) for nbt_ in nbt])
-	elif isinstance(nbt, (int, str)):
-		return (nbt_type, nbt)
+	nbt_data = nbt.value
+	if isinstance(nbt_data, dict):
+		return (nbt_type, {key: _objectify_nbt(nbt_) for key, nbt_ in nbt_data.items()})
+	elif isinstance(nbt_data, list):
+		return (nbt_type, [_objectify_nbt(nbt_) for nbt_ in nbt_data])
+	elif isinstance(nbt_data, (int, float, str)):
+		return (nbt_type, nbt_data)
 	else: # numpy array
 		return (nbt_type, list(nbt))
 
