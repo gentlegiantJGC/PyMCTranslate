@@ -14,7 +14,7 @@ from ..py3 import code_functions
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
-from PyMCTranslate.py3.translation_manager import SubVersion
+from PyMCTranslate.py3.translation_manager import SubVersion, debug
 
 if TYPE_CHECKING:
 	from numpy import ndarray
@@ -427,10 +427,11 @@ def _translate(
 			assert isinstance(block_input, Block), 'The block input is not a block'
 			for key in translate_function["options"]:
 				if key in block_input.properties:
-					if isinstance(block_input.properties[key], (TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array)):
-						val = block_input.properties[key].to_snbt()
+					val = block_input.properties[key]
+					if isinstance(val, amulet_nbt._TAG_Value):
+						val = val.to_snbt()
 					else:
-						val = str(block_input.properties[key])
+						val = str(val)
 					if val in translate_function["options"][key]:
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"][key][val], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
@@ -748,6 +749,8 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NB
 				if key in mappings.get('keys', {}):
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['keys'][key], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
+					if mappings.get('nested_default', [{"function": "carry_nbt"}]) == [{"function": "carry_nbt"}]:
+						debug(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))])}')
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif datatype == 'list':
@@ -755,6 +758,8 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NB
 				if str(index) in mappings.get('index', {}):
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				else:
+					if mappings.get('nested_default', [{"function": "carry_nbt"}]) == [{"function": "carry_nbt"}]:
+						debug(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))])}')
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		# elif datatype in ('byte', 'short', 'int', 'long', 'float', 'double', 'string'):
