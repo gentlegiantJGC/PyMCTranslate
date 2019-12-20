@@ -42,6 +42,8 @@
             "keys": {
                 "utags": {
                     "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
                     "keys": {
                         "Text1": {
                             "type": "string",

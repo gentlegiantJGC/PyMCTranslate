@@ -253,6 +253,8 @@
             "keys": {
                 "utags": {
                     "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
                     "keys": {
                         "OutputSignal": {
                             "type": "int",

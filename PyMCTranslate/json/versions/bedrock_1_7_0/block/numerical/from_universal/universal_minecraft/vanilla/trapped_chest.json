@@ -61,6 +61,8 @@
             "keys": {
                 "utags": {
                     "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
                     "keys": {
                         "Findable": {
                             "type": "byte",
