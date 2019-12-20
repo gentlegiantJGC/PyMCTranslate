@@ -12,4 +12,4 @@ def main(nbt):
         text = [""] * 4
     text = '\n'.join(text)
 
-    return ["", "compound", [], "Text", ["string", text]]
+    return [["", "compound", [], "Text", ["string", text]]]
