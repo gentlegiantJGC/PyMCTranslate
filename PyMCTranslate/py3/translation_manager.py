@@ -2,6 +2,7 @@ import json
 import os
 from typing import Union, Tuple, Generator, List, Dict, Callable
 import copy
+import traceback
 
 from PyMCTranslate.py3.biomes import BiomeVersionManager, BiomeWorldManager
 from PyMCTranslate.py3.registry import NumericalRegistry
@@ -511,7 +512,9 @@ class SubVersion:
 			)
 			return output, extra_output, extra_needed
 		except Exception as e:
-			info(f'Failed converting blockstate to universal\n{e}')
+			info(f'Error while converting {object_input} to universal\n{e}')
+			if log_level >= 3:
+				traceback.print_exc()
 			return object_input, None, True
 
 	def from_universal(self, object_input: Union['Block', 'Entity'], get_block_callback: Callable = None, extra_input: 'BlockEntity' = None) -> Tuple[Union['Block', 'Entity'], Union['BlockEntity', None], bool]:
@@ -542,7 +545,9 @@ class SubVersion:
 			)
 			return output, extra_output, extra_needed
 		except Exception as e:
-			info(f'Failed converting blockstate from universal\n{e}')
+			info(f'Error while converting {object_input} from universal\n{e}')
+			if log_level >= 3:
+				traceback.print_exc()
 			return object_input, None, True
 
 
