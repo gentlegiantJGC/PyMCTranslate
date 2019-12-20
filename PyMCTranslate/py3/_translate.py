@@ -152,7 +152,7 @@ def nbt_from_list(
 				if data_path + 1 > len(nbt_temp):
 					# pad out the list to the length of the index
 					for _ in range(data_path + 1 - len(nbt_temp)):
-						nbt_temp.insert(data.__class__())
+						nbt_temp.append(data.__class__())
 				# we now should have a TAG_List of the same type as nbt_type and length as data_path
 				nbt_temp[data_path] = data
 
@@ -641,7 +641,9 @@ def _translate(
 				elif inp == "nbt":
 					if nbt_input is None:
 						extra_needed = True
-					function_inputs.append(objectify_nbt(nbt_input))
+						function_inputs.append(["compound", {}])
+					else:
+						function_inputs.append(objectify_nbt(nbt_input))
 
 			function_output = code_functions.run(options["function"], function_inputs)
 			if not isinstance(function_output, tuple):
@@ -662,7 +664,7 @@ def _translate(
 					assert isinstance(out, list)
 					for val in out:
 						assert len(val) == 5
-						new_data['properties'].append(tuple(val[:4]) + (unobjectify_nbt(val[5]), ))
+						new_data['nbt'].append(tuple(val[:4]) + (unobjectify_nbt(val[4]), ))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
 
