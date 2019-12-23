@@ -16,5 +16,10 @@
     "defaults": {
         "conditional": "false",
         "facing": "north"
-    }
+    },
+    "snbt": "{conditionMet: 0b, auto: 0b, CustomName: \"{\\\"text\\\":\\\"@\\\"}\", powered: 0b, Command: \"\", SuccessCount: 0, TrackOutput: 1b, UpdateLastExecution: 1b}",
+    "nbt_identifier": [
+        "minecraft",
+        "command_block"
+    ]
 }
