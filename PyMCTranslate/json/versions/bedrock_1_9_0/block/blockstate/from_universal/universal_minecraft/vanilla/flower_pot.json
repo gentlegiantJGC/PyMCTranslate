@@ -1,0 +1,90 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:flower_pot"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "update": [
+                "false",
+                "true"
+            ]
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Data": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "PlantBlock",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "val",
+                                        "type": "short"
+                                    }
+                                }
+                            ]
+                        },
+                        "Item": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "PlantBlock",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "name"
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    }
+]
