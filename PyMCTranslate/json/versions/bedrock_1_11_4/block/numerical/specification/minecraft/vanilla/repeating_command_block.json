@@ -21,5 +21,10 @@
     },
     "defaults": {
         "block_data": "0"
-    }
+    },
+    "nbt_identifier": [
+        "minecraft",
+        "command_block"
+    ],
+    "snbt": "{Command: \"\", CustomName: \"\", ExecuteOnFirstTick: 0b, LPCommandMode: 16064, LPCondionalMode: 63b, LPRedstoneMode: 0b, LastExecution: 0L, LastOutput: \"\", LastOutputParams: [], SuccessCount: 0, TickDelay: 0, TrackOutput: 1b, Version: 10, auto: 0b, conditionMet: 0b, powered: 0b, isMovable: 1b}"
 }

@@ -1,42 +1,37 @@
 [
     {
+        "function": "new_block",
+        "options": "universal_minecraft:command_block"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "mode": "impulse"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "conditional": [
+                "true",
+                "false"
+            ],
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west",
+                "up",
+                "down"
+            ]
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
             "keys": {
-                "conditionMet": {
-                    "type": "byte",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "auto": {
-                    "type": "byte",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "powered": {
                     "type": "byte",
                     "functions": [
                         {
@@ -54,6 +49,54 @@
                 },
                 "Command": {
                     "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "conditionMet": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "CustomName": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "powered": {
+                    "type": "byte",
                     "functions": [
                         {
                             "function": "carry_nbt",
@@ -100,38 +143,6 @@
                         }
                     ]
                 },
-                "UpdateLastExecution": {
-                    "type": "byte",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "CustomName": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "LastOutput": {
                     "type": "string",
                     "functions": [
@@ -163,35 +174,24 @@
                             }
                         }
                     ]
+                },
+                "UpdateLastExecution": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
                 }
             }
-        }
-    },
-    {
-        "function": "new_block",
-        "options": "universal_minecraft:command_block"
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "mode": "impulse"
-        }
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "conditional": [
-                "true",
-                "false"
-            ],
-            "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
-            ]
         }
     }
 ]
