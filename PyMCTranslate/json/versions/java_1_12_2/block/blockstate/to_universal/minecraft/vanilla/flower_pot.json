@@ -1,0 +1,46 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:flower_pot"
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Data": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Item": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

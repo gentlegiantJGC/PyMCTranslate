@@ -1,0 +1,63 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:flower_pot"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "block_data": "0"
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Data": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "Item": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    }
+]
