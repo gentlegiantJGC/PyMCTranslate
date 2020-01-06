@@ -9,14 +9,15 @@ except ImportError:
 translations = PyMCTranslate.new_translation_manager()
 
 
-def get_version(platform: str, version: str, force_blockstate) -> SubVersion:
+def get_version(platform: str, version: str, force_blockstate: str) -> SubVersion:
     assert platform in translations.platforms(), f'Platform {platform} is not valid. Must be one of {translations.platforms()}'
     version = tuple(int(i) for i in version.split('.'))
-    force_blockstate = bool(force_blockstate)
+    force_blockstate = force_blockstate.lower() == 'true'
     return translations.get_sub_version(platform, version, force_blockstate)
 
 
-print('Example command: "java 1.12.2 false bedrock 1.13.0 false minecraft:trapdoor[facing=south,half=top,open=false]"')
+print('Example command: "java 1.12.2 false bedrock 1.13.0 false minecraft:double_stone_slab[block_data=0]"')
+print('Example command: "java 1.12.2 true bedrock 1.13.0 false minecraft:trapdoor[facing=south,half=top,open=false]"')
 
 while True:
     user_input = input('type command ("n" to escape): ')
