@@ -408,7 +408,7 @@ class SubVersion:
 									self._mappings["block"][method][namespace][block[:-5]] = json.load(f)
 
 	def __repr__(self):
-		return f'PyMCTranslate.Version({self._parent_version.platform}, {self._parent_version.version_number}, )'
+		return f'PyMCTranslate.SubVersion({self._parent_version.platform}, {self._parent_version.version_number}, {self.is_blockstate})'
 
 	@property
 	def is_blockstate(self) -> bool:
