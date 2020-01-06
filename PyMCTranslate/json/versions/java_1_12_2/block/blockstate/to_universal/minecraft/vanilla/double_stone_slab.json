@@ -7,9 +7,36 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "stone",
+                "smooth_sandstone"
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "double"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "smooth_stone_block": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:smooth_stone"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "smooth_stone",
                 "sandstone",
-                "petrified_oak_slab",
+                "petrified_oak",
                 "cobblestone",
                 "brick",
                 "stone_brick",

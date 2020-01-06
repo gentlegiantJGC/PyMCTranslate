@@ -7,6 +7,20 @@
         "function": "carry_properties",
         "options": {
             "material": [
+                "smooth_red_sandstone"
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "double"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
                 "red_sandstone"
             ]
         }

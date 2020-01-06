@@ -3,6 +3,25 @@
         "function": "map_properties",
         "options": {
             "block_data": {
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "smooth_sandstone",
+                            "type": "double"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:smooth_stone"
+                    }
+                ],
                 "0": [
                     {
                         "function": "new_block",
@@ -11,7 +30,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "stone",
+                            "material": "smooth_stone",
                             "type": "double"
                         }
                     }
@@ -37,7 +56,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "petrified_oak_slab",
+                            "material": "petrified_oak",
                             "type": "double"
                         }
                     }

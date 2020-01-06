@@ -8,7 +8,19 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "stone": [
+                                "smooth_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "9"
+                                        }
+                                    }
+                                ],
+                                "smooth_stone": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -32,7 +44,7 @@
                                         }
                                     }
                                 ],
-                                "petrified_oak_slab": [
+                                "petrified_oak": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -176,6 +188,18 @@
                                         }
                                     }
                                 ],
+                                "smooth_red_sandstone": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "8"
+                                        }
+                                    }
+                                ],
                                 "red_sandstone": [
                                     {
                                         "function": "new_block",
@@ -209,7 +233,7 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "stone": [
+                                "smooth_stone": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -233,7 +257,7 @@
                                         }
                                     }
                                 ],
-                                "petrified_oak_slab": [
+                                "petrified_oak": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -410,7 +434,7 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "stone": [
+                                "smooth_stone": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -434,7 +458,7 @@
                                         }
                                     }
                                 ],
-                                "petrified_oak_slab": [
+                                "petrified_oak": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"

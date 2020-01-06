@@ -8,7 +8,7 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "stone": [
+                                "smooth_stone": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -32,7 +32,7 @@
                                         }
                                     }
                                 ],
-                                "petrified_oak_slab": [
+                                "petrified_oak": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -212,7 +212,7 @@
                                         }
                                     }
                                 ],
-                                "prismarine_brick": [
+                                "dark_prismarine": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -224,7 +224,7 @@
                                         }
                                     }
                                 ],
-                                "dark_prismarine": [
+                                "prismarine_brick": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -245,7 +245,7 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "stone": [
+                                "smooth_stone": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -269,7 +269,7 @@
                                         }
                                     }
                                 ],
-                                "petrified_oak_slab": [
+                                "petrified_oak": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -449,7 +449,7 @@
                                         }
                                     }
                                 ],
-                                "prismarine_brick": [
+                                "dark_prismarine": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -461,7 +461,7 @@
                                         }
                                     }
                                 ],
-                                "dark_prismarine": [
+                                "prismarine_brick": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -482,7 +482,7 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "stone": [
+                                "smooth_stone": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -506,7 +506,7 @@
                                         }
                                     }
                                 ],
-                                "petrified_oak_slab": [
+                                "petrified_oak": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab"
@@ -686,7 +686,7 @@
                                         }
                                     }
                                 ],
-                                "prismarine_brick": [
+                                "dark_prismarine": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -698,7 +698,7 @@
                                         }
                                     }
                                 ],
-                                "dark_prismarine": [
+                                "prismarine_brick": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"

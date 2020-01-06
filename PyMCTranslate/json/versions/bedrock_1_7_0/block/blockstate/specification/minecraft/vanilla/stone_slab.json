@@ -1,9 +1,9 @@
 {
     "properties": {
         "material": [
-            "stone",
+            "smooth_stone",
             "sandstone",
-            "petrified_oak_slab",
+            "petrified_oak",
             "cobblestone",
             "brick",
             "stone_brick",
@@ -16,7 +16,7 @@
         ]
     },
     "defaults": {
-        "material": "stone",
+        "material": "smooth_stone",
         "type": "bottom"
     }
 }
