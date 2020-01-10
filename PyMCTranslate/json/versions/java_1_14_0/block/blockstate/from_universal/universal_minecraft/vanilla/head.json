@@ -1,0 +1,112 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Owner": {
+                            "type": "compound",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:skeleton_skull"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mob": {
+                "skeleton": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:skeleton_skull"
+                    }
+                ],
+                "wither_skeleton": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wither_skeleton_skull"
+                    }
+                ],
+                "zombie": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:zombie_head"
+                    }
+                ],
+                "player": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:player_head"
+                    }
+                ],
+                "creeper": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:creeper_head"
+                    }
+                ],
+                "dragon": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dragon_head"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "rotation": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+            ]
+        }
+    }
+]

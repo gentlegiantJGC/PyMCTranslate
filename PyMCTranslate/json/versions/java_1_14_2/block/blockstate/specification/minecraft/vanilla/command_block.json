@@ -1,0 +1,25 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "command_block"
+    ],
+    "snbt": "{conditionMet: 0b, auto: 0b, CustomName: \"{\\\"text\\\":\\\"@\\\"}\", powered: 0b, Command: \"\", SuccessCount: 0, TrackOutput: 1b, UpdateLastExecution: 1b}",
+    "properties": {
+        "conditional": [
+            "true",
+            "false"
+        ],
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ]
+    },
+    "defaults": {
+        "conditional": "false",
+        "facing": "north"
+    }
+}

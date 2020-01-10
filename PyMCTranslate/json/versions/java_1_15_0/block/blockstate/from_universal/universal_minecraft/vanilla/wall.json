@@ -1,0 +1,50 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:cobblestone_wall"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "cobblestone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cobblestone_wall"
+                    }
+                ],
+                "mossy_cobblestone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_cobblestone_wall"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "true",
+                "false"
+            ],
+            "north": [
+                "true",
+                "false"
+            ],
+            "south": [
+                "true",
+                "false"
+            ],
+            "up": [
+                "true",
+                "false"
+            ],
+            "west": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

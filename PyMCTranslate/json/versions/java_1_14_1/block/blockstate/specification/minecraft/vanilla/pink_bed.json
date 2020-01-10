@@ -1,0 +1,28 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "bed"
+    ],
+    "snbt": "{}",
+    "properties": {
+        "facing": [
+            "north",
+            "south",
+            "west",
+            "east"
+        ],
+        "occupied": [
+            "true",
+            "false"
+        ],
+        "part": [
+            "head",
+            "foot"
+        ]
+    },
+    "defaults": {
+        "facing": "north",
+        "occupied": "false",
+        "part": "foot"
+    }
+}

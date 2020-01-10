@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:lectern"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ],
+            "has_book": [
+                "true",
+                "false"
+            ],
+            "powered": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

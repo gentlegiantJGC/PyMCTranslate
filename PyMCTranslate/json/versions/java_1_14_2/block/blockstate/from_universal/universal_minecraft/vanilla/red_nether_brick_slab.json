@@ -1,0 +1,16 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:red_nether_brick_slab"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "top",
+                "bottom",
+                "double"
+            ]
+        }
+    }
+]

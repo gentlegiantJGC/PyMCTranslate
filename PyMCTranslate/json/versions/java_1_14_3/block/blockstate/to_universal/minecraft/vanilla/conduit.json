@@ -1,0 +1,35 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "target_uuid": {
+                    "type": "compound",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "java_target_uuid"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:conduit"
+    },
+    {
+        "function": "carry_properties",
+        "options": {}
+    }
+]

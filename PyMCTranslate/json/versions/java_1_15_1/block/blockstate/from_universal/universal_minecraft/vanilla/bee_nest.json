@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bee_nest"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ],
+            "honey_level": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        }
+    }
+]

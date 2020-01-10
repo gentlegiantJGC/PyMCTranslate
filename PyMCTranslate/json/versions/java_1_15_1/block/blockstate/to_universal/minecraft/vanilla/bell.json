@@ -1,0 +1,27 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:bell"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "attachment": [
+                "floor",
+                "ceiling",
+                "single_wall",
+                "double_wall"
+            ],
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ],
+            "powered": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

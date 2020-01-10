@@ -1,0 +1,39 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:door"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "dark_oak"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ],
+            "half": [
+                "upper",
+                "lower"
+            ],
+            "hinge": [
+                "left",
+                "right"
+            ],
+            "open": [
+                "true",
+                "false"
+            ],
+            "powered": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

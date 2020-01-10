@@ -1,0 +1,100 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Owner": {
+                            "type": "compound",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:skeleton_wall_skull"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mob": {
+                "skeleton": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:skeleton_wall_skull"
+                    }
+                ],
+                "wither_skeleton": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wither_skeleton_wall_skull"
+                    }
+                ],
+                "zombie": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:zombie_wall_head"
+                    }
+                ],
+                "player": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:player_wall_head"
+                    }
+                ],
+                "creeper": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:creeper_wall_head"
+                    }
+                ],
+                "dragon": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dragon_wall_head"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

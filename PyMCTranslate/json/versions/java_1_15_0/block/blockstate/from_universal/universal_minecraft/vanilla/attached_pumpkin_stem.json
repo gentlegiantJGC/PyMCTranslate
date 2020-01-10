@@ -1,0 +1,17 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:attached_pumpkin_stem"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]
