@@ -1,6 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:cornflower"
+        "options": "universal_minecraft:plant"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "cornflower"
+        }
     }
 ]
