@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:smooth_quartz_slab"
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "smooth_quartz"
+        }
     },
     {
         "function": "carry_properties",

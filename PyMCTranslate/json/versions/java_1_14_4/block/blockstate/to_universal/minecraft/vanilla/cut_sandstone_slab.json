@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:cut_sandstone_slab"
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "cut_sandstone"
+        }
     },
     {
         "function": "carry_properties",

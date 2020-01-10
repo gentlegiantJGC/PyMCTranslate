@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:mossy_cobblestone_slab"
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "mossy_cobblestone"
+        }
     },
     {
         "function": "carry_properties",

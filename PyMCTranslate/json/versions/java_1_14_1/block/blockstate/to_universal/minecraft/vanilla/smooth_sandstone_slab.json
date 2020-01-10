@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:smooth_sandstone_slab"
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "smooth_sandstone"
+        }
     },
     {
         "function": "carry_properties",
