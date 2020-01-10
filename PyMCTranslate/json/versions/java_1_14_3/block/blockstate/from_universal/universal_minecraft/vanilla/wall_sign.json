@@ -1,5 +1,59 @@
 [
     {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oak_wall_sign"
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_wall_sign"
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_wall_sign"
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_wall_sign"
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_wall_sign"
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_wall_sign"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -70,30 +124,6 @@
                     "nested_default": []
                 }
             }
-        }
-    },
-    {
-        "function": "map_properties",
-        "options": {
-            "material": {
-                "oak": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:wall_sign"
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
-            ]
         }
     }
 ]
