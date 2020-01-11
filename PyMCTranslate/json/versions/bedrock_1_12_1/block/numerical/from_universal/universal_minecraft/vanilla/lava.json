@@ -1,0 +1,447 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "flowing": {
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "falling": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "level": {
+                                                "0": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "1": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ],
+                                                "2": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "3": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ],
+                                                "4": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "5": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ],
+                                                "6": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    }
+                                                ],
+                                                "7": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "level": {
+                                                "0": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    }
+                                                ],
+                                                "1": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ],
+                                                "2": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    }
+                                                ],
+                                                "3": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    }
+                                                ],
+                                                "4": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    }
+                                                ],
+                                                "5": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    }
+                                                ],
+                                                "6": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    }
+                                                ],
+                                                "7": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:flowing_lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "15"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "falling": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "level": {
+                                                "0": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "1": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ],
+                                                "2": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "3": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ],
+                                                "4": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "5": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ],
+                                                "6": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    }
+                                                ],
+                                                "7": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "level": {
+                                                "0": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    }
+                                                ],
+                                                "1": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ],
+                                                "2": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    }
+                                                ],
+                                                "3": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    }
+                                                ],
+                                                "4": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    }
+                                                ],
+                                                "5": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    }
+                                                ],
+                                                "6": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    }
+                                                ],
+                                                "7": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:lava"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "15"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

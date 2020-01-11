@@ -1,0 +1,121 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "east",
+                            "half": "bottom"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "west",
+                            "half": "bottom"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "south",
+                            "half": "bottom"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "north",
+                            "half": "bottom"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "east",
+                            "half": "top"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "west",
+                            "half": "top"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "south",
+                            "half": "top"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stairs"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "quartz",
+                            "facing": "north",
+                            "half": "top"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

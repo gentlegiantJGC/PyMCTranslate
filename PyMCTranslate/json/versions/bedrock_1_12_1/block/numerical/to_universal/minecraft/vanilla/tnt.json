@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tnt"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tnt"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "unstable": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tnt"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "unstable": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

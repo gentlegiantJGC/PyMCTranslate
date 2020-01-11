@@ -1,0 +1,45 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bone_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "y"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bone_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "x"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bone_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "z"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

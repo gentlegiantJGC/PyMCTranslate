@@ -1,0 +1,351 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "persistent": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "check_decay": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "material": {
+                                                "oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "spruce": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ],
+                                                "birch": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "jungle": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ],
+                                                "acacia": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "dark_oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "material": {
+                                                "oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "spruce": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ],
+                                                "birch": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    }
+                                                ],
+                                                "jungle": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    }
+                                                ],
+                                                "acacia": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "dark_oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "check_decay": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "material": {
+                                                "oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    }
+                                                ],
+                                                "spruce": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ],
+                                                "birch": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    }
+                                                ],
+                                                "jungle": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    }
+                                                ],
+                                                "acacia": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    }
+                                                ],
+                                                "dark_oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "material": {
+                                                "oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    }
+                                                ],
+                                                "spruce": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    }
+                                                ],
+                                                "birch": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    }
+                                                ],
+                                                "jungle": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "15"
+                                                        }
+                                                    }
+                                                ],
+                                                "acacia": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    }
+                                                ],
+                                                "dark_oak": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:leaves2"
+                                                    },
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

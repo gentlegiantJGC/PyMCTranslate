@@ -1,0 +1,67 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:comparator"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "south",
+                "west",
+                "north",
+                "east"
+            ],
+            "mode": [
+                "compare",
+                "subtract"
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "false"
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "OutputSignal": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]
