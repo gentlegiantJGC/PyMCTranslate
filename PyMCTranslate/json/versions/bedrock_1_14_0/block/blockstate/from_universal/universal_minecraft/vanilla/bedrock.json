@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bedrock"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "infiniburn": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "infiniburn_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "infiniburn_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

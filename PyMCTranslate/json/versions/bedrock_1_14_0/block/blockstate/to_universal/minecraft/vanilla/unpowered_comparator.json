@@ -1,0 +1,109 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "OutputSignal": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:comparator"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "false"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            },
+            "output_subtract_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "compare"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "subtract"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

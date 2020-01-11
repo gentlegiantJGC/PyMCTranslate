@@ -1,0 +1,156 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "FuelAmount": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "Fuel",
+                                "type": "short"
+                            }
+                        }
+                    ]
+                },
+                "CookTime": {
+                    "type": "short",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "BrewTime"
+                            }
+                        }
+                    ]
+                },
+                "FuelTotal": {
+                    "type": "short",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Items": {
+                    "type": "list",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:brewing_stand"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "brewing_stand_slot_a_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "true"
+                        }
+                    }
+                ]
+            },
+            "brewing_stand_slot_b_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_1": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_1": "true"
+                        }
+                    }
+                ]
+            },
+            "brewing_stand_slot_c_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_2": "false"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_2": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

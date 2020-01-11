@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "cauldron_liquid": [
+            "\"water\"",
+            "\"lava\""
+        ],
+        "fill_level": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    "defaults": {
+        "cauldron_liquid": "\"water\"",
+        "fill_level": "0"
+    },
+    "nbt_properties": true
+}

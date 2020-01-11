@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:anvil"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "damage": {
+                "\"undamaged\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "normal"
+                        }
+                    }
+                ],
+                "\"slightly_damaged\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "chipped"
+                        }
+                    }
+                ],
+                "\"very_damaged\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "damaged"
+                        }
+                    }
+                ],
+                "\"broken\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "broken"
+                        }
+                    }
+                ]
+            },
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

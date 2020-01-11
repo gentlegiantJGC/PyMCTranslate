@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "stone_slab_type_4": {
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "mossy_stone_brick"
+                        }
+                    }
+                ],
+                "\"smooth_quartz\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "smooth_quartz"
+                        }
+                    }
+                ],
+                "\"stone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "stone"
+                        }
+                    }
+                ],
+                "\"cut_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "cut_sandstone"
+                        }
+                    }
+                ],
+                "\"cut_red_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "cut_red_sandstone"
+                        }
+                    }
+                ]
+            },
+            "top_slot_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "bottom"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "top"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

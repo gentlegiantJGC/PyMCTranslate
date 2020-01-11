@@ -1,0 +1,173 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:door"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wooden_door"
+                    }
+                ],
+                "iron": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:iron_door"
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_door"
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_door"
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_door"
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_door"
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_door"
+                    }
+                ]
+            },
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "hinge": {
+                "left": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "door_hinge_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "right": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "door_hinge_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "open": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "half": {
+                "lower": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "upper": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

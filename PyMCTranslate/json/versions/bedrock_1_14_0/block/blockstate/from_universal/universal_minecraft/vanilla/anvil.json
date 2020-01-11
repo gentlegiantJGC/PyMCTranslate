@@ -1,0 +1,103 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:anvil"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "damage": {
+                "normal": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": [
+                                "snbt",
+                                "\"undamaged\""
+                            ]
+                        }
+                    }
+                ],
+                "chipped": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": [
+                                "snbt",
+                                "\"slightly_damaged\""
+                            ]
+                        }
+                    }
+                ],
+                "damaged": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": [
+                                "snbt",
+                                "\"very_damaged\""
+                            ]
+                        }
+                    }
+                ],
+                "broken": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": [
+                                "snbt",
+                                "\"broken\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

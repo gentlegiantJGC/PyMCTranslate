@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:planks"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "oak": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": [
+                                "snbt",
+                                "\"oak\""
+                            ]
+                        }
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": [
+                                "snbt",
+                                "\"spruce\""
+                            ]
+                        }
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": [
+                                "snbt",
+                                "\"birch\""
+                            ]
+                        }
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": [
+                                "snbt",
+                                "\"jungle\""
+                            ]
+                        }
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": [
+                                "snbt",
+                                "\"acacia\""
+                            ]
+                        }
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": [
+                                "snbt",
+                                "\"dark_oak\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

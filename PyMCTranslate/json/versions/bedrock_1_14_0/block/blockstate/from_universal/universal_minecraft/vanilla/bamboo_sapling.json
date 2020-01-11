@@ -1,0 +1,103 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bamboo_sapling"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "stage": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "sapling_type": {
+                "oak": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": [
+                                "snbt",
+                                "\"oak\""
+                            ]
+                        }
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": [
+                                "snbt",
+                                "\"spruce\""
+                            ]
+                        }
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": [
+                                "snbt",
+                                "\"birch\""
+                            ]
+                        }
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": [
+                                "snbt",
+                                "\"jungle\""
+                            ]
+                        }
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": [
+                                "snbt",
+                                "\"acacia\""
+                            ]
+                        }
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": [
+                                "snbt",
+                                "\"dark_oak\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

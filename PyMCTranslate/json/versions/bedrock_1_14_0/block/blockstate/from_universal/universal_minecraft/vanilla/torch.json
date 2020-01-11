@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:torch"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "unknown": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": [
+                                "snbt",
+                                "\"unknown\""
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": [
+                                "snbt",
+                                "\"east\""
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": [
+                                "snbt",
+                                "\"west\""
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": [
+                                "snbt",
+                                "\"south\""
+                            ]
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": [
+                                "snbt",
+                                "\"north\""
+                            ]
+                        }
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": [
+                                "snbt",
+                                "\"top\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,125 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wall"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "wall_block_type": {
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "cobblestone"
+                        }
+                    }
+                ],
+                "\"mossy_cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "mossy_cobblestone"
+                        }
+                    }
+                ],
+                "\"granite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "granite"
+                        }
+                    }
+                ],
+                "\"diorite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "diorite"
+                        }
+                    }
+                ],
+                "\"andesite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "andesite"
+                        }
+                    }
+                ],
+                "\"sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "sandstone"
+                        }
+                    }
+                ],
+                "\"brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "brick"
+                        }
+                    }
+                ],
+                "\"stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "stone_brick"
+                        }
+                    }
+                ],
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "mossy_stone_brick"
+                        }
+                    }
+                ],
+                "\"nether_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "nether_brick"
+                        }
+                    }
+                ],
+                "\"end_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "end_stone_brick"
+                        }
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "prismarine"
+                        }
+                    }
+                ],
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "red_sandstone"
+                        }
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "red_nether_brick"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

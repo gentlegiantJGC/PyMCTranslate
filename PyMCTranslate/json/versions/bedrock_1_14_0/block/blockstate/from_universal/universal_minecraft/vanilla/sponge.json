@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sponge"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "wet": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sponge_type": [
+                                "snbt",
+                                "\"dry\""
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sponge_type": [
+                                "snbt",
+                                "\"wet\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

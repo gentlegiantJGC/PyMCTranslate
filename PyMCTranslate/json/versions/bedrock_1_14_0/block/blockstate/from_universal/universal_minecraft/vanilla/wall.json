@@ -1,0 +1,167 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:cobblestone_wall"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "cobblestone": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"cobblestone\""
+                            ]
+                        }
+                    }
+                ],
+                "mossy_cobblestone": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"mossy_cobblestone\""
+                            ]
+                        }
+                    }
+                ],
+                "granite": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"granite\""
+                            ]
+                        }
+                    }
+                ],
+                "diorite": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"diorite\""
+                            ]
+                        }
+                    }
+                ],
+                "andesite": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"andesite\""
+                            ]
+                        }
+                    }
+                ],
+                "sandstone": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"sandstone\""
+                            ]
+                        }
+                    }
+                ],
+                "brick": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"brick\""
+                            ]
+                        }
+                    }
+                ],
+                "stone_brick": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"stone_brick\""
+                            ]
+                        }
+                    }
+                ],
+                "mossy_stone_brick": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"mossy_stone_brick\""
+                            ]
+                        }
+                    }
+                ],
+                "nether_brick": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"nether_brick\""
+                            ]
+                        }
+                    }
+                ],
+                "end_stone_brick": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"end_brick\""
+                            ]
+                        }
+                    }
+                ],
+                "prismarine": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"prismarine\""
+                            ]
+                        }
+                    }
+                ],
+                "red_sandstone": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"red_sandstone\""
+                            ]
+                        }
+                    }
+                ],
+                "red_nether_brick": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_block_type": [
+                                "snbt",
+                                "\"red_nether_brick\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

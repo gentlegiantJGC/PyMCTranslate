@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:infested_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "monster_egg_stone_type": {
+                "\"stone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "stone"
+                        }
+                    }
+                ],
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "cobblestone"
+                        }
+                    }
+                ],
+                "\"stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "stone_bricks"
+                        }
+                    }
+                ],
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "mossy_stone_bricks"
+                        }
+                    }
+                ],
+                "\"cracked_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "cracked_stone_bricks"
+                        }
+                    }
+                ],
+                "\"chiseled_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "chiseled_stone_bricks"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

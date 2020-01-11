@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:campfire"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "lit": {
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extinguished": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extinguished": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

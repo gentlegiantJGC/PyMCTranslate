@@ -1,0 +1,92 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:hay_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "deprecated": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "deprecated": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "axis": {
+                "y": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"y\""
+                            ]
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"x\""
+                            ]
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": [
+                                "snbt",
+                                "\"z\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

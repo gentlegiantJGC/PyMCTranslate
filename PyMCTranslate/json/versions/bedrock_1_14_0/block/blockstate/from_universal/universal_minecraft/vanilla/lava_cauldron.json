@@ -1,0 +1,114 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:lava_cauldron"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "cauldron_liquid": {
+                "water": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cauldron_liquid": [
+                                "snbt",
+                                "\"water\""
+                            ]
+                        }
+                    }
+                ],
+                "lava": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cauldron_liquid": [
+                                "snbt",
+                                "\"lava\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "level": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": [
+                                "snbt",
+                                "6"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

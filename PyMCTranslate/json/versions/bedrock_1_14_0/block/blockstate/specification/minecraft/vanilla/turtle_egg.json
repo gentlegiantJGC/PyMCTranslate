@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "cracked_state": [
+            "\"no_cracks\"",
+            "\"cracked\"",
+            "\"max_cracked\""
+        ],
+        "turtle_egg_count": [
+            "\"one_egg\"",
+            "\"two_egg\"",
+            "\"three_egg\"",
+            "\"four_egg\""
+        ]
+    },
+    "defaults": {
+        "cracked_state": "\"no_cracks\"",
+        "turtle_egg_count": "\"one_egg\""
+    },
+    "nbt_properties": true
+}

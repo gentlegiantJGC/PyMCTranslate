@@ -1,0 +1,103 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:double_plant"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "flower": {
+                "sunflower": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "double_plant_type": [
+                                "snbt",
+                                "\"sunflower\""
+                            ]
+                        }
+                    }
+                ],
+                "lilac": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "double_plant_type": [
+                                "snbt",
+                                "\"syringa\""
+                            ]
+                        }
+                    }
+                ],
+                "tall_grass": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "double_plant_type": [
+                                "snbt",
+                                "\"grass\""
+                            ]
+                        }
+                    }
+                ],
+                "large_fern": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "double_plant_type": [
+                                "snbt",
+                                "\"fern\""
+                            ]
+                        }
+                    }
+                ],
+                "rose_bush": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "double_plant_type": [
+                                "snbt",
+                                "\"rose\""
+                            ]
+                        }
+                    }
+                ],
+                "peony": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "double_plant_type": [
+                                "snbt",
+                                "\"paeonia\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "half": {
+                "lower": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "upper": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

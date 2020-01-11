@@ -1,0 +1,21 @@
+{
+    "properties": {
+        "structure_block_type": [
+            "\"data\"",
+            "\"save\"",
+            "\"load\"",
+            "\"corner\"",
+            "\"invalid\"",
+            "\"export\""
+        ]
+    },
+    "defaults": {
+        "structure_block_type": "\"data\""
+    },
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "structure_block"
+    ],
+    "snbt": "{isMovable: 1b}"
+}

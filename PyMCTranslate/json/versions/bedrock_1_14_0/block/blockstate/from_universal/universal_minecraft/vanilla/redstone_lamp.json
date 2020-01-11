@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:redstone_lamp"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "true": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lit_redstone_lamp"
+                    }
+                ]
+            }
+        }
+    }
+]

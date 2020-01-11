@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "top_slot_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "double",
+                            "top_slot_bit": "0"
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "double",
+                            "top_slot_bit": "1"
+                        }
+                    }
+                ]
+            },
+            "wood_type": {
+                "\"oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "oak"
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "spruce"
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "birch"
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle"
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "acacia"
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "dark_oak"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:ladder"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "down": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

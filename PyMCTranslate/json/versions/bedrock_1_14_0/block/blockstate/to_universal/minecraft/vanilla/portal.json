@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:nether_portal"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "portal_axis": {
+                "\"unknown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "unknown"
+                        }
+                    }
+                ],
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "x"
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "z"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

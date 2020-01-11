@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "stone_slab_type": [
+            "\"smooth_stone\"",
+            "\"sandstone\"",
+            "\"wood\"",
+            "\"cobblestone\"",
+            "\"brick\"",
+            "\"stone_brick\"",
+            "\"quartz\"",
+            "\"nether_brick\""
+        ],
+        "top_slot_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "stone_slab_type": "\"smooth_stone\"",
+        "top_slot_bit": "0b"
+    },
+    "nbt_properties": true
+}

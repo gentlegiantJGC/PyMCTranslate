@@ -1,0 +1,103 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:activator_rail"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "powered": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_data_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_data_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "shape": {
+                "north_south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "east_west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "ascending_east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "ascending_west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "ascending_north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_direction": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "ascending_south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "rail_direction": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

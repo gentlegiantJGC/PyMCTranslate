@@ -1,0 +1,197 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:shulker_box"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "\"white\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "white"
+                        }
+                    }
+                ],
+                "\"orange\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "orange"
+                        }
+                    }
+                ],
+                "\"magenta\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "magenta"
+                        }
+                    }
+                ],
+                "\"light_blue\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "light_blue"
+                        }
+                    }
+                ],
+                "\"yellow\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "yellow"
+                        }
+                    }
+                ],
+                "\"lime\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "lime"
+                        }
+                    }
+                ],
+                "\"pink\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "pink"
+                        }
+                    }
+                ],
+                "\"gray\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "gray"
+                        }
+                    }
+                ],
+                "\"silver\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "light_gray"
+                        }
+                    }
+                ],
+                "\"cyan\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "cyan"
+                        }
+                    }
+                ],
+                "\"purple\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "purple"
+                        }
+                    }
+                ],
+                "\"blue\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "blue"
+                        }
+                    }
+                ],
+                "\"brown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "brown"
+                        }
+                    }
+                ],
+                "\"green\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "green"
+                        }
+                    }
+                ],
+                "\"red\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "red"
+                        }
+                    }
+                ],
+                "\"black\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "black"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Findable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Items": {
+                    "type": "list",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

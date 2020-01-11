@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "cluster_count": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "dead_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "cluster_count": "0",
+        "dead_bit": "0b"
+    },
+    "nbt_properties": true
+}

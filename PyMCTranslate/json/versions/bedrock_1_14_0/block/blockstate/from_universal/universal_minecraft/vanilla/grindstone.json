@@ -1,0 +1,103 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:grindstone"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "face": {
+                "floor": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"standing\""
+                            ]
+                        }
+                    }
+                ],
+                "ceiling": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"hanging\""
+                            ]
+                        }
+                    }
+                ],
+                "wall": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"side\""
+                            ]
+                        }
+                    }
+                ],
+                "multiple": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": [
+                                "snbt",
+                                "\"multiple\""
+                            ]
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

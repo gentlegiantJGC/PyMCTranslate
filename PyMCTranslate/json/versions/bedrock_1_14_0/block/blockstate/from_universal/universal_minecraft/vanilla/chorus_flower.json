@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:chorus_flower"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "age": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

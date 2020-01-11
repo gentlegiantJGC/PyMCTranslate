@@ -1,0 +1,141 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Findable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "Items": {
+                            "type": "list",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:trapped_chest"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "down": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

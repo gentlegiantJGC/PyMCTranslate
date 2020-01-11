@@ -1,0 +1,233 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:wooden_pressure_plate"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "stone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_pressure_plate"
+                    }
+                ],
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wooden_pressure_plate"
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_pressure_plate"
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_pressure_plate"
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_pressure_plate"
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_pressure_plate"
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_pressure_plate"
+                    }
+                ]
+            },
+            "power": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "6"
+                            ]
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "7"
+                            ]
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "8"
+                            ]
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "9"
+                            ]
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "10"
+                            ]
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "11"
+                            ]
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "12"
+                            ]
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "13"
+                            ]
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "14"
+                            ]
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "redstone_signal": [
+                                "snbt",
+                                "15"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

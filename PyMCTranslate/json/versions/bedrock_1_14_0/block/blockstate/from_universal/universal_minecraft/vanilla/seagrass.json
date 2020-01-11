@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:seagrass"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "sea_grass_type": [
+                "snbt",
+                "\"default\""
+            ]
+        }
+    }
+]

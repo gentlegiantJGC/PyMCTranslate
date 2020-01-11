@@ -1,0 +1,68 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "tube": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"blue\""
+                            ]
+                        }
+                    }
+                ],
+                "brain": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"pink\""
+                            ]
+                        }
+                    }
+                ],
+                "bubble": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"purple\""
+                            ]
+                        }
+                    }
+                ],
+                "fire": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"red\""
+                            ]
+                        }
+                    }
+                ],
+                "horn": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": [
+                                "snbt",
+                                "\"yellow\""
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
