@@ -22,5 +22,10 @@
     "defaults": {
         "ground_sign_direction": "0"
     },
-    "nbt_properties": true
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "banner"
+    ],
+    "snbt": "{Base: 0, isMovable: 1b}"
 }
