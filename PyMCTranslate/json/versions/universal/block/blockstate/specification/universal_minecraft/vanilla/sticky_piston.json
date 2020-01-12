@@ -16,5 +16,10 @@
     "defaults": {
         "extended": "false",
         "facing": "north"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "piston"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }
