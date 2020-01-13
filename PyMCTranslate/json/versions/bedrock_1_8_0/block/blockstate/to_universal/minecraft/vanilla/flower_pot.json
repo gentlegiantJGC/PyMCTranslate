@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:flower_pot"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "update": [
+                "false",
+                "true"
+            ]
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "PlantBlock": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "val": {
+                            "type": "short",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "Data",
+                                        "type": "int"
+                                    }
+                                }
+                            ]
+                        },
+                        "name": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "Item"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,728 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral_fan"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "up": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_dead"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_dead"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_dead"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_dead"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_dead"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "1"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "0"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "7"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "8"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "11"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "false": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "12"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "tube": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "brain": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "15"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "bubble": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "fire": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "15"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "horn": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

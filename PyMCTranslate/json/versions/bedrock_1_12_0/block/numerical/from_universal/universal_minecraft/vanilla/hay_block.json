@@ -1,0 +1,45 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "y": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:hay_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "x": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:hay_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ],
+                "z": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:hay_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "8"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

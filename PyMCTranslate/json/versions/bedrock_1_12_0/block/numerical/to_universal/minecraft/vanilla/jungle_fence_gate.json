@@ -1,0 +1,249 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "south",
+                            "open": "false",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "west",
+                            "open": "false",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "north",
+                            "open": "false",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "east",
+                            "open": "false",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "south",
+                            "open": "true",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "west",
+                            "open": "true",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "north",
+                            "open": "true",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "east",
+                            "open": "true",
+                            "in_wall": "false"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "south",
+                            "open": "false",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "west",
+                            "open": "false",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "north",
+                            "open": "false",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "east",
+                            "open": "false",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "south",
+                            "open": "true",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "west",
+                            "open": "true",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "north",
+                            "open": "true",
+                            "in_wall": "true"
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:fence_gate"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "jungle",
+                            "facing": "east",
+                            "open": "true",
+                            "in_wall": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

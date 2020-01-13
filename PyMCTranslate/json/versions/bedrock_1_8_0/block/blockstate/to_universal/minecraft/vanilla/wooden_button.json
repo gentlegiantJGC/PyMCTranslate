@@ -1,0 +1,80 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:button"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "oak"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "false",
+                "true"
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "down": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "ceiling"
+                        }
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "floor"
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "east"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

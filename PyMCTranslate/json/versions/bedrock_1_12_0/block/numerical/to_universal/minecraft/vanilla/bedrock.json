@@ -1,0 +1,33 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bedrock"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "infiniburn": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bedrock"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "infiniburn": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
