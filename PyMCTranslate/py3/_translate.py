@@ -4,10 +4,12 @@ try:
 	from amulet.api.block import Block
 	from amulet.api.block_entity import BlockEntity
 	from amulet.api.entity import Entity
+	from amulet.api.errors import ChunkLoadError
 except ImportError:
 	from PyMCTranslate.py3.api.block import Block
 	from PyMCTranslate.py3.api.block_entity import BlockEntity
 	from PyMCTranslate.py3.api.entity import Entity
+	from PyMCTranslate.py3.api.errors import ChunkLoadError
 
 from ..py3 import code_functions
 
@@ -454,8 +456,11 @@ def _translate(
 					multiblocks = [multiblocks]
 				for multiblock in multiblocks:
 					new_location = (relative_location[0] + multiblock['coords'][0], relative_location[1] + multiblock['coords'][1], relative_location[2] + multiblock['coords'][2])
-					block_input_, nbt_input_ = get_block_callback(new_location)
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input_, nbt_input_, multiblock['functions'], get_block_callback ,new_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+					try:
+						block_input_, nbt_input_ = get_block_callback(new_location)
+						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input_, nbt_input_, multiblock['functions'], get_block_callback ,new_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+					except ChunkLoadError:
+						continue
 
 		elif 'map_block_name' == function_name:
 			# {
@@ -466,7 +471,7 @@ def _translate(
 			# 		]
 			# 	}
 			# }
-			assert isinstance(block_input, Block), 'The block input is not a block'
+			assert isinstance(block_input, Block), f'The block input {block_input} is not a block'
 			block_name = f'{block_input.namespace}:{block_input.base_name}'
 			if block_name in translate_function["options"]:
 				output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"][block_name], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))

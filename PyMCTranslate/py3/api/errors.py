@@ -1,0 +1,2 @@
+class ChunkLoadError(Exception):
+    pass
