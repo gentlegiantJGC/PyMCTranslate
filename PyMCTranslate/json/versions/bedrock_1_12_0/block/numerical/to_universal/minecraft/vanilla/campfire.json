@@ -1,0 +1,113 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "true",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "true",
+                            "facing": "east"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "true",
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "true",
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "false",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "false",
+                            "facing": "east"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "false",
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:campfire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "false",
+                            "facing": "west"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

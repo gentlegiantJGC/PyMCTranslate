@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:campfire"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "lit": [
+                "true",
+                "false"
+            ],
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west"
+            ]
+        }
+    }
+]

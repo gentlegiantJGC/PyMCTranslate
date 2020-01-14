@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:stonecutter"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "down",
+                "up",
+                "north",
+                "south",
+                "east",
+                "west"
+            ]
+        }
+    }
+]

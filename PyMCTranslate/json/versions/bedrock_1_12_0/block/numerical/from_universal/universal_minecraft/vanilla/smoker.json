@@ -1,59 +1,51 @@
 [
     {
-        "function": "new_block",
-        "options": "universal_minecraft:campfire"
-    },
-    {
         "function": "map_properties",
         "options": {
-            "direction": {
-                "0": [
+            "lit": {
+                "false": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "north"
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:smoker"
                     }
                 ],
-                "1": [
+                "true": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "east"
-                        }
-                    }
-                ],
-                "2": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "south"
-                        }
-                    }
-                ],
-                "3": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "west"
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:lit_smoker"
                     }
                 ]
             },
-            "extinguished": {
-                "0b": [
+            "facing": {
+                "north": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "lit": "true"
+                            "block_data": "2"
                         }
                     }
                 ],
-                "1b": [
+                "south": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "lit": "false"
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "5"
                         }
                     }
                 ]

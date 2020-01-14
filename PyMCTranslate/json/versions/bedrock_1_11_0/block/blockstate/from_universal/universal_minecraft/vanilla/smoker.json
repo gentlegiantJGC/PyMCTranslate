@@ -1,0 +1,32 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "false": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:smoker"
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lit_smoker"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

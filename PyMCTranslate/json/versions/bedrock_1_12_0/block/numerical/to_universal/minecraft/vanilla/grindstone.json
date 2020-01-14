@@ -1,0 +1,165 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "floor",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "floor",
+                            "facing": "east"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "floor",
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "floor",
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "ceiling",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "ceiling",
+                            "facing": "east"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "ceiling",
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "ceiling",
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "east"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:grindstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "wall",
+                            "facing": "west"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

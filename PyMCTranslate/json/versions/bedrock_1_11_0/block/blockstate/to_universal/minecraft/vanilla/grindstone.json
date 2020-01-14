@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:grindstone"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "face": [
+                "floor",
+                "ceiling",
+                "wall"
+            ],
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west"
+            ]
+        }
+    }
+]

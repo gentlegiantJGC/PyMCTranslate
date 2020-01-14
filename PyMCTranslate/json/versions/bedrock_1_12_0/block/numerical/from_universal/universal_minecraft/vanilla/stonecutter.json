@@ -1,31 +1,33 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:campfire"
+        "options": "minecraft:stonecutter_block"
     },
     {
         "function": "map_properties",
         "options": {
             "facing": {
+                "down": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ],
                 "north": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
-                        }
-                    }
-                ],
-                "east": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "block_data": "2"
                         }
                     }
                 ],
@@ -33,10 +35,15 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
                         }
                     }
                 ],
@@ -44,34 +51,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "lit": {
-                "true": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "extinguished": [
-                                "snbt",
-                                "0b"
-                            ]
-                        }
-                    }
-                ],
-                "false": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "extinguished": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "block_data": "5"
                         }
                     }
                 ]

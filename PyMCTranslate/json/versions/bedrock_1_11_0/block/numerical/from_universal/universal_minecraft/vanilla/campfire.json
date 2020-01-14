@@ -1,0 +1,95 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:campfire"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "0"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "1"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "2"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "3"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "4"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "5"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "6"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "7"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

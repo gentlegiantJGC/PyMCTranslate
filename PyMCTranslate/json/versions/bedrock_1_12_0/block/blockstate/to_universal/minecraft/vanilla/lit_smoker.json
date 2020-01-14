@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:smoker"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "lit": "true"
+        }
+    }
+]

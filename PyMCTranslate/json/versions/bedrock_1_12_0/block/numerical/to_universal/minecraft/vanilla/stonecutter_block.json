@@ -1,0 +1,81 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stonecutter"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "down"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stonecutter"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "up"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stonecutter"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stonecutter"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stonecutter"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stonecutter"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
