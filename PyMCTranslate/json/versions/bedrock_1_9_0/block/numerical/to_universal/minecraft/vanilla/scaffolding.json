@@ -1,90 +1,121 @@
 [
     {
-        "function": "new_block",
-        "options": "universal_minecraft:scaffolding"
-    },
-    {
         "function": "map_properties",
         "options": {
-            "stability": {
+            "block_data": {
                 "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
                     {
                         "function": "new_properties",
                         "options": {
-                            "distance": "0"
+                            "distance": "0",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "1": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
-                            "distance": "1"
+                            "distance": "1",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "2": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
-                            "distance": "2"
+                            "distance": "2",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "3": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
-                            "distance": "3"
+                            "distance": "3",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "4": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
-                            "distance": "4"
+                            "distance": "4",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "5": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
-                            "distance": "5"
+                            "distance": "5",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "6": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
-                            "distance": "6"
+                            "distance": "6",
+                            "stability_checked": "false"
                         }
                     }
                 ],
                 "7": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "distance": "7"
-                        }
-                    }
-                ]
-            },
-            "stability_check": {
-                "0b": [
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
                     {
                         "function": "new_properties",
                         "options": {
+                            "distance": "7",
                             "stability_checked": "false"
                         }
                     }
                 ],
-                "1b": [
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:scaffolding"
+                    },
                     {
                         "function": "new_properties",
                         "options": {
+                            "distance": "7",
                             "stability_checked": "true"
                         }
                     }

@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:scaffolding"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "distance": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "stability_checked": [
+                "false",
+                "true"
+            ]
+        }
+    }
+]
