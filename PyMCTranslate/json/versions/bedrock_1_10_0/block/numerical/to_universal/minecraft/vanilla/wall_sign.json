@@ -1,5 +1,45 @@
 [
     {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "TextOwner": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Text": {
+                    "type": "string",
+                    "functions": []
+                }
+            }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_sign_2u"
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
             "block_data": {
@@ -11,7 +51,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "north",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -23,7 +64,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "south",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -35,7 +77,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "west",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -47,7 +90,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "east",
+                            "material": "oak"
                         }
                     }
                 ]

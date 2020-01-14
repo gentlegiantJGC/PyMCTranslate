@@ -1,5 +1,45 @@
 [
     {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "TextOwner": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Text": {
+                    "type": "string",
+                    "functions": []
+                }
+            }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_sign_2u"
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
             "block_data": {
@@ -11,7 +51,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "0"
+                            "rotation": "0",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -23,7 +64,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "1"
+                            "rotation": "1",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -35,7 +77,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "2"
+                            "rotation": "2",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -47,7 +90,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "3"
+                            "rotation": "3",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -59,7 +103,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "4"
+                            "rotation": "4",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -71,7 +116,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "5"
+                            "rotation": "5",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -83,7 +129,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "6"
+                            "rotation": "6",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -95,7 +142,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "7"
+                            "rotation": "7",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -107,7 +155,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "8"
+                            "rotation": "8",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -119,7 +168,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "9"
+                            "rotation": "9",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -131,7 +181,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "10"
+                            "rotation": "10",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -143,7 +194,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "11"
+                            "rotation": "11",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -155,7 +207,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "12"
+                            "rotation": "12",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -167,7 +220,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "13"
+                            "rotation": "13",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -179,7 +233,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "14"
+                            "rotation": "14",
+                            "material": "oak"
                         }
                     }
                 ],
@@ -191,7 +246,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "rotation": "15"
+                            "rotation": "15",
+                            "material": "oak"
                         }
                     }
                 ]

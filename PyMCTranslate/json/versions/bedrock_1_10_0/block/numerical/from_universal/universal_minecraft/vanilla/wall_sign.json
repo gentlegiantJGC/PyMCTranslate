@@ -1,13 +1,61 @@
 [
     {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "TextOwner": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_sign_fu"
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
             "facing": {
                 "north": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:wall_sign"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -17,10 +65,6 @@
                 ],
                 "south": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:wall_sign"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "block_data": "3"
@@ -28,10 +72,6 @@
                     }
                 ],
                 "west": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:wall_sign"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -41,14 +81,48 @@
                 ],
                 "east": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:wall_sign"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "block_data": "5"
                         }
+                    }
+                ]
+            },
+            "material": {
+                "oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wall_sign"
+                    }
+                ],
+                "spruce": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_wall_sign"
+                    }
+                ],
+                "dark_oak": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:darkoak_wall_sign"
+                    }
+                ],
+                "birch": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_wall_sign"
+                    }
+                ],
+                "jungle": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_wall_sign"
+                    }
+                ],
+                "acacia": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_wall_sign"
                     }
                 ]
             }
