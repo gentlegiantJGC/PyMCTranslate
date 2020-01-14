@@ -6,10 +6,6 @@
     {
         "function": "carry_properties",
         "options": {
-            "age": [
-                "0",
-                "1"
-            ],
             "leaves": [
                 "none",
                 "small",
@@ -19,6 +15,29 @@
                 "0",
                 "1"
             ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "age": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "thickness": "thin"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "thickness": "thick"
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

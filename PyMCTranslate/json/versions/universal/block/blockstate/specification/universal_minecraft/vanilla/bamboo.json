@@ -1,8 +1,8 @@
 {
     "properties": {
-        "age": [
-            "0",
-            "1"
+        "thickness": [
+            "thin",
+            "thick"
         ],
         "leaves": [
             "none",
@@ -15,7 +15,7 @@
         ]
     },
     "defaults": {
-        "age": "0",
+        "thickness": "thin",
         "leaves": "none",
         "stage": "0"
     }

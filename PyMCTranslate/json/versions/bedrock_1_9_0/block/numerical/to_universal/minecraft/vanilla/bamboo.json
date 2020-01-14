@@ -1,0 +1,79 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "0",
+                            "leaves": "none",
+                            "thickness": "thin"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "1",
+                            "leaves": "none",
+                            "thickness": "thin"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "1",
+                            "leaves": "small",
+                            "thickness": "thin"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "1",
+                            "leaves": "large",
+                            "thickness": "thin"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "1",
+                            "leaves": "large",
+                            "thickness": "thick"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
