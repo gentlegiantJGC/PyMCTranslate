@@ -12,19 +12,24 @@
             "west",
             "east"
         ],
-        "enabled": [
-            "false",
-            "true"
+        "toggle": [
+            "0",
+            "1"
+        ],
+        "powered": [
+            "true",
+            "false"
         ]
     },
     "defaults": {
         "attachment": "floor",
         "facing": "north",
-        "enabled": "false"
+        "toggle": "0",
+        "powered": "false"
     },
     "nbt_identifier": [
         "universal_minecraft",
-        "conduit"
+        "bell"
     ],
     "snbt": "{utags: {isMovable: 1b}}"
 }

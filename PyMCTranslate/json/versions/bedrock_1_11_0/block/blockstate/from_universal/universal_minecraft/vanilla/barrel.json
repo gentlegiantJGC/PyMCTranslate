@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:barrel"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "open": [
+                "false",
+                "true"
+            ],
+            "facing": [
+                "down",
+                "up",
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

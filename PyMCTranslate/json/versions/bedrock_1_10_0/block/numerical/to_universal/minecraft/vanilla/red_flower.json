@@ -110,6 +110,30 @@
                             "type": "oxeye_daisy"
                         }
                     }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:plant"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "cornflower"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:plant"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "lily_of_the_valley"
+                        }
+                    }
                 ]
             }
         }

@@ -158,6 +158,30 @@
                             "block_data": "8"
                         }
                     }
+                ],
+                "cornflower": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "9"
+                        }
+                    }
+                ],
+                "lily_of_the_valley": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "10"
+                        }
+                    }
                 ]
             }
         }

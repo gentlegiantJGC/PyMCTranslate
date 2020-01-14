@@ -146,6 +146,30 @@
                             "type": "oxeye_daisy"
                         }
                     }
+                ],
+                "cornflower": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "cornflower"
+                        }
+                    }
+                ],
+                "lily_of_the_valley": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "lily_of_the_valley"
+                        }
+                    }
                 ]
             }
         }
