@@ -1,0 +1,351 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "MouthMoving": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "MouthTickCount": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mob": {
+                "skeleton": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "0b"
+                            }
+                        ]
+                    }
+                ],
+                "wither_skeleton": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "1b"
+                            }
+                        ]
+                    }
+                ],
+                "zombie": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "2b"
+                            }
+                        ]
+                    }
+                ],
+                "player": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "3b"
+                            }
+                        ]
+                    }
+                ],
+                "creeper": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "4b"
+                            }
+                        ]
+                    }
+                ],
+                "dragon": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "5b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "rotation": {
+                "0": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "0.0f"
+                            }
+                        ]
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "22.5f"
+                            }
+                        ]
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "45.0f"
+                            }
+                        ]
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "67.5f"
+                            }
+                        ]
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "90.0f"
+                            }
+                        ]
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "112.5f"
+                            }
+                        ]
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "135.0f"
+                            }
+                        ]
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "157.5f"
+                            }
+                        ]
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "180.0f"
+                            }
+                        ]
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-157.5f"
+                            }
+                        ]
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-135.0f"
+                            }
+                        ]
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-112.5f"
+                            }
+                        ]
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-90.0f"
+                            }
+                        ]
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-67.5f"
+                            }
+                        ]
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-45.0f"
+                            }
+                        ]
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "-22.5f"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "no_drop": {
+                "false": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "1b"
+                            ],
+                            "no_drop_bit": [
+                                "snbt",
+                                "0b"
+                            ]
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "1b"
+                            ],
+                            "no_drop_bit": [
+                                "snbt",
+                                "1b"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:skull"
+    }
+]

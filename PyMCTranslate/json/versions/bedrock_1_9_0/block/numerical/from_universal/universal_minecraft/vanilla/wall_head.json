@@ -1,0 +1,225 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "MouthMoving": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "MouthTickCount": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mob": {
+                "skeleton": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "0b"
+                            }
+                        ]
+                    }
+                ],
+                "wither_skeleton": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "1b"
+                            }
+                        ]
+                    }
+                ],
+                "zombie": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "2b"
+                            }
+                        ]
+                    }
+                ],
+                "player": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "3b"
+                            }
+                        ]
+                    }
+                ],
+                "creeper": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "4b"
+                            }
+                        ]
+                    }
+                ],
+                "dragon": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "5b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "no_drop": {
+                "false": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "2"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "3"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "4"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "5"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "true": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "10"
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "11"
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "12"
+                                        }
+                                    }
+                                ],
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "data_value": "13"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:skull"
+    }
+]

@@ -18,5 +18,10 @@
     "defaults": {
         "mob": "skeleton",
         "facing": "north"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "head"
+    ],
+    "snbt": "{utags: {isMovable: 1b,MouthMoving: 0b,MouthTickCount: 0}}"
 }

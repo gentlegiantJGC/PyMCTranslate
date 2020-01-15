@@ -25,15 +25,20 @@
             "13",
             "14",
             "15"
+        ],
+        "no_drop": [
+            "true",
+            "false"
         ]
     },
     "defaults": {
         "mob": "skeleton",
-        "rotation": "0"
+        "rotation": "0",
+        "no_drop": "false"
     },
     "nbt_identifier": [
         "universal_minecraft",
         "head"
     ],
-    "snbt": "{utags: {isMovable: 1b}}"
+    "snbt": "{utags: {isMovable: 1b,MouthMoving: 0b,MouthTickCount: 0}}"
 }

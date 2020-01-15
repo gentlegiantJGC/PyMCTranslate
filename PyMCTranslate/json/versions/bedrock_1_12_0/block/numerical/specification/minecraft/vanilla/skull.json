@@ -1,23 +1,27 @@
 {
     "properties": {
-        "facing_direction": [
+        "block_data": [
             "0",
             "1",
             "2",
             "3",
             "4",
-            "5"
-        ],
-        "no_drop_bit": [
-            "0b",
-            "1b"
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
         ]
     },
     "defaults": {
-        "facing_direction": "0",
-        "no_drop_bit": "0b"
+        "block_data": "0"
     },
-    "nbt_properties": true,
     "nbt_identifier": [
         "minecraft",
         "skull"
