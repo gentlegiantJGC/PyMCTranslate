@@ -1,17 +1,85 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:kelp"
+        "options": "minecraft:beehive"
     },
     {
         "function": "map_properties",
         "options": {
-            "age": {
+            "facing_direction": {
+                "down": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "0"
+                            ]
+                        }
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "1"
+                            ]
+                        }
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "2"
+                            ]
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "3"
+                            ]
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": [
+                                "snbt",
+                                "5"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "honey_level": {
                 "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "kelp_age": [
+                            "honey_level": [
                                 "snbt",
                                 "0"
                             ]
@@ -22,7 +90,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "kelp_age": [
+                            "honey_level": [
                                 "snbt",
                                 "1"
                             ]
@@ -33,7 +101,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "kelp_age": [
+                            "honey_level": [
                                 "snbt",
                                 "2"
                             ]
@@ -44,7 +112,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "kelp_age": [
+                            "honey_level": [
                                 "snbt",
                                 "3"
                             ]
@@ -55,7 +123,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "kelp_age": [
+                            "honey_level": [
                                 "snbt",
                                 "4"
                             ]
@@ -66,119 +134,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "kelp_age": [
+                            "honey_level": [
                                 "snbt",
                                 "5"
-                            ]
-                        }
-                    }
-                ],
-                "6": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "6"
-                            ]
-                        }
-                    }
-                ],
-                "7": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "7"
-                            ]
-                        }
-                    }
-                ],
-                "8": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "8"
-                            ]
-                        }
-                    }
-                ],
-                "9": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "9"
-                            ]
-                        }
-                    }
-                ],
-                "10": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "10"
-                            ]
-                        }
-                    }
-                ],
-                "11": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "11"
-                            ]
-                        }
-                    }
-                ],
-                "12": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "12"
-                            ]
-                        }
-                    }
-                ],
-                "13": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "13"
-                            ]
-                        }
-                    }
-                ],
-                "14": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "14"
-                            ]
-                        }
-                    }
-                ],
-                "15": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "kelp_age": [
-                                "snbt",
-                                "15"
                             ]
                         }
                     }

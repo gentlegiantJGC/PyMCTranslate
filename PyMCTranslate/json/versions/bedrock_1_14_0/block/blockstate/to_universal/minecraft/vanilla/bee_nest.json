@@ -1,42 +1,17 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:kelp"
-    },
-    {
-        "function": "multiblock",
-        "options": [
-            {
-                "coords": [
-                    0,
-                    1,
-                    0
-                ],
-                "functions": [
-                    {
-                        "function": "map_block_name",
-                        "options": {
-                            "minecraft:kelp": [
-                                {
-                                    "function": "new_block",
-                                    "options": "universal_minecraft:kelp_plant"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        ]
+        "options": "universal_minecraft:bee_nest"
     },
     {
         "function": "map_properties",
         "options": {
-            "kelp_age": {
+            "facing_direction": {
                 "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "0"
+                            "facing_direction": "north"
                         }
                     }
                 ],
@@ -44,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "1"
+                            "facing_direction": "north"
                         }
                     }
                 ],
@@ -52,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "2"
+                            "facing_direction": "north"
                         }
                     }
                 ],
@@ -60,7 +35,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "3"
+                            "facing_direction": "south"
                         }
                     }
                 ],
@@ -68,7 +43,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "4"
+                            "facing_direction": "west"
                         }
                     }
                 ],
@@ -76,87 +51,57 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "5"
+                            "facing_direction": "east"
                         }
                     }
-                ],
-                "6": [
+                ]
+            },
+            "honey_level": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "6"
+                            "honey_level": "0"
                         }
                     }
                 ],
-                "7": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "7"
+                            "honey_level": "1"
                         }
                     }
                 ],
-                "8": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "8"
+                            "honey_level": "2"
                         }
                     }
                 ],
-                "9": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "9"
+                            "honey_level": "3"
                         }
                     }
                 ],
-                "10": [
+                "4": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "10"
+                            "honey_level": "4"
                         }
                     }
                 ],
-                "11": [
+                "5": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "11"
-                        }
-                    }
-                ],
-                "12": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "age": "12"
-                        }
-                    }
-                ],
-                "13": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "age": "13"
-                        }
-                    }
-                ],
-                "14": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "age": "14"
-                        }
-                    }
-                ],
-                "15": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "age": "15"
+                            "honey_level": "5"
                         }
                     }
                 ]
