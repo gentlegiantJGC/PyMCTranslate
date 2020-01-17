@@ -1,6 +1,6 @@
 {
     "properties": {
-        "flower": [
+        "type": [
             "sunflower",
             "lilac",
             "rose_bush",
@@ -14,7 +14,7 @@
         ]
     },
     "defaults": {
-        "flower": "sunflower",
+        "type": "sunflower",
         "half": "lower"
     }
 }
