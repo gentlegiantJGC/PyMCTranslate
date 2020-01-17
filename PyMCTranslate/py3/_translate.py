@@ -165,7 +165,7 @@ def nbt_from_list(
 			# elif isinstance(nbt_temp, TAG_Int_Array) and isinstance(data, TAG_Int):
 			# elif isinstance(nbt_temp, TAG_Long_Array) and isinstance(data, TAG_Long):
 
-	return NBTFile(nbt_object)
+	return NBTFile(nbt_object, outer_name)
 
 
 def translate(
