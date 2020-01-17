@@ -41,7 +41,7 @@ class BiomeVersionManager:
                 biome = self._biome_int_to_str[biome]
             else:
                 print(f'Could not find registered value for biome {biome}. Reverting to plains')
-                biome = self.to_universal('minecraft:plains')
+                biome = 'minecraft:plains'
 
         # biome should now be a string
         if biome in self._biome_to_universal:
