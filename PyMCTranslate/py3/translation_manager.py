@@ -482,7 +482,7 @@ class SubVersion:
 		try:
 			return copy.deepcopy(self._mappings[mode]['from_universal'][namespace][base_name])
 		except KeyError:
-			raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
+			raise KeyError(f'Mapping from universal for {mode} {namespace}:{base_name} does not exist')
 
 	def to_universal(self, object_input: Union['Block', 'Entity'], get_block_callback: Callable = None, extra_input: 'BlockEntity' = None) -> Tuple[Union['Block', 'Entity'], Union['BlockEntity', None], bool]:
 		"""
