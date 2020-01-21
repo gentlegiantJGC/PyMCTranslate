@@ -230,8 +230,11 @@ class Version:
 		if self.platform == 'java' and os.path.isfile(os.path.join(version_path, '__waterloggable__.json')):
 			with open(os.path.join(version_path, '__waterloggable__.json')) as f:
 				self._waterloggable = set(json.load(f))
+			with open(os.path.join(version_path, '__always_waterlogged__.json')) as f:
+				self._always_waterlogged = set(json.load(f))
 		else:
 			self._waterloggable = None
+			self._always_waterlogged = None
 		self.biomes = BiomeVersionManager(os.path.join(self._version_path, '__biome_data__.json'), translation_manager)
 
 		if init_file['block_entity_format'] == "str-id":
@@ -321,16 +324,21 @@ class Version:
 			else:
 				raise NotImplemented
 
-	def is_waterloggable(self, namespace_str: str):
+	def is_waterloggable(self, namespace_str: str, always=False):
 		"""
 		A method to check if a block can be waterlogged.
 		This method is only valid for Java blockstate format worlds,
 		Other formats either don't have waterlogged blocks or don't have a limit on what can be stacked.
 		:param namespace_str: "<namespace>:<base_name>"
+		:param always: True to check if the block does not have a waterlogged property but is always waterlogged
 		:return: Bool. True if it can be waterlogged. False if not or another format.
 		"""
-		if isinstance(self._waterloggable, set):
-			return namespace_str in self._waterloggable
+		if always:
+			if isinstance(self._always_waterlogged, set):
+				return namespace_str in self._always_waterlogged
+		else:
+			if isinstance(self._waterloggable, set):
+				return namespace_str in self._waterloggable
 		return False
 
 	def ints_to_block(self, block_id: int, block_data: int) -> 'Block':
@@ -514,6 +522,7 @@ class SubVersion:
 		except Exception as e:
 			info(f'Error while converting {object_input} to universal\n{e}')
 			if log_level >= 3:
+				traceback.print_stack()
 				traceback.print_exc()
 			return object_input, None, True
 
