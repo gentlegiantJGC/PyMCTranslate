@@ -264,6 +264,8 @@ def translate(
 			extra_output = BlockEntity(namespace, base_name, 0, 0, 0, nbt)
 			# not quite sure how to handle coordinates here.
 			# it makes sense to me to have the wrapper program set the coordinates so none are missed.
+		elif new_data['nbt']:
+			debug(f'New nbt present but no output block entity\nin:{object_input.blockstate}\nout:{output.blockstate}')
 
 	elif output_type == 'entity':
 		# we should have an entity output
