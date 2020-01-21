@@ -1,0 +1,24 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "trapped_chest"
+    ],
+    "snbt": "{Items: [], Lock: \"\"}",
+    "properties": {
+        "facing": [
+            "north",
+            "south",
+            "west",
+            "east"
+        ],
+        "type": [
+            "single",
+            "left",
+            "right"
+        ]
+    },
+    "defaults": {
+        "facing": "north",
+        "type": "single"
+    }
+}

@@ -1,0 +1,173 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Patterns": {
+                            "type": "list",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "CustomName": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:white_wall_banner"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "white": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:white_wall_banner"
+                    }
+                ],
+                "orange": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:orange_wall_banner"
+                    }
+                ],
+                "magenta": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:magenta_wall_banner"
+                    }
+                ],
+                "light_blue": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_blue_wall_banner"
+                    }
+                ],
+                "yellow": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_wall_banner"
+                    }
+                ],
+                "lime": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lime_wall_banner"
+                    }
+                ],
+                "pink": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pink_wall_banner"
+                    }
+                ],
+                "gray": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:gray_wall_banner"
+                    }
+                ],
+                "light_gray": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_gray_wall_banner"
+                    }
+                ],
+                "cyan": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cyan_wall_banner"
+                    }
+                ],
+                "purple": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purple_wall_banner"
+                    }
+                ],
+                "blue": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blue_wall_banner"
+                    }
+                ],
+                "brown": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brown_wall_banner"
+                    }
+                ],
+                "green": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:green_wall_banner"
+                    }
+                ],
+                "red": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_wall_banner"
+                    }
+                ],
+                "black": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:black_wall_banner"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "south",
+                "west",
+                "east"
+            ]
+        }
+    }
+]

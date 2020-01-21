@@ -1,0 +1,122 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "cobblestone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cobblestone_wall"
+                    }
+                ],
+                "mossy_cobblestone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_cobblestone_wall"
+                    }
+                ],
+                "brick": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brick_wall"
+                    }
+                ],
+                "prismarine": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:prismarine_wall"
+                    }
+                ],
+                "red_sandstone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone_wall"
+                    }
+                ],
+                "mossy_stone_brick": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_stone_brick_wall"
+                    }
+                ],
+                "granite": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:granite_wall"
+                    }
+                ],
+                "stone_brick": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_brick_wall"
+                    }
+                ],
+                "nether_brick": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:nether_brick_wall"
+                    }
+                ],
+                "andesite": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:andesite_wall"
+                    }
+                ],
+                "red_nether_brick": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_nether_brick_wall"
+                    }
+                ],
+                "sandstone": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:sandstone_wall"
+                    }
+                ],
+                "end_stone_brick": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:end_stone_brick_wall"
+                    }
+                ],
+                "diorite": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:diorite_wall"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "true",
+                "false"
+            ],
+            "north": [
+                "true",
+                "false"
+            ],
+            "south": [
+                "true",
+                "false"
+            ],
+            "up": [
+                "true",
+                "false"
+            ],
+            "west": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

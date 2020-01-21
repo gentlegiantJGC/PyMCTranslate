@@ -1,0 +1,53 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "java_target_uuid": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [],
+                                        "key": "target_uuid"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "nested_default": []
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "self_default": [],
+                    "nested_default": []
+                }
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:conduit"
+    },
+    {
+        "function": "carry_properties",
+        "options": {}
+    }
+]

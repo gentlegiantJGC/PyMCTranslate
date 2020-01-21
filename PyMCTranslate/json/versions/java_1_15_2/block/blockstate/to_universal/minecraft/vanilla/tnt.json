@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tnt"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "unstable": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

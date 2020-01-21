@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wall"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "red_sandstone"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "true",
+                "false"
+            ],
+            "north": [
+                "true",
+                "false"
+            ],
+            "south": [
+                "true",
+                "false"
+            ],
+            "up": [
+                "true",
+                "false"
+            ],
+            "west": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

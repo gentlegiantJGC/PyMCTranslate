@@ -1,0 +1,41 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:jukebox"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "has_record": [
+                "true",
+                "false"
+            ]
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "RecordItem": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

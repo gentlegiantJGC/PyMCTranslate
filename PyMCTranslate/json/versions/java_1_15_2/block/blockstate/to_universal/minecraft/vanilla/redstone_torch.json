@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:redstone_torch"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "facing": "up"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "lit": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]

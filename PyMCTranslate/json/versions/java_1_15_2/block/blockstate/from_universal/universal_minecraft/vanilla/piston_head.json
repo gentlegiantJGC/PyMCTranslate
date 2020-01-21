@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:piston_head"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "normal"
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "north",
+                "east",
+                "south",
+                "west",
+                "up",
+                "down"
+            ],
+            "short": [
+                "true",
+                "false"
+            ]
+        }
+    }
+]
