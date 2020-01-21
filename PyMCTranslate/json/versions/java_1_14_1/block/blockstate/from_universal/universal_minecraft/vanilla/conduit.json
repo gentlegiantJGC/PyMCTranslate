@@ -11,6 +11,8 @@
                     "keys": {
                         "java_target_uuid": {
                             "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
                             "functions": [
                                 {
                                     "function": "carry_nbt",

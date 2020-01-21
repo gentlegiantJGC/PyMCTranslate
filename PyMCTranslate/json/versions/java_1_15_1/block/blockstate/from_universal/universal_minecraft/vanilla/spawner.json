@@ -88,6 +88,8 @@
                         },
                         "SpawnData": {
                             "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
                             "functions": [
                                 {
                                     "function": "carry_nbt",
@@ -116,6 +118,8 @@
                         },
                         "SpawnPotentials": {
                             "type": "list",
+                            "nested_default": [],
+                            "self_default": [],
                             "functions": [
                                 {
                                     "function": "carry_nbt",

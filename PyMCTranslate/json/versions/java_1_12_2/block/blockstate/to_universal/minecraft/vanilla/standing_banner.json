@@ -33,6 +33,8 @@
             "keys": {
                 "Patterns": {
                     "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
                     "functions": [
                         {
                             "function": "carry_nbt",
