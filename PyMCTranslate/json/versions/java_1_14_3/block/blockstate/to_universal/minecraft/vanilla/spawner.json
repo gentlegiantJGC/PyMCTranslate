@@ -52,22 +52,6 @@
                         }
                     ]
                 },
-                "SpawnData": {
-                    "type": "compound",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "MaxSpawnDelay": {
                     "type": "short",
                     "functions": [
@@ -131,6 +115,43 @@
                             }
                         }
                     ]
+                },
+                "SpawnData": {
+                    "type": "compound",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "id": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "EntityIdentifier"
+                                    }
+                                }
+                            ]
+                        }
+                    }
                 },
                 "SpawnPotentials": {
                     "type": "compound",

@@ -3,5 +3,5 @@
         "minecraft",
         "mob_spawner"
     ],
-    "snbt": "{MaxNearbyEntities: 6s, RequiredPlayerRange: 16s, SpawnCount: 4s, SpawnData: {id: \"minecraft:pig\"}, MaxSpawnDelay: 800s, Delay: 20s, SpawnRange: 4s, MinSpawnDelay: 200s, SpawnPotentials: [{Entity: {id: \"minecraft:pig\"}, Weight: 1}]}"
+    "snbt": "{MaxNearbyEntities: 6s, RequiredPlayerRange: 16s, SpawnCount: 4s, MaxSpawnDelay: 800s, Delay: 20s, SpawnRange: 4s, MinSpawnDelay: 200s, SpawnData: {id: \"minecraft:pig\"}, SpawnPotentials: [{Entity: {id: \"minecraft:pig\"}, Weight: 1}]}"
 }

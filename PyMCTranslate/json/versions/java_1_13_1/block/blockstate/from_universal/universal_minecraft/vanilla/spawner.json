@@ -42,17 +42,6 @@
                                 }
                             ]
                         },
-                        "SpawnData": {
-                            "type": "compound",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "MaxSpawnDelay": {
                             "type": "short",
                             "functions": [
@@ -93,6 +82,34 @@
                                     "function": "carry_nbt",
                                     "options": {
                                         "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "SpawnData": {
+                            "type": "compound",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "EntityIdentifier": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "SpawnData",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "id"
                                     }
                                 }
                             ]

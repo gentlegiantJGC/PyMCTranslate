@@ -3,5 +3,5 @@
         "universal_minecraft",
         "spawner"
     ],
-    "snbt": "{utags: {isMovable: 1b}}"
+    "snbt": "{utags: {isMovable: 1b,MaxNearbyEntities: 6s,RequiredPlayerRange: 16s,MaxNearbyEntities: 6s, RequiredPlayerRange: 16s, SpawnCount: 4s, SpawnData: {id: \"minecraft:pig\"}, EntityIdentifier: \"\", MaxSpawnDelay: 800s, Delay: 20s, SpawnRange: 4s, MinSpawnDelay: 200s,DisplayEntityHeight: 1.8f, DisplayEntityScale: 1.0f, DisplayEntityWidth: 0.8f}}"
 }
