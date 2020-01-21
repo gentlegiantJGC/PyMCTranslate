@@ -115,7 +115,7 @@
                             ]
                         },
                         "SpawnPotentials": {
-                            "type": "compound",
+                            "type": "list",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
