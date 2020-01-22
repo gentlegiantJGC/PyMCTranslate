@@ -611,8 +611,8 @@ def _translate(
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"]['cases'][nbt_hash], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 						run_default = False
 
-				if run_default:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"].get('default', []), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+				if run_default and "default" in translate_function["options"]:
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"]['default'], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'code' == function_name:
 			# {
@@ -758,19 +758,19 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NB
 			for key in nbt.value:
 				if key in mappings.get('keys', {}):
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['keys'][key], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
-				else:
-					if mappings.get('nested_default', [{"function": "carry_nbt"}]) == [{"function": "carry_nbt"}]:
+				elif 'nested_default' in mappings:
+					if mappings['nested_default'] == [{"function": "carry_nbt"}]:
 						debug(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))])}')
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['nested_default'], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif datatype == 'list':
 			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
-				else:
-					if mappings.get('nested_default', [{"function": "carry_nbt"}]) == [{"function": "carry_nbt"}]:
+				elif 'nested_default' in mappings:
+					if mappings['nested_default'] == [{"function": "carry_nbt"}]:
 						debug(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))])}')
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['nested_default'], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		# elif datatype in ('byte', 'short', 'int', 'long', 'float', 'double', 'string'):
 		# 	pass
@@ -780,11 +780,11 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NB
 			for index in range(len(nbt)):
 				if str(index) in mappings.get('index', {}):
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
-				else:
-					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('nested_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
+				elif 'nested_default' in mappings:
+					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['nested_default'], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nested_datatype)]), (output_name, output_type, new_data, extra_needed, cacheable))
 
-	else:
+	elif 'self_default' in mappings:
 		# datatypes do not match. Run self_default
-		output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings.get('self_default', [{"function": "carry_nbt"}]), get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+		output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['self_default'], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 	return output_name, output_type, new_data, extra_needed, cacheable
