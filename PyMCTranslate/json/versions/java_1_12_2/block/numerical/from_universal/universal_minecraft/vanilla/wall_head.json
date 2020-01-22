@@ -1,6 +1,164 @@
 [
     {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Owner": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mob": {
+                "skeleton": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "0b"
+                            }
+                        ]
+                    }
+                ],
+                "wither_skeleton": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "1b"
+                            }
+                        ]
+                    }
+                ],
+                "zombie": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "2b"
+                            }
+                        ]
+                    }
+                ],
+                "player": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "3b"
+                            }
+                        ]
+                    }
+                ],
+                "creeper": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "4b"
+                            }
+                        ]
+                    }
+                ],
+                "dragon": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "SkullType",
+                                "value": "5b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facing": {
+                "north": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "data_value": "2"
+                        }
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "data_value": "3"
+                        }
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "data_value": "4"
+                        }
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "data_value": "5"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:skull"
     }
 ]

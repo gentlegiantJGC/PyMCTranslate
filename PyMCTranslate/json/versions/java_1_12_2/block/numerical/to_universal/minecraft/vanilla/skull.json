@@ -1,0 +1,310 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Owner": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "SkullType": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "mob": "skeleton"
+                                            }
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "mob": "wither_skeleton"
+                                            }
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "mob": "zombie"
+                                            }
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "mob": "player"
+                                            }
+                                        }
+                                    ],
+                                    "4b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "mob": "creeper"
+                                            }
+                                        }
+                                    ],
+                                    "5b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "mob": "dragon"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Rot": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_properties",
+                            "options": {
+                                "block_data": {
+                                    "1": [
+                                        {
+                                            "function": "map_nbt",
+                                            "options": {
+                                                "cases": {
+                                                    "0b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "0"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "1b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "1"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "2b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "2"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "3b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "3"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "4b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "4"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "5b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "5"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "6b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "6"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "7b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "7"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "8b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "8"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "9b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "9"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "10b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "10"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "11b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "11"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "12b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "12"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "13b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "13"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "14b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "14"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "15b": [
+                                                        {
+                                                            "function": "new_properties",
+                                                            "options": {
+                                                                "rotation": "15"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:head"
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "south"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "east"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
