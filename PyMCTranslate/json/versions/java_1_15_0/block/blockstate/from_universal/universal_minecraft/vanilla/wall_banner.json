@@ -32,6 +32,17 @@
                                     }
                                 }
                             ]
+                        },
+                        "keepPacked": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
                         }
                     }
                 }

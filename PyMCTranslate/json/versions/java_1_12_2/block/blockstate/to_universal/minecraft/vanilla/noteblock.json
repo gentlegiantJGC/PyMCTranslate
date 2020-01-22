@@ -38,5 +38,257 @@
                 "true"
             ]
         }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "note": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "0"
+                                            }
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "1"
+                                            }
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "2"
+                                            }
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "3"
+                                            }
+                                        }
+                                    ],
+                                    "4b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "4"
+                                            }
+                                        }
+                                    ],
+                                    "5b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "5"
+                                            }
+                                        }
+                                    ],
+                                    "6b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "6"
+                                            }
+                                        }
+                                    ],
+                                    "7b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "7"
+                                            }
+                                        }
+                                    ],
+                                    "8b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "8"
+                                            }
+                                        }
+                                    ],
+                                    "9b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "9"
+                                            }
+                                        }
+                                    ],
+                                    "10b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "10"
+                                            }
+                                        }
+                                    ],
+                                    "11b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "11"
+                                            }
+                                        }
+                                    ],
+                                    "12b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "12"
+                                            }
+                                        }
+                                    ],
+                                    "13b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "13"
+                                            }
+                                        }
+                                    ],
+                                    "14b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "14"
+                                            }
+                                        }
+                                    ],
+                                    "15b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "15"
+                                            }
+                                        }
+                                    ],
+                                    "16b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "16"
+                                            }
+                                        }
+                                    ],
+                                    "17b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "17"
+                                            }
+                                        }
+                                    ],
+                                    "18b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "18"
+                                            }
+                                        }
+                                    ],
+                                    "19b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "19"
+                                            }
+                                        }
+                                    ],
+                                    "20b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "20"
+                                            }
+                                        }
+                                    ],
+                                    "21b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "21"
+                                            }
+                                        }
+                                    ],
+                                    "22b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "22"
+                                            }
+                                        }
+                                    ],
+                                    "23b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "23"
+                                            }
+                                        }
+                                    ],
+                                    "24b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "24"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "default": []
+                            }
+                        }
+                    ],
+                    "self_default": []
+                },
+                "powered": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "powered": "false"
+                                            }
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "powered": "true"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "default": []
+                            }
+                        }
+                    ],
+                    "self_default": []
+                }
+            }
+        }
     }
 ]
