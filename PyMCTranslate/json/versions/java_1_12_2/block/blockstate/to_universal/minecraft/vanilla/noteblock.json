@@ -251,12 +251,10 @@
                                             }
                                         }
                                     ]
-                                },
-                                "default": []
+                                }
                             }
                         }
-                    ],
-                    "self_default": []
+                    ]
                 },
                 "powered": {
                     "type": "byte",
@@ -281,14 +279,24 @@
                                             }
                                         }
                                     ]
-                                },
-                                "default": []
+                                }
                             }
                         }
-                    ],
-                    "self_default": []
+                    ]
                 }
-            }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
         }
     }
 ]

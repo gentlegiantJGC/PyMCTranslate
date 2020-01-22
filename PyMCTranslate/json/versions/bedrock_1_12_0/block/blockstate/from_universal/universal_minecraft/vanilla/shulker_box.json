@@ -268,8 +268,7 @@
                         }
                     }
                 }
-            },
-            "nested_default": []
+            }
         }
     },
     {
@@ -278,11 +277,21 @@
             "type": "compound",
             "keys": {
                 "utags": {
-                    "type": "compound",
-                    "self_default": [],
-                    "nested_default": []
+                    "type": "compound"
                 }
-            }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
         }
     }
 ]
