@@ -22,5 +22,10 @@
         "direction": "0",
         "toggle_bit": "0b"
     },
-    "nbt_properties": true
+    "nbt_properties": true,
+    "nbt_identifier": [
+        "minecraft",
+        "bell"
+    ],
+    "snbt": "{Direction: 0, Ringing: 0b, Ticks: 0, isMovable: 1b}"
 }
