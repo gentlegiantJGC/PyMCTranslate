@@ -90,6 +90,141 @@
                                     ]
                                 ]
                             }
+                        },
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "black"
+                                            }
+                                        }
+                                    ],
+                                    "1": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "red"
+                                            }
+                                        }
+                                    ],
+                                    "2": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "green"
+                                            }
+                                        }
+                                    ],
+                                    "3": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "brown"
+                                            }
+                                        }
+                                    ],
+                                    "4": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "blue"
+                                            }
+                                        }
+                                    ],
+                                    "5": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "purple"
+                                            }
+                                        }
+                                    ],
+                                    "6": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "cyan"
+                                            }
+                                        }
+                                    ],
+                                    "7": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "light_gray"
+                                            }
+                                        }
+                                    ],
+                                    "8": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "gray"
+                                            }
+                                        }
+                                    ],
+                                    "9": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "pink"
+                                            }
+                                        }
+                                    ],
+                                    "10": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "lime"
+                                            }
+                                        }
+                                    ],
+                                    "11": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "yellow"
+                                            }
+                                        }
+                                    ],
+                                    "12": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "light_blue"
+                                            }
+                                        }
+                                    ],
+                                    "13": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "magenta"
+                                            }
+                                        }
+                                    ],
+                                    "14": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "orange"
+                                            }
+                                        }
+                                    ],
+                                    "15": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "color": "white"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     ]
                 },
@@ -110,6 +245,18 @@
                     ]
                 }
             }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "banner_pattern_2u"
         }
     }
 ]
