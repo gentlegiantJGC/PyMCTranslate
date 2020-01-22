@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:door"
+        "options": "minecraft:wooden_door"
     },
     {
         "function": "map_properties",
@@ -50,100 +50,6 @@
                     }
                 ]
             },
-            "facing": {
-                "south": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
-                        }
-                    }
-                ],
-                "west": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
-                        }
-                    }
-                ],
-                "north": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
-                        }
-                    }
-                ],
-                "east": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "hinge": {
-                "left": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "door_hinge_bit": [
-                                "snbt",
-                                "0b"
-                            ]
-                        }
-                    }
-                ],
-                "right": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "door_hinge_bit": [
-                                "snbt",
-                                "1b"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "open": {
-                "false": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "open_bit": [
-                                "snbt",
-                                "0b"
-                            ]
-                        }
-                    }
-                ],
-                "true": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "open_bit": [
-                                "snbt",
-                                "1b"
-                            ]
-                        }
-                    }
-                ]
-            },
             "half": {
                 "lower": [
                     {
@@ -153,6 +59,81 @@
                                 "snbt",
                                 "0b"
                             ]
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "facing": {
+                                "east": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "direction": [
+                                                "snbt",
+                                                "0"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "south": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "direction": [
+                                                "snbt",
+                                                "1"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "west": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "direction": [
+                                                "snbt",
+                                                "2"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "north": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "direction": [
+                                                "snbt",
+                                                "3"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "open": {
+                                "false": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "open_bit": [
+                                                "snbt",
+                                                "0b"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "true": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "open_bit": [
+                                                "snbt",
+                                                "1b"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     }
                 ],
@@ -164,6 +145,35 @@
                                 "snbt",
                                 "1b"
                             ]
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "hinge": {
+                                "left": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "door_hinge_bit": [
+                                                "snbt",
+                                                "0b"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "right": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "door_hinge_bit": [
+                                                "snbt",
+                                                "1b"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     }
                 ]

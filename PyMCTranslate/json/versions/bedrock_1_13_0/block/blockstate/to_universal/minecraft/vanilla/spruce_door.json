@@ -12,76 +12,6 @@
     {
         "function": "map_properties",
         "options": {
-            "direction": {
-                "0": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "south"
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "west"
-                        }
-                    }
-                ],
-                "2": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "north"
-                        }
-                    }
-                ],
-                "3": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "east"
-                        }
-                    }
-                ]
-            },
-            "door_hinge_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "hinge": "left"
-                        }
-                    }
-                ],
-                "1b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "hinge": "right"
-                        }
-                    }
-                ]
-            },
-            "open_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "open": "false"
-                        }
-                    }
-                ],
-                "1b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "open": "true"
-                        }
-                    }
-                ]
-            },
             "upper_block_bit": {
                 "0b": [
                     {
@@ -89,6 +19,100 @@
                         "options": {
                             "half": "lower"
                         }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "direction": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "east"
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "south"
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "west"
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "north"
+                                        }
+                                    }
+                                ]
+                            },
+                            "open_bit": {
+                                "0b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "open": "false"
+                                        }
+                                    }
+                                ],
+                                "1b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "open": "true"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "door_hinge_bit": {
+                                                "0b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "hinge": "left"
+                                                        }
+                                                    }
+                                                ],
+                                                "1b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "hinge": "right"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "1b": [
@@ -97,6 +121,100 @@
                         "options": {
                             "half": "upper"
                         }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "door_hinge_bit": {
+                                "0b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "hinge": "left"
+                                        }
+                                    }
+                                ],
+                                "1b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "hinge": "right"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "direction": {
+                                                "0": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "east"
+                                                        }
+                                                    }
+                                                ],
+                                                "1": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "south"
+                                                        }
+                                                    }
+                                                ],
+                                                "2": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "west"
+                                                        }
+                                                    }
+                                                ],
+                                                "3": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "north"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "open_bit": {
+                                                "0b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "open": "false"
+                                                        }
+                                                    }
+                                                ],
+                                                "1b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "open": "true"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
