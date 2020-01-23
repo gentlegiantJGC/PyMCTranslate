@@ -130,29 +130,7 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "conditionMet": {
-                            "type": "byte",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "auto": {
-                            "type": "byte",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "powered": {
                             "type": "byte",
                             "functions": [
                                 {
@@ -174,18 +152,7 @@
                                 }
                             ]
                         },
-                        "SuccessCount": {
-                            "type": "int",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "TrackOutput": {
+                        "conditionMet": {
                             "type": "byte",
                             "functions": [
                                 {
@@ -207,65 +174,8 @@
                                 }
                             ]
                         },
-                        "LastOutput": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "LastExecution": {
-                            "type": "long",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "ExecuteOnFirstTick": {
                             "type": "byte",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "LastOutputParams": {
-                            "type": "list",
-                            "nested_default": [],
-                            "self_default": [],
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "TickDelay": {
-                            "type": "int",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "Version": {
-                            "type": "int",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
@@ -299,6 +209,96 @@
                         },
                         "LPRedstoneMode": {
                             "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "LastExecution": {
+                            "type": "long",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "LastOutput": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "LastOutputParams": {
+                            "type": "list",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "powered": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "SuccessCount": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "TickDelay": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "TrackOutput": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "Version": {
+                            "type": "int",
                             "functions": [
                                 {
                                     "function": "carry_nbt",

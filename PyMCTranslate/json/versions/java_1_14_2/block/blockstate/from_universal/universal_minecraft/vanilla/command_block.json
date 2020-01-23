@@ -99,6 +99,28 @@
                                 }
                             ]
                         },
+                        "LastOutput": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "LastExecution": {
+                            "type": "long",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
                         "powered": {
                             "type": "byte",
                             "functions": [
@@ -123,28 +145,6 @@
                         },
                         "TrackOutput": {
                             "type": "byte",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "LastOutput": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "LastExecution": {
-                            "type": "long",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
