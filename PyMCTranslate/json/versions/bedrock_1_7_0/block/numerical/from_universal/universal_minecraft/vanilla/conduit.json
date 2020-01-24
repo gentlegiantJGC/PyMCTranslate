@@ -19,18 +19,6 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "bedrock_target_uuid": {
-                            "type": "long",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": [],
-                                        "key": "Target"
-                                    }
-                                }
-                            ]
-                        },
                         "Active": {
                             "type": "byte",
                             "functions": [

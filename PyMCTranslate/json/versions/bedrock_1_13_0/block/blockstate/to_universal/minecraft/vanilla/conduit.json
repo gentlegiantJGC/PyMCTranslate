@@ -6,20 +6,7 @@
             "keys": {
                 "Target": {
                     "type": "long",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ],
-                                "key": "bedrock_target_uuid"
-                            }
-                        }
-                    ]
+                    "functions": []
                 },
                 "Active": {
                     "type": "byte",

@@ -9,20 +9,6 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "java_target_uuid": {
-                            "type": "compound",
-                            "nested_default": [],
-                            "self_default": [],
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": [],
-                                        "key": "target_uuid"
-                                    }
-                                }
-                            ]
-                        },
                         "keepPacked": {
                             "type": "byte",
                             "functions": [
