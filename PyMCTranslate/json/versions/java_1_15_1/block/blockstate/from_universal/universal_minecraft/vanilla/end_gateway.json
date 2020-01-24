@@ -35,14 +35,56 @@
                             "type": "compound",
                             "nested_default": [],
                             "self_default": [],
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
+                            "keys": {
+                                "X": {
+                                    "type": "int",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "ExitPortal",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "Y": {
+                                    "type": "int",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "ExitPortal",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "Z": {
+                                    "type": "int",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "ExitPortal",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
                                 }
-                            ]
+                            }
                         },
                         "keepPacked": {
                             "type": "byte",

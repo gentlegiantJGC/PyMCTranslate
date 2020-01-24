@@ -1,5 +1,127 @@
 [
     {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Age": {
+                    "type": "long",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "ExitPortal": {
+                    "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
+                    "index": {
+                        "0": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "ExitPortal",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "X"
+                                    }
+                                }
+                            ]
+                        },
+                        "1": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "ExitPortal",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "Y"
+                                    }
+                                }
+                            ]
+                        },
+                        "2": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "ExitPortal",
+                                                "compound"
+                                            ]
+                                        ],
+                                        "key": "Z"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
         "function": "new_block",
         "options": "universal_minecraft:end_gateway"
     }
