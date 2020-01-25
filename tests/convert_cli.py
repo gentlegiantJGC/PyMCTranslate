@@ -1,10 +1,5 @@
 import PyMCTranslate
-from PyMCTranslate.py3.translation_manager import SubVersion
-
-try:
-    from amulet.api.block import Block
-except ImportError:
-    from PyMCTranslate.py3.api.block import Block
+from PyMCTranslate import SubVersion, Block
 
 translations = PyMCTranslate.new_translation_manager()
 

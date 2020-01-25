@@ -11,7 +11,8 @@ except ModuleNotFoundError:
     from PyMCTranslate.py3.api.entity import Entity
     from PyMCTranslate.py3.api.errors import ChunkLoadError
 
-from PyMCTranslate.py3.translation_manager import TranslationManager, Version, SubVersion
+from PyMCTranslate.py3.translation_manager import TranslationManager
+from PyMCTranslate.py3.versions import Version, SubVersion
 from PyMCTranslate.py3 import raw_text
 
 

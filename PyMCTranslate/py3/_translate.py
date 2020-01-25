@@ -1,25 +1,15 @@
-from typing import Union, Tuple, List, Callable, Dict, TYPE_CHECKING
+from typing import Union, Tuple, List, Callable, TYPE_CHECKING
 
-try:
-	from amulet.api.block import Block
-	from amulet.api.block_entity import BlockEntity
-	from amulet.api.entity import Entity
-	from amulet.api.errors import ChunkLoadError
-except ImportError:
-	from PyMCTranslate.py3.api.block import Block
-	from PyMCTranslate.py3.api.block_entity import BlockEntity
-	from PyMCTranslate.py3.api.entity import Entity
-	from PyMCTranslate.py3.api.errors import ChunkLoadError
-
+from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError
 from ..py3 import code_functions
-
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
-from PyMCTranslate.py3.translation_manager import SubVersion, debug
+from PyMCTranslate.py3.log import debug
 
 if TYPE_CHECKING:
 	from numpy import ndarray
+	from PyMCTranslate.py3.versions import SubVersion
 
 
 def get_block_at(relative_location: Tuple[int, int, int]) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
@@ -172,7 +162,7 @@ def translate(
 		object_input: Union[Block, Entity], 
 		input_spec: dict, 
 		mappings: List[dict], 
-		output_version: SubVersion, 
+		output_version: 'SubVersion',
 		get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
 		extra_input: BlockEntity = None, 
 		pre_populate_defaults: bool = True
