@@ -1,8 +1,7 @@
 import os
 from typing import Union, Tuple, List, Dict, TYPE_CHECKING
 
-from PyMCTranslate.py3.biomes import UniversalBiomeRegistry
-from PyMCTranslate.py3.registry import NumericalRegistry
+from PyMCTranslate.py3.translation_manager.registry import NumericalRegistry, UniversalBiomeRegistry
 from PyMCTranslate.py3.versions import Version
 from PyMCTranslate.py3.util import directories
 
