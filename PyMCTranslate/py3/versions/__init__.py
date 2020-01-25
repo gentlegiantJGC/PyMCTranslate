@@ -4,7 +4,7 @@ from typing import Union, Tuple, List, Dict, Callable, TYPE_CHECKING
 import copy
 import traceback
 
-from PyMCTranslate import Block, BlockEntity, Entity
+from PyMCTranslate import Block, BlockEntity, Entity, minified, json_atlas
 from PyMCTranslate.py3.util import directories, files
 from PyMCTranslate.py3.log import info, log_level
 from PyMCTranslate.py3.versions.translate import translate
@@ -12,6 +12,8 @@ from .biomes import BiomeVersionManager
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.translation_manager import TranslationManager
+
+_version_data = {}
 
 
 class Version:
@@ -25,9 +27,21 @@ class Version:
         self._translation_manager = translation_manager
         self._loaded = False
 
+        if version_path not in _version_data:
+            _version_data[version_path] = {}
+            if minified:
+                # load meta.json.gz and store in _version_data[version_path]["meta"]
+                raise NotImplementedError
+            else:
+                _version_data[version_path]["meta"] = meta = {}
+                for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__block_entity_map__']:
+                    if os.path.isfile(os.path.join(version_path, f'{file_name}.json')):
+                        with open(os.path.join(version_path, f'{file_name}.json')) as f:
+                            meta[file_name] = json.load(f)
+
+        meta = _version_data[version_path]["meta"]
         # unpack the __init__.json file
-        with open(os.path.join(version_path, '__init__.json')) as f:
-            init_file = json.load(f)
+        init_file = meta['__init__']
         assert isinstance(init_file['platform'], str), f'The platform name defined in {version_path}/__init__.json is not a string'
         self._platform = init_file['platform']
         assert isinstance(init_file['version'], list) and len(init_file['version']) == 3, f'The version number defined in {version_path}/__init__.json is incorrectly formatted'
@@ -40,15 +54,13 @@ class Version:
         self._subversions = {}
         self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
         self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
-        if self.platform == 'java' and os.path.isfile(os.path.join(version_path, '__waterloggable__.json')):
-            with open(os.path.join(version_path, '__waterloggable__.json')) as f:
-                self._waterloggable = set(json.load(f))
-            with open(os.path.join(version_path, '__always_waterlogged__.json')) as f:
-                self._always_waterlogged = set(json.load(f))
+        if self.platform == 'java' and '__waterloggable__' in meta:
+            self._waterloggable = set(meta['__waterloggable__'])
+            self._always_waterlogged = set(meta['__always_waterlogged__'])
         else:
             self._waterloggable = None
             self._always_waterlogged = None
-        self.biomes = BiomeVersionManager(os.path.join(self._version_path, '__biome_data__.json'), translation_manager)
+        self.biomes = BiomeVersionManager(meta['__biome_data__'], translation_manager)
 
         if init_file['block_entity_format'] == "str-id":
             with open(os.path.join(version_path, '__block_entity_map__.json')) as f:
@@ -57,6 +69,7 @@ class Version:
         else:
             self.block_entity_map = None
             self.block_entity_map_inverse = None
+
 
     def _load(self):
         """

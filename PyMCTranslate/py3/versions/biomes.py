@@ -1,7 +1,6 @@
 from typing import Union, Dict, TYPE_CHECKING
 if TYPE_CHECKING:
     from PyMCTranslate.py3.translation_manager import TranslationManager
-import json
 import numpy
 
 """
@@ -17,10 +16,8 @@ Biome translation pipeline
 
 
 class BiomeVersionManager:
-    def __init__(self, config: str, translation_manager: 'TranslationManager'):
+    def __init__(self, biome_data: dict, translation_manager: 'TranslationManager'):
         self._translation_manager = translation_manager
-        with open(config) as f:
-            biome_data = json.load(f)
 
         # convert the biome information between int id and string id (the ones registered in TranslationManager.biomes will take precedent)
         self._biome_str_to_int = biome_data['int_map']

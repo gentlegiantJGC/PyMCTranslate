@@ -2,35 +2,21 @@ import os
 from typing import Union, Tuple, List, Dict, TYPE_CHECKING
 
 from .registry import NumericalRegistry, UniversalBiomeRegistry
+from PyMCTranslate import minified
 from PyMCTranslate.py3.versions import Version
 from PyMCTranslate.py3.util import directories
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.versions import Version, SubVersion
 
-""" This is out of date
+"""
 Structure:
 
 TranslationManager
-	Version : bedrock_1_7_0
-		SubVersion : numerical
-			minecraft, other_namespace
-		SubVersion : blockstate
-			minecraft, other_namespace
-
-	Version : java_1_12_0
-		SubVersion : numerical
-			minecraft, other_namespace
-		SubVersion : blockstate
-			minecraft, other_namespace
-
-	Version : java_1_13_0
-		SubVersion : blockstate
-			minecraft, other_namespace
-
-	Version : universal
-		SubVersion : blockstate
-			minecraft, other_namespace
+    Version : bedrock_1_7_0
+    Version : java_1_12_0
+    Version : java_1_13_0
+    Version : universal
 """
 
 
@@ -65,12 +51,15 @@ class TranslationManager:
         self._block_registry = NumericalRegistry()
 
         # Create a class for each of the versions and store them
-        for version_name in directories(os.path.join(json_path, 'versions')):
-            if os.path.isfile(os.path.join(json_path, 'versions', version_name, '__init__.json')):
-                version = Version(os.path.join(json_path, 'versions', version_name), self)
-                self._versions.setdefault(version.platform, {})
-                self._versions[version.platform].setdefault(version.version_number, version)
-                self._version_remap[(version.platform, version.data_version)] = version.version_number
+        if minified:
+            raise NotImplementedError
+        else:
+            for version_name in directories(os.path.join(json_path, 'versions')):
+                if os.path.isfile(os.path.join(json_path, 'versions', version_name, '__init__.json')):
+                    version = Version(os.path.join(json_path, 'versions', version_name), self)
+                    self._versions.setdefault(version.platform, {})
+                    self._versions[version.platform].setdefault(version.version_number, version)
+                    self._version_remap[(version.platform, version.data_version)] = version.version_number
 
     @property
     def biome_registry(self):
@@ -110,10 +99,6 @@ class TranslationManager:
         :param version_number: The version number or DataVersion (use TranslationManager.version_numbers to get version numbers for a given platforms)
         :return: The Version class for the given inputs. Throws an AssertionError if it does not exist.
         """
-        if platform == 'anvil':
-            platform = 'java'
-        elif platform == 'leveldb':
-            platform = 'bedrock'
         if isinstance(version_number, list):
             version_number = tuple(version_number)
         assert platform in self._versions, f'The requested platform "({platform})" is not present'
