@@ -6,10 +6,10 @@ try:
     from amulet.api.entity import Entity
     from amulet.api.errors import ChunkLoadError
 except ModuleNotFoundError:
-    from PyMCTranslate.py3.api.block import Block
-    from PyMCTranslate.py3.api.block_entity import BlockEntity
-    from PyMCTranslate.py3.api.entity import Entity
-    from PyMCTranslate.py3.api.errors import ChunkLoadError
+    from PyMCTranslate.py3.amulet_objects.block import Block
+    from PyMCTranslate.py3.amulet_objects.block_entity import BlockEntity
+    from PyMCTranslate.py3.amulet_objects.entity import Entity
+    from PyMCTranslate.py3.amulet_objects.errors import ChunkLoadError
 
 from PyMCTranslate.py3.translation_manager import TranslationManager
 from PyMCTranslate.py3.versions import Version, SubVersion

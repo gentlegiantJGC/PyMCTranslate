@@ -1,5 +1,5 @@
 import PyMCTranslate
-from amulet.api.block import Block
+from PyMCTranslate import Block
 translations = PyMCTranslate.new_translation_manager()
 
 print('==== bedrock_1_7_0 ====')
