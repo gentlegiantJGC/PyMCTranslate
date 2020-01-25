@@ -4,8 +4,6 @@ if TYPE_CHECKING:
 import json
 import numpy
 
-from PyMCTranslate.py3.registry import NumericalRegistry
-
 """
 Biome translation pipeline
     version int
@@ -35,8 +33,8 @@ class BiomeVersionManager:
         if not isinstance(biome, int) and numpy.issubdtype(biome.__class__, numpy.integer):
             biome = int(biome)
         if isinstance(biome, int):
-            if biome in self._translation_manager.biomes:
-                biome = self._translation_manager.biomes.private_to_str(biome)
+            if biome in self._translation_manager.biome_registry:
+                biome = self._translation_manager.biome_registry.private_to_str(biome)
             elif biome in self._biome_int_to_str:
                 biome = self._biome_int_to_str[biome]
             else:
@@ -49,16 +47,16 @@ class BiomeVersionManager:
         else:
             universal_biome = biome
 
-        if universal_biome not in self._translation_manager.biomes.universal:
-            self._translation_manager.biomes.universal.register(universal_biome)
-        return self._translation_manager.biomes.universal.to_int(universal_biome)
+        if universal_biome not in self._translation_manager.universal_biome_registry:
+            self._translation_manager.universal_biome_registry.register(universal_biome)
+        return self._translation_manager.universal_biome_registry.to_int(universal_biome)
 
     def from_universal(self, biome: Union[int, str]) -> int:
         if not isinstance(biome, int) and numpy.issubdtype(biome.__class__, numpy.integer):
             biome = int(biome)
         if isinstance(biome, int):
-            if biome in self._translation_manager.biomes.universal:
-                biome = self._translation_manager.biomes.universal.to_str(biome)
+            if biome in self._translation_manager.universal_biome_registry:
+                biome = self._translation_manager.universal_biome_registry.to_str(biome)
             else:
                 biome = 'universal_minecraft:plains'
 
@@ -69,8 +67,8 @@ class BiomeVersionManager:
         else:
             version_biome = biome
 
-        if version_biome in self._translation_manager.biomes:
-            version_biome = self._translation_manager.biomes.private_to_int(version_biome)
+        if version_biome in self._translation_manager.biome_registry:
+            version_biome = self._translation_manager.biome_registry.private_to_int(version_biome)
         elif version_biome in self._biome_str_to_int:
             version_biome = self._biome_str_to_int[version_biome]
         else:
@@ -78,12 +76,6 @@ class BiomeVersionManager:
             version_biome = self.from_universal('minecraft:plains')  # TODO: perhaps find a way to assign default dynamically
 
         return version_biome
-
-
-class BiomeWorldManager(NumericalRegistry):
-    def __init__(self):
-        NumericalRegistry.__init__(self)
-        self.universal = UniversalBiomeRegistry()
 
 
 class UniversalBiomeRegistry:

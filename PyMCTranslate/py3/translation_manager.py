@@ -1,7 +1,7 @@
 import os
 from typing import Union, Tuple, List, Dict, TYPE_CHECKING
 
-from PyMCTranslate.py3.biomes import BiomeWorldManager
+from PyMCTranslate.py3.biomes import UniversalBiomeRegistry
 from PyMCTranslate.py3.registry import NumericalRegistry
 from PyMCTranslate.py3.versions import Version
 from PyMCTranslate.py3.util import directories
@@ -9,7 +9,7 @@ from PyMCTranslate.py3.util import directories
 if TYPE_CHECKING:
 	from PyMCTranslate.py3.versions import Version, SubVersion
 
-"""
+""" This is out of date
 Structure:
 
 TranslationManager
@@ -51,6 +51,7 @@ class TranslationManager:
 		"""
 		# Storage for each of the Version classes
 		self._versions: Dict[str, Dict[Tuple[int, int, int], 'Version']] = {}
+		# if a Version class for a specific version number does not exist the neareast will be found and stored here
 		self._version_remap: Dict[
 			Tuple[
 				str,
@@ -59,8 +60,9 @@ class TranslationManager:
 			Tuple[int, int, int]
 		] = {}
 
-		self.biomes = BiomeWorldManager()
-		self.blocks = NumericalRegistry()
+		self._biome_registry = NumericalRegistry()
+		self._universal_biome_registry = UniversalBiomeRegistry()
+		self._block_registry = NumericalRegistry()
 
 		# Create a class for each of the versions and store them
 		for version_name in directories(os.path.join(json_path, 'versions')):
@@ -69,6 +71,21 @@ class TranslationManager:
 				self._versions.setdefault(version.platform, {})
 				self._versions[version.platform].setdefault(version.version_number, version)
 				self._version_remap[(version.platform, version.data_version)] = version.version_number
+				
+	@property
+	def biome_registry(self):
+		"""Use this to register custom biomes"""
+		return self._biome_registry
+
+	@property
+	def universal_biome_registry(self):
+		"""For internal use"""
+		return self._universal_biome_registry
+
+	@property
+	def block_registry(self):
+		"""Use this to register custom numerical blocks"""
+		return self._block_registry
 
 	def platforms(self) -> List[str]:
 		"""

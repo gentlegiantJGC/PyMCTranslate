@@ -155,8 +155,8 @@ class Version:
         return False
 
     def ints_to_block(self, block_id: int, block_data: int) -> 'Block':
-        if block_id in self._translation_manager.blocks:
-            namespace, base_name = self._translation_manager.blocks.private_to_str(block_id).split(':', 1)
+        if block_id in self._translation_manager.block_registry:
+            namespace, base_name = self._translation_manager.block_registry.private_to_str(block_id).split(':', 1)
         elif block_id in self._numerical_block_map:
             namespace, base_name = self._numerical_block_map[block_id]
         else:
@@ -168,8 +168,8 @@ class Version:
         block_id = None
         block_data = None
         block_tuple = (block.namespace, block.base_name)
-        if block.namespaced_name in self._translation_manager.blocks:
-            block_id = self._translation_manager.blocks.private_to_int(block.namespaced_name)
+        if block.namespaced_name in self._translation_manager.block_registry:
+            block_id = self._translation_manager.block_registry.private_to_int(block.namespaced_name)
         elif block_tuple in self._numerical_block_map_inverse:
             block_id = self._numerical_block_map_inverse[block_tuple]
         elif block_tuple == ("minecraft", "numerical") and "block_id" in block.properties and\
