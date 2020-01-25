@@ -7,7 +7,7 @@ import traceback
 from PyMCTranslate import Block, BlockEntity, Entity
 from PyMCTranslate.py3.util import directories, files
 from PyMCTranslate.py3.log import info, log_level
-from PyMCTranslate.py3._translate import translate
+from PyMCTranslate.py3.versions.translate import translate
 from .biomes import BiomeVersionManager
 
 if TYPE_CHECKING:
