@@ -1,11 +1,11 @@
 from typing import Union, Tuple, List, Callable, TYPE_CHECKING
 
-from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError
-from ..py3 import code_functions
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
 from PyMCTranslate.py3.log import debug
+from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError
+from PyMCTranslate.py3.versions import code_functions
 
 if TYPE_CHECKING:
 	from numpy import ndarray
