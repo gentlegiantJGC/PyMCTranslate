@@ -17,16 +17,6 @@ class BaseTranslator:
         self._database = database
         self._mode = mode
 
-        # TODO: implement this
-        self._cache = {  # only blocks without a block entity can be cached
-            'to_universal': {
-
-            },
-            'from_universal': {
-
-            }
-        }
-
     def _format_key(self, force_blockstate: bool = False):
         return 'numerical' if not force_blockstate and self._parent_version.has_abstract_format else 'blockstate'
 
@@ -66,7 +56,7 @@ class BaseTranslator:
     def namespaces(self, force_blockstate: bool = False) -> List[str]:
         """
         A list of all the namespaces.
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A list of all the namespaces
         """
         return list(
@@ -79,9 +69,9 @@ class BaseTranslator:
 
     def base_names(self, namespace: str, force_blockstate: bool = False) -> List[str]:
         """
-        A list of all the base names present in a given mode and namespace.
+        A list of all the base names present in a given namespace.
         :param namespace: A namespace string as found using the namespaces method
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A list of base names
         """
         return list(
@@ -97,7 +87,7 @@ class BaseTranslator:
         Get the specification file for the requested object.
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A dictionary containing the specification for the object
         """
         try:
@@ -114,7 +104,7 @@ class BaseTranslator:
         Get the mapping file for the requested object from this version format to the universal format.
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A list of mapping functions to apply to the object
         """
         try:
@@ -131,7 +121,7 @@ class BaseTranslator:
         Get the mapping file for the requested object from the universal format to this version format.
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A list of mapping functions to apply to the object
         """
         try:
@@ -143,28 +133,25 @@ class BaseTranslator:
         except KeyError:
             raise KeyError(f'Mapping from universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
 
-    def to_universal(self, object_input, force_blockstate: bool = False):
-        """
-        A method to translate a given object to the Universal format.
-        :param object_input: The object to translate
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
-        :return:
-        """
+    def to_universal(self, *args, **kwargs):
         raise NotImplementedError
 
-    def from_universal(self, object_input, force_blockstate: bool = False):
-        """
-        A method to translate a given object from the Universal format to the format of this class instance.
-        :param object_input: The object to translate
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
-        :return:
-        """
+    def from_universal(self, *args, **kwargs):
         raise NotImplementedError
 
 
 class BlockTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
         super(BlockTranslator, self).__init__(parent_version, universal_format, database, 'block')
+        # TODO: implement this
+        self._cache = {  # only blocks without a block entity can be cached
+            'to_universal': {
+
+            },
+            'from_universal': {
+
+            }
+        }
 
     def to_universal(
             self,
@@ -254,6 +241,61 @@ class BlockTranslator(BaseTranslator):
 class EntityTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
         super(EntityTranslator, self).__init__(parent_version, universal_format, database, 'entity')
+
+    def to_universal(
+            self,
+            object_input: 'Entity'
+    ) -> Union[
+        Tuple[Block, None],
+        Tuple[Block, BlockEntity],
+        Tuple[Entity, None]
+    ]:
+        """
+        A method to translate a given Entity object to the Universal format.
+        :param object_input: The object to translate
+        :return: output, extra_output, extra_needed
+            output - a Block or Entity instance
+            extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
+        """
+        assert isinstance(object_input, Entity), 'Input object must be an entity'
+
+        output, extra_output, extra_needed, cacheable = self._translate(
+            object_input,
+            self.get_specification(object_input.namespace, object_input.base_name),
+            self.get_mapping_to_universal(object_input.namespace, object_input.base_name),
+            self._universal_format,
+            'to universal'
+        )
+
+        return output, extra_output
+
+    def from_universal(
+            self,
+            object_input: 'Entity'
+    ) -> Union[
+        Tuple[Block, None],
+        Tuple[Block, BlockEntity],
+        Tuple[Entity, None]
+    ]:
+        """
+        A method to translate a given Entity object from the Universal format to the format of this class instance.
+        :param object_input: The object to translate
+        :return: output, extra_output, extra_needed
+            output - a Block or Entity instance
+            extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
+            extra_needed - bool specifying if the location is needed to fully define the output
+        """
+        assert isinstance(object_input, Entity), 'Input object must be a block'
+
+        output, extra_output, extra_needed, cacheable = self._translate(
+            object_input,
+            self._universal_format.block.get_specification(object_input.namespace, object_input.base_name),
+            self.get_mapping_from_universal(object_input.namespace, object_input.base_name),
+            self._parent_version,
+            'from_universal'
+        )
+
+        return output, extra_output
 
 
 class ItemTranslator(BaseTranslator):
