@@ -26,7 +26,7 @@ packages = find_packages(
         "PyMCTranslate.py3.helpers.*",
         "PyMCTranslate.json.*",
     ],
-    exclude=["PyMCTranslate.py2.*"],
+    exclude=[],
 )
 
 extensions = [
