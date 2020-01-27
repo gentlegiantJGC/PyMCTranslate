@@ -46,7 +46,7 @@ else:
     json_atlas = None
 
 from PyMCTranslate.py3.translation_manager import TranslationManager
-from PyMCTranslate.py3.versions import Version, SubVersion
+from PyMCTranslate.py3.versions import Version
 from PyMCTranslate.py3 import raw_text
 
 

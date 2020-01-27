@@ -99,8 +99,8 @@ class Version:
                     database_ = database
                     rel_path = os.path.relpath(fpath, os.path.join(self._version_path, attr)).split(os.sep)
                     assert len(rel_path) == 5
-                    for dir in rel_path[:-2]:
-                        database_ = database_.setdefault(dir, {})
+                    for directory in rel_path[:-2]:
+                        database_ = database_.setdefault(directory, {})
                     with open(fpath) as f:
                         database_[fpath[-1][:-5]] = json.load(f)
             setattr(self, f'_{attr}', _translator_classes[attr](self, self._translation_manager.universal_format, database))

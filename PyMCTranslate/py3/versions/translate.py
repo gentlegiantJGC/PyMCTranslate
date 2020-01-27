@@ -9,7 +9,7 @@ from PyMCTranslate.py3.versions import code_functions
 
 if TYPE_CHECKING:
 	from numpy import ndarray
-	from PyMCTranslate.py3.versions import SubVersion
+	from PyMCTranslate.py3.versions import Version
 
 
 def get_block_at(relative_location: Tuple[int, int, int]) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
@@ -162,7 +162,8 @@ def translate(
 		object_input: Union[Block, Entity], 
 		input_spec: dict, 
 		mappings: List[dict], 
-		output_version: 'SubVersion',
+		output_version: 'Version',
+		force_blockstate: bool,
 		get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
 		extra_input: BlockEntity = None, 
 		pre_populate_defaults: bool = True
@@ -174,6 +175,7 @@ def translate(
 		:param input_spec: the specification for the object_input from the input block_format
 		:param mappings: the mapping file for the input_object
 		:param output_version: A way for the function to look at the specification being converted to. (used to load default properties)
+		:param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
 		:param get_block_callback: see get_block_at function at the top for a template
 		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
 		:return: output, extra_output, extra_needed, cacheable
@@ -222,7 +224,7 @@ def translate(
 		# we should have a block output
 		# create the block object based on output_name and new['properties']
 		namespace, base_name = output_name.split(':', 1)
-		spec = output_version.get_specification('block', namespace, base_name)
+		spec = output_version.block.get_specification(namespace, base_name, force_blockstate)
 		properties = spec.get('defaults', {})
 
 		# cast to NBT if needed
@@ -261,7 +263,7 @@ def translate(
 		# we should have an entity output
 		# create the entity object based on output_name and new['nbt']
 		namespace, base_name = output_name.split(':', 1)
-		spec = output_version.get_specification('entity', namespace, base_name)
+		spec = output_version.entity.get_specification(namespace, base_name, force_blockstate)
 
 		if pre_populate_defaults:
 			nbt = nbt_from_list(

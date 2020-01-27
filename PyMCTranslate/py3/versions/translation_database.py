@@ -1,4 +1,4 @@
-from typing import List, Tuple, Union, Callable, Optional, TYPE_CHECKING
+from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
 import traceback
 
@@ -17,7 +17,7 @@ class BaseTranslator:
         self._database = database
         self._mode = mode
 
-    def _format_key(self, force_blockstate: bool = False):
+    def _format_key(self, force_blockstate):
         return 'numerical' if not force_blockstate and self._parent_version.has_abstract_format else 'blockstate'
 
     @staticmethod
@@ -26,6 +26,7 @@ class BaseTranslator:
             input_spec: dict,
             mappings: List[dict],
             output_version: 'Version',
+            force_blockstate: bool,
             translation_direction: str,
             get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
             extra_input: BlockEntity = None,
@@ -41,6 +42,7 @@ class BaseTranslator:
                 input_spec,
                 mappings,
                 output_version,
+                force_blockstate,
                 get_block_callback,
                 extra_input,
                 pre_populate_defaults
@@ -143,7 +145,6 @@ class BaseTranslator:
 class BlockTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
         super(BlockTranslator, self).__init__(parent_version, universal_format, database, 'block')
-        # TODO: implement this
         self._cache = {  # only blocks without a block entity can be cached
             'to_universal': {
 
@@ -157,6 +158,7 @@ class BlockTranslator(BaseTranslator):
             self,
             object_input: 'Block',
             get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
+            force_blockstate: bool = False,
             extra_input: 'BlockEntity' = None
     ) -> Union[
         Tuple[Block, None, bool],
@@ -167,6 +169,7 @@ class BlockTranslator(BaseTranslator):
         A method to translate a given Block object to the Universal format.
         :param object_input: The object to translate
         :param get_block_callback: see get_block_at function at the top of _translate for a template
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
         :return: output, extra_output, extra_needed
             output - a Block or Entity instance
@@ -182,9 +185,10 @@ class BlockTranslator(BaseTranslator):
 
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self.get_specification(object_input.namespace, object_input.base_name),
-            self.get_mapping_to_universal(object_input.namespace, object_input.base_name),
+            self.get_specification(object_input.namespace, object_input.base_name, force_blockstate),
+            self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate),
             self._universal_format,
+            True,
             'to universal',
             get_block_callback,
             extra_input
@@ -199,6 +203,7 @@ class BlockTranslator(BaseTranslator):
             self,
             object_input: 'Block',
             get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
+            force_blockstate: bool = False,
             extra_input: 'BlockEntity' = None
     ) -> Union[
         Tuple[Block, None, bool],
@@ -209,6 +214,7 @@ class BlockTranslator(BaseTranslator):
         A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
         :param object_input: The object to translate
         :param get_block_callback: see get_block_at function at the top of _translate for a template
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
         :return: output, extra_output, extra_needed
             output - a Block or Entity instance
@@ -225,8 +231,9 @@ class BlockTranslator(BaseTranslator):
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
             self._universal_format.block.get_specification(object_input.namespace, object_input.base_name),
-            self.get_mapping_from_universal(object_input.namespace, object_input.base_name),
+            self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate),
             self._parent_version,
+            force_blockstate,
             'from_universal',
             get_block_callback,
             extra_input
@@ -244,7 +251,8 @@ class EntityTranslator(BaseTranslator):
 
     def to_universal(
             self,
-            object_input: 'Entity'
+            object_input: 'Entity',
+            force_blockstate: bool = False
     ) -> Union[
         Tuple[Block, None],
         Tuple[Block, BlockEntity],
@@ -253,6 +261,7 @@ class EntityTranslator(BaseTranslator):
         """
         A method to translate a given Entity object to the Universal format.
         :param object_input: The object to translate
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: output, extra_output, extra_needed
             output - a Block or Entity instance
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
@@ -261,9 +270,10 @@ class EntityTranslator(BaseTranslator):
 
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self.get_specification(object_input.namespace, object_input.base_name),
-            self.get_mapping_to_universal(object_input.namespace, object_input.base_name),
+            self.get_specification(object_input.namespace, object_input.base_name, force_blockstate),
+            self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate),
             self._universal_format,
+            True,
             'to universal'
         )
 
@@ -271,7 +281,8 @@ class EntityTranslator(BaseTranslator):
 
     def from_universal(
             self,
-            object_input: 'Entity'
+            object_input: 'Entity',
+            force_blockstate: bool = False
     ) -> Union[
         Tuple[Block, None],
         Tuple[Block, BlockEntity],
@@ -280,6 +291,7 @@ class EntityTranslator(BaseTranslator):
         """
         A method to translate a given Entity object from the Universal format to the format of this class instance.
         :param object_input: The object to translate
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: output, extra_output, extra_needed
             output - a Block or Entity instance
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
@@ -289,9 +301,10 @@ class EntityTranslator(BaseTranslator):
 
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self._universal_format.block.get_specification(object_input.namespace, object_input.base_name),
-            self.get_mapping_from_universal(object_input.namespace, object_input.base_name),
+            self._universal_format.entity.get_specification(object_input.namespace, object_input.base_name),
+            self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate),
             self._parent_version,
+            force_blockstate,
             'from_universal'
         )
 
