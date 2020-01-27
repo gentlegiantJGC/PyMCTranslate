@@ -102,7 +102,7 @@ class Version:
                     for directory in rel_path[:-2]:
                         database_ = database_.setdefault(directory, {})
                     with open(fpath) as f:
-                        database_[fpath[-1][:-5]] = json.load(f)
+                        database_[rel_path[-1][:-5]] = json.load(f)
             setattr(self, f'_{attr}', _translator_classes[attr](self, self._translation_manager.universal_format, database))
 
     def __repr__(self):
