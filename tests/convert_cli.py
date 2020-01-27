@@ -1,14 +1,13 @@
 import PyMCTranslate
-from PyMCTranslate import SubVersion, Block
+from PyMCTranslate import Version, Block
 
 translations = PyMCTranslate.new_translation_manager()
 
 
-def get_version(platform: str, version: str, force_blockstate: str) -> SubVersion:
+def get_version(platform: str, version: str) -> Version:
     assert platform in translations.platforms(), f'Platform {platform} is not valid. Must be one of {translations.platforms()}'
     version = tuple(int(i) for i in version.split('.'))
-    force_blockstate = force_blockstate.lower() == 'true'
-    return translations.get_sub_version(platform, version, force_blockstate)
+    return translations.get_version(platform, version)
 
 
 print('Example command: "java 1.12.2 false bedrock 1.13.0 false minecraft:double_stone_slab[block_data=0]"')
@@ -23,11 +22,13 @@ while True:
         print('command format is incorrect')
         continue
     input_platform, input_version, input_force_blockstate, output_platform, output_version, output_force_blockstate, blockstate = user_input
-    inp = get_version(input_platform, input_version, input_force_blockstate)
-    out = get_version(output_platform, output_version, output_force_blockstate)
+    input_force_blockstate = input_force_blockstate.lower() == 'true'
+    output_force_blockstate = output_force_blockstate.lower() == 'true'
+    inp = get_version(input_platform, input_version)
+    out = get_version(output_platform, output_version)
     block = Block(blockstate=blockstate)
     print(f'\tInput block {block}')
-    ublock = inp.to_universal(block)[0]
+    ublock = inp.block.to_universal(block, force_blockstate=input_force_blockstate)[0]
     print(f'\tUniveral block {ublock}')
-    outblock = out.from_universal(ublock)
+    outblock = out.block.from_universal(ublock, force_blockstate=output_force_blockstate)
     print(f'\tOutput block {outblock}')
