@@ -7,7 +7,7 @@ from PyMCTranslate.py3.versions import Version
 from PyMCTranslate.py3.util import directories
 
 if TYPE_CHECKING:
-    from PyMCTranslate.py3.versions import Version, SubVersion
+    from PyMCTranslate.py3.versions import Version
 
 """
 Structure:
@@ -49,6 +49,7 @@ class TranslationManager:
         self._biome_registry = NumericalRegistry()
         self._universal_biome_registry = UniversalBiomeRegistry()
         self._block_registry = NumericalRegistry()
+        self._universal_format = None
 
         # Create a class for each of the versions and store them
         if minified:
@@ -60,19 +61,25 @@ class TranslationManager:
                     self._versions.setdefault(version.platform, {})
                     self._versions[version.platform].setdefault(version.version_number, version)
                     self._version_remap[(version.platform, version.data_version)] = version.version_number
+                    if version_name == 'universal':
+                        self._universal_format = version
 
     @property
-    def biome_registry(self):
+    def universal_format(self) -> Version:
+        return self._universal_format
+
+    @property
+    def biome_registry(self) -> NumericalRegistry:
         """Use this to register custom biomes"""
         return self._biome_registry
 
     @property
-    def universal_biome_registry(self):
+    def universal_biome_registry(self) -> UniversalBiomeRegistry:
         """For internal use"""
         return self._universal_biome_registry
 
     @property
-    def block_registry(self):
+    def block_registry(self) -> NumericalRegistry:
         """Use this to register custom numerical blocks"""
         return self._block_registry
 
@@ -158,13 +165,3 @@ class TranslationManager:
             else:
                 raise Exception(f'version number type {version_number.__class__} is not supported')
         return self._version_remap[(platform, version_number)]
-
-    def get_sub_version(self, platform: str, version_number: Union[int, Tuple[int, ...], List[int]], force_blockstate=False) -> 'SubVersion':
-        """
-        A method to get a SubVersion class.
-        :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
-        :param version_number: The version number (use TranslationManager.version_numbers to get version numbers for a given platforms)
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
-        :return: The SubVersion class for the given inputs. Throws an AssertionError if it does not exist.
-        """
-        return self.get_version(platform, version_number).get(force_blockstate)
