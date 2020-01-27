@@ -13,6 +13,12 @@ if TYPE_CHECKING:
 
 _version_data = {}
 
+_translator_classes = {
+    'block': BlockTranslator,
+    'entity': EntityTranslator,
+    'item': ItemTranslator
+}
+
 
 class Version:
     """
@@ -82,7 +88,7 @@ class Version:
         Internal method to load the data related to this class.
         This allows loading to be deferred until it is needed (if at all)
         """
-        if not hasattr(self, f'_{attr}'):
+        if attr not in _translator_classes:
             raise Exception(f'Unknown translator {attr}')
         if getattr(self, f'_{attr}') is None:
             if minified:
@@ -97,7 +103,7 @@ class Version:
                         database_ = database_.setdefault(dir, {})
                     with open(fpath) as f:
                         database_[fpath[-1][:-5]] = json.load(f)
-            setattr(self, f'_{attr}', database)
+            setattr(self, f'_{attr}', _translator_classes[attr](self, self._translation_manager.universal_format, database))
 
     def __repr__(self):
         return f'PyMCTranslate.Version({self.platform}, {self.version_number})'
