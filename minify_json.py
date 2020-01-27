@@ -13,7 +13,7 @@ def main(pymct_path: str):
             return atlas.index(obj)
         except ValueError:
             atlas.append(obj)
-            return len(atlas)
+            return len(atlas) - 1
 
     versions_dir = os.path.join(pymct_path, 'json', 'versions')
     min_json_dir = os.path.join(pymct_path, 'min_json')
