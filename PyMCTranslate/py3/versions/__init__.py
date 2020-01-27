@@ -1,14 +1,12 @@
 import json
 import os
-from typing import Union, Tuple, List, Dict, Callable, TYPE_CHECKING
-import copy
-import traceback
+from typing import Union, Tuple, Dict, TYPE_CHECKING
+import glob
 
-from PyMCTranslate import Block, BlockEntity, Entity, minified, json_atlas
-from PyMCTranslate.py3.util import directories, files
-from PyMCTranslate.py3.log import info, log_level
+from PyMCTranslate import Block, minified, json_atlas
 from PyMCTranslate.py3.versions.translate import translate
-from .biomes import BiomeVersionManager
+from ..versions.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
+from .biomes import BiomeTranslator
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.translation_manager import TranslationManager
@@ -25,7 +23,9 @@ class Version:
     def __init__(self, version_path: str, translation_manager: 'TranslationManager'):
         self._version_path = version_path
         self._translation_manager = translation_manager
-        self._loaded = False
+        self._block = None
+        self._entity = None
+        self._item = None
 
         if version_path not in _version_data:
             _version_data[version_path] = {}
@@ -34,7 +34,7 @@ class Version:
                 raise NotImplementedError
             else:
                 _version_data[version_path]["meta"] = meta = {}
-                for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__block_entity_map__']:
+                for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__block_entity_map__', '__numerical_block_map__']:
                     if os.path.isfile(os.path.join(version_path, f'{file_name}.json')):
                         with open(os.path.join(version_path, f'{file_name}.json')) as f:
                             meta[file_name] = json.load(f)
@@ -51,16 +51,23 @@ class Version:
         self._block_format = init_file['block_format']
         self._has_abstract_format = self._block_format in ['numerical', 'pseudo-numerical']
 
-        self._subversions = {}
-        self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
-        self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
+        if self.block_format == 'numerical':
+            self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {
+                tuple(block_str.split(':', 1)): block_id for block_str, block_id in meta['__numerical_block_map__'].items()
+                if isinstance(block_str, str) and ':' in block_str and isinstance(block_id, int)
+            }
+            self._numerical_block_map: Dict[int, Tuple[str, str]] = {val: key for key, val in self._numerical_block_map_inverse.items()}
+        else:
+            self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
+            self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
+
         if self.platform == 'java' and '__waterloggable__' in meta:
             self._waterloggable = set(meta['__waterloggable__'])
             self._always_waterlogged = set(meta['__always_waterlogged__'])
         else:
             self._waterloggable = None
             self._always_waterlogged = None
-        self.biomes = BiomeVersionManager(meta['__biome_data__'], translation_manager)
+        self._biome = BiomeTranslator(meta['__biome_data__'], translation_manager)
 
         if init_file['block_entity_format'] == "str-id":
             with open(os.path.join(version_path, '__block_entity_map__.json')) as f:
@@ -70,27 +77,27 @@ class Version:
             self.block_entity_map = None
             self.block_entity_map_inverse = None
 
-
-    def _load(self):
+    def _load_translator(self, attr):
         """
         Internal method to load the data related to this class.
         This allows loading to be deferred until it is needed (if at all)
         """
-        if not self._loaded:
-            if self.block_format in ['numerical', 'pseudo-numerical']:
-                for block_format in ['blockstate', 'numerical']:
-                    self._subversions[block_format] = SubVersion(self._translation_manager, self, os.path.join(self._version_path, 'block', block_format), block_format == 'blockstate')
-                if self.block_format == 'numerical':
-                    with open(os.path.join(self._version_path, '__numerical_block_map__.json')) as f:
-                        self._numerical_block_map_inverse = {tuple(block_str.split(':', 1)): block_id for block_str, block_id in json.load(f).items()}
-                    self._numerical_block_map = {}
-                    for block_tuple, block_id in self._numerical_block_map_inverse.items():
-                        assert isinstance(block_id, int) and isinstance(block_tuple, tuple) and all(isinstance(a, str) for a in block_tuple)
-                        self._numerical_block_map[block_id] = block_tuple
-
-            elif self.block_format in ['blockstate', 'nbt-blockstate']:
-                self._subversions['blockstate'] = SubVersion(self._translation_manager, self, os.path.join(self._version_path, 'block', 'blockstate'), True)
-            self._loaded = True
+        if not hasattr(self, f'_{attr}'):
+            raise Exception(f'Unknown translator {attr}')
+        if getattr(self, f'_{attr}') is None:
+            if minified:
+                raise NotImplementedError
+            else:
+                database = {}
+                for fpath in glob.iglob(os.path.join(self._version_path, attr, '**', '*.json'), recursive=True):
+                    database_ = database
+                    rel_path = os.path.relpath(fpath, os.path.join(self._version_path, attr)).split(os.sep)
+                    assert len(rel_path) == 5
+                    for dir in rel_path[:-2]:
+                        database_ = database_.setdefault(dir, {})
+                    with open(fpath) as f:
+                        database_[fpath[-1][:-5]] = json.load(f)
+            setattr(self, f'_{attr}', database)
 
     def __repr__(self):
         return f'PyMCTranslate.Version({self.platform}, {self.version_number})'
@@ -132,24 +139,30 @@ class Version:
         """
         return self._data_version
 
-    def get(self, force_blockstate: bool = False) -> 'SubVersion':
-        """
-        A method to get a SubVersion class.
-        :param force_blockstate: True to return the blockstate sub-version. False to return the native sub-version (these are sometimes the same thing)
-        :return: The SubVersion class for the given inputs.
-        """
-        self._load()
-        assert isinstance(force_blockstate, bool), 'force_blockstate must be a bool type'
-        if force_blockstate:
-            return self._subversions['blockstate']
-        else:
-            if self.block_format in ['numerical', 'pseudo-numerical']:
-                return self._subversions['numerical']
-            elif self.block_format in ['blockstate', 'nbt-blockstate']:
-                return self._subversions['blockstate']
-            else:
-                raise NotImplemented
+    @property
+    def block(self) -> BlockTranslator:
+        """The BlockTranslator for this version"""
+        self._load_translator('block')
+        return self._block
 
+    @property
+    def entity(self) -> EntityTranslator:
+        """The EntityTranslator for this version"""
+        self._load_translator('entity')
+        return self._entity
+
+    @property
+    def item(self) -> ItemTranslator:
+        """The ItemTranslator for this version"""
+        self._load_translator('item')
+        return self._item
+
+    @property
+    def biome(self) -> BiomeTranslator:
+        """The BiomeTranslator for this version"""
+        return self._biome
+
+    # TODO: consider moving these to the block translator
     def is_waterloggable(self, namespace_str: str, always=False):
         """
         A method to check if a block can be waterlogged.
@@ -194,193 +207,3 @@ class Version:
 
         if block_id is not None and block_data is not None:
             return block_id, block_data
-
-
-class SubVersion:
-    """
-    A class to store sub-version data.
-    This is where things get a little confusing.
-    Each version has a "native" format but the numerical formats (ones that rely on a data value rather than properties)
-    also have an abstracted "blockstate" format.
-    As such each version will always have a blockstate format but some may also have a numerical format as well.
-    This class will store data for one of these sub-versions.
-    """
-    def __init__(self, translation_manager: 'TranslationManager', parent_version: Version, sub_version_path: str, is_blockstate: bool):
-        self._translation_manager = translation_manager
-        self._parent_version = parent_version
-        self._is_blockstate = is_blockstate
-
-        self._mappings = {
-            "block": {
-                'to_universal': {},
-                'from_universal': {},
-                'specification': {}
-            },
-            "entity": {
-                'to_universal': {},
-                'from_universal': {},
-                'specification': {}
-            }
-        }
-        self._cache = {  # only blocks without a block entity can be cached
-            'to_universal': {
-
-            },
-            'from_universal': {
-
-            }
-        }
-        assert os.path.isdir(sub_version_path), f'{sub_version_path} is not a valid path'
-        for method in ['to_universal', 'from_universal', 'specification']:
-            if os.path.isdir(os.path.join(sub_version_path, method)):
-                for namespace in directories(os.path.join(sub_version_path, method)):
-                    self._mappings["block"][method][namespace] = {}
-                    for group_name in directories(os.path.join(sub_version_path, method, namespace)):
-                        for block in files(os.path.join(sub_version_path, method, namespace, group_name)):
-                            if block.endswith('.json'):
-                                with open(os.path.join(sub_version_path, method, namespace, group_name, block)) as f:
-                                    self._mappings["block"][method][namespace][block[:-5]] = json.load(f)
-
-    def __repr__(self):
-        return f'PyMCTranslate.SubVersion({self._parent_version.platform}, {self._parent_version.version_number}, {self.is_blockstate})'
-
-    @property
-    def is_blockstate(self) -> bool:
-        """
-        Does this sub-version store data in blockstate format
-        :return: bool
-        """
-        return self._is_blockstate
-
-    @property
-    def is_abstract(self) -> bool:
-        """
-        Does the sub-version hold data related to the abstract format (True) or the native format (False)
-        The formats with a numerical data value also have an abstract format implemented modeled on the blockstate format.
-        Will return False for the native numerical format and blockstate if that is the native format.
-        :return: bool
-        """
-        return self._parent_version.has_abstract_format and self.is_blockstate
-
-    def namespaces(self, mode: str) -> List[str]:
-        """
-        A list of all the namespaces present in a given mode.
-        :param mode:str: should be "block" or "entity"
-        :return: A list of all the namespaces
-        """
-        return list(self._mappings[mode]['specification'].keys())
-
-    def base_names(self, mode: str, namespace: str) -> List[str]:
-        """
-        A list of all the base names present in a given mode and namespace.
-        :param mode:str: should be "block" or "entity"
-        :param namespace: A namespace string as found using the namespaces method
-        :return: A list of base names
-        """
-        return list(self._mappings[mode]['specification'][namespace])
-
-    def get_specification(self, mode: str, namespace: str, base_name: str) -> dict:
-        """
-        Get the specification file for the requested object.
-        :param mode:str: should be "block" or "entity"
-        :param namespace: A namespace string as found using the namespaces method
-        :param base_name: A base name string as found using the base_name method
-        :return: A dictionary containing the specification for the object
-        """
-        try:
-            return copy.deepcopy(self._mappings[mode]['specification'][namespace][base_name])
-        except KeyError:
-            raise KeyError(f'Specification for {mode} {namespace}:{base_name} does not exist')
-
-    def get_mapping_to_universal(self, mode: str, namespace: str, base_name: str) -> List[dict]:
-        """
-        Get the mapping file for the requested object from this version format to the universal format.
-        :param mode:str: should be "block" or "entity"
-        :param namespace: A namespace string as found using the namespaces method
-        :param base_name: A base name string as found using the base_name method
-        :return: A list of mapping functions to apply to the object
-        """
-        try:
-            return copy.deepcopy(self._mappings[mode]['to_universal'][namespace][base_name])
-        except KeyError:
-            raise KeyError(f'Mapping to universal for {mode} {namespace}:{base_name} does not exist')
-
-    def get_mapping_from_universal(self, mode: str, namespace: str, base_name: str) -> List[dict]:
-        """
-        Get the mapping file for the requested object from the universal format to this version format.
-        :param mode:str: should be "block" or "entity"
-        :param namespace: A namespace string as found using the namespaces method
-        :param base_name: A base name string as found using the base_name method
-        :return: A list of mapping functions to apply to the object
-        """
-        try:
-            return copy.deepcopy(self._mappings[mode]['from_universal'][namespace][base_name])
-        except KeyError:
-            raise KeyError(f'Mapping from universal for {mode} {namespace}:{base_name} does not exist')
-
-    def to_universal(self, object_input: Union['Block', 'Entity'], get_block_callback: Callable = None, extra_input: 'BlockEntity' = None) -> Tuple[Union['Block', 'Entity'], Union['BlockEntity', None], bool]:
-        """
-        A method to translate a given Block or Entity object to the Universal format.
-        :param object_input: The object to translate
-        :param get_block_callback: see get_block_at function at the top of _translate for a template
-        :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
-        :return: output, extra_output, extra_needed
-            output - a Block or Entity instance
-            extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
-            extra_needed - bool specifying if the location is needed to fully define the output
-        """
-        if isinstance(object_input, Block):
-            mode = 'block'
-        elif isinstance(object_input, Entity):
-            mode = 'entity'
-        else:
-            raise AssertionError('object_input must be a Block or an Entity')
-        try:
-            output, extra_output, extra_needed, cacheable = translate(
-                object_input,
-                self.get_specification(mode, object_input.namespace, object_input.base_name),
-                self.get_mapping_to_universal(mode, object_input.namespace, object_input.base_name),
-                self._translation_manager.get_sub_version('universal', (1, 0, 0)),
-                get_block_callback,
-                extra_input
-            )
-            return output, extra_output, extra_needed
-        except Exception as e:
-            info(f'Error while converting {object_input} to universal\n{e}')
-            if log_level >= 3:
-                traceback.print_stack()
-                traceback.print_exc()
-            return object_input, None, True
-
-    def from_universal(self, object_input: Union['Block', 'Entity'], get_block_callback: Callable = None, extra_input: 'BlockEntity' = None) -> Tuple[Union['Block', 'Entity'], Union['BlockEntity', None], bool]:
-        """
-        A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
-        :param object_input: The object to translate
-        :param get_block_callback: see get_block_at function at the top of _translate for a template
-        :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
-        :return: output, extra_output, extra_needed
-            output - a Block or Entity instance
-            extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
-            extra_needed - bool specifying if the location is needed to fully define the output
-        """
-        if isinstance(object_input, Block):
-            mode = 'block'
-        elif isinstance(object_input, Entity):
-            mode = 'entity'
-        else:
-            raise Exception('object_input must be a Block or an Entity')
-        try:
-            output, extra_output, extra_needed, cacheable = translate(
-                object_input,
-                self._translation_manager.get_sub_version('universal', (1, 0, 0)).get_specification(mode, object_input.namespace, object_input.base_name),
-                self.get_mapping_from_universal(mode, object_input.namespace, object_input.base_name),
-                self,
-                get_block_callback,
-                extra_input
-            )
-            return output, extra_output, extra_needed
-        except Exception as e:
-            info(f'Error while converting {object_input} from universal\n{e}')
-            if log_level >= 3:
-                traceback.print_exc()
-            return object_input, None, True

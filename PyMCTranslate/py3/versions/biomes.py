@@ -15,7 +15,7 @@ Biome translation pipeline
 """
 
 
-class BiomeVersionManager:
+class BiomeTranslator:
     def __init__(self, biome_data: dict, translation_manager: 'TranslationManager'):
         self._translation_manager = translation_manager
 
