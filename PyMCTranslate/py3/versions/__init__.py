@@ -3,7 +3,7 @@ import os
 from typing import Union, Tuple, Dict, TYPE_CHECKING
 import glob
 
-from PyMCTranslate import Block, minified, json_atlas
+from PyMCTranslate import Block, minified, json_atlas, load_json_gz
 from PyMCTranslate.py3.versions.translate import translate
 from ..versions.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
 from .biomes import BiomeTranslator
@@ -24,7 +24,6 @@ class Version:
     """
     Container for the version data.
     There will be an instance of this class for each unique combination of platform and version number.
-    This is tot to be mistaken with SubVersion which is a level deeper than this.
     """
     def __init__(self, version_path: str, translation_manager: 'TranslationManager'):
         self._version_path = version_path
@@ -37,7 +36,9 @@ class Version:
             _version_data[version_path] = {}
             if minified:
                 # load meta.json.gz and store in _version_data[version_path]["meta"]
-                raise NotImplementedError
+                _version_data[version_path]["meta"] = {
+                    key: json_atlas[value] for key, value in load_json_gz(os.path.join(version_path, 'meta.json.gz')).items()
+                }
             else:
                 _version_data[version_path]["meta"] = meta = {}
                 for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__block_entity_map__', '__numerical_block_map__']:
@@ -76,9 +77,8 @@ class Version:
         self._biome = BiomeTranslator(meta['__biome_data__'], translation_manager)
 
         if init_file['block_entity_format'] == "str-id":
-            with open(os.path.join(version_path, '__block_entity_map__.json')) as f:
-                self.block_entity_map: Dict[str: str] = json.load(f)
-                self.block_entity_map_inverse: Dict[str: str] = {val: key for key, val in self.block_entity_map.items()}
+            self.block_entity_map: Dict[str: str] = meta['__block_entity_map__']
+            self.block_entity_map_inverse: Dict[str: str] = {val: key for key, val in self.block_entity_map.items()}
         else:
             self.block_entity_map = None
             self.block_entity_map_inverse = None
@@ -92,7 +92,11 @@ class Version:
             raise Exception(f'Unknown translator {attr}')
         if getattr(self, f'_{attr}') is None:
             if minified:
-                raise NotImplementedError
+                fpath = os.path.join(self._version_path, f'{attr}.json.gz')
+                if os.path.isfile(fpath):
+                    database = load_json_gz(fpath)
+                else:
+                    database = {}
             else:
                 database = {}
                 for fpath in glob.iglob(os.path.join(self._version_path, attr, '**', '*.json'), recursive=True):

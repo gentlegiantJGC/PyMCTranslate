@@ -1,5 +1,7 @@
 from typing import Generator
 import os
+import json
+import gzip
 
 
 def directories(path: str) -> Generator[str, None, None]:
@@ -20,3 +22,8 @@ def files(path: str) -> Generator[str, None, None]:
     for file_name in os.listdir(path):
         if os.path.isfile(os.path.join(path, file_name)):
             yield file_name
+
+
+def load_json_gz(file_path: str):
+    with gzip.open(file_path, 'rb') as f:
+        return json.loads(f.read().decode('utf-8'))

@@ -11,9 +11,11 @@ except ModuleNotFoundError:
     from PyMCTranslate.py3.amulet_objects.entity import Entity
     from PyMCTranslate.py3.amulet_objects.errors import ChunkLoadError
 
+from PyMCTranslate.py3.util import load_json_gz
+
 pymct_dir = os.path.dirname(__file__)
 # have the json files been minified
-minified = os.path.isfile(os.path.join(pymct_dir, 'min_json'))
+minified = os.path.isdir(os.path.join(pymct_dir, 'min_json'))
 if minified:
     """
     minified format
@@ -27,7 +29,8 @@ if minified:
                 entity.json.gz
     """
     # load the mega_json file and unpack
-    raise NotImplementedError
+    json_atlas: list = load_json_gz(os.path.join(pymct_dir, 'min_json', 'atlas.json.gz'))
+    json_dir = os.path.join(pymct_dir, 'min_json')
 else:
     """
     maximised format
@@ -44,6 +47,7 @@ else:
                                     <base_name>.json
     """
     json_atlas = None
+    json_dir = os.path.join(pymct_dir, 'json')
 
 from PyMCTranslate.py3.translation_manager import TranslationManager
 from PyMCTranslate.py3.versions import Version
@@ -54,4 +58,4 @@ def new_translation_manager() -> TranslationManager:
     """Returns a new TranslationManager with the default files.
     Each unique world should have a new TranslationManager because there is the
     functionality to register custom (mod) blocks making each handler unique."""
-    return TranslationManager(os.path.join(pymct_dir, 'json'))
+    return TranslationManager(json_dir)

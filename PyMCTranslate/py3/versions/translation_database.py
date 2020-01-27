@@ -2,7 +2,7 @@ from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
 import traceback
 
-from PyMCTranslate import Block, BlockEntity, Entity
+from PyMCTranslate import Block, BlockEntity, Entity, minified, json_atlas
 from PyMCTranslate.py3.log import info, log_level
 from ..versions.translate import translate
 
@@ -84,6 +84,13 @@ class BaseTranslator:
             )[namespace].keys()
         )
 
+    @staticmethod
+    def _get_data(data):
+        if minified:
+            return copy.deepcopy(json_atlas[data])
+        else:
+            return copy.deepcopy(data)
+
     def get_specification(self, namespace: str, base_name: str, force_blockstate: bool = False) -> dict:
         """
         Get the specification file for the requested object.
@@ -93,11 +100,12 @@ class BaseTranslator:
         :return: A dictionary containing the specification for the object
         """
         try:
-            return copy.deepcopy(self._database.get(
+            data = self._database.get(
                 self._format_key(force_blockstate), {}
             ).get(
                 'specification', {}
-            )[namespace][base_name])
+            )[namespace][base_name]
+            return self._get_data(data)
         except KeyError:
             raise KeyError(f'Specification for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
 
@@ -110,11 +118,12 @@ class BaseTranslator:
         :return: A list of mapping functions to apply to the object
         """
         try:
-            return copy.deepcopy(self._database.get(
+            data = self._database.get(
                 self._format_key(force_blockstate), {}
             ).get(
                 'to_universal', {}
-            )[namespace][base_name])
+            )[namespace][base_name]
+            return self._get_data(data)
         except KeyError:
             raise KeyError(f'Mapping to universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
 
@@ -127,11 +136,12 @@ class BaseTranslator:
         :return: A list of mapping functions to apply to the object
         """
         try:
-            return copy.deepcopy(self._database.get(
+            data = self._database.get(
                 self._format_key(force_blockstate), {}
             ).get(
                 'from_universal', {}
-            )[namespace][base_name])
+            )[namespace][base_name]
+            return self._get_data(data)
         except KeyError:
             raise KeyError(f'Mapping from universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
 

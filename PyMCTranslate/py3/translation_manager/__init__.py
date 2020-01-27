@@ -53,16 +53,18 @@ class TranslationManager:
 
         # Create a class for each of the versions and store them
         if minified:
-            raise NotImplementedError
+            init_file = 'meta.json.gz'
         else:
-            for version_name in directories(os.path.join(json_path, 'versions')):
-                if os.path.isfile(os.path.join(json_path, 'versions', version_name, '__init__.json')):
-                    version = Version(os.path.join(json_path, 'versions', version_name), self)
-                    self._versions.setdefault(version.platform, {})
-                    self._versions[version.platform].setdefault(version.version_number, version)
-                    self._version_remap[(version.platform, version.data_version)] = version.version_number
-                    if version_name == 'universal':
-                        self._universal_format = version
+            init_file = '__init__.json'
+
+        for version_name in directories(os.path.join(json_path, 'versions')):
+            if os.path.isfile(os.path.join(json_path, 'versions', version_name, init_file)):
+                version = Version(os.path.join(json_path, 'versions', version_name), self)
+                self._versions.setdefault(version.platform, {})
+                self._versions[version.platform].setdefault(version.version_number, version)
+                self._version_remap[(version.platform, version.data_version)] = version.version_number
+                if version_name == 'universal':
+                    self._universal_format = version
 
     @property
     def universal_format(self) -> Version:
