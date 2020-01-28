@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "type": [
+            "normal",
+            "sticky"
+        ],
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ]
+    },
+    "defaults": {
+        "type": "normal",
+        "facing": "north"
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "moving_block"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
+}

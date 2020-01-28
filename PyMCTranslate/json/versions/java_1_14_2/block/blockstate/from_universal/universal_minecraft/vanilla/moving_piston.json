@@ -1,5 +1,9 @@
 [
     {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -45,29 +49,6 @@
                     "function": "carry_nbt",
                     "options": {}
                 }
-            ]
-        }
-    },
-    {
-        "function": "new_block",
-        "options": "minecraft:moving_piston"
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "normal"
-        }
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
             ]
         }
     }

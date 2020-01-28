@@ -36,27 +36,16 @@
         }
     },
     {
-        "function": "map_properties",
-        "options": {
-            "type": {
-                "normal": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:moving_piston"
-                    }
-                ],
-                "sticky": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:moving_sticky_piston"
-                    }
-                ]
-            }
-        }
+        "function": "new_block",
+        "options": "universal_minecraft:moving_block"
     },
     {
         "function": "carry_properties",
         "options": {
+            "type": [
+                "normal",
+                "sticky"
+            ],
             "facing": [
                 "north",
                 "east",
