@@ -189,6 +189,74 @@
                         }
                     }
                 ]
+            },
+            "facing": {
+                "down": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "0b"
+                            }
+                        ]
+                    }
+                ],
+                "up": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "1b"
+                            }
+                        ]
+                    }
+                ],
+                "north": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "2b"
+                            }
+                        ]
+                    }
+                ],
+                "south": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "3b"
+                            }
+                        ]
+                    }
+                ],
+                "west": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "4b"
+                            }
+                        ]
+                    }
+                ],
+                "east": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "5b"
+                            }
+                        ]
+                    }
+                ]
             }
         }
     },

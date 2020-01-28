@@ -192,6 +192,66 @@
                             }
                         }
                     ]
+                },
+                "facing": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "down"
+                                            }
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "up"
+                                            }
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "north"
+                                            }
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "south"
+                                            }
+                                        }
+                                    ],
+                                    "4b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "west"
+                                            }
+                                        }
+                                    ],
+                                    "5b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "east"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
                 }
             },
             "self_default": [
