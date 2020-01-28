@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "facing": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "map_item": [
+            "true",
+            "false"
+        ]
+    },
+    "defaults": {
+        "facing": "north",
+        "map_item": "false"
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "item_frame"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
+}
