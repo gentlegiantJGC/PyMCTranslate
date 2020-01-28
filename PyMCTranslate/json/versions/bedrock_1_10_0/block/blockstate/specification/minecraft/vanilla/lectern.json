@@ -1,0 +1,23 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "lectern"
+    ],
+    "snbt": "{isMovable: 1b}",
+    "properties": {
+        "powered": [
+            "false",
+            "true"
+        ],
+        "facing": [
+            "south",
+            "west",
+            "north",
+            "east"
+        ]
+    },
+    "defaults": {
+        "powered": "false",
+        "facing": "south"
+    }
+}

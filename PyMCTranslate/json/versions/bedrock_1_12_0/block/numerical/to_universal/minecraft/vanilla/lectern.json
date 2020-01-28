@@ -116,60 +116,110 @@
         }
     },
     {
-        "function": "new_block",
-        "options": "universal_minecraft:lectern"
-    },
-    {
         "function": "map_properties",
         "options": {
-            "direction": {
+            "block_data": {
                 "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
                     {
                         "function": "new_properties",
                         "options": {
+                            "powered": "false",
                             "facing": "south"
                         }
                     }
                 ],
                 "1": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
+                            "powered": "false",
                             "facing": "west"
                         }
                     }
                 ],
                 "2": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
+                            "powered": "false",
                             "facing": "north"
                         }
                     }
                 ],
                 "3": [
                     {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
+                    {
                         "function": "new_properties",
                         "options": {
+                            "powered": "false",
                             "facing": "east"
                         }
                     }
-                ]
-            },
-            "powered_bit": {
-                "0b": [
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered": "false"
+                            "powered": "true",
+                            "facing": "south"
                         }
                     }
                 ],
-                "1b": [
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered": "true"
+                            "powered": "true",
+                            "facing": "west"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "true",
+                            "facing": "north"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:lectern"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "true",
+                            "facing": "east"
                         }
                     }
                 ]

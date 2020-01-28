@@ -120,60 +120,18 @@
         "options": "universal_minecraft:lectern"
     },
     {
-        "function": "map_properties",
+        "function": "carry_properties",
         "options": {
-            "direction": {
-                "0": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "south"
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "west"
-                        }
-                    }
-                ],
-                "2": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "north"
-                        }
-                    }
-                ],
-                "3": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "east"
-                        }
-                    }
-                ]
-            },
-            "powered_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "powered": "false"
-                        }
-                    }
-                ],
-                "1b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "powered": "true"
-                        }
-                    }
-                ]
-            }
+            "powered": [
+                "false",
+                "true"
+            ],
+            "facing": [
+                "south",
+                "west",
+                "north",
+                "east"
+            ]
         }
     }
 ]
