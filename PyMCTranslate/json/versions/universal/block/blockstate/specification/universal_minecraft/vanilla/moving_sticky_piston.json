@@ -11,5 +11,10 @@
     },
     "defaults": {
         "facing": "north"
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "moving_block"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }

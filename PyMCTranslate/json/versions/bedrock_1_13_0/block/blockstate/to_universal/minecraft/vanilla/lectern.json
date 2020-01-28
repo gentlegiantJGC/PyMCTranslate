@@ -23,34 +23,6 @@
                         }
                     ]
                 },
-                "hasBook": {
-                    "type": "byte",
-                    "functions": [
-                        {
-                            "function": "map_nbt",
-                            "options": {
-                                "cases": {
-                                    "0b": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "has_book": "false"
-                                            }
-                                        }
-                                    ],
-                                    "1b": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "has_book": "true"
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
                 "page": {
                     "type": "int",
                     "functions": [
@@ -80,6 +52,34 @@
                                         "compound"
                                     ]
                                 ]
+                            }
+                        }
+                    ]
+                },
+                "hasBook": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "has_book": "false"
+                                            }
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "has_book": "true"
+                                            }
+                                        }
+                                    ]
+                                }
                             }
                         }
                     ]
