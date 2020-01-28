@@ -20,24 +20,6 @@
                         }
                     ]
                 },
-                "Items": {
-                    "type": "list",
-                    "nested_default": [],
-                    "self_default": [],
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "isMovable": {
                     "type": "byte",
                     "functions": [
