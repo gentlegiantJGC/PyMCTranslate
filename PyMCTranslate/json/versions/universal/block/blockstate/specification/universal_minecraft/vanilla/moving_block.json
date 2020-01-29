@@ -21,5 +21,5 @@
         "universal_minecraft",
         "moving_block"
     ],
-    "snbt": "{utags: {isMovable: 1b}}"
+    "snbt": "{utags: {isMovable: 1b,javaBlockState: {Name: \"minecraft:stone\"},bedrockBlockState: {name: \"minecraft:stone\", states: {\"stone_type\": \"stone\"}, version: 17629184},bedrockExtraBlockState: {name: \"minecraft:air\", states: {}, version: 17629184},facing: 4, progress: 0.5f, source: 0b, extending: 1b,pistonPosX: 0, pistonPosY: 0, pistonPosZ: 0}}"
 }
