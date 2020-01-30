@@ -5,7 +5,7 @@ log = logging.getLogger('pymctranslate')
 
 _formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-_log_file = logging.FileHandler('pymctranslate.log', 'w')
+_log_file = logging.FileHandler('./logs/pymctranslate.log', 'w')
 if 'pymct-debug' in sys.argv:
     _log_file.setLevel(logging.DEBUG)
 else:
