@@ -96,6 +96,7 @@ class Version:
                 if os.path.isfile(fpath):
                     database = load_json_gz(fpath)
                 else:
+                    print(f'Could not find {attr} database')
                     database = {}
             else:
                 database = {}
