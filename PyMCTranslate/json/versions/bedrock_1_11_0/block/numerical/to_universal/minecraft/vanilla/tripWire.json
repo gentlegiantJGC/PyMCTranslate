@@ -1,0 +1,249 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "false",
+                            "suspended": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "false",
+                            "suspended": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "false",
+                            "suspended": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "false",
+                            "suspended": "true",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "true",
+                            "suspended": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "true",
+                            "suspended": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "true",
+                            "suspended": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "false",
+                            "attached": "true",
+                            "suspended": "true",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "false",
+                            "suspended": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "false",
+                            "suspended": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "false",
+                            "suspended": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "false",
+                            "suspended": "true",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "true",
+                            "suspended": "false",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "true",
+                            "suspended": "false",
+                            "powered": "true"
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "true",
+                            "suspended": "true",
+                            "powered": "false"
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:tripwire"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed": "true",
+                            "attached": "true",
+                            "suspended": "true",
+                            "powered": "true"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "disarmed": [
+            "false",
+            "true"
+        ],
+        "attached": [
+            "false",
+            "true"
+        ],
+        "suspended": [
+            "false",
+            "true"
+        ],
+        "powered": [
+            "false",
+            "true"
+        ]
+    },
+    "defaults": {
+        "disarmed": "false",
+        "attached": "false",
+        "suspended": "false",
+        "powered": "false"
+    }
+}
