@@ -107,7 +107,7 @@ class BaseTranslator:
             )[namespace][base_name]
             return self._get_data(data)
         except KeyError:
-            raise KeyError(f'Specification for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
+            raise KeyError(f'Specification for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}')
 
     def get_mapping_to_universal(self, namespace: str, base_name: str, force_blockstate: bool = False) -> List[dict]:
         """
@@ -125,7 +125,7 @@ class BaseTranslator:
             )[namespace][base_name]
             return self._get_data(data)
         except KeyError:
-            raise KeyError(f'Mapping to universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
+            raise KeyError(f'Mapping to universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}')
 
     def get_mapping_from_universal(self, namespace: str, base_name: str, force_blockstate: bool = False) -> List[dict]:
         """
@@ -143,7 +143,7 @@ class BaseTranslator:
             )[namespace][base_name]
             return self._get_data(data)
         except KeyError:
-            raise KeyError(f'Mapping from universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist')
+            raise KeyError(f'Mapping from universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}')
 
     def to_universal(self, *args, **kwargs):
         raise NotImplementedError
