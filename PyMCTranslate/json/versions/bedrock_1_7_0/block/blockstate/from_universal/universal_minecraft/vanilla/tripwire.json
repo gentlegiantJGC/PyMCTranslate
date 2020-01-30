@@ -1,27 +1,6 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:tripwire"
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "disarmed": [
-                "false",
-                "true"
-            ],
-            "attached": [
-                "false",
-                "true"
-            ],
-            "suspended": [
-                "false",
-                "true"
-            ],
-            "powered": [
-                "false",
-                "true"
-            ]
-        }
+        "options": "minecraft:air"
     }
 ]
