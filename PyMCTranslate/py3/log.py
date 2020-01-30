@@ -14,6 +14,6 @@ _log_file.setFormatter(_formatter)
 log.addHandler(_log_file)
 
 _log_console = logging.StreamHandler()
-_log_console.setLevel(logging.ERROR)
+_log_console.setLevel(logging.WARN)
 _log_console.setFormatter(_formatter)
 log.addHandler(_log_console)
