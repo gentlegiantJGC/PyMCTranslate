@@ -49,7 +49,7 @@ class BaseTranslator:
         except Exception as e:
             log.warning(f'Error converting {object_input} {translation_direction}. If this is not a vanilla object this is normal')
             # traceback.print_stack()
-            log.warning('Error and traceback from the above', e, exc_info=True)
+            log.warning(f'Error and traceback from the above "{e}"', exc_info=True)
             return object_input, None, True, False
 
     def namespaces(self, force_blockstate: bool = False) -> List[str]:
