@@ -3,7 +3,7 @@ import os
 from typing import Union, Tuple, Dict, TYPE_CHECKING
 import glob
 
-from PyMCTranslate import Block, minified, json_atlas, load_json_gz
+from PyMCTranslate import Block, minified, json_atlas, load_json_gz, log
 from PyMCTranslate.py3.versions.translate import translate
 from ..versions.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
 from .biomes import BiomeTranslator
@@ -96,7 +96,7 @@ class Version:
                 if os.path.isfile(fpath):
                     database = load_json_gz(fpath)
                 else:
-                    print(f'Could not find {attr} database')
+                    log.critical(f'Could not find {attr} database')
                     database = {}
             else:
                 database = {}

@@ -1,4 +1,5 @@
 from typing import Union, Dict, TYPE_CHECKING
+from PyMCTranslate import log
 if TYPE_CHECKING:
     from PyMCTranslate.py3.translation_manager import TranslationManager
 import numpy
@@ -35,7 +36,7 @@ class BiomeTranslator:
             elif biome in self._biome_int_to_str:
                 biome = self._biome_int_to_str[biome]
             else:
-                print(f'Could not find registered value for biome {biome}. Reverting to plains')
+                log.warning(f'Could not find registered value for biome {biome}. Reverting to plains')
                 biome = 'minecraft:plains'
 
         # biome should now be a string
@@ -69,7 +70,7 @@ class BiomeTranslator:
         elif version_biome in self._biome_str_to_int:
             version_biome = self._biome_str_to_int[version_biome]
         else:
-            print(f'Error processing biome {version_biome}. Setting to plains.')
+            log.warning(f'Error processing biome {version_biome}. Setting to plains.')
             version_biome = self.from_universal('minecraft:plains')  # TODO: perhaps find a way to assign default dynamically
 
         return version_biome

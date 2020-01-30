@@ -1,24 +1,19 @@
+import logging
 import sys
 
-# TODO: look into using the proper logging module to do this
+log = logging.getLogger('pymctranslate')
 
-log_level = 1  # 0 for no logs, 1 or higher for warnings, 2 or higher for info, 3 or higher for debug
+_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+_log_file = logging.FileHandler('pymctranslate.log')
 if 'pymct-debug' in sys.argv:
-    log_level = 3
-elif 'pymct-info' in sys.argv:
-    log_level = 2
+    _log_file.setLevel(logging.DEBUG)
+else:
+    _log_file.setLevel(logging.INFO)
+_log_file.setFormatter(_formatter)
+log.addHandler(_log_file)
 
-
-def debug(msg: str):
-    if log_level >= 3:
-        print(msg)
-
-
-def info(msg: str):
-    if log_level >= 2:
-        print(msg)
-
-
-def warn(msg: str):
-    if log_level >= 1:
-        print(msg)
+_log_console = logging.StreamHandler()
+_log_console.setLevel(logging.ERROR)
+_log_console.setFormatter(_formatter)
+log.addHandler(_log_console)

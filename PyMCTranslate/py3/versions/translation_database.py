@@ -1,9 +1,7 @@
 from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
-import traceback
 
-from PyMCTranslate import Block, BlockEntity, Entity, minified, json_atlas
-from PyMCTranslate.py3.log import info, log_level
+from PyMCTranslate import Block, BlockEntity, Entity, minified, json_atlas, log
 from ..versions.translate import translate
 
 if TYPE_CHECKING:
@@ -49,10 +47,9 @@ class BaseTranslator:
             )
             return output, extra_output, extra_needed, cacheable
         except Exception as e:
-            info(f'Error while converting {object_input} {translation_direction}\n{e}')
-            if log_level >= 3:
-                traceback.print_stack()
-                traceback.print_exc()
+            log.warning(f'Error converting {object_input} {translation_direction}. If this is not a vanilla object this is normal')
+            # traceback.print_stack()
+            log.warning(e, exc_info=True)
             return object_input, None, True, False
 
     def namespaces(self, force_blockstate: bool = False) -> List[str]:

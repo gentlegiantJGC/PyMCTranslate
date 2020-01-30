@@ -3,8 +3,7 @@ from typing import Union, Tuple, List, Callable, TYPE_CHECKING
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
-from PyMCTranslate.py3.log import debug
-from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError
+from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError, log
 from PyMCTranslate.py3.versions import code_functions
 
 if TYPE_CHECKING:
@@ -257,7 +256,7 @@ def translate(
 			# not quite sure how to handle coordinates here.
 			# it makes sense to me to have the wrapper program set the coordinates so none are missed.
 		elif new_data['nbt']:
-			debug(f'New nbt present but no output block entity\nin:{object_input.blockstate}\nout:{output.blockstate}')
+			log.warning(f'New nbt present but no output block entity\nin:{object_input.blockstate}\nout:{output.blockstate}')
 
 	elif output_type == 'entity':
 		# we should have an entity output
@@ -752,7 +751,7 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NB
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['keys'][key], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				elif 'nested_default' in mappings:
 					if mappings['nested_default'] == [{"function": "carry_nbt"}]:
-						debug(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))])}')
+						log.info(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))])}')
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['nested_default'], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif datatype == 'list':
@@ -761,7 +760,7 @@ def _convert_walk_input_nbt(block_input: Union[Block, None], nbt_input: Union[NB
 					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, mappings['index'][str(index)], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 				elif 'nested_default' in mappings:
 					if mappings['nested_default'] == [{"function": "carry_nbt"}]:
-						debug(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))])}')
+						log.info(f'Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))])}')
 					output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, mappings['nested_default'], get_block_callback, relative_location, (nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))]), (output_name, output_type, new_data, extra_needed, cacheable))
 
 		# elif datatype in ('byte', 'short', 'int', 'long', 'float', 'double', 'string'):
