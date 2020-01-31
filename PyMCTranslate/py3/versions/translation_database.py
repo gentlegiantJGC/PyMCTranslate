@@ -18,8 +18,8 @@ class BaseTranslator:
     def _format_key(self, force_blockstate):
         return 'numerical' if not force_blockstate and self._parent_version.has_abstract_format else 'blockstate'
 
-    @staticmethod
     def _translate(
+            self,
             object_input: Union[Block, Entity],
             input_spec: dict,
             mappings: List[dict],
@@ -47,10 +47,10 @@ class BaseTranslator:
             )
             return output, extra_output, extra_needed, cacheable
         except Exception as e:
-            log.warning(f'Error converting {object_input} {translation_direction}. If this is not a vanilla object this is normal')
+            log.error(f'Error converting {self._mode} {object_input} {translation_direction} in {self._parent_version}.')
             # traceback.print_stack()
-            log.warning(f'Error and traceback from the above "{e}"', exc_info=True)
-            return object_input, None, True, False
+            log.error(f'Error and traceback from the above "{e}"', exc_info=True)
+            return object_input, extra_input, True, False
 
     def namespaces(self, force_blockstate: bool = False) -> List[str]:
         """
@@ -190,10 +190,17 @@ class BlockTranslator(BaseTranslator):
         else:
             assert isinstance(extra_input, BlockEntity), 'extra_input must be None or a BlockEntity'
 
+        try:
+            input_spec = self.get_specification(object_input.namespace, object_input.base_name, force_blockstate)
+            mapping = self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate)
+        except KeyError:
+            log.warning(f'Could not find translation information for {self._mode} {object_input} to universal in {self._parent_version}. If this is not a vanilla block ignore this message')
+            return object_input, extra_input, False
+
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self.get_specification(object_input.namespace, object_input.base_name, force_blockstate),
-            self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate),
+            input_spec,
+            mapping,
             self._universal_format,
             True,
             'to universal',
@@ -235,10 +242,20 @@ class BlockTranslator(BaseTranslator):
         else:
             assert isinstance(extra_input, BlockEntity), 'extra_input must be None or a BlockEntity'
 
+        try:
+            input_spec = self._universal_format.block.get_specification(object_input.namespace, object_input.base_name)
+            mapping = self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate)
+        except KeyError:
+            if object_input.namespace == 'minecraft' and list(object_input.properties.keys()) == ['block_data']:
+                log.debug(f'Probably just a quirk block {object_input} from universal in {self._parent_version}.')
+            else:
+                log.warning(f'Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla block ignore this message')
+            return object_input, extra_input, False
+
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self._universal_format.block.get_specification(object_input.namespace, object_input.base_name),
-            self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate),
+            input_spec,
+            mapping,
             self._parent_version,
             force_blockstate,
             'from_universal',
@@ -275,10 +292,17 @@ class EntityTranslator(BaseTranslator):
         """
         assert isinstance(object_input, Entity), 'Input object must be an entity'
 
+        try:
+            input_spec = self.get_specification(object_input.namespace, object_input.base_name, force_blockstate)
+            mapping = self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate)
+        except KeyError:
+            log.warning(f'Could not find translation information for {self._mode} {object_input} to universal in {self._parent_version}. If this is not a vanilla entity ignore this message')
+            return object_input, None
+
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self.get_specification(object_input.namespace, object_input.base_name, force_blockstate),
-            self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate),
+            input_spec,
+            mapping,
             self._universal_format,
             True,
             'to universal'
@@ -306,10 +330,17 @@ class EntityTranslator(BaseTranslator):
         """
         assert isinstance(object_input, Entity), 'Input object must be a block'
 
+        try:
+            input_spec = self._universal_format.entity.get_specification(object_input.namespace, object_input.base_name)
+            mapping = self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate)
+        except KeyError:
+            log.warning(f'Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla entity ignore this message')
+            return object_input, None
+
         output, extra_output, extra_needed, cacheable = self._translate(
             object_input,
-            self._universal_format.entity.get_specification(object_input.namespace, object_input.base_name),
-            self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate),
+            input_spec,
+            mapping,
             self._parent_version,
             force_blockstate,
             'from_universal'
