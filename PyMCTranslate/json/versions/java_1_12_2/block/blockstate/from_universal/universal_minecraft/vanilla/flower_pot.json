@@ -4,6 +4,27 @@
         "options": "minecraft:flower_pot"
     },
     {
+        "function": "carry_properties",
+        "options": {
+            "plant": [
+                "none",
+                "poppy",
+                "dandelion",
+                "oak_sapling",
+                "spruce_sapling",
+                "birch_sapling",
+                "jungle_sapling",
+                "red_mushroom",
+                "brown_mushroom",
+                "cactus",
+                "dead_bush",
+                "fern",
+                "acacia_sapling",
+                "dark_oak_sapling"
+            ]
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",

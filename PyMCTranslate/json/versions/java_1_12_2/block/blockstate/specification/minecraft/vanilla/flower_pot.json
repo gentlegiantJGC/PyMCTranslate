@@ -1,7 +1,28 @@
 {
+    "properties": {
+        "plant": [
+            "none",
+            "poppy",
+            "dandelion",
+            "oak_sapling",
+            "spruce_sapling",
+            "birch_sapling",
+            "jungle_sapling",
+            "red_mushroom",
+            "brown_mushroom",
+            "cactus",
+            "dead_bush",
+            "fern",
+            "acacia_sapling",
+            "dark_oak_sapling"
+        ]
+    },
+    "defaults": {
+        "plant": "none"
+    },
+    "snbt": "{}",
     "nbt_identifier": [
         "minecraft",
         "flower_pot"
-    ],
-    "snbt": "{}"
+    ]
 }
