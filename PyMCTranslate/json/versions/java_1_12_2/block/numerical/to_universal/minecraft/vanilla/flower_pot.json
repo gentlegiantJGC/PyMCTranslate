@@ -3,6 +3,30 @@
         "function": "map_properties",
         "options": {
             "block_data": {
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:flower_pot"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "plant": "none"
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:flower_pot"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "plant": "none"
+                        }
+                    }
+                ],
                 "0": [
                     {
                         "function": "new_block",
