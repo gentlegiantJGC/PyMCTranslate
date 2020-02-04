@@ -12,6 +12,7 @@ os.makedirs('./logs', exist_ok=True)
 _log_file = logging.FileHandler('./logs/pymctranslate.log', 'w')
 if 'pymct-debug' in sys.argv:
     _log_file.setLevel(logging.DEBUG)
+    log.setLevel(logging.DEBUG)
 else:
     _log_file.setLevel(logging.INFO)
 _log_file.setFormatter(_formatter)
