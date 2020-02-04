@@ -4,6 +4,7 @@ import os
 from PyMCTranslate import version
 
 log = logging.getLogger('pymctranslate')
+log.setLevel(logging.INFO)
 
 _formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
@@ -17,7 +18,7 @@ _log_file.setFormatter(_formatter)
 log.addHandler(_log_file)
 
 _log_console = logging.StreamHandler()
-_log_console.setLevel(logging.WARN)
+_log_console.setLevel(logging.WARNING)
 _log_console.setFormatter(_formatter)
 log.addHandler(_log_console)
 
