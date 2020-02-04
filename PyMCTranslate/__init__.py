@@ -12,6 +12,7 @@ except ModuleNotFoundError:
     from PyMCTranslate.py3.amulet_objects.errors import ChunkLoadError
 
 from PyMCTranslate.py3.util import load_json_gz
+version = 1
 from PyMCTranslate.py3.log import log
 
 pymct_dir = os.path.dirname(__file__)

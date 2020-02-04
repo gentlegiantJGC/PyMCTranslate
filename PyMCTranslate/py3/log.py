@@ -1,6 +1,7 @@
 import logging
 import sys
 import os
+from PyMCTranslate import version
 
 log = logging.getLogger('pymctranslate')
 
@@ -19,3 +20,6 @@ _log_console = logging.StreamHandler()
 _log_console.setLevel(logging.WARN)
 _log_console.setFormatter(_formatter)
 log.addHandler(_log_console)
+
+# TODO: find a proper way to implement this
+log.info(f'PyMCTranslate Version 0.{version}')
