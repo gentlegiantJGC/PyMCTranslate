@@ -1,13 +1,105 @@
 [
     {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Items": {
+                    "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "PotionId": {
+                    "type": "short",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "PotionType": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:cauldron"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "cauldron_liquid": "water"
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
             "block_data": {
                 "0": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -17,10 +109,6 @@
                 ],
                 "1": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "level": "0.5"
@@ -28,10 +116,6 @@
                     }
                 ],
                 "2": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -41,10 +125,6 @@
                 ],
                 "3": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "level": "1.5"
@@ -52,10 +132,6 @@
                     }
                 ],
                 "4": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -65,10 +141,6 @@
                 ],
                 "5": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "level": "2.5"
@@ -77,9 +149,61 @@
                 ],
                 "6": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:cauldron"
-                    },
+                        "function": "new_properties",
+                        "options": {
+                            "level": "3"
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "0"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "0.5"
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "1"
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "1.5"
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "2"
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "level": "2.5"
+                        }
+                    }
+                ],
+                "14": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -88,12 +212,6 @@
                     }
                 ]
             }
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "cauldron_liquid": "water"
         }
     }
 ]
