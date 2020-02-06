@@ -494,7 +494,22 @@ def _translate(
 			if nbt_input is None:
 				extra_needed = True
 			else:
-				output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, translate_function["options"], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
+				custom_nbt_path = translate_function.get('path', [])
+				if custom_nbt_path:
+					nbt_temp = index_nbt(nbt_input, ('', 'compound', custom_nbt_path))
+					if nbt_temp is None:
+						log.error(f'Expected nbt data at {custom_nbt_path}')
+					elif not isinstance(nbt_temp, datatype_to_nbt(custom_nbt_path[-1][-1])):
+						log.error(f'Expected nbt data at {custom_nbt_path} to be an {custom_nbt_path[-1][-1]} tag but got {nbt_temp.__class__.__name__}')
+					else:
+						output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(
+							block_input, nbt_input, translate_function["options"], get_block_callback,
+							relative_location, ('', 'compound', custom_nbt_path),
+							(output_name, output_type, new_data, extra_needed, cacheable)
+						)
+
+				else:
+					output_name, output_type, new_data, extra_needed, cacheable = _convert_walk_input_nbt(block_input, nbt_input, translate_function["options"], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
 		elif 'new_nbt' == function_name:
 			# when used outside walk_input_nbt
