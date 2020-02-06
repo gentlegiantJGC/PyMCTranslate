@@ -21,6 +21,19 @@
                         "options": {
                             "block_data": "1"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "dandelion": [
@@ -29,6 +42,19 @@
                         "options": {
                             "block_data": "2"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:yellow_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "oak_sapling": [
@@ -37,6 +63,19 @@
                         "options": {
                             "block_data": "3"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:sapling\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "spruce_sapling": [
@@ -45,6 +84,19 @@
                         "options": {
                             "block_data": "4"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:sapling\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "1"
+                            }
+                        ]
                     }
                 ],
                 "birch_sapling": [
@@ -53,6 +105,19 @@
                         "options": {
                             "block_data": "5"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:sapling\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "2"
+                            }
+                        ]
                     }
                 ],
                 "jungle_sapling": [
@@ -61,6 +126,19 @@
                         "options": {
                             "block_data": "6"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:sapling\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "3"
+                            }
+                        ]
                     }
                 ],
                 "red_mushroom": [
@@ -69,6 +147,19 @@
                         "options": {
                             "block_data": "7"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_mushroom\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "brown_mushroom": [
@@ -77,6 +168,19 @@
                         "options": {
                             "block_data": "8"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:brown_mushroom\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "cactus": [
@@ -85,6 +189,19 @@
                         "options": {
                             "block_data": "9"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:cactus\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "dead_bush": [
@@ -93,6 +210,19 @@
                         "options": {
                             "block_data": "10"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:deadbush\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "0"
+                            }
+                        ]
                     }
                 ],
                 "fern": [
@@ -101,6 +231,19 @@
                         "options": {
                             "block_data": "11"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:tallgrass\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "2"
+                            }
+                        ]
                     }
                 ],
                 "acacia_sapling": [
@@ -109,6 +252,19 @@
                         "options": {
                             "block_data": "12"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:sapling\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "4"
+                            }
+                        ]
                     }
                 ],
                 "dark_oak_sapling": [
@@ -117,6 +273,139 @@
                         "options": {
                             "block_data": "13"
                         }
+                    },
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:sapling\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "5"
+                            }
+                        ]
+                    }
+                ],
+                "blue_orchid": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "1"
+                            }
+                        ]
+                    }
+                ],
+                "allium": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "2"
+                            }
+                        ]
+                    }
+                ],
+                "azure_bluet": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "3"
+                            }
+                        ]
+                    }
+                ],
+                "red_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "4"
+                            }
+                        ]
+                    }
+                ],
+                "orange_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "5"
+                            }
+                        ]
+                    }
+                ],
+                "white_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "6"
+                            }
+                        ]
+                    }
+                ],
+                "pink_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "7"
+                            }
+                        ]
+                    }
+                ],
+                "oxeye_daisy": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Item",
+                                "value": "\"minecraft:red_flower\""
+                            },
+                            {
+                                "key": "Data",
+                                "value": "8"
+                            }
+                        ]
                     }
                 ]
             }
@@ -126,37 +415,7 @@
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
-            "keys": {
-                "utags": {
-                    "type": "compound",
-                    "nested_default": [],
-                    "self_default": [],
-                    "keys": {
-                        "Data": {
-                            "type": "int",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "Item": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                }
-            }
+            "keys": {}
         }
     },
     {

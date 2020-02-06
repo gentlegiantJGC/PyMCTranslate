@@ -22,41 +22,6 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "Data": {
-                            "type": "int",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": [
-                                            [
-                                                "PlantBlock",
-                                                "compound"
-                                            ]
-                                        ],
-                                        "key": "val",
-                                        "type": "short"
-                                    }
-                                }
-                            ]
-                        },
-                        "Item": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": [
-                                            [
-                                                "PlantBlock",
-                                                "compound"
-                                            ]
-                                        ],
-                                        "key": "name"
-                                    }
-                                }
-                            ]
-                        },
                         "isMovable": {
                             "type": "byte",
                             "functions": [
@@ -94,6 +59,244 @@
                     "options": {}
                 }
             ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "plant": {
+                "dandelion": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:yellow_flower\", val: 0s}"
+                            }
+                        ]
+                    }
+                ],
+                "poppy": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 0s}"
+                            }
+                        ]
+                    }
+                ],
+                "blue_orchid": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 1s}"
+                            }
+                        ]
+                    }
+                ],
+                "allium": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 2s}"
+                            }
+                        ]
+                    }
+                ],
+                "azure_bluet": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 3s}"
+                            }
+                        ]
+                    }
+                ],
+                "red_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 4s}"
+                            }
+                        ]
+                    }
+                ],
+                "orange_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 5s}"
+                            }
+                        ]
+                    }
+                ],
+                "white_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 6s}"
+                            }
+                        ]
+                    }
+                ],
+                "pink_tulip": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 7s}"
+                            }
+                        ]
+                    }
+                ],
+                "oxeye_daisy": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_flower\", val: 8s}"
+                            }
+                        ]
+                    }
+                ],
+                "oak_sapling": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:sapling\", val: 0s}"
+                            }
+                        ]
+                    }
+                ],
+                "spruce_sapling": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:sapling\", val: 1s}"
+                            }
+                        ]
+                    }
+                ],
+                "birch_sapling": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:sapling\", val: 2s}"
+                            }
+                        ]
+                    }
+                ],
+                "jungle_sapling": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:sapling\", val: 3s}"
+                            }
+                        ]
+                    }
+                ],
+                "acacia_sapling": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:sapling\", val: 4s}"
+                            }
+                        ]
+                    }
+                ],
+                "dark_oak_sapling": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:sapling\", val: 5s}"
+                            }
+                        ]
+                    }
+                ],
+                "red_mushroom": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:red_mushroom\", val: 0s}"
+                            }
+                        ]
+                    }
+                ],
+                "brown_mushroom": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:brown_mushroom\", val: 0s}"
+                            }
+                        ]
+                    }
+                ],
+                "fern": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:tallgrass\", val: 2s}"
+                            }
+                        ]
+                    }
+                ],
+                "dead_bush": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:deadbush\", val: 0s}"
+                            }
+                        ]
+                    }
+                ],
+                "cactus": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:cactus\", val: 0s}"
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     }
 ]

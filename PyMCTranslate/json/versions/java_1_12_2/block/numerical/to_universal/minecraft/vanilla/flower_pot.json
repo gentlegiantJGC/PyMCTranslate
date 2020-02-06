@@ -203,37 +203,421 @@
         "options": {
             "type": "compound",
             "keys": {
-                "Data": {
-                    "type": "int",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "Item": {
                     "type": "string",
                     "functions": [
                         {
-                            "function": "carry_nbt",
+                            "function": "map_nbt",
                             "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
+                                "cases": {
+                                    "\"minecraft:yellow_flower\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "dandelion"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "dandelion"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:red_flower\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "poppy"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "poppy"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "1": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "blue_orchid"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "2": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "allium"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "3": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "azure_bluet"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "4": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "red_tulip"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "5": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "orange_tulip"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "6": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "white_tulip"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "7": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "pink_tulip"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "8": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "oxeye_daisy"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:sapling\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "oak_sapling"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "oak_sapling"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "1": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "spruce_sapling"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "2": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "birch_sapling"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "3": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "jungle_sapling"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "4": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "acacia_sapling"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "5": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "dark_oak_sapling"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:red_mushroom\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "red_mushroom"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "red_mushroom"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:brown_mushroom\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "brown_mushroom"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "brown_mushroom"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:tallgrass\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "fern"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "2": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "fern"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:deadbush\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "dead_bush"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "dead_bush"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "\"minecraft:cactus\"": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "plant": "cactus"
+                                            }
+                                        },
+                                        {
+                                            "function": "walk_input_nbt",
+                                            "path": [
+                                                [
+                                                    "Data",
+                                                    "int"
+                                                ]
+                                            ],
+                                            "options": {
+                                                "type": "int",
+                                                "functions": [
+                                                    {
+                                                        "function": "map_nbt",
+                                                        "options": {
+                                                            "cases": {
+                                                                "0": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "plant": "cactus"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     ]
-                                ]
+                                }
                             }
                         }
                     ]
+                },
+                "Data": {
+                    "type": "int",
+                    "functions": []
                 }
             },
             "self_default": [
