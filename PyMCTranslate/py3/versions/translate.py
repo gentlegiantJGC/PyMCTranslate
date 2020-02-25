@@ -1,4 +1,4 @@
-from typing import Union, Tuple, List, Callable, TYPE_CHECKING
+from typing import Union, Tuple, List, Dict, Callable, TYPE_CHECKING, Type
 
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
@@ -19,7 +19,7 @@ def get_block_at(relative_location: Tuple[int, int, int]) -> Tuple[Union[Block, 
 	return None, None
 
 
-_datatype_to_nbt = {
+_datatype_to_nbt: Dict[str, Type[amulet_nbt.BaseValueType]] = {
 	'byte': TAG_Byte,
 	'short': TAG_Short,
 	'int': TAG_Int,
@@ -53,12 +53,12 @@ _int_to_nbt = [None, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Doub
 _int_to_datatype = [None, 'byte', 'short', 'int', 'long', 'float', 'double', 'byte_array', 'string', 'list', 'compound', 'int_array', 'long_array']
 
 
-def datatype_to_nbt(datatype: str) -> amulet_nbt._TAG_Value.__class__:
+def datatype_to_nbt(datatype: str) -> Type[amulet_nbt.BaseValueType]:
 	return _datatype_to_nbt[datatype]
 
 
 def nbt_to_datatype(
-	nbt: amulet_nbt._TAG_Value
+	nbt: amulet_nbt.BaseValueType
 ) -> str:
 	return _nbt_to_datatype[nbt.__class__.__name__]
 
@@ -226,9 +226,8 @@ def translate(
 		spec = output_version.block.get_specification(namespace, base_name, force_blockstate)
 		properties = spec.get('defaults', {})
 
-		# cast to NBT if needed
-		if spec.get('nbt_properties', False):
-			properties = {prop: amulet_nbt.from_snbt(val) for prop, val in properties.items()}
+		# cast to NBT
+		properties = {prop: amulet_nbt.from_snbt(val) for prop, val in properties.items()}
 
 		for key, val in new_data['properties'].items():
 			properties[key] = val
@@ -372,15 +371,11 @@ def _translate(
 			# {
 			# 	"function": "new_properties",
 			# 	"options": {
-			# 		"<property_name>": "<property_value",
-			# 		"<nbt_property_name>": ['snbt', "<SNBT>"]    # eg "val", "54b", "0.0d"
+			# 		"<property_name>": "<SNBT>",  # eg "val", "54b"
 			# 	}
 			# }
 			for key, val in translate_function["options"].items():
-				if isinstance(val, str):
-					new_data['properties'][key] = val
-				elif isinstance(val, list) and val[0] == 'snbt':
-					new_data['properties'][key] = amulet_nbt.from_snbt(val[1])
+				new_data['properties'][key] = amulet_nbt.from_snbt(val)
 
 		elif 'carry_properties' == function_name:
 			# {
@@ -394,9 +389,7 @@ def _translate(
 			for key in translate_function["options"]:
 				if key in block_input.properties:
 					val = block_input.properties[key]
-					if isinstance(val, str):
-						hash_val = val
-					elif isinstance(val, (TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array)):
+					if isinstance(val, amulet_nbt.BaseValueType):
 						hash_val = val.to_snbt()
 					else:
 						continue
@@ -408,12 +401,7 @@ def _translate(
 			# 	"function": "map_properties",
 			# 	"options": {
 			# 		"<property_name>": {
-			# 			"<property_value": [
-			# 				<functions>
-			# 			]
-			# 		},
-			# 		"<nbt_property_name>": {
-			# 			'TAG_String("<property_value>")': [
+			# 			"<SNBT>": [
 			# 				<functions>
 			# 			]
 			# 		}
@@ -423,10 +411,10 @@ def _translate(
 			for key in translate_function["options"]:
 				if key in block_input.properties:
 					val = block_input.properties[key]
-					if isinstance(val, amulet_nbt._TAG_Value):
+					if isinstance(val, amulet_nbt.BaseValueType):
 						val = val.to_snbt()
 					else:
-						val = str(val)
+						continue
 					if val in translate_function["options"][key]:
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input, nbt_input, translate_function["options"][key][val], get_block_callback, relative_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 
@@ -672,7 +660,7 @@ def _translate(
 				elif out_name == 'new_properties':
 					assert isinstance(out, dict)
 					for key, val in out.items():
-						new_data['properties'][key] = val
+						new_data['properties'][key] = amulet_nbt.from_snbt(val)
 				elif out_name == 'new_nbt':
 					assert isinstance(out, list)
 					for val in out:
@@ -686,7 +674,7 @@ def objectify_nbt(nbt: NBTFile) -> Tuple[str, dict]:
 	return _objectify_nbt(nbt.value)
 
 
-def _objectify_nbt(nbt: amulet_nbt._TAG_Value) -> Tuple[str, Union[dict, list, int, str]]:
+def _objectify_nbt(nbt: amulet_nbt.BaseValueType) -> Tuple[str, Union[dict, list, int, str]]:
 	nbt_type = nbt_to_datatype(nbt)
 	nbt_data = nbt.value
 	if isinstance(nbt_data, dict):

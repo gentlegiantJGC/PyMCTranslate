@@ -108,8 +108,7 @@ def get_blockstates(blockstate_version, namespace_str, base_name):
 		keys, values = zip(*properties.items())
 	else:
 		keys, values = (), ()
-	if block_specification.get("nbt_properties", False):
-		values = tuple([nbt.from_snbt(val) for val in prop] for prop in values)
+	values = tuple([nbt.from_snbt(val) for val in prop] for prop in values)
 
 	for spec_ in itertools.product(*values):
 		spec = dict(zip(keys, spec_))
