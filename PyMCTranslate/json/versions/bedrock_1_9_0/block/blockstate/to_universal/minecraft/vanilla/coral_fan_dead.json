@@ -6,12 +6,6 @@
     {
         "function": "carry_properties",
         "options": {
-            "facing": [
-                "\"up\""
-            ],
-            "dead": [
-                "\"true\""
-            ],
             "type": [
                 "\"tube\"",
                 "\"brain\"",
@@ -19,6 +13,13 @@
                 "\"fire\"",
                 "\"horn\""
             ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "facing": "\"up\"",
+            "dead": "\"true\""
         }
     }
 ]
