@@ -7,15 +7,15 @@
         "function": "carry_properties",
         "options": {
             "damage": [
-                "normal",
-                "chipped",
-                "damaged"
+                "\"normal\"",
+                "\"chipped\"",
+                "\"damaged\""
             ],
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

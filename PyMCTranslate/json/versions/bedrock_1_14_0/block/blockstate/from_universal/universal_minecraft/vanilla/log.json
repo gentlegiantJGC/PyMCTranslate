@@ -7,56 +7,44 @@
         "function": "map_properties",
         "options": {
             "stripped": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "old_log_type": [
-                                                "snbt",
-                                                "\"oak\""
-                                            ]
+                                            "old_log_type": "\"oak\""
                                         }
                                     }
                                 ],
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "old_log_type": [
-                                                "snbt",
-                                                "\"spruce\""
-                                            ]
+                                            "old_log_type": "\"spruce\""
                                         }
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "old_log_type": [
-                                                "snbt",
-                                                "\"birch\""
-                                            ]
+                                            "old_log_type": "\"birch\""
                                         }
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "old_log_type": [
-                                                "snbt",
-                                                "\"jungle\""
-                                            ]
+                                            "old_log_type": "\"jungle\""
                                         }
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log2"
@@ -64,14 +52,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "new_log_type": [
-                                                "snbt",
-                                                "\"acacia\""
-                                            ]
+                                            "new_log_type": "\"acacia\""
                                         }
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log2"
@@ -79,10 +64,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "new_log_type": [
-                                                "snbt",
-                                                "\"dark_oak\""
-                                            ]
+                                            "new_log_type": "\"dark_oak\""
                                         }
                                     }
                                 ]
@@ -90,42 +72,42 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_spruce_log"
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_birch_log"
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_jungle_log"
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_acacia_log"
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_dark_oak_log"
                                     }
                                 ],
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_oak_log"
@@ -137,36 +119,27 @@
                 ]
             },
             "axis": {
-                "y": [
+                "\"y\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"y\""
-                            ]
+                            "pillar_axis": "\"y\""
                         }
                     }
                 ],
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"x\""
-                            ]
+                            "pillar_axis": "\"x\""
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"z\""
-                            ]
+                            "pillar_axis": "\"z\""
                         }
                     }
                 ]

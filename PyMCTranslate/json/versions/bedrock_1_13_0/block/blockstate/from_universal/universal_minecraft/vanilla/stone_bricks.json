@@ -7,58 +7,43 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stone_brick_type": [
-                                "snbt",
-                                "\"default\""
-                            ]
+                            "stone_brick_type": "\"default\""
                         }
                     }
                 ],
-                "mossy": [
+                "\"mossy\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stone_brick_type": [
-                                "snbt",
-                                "\"mossy\""
-                            ]
+                            "stone_brick_type": "\"mossy\""
                         }
                     }
                 ],
-                "cracked": [
+                "\"cracked\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stone_brick_type": [
-                                "snbt",
-                                "\"cracked\""
-                            ]
+                            "stone_brick_type": "\"cracked\""
                         }
                     }
                 ],
-                "chiseled": [
+                "\"chiseled\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stone_brick_type": [
-                                "snbt",
-                                "\"chiseled\""
-                            ]
+                            "stone_brick_type": "\"chiseled\""
                         }
                     }
                 ],
-                "smooth": [
+                "\"smooth\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stone_brick_type": [
-                                "snbt",
-                                "\"smooth\""
-                            ]
+                            "stone_brick_type": "\"smooth\""
                         }
                     }
                 ]

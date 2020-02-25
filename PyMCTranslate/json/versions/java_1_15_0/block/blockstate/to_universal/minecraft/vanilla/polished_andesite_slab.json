@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "polished_andesite"
+            "material": "\"polished_andesite\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "type": [
-                "top",
-                "bottom",
-                "double"
+                "\"top\"",
+                "\"bottom\"",
+                "\"double\""
             ]
         }
     }

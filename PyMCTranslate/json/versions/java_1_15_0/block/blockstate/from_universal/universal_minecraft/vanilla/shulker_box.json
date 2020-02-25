@@ -113,103 +113,103 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "default": [
+                "\"default\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
                     }
                 ],
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:white_shulker_box"
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:orange_shulker_box"
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:magenta_shulker_box"
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:light_blue_shulker_box"
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:yellow_shulker_box"
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lime_shulker_box"
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:pink_shulker_box"
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:gray_shulker_box"
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:light_gray_shulker_box"
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:cyan_shulker_box"
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:purple_shulker_box"
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:blue_shulker_box"
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:brown_shulker_box"
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:green_shulker_box"
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_shulker_box"
                     }
                 ],
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:black_shulker_box"
@@ -222,12 +222,12 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ]
         }
     }

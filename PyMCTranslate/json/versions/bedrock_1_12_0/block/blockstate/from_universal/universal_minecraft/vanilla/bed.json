@@ -52,7 +52,7 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -63,7 +63,7 @@
                         ]
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -74,7 +74,7 @@
                         ]
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -85,7 +85,7 @@
                         ]
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -96,7 +96,7 @@
                         ]
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -107,7 +107,7 @@
                         ]
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -118,7 +118,7 @@
                         ]
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -129,7 +129,7 @@
                         ]
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -140,7 +140,7 @@
                         ]
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -151,7 +151,7 @@
                         ]
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -162,7 +162,7 @@
                         ]
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -173,7 +173,7 @@
                         ]
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -184,7 +184,7 @@
                         ]
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -195,7 +195,7 @@
                         ]
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -206,7 +206,7 @@
                         ]
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -217,7 +217,7 @@
                         ]
                     }
                 ],
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -239,36 +239,36 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "east",
-                "north",
-                "south",
-                "west"
+                "\"east\"",
+                "\"north\"",
+                "\"south\"",
+                "\"west\""
             ],
             "occupied": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "part": [
-                "foot",
-                "head"
+                "\"foot\"",
+                "\"head\""
             ],
             "color": [
-                "white",
-                "orange",
-                "magenta",
-                "light_blue",
-                "yellow",
-                "lime",
-                "pink",
-                "gray",
-                "light_gray",
-                "cyan",
-                "purple",
-                "blue",
-                "brown",
-                "green",
-                "red",
-                "black"
+                "\"white\"",
+                "\"orange\"",
+                "\"magenta\"",
+                "\"light_blue\"",
+                "\"yellow\"",
+                "\"lime\"",
+                "\"pink\"",
+                "\"gray\"",
+                "\"light_gray\"",
+                "\"cyan\"",
+                "\"purple\"",
+                "\"blue\"",
+                "\"brown\"",
+                "\"green\"",
+                "\"red\"",
+                "\"black\""
             ]
         }
     }

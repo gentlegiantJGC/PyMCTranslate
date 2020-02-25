@@ -6,17 +6,17 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "oak",
-            "stripped": "false"
+            "material": "\"oak\"",
+            "stripped": "\"false\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

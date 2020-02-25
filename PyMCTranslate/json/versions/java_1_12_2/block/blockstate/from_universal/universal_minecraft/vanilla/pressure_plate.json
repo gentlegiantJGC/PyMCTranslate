@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "stone": [
+                "\"stone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_pressure_plate"
                     }
                 ],
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wooden_pressure_plate"
@@ -26,8 +26,8 @@
         "function": "carry_properties",
         "options": {
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

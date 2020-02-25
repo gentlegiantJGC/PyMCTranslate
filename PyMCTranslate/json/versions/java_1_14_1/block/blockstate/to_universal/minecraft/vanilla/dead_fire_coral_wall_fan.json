@@ -6,18 +6,18 @@
     {
         "function": "new_properties",
         "options": {
-            "type": "fire",
-            "dead": "true"
+            "type": "\"fire\"",
+            "dead": "\"true\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

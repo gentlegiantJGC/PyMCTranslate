@@ -11,7 +11,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "underwater": "false"
+                            "underwater": "\"false\""
                         }
                     }
                 ],
@@ -19,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "underwater": "true"
+                            "underwater": "\"true\""
                         }
                     }
                 ]
@@ -29,7 +29,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "unstable": "false"
+                            "unstable": "\"false\""
                         }
                     }
                 ],
@@ -37,7 +37,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "unstable": "true"
+                            "unstable": "\"true\""
                         }
                     }
                 ]

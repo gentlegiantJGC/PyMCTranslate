@@ -1,19 +1,19 @@
 {
     "properties": {
         "damage": [
-            "normal",
-            "chipped",
-            "damaged"
+            "\"normal\"",
+            "\"chipped\"",
+            "\"damaged\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "damage": "normal",
-        "facing": "north"
+        "damage": "\"normal\"",
+        "facing": "\"north\""
     }
 }

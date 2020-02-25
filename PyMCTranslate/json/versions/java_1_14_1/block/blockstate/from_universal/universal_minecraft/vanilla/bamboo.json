@@ -7,13 +7,13 @@
         "function": "carry_properties",
         "options": {
             "leaves": [
-                "none",
-                "small",
-                "large"
+                "\"none\"",
+                "\"small\"",
+                "\"large\""
             ],
             "stage": [
-                "0",
-                "1"
+                "\"0\"",
+                "\"1\""
             ]
         }
     },
@@ -21,19 +21,19 @@
         "function": "map_properties",
         "options": {
             "thickness": {
-                "thin": [
+                "\"thin\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "0"
+                            "age": "\"0\""
                         }
                     }
                 ],
-                "thick": [
+                "\"thick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "1"
+                            "age": "\"1\""
                         }
                     }
                 ]

@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "type": {
-                "tube": [
+                "\"tube\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:tube_coral_fan"
@@ -16,7 +16,7 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:tube_coral_fan"
@@ -25,13 +25,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:tube_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:tube_coral_wall_fan"
@@ -39,11 +39,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:tube_coral_wall_fan"
@@ -51,11 +51,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:tube_coral_wall_fan"
@@ -63,11 +63,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:tube_coral_wall_fan"
@@ -75,7 +75,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -83,7 +83,7 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_tube_coral_fan"
@@ -92,13 +92,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_tube_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_tube_coral_wall_fan"
@@ -106,11 +106,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_tube_coral_wall_fan"
@@ -118,11 +118,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_tube_coral_wall_fan"
@@ -130,11 +130,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_tube_coral_wall_fan"
@@ -142,7 +142,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -154,7 +154,7 @@
                         }
                     }
                 ],
-                "brain": [
+                "\"brain\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:brain_coral_fan"
@@ -163,7 +163,7 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:brain_coral_fan"
@@ -172,13 +172,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brain_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brain_coral_wall_fan"
@@ -186,11 +186,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brain_coral_wall_fan"
@@ -198,11 +198,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brain_coral_wall_fan"
@@ -210,11 +210,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brain_coral_wall_fan"
@@ -222,7 +222,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -230,7 +230,7 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_brain_coral_fan"
@@ -239,13 +239,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_brain_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_brain_coral_wall_fan"
@@ -253,11 +253,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_brain_coral_wall_fan"
@@ -265,11 +265,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_brain_coral_wall_fan"
@@ -277,11 +277,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_brain_coral_wall_fan"
@@ -289,7 +289,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -301,7 +301,7 @@
                         }
                     }
                 ],
-                "bubble": [
+                "\"bubble\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:bubble_coral_fan"
@@ -310,7 +310,7 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:bubble_coral_fan"
@@ -319,13 +319,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:bubble_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:bubble_coral_wall_fan"
@@ -333,11 +333,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:bubble_coral_wall_fan"
@@ -345,11 +345,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:bubble_coral_wall_fan"
@@ -357,11 +357,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:bubble_coral_wall_fan"
@@ -369,7 +369,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -377,7 +377,7 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_bubble_coral_fan"
@@ -386,13 +386,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_bubble_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_bubble_coral_wall_fan"
@@ -400,11 +400,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_bubble_coral_wall_fan"
@@ -412,11 +412,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_bubble_coral_wall_fan"
@@ -424,11 +424,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_bubble_coral_wall_fan"
@@ -436,7 +436,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -448,7 +448,7 @@
                         }
                     }
                 ],
-                "fire": [
+                "\"fire\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fire_coral_fan"
@@ -457,7 +457,7 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:fire_coral_fan"
@@ -466,13 +466,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:fire_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:fire_coral_wall_fan"
@@ -480,11 +480,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:fire_coral_wall_fan"
@@ -492,11 +492,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:fire_coral_wall_fan"
@@ -504,11 +504,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:fire_coral_wall_fan"
@@ -516,7 +516,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -524,7 +524,7 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_fire_coral_fan"
@@ -533,13 +533,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_fire_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_fire_coral_wall_fan"
@@ -547,11 +547,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_fire_coral_wall_fan"
@@ -559,11 +559,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_fire_coral_wall_fan"
@@ -571,11 +571,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_fire_coral_wall_fan"
@@ -583,7 +583,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -595,7 +595,7 @@
                         }
                     }
                 ],
-                "horn": [
+                "\"horn\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:horn_coral_fan"
@@ -604,7 +604,7 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:horn_coral_fan"
@@ -613,13 +613,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:horn_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:horn_coral_wall_fan"
@@ -627,11 +627,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:horn_coral_wall_fan"
@@ -639,11 +639,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:horn_coral_wall_fan"
@@ -651,11 +651,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:horn_coral_wall_fan"
@@ -663,7 +663,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]
@@ -671,7 +671,7 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_horn_coral_fan"
@@ -680,13 +680,13 @@
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "up": [
+                                                "\"up\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_horn_coral_fan"
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_horn_coral_wall_fan"
@@ -694,11 +694,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "north"
+                                                            "facing": "\"north\""
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_horn_coral_wall_fan"
@@ -706,11 +706,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "south"
+                                                            "facing": "\"south\""
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_horn_coral_wall_fan"
@@ -718,11 +718,11 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "west"
+                                                            "facing": "\"west\""
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:dead_horn_coral_wall_fan"
@@ -730,7 +730,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "facing": "east"
+                                                            "facing": "\"east\""
                                                         }
                                                     }
                                                 ]

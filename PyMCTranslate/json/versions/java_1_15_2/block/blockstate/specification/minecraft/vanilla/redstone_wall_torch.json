@@ -1,18 +1,18 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "lit": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "lit": "true"
+        "facing": "\"north\"",
+        "lit": "\"true\""
     }
 }

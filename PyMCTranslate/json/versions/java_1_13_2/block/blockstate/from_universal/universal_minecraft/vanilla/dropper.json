@@ -113,16 +113,16 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ],
             "triggered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

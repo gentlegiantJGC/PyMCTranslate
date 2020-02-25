@@ -6,23 +6,23 @@
     {
         "function": "new_properties",
         "options": {
-            "powered": "true"
+            "powered": "\"true\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "delay": [
-                "1",
-                "2",
-                "3",
-                "4"
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\""
             ],
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

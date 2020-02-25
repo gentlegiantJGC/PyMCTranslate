@@ -7,18 +7,18 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "up": [
+                "\"up\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_dead"
@@ -26,82 +26,61 @@
                                 ]
                             },
                             "type": {
-                                "tube": [
+                                "\"tube\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_color": [
-                                                "snbt",
-                                                "\"blue\""
-                                            ]
+                                            "coral_color": "\"blue\""
                                         }
                                     }
                                 ],
-                                "brain": [
+                                "\"brain\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_color": [
-                                                "snbt",
-                                                "\"pink\""
-                                            ]
+                                            "coral_color": "\"pink\""
                                         }
                                     }
                                 ],
-                                "bubble": [
+                                "\"bubble\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_color": [
-                                                "snbt",
-                                                "\"purple\""
-                                            ]
+                                            "coral_color": "\"purple\""
                                         }
                                     }
                                 ],
-                                "fire": [
+                                "\"fire\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_color": [
-                                                "snbt",
-                                                "\"red\""
-                                            ]
+                                            "coral_color": "\"red\""
                                         }
                                     }
                                 ],
-                                "horn": [
+                                "\"horn\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_color": [
-                                                "snbt",
-                                                "\"yellow\""
-                                            ]
+                                            "coral_color": "\"yellow\""
                                         }
                                     }
                                 ]
                             },
                             "coral_fan_direction": {
-                                "0": [
+                                "\"0\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_fan_direction": [
-                                                "snbt",
-                                                "0"
-                                            ]
+                                            "coral_fan_direction": "0"
                                         }
                                     }
                                 ],
-                                "1": [
+                                "\"1\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_fan_direction": [
-                                                "snbt",
-                                                "1"
-                                            ]
+                                            "coral_fan_direction": "1"
                                         }
                                     }
                                 ]
@@ -109,45 +88,36 @@
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "coral_direction": "0"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "dead_bit": "0b"
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "dead_bit": "1b"
                                         }
                                     }
                                 ]
                             },
                             "type": {
-                                "tube": [
+                                "\"tube\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -155,14 +125,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "brain": [
+                                "\"brain\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -170,14 +137,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "bubble": [
+                                "\"bubble\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -185,14 +149,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "fire": [
+                                "\"fire\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -200,14 +161,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "horn": [
+                                "\"horn\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang3"
@@ -215,10 +173,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ]
@@ -226,45 +181,36 @@
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "coral_direction": "1"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "dead_bit": "0b"
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "dead_bit": "1b"
                                         }
                                     }
                                 ]
                             },
                             "type": {
-                                "tube": [
+                                "\"tube\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -272,14 +218,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "brain": [
+                                "\"brain\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -287,14 +230,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "bubble": [
+                                "\"bubble\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -302,14 +242,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "fire": [
+                                "\"fire\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -317,14 +254,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "horn": [
+                                "\"horn\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang3"
@@ -332,10 +266,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ]
@@ -343,45 +274,36 @@
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "coral_direction": "2"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "dead_bit": "0b"
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "dead_bit": "1b"
                                         }
                                     }
                                 ]
                             },
                             "type": {
-                                "tube": [
+                                "\"tube\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -389,14 +311,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "brain": [
+                                "\"brain\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -404,14 +323,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "bubble": [
+                                "\"bubble\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -419,14 +335,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "fire": [
+                                "\"fire\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -434,14 +347,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "horn": [
+                                "\"horn\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang3"
@@ -449,10 +359,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ]
@@ -460,45 +367,36 @@
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "coral_direction": "3"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "dead_bit": "0b"
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "dead_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "dead_bit": "1b"
                                         }
                                     }
                                 ]
                             },
                             "type": {
-                                "tube": [
+                                "\"tube\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -506,14 +404,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "brain": [
+                                "\"brain\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang"
@@ -521,14 +416,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "bubble": [
+                                "\"bubble\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -536,14 +428,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ],
-                                "fire": [
+                                "\"fire\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang2"
@@ -551,14 +440,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "coral_hang_type_bit": "1b"
                                         }
                                     }
                                 ],
-                                "horn": [
+                                "\"horn\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:coral_fan_hang3"
@@ -566,10 +452,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "coral_hang_type_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "coral_hang_type_bit": "0b"
                                         }
                                     }
                                 ]

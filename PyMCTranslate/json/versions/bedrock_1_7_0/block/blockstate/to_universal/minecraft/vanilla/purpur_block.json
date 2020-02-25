@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "purpur_block": [
+                "\"purpur_block\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:purpur_block"
                     }
                 ],
-                "purpur_pillar_x": [
+                "\"purpur_pillar_x\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:purpur_pillar"
@@ -21,11 +21,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "axis": "x"
+                            "axis": "\"x\""
                         }
                     }
                 ],
-                "purpur_pillar_y": [
+                "\"purpur_pillar_y\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:purpur_pillar"
@@ -33,11 +33,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "axis": "y"
+                            "axis": "\"y\""
                         }
                     }
                 ],
-                "purpur_pillar_z": [
+                "\"purpur_pillar_z\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:purpur_pillar"
@@ -45,7 +45,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "axis": "z"
+                            "axis": "\"z\""
                         }
                     }
                 ]

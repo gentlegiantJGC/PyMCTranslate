@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:ender_chest"
@@ -19,7 +19,7 @@
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:ender_chest"
@@ -31,7 +31,7 @@
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:ender_chest"
@@ -43,7 +43,7 @@
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:ender_chest"

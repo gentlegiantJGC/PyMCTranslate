@@ -7,17 +7,17 @@
         "function": "map_properties",
         "options": {
             "has_bottle_2": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "has_bottle_1": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "has_bottle_0": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -29,7 +29,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -45,12 +45,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "has_bottle_0": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -62,7 +62,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -82,17 +82,17 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "has_bottle_1": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "has_bottle_0": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -104,7 +104,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -120,12 +120,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "has_bottle_0": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"
@@ -137,7 +137,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "new_block",
                                                         "options": "minecraft:brewing_stand"

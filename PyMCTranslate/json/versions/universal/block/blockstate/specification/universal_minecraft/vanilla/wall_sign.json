@@ -1,23 +1,23 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "material": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle",
-            "acacia",
-            "dark_oak"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "material": "oak"
+        "facing": "\"north\"",
+        "material": "\"oak\""
     },
     "nbt_identifier": [
         "universal_minecraft",

@@ -1,19 +1,19 @@
 {
     "properties": {
         "facing": [
-            "south",
-            "west",
-            "north",
-            "east"
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
         ],
         "mode": [
-            "compare",
-            "subtract"
+            "\"compare\"",
+            "\"subtract\""
         ]
     },
     "defaults": {
-        "facing": "south",
-        "mode": "compare"
+        "facing": "\"south\"",
+        "mode": "\"compare\""
     },
     "snbt": "{OutputSignal: 0, isMovable: 1b}",
     "nbt_identifier": [

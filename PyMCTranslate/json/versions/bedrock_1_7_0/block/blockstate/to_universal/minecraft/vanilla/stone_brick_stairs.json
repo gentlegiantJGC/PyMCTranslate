@@ -6,21 +6,21 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "stone_brick"
+            "material": "\"stone_brick\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\""
             ],
             "half": [
-                "bottom",
-                "top"
+                "\"bottom\"",
+                "\"top\""
             ]
         }
     }

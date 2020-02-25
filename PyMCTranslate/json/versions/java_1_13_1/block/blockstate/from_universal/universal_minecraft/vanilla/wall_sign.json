@@ -100,7 +100,7 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wall_sign"
@@ -113,10 +113,10 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

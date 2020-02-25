@@ -7,12 +7,12 @@
         "function": "map_properties",
         "options": {
             "powered": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "shape": {
-                                "north_south": [
+                                "\"north_south\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -24,7 +24,7 @@
                                         }
                                     }
                                 ],
-                                "east_west": [
+                                "\"east_west\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -36,7 +36,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_east": [
+                                "\"ascending_east\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -48,7 +48,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_west": [
+                                "\"ascending_west\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -60,7 +60,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_north": [
+                                "\"ascending_north\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -72,7 +72,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_south": [
+                                "\"ascending_south\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -88,12 +88,12 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "shape": {
-                                "north_south": [
+                                "\"north_south\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -105,7 +105,7 @@
                                         }
                                     }
                                 ],
-                                "east_west": [
+                                "\"east_west\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -117,7 +117,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_east": [
+                                "\"ascending_east\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -129,7 +129,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_west": [
+                                "\"ascending_west\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -141,7 +141,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_north": [
+                                "\"ascending_north\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"
@@ -153,7 +153,7 @@
                                         }
                                     }
                                 ],
-                                "ascending_south": [
+                                "\"ascending_south\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:golden_rail"

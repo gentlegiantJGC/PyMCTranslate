@@ -1,21 +1,21 @@
 {
     "properties": {
         "material": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle",
-            "acacia",
-            "dark_oak",
-            "stone"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\"",
+            "\"stone\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "material": "oak",
-        "powered": "false"
+        "material": "\"oak\"",
+        "powered": "\"false\""
     }
 }

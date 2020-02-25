@@ -11,9 +11,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "occupied": "false",
-                            "part": "foot"
+                            "facing": "\"south\"",
+                            "occupied": "\"false\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -25,9 +25,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "occupied": "false",
-                            "part": "foot"
+                            "facing": "\"west\"",
+                            "occupied": "\"false\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -39,9 +39,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "occupied": "false",
-                            "part": "foot"
+                            "facing": "\"north\"",
+                            "occupied": "\"false\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -53,9 +53,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "occupied": "false",
-                            "part": "foot"
+                            "facing": "\"east\"",
+                            "occupied": "\"false\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -67,9 +67,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "occupied": "true",
-                            "part": "foot"
+                            "facing": "\"south\"",
+                            "occupied": "\"true\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -81,9 +81,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "occupied": "true",
-                            "part": "foot"
+                            "facing": "\"west\"",
+                            "occupied": "\"true\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -95,9 +95,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "occupied": "true",
-                            "part": "foot"
+                            "facing": "\"north\"",
+                            "occupied": "\"true\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -109,9 +109,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "occupied": "true",
-                            "part": "foot"
+                            "facing": "\"east\"",
+                            "occupied": "\"true\"",
+                            "part": "\"foot\""
                         }
                     }
                 ],
@@ -123,9 +123,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "occupied": "false",
-                            "part": "head"
+                            "facing": "\"south\"",
+                            "occupied": "\"false\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -137,9 +137,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "occupied": "false",
-                            "part": "head"
+                            "facing": "\"west\"",
+                            "occupied": "\"false\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -151,9 +151,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "occupied": "false",
-                            "part": "head"
+                            "facing": "\"north\"",
+                            "occupied": "\"false\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -165,9 +165,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "occupied": "false",
-                            "part": "head"
+                            "facing": "\"east\"",
+                            "occupied": "\"false\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -179,9 +179,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "occupied": "true",
-                            "part": "head"
+                            "facing": "\"south\"",
+                            "occupied": "\"true\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -193,9 +193,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "occupied": "true",
-                            "part": "head"
+                            "facing": "\"west\"",
+                            "occupied": "\"true\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -207,9 +207,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "occupied": "true",
-                            "part": "head"
+                            "facing": "\"north\"",
+                            "occupied": "\"true\"",
+                            "part": "\"head\""
                         }
                     }
                 ],
@@ -221,9 +221,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "occupied": "true",
-                            "part": "head"
+                            "facing": "\"east\"",
+                            "occupied": "\"true\"",
+                            "part": "\"head\""
                         }
                     }
                 ]
@@ -246,7 +246,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "white"
+                                                "color": "\"white\""
                                             }
                                         }
                                     ],
@@ -254,7 +254,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "orange"
+                                                "color": "\"orange\""
                                             }
                                         }
                                     ],
@@ -262,7 +262,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "magenta"
+                                                "color": "\"magenta\""
                                             }
                                         }
                                     ],
@@ -270,7 +270,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "light_blue"
+                                                "color": "\"light_blue\""
                                             }
                                         }
                                     ],
@@ -278,7 +278,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "yellow"
+                                                "color": "\"yellow\""
                                             }
                                         }
                                     ],
@@ -286,7 +286,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "lime"
+                                                "color": "\"lime\""
                                             }
                                         }
                                     ],
@@ -294,7 +294,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "pink"
+                                                "color": "\"pink\""
                                             }
                                         }
                                     ],
@@ -302,7 +302,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "gray"
+                                                "color": "\"gray\""
                                             }
                                         }
                                     ],
@@ -310,7 +310,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "light_gray"
+                                                "color": "\"light_gray\""
                                             }
                                         }
                                     ],
@@ -318,7 +318,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "cyan"
+                                                "color": "\"cyan\""
                                             }
                                         }
                                     ],
@@ -326,7 +326,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "purple"
+                                                "color": "\"purple\""
                                             }
                                         }
                                     ],
@@ -334,7 +334,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "blue"
+                                                "color": "\"blue\""
                                             }
                                         }
                                     ],
@@ -342,7 +342,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "brown"
+                                                "color": "\"brown\""
                                             }
                                         }
                                     ],
@@ -350,7 +350,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "green"
+                                                "color": "\"green\""
                                             }
                                         }
                                     ],
@@ -358,7 +358,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "red"
+                                                "color": "\"red\""
                                             }
                                         }
                                     ],
@@ -366,7 +366,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "color": "black"
+                                                "color": "\"black\""
                                             }
                                         }
                                     ]

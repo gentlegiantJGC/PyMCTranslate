@@ -6,21 +6,21 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "mossy_cobblestone"
+            "material": "\"mossy_cobblestone\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\""
             ],
             "half": [
-                "bottom",
-                "top"
+                "\"bottom\"",
+                "\"top\""
             ]
         }
     }

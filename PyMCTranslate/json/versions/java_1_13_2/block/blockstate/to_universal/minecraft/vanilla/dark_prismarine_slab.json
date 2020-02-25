@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "dark_prismarine"
+            "material": "\"dark_prismarine\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "type": [
-                "top",
-                "bottom",
-                "double"
+                "\"top\"",
+                "\"bottom\"",
+                "\"double\""
             ]
         }
     }

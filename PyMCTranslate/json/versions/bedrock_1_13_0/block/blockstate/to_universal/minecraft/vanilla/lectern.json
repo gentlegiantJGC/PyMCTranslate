@@ -67,7 +67,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "has_book": "false"
+                                                "has_book": "\"false\""
                                             }
                                         }
                                     ],
@@ -75,7 +75,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "has_book": "true"
+                                                "has_book": "\"true\""
                                             }
                                         }
                                     ]
@@ -127,7 +127,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -135,7 +135,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -143,7 +143,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -151,7 +151,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "\"east\""
                         }
                     }
                 ]
@@ -161,7 +161,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered": "false"
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -169,7 +169,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered": "true"
+                            "powered": "\"true\""
                         }
                     }
                 ]

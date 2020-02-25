@@ -74,7 +74,7 @@
         "function": "map_properties",
         "options": {
             "mob": {
-                "skeleton": [
+                "\"skeleton\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -85,7 +85,7 @@
                         ]
                     }
                 ],
-                "wither_skeleton": [
+                "\"wither_skeleton\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -96,7 +96,7 @@
                         ]
                     }
                 ],
-                "zombie": [
+                "\"zombie\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -107,7 +107,7 @@
                         ]
                     }
                 ],
-                "player": [
+                "\"player\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -118,7 +118,7 @@
                         ]
                     }
                 ],
-                "creeper": [
+                "\"creeper\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -129,7 +129,7 @@
                         ]
                     }
                 ],
-                "dragon": [
+                "\"dragon\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -151,14 +151,14 @@
         "function": "carry_properties",
         "options": {
             "no_drop": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

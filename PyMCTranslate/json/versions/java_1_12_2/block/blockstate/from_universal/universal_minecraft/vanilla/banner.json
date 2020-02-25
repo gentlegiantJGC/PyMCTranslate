@@ -7,22 +7,22 @@
         "function": "carry_properties",
         "options": {
             "rotation": [
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                "10",
-                "11",
-                "12",
-                "13",
-                "14",
-                "15"
+                "\"0\"",
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\"",
+                "\"5\"",
+                "\"6\"",
+                "\"7\"",
+                "\"8\"",
+                "\"9\"",
+                "\"10\"",
+                "\"11\"",
+                "\"12\"",
+                "\"13\"",
+                "\"14\"",
+                "\"15\""
             ]
         }
     },
@@ -103,7 +103,7 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -114,7 +114,7 @@
                         ]
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -125,7 +125,7 @@
                         ]
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -136,7 +136,7 @@
                         ]
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -147,7 +147,7 @@
                         ]
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -158,7 +158,7 @@
                         ]
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -169,7 +169,7 @@
                         ]
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -180,7 +180,7 @@
                         ]
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -191,7 +191,7 @@
                         ]
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -202,7 +202,7 @@
                         ]
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -213,7 +213,7 @@
                         ]
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -224,7 +224,7 @@
                         ]
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -235,7 +235,7 @@
                         ]
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -246,7 +246,7 @@
                         ]
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -257,7 +257,7 @@
                         ]
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -268,7 +268,7 @@
                         ]
                     }
                 ],
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_nbt",
                         "options": [

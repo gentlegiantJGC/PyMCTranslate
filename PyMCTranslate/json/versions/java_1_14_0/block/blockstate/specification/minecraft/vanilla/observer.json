@@ -1,20 +1,20 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west",
-            "up",
-            "down"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "south",
-        "powered": "false"
+        "facing": "\"south\"",
+        "powered": "\"false\""
     }
 }

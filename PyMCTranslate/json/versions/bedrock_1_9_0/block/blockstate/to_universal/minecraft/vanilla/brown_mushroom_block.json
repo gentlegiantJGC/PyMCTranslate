@@ -3,7 +3,7 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "all_inside": [
+                "\"all_inside\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -11,16 +11,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "false",
-                            "down": "false",
-                            "north": "false",
-                            "east": "false",
-                            "south": "false",
-                            "west": "false"
+                            "up": "\"false\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "north_west": [
+                "\"north_west\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -28,16 +28,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "true",
-                            "east": "false",
-                            "south": "false",
-                            "west": "true"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\""
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -45,16 +45,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "true",
-                            "east": "false",
-                            "south": "false",
-                            "west": "false"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "north_east": [
+                "\"north_east\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -62,16 +62,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "true",
-                            "east": "true",
-                            "south": "false",
-                            "west": "false"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -79,16 +79,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "false",
-                            "east": "false",
-                            "south": "false",
-                            "west": "true"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\""
                         }
                     }
                 ],
-                "center": [
+                "\"center\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -96,16 +96,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "false",
-                            "east": "false",
-                            "south": "false",
-                            "west": "false"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -113,16 +113,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "false",
-                            "east": "true",
-                            "south": "false",
-                            "west": "false"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "south_west": [
+                "\"south_west\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -130,16 +130,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "false",
-                            "east": "false",
-                            "south": "true",
-                            "west": "true"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\""
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -147,16 +147,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "false",
-                            "east": "false",
-                            "south": "true",
-                            "west": "false"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "south_east": [
+                "\"south_east\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -164,16 +164,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "false",
-                            "north": "false",
-                            "east": "true",
-                            "south": "true",
-                            "west": "false"
+                            "up": "\"true\"",
+                            "down": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\""
                         }
                     }
                 ],
-                "all_outside": [
+                "\"all_outside\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:brown_mushroom_block"
@@ -181,16 +181,16 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "true",
-                            "north": "true",
-                            "east": "true",
-                            "south": "true",
-                            "west": "true"
+                            "up": "\"true\"",
+                            "down": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\""
                         }
                     }
                 ],
-                "stem": [
+                "\"stem\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:mushroom_stem"
@@ -198,17 +198,17 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "false",
-                            "down": "false",
-                            "north": "true",
-                            "east": "true",
-                            "south": "true",
-                            "west": "true",
-                            "material": "brown"
+                            "up": "\"false\"",
+                            "down": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "material": "\"brown\""
                         }
                     }
                 ],
-                "all_stem": [
+                "\"all_stem\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:mushroom_stem"
@@ -216,13 +216,13 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "up": "true",
-                            "down": "true",
-                            "north": "true",
-                            "east": "true",
-                            "south": "true",
-                            "west": "true",
-                            "material": "brown"
+                            "up": "\"true\"",
+                            "down": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "material": "\"brown\""
                         }
                     }
                 ]

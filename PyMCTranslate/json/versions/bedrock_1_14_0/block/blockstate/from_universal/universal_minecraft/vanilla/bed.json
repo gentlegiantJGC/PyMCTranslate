@@ -52,7 +52,7 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -63,7 +63,7 @@
                         ]
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -74,7 +74,7 @@
                         ]
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -85,7 +85,7 @@
                         ]
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -96,7 +96,7 @@
                         ]
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -107,7 +107,7 @@
                         ]
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -118,7 +118,7 @@
                         ]
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -129,7 +129,7 @@
                         ]
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -140,7 +140,7 @@
                         ]
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -151,7 +151,7 @@
                         ]
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -162,7 +162,7 @@
                         ]
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -173,7 +173,7 @@
                         ]
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -184,7 +184,7 @@
                         ]
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -195,7 +195,7 @@
                         ]
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -206,7 +206,7 @@
                         ]
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -217,7 +217,7 @@
                         ]
                     }
                 ],
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -230,95 +230,71 @@
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]
             },
             "part": {
-                "foot": [
+                "\"foot\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "head_piece_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "head_piece_bit": "0b"
                         }
                     }
                 ],
-                "head": [
+                "\"head\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "head_piece_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "head_piece_bit": "1b"
                         }
                     }
                 ]
             },
             "occupied": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "occupied_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "occupied_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "occupied_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "occupied_bit": "1b"
                         }
                     }
                 ]

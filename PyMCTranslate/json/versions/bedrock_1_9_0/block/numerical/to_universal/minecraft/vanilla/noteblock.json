@@ -15,211 +15,17 @@
                             "function": "map_nbt",
                             "options": {
                                 "cases": {
-                                    "0": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "0"
-                                            }
-                                        }
-                                    ],
-                                    "1": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "1"
-                                            }
-                                        }
-                                    ],
-                                    "2": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "2"
-                                            }
-                                        }
-                                    ],
-                                    "3": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "3"
-                                            }
-                                        }
-                                    ],
-                                    "4": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "4"
-                                            }
-                                        }
-                                    ],
-                                    "5": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "5"
-                                            }
-                                        }
-                                    ],
-                                    "6": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "6"
-                                            }
-                                        }
-                                    ],
-                                    "7": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "7"
-                                            }
-                                        }
-                                    ],
-                                    "8": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "8"
-                                            }
-                                        }
-                                    ],
-                                    "9": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "9"
-                                            }
-                                        }
-                                    ],
-                                    "10": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "10"
-                                            }
-                                        }
-                                    ],
-                                    "11": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "11"
-                                            }
-                                        }
-                                    ],
-                                    "12": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "12"
-                                            }
-                                        }
-                                    ],
-                                    "13": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "13"
-                                            }
-                                        }
-                                    ],
-                                    "14": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "14"
-                                            }
-                                        }
-                                    ],
-                                    "15": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "15"
-                                            }
-                                        }
-                                    ],
-                                    "16": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "16"
-                                            }
-                                        }
-                                    ],
-                                    "17": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "17"
-                                            }
-                                        }
-                                    ],
-                                    "18": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "18"
-                                            }
-                                        }
-                                    ],
-                                    "19": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "19"
-                                            }
-                                        }
-                                    ],
-                                    "20": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "20"
-                                            }
-                                        }
-                                    ],
-                                    "21": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "21"
-                                            }
-                                        }
-                                    ],
-                                    "22": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "22"
-                                            }
-                                        }
-                                    ],
-                                    "23": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "23"
-                                            }
-                                        }
-                                    ],
-                                    "24": [
-                                        {
-                                            "function": "new_properties",
-                                            "options": {
-                                                "note": "24"
-                                            }
-                                        }
-                                    ],
                                     "0b": [
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "0"
+                                                "note": "\"0\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"0\""
                                             }
                                         }
                                     ],
@@ -227,7 +33,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "1"
+                                                "note": "\"1\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"1\""
                                             }
                                         }
                                     ],
@@ -235,7 +47,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "2"
+                                                "note": "\"2\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"2\""
                                             }
                                         }
                                     ],
@@ -243,7 +61,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "3"
+                                                "note": "\"3\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"3\""
                                             }
                                         }
                                     ],
@@ -251,7 +75,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "4"
+                                                "note": "\"4\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"4\""
                                             }
                                         }
                                     ],
@@ -259,7 +89,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "5"
+                                                "note": "\"5\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"5\""
                                             }
                                         }
                                     ],
@@ -267,7 +103,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "6"
+                                                "note": "\"6\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"6\""
                                             }
                                         }
                                     ],
@@ -275,7 +117,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "7"
+                                                "note": "\"7\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"7\""
                                             }
                                         }
                                     ],
@@ -283,7 +131,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "8"
+                                                "note": "\"8\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"8\""
                                             }
                                         }
                                     ],
@@ -291,7 +145,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "9"
+                                                "note": "\"9\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"9\""
                                             }
                                         }
                                     ],
@@ -299,7 +159,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "10"
+                                                "note": "\"10\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"10\""
                                             }
                                         }
                                     ],
@@ -307,7 +173,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "11"
+                                                "note": "\"11\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"11\""
                                             }
                                         }
                                     ],
@@ -315,7 +187,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "12"
+                                                "note": "\"12\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"12\""
                                             }
                                         }
                                     ],
@@ -323,7 +201,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "13"
+                                                "note": "\"13\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"13\""
                                             }
                                         }
                                     ],
@@ -331,7 +215,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "14"
+                                                "note": "\"14\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"14\""
                                             }
                                         }
                                     ],
@@ -339,7 +229,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "15"
+                                                "note": "\"15\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"15\""
                                             }
                                         }
                                     ],
@@ -347,7 +243,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "16"
+                                                "note": "\"16\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"16\""
                                             }
                                         }
                                     ],
@@ -355,7 +257,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "17"
+                                                "note": "\"17\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"17\""
                                             }
                                         }
                                     ],
@@ -363,7 +271,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "18"
+                                                "note": "\"18\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"18\""
                                             }
                                         }
                                     ],
@@ -371,7 +285,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "19"
+                                                "note": "\"19\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"19\""
                                             }
                                         }
                                     ],
@@ -379,7 +299,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "20"
+                                                "note": "\"20\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"20\""
                                             }
                                         }
                                     ],
@@ -387,7 +313,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "21"
+                                                "note": "\"21\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"21\""
                                             }
                                         }
                                     ],
@@ -395,7 +327,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "22"
+                                                "note": "\"22\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"22\""
                                             }
                                         }
                                     ],
@@ -403,7 +341,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "23"
+                                                "note": "\"23\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"23\""
                                             }
                                         }
                                     ],
@@ -411,7 +355,13 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "note": "24"
+                                                "note": "\"24\""
+                                            }
+                                        },
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "note": "\"24\""
                                             }
                                         }
                                     ]
@@ -468,7 +418,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -476,7 +426,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -484,7 +434,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -492,7 +442,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -500,7 +450,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -508,7 +458,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -516,7 +466,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -524,7 +474,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -532,7 +482,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -540,7 +490,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -548,7 +498,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -556,7 +506,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -564,7 +514,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -572,7 +522,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -580,7 +530,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -588,7 +538,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -596,7 +546,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -604,7 +554,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -612,7 +562,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -620,7 +570,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -628,7 +578,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -636,7 +586,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -644,7 +594,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -652,7 +602,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -660,7 +610,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -668,7 +618,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -676,7 +626,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -684,7 +634,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -692,7 +642,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -700,7 +650,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -708,7 +658,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -716,7 +666,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -724,7 +674,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -732,7 +682,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -740,7 +690,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -748,7 +698,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -756,7 +706,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -764,7 +714,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -772,7 +722,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -780,7 +730,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -788,7 +738,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -796,7 +746,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -804,7 +754,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -812,7 +762,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -820,7 +770,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -828,7 +778,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -836,7 +786,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -844,7 +794,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -852,7 +802,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -860,7 +810,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -868,7 +818,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -876,7 +826,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -884,7 +834,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -892,7 +842,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -900,7 +850,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -908,7 +858,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -916,7 +866,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -924,7 +874,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -932,7 +882,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -940,7 +890,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -948,7 +898,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -956,7 +906,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "bass"
+                                        "instrument": "\"bass\""
                                     }
                                 }
                             ],
@@ -964,7 +914,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "snare"
+                                        "instrument": "\"snare\""
                                     }
                                 }
                             ],
@@ -972,7 +922,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "snare"
+                                        "instrument": "\"snare\""
                                     }
                                 }
                             ],
@@ -980,7 +930,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "snare"
+                                        "instrument": "\"snare\""
                                     }
                                 }
                             ],
@@ -988,7 +938,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "snare"
+                                        "instrument": "\"snare\""
                                     }
                                 }
                             ],
@@ -996,7 +946,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1004,7 +954,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1012,7 +962,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1020,7 +970,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1028,7 +978,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1036,7 +986,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1044,7 +994,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1052,7 +1002,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1060,7 +1010,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1068,7 +1018,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1076,7 +1026,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "hat"
+                                        "instrument": "\"hat\""
                                     }
                                 }
                             ],
@@ -1084,7 +1034,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1092,7 +1042,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1100,7 +1050,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1108,7 +1058,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1116,7 +1066,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1124,7 +1074,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1132,7 +1082,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1140,7 +1090,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1148,7 +1098,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1156,7 +1106,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1164,7 +1114,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1172,7 +1122,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1180,7 +1130,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1188,7 +1138,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1196,7 +1146,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1204,7 +1154,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1212,7 +1162,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1220,7 +1170,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1228,7 +1178,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1236,7 +1186,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1244,7 +1194,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1252,7 +1202,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1260,7 +1210,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1268,7 +1218,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1276,7 +1226,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1284,7 +1234,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1292,7 +1242,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1300,7 +1250,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1308,7 +1258,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1316,7 +1266,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1324,7 +1274,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1332,7 +1282,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1340,7 +1290,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1348,7 +1298,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1356,7 +1306,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1364,7 +1314,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1372,7 +1322,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1380,7 +1330,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1388,7 +1338,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1396,7 +1346,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1404,7 +1354,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1412,7 +1362,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1420,7 +1370,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1428,7 +1378,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1436,7 +1386,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1444,7 +1394,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1452,7 +1402,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1460,7 +1410,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1468,7 +1418,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1476,7 +1426,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1484,7 +1434,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1492,7 +1442,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1500,7 +1450,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1508,7 +1458,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1516,7 +1466,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1524,7 +1474,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1532,7 +1482,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1540,7 +1490,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1548,7 +1498,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1556,7 +1506,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1564,7 +1514,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1572,7 +1522,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1580,7 +1530,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1588,7 +1538,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1596,7 +1546,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1604,7 +1554,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1612,7 +1562,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1620,7 +1570,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1628,7 +1578,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1636,7 +1586,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1644,7 +1594,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1652,7 +1602,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1660,7 +1610,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1668,7 +1618,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1676,7 +1626,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1684,7 +1634,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1692,7 +1642,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1700,7 +1650,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1708,7 +1658,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1716,7 +1666,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1724,7 +1674,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ],
@@ -1732,7 +1682,7 @@
                                 {
                                     "function": "new_properties",
                                     "options": {
-                                        "instrument": "basedrum"
+                                        "instrument": "\"basedrum\""
                                     }
                                 }
                             ]

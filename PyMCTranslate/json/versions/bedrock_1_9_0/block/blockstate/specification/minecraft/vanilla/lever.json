@@ -1,22 +1,22 @@
 {
     "properties": {
         "position": [
-            "floor_south",
-            "floor_east",
-            "wall_north",
-            "wall_east",
-            "wall_south",
-            "wall_west",
-            "ceiling_south",
-            "ceiling_east"
+            "\"floor_south\"",
+            "\"floor_east\"",
+            "\"wall_north\"",
+            "\"wall_east\"",
+            "\"wall_south\"",
+            "\"wall_west\"",
+            "\"ceiling_south\"",
+            "\"ceiling_east\""
         ],
         "powered": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ]
     },
     "defaults": {
-        "position": "floor_south",
-        "powered": "false"
+        "position": "\"floor_south\"",
+        "powered": "\"false\""
     }
 }

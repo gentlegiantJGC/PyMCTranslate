@@ -13,7 +13,7 @@
         "function": "map_properties",
         "options": {
             "axis": {
-                "y": [
+                "\"y\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -21,7 +21,7 @@
                         }
                     }
                 ],
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -29,7 +29,7 @@
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_properties",
                         "options": {

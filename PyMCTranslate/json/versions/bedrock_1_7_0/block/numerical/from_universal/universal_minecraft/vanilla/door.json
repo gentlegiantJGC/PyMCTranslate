@@ -7,43 +7,43 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wooden_door"
                     }
                 ],
-                "iron": [
+                "\"iron\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:iron_door"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:spruce_door"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:birch_door"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:jungle_door"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:acacia_door"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:dark_oak_door"
@@ -51,17 +51,17 @@
                 ]
             },
             "half": {
-                "lower": [
+                "\"lower\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "open": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -69,7 +69,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -77,7 +77,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -85,7 +85,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -97,12 +97,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -110,7 +110,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -118,7 +118,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -126,7 +126,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -142,17 +142,17 @@
                         }
                     }
                 ],
-                "upper": [
+                "\"upper\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "powered": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "hinge": {
-                                                "left": [
+                                                "\"left\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -160,7 +160,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "right": [
+                                                "\"right\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -172,12 +172,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "hinge": {
-                                                "left": [
+                                                "\"left\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -185,7 +185,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "right": [
+                                                "\"right\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {

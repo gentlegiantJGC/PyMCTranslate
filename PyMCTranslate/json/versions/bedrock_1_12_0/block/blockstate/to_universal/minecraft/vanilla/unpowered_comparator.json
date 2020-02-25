@@ -7,21 +7,21 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ],
             "mode": [
-                "compare",
-                "subtract"
+                "\"compare\"",
+                "\"subtract\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "powered": "false"
+            "powered": "\"false\""
         }
     },
     {

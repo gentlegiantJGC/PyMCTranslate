@@ -6,18 +6,18 @@
     {
         "function": "new_properties",
         "options": {
-            "type": "tube",
-            "dead": "true"
+            "type": "\"tube\"",
+            "dead": "\"true\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

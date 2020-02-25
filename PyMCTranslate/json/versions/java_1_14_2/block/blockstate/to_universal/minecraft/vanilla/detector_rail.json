@@ -7,16 +7,16 @@
         "function": "carry_properties",
         "options": {
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "shape": [
-                "north_south",
-                "east_west",
-                "ascending_east",
-                "ascending_west",
-                "ascending_north",
-                "ascending_south"
+                "\"north_south\"",
+                "\"east_west\"",
+                "\"ascending_east\"",
+                "\"ascending_west\"",
+                "\"ascending_north\"",
+                "\"ascending_south\""
             ]
         }
     }

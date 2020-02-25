@@ -11,7 +11,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia"
+                            "material": "\"acacia\""
                         }
                     }
                 ],
@@ -19,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "dark_oak"
+                            "material": "\"dark_oak\""
                         }
                     }
                 ]
@@ -29,7 +29,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "persistent": "false"
+                            "persistent": "\"false\""
                         }
                     }
                 ],
@@ -37,7 +37,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "persistent": "true"
+                            "persistent": "\"true\""
                         }
                     }
                 ]
@@ -47,7 +47,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "check_decay": "false"
+                            "check_decay": "\"false\""
                         }
                     }
                 ],
@@ -55,7 +55,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "check_decay": "true"
+                            "check_decay": "\"true\""
                         }
                     }
                 ]

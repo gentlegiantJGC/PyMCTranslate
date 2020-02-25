@@ -1,18 +1,18 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\""
         ],
         "half": [
-            "bottom",
-            "top"
+            "\"bottom\"",
+            "\"top\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "half": "bottom"
+        "facing": "\"north\"",
+        "half": "\"bottom\""
     }
 }

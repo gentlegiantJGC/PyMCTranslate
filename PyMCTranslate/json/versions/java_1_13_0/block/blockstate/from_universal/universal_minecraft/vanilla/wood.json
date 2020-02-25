@@ -7,18 +7,18 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "stripped": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:oak_wood"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_oak_wood"
@@ -28,18 +28,18 @@
                         }
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "stripped": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:spruce_wood"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_spruce_wood"
@@ -49,18 +49,18 @@
                         }
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "stripped": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:birch_wood"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_birch_wood"
@@ -70,18 +70,18 @@
                         }
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "stripped": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:jungle_wood"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_jungle_wood"
@@ -91,18 +91,18 @@
                         }
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "stripped": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:acacia_wood"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_acacia_wood"
@@ -112,18 +112,18 @@
                         }
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "stripped": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dark_oak_wood"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_dark_oak_wood"
@@ -140,9 +140,9 @@
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

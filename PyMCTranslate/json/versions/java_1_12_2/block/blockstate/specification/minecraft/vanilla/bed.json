@@ -1,43 +1,43 @@
 {
     "properties": {
         "facing": [
-            "east",
-            "north",
-            "south",
-            "west"
+            "\"east\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\""
         ],
         "occupied": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "part": [
-            "foot",
-            "head"
+            "\"foot\"",
+            "\"head\""
         ],
         "color": [
-            "white",
-            "orange",
-            "magenta",
-            "light_blue",
-            "yellow",
-            "lime",
-            "pink",
-            "gray",
-            "light_gray",
-            "cyan",
-            "purple",
-            "blue",
-            "brown",
-            "green",
-            "red",
-            "black"
+            "\"white\"",
+            "\"orange\"",
+            "\"magenta\"",
+            "\"light_blue\"",
+            "\"yellow\"",
+            "\"lime\"",
+            "\"pink\"",
+            "\"gray\"",
+            "\"light_gray\"",
+            "\"cyan\"",
+            "\"purple\"",
+            "\"blue\"",
+            "\"brown\"",
+            "\"green\"",
+            "\"red\"",
+            "\"black\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "occupied": "false",
-        "part": "foot",
-        "color": "red"
+        "facing": "\"north\"",
+        "occupied": "\"false\"",
+        "part": "\"foot\"",
+        "color": "\"red\""
     },
     "snbt": "{color: 14}",
     "nbt_identifier": [

@@ -7,71 +7,53 @@
         "function": "map_properties",
         "options": {
             "pickles": {
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cluster_count": [
-                                "snbt",
-                                "0"
-                            ]
+                            "cluster_count": "0"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cluster_count": [
-                                "snbt",
-                                "1"
-                            ]
+                            "cluster_count": "1"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cluster_count": [
-                                "snbt",
-                                "2"
-                            ]
+                            "cluster_count": "2"
                         }
                     }
                 ],
-                "4": [
+                "\"4\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cluster_count": [
-                                "snbt",
-                                "3"
-                            ]
+                            "cluster_count": "3"
                         }
                     }
                 ]
             },
             "dead": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "dead_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "dead_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "dead_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "dead_bit": "1b"
                         }
                     }
                 ]

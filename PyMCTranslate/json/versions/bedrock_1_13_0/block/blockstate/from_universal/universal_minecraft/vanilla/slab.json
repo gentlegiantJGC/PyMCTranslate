@@ -7,36 +7,30 @@
         "function": "map_properties",
         "options": {
             "type": {
-                "double": [
+                "\"double\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "top_slot_bit": {
-                                "0": [
+                                "\"0\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "top_slot_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "top_slot_bit": "0b"
                                         }
                                     }
                                 ],
-                                "1": [
+                                "\"1\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "top_slot_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "top_slot_bit": "1b"
                                         }
                                     }
                                 ]
                             },
                             "material": {
-                                "smooth_stone": [
+                                "\"smooth_stone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -44,14 +38,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"smooth_stone\""
-                                            ]
+                                            "stone_slab_type": "\"smooth_stone\""
                                         }
                                     }
                                 ],
-                                "sandstone": [
+                                "\"sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -59,14 +50,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"sandstone\""
-                                            ]
+                                            "stone_slab_type": "\"sandstone\""
                                         }
                                     }
                                 ],
-                                "petrified_oak": [
+                                "\"petrified_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -74,14 +62,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"wood\""
-                                            ]
+                                            "stone_slab_type": "\"wood\""
                                         }
                                     }
                                 ],
-                                "cobblestone": [
+                                "\"cobblestone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -89,14 +74,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"cobblestone\""
-                                            ]
+                                            "stone_slab_type": "\"cobblestone\""
                                         }
                                     }
                                 ],
-                                "brick": [
+                                "\"brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -104,14 +86,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"brick\""
-                                            ]
+                                            "stone_slab_type": "\"brick\""
                                         }
                                     }
                                 ],
-                                "stone_brick": [
+                                "\"stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -119,14 +98,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"stone_brick\""
-                                            ]
+                                            "stone_slab_type": "\"stone_brick\""
                                         }
                                     }
                                 ],
-                                "quartz": [
+                                "\"quartz\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -134,14 +110,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"quartz\""
-                                            ]
+                                            "stone_slab_type": "\"quartz\""
                                         }
                                     }
                                 ],
-                                "nether_brick": [
+                                "\"nether_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab"
@@ -149,14 +122,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"nether_brick\""
-                                            ]
+                                            "stone_slab_type": "\"nether_brick\""
                                         }
                                     }
                                 ],
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_wooden_slab"
@@ -164,14 +134,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"oak\""
-                                            ]
+                                            "wood_type": "\"oak\""
                                         }
                                     }
                                 ],
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_wooden_slab"
@@ -179,14 +146,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"spruce\""
-                                            ]
+                                            "wood_type": "\"spruce\""
                                         }
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_wooden_slab"
@@ -194,14 +158,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"birch\""
-                                            ]
+                                            "wood_type": "\"birch\""
                                         }
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_wooden_slab"
@@ -209,14 +170,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"jungle\""
-                                            ]
+                                            "wood_type": "\"jungle\""
                                         }
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_wooden_slab"
@@ -224,14 +182,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"acacia\""
-                                            ]
+                                            "wood_type": "\"acacia\""
                                         }
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_wooden_slab"
@@ -239,14 +194,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"dark_oak\""
-                                            ]
+                                            "wood_type": "\"dark_oak\""
                                         }
                                     }
                                 ],
-                                "red_sandstone": [
+                                "\"red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -254,14 +206,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"red_sandstone\""
-                                            ]
+                                            "stone_slab_type_2": "\"red_sandstone\""
                                         }
                                     }
                                 ],
-                                "purpur": [
+                                "\"purpur\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -269,14 +218,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"purpur\""
-                                            ]
+                                            "stone_slab_type_2": "\"purpur\""
                                         }
                                     }
                                 ],
-                                "prismarine": [
+                                "\"prismarine\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -284,14 +230,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_rough\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_rough\""
                                         }
                                     }
                                 ],
-                                "dark_prismarine": [
+                                "\"dark_prismarine\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -299,14 +242,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_dark\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_dark\""
                                         }
                                     }
                                 ],
-                                "prismarine_brick": [
+                                "\"prismarine_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -314,14 +254,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_brick\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_brick\""
                                         }
                                     }
                                 ],
-                                "mossy_cobblestone": [
+                                "\"mossy_cobblestone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -329,14 +266,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"mossy_cobblestone\""
-                                            ]
+                                            "stone_slab_type_2": "\"mossy_cobblestone\""
                                         }
                                     }
                                 ],
-                                "smooth_sandstone": [
+                                "\"smooth_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -344,14 +278,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"smooth_sandstone\""
-                                            ]
+                                            "stone_slab_type_2": "\"smooth_sandstone\""
                                         }
                                     }
                                 ],
-                                "red_nether_brick": [
+                                "\"red_nether_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab2"
@@ -359,14 +290,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"red_nether_brick\""
-                                            ]
+                                            "stone_slab_type_2": "\"red_nether_brick\""
                                         }
                                     }
                                 ],
-                                "end_stone_brick": [
+                                "\"end_stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -374,14 +302,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"end_stone_brick\""
-                                            ]
+                                            "stone_slab_type_3": "\"end_stone_brick\""
                                         }
                                     }
                                 ],
-                                "smooth_red_sandstone": [
+                                "\"smooth_red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -389,14 +314,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"smooth_red_sandstone\""
-                                            ]
+                                            "stone_slab_type_3": "\"smooth_red_sandstone\""
                                         }
                                     }
                                 ],
-                                "polished_andesite": [
+                                "\"polished_andesite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -404,14 +326,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_andesite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_andesite\""
                                         }
                                     }
                                 ],
-                                "andesite": [
+                                "\"andesite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -419,14 +338,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"andesite\""
-                                            ]
+                                            "stone_slab_type_3": "\"andesite\""
                                         }
                                     }
                                 ],
-                                "diorite": [
+                                "\"diorite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -434,14 +350,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"diorite\""
-                                            ]
+                                            "stone_slab_type_3": "\"diorite\""
                                         }
                                     }
                                 ],
-                                "polished_diorite": [
+                                "\"polished_diorite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -449,14 +362,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_diorite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_diorite\""
                                         }
                                     }
                                 ],
-                                "granite": [
+                                "\"granite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -464,14 +374,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"granite\""
-                                            ]
+                                            "stone_slab_type_3": "\"granite\""
                                         }
                                     }
                                 ],
-                                "polished_granite": [
+                                "\"polished_granite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab3"
@@ -479,14 +386,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_granite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_granite\""
                                         }
                                     }
                                 ],
-                                "mossy_stone_brick": [
+                                "\"mossy_stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab4"
@@ -494,14 +398,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"mossy_stone_brick\""
-                                            ]
+                                            "stone_slab_type_4": "\"mossy_stone_brick\""
                                         }
                                     }
                                 ],
-                                "smooth_quartz": [
+                                "\"smooth_quartz\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab4"
@@ -509,14 +410,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"smooth_quartz\""
-                                            ]
+                                            "stone_slab_type_4": "\"smooth_quartz\""
                                         }
                                     }
                                 ],
-                                "stone": [
+                                "\"stone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab4"
@@ -524,14 +422,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"stone\""
-                                            ]
+                                            "stone_slab_type_4": "\"stone\""
                                         }
                                     }
                                 ],
-                                "cut_sandstone": [
+                                "\"cut_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab4"
@@ -539,14 +434,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"cut_sandstone\""
-                                            ]
+                                            "stone_slab_type_4": "\"cut_sandstone\""
                                         }
                                     }
                                 ],
-                                "cut_red_sandstone": [
+                                "\"cut_red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:double_stone_slab4"
@@ -554,10 +446,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"cut_red_sandstone\""
-                                            ]
+                                            "stone_slab_type_4": "\"cut_red_sandstone\""
                                         }
                                     }
                                 ]
@@ -565,109 +454,82 @@
                         }
                     }
                 ],
-                "bottom": [
+                "\"bottom\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "top_slot_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "top_slot_bit": "0b"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "smooth_stone": [
+                                "\"smooth_stone\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"smooth_stone\""
-                                            ]
+                                            "stone_slab_type": "\"smooth_stone\""
                                         }
                                     }
                                 ],
-                                "sandstone": [
+                                "\"sandstone\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"sandstone\""
-                                            ]
+                                            "stone_slab_type": "\"sandstone\""
                                         }
                                     }
                                 ],
-                                "petrified_oak": [
+                                "\"petrified_oak\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"wood\""
-                                            ]
+                                            "stone_slab_type": "\"wood\""
                                         }
                                     }
                                 ],
-                                "cobblestone": [
+                                "\"cobblestone\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"cobblestone\""
-                                            ]
+                                            "stone_slab_type": "\"cobblestone\""
                                         }
                                     }
                                 ],
-                                "brick": [
+                                "\"brick\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"brick\""
-                                            ]
+                                            "stone_slab_type": "\"brick\""
                                         }
                                     }
                                 ],
-                                "stone_brick": [
+                                "\"stone_brick\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"stone_brick\""
-                                            ]
+                                            "stone_slab_type": "\"stone_brick\""
                                         }
                                     }
                                 ],
-                                "quartz": [
+                                "\"quartz\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"quartz\""
-                                            ]
+                                            "stone_slab_type": "\"quartz\""
                                         }
                                     }
                                 ],
-                                "nether_brick": [
+                                "\"nether_brick\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"nether_brick\""
-                                            ]
+                                            "stone_slab_type": "\"nether_brick\""
                                         }
                                     }
                                 ],
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -675,14 +537,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"oak\""
-                                            ]
+                                            "wood_type": "\"oak\""
                                         }
                                     }
                                 ],
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -690,14 +549,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"spruce\""
-                                            ]
+                                            "wood_type": "\"spruce\""
                                         }
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -705,14 +561,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"birch\""
-                                            ]
+                                            "wood_type": "\"birch\""
                                         }
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -720,14 +573,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"jungle\""
-                                            ]
+                                            "wood_type": "\"jungle\""
                                         }
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -735,14 +585,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"acacia\""
-                                            ]
+                                            "wood_type": "\"acacia\""
                                         }
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -750,14 +597,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"dark_oak\""
-                                            ]
+                                            "wood_type": "\"dark_oak\""
                                         }
                                     }
                                 ],
-                                "red_sandstone": [
+                                "\"red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -765,14 +609,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"red_sandstone\""
-                                            ]
+                                            "stone_slab_type_2": "\"red_sandstone\""
                                         }
                                     }
                                 ],
-                                "purpur": [
+                                "\"purpur\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -780,14 +621,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"purpur\""
-                                            ]
+                                            "stone_slab_type_2": "\"purpur\""
                                         }
                                     }
                                 ],
-                                "prismarine": [
+                                "\"prismarine\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -795,14 +633,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_rough\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_rough\""
                                         }
                                     }
                                 ],
-                                "dark_prismarine": [
+                                "\"dark_prismarine\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -810,14 +645,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_dark\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_dark\""
                                         }
                                     }
                                 ],
-                                "prismarine_brick": [
+                                "\"prismarine_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -825,14 +657,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_brick\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_brick\""
                                         }
                                     }
                                 ],
-                                "mossy_cobblestone": [
+                                "\"mossy_cobblestone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -840,14 +669,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"mossy_cobblestone\""
-                                            ]
+                                            "stone_slab_type_2": "\"mossy_cobblestone\""
                                         }
                                     }
                                 ],
-                                "smooth_sandstone": [
+                                "\"smooth_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -855,14 +681,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"smooth_sandstone\""
-                                            ]
+                                            "stone_slab_type_2": "\"smooth_sandstone\""
                                         }
                                     }
                                 ],
-                                "red_nether_brick": [
+                                "\"red_nether_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -870,14 +693,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"red_nether_brick\""
-                                            ]
+                                            "stone_slab_type_2": "\"red_nether_brick\""
                                         }
                                     }
                                 ],
-                                "end_stone_brick": [
+                                "\"end_stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -885,14 +705,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"end_stone_brick\""
-                                            ]
+                                            "stone_slab_type_3": "\"end_stone_brick\""
                                         }
                                     }
                                 ],
-                                "smooth_red_sandstone": [
+                                "\"smooth_red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -900,14 +717,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"smooth_red_sandstone\""
-                                            ]
+                                            "stone_slab_type_3": "\"smooth_red_sandstone\""
                                         }
                                     }
                                 ],
-                                "polished_andesite": [
+                                "\"polished_andesite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -915,14 +729,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_andesite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_andesite\""
                                         }
                                     }
                                 ],
-                                "andesite": [
+                                "\"andesite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -930,14 +741,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"andesite\""
-                                            ]
+                                            "stone_slab_type_3": "\"andesite\""
                                         }
                                     }
                                 ],
-                                "diorite": [
+                                "\"diorite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -945,14 +753,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"diorite\""
-                                            ]
+                                            "stone_slab_type_3": "\"diorite\""
                                         }
                                     }
                                 ],
-                                "polished_diorite": [
+                                "\"polished_diorite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -960,14 +765,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_diorite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_diorite\""
                                         }
                                     }
                                 ],
-                                "granite": [
+                                "\"granite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -975,14 +777,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"granite\""
-                                            ]
+                                            "stone_slab_type_3": "\"granite\""
                                         }
                                     }
                                 ],
-                                "polished_granite": [
+                                "\"polished_granite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -990,14 +789,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_granite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_granite\""
                                         }
                                     }
                                 ],
-                                "mossy_stone_brick": [
+                                "\"mossy_stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1005,14 +801,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"mossy_stone_brick\""
-                                            ]
+                                            "stone_slab_type_4": "\"mossy_stone_brick\""
                                         }
                                     }
                                 ],
-                                "smooth_quartz": [
+                                "\"smooth_quartz\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1020,14 +813,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"smooth_quartz\""
-                                            ]
+                                            "stone_slab_type_4": "\"smooth_quartz\""
                                         }
                                     }
                                 ],
-                                "stone": [
+                                "\"stone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1035,14 +825,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"stone\""
-                                            ]
+                                            "stone_slab_type_4": "\"stone\""
                                         }
                                     }
                                 ],
-                                "cut_sandstone": [
+                                "\"cut_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1050,14 +837,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"cut_sandstone\""
-                                            ]
+                                            "stone_slab_type_4": "\"cut_sandstone\""
                                         }
                                     }
                                 ],
-                                "cut_red_sandstone": [
+                                "\"cut_red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1065,10 +849,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"cut_red_sandstone\""
-                                            ]
+                                            "stone_slab_type_4": "\"cut_red_sandstone\""
                                         }
                                     }
                                 ]
@@ -1076,109 +857,82 @@
                         }
                     }
                 ],
-                "top": [
+                "\"top\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "top_slot_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "top_slot_bit": "1b"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "smooth_stone": [
+                                "\"smooth_stone\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"smooth_stone\""
-                                            ]
+                                            "stone_slab_type": "\"smooth_stone\""
                                         }
                                     }
                                 ],
-                                "sandstone": [
+                                "\"sandstone\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"sandstone\""
-                                            ]
+                                            "stone_slab_type": "\"sandstone\""
                                         }
                                     }
                                 ],
-                                "petrified_oak": [
+                                "\"petrified_oak\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"wood\""
-                                            ]
+                                            "stone_slab_type": "\"wood\""
                                         }
                                     }
                                 ],
-                                "cobblestone": [
+                                "\"cobblestone\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"cobblestone\""
-                                            ]
+                                            "stone_slab_type": "\"cobblestone\""
                                         }
                                     }
                                 ],
-                                "brick": [
+                                "\"brick\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"brick\""
-                                            ]
+                                            "stone_slab_type": "\"brick\""
                                         }
                                     }
                                 ],
-                                "stone_brick": [
+                                "\"stone_brick\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"stone_brick\""
-                                            ]
+                                            "stone_slab_type": "\"stone_brick\""
                                         }
                                     }
                                 ],
-                                "quartz": [
+                                "\"quartz\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"quartz\""
-                                            ]
+                                            "stone_slab_type": "\"quartz\""
                                         }
                                     }
                                 ],
-                                "nether_brick": [
+                                "\"nether_brick\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type": [
-                                                "snbt",
-                                                "\"nether_brick\""
-                                            ]
+                                            "stone_slab_type": "\"nether_brick\""
                                         }
                                     }
                                 ],
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -1186,14 +940,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"oak\""
-                                            ]
+                                            "wood_type": "\"oak\""
                                         }
                                     }
                                 ],
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -1201,14 +952,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"spruce\""
-                                            ]
+                                            "wood_type": "\"spruce\""
                                         }
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -1216,14 +964,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"birch\""
-                                            ]
+                                            "wood_type": "\"birch\""
                                         }
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -1231,14 +976,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"jungle\""
-                                            ]
+                                            "wood_type": "\"jungle\""
                                         }
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -1246,14 +988,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"acacia\""
-                                            ]
+                                            "wood_type": "\"acacia\""
                                         }
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:wooden_slab"
@@ -1261,14 +1000,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "wood_type": [
-                                                "snbt",
-                                                "\"dark_oak\""
-                                            ]
+                                            "wood_type": "\"dark_oak\""
                                         }
                                     }
                                 ],
-                                "red_sandstone": [
+                                "\"red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1276,14 +1012,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"red_sandstone\""
-                                            ]
+                                            "stone_slab_type_2": "\"red_sandstone\""
                                         }
                                     }
                                 ],
-                                "purpur": [
+                                "\"purpur\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1291,14 +1024,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"purpur\""
-                                            ]
+                                            "stone_slab_type_2": "\"purpur\""
                                         }
                                     }
                                 ],
-                                "prismarine": [
+                                "\"prismarine\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1306,14 +1036,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_rough\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_rough\""
                                         }
                                     }
                                 ],
-                                "dark_prismarine": [
+                                "\"dark_prismarine\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1321,14 +1048,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_dark\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_dark\""
                                         }
                                     }
                                 ],
-                                "prismarine_brick": [
+                                "\"prismarine_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1336,14 +1060,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"prismarine_brick\""
-                                            ]
+                                            "stone_slab_type_2": "\"prismarine_brick\""
                                         }
                                     }
                                 ],
-                                "mossy_cobblestone": [
+                                "\"mossy_cobblestone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1351,14 +1072,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"mossy_cobblestone\""
-                                            ]
+                                            "stone_slab_type_2": "\"mossy_cobblestone\""
                                         }
                                     }
                                 ],
-                                "smooth_sandstone": [
+                                "\"smooth_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1366,14 +1084,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"smooth_sandstone\""
-                                            ]
+                                            "stone_slab_type_2": "\"smooth_sandstone\""
                                         }
                                     }
                                 ],
-                                "red_nether_brick": [
+                                "\"red_nether_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab2"
@@ -1381,14 +1096,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_2": [
-                                                "snbt",
-                                                "\"red_nether_brick\""
-                                            ]
+                                            "stone_slab_type_2": "\"red_nether_brick\""
                                         }
                                     }
                                 ],
-                                "end_stone_brick": [
+                                "\"end_stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1396,14 +1108,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"end_stone_brick\""
-                                            ]
+                                            "stone_slab_type_3": "\"end_stone_brick\""
                                         }
                                     }
                                 ],
-                                "smooth_red_sandstone": [
+                                "\"smooth_red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1411,14 +1120,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"smooth_red_sandstone\""
-                                            ]
+                                            "stone_slab_type_3": "\"smooth_red_sandstone\""
                                         }
                                     }
                                 ],
-                                "polished_andesite": [
+                                "\"polished_andesite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1426,14 +1132,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_andesite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_andesite\""
                                         }
                                     }
                                 ],
-                                "andesite": [
+                                "\"andesite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1441,14 +1144,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"andesite\""
-                                            ]
+                                            "stone_slab_type_3": "\"andesite\""
                                         }
                                     }
                                 ],
-                                "diorite": [
+                                "\"diorite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1456,14 +1156,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"diorite\""
-                                            ]
+                                            "stone_slab_type_3": "\"diorite\""
                                         }
                                     }
                                 ],
-                                "polished_diorite": [
+                                "\"polished_diorite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1471,14 +1168,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_diorite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_diorite\""
                                         }
                                     }
                                 ],
-                                "granite": [
+                                "\"granite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1486,14 +1180,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"granite\""
-                                            ]
+                                            "stone_slab_type_3": "\"granite\""
                                         }
                                     }
                                 ],
-                                "polished_granite": [
+                                "\"polished_granite\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab3"
@@ -1501,14 +1192,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_3": [
-                                                "snbt",
-                                                "\"polished_granite\""
-                                            ]
+                                            "stone_slab_type_3": "\"polished_granite\""
                                         }
                                     }
                                 ],
-                                "mossy_stone_brick": [
+                                "\"mossy_stone_brick\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1516,14 +1204,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"mossy_stone_brick\""
-                                            ]
+                                            "stone_slab_type_4": "\"mossy_stone_brick\""
                                         }
                                     }
                                 ],
-                                "smooth_quartz": [
+                                "\"smooth_quartz\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1531,14 +1216,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"smooth_quartz\""
-                                            ]
+                                            "stone_slab_type_4": "\"smooth_quartz\""
                                         }
                                     }
                                 ],
-                                "stone": [
+                                "\"stone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1546,14 +1228,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"stone\""
-                                            ]
+                                            "stone_slab_type_4": "\"stone\""
                                         }
                                     }
                                 ],
-                                "cut_sandstone": [
+                                "\"cut_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1561,14 +1240,11 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"cut_sandstone\""
-                                            ]
+                                            "stone_slab_type_4": "\"cut_sandstone\""
                                         }
                                     }
                                 ],
-                                "cut_red_sandstone": [
+                                "\"cut_red_sandstone\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stone_slab4"
@@ -1576,10 +1252,7 @@
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "stone_slab_type_4": [
-                                                "snbt",
-                                                "\"cut_red_sandstone\""
-                                            ]
+                                            "stone_slab_type_4": "\"cut_red_sandstone\""
                                         }
                                     }
                                 ]

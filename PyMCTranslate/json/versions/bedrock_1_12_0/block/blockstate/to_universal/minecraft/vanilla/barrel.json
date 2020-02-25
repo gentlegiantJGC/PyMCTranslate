@@ -77,16 +77,16 @@
         "function": "carry_properties",
         "options": {
             "open": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "facing": [
-                "down",
-                "up",
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"down\"",
+                "\"up\"",
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

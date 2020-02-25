@@ -1,23 +1,23 @@
 {
     "properties": {
         "material": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\""
         ],
         "persistent": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "check_decay": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "material": "oak",
-        "persistent": "false",
-        "check_decay": "true"
+        "material": "\"oak\"",
+        "persistent": "\"false\"",
+        "check_decay": "\"true\""
     }
 }

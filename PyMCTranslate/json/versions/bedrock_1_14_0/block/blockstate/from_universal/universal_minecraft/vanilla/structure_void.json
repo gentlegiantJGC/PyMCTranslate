@@ -7,25 +7,19 @@
         "function": "map_properties",
         "options": {
             "structure_void_type": {
-                "void": [
+                "\"void\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_void_type": [
-                                "snbt",
-                                "\"void\""
-                            ]
+                            "structure_void_type": "\"void\""
                         }
                     }
                 ],
-                "air": [
+                "\"air\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_void_type": [
-                                "snbt",
-                                "\"air\""
-                            ]
+                            "structure_void_type": "\"air\""
                         }
                     }
                 ]

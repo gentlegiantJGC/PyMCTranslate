@@ -1,16 +1,16 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west",
-            "up",
-            "down"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
         ]
     },
     "defaults": {
-        "facing": "up"
+        "facing": "\"up\""
     },
     "snbt": "{Findable: 0b, isMovable: 1b, Items: [], facing: 0b}",
     "nbt_identifier": [

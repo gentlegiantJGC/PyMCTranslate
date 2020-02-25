@@ -6,19 +6,19 @@
     "snbt": "{Items: [], Lock: \"\"}",
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "type": [
-            "single",
-            "left",
-            "right"
+            "\"single\"",
+            "\"left\"",
+            "\"right\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "type": "single"
+        "facing": "\"north\"",
+        "type": "\"single\""
     }
 }

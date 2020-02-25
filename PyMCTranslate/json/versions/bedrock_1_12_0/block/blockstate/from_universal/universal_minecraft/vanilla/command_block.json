@@ -7,19 +7,19 @@
         "function": "map_properties",
         "options": {
             "mode": {
-                "impulse": [
+                "\"impulse\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:command_block"
                     }
                 ],
-                "repeating": [
+                "\"repeating\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:repeating_command_block"
                     }
                 ],
-                "chain": [
+                "\"chain\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:chain_command_block"
@@ -32,16 +32,16 @@
         "function": "carry_properties",
         "options": {
             "conditional": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ]
         }
     },

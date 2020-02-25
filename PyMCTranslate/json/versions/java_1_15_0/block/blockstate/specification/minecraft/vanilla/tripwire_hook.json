@@ -1,23 +1,23 @@
 {
     "properties": {
         "attached": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "attached": "false",
-        "facing": "north",
-        "powered": "false"
+        "attached": "\"false\"",
+        "facing": "\"north\"",
+        "powered": "\"false\""
     }
 }

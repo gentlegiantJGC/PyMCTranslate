@@ -3,19 +3,19 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "dirt": [
+                "\"dirt\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:dirt"
                     }
                 ],
-                "coarse_dirt": [
+                "\"coarse_dirt\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:coarse_dirt"
                     }
                 ],
-                "podzol": [
+                "\"podzol\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:podzol"

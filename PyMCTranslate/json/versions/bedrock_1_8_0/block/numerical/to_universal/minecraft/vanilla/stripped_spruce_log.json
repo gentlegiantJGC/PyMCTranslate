@@ -11,8 +11,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "spruce",
-                            "axis": "y"
+                            "material": "\"spruce\"",
+                            "axis": "\"y\""
                         }
                     }
                 ],
@@ -24,8 +24,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "spruce",
-                            "axis": "x"
+                            "material": "\"spruce\"",
+                            "axis": "\"x\""
                         }
                     }
                 ],
@@ -37,8 +37,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "spruce",
-                            "axis": "z"
+                            "material": "\"spruce\"",
+                            "axis": "\"z\""
                         }
                     }
                 ],
@@ -50,7 +50,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "spruce"
+                            "material": "\"spruce\""
                         }
                     }
                 ]
@@ -60,7 +60,7 @@
     {
         "function": "new_properties",
         "options": {
-            "stripped": "true"
+            "stripped": "\"true\""
         }
     }
 ]

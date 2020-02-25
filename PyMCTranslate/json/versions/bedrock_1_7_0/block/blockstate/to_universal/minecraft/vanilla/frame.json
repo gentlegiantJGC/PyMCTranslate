@@ -93,14 +93,14 @@
         "function": "carry_properties",
         "options": {
             "map_item": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "facing": [
-                "east",
-                "west",
-                "south",
-                "north"
+                "\"east\"",
+                "\"west\"",
+                "\"south\"",
+                "\"north\""
             ]
         }
     }

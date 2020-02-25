@@ -1,16 +1,16 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west",
-            "up",
-            "down"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
         ]
     },
     "defaults": {
-        "facing": "north"
+        "facing": "\"north\""
     },
     "snbt": "{Lock: \"\", Items: []}",
     "nbt_identifier": [

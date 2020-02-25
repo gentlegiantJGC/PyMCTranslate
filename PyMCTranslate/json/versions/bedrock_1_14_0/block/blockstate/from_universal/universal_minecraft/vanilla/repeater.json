@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "powered": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:unpowered_repeater"
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:powered_repeater"
@@ -21,93 +21,69 @@
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]
             },
             "delay": {
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "repeater_delay": [
-                                "snbt",
-                                "0"
-                            ]
+                            "repeater_delay": "0"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "repeater_delay": [
-                                "snbt",
-                                "1"
-                            ]
+                            "repeater_delay": "1"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "repeater_delay": [
-                                "snbt",
-                                "2"
-                            ]
+                            "repeater_delay": "2"
                         }
                     }
                 ],
-                "4": [
+                "\"4\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "repeater_delay": [
-                                "snbt",
-                                "3"
-                            ]
+                            "repeater_delay": "3"
                         }
                     }
                 ]

@@ -6,25 +6,25 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "dark_oak"
+            "material": "\"dark_oak\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ],
             "open": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     }

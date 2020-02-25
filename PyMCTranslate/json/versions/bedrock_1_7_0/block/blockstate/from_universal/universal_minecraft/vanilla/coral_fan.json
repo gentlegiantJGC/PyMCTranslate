@@ -7,22 +7,22 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "up",
-                "west",
-                "east",
-                "north",
-                "south"
+                "\"up\"",
+                "\"west\"",
+                "\"east\"",
+                "\"north\"",
+                "\"south\""
             ],
             "dead": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "type": [
-                "tube",
-                "brain",
-                "bubble",
-                "fire",
-                "horn"
+                "\"tube\"",
+                "\"brain\"",
+                "\"bubble\"",
+                "\"fire\"",
+                "\"horn\""
             ]
         }
     }

@@ -51,7 +51,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "skeleton"
+                                                "mob": "\"skeleton\""
                                             }
                                         }
                                     ],
@@ -59,7 +59,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "wither_skeleton"
+                                                "mob": "\"wither_skeleton\""
                                             }
                                         }
                                     ],
@@ -67,7 +67,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "zombie"
+                                                "mob": "\"zombie\""
                                             }
                                         }
                                     ],
@@ -75,7 +75,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "player"
+                                                "mob": "\"player\""
                                             }
                                         }
                                     ],
@@ -83,7 +83,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "creeper"
+                                                "mob": "\"creeper\""
                                             }
                                         }
                                     ],
@@ -91,7 +91,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "dragon"
+                                                "mob": "\"dragon\""
                                             }
                                         }
                                     ]
@@ -165,7 +165,13 @@
                 ]
             },
             "facing": {
-                "north": [
+                "\"floor\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:head"
+                    }
+                ],
+                "\"north\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -173,11 +179,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "\"north\""
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -185,11 +191,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -197,11 +203,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "\"west\""
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -209,7 +215,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "\"east\""
                         }
                     }
                 ]
@@ -220,8 +226,8 @@
         "function": "carry_properties",
         "options": {
             "no_drop": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

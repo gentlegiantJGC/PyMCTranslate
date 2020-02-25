@@ -1,36 +1,36 @@
 {
     "properties": {
         "material": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle",
-            "acacia",
-            "dark_oak",
-            "nether_brick"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\"",
+            "\"nether_brick\""
         ],
         "east": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "north": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "south": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "west": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "material": "oak",
-        "east": "false",
-        "north": "false",
-        "south": "false",
-        "west": "false"
+        "material": "\"oak\"",
+        "east": "\"false\"",
+        "north": "\"false\"",
+        "south": "\"false\"",
+        "west": "\"false\""
     }
 }

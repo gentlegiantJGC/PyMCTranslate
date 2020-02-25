@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "default": [
+                "\"default\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
                     }
                 ],
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -21,11 +21,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "white"
+                            "color": "\"white\""
                         }
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -33,11 +33,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "orange"
+                            "color": "\"orange\""
                         }
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -45,11 +45,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "magenta"
+                            "color": "\"magenta\""
                         }
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -57,11 +57,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "light_blue"
+                            "color": "\"light_blue\""
                         }
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -69,11 +69,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "yellow"
+                            "color": "\"yellow\""
                         }
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -81,11 +81,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "lime"
+                            "color": "\"lime\""
                         }
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -93,11 +93,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "pink"
+                            "color": "\"pink\""
                         }
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -105,11 +105,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "gray"
+                            "color": "\"gray\""
                         }
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -117,11 +117,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "light_gray"
+                            "color": "\"light_gray\""
                         }
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -129,11 +129,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "cyan"
+                            "color": "\"cyan\""
                         }
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -141,11 +141,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "purple"
+                            "color": "\"purple\""
                         }
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -153,11 +153,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "blue"
+                            "color": "\"blue\""
                         }
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -165,11 +165,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "brown"
+                            "color": "\"brown\""
                         }
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -177,11 +177,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "green"
+                            "color": "\"green\""
                         }
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -189,11 +189,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "red"
+                            "color": "\"red\""
                         }
                     }
                 ],
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:shulker_box"
@@ -201,13 +201,13 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "black"
+                            "color": "\"black\""
                         }
                     }
                 ]
             },
             "facing": {
-                "down": [
+                "\"down\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -218,7 +218,7 @@
                         ]
                     }
                 ],
-                "up": [
+                "\"up\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -229,7 +229,7 @@
                         ]
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -240,7 +240,7 @@
                         ]
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -251,7 +251,7 @@
                         ]
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -262,7 +262,7 @@
                         ]
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -280,12 +280,12 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ]
         }
     },

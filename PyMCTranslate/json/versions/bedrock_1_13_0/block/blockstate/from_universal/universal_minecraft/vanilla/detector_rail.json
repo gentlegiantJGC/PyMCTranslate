@@ -7,93 +7,69 @@
         "function": "map_properties",
         "options": {
             "powered": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_data_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "rail_data_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_data_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "rail_data_bit": "1b"
                         }
                     }
                 ]
             },
             "shape": {
-                "north_south": [
+                "\"north_south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "rail_direction": "0"
                         }
                     }
                 ],
-                "east_west": [
+                "\"east_west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "rail_direction": "1"
                         }
                     }
                 ],
-                "ascending_east": [
+                "\"ascending_east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "rail_direction": "2"
                         }
                     }
                 ],
-                "ascending_west": [
+                "\"ascending_west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "rail_direction": "3"
                         }
                     }
                 ],
-                "ascending_north": [
+                "\"ascending_north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "rail_direction": "4"
                         }
                     }
                 ],
-                "ascending_south": [
+                "\"ascending_south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "rail_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "rail_direction": "5"
                         }
                     }
                 ]

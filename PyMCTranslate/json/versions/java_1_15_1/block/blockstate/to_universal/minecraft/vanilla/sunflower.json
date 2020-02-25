@@ -6,15 +6,15 @@
     {
         "function": "new_properties",
         "options": {
-            "type": "sunflower"
+            "type": "\"sunflower\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "half": [
-                "upper",
-                "lower"
+                "\"upper\"",
+                "\"lower\""
             ]
         }
     }

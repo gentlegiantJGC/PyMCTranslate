@@ -7,47 +7,35 @@
         "function": "map_properties",
         "options": {
             "age": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "0"
-                            ]
+                            "age": "0"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "1"
-                            ]
+                            "age": "1"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "2"
-                            ]
+                            "age": "2"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "3"
-                            ]
+                            "age": "3"
                         }
                     }
                 ]

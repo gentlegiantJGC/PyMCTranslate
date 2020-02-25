@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "default": [
+                "\"default\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
                     }
                 ],
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -25,7 +25,7 @@
                         }
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -37,7 +37,7 @@
                         }
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -49,7 +49,7 @@
                         }
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -61,7 +61,7 @@
                         }
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -73,7 +73,7 @@
                         }
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -85,7 +85,7 @@
                         }
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -97,7 +97,7 @@
                         }
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -109,7 +109,7 @@
                         }
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -121,7 +121,7 @@
                         }
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -133,7 +133,7 @@
                         }
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -145,7 +145,7 @@
                         }
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -157,7 +157,7 @@
                         }
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -169,7 +169,7 @@
                         }
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -181,7 +181,7 @@
                         }
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -193,7 +193,7 @@
                         }
                     }
                 ],
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:undyed_shulker_box"
@@ -207,7 +207,7 @@
                 ]
             },
             "facing": {
-                "down": [
+                "\"down\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -218,7 +218,7 @@
                         ]
                     }
                 ],
-                "up": [
+                "\"up\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -229,7 +229,7 @@
                         ]
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -240,7 +240,7 @@
                         ]
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -251,7 +251,7 @@
                         ]
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -262,7 +262,7 @@
                         ]
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_nbt",
                         "options": [

@@ -42,25 +42,25 @@
     {
         "function": "new_properties",
         "options": {
-            "color": "cyan"
+            "color": "\"cyan\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "occupied": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "part": [
-                "head",
-                "foot"
+                "\"head\"",
+                "\"foot\""
             ]
         }
     }

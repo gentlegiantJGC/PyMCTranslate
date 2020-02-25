@@ -6,18 +6,18 @@
     "snbt": "{ItemTime1: 0, ItemTime2: 0, ItemTime3: 0, ItemTime4: 0, isMovable: 1b}",
     "properties": {
         "lit": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\""
         ]
     },
     "defaults": {
-        "lit": "true",
-        "facing": "north"
+        "lit": "\"true\"",
+        "facing": "\"north\""
     }
 }

@@ -7,19 +7,19 @@
         "function": "map_properties",
         "options": {
             "damage": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:anvil"
                     }
                 ],
-                "chipped": [
+                "\"chipped\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:chipped_anvil"
                     }
                 ],
-                "damaged": [
+                "\"damaged\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:damaged_anvil"
@@ -32,10 +32,10 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

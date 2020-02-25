@@ -60,17 +60,17 @@
     {
         "function": "new_properties",
         "options": {
-            "mob": "wither_skeleton"
+            "mob": "\"wither_skeleton\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

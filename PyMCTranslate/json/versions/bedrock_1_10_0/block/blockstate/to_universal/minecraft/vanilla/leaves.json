@@ -7,18 +7,18 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "oak",
-                "spruce",
-                "birch",
-                "jungle"
+                "\"oak\"",
+                "\"spruce\"",
+                "\"birch\"",
+                "\"jungle\""
             ],
             "persistent": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "check_decay": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

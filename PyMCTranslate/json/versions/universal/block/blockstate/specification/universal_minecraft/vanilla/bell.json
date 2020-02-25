@@ -1,31 +1,31 @@
 {
     "properties": {
         "attachment": [
-            "floor",
-            "ceiling",
-            "single_wall",
-            "double_wall"
+            "\"floor\"",
+            "\"ceiling\"",
+            "\"single_wall\"",
+            "\"double_wall\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "toggle": [
-            "0",
-            "1"
+            "\"0\"",
+            "\"1\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "attachment": "floor",
-        "facing": "north",
-        "toggle": "0",
-        "powered": "false"
+        "attachment": "\"floor\"",
+        "facing": "\"north\"",
+        "toggle": "\"0\"",
+        "powered": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

@@ -6,20 +6,20 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "acacia"
+            "material": "\"acacia\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "distance": [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7"
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\"",
+                "\"5\"",
+                "\"6\"",
+                "\"7\""
             ]
         }
     },
@@ -27,21 +27,21 @@
         "function": "map_properties",
         "options": {
             "persistent": {
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "persistent": "true",
-                            "check_decay": "false"
+                            "persistent": "\"true\"",
+                            "check_decay": "\"false\""
                         }
                     }
                 ],
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "persistent": "false",
-                            "check_decay": "false"
+                            "persistent": "\"false\"",
+                            "check_decay": "\"false\""
                         }
                     }
                 ]

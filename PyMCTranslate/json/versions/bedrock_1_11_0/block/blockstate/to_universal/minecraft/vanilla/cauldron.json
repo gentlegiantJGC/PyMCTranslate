@@ -93,20 +93,20 @@
         "function": "carry_properties",
         "options": {
             "level": [
-                "0",
-                "0.5",
-                "1",
-                "1.5",
-                "2",
-                "2.5",
-                "3"
+                "\"0\"",
+                "\"0.5\"",
+                "\"1\"",
+                "\"1.5\"",
+                "\"2\"",
+                "\"2.5\"",
+                "\"3\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "cauldron_liquid": "water"
+            "cauldron_liquid": "\"water\""
         }
     }
 ]

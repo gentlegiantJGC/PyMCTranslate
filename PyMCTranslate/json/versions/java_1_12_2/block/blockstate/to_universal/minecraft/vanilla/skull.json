@@ -33,7 +33,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "skeleton"
+                                                "mob": "\"skeleton\""
                                             }
                                         }
                                     ],
@@ -41,7 +41,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "wither_skeleton"
+                                                "mob": "\"wither_skeleton\""
                                             }
                                         }
                                     ],
@@ -49,7 +49,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "zombie"
+                                                "mob": "\"zombie\""
                                             }
                                         }
                                     ],
@@ -57,7 +57,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "player"
+                                                "mob": "\"player\""
                                             }
                                         }
                                     ],
@@ -65,7 +65,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "creeper"
+                                                "mob": "\"creeper\""
                                             }
                                         }
                                     ],
@@ -73,7 +73,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "dragon"
+                                                "mob": "\"dragon\""
                                             }
                                         }
                                     ]
@@ -98,7 +98,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "0"
+                                                                "rotation": "\"0\""
                                                             }
                                                         }
                                                     ],
@@ -106,7 +106,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "1"
+                                                                "rotation": "\"1\""
                                                             }
                                                         }
                                                     ],
@@ -114,7 +114,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "2"
+                                                                "rotation": "\"2\""
                                                             }
                                                         }
                                                     ],
@@ -122,7 +122,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "3"
+                                                                "rotation": "\"3\""
                                                             }
                                                         }
                                                     ],
@@ -130,7 +130,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "4"
+                                                                "rotation": "\"4\""
                                                             }
                                                         }
                                                     ],
@@ -138,7 +138,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "5"
+                                                                "rotation": "\"5\""
                                                             }
                                                         }
                                                     ],
@@ -146,7 +146,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "6"
+                                                                "rotation": "\"6\""
                                                             }
                                                         }
                                                     ],
@@ -154,7 +154,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "7"
+                                                                "rotation": "\"7\""
                                                             }
                                                         }
                                                     ],
@@ -162,7 +162,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "8"
+                                                                "rotation": "\"8\""
                                                             }
                                                         }
                                                     ],
@@ -170,7 +170,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "9"
+                                                                "rotation": "\"9\""
                                                             }
                                                         }
                                                     ],
@@ -178,7 +178,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "10"
+                                                                "rotation": "\"10\""
                                                             }
                                                         }
                                                     ],
@@ -186,7 +186,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "11"
+                                                                "rotation": "\"11\""
                                                             }
                                                         }
                                                     ],
@@ -194,7 +194,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "12"
+                                                                "rotation": "\"12\""
                                                             }
                                                         }
                                                     ],
@@ -202,7 +202,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "13"
+                                                                "rotation": "\"13\""
                                                             }
                                                         }
                                                     ],
@@ -210,7 +210,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "14"
+                                                                "rotation": "\"14\""
                                                             }
                                                         }
                                                     ],
@@ -218,7 +218,7 @@
                                                         {
                                                             "function": "new_properties",
                                                             "options": {
-                                                                "rotation": "15"
+                                                                "rotation": "\"15\""
                                                             }
                                                         }
                                                     ]
@@ -250,7 +250,13 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "north": [
+                "\"floor\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:head"
+                    }
+                ],
+                "\"north\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -258,11 +264,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "\"north\""
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -270,11 +276,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -282,11 +288,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "\"west\""
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wall_head"
@@ -294,7 +300,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "\"east\""
                         }
                     }
                 ]

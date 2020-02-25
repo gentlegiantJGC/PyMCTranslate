@@ -1,23 +1,23 @@
 {
     "properties": {
         "facing": [
-            "west",
-            "east",
-            "north",
-            "south"
+            "\"west\"",
+            "\"east\"",
+            "\"north\"",
+            "\"south\""
         ],
         "dead": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ],
         "type": [
-            "bubble",
-            "fire"
+            "\"bubble\"",
+            "\"fire\""
         ]
     },
     "defaults": {
-        "facing": "west",
-        "dead": "false",
-        "type": "bubble"
+        "facing": "\"west\"",
+        "dead": "\"false\"",
+        "type": "\"bubble\""
     }
 }

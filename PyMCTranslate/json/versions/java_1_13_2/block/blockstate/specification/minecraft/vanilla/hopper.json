@@ -6,19 +6,19 @@
     "snbt": "{TransferCooldown: -1, Lock: \"\", Items: []}",
     "properties": {
         "enabled": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "facing": [
-            "down",
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"down\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "enabled": "true",
-        "facing": "down"
+        "enabled": "\"true\"",
+        "facing": "\"down\""
     }
 }

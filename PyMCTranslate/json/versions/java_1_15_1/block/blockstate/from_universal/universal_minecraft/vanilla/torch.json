@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "up": [
+                "\"up\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:torch"
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wall_torch"
@@ -21,11 +21,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "\"north\""
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wall_torch"
@@ -33,11 +33,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wall_torch"
@@ -45,11 +45,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "\"west\""
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wall_torch"
@@ -57,7 +57,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "\"east\""
                         }
                     }
                 ]

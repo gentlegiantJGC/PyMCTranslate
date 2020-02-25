@@ -6,17 +6,17 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "acacia",
-            "stripped": "true"
+            "material": "\"acacia\"",
+            "stripped": "\"true\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

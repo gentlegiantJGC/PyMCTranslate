@@ -7,12 +7,12 @@
         "function": "map_properties",
         "options": {
             "stripped": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log"
@@ -24,7 +24,7 @@
                                         }
                                     }
                                 ],
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log"
@@ -36,7 +36,7 @@
                                         }
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log"
@@ -48,7 +48,7 @@
                                         }
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log"
@@ -60,7 +60,7 @@
                                         }
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log2"
@@ -72,7 +72,7 @@
                                         }
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:log2"
@@ -88,42 +88,42 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "spruce": [
+                                "\"spruce\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_spruce_log"
                                     }
                                 ],
-                                "birch": [
+                                "\"birch\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_birch_log"
                                     }
                                 ],
-                                "jungle": [
+                                "\"jungle\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_jungle_log"
                                     }
                                 ],
-                                "acacia": [
+                                "\"acacia\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_acacia_log"
                                     }
                                 ],
-                                "dark_oak": [
+                                "\"dark_oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_dark_oak_log"
                                     }
                                 ],
-                                "oak": [
+                                "\"oak\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_oak_log"

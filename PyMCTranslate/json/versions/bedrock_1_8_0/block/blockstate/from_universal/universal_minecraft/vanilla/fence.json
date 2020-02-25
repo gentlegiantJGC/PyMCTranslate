@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fence"
@@ -15,11 +15,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "oak"
+                            "material": "\"oak\""
                         }
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fence"
@@ -27,11 +27,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "spruce"
+                            "material": "\"spruce\""
                         }
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fence"
@@ -39,11 +39,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "birch"
+                            "material": "\"birch\""
                         }
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fence"
@@ -51,11 +51,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "jungle"
+                            "material": "\"jungle\""
                         }
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fence"
@@ -63,11 +63,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia"
+                            "material": "\"acacia\""
                         }
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fence"
@@ -75,11 +75,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "dark_oak"
+                            "material": "\"dark_oak\""
                         }
                     }
                 ],
-                "nether_brick": [
+                "\"nether_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:nether_brick_fence"

@@ -7,40 +7,34 @@
         "function": "map_properties",
         "options": {
             "east": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "north": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "west": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "0"
-                                                                            ]
+                                                                            "vine_direction_bits": "0"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "1"
-                                                                            ]
+                                                                            "vine_direction_bits": "1"
                                                                         }
                                                                     }
                                                                 ]
@@ -48,30 +42,24 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "2"
-                                                                            ]
+                                                                            "vine_direction_bits": "2"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "3"
-                                                                            ]
+                                                                            "vine_direction_bits": "3"
                                                                         }
                                                                     }
                                                                 ]
@@ -83,35 +71,29 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "west": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "4"
-                                                                            ]
+                                                                            "vine_direction_bits": "4"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "5"
-                                                                            ]
+                                                                            "vine_direction_bits": "5"
                                                                         }
                                                                     }
                                                                 ]
@@ -119,30 +101,24 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "6"
-                                                                            ]
+                                                                            "vine_direction_bits": "6"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "7"
-                                                                            ]
+                                                                            "vine_direction_bits": "7"
                                                                         }
                                                                     }
                                                                 ]
@@ -158,40 +134,34 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "north": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "west": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "8"
-                                                                            ]
+                                                                            "vine_direction_bits": "8"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "9"
-                                                                            ]
+                                                                            "vine_direction_bits": "9"
                                                                         }
                                                                     }
                                                                 ]
@@ -199,30 +169,24 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "10"
-                                                                            ]
+                                                                            "vine_direction_bits": "10"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "11"
-                                                                            ]
+                                                                            "vine_direction_bits": "11"
                                                                         }
                                                                     }
                                                                 ]
@@ -234,35 +198,29 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "west": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "12"
-                                                                            ]
+                                                                            "vine_direction_bits": "12"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "13"
-                                                                            ]
+                                                                            "vine_direction_bits": "13"
                                                                         }
                                                                     }
                                                                 ]
@@ -270,30 +228,24 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "south": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "14"
-                                                                            ]
+                                                                            "vine_direction_bits": "14"
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
-                                                                            "vine_direction_bits": [
-                                                                                "snbt",
-                                                                                "15"
-                                                                            ]
+                                                                            "vine_direction_bits": "15"
                                                                         }
                                                                     }
                                                                 ]

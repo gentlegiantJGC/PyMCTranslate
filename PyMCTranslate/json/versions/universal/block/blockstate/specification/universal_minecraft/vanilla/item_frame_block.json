@@ -1,21 +1,21 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west",
-            "up",
-            "down"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
         ],
         "map_item": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "map_item": "false"
+        "facing": "\"north\"",
+        "map_item": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

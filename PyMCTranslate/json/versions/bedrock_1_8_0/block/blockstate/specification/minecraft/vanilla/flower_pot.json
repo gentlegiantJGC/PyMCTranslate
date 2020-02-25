@@ -1,12 +1,12 @@
 {
     "properties": {
         "update": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ]
     },
     "defaults": {
-        "update": "false"
+        "update": "\"false\""
     },
     "snbt": "{isMovable: 1b}",
     "nbt_identifier": [

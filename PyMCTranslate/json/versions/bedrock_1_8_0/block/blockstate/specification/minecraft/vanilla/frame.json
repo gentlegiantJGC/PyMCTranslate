@@ -6,18 +6,18 @@
     "snbt": "{isMovable: 1b}",
     "properties": {
         "map_item": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ],
         "facing": [
-            "east",
-            "west",
-            "south",
-            "north"
+            "\"east\"",
+            "\"west\"",
+            "\"south\"",
+            "\"north\""
         ]
     },
     "defaults": {
-        "map_item": "false",
-        "facing": "east"
+        "map_item": "\"false\"",
+        "facing": "\"east\""
     }
 }

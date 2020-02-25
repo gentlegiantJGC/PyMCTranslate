@@ -1,28 +1,28 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "in_wall": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "open": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "in_wall": "false",
-        "open": "false",
-        "powered": "false"
+        "facing": "\"north\"",
+        "in_wall": "\"false\"",
+        "open": "\"false\"",
+        "powered": "\"false\""
     }
 }

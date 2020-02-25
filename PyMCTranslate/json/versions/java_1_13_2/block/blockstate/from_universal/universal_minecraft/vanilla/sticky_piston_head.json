@@ -6,23 +6,23 @@
     {
         "function": "new_properties",
         "options": {
-            "type": "sticky"
+            "type": "\"sticky\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ],
             "short": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

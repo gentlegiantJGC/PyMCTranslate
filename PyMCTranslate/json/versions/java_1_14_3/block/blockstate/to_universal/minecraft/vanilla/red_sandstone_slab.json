@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "red_sandstone"
+            "material": "\"red_sandstone\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "type": [
-                "top",
-                "bottom",
-                "double"
+                "\"top\"",
+                "\"bottom\"",
+                "\"double\""
             ]
         }
     }

@@ -11,8 +11,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "birch",
-                            "axis": "y"
+                            "material": "\"birch\"",
+                            "axis": "\"y\""
                         }
                     }
                 ],
@@ -24,8 +24,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "birch",
-                            "axis": "x"
+                            "material": "\"birch\"",
+                            "axis": "\"x\""
                         }
                     }
                 ],
@@ -37,8 +37,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "birch",
-                            "axis": "z"
+                            "material": "\"birch\"",
+                            "axis": "\"z\""
                         }
                     }
                 ],
@@ -50,7 +50,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "birch"
+                            "material": "\"birch\""
                         }
                     }
                 ]
@@ -60,7 +60,7 @@
     {
         "function": "new_properties",
         "options": {
-            "stripped": "true"
+            "stripped": "\"true\""
         }
     }
 ]

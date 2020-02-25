@@ -7,18 +7,18 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "west",
-                "east",
-                "north",
-                "south"
+                "\"west\"",
+                "\"east\"",
+                "\"north\"",
+                "\"south\""
             ],
             "dead": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "type": [
-                "bubble",
-                "fire"
+                "\"bubble\"",
+                "\"fire\""
             ]
         }
     }

@@ -7,82 +7,61 @@
         "function": "map_properties",
         "options": {
             "age": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "0"
-                            ]
+                            "age": "0"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "1"
-                            ]
+                            "age": "1"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": [
-                                "snbt",
-                                "2"
-                            ]
+                            "age": "2"
                         }
                     }
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]

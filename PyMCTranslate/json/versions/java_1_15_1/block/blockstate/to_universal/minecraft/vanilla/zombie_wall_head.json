@@ -60,17 +60,17 @@
     {
         "function": "new_properties",
         "options": {
-            "mob": "zombie"
+            "mob": "\"zombie\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

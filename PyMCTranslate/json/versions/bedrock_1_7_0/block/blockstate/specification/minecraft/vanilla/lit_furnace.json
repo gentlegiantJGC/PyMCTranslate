@@ -1,14 +1,14 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "facing": "north"
+        "facing": "\"north\""
     },
     "snbt": "{BurnDuration: 0s, BurnTime: 0s, CookTime: 0s, StoredXPInt: 0, Items: [], isMovable: 1b}",
     "nbt_identifier": [

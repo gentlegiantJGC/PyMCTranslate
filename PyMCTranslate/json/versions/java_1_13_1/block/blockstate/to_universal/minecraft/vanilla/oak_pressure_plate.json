@@ -6,15 +6,15 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "oak"
+            "material": "\"oak\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

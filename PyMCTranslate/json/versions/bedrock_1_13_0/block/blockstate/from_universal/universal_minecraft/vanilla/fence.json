@@ -7,73 +7,55 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"oak\""
-                            ]
+                            "wood_type": "\"oak\""
                         }
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"spruce\""
-                            ]
+                            "wood_type": "\"spruce\""
                         }
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"birch\""
-                            ]
+                            "wood_type": "\"birch\""
                         }
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"jungle\""
-                            ]
+                            "wood_type": "\"jungle\""
                         }
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"acacia\""
-                            ]
+                            "wood_type": "\"acacia\""
                         }
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"dark_oak\""
-                            ]
+                            "wood_type": "\"dark_oak\""
                         }
                     }
                 ],
-                "nether_brick": [
+                "\"nether_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:nether_brick_fence"

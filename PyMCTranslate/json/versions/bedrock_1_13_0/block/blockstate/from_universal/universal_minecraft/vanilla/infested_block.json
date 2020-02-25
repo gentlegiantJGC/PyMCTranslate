@@ -7,69 +7,51 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "stone": [
+                "\"stone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "monster_egg_stone_type": [
-                                "snbt",
-                                "\"stone\""
-                            ]
+                            "monster_egg_stone_type": "\"stone\""
                         }
                     }
                 ],
-                "cobblestone": [
+                "\"cobblestone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "monster_egg_stone_type": [
-                                "snbt",
-                                "\"cobblestone\""
-                            ]
+                            "monster_egg_stone_type": "\"cobblestone\""
                         }
                     }
                 ],
-                "stone_bricks": [
+                "\"stone_bricks\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "monster_egg_stone_type": [
-                                "snbt",
-                                "\"stone_brick\""
-                            ]
+                            "monster_egg_stone_type": "\"stone_brick\""
                         }
                     }
                 ],
-                "mossy_stone_bricks": [
+                "\"mossy_stone_bricks\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "monster_egg_stone_type": [
-                                "snbt",
-                                "\"mossy_stone_brick\""
-                            ]
+                            "monster_egg_stone_type": "\"mossy_stone_brick\""
                         }
                     }
                 ],
-                "cracked_stone_bricks": [
+                "\"cracked_stone_bricks\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "monster_egg_stone_type": [
-                                "snbt",
-                                "\"cracked_stone_brick\""
-                            ]
+                            "monster_egg_stone_type": "\"cracked_stone_brick\""
                         }
                     }
                 ],
-                "chiseled_stone_bricks": [
+                "\"chiseled_stone_bricks\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "monster_egg_stone_type": [
-                                "snbt",
-                                "\"chiseled_stone_brick\""
-                            ]
+                            "monster_egg_stone_type": "\"chiseled_stone_brick\""
                         }
                     }
                 ]

@@ -1,23 +1,23 @@
 {
     "properties": {
         "mob": [
-            "skeleton",
-            "wither_skeleton",
-            "zombie",
-            "player",
-            "creeper",
-            "dragon"
+            "\"skeleton\"",
+            "\"wither_skeleton\"",
+            "\"zombie\"",
+            "\"player\"",
+            "\"creeper\"",
+            "\"dragon\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "mob": "skeleton",
-        "facing": "north"
+        "mob": "\"skeleton\"",
+        "facing": "\"north\""
     },
     "nbt_identifier": [
         "universal_minecraft",

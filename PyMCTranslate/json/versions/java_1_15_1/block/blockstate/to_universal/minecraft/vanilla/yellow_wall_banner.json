@@ -76,17 +76,17 @@
     {
         "function": "new_properties",
         "options": {
-            "color": "yellow"
+            "color": "\"yellow\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

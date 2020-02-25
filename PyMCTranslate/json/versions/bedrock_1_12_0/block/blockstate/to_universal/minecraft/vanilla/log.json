@@ -3,15 +3,15 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "oak",
-                "spruce",
-                "birch",
-                "jungle"
+                "\"oak\"",
+                "\"spruce\"",
+                "\"birch\"",
+                "\"jungle\""
             ],
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     },
@@ -19,25 +19,25 @@
         "function": "map_properties",
         "options": {
             "axis": {
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:log"
                     }
                 ],
-                "y": [
+                "\"y\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:log"
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:log"
                     }
                 ],
-                "all": [
+                "\"all\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:wood"
@@ -45,7 +45,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "axis": "y"
+                            "axis": "\"y\""
                         }
                     }
                 ]

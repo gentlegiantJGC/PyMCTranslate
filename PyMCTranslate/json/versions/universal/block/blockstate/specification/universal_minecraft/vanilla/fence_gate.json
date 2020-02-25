@@ -1,37 +1,37 @@
 {
     "properties": {
         "material": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle",
-            "acacia",
-            "dark_oak"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "in_wall": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "open": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "material": "oak",
-        "facing": "north",
-        "in_wall": "false",
-        "open": "false",
-        "powered": "false"
+        "material": "\"oak\"",
+        "facing": "\"north\"",
+        "in_wall": "\"false\"",
+        "open": "\"false\"",
+        "powered": "\"false\""
     }
 }

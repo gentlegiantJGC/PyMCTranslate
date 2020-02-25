@@ -76,7 +76,7 @@
         "function": "map_properties",
         "options": {
             "color": {
-                "black": [
+                "\"black\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -87,7 +87,7 @@
                         ]
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -98,7 +98,7 @@
                         ]
                     }
                 ],
-                "green": [
+                "\"green\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -109,7 +109,7 @@
                         ]
                     }
                 ],
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -120,7 +120,7 @@
                         ]
                     }
                 ],
-                "blue": [
+                "\"blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -131,7 +131,7 @@
                         ]
                     }
                 ],
-                "purple": [
+                "\"purple\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -142,7 +142,7 @@
                         ]
                     }
                 ],
-                "cyan": [
+                "\"cyan\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -153,7 +153,7 @@
                         ]
                     }
                 ],
-                "light_gray": [
+                "\"light_gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -164,7 +164,7 @@
                         ]
                     }
                 ],
-                "gray": [
+                "\"gray\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -175,7 +175,7 @@
                         ]
                     }
                 ],
-                "pink": [
+                "\"pink\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -186,7 +186,7 @@
                         ]
                     }
                 ],
-                "lime": [
+                "\"lime\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -197,7 +197,7 @@
                         ]
                     }
                 ],
-                "yellow": [
+                "\"yellow\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -208,7 +208,7 @@
                         ]
                     }
                 ],
-                "light_blue": [
+                "\"light_blue\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -219,7 +219,7 @@
                         ]
                     }
                 ],
-                "magenta": [
+                "\"magenta\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -230,7 +230,7 @@
                         ]
                     }
                 ],
-                "orange": [
+                "\"orange\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -241,7 +241,7 @@
                         ]
                     }
                 ],
-                "white": [
+                "\"white\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -254,179 +254,131 @@
                 ]
             },
             "rotation": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "ground_sign_direction": "0"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "ground_sign_direction": "1"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "ground_sign_direction": "2"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "ground_sign_direction": "3"
                         }
                     }
                 ],
-                "4": [
+                "\"4\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "ground_sign_direction": "4"
                         }
                     }
                 ],
-                "5": [
+                "\"5\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "ground_sign_direction": "5"
                         }
                     }
                 ],
-                "6": [
+                "\"6\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "6"
-                            ]
+                            "ground_sign_direction": "6"
                         }
                     }
                 ],
-                "7": [
+                "\"7\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "7"
-                            ]
+                            "ground_sign_direction": "7"
                         }
                     }
                 ],
-                "8": [
+                "\"8\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "8"
-                            ]
+                            "ground_sign_direction": "8"
                         }
                     }
                 ],
-                "9": [
+                "\"9\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "9"
-                            ]
+                            "ground_sign_direction": "9"
                         }
                     }
                 ],
-                "10": [
+                "\"10\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "10"
-                            ]
+                            "ground_sign_direction": "10"
                         }
                     }
                 ],
-                "11": [
+                "\"11\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "11"
-                            ]
+                            "ground_sign_direction": "11"
                         }
                     }
                 ],
-                "12": [
+                "\"12\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "12"
-                            ]
+                            "ground_sign_direction": "12"
                         }
                     }
                 ],
-                "13": [
+                "\"13\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "13"
-                            ]
+                            "ground_sign_direction": "13"
                         }
                     }
                 ],
-                "14": [
+                "\"14\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "14"
-                            ]
+                            "ground_sign_direction": "14"
                         }
                     }
                 ],
-                "15": [
+                "\"15\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "ground_sign_direction": [
-                                "snbt",
-                                "15"
-                            ]
+                            "ground_sign_direction": "15"
                         }
                     }
                 ]

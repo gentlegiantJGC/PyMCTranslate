@@ -7,85 +7,85 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "cobblestone": [
+                "\"cobblestone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:cobblestone_wall"
                     }
                 ],
-                "mossy_cobblestone": [
+                "\"mossy_cobblestone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:mossy_cobblestone_wall"
                     }
                 ],
-                "brick": [
+                "\"brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:brick_wall"
                     }
                 ],
-                "prismarine": [
+                "\"prismarine\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:prismarine_wall"
                     }
                 ],
-                "red_sandstone": [
+                "\"red_sandstone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_sandstone_wall"
                     }
                 ],
-                "mossy_stone_brick": [
+                "\"mossy_stone_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:mossy_stone_brick_wall"
                     }
                 ],
-                "granite": [
+                "\"granite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:granite_wall"
                     }
                 ],
-                "stone_brick": [
+                "\"stone_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_brick_wall"
                     }
                 ],
-                "nether_brick": [
+                "\"nether_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:nether_brick_wall"
                     }
                 ],
-                "andesite": [
+                "\"andesite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:andesite_wall"
                     }
                 ],
-                "red_nether_brick": [
+                "\"red_nether_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_nether_brick_wall"
                     }
                 ],
-                "sandstone": [
+                "\"sandstone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:sandstone_wall"
                     }
                 ],
-                "end_stone_brick": [
+                "\"end_stone_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:end_stone_brick_wall"
                     }
                 ],
-                "diorite": [
+                "\"diorite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:diorite_wall"
@@ -98,24 +98,24 @@
         "function": "carry_properties",
         "options": {
             "east": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "north": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "south": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "up": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "west": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

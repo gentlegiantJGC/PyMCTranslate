@@ -1,22 +1,22 @@
 {
     "properties": {
         "material": [
-            "smooth_stone",
-            "sandstone",
-            "petrified_oak",
-            "cobblestone",
-            "brick",
-            "stone_brick",
-            "nether_brick",
-            "quartz"
+            "\"smooth_stone\"",
+            "\"sandstone\"",
+            "\"petrified_oak\"",
+            "\"cobblestone\"",
+            "\"brick\"",
+            "\"stone_brick\"",
+            "\"nether_brick\"",
+            "\"quartz\""
         ],
         "type": [
-            "bottom",
-            "top"
+            "\"bottom\"",
+            "\"top\""
         ]
     },
     "defaults": {
-        "material": "smooth_stone",
-        "type": "bottom"
+        "material": "\"smooth_stone\"",
+        "type": "\"bottom\""
     }
 }

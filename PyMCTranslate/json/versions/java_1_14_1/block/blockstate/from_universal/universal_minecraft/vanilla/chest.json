@@ -113,15 +113,15 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "type": [
-                "single",
-                "left",
-                "right"
+                "\"single\"",
+                "\"left\"",
+                "\"right\""
             ]
         }
     }

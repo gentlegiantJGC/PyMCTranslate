@@ -6,46 +6,34 @@
     {
         "function": "new_properties",
         "options": {
-            "chisel_type": [
-                "snbt",
-                "\"default\""
-            ]
+            "chisel_type": "\"default\""
         }
     },
     {
         "function": "map_properties",
         "options": {
             "axis": {
-                "y": [
+                "\"y\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"y\""
-                            ]
+                            "pillar_axis": "\"y\""
                         }
                     }
                 ],
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"x\""
-                            ]
+                            "pillar_axis": "\"x\""
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"z\""
-                            ]
+                            "pillar_axis": "\"z\""
                         }
                     }
                 ]

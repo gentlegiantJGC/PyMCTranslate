@@ -1,19 +1,19 @@
 {
     "properties": {
         "type": [
-            "tube",
-            "brain",
-            "bubble",
-            "fire",
-            "horn"
+            "\"tube\"",
+            "\"brain\"",
+            "\"bubble\"",
+            "\"fire\"",
+            "\"horn\""
         ],
         "dead": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "type": "tube",
-        "dead": "false"
+        "type": "\"tube\"",
+        "dead": "\"false\""
     }
 }

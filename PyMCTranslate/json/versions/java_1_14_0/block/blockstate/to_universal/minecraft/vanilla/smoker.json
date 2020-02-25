@@ -157,14 +157,14 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "lit": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

@@ -7,93 +7,69 @@
         "function": "map_properties",
         "options": {
             "chemistry_table_type": {
-                "compound_creator": [
+                "\"compound_creator\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "chemistry_table_type": [
-                                "snbt",
-                                "\"compound_creator\""
-                            ]
+                            "chemistry_table_type": "\"compound_creator\""
                         }
                     }
                 ],
-                "material_reducer": [
+                "\"material_reducer\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "chemistry_table_type": [
-                                "snbt",
-                                "\"material_reducer\""
-                            ]
+                            "chemistry_table_type": "\"material_reducer\""
                         }
                     }
                 ],
-                "element_constructor": [
+                "\"element_constructor\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "chemistry_table_type": [
-                                "snbt",
-                                "\"element_constructor\""
-                            ]
+                            "chemistry_table_type": "\"element_constructor\""
                         }
                     }
                 ],
-                "lab_table": [
+                "\"lab_table\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "chemistry_table_type": [
-                                "snbt",
-                                "\"lab_table\""
-                            ]
+                            "chemistry_table_type": "\"lab_table\""
                         }
                     }
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]

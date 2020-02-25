@@ -3,19 +3,19 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:prismarine"
                     }
                 ],
-                "dark": [
+                "\"dark\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:dark_prismarine"
                     }
                 ],
-                "bricks": [
+                "\"bricks\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:prismarine_bricks"

@@ -43,20 +43,20 @@
         "function": "carry_properties",
         "options": {
             "attachment": [
-                "floor",
-                "ceiling",
-                "single_wall",
-                "double_wall"
+                "\"floor\"",
+                "\"ceiling\"",
+                "\"single_wall\"",
+                "\"double_wall\""
             ],
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

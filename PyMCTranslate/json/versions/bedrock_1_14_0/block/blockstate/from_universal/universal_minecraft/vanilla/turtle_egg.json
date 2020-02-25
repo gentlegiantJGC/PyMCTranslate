@@ -7,82 +7,61 @@
         "function": "map_properties",
         "options": {
             "hatch": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cracked_state": [
-                                "snbt",
-                                "\"no_cracks\""
-                            ]
+                            "cracked_state": "\"no_cracks\""
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cracked_state": [
-                                "snbt",
-                                "\"cracked\""
-                            ]
+                            "cracked_state": "\"cracked\""
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "cracked_state": [
-                                "snbt",
-                                "\"max_cracked\""
-                            ]
+                            "cracked_state": "\"max_cracked\""
                         }
                     }
                 ]
             },
             "turtle_egg_count": {
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "turtle_egg_count": [
-                                "snbt",
-                                "\"one_egg\""
-                            ]
+                            "turtle_egg_count": "\"one_egg\""
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "turtle_egg_count": [
-                                "snbt",
-                                "\"two_egg\""
-                            ]
+                            "turtle_egg_count": "\"two_egg\""
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "turtle_egg_count": [
-                                "snbt",
-                                "\"three_egg\""
-                            ]
+                            "turtle_egg_count": "\"three_egg\""
                         }
                     }
                 ],
-                "4": [
+                "\"4\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "turtle_egg_count": [
-                                "snbt",
-                                "\"four_egg\""
-                            ]
+                            "turtle_egg_count": "\"four_egg\""
                         }
                     }
                 ]

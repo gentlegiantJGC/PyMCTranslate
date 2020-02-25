@@ -1,22 +1,22 @@
 {
     "properties": {
         "stage": [
-            "0",
-            "1"
+            "\"0\"",
+            "\"1\""
         ],
         "leaves": [
-            "none",
-            "small",
-            "large"
+            "\"none\"",
+            "\"small\"",
+            "\"large\""
         ],
         "thickness": [
-            "thin",
-            "thick"
+            "\"thin\"",
+            "\"thick\""
         ]
     },
     "defaults": {
-        "stage": "0",
-        "leaves": "none",
-        "thickness": "thin"
+        "stage": "\"0\"",
+        "leaves": "\"none\"",
+        "thickness": "\"thin\""
     }
 }

@@ -7,20 +7,20 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "oak",
-                "spruce",
-                "birch",
-                "jungle",
-                "acacia",
-                "dark_oak"
+                "\"oak\"",
+                "\"spruce\"",
+                "\"birch\"",
+                "\"jungle\"",
+                "\"acacia\"",
+                "\"dark_oak\""
             ],
             "persistent": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "check_decay": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     },
@@ -28,37 +28,37 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves2"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves2"

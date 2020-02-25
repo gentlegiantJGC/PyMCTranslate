@@ -7,44 +7,44 @@
         "function": "map_properties",
         "options": {
             "up": {
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "down": {
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -52,24 +52,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_east"
+                                                                                                            "variant": "\"north_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -81,29 +81,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north"
+                                                                                                            "variant": "\"north\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -111,24 +111,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north"
+                                                                                                            "variant": "\"north\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -144,34 +144,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_east"
+                                                                                                            "variant": "\"south_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -179,24 +179,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "west"
+                                                                                                            "variant": "\"west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "east"
+                                                                                                            "variant": "\"east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -208,29 +208,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_west"
+                                                                                                            "variant": "\"south_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south"
+                                                                                                            "variant": "\"south\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -238,24 +238,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "west"
+                                                                                                            "variant": "\"west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "center"
+                                                                                                            "variant": "\"center\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -275,39 +275,39 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_east"
+                                                                                                            "variant": "\"north_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -315,24 +315,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_east"
+                                                                                                            "variant": "\"north_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -344,29 +344,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north"
+                                                                                                            "variant": "\"north\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -374,24 +374,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north"
+                                                                                                            "variant": "\"north\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -407,34 +407,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_west"
+                                                                                                            "variant": "\"south_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_east"
+                                                                                                            "variant": "\"south_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -442,24 +442,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "west"
+                                                                                                            "variant": "\"west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "east"
+                                                                                                            "variant": "\"east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -471,29 +471,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_west"
+                                                                                                            "variant": "\"south_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south"
+                                                                                                            "variant": "\"south\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -501,24 +501,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "west"
+                                                                                                            "variant": "\"west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "center"
+                                                                                                            "variant": "\"center\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -542,44 +542,44 @@
                         }
                     }
                 ],
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "down": {
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -587,24 +587,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_east"
+                                                                                                            "variant": "\"north_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -616,29 +616,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -646,24 +646,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -679,34 +679,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_east"
+                                                                                                            "variant": "\"south_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -714,24 +714,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -743,29 +743,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_west"
+                                                                                                            "variant": "\"south_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -773,24 +773,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -810,39 +810,39 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_outside"
+                                                                                                            "variant": "\"all_outside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_east"
+                                                                                                            "variant": "\"north_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -850,24 +850,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_east"
+                                                                                                            "variant": "\"north_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -879,29 +879,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -909,24 +909,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "north_west"
+                                                                                                            "variant": "\"north_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -942,34 +942,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_west"
+                                                                                                            "variant": "\"south_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_east"
+                                                                                                            "variant": "\"south_east\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -977,24 +977,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1006,29 +1006,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "south_west"
+                                                                                                            "variant": "\"south_west\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1036,24 +1036,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "variant": "all_inside"
+                                                                                                            "variant": "\"all_inside\""
                                                                                                         }
                                                                                                     }
                                                                                                 ]

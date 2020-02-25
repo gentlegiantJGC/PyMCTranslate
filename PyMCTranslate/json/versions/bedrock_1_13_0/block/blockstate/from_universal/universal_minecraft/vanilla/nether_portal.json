@@ -7,36 +7,27 @@
         "function": "map_properties",
         "options": {
             "axis": {
-                "unknown": [
+                "\"unknown\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "portal_axis": [
-                                "snbt",
-                                "\"unknown\""
-                            ]
+                            "portal_axis": "\"unknown\""
                         }
                     }
                 ],
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "portal_axis": [
-                                "snbt",
-                                "\"x\""
-                            ]
+                            "portal_axis": "\"x\""
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "portal_axis": [
-                                "snbt",
-                                "\"z\""
-                            ]
+                            "portal_axis": "\"z\""
                         }
                     }
                 ]

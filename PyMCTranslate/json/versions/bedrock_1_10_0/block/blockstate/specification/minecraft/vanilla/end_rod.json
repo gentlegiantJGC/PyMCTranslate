@@ -1,15 +1,15 @@
 {
     "properties": {
         "facing": [
-            "down",
-            "up",
-            "south",
-            "north",
-            "east",
-            "west"
+            "\"down\"",
+            "\"up\"",
+            "\"south\"",
+            "\"north\"",
+            "\"east\"",
+            "\"west\""
         ]
     },
     "defaults": {
-        "facing": "down"
+        "facing": "\"down\""
     }
 }

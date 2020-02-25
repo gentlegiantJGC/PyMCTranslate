@@ -1,33 +1,33 @@
 {
     "properties": {
         "color": [
-            "white",
-            "orange",
-            "magenta",
-            "light_blue",
-            "yellow",
-            "lime",
-            "pink",
-            "gray",
-            "light_gray",
-            "cyan",
-            "purple",
-            "blue",
-            "brown",
-            "green",
-            "red",
-            "black"
+            "\"white\"",
+            "\"orange\"",
+            "\"magenta\"",
+            "\"light_blue\"",
+            "\"yellow\"",
+            "\"lime\"",
+            "\"pink\"",
+            "\"gray\"",
+            "\"light_gray\"",
+            "\"cyan\"",
+            "\"purple\"",
+            "\"blue\"",
+            "\"brown\"",
+            "\"green\"",
+            "\"red\"",
+            "\"black\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "color": "white",
-        "facing": "north"
+        "color": "\"white\"",
+        "facing": "\"north\""
     },
     "nbt_identifier": [
         "universal_minecraft",

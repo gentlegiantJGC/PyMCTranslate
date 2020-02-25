@@ -2,7 +2,7 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "acacia"
+            "material": "\"acacia\""
         }
     },
     {
@@ -17,7 +17,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered": "false"
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -29,7 +29,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered": "true"
+                            "powered": "\"true\""
                         }
                     }
                 ]

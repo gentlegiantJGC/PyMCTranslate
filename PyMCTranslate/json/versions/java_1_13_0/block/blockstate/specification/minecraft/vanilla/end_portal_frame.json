@@ -1,18 +1,18 @@
 {
     "properties": {
         "eye": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "eye": "false",
-        "facing": "north"
+        "eye": "\"false\"",
+        "facing": "\"north\""
     }
 }

@@ -7,21 +7,21 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "end_stone_brick",
-                "smooth_red_sandstone",
-                "polished_andesite",
-                "andesite",
-                "diorite",
-                "polished_diorite",
-                "granite",
-                "polished_granite"
+                "\"end_stone_brick\"",
+                "\"smooth_red_sandstone\"",
+                "\"polished_andesite\"",
+                "\"andesite\"",
+                "\"diorite\"",
+                "\"polished_diorite\"",
+                "\"granite\"",
+                "\"polished_granite\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "type": "double"
+            "type": "\"double\""
         }
     }
 ]

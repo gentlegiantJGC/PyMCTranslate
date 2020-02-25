@@ -7,25 +7,19 @@
         "function": "map_properties",
         "options": {
             "infiniburn": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "infiniburn_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "infiniburn_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "infiniburn_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "infiniburn_bit": "1b"
                         }
                     }
                 ]

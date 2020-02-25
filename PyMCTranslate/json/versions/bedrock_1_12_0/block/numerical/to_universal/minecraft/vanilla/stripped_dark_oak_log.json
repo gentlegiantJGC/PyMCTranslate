@@ -11,8 +11,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "dark_oak",
-                            "axis": "y"
+                            "material": "\"dark_oak\"",
+                            "axis": "\"y\""
                         }
                     }
                 ],
@@ -24,8 +24,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "dark_oak",
-                            "axis": "x"
+                            "material": "\"dark_oak\"",
+                            "axis": "\"x\""
                         }
                     }
                 ],
@@ -37,8 +37,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "dark_oak",
-                            "axis": "z"
+                            "material": "\"dark_oak\"",
+                            "axis": "\"z\""
                         }
                     }
                 ],
@@ -50,7 +50,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "dark_oak"
+                            "material": "\"dark_oak\""
                         }
                     }
                 ]
@@ -60,7 +60,7 @@
     {
         "function": "new_properties",
         "options": {
-            "stripped": "true"
+            "stripped": "\"true\""
         }
     }
 ]

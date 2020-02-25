@@ -141,15 +141,15 @@
         "function": "carry_properties",
         "options": {
             "enabled": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "facing": [
-                "down",
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"down\"",
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

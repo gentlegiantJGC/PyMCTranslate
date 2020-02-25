@@ -6,25 +6,25 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "birch"
+            "material": "\"birch\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ],
             "open": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     }

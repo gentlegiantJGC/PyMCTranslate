@@ -89,8 +89,8 @@
         "function": "map_properties",
         "options": {
             "has_book": {
-                "false": [],
-                "true": [
+                "\"false\"": [],
+                "\"true\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -112,14 +112,14 @@
         "function": "carry_properties",
         "options": {
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ]
         }
     }

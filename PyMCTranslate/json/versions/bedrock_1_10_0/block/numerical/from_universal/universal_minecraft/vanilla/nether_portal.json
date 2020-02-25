@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "axis": {
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:portal"
@@ -19,7 +19,7 @@
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:portal"

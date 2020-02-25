@@ -6,21 +6,21 @@
     "snbt": "{Fuel: 0b, BrewTime: 0s, Items: [], Lock: \"\"}",
     "properties": {
         "has_bottle_0": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "has_bottle_1": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "has_bottle_2": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "has_bottle_0": "false",
-        "has_bottle_1": "false",
-        "has_bottle_2": "false"
+        "has_bottle_0": "\"false\"",
+        "has_bottle_1": "\"false\"",
+        "has_bottle_2": "\"false\""
     }
 }

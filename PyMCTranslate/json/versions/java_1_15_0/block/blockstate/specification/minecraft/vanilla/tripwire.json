@@ -1,41 +1,41 @@
 {
     "properties": {
         "attached": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "disarmed": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "east": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "north": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "south": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "west": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "attached": "false",
-        "disarmed": "false",
-        "east": "false",
-        "north": "false",
-        "powered": "false",
-        "south": "false",
-        "west": "false"
+        "attached": "\"false\"",
+        "disarmed": "\"false\"",
+        "east": "\"false\"",
+        "north": "\"false\"",
+        "powered": "\"false\"",
+        "south": "\"false\"",
+        "west": "\"false\""
     }
 }

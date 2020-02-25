@@ -7,43 +7,43 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wooden_door"
                     }
                 ],
-                "iron": [
+                "\"iron\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:iron_door"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:spruce_door"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:birch_door"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:jungle_door"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:acacia_door"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:dark_oak_door"
@@ -51,85 +51,64 @@
                 ]
             },
             "half": {
-                "lower": [
+                "\"lower\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "upper_block_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "upper_block_bit": "0b"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "direction": [
-                                                "snbt",
-                                                "0"
-                                            ]
+                                            "direction": "0"
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "direction": [
-                                                "snbt",
-                                                "1"
-                                            ]
+                                            "direction": "1"
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "direction": [
-                                                "snbt",
-                                                "2"
-                                            ]
+                                            "direction": "2"
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "direction": [
-                                                "snbt",
-                                                "3"
-                                            ]
+                                            "direction": "3"
                                         }
                                     }
                                 ]
                             },
                             "open": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "open_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "open_bit": "0b"
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "open_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "open_bit": "1b"
                                         }
                                     }
                                 ]
@@ -137,39 +116,30 @@
                         }
                     }
                 ],
-                "upper": [
+                "\"upper\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "upper_block_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "upper_block_bit": "1b"
                         }
                     },
                     {
                         "function": "map_properties",
                         "options": {
                             "hinge": {
-                                "left": [
+                                "\"left\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "door_hinge_bit": [
-                                                "snbt",
-                                                "0b"
-                                            ]
+                                            "door_hinge_bit": "0b"
                                         }
                                     }
                                 ],
-                                "right": [
+                                "\"right\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "door_hinge_bit": [
-                                                "snbt",
-                                                "1b"
-                                            ]
+                                            "door_hinge_bit": "1b"
                                         }
                                     }
                                 ]

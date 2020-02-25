@@ -51,7 +51,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "skeleton"
+                                                "mob": "\"skeleton\""
                                             }
                                         }
                                     ],
@@ -59,7 +59,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "wither_skeleton"
+                                                "mob": "\"wither_skeleton\""
                                             }
                                         }
                                     ],
@@ -67,7 +67,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "zombie"
+                                                "mob": "\"zombie\""
                                             }
                                         }
                                     ],
@@ -75,7 +75,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "player"
+                                                "mob": "\"player\""
                                             }
                                         }
                                     ],
@@ -83,7 +83,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "creeper"
+                                                "mob": "\"creeper\""
                                             }
                                         }
                                     ],
@@ -91,7 +91,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "dragon"
+                                                "mob": "\"dragon\""
                                             }
                                         }
                                     ]
@@ -161,7 +161,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -173,7 +173,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -185,7 +185,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -197,7 +197,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "\"east\""
                         }
                     }
                 ]
@@ -207,7 +207,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "no_drop": "false"
+                            "no_drop": "\"false\""
                         }
                     }
                 ],
@@ -215,7 +215,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "no_drop": "true"
+                            "no_drop": "\"true\""
                         }
                     }
                 ]

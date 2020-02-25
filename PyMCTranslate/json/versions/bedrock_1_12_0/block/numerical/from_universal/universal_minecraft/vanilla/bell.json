@@ -89,17 +89,17 @@
         "function": "map_properties",
         "options": {
             "toggle": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "attachment": {
-                                "floor": [
+                                "\"floor\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -107,7 +107,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -115,7 +115,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -123,7 +123,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -135,12 +135,12 @@
                                         }
                                     }
                                 ],
-                                "ceiling": [
+                                "\"ceiling\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -148,7 +148,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -156,7 +156,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -164,7 +164,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -176,12 +176,12 @@
                                         }
                                     }
                                 ],
-                                "single_wall": [
+                                "\"single_wall\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -189,7 +189,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -197,7 +197,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -205,7 +205,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -217,12 +217,12 @@
                                         }
                                     }
                                 ],
-                                "double_wall": [
+                                "\"double_wall\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -230,7 +230,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -238,7 +238,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -246,7 +246,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -262,17 +262,17 @@
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "attachment": {
-                                "floor": [
+                                "\"floor\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -280,7 +280,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -288,7 +288,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -296,7 +296,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -308,12 +308,12 @@
                                         }
                                     }
                                 ],
-                                "ceiling": [
+                                "\"ceiling\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -321,7 +321,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -329,7 +329,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -337,7 +337,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -349,12 +349,12 @@
                                         }
                                     }
                                 ],
-                                "single_wall": [
+                                "\"single_wall\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -362,7 +362,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -370,7 +370,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -378,7 +378,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -390,12 +390,12 @@
                                         }
                                     }
                                 ],
-                                "double_wall": [
+                                "\"double_wall\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "facing": {
-                                                "north": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -403,7 +403,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "east": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -411,7 +411,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "south": [
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -419,7 +419,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "west": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {

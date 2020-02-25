@@ -6,18 +6,18 @@
     {
         "function": "new_properties",
         "options": {
-            "type": "horn",
-            "dead": "false"
+            "type": "\"horn\"",
+            "dead": "\"false\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

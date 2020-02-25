@@ -6,49 +6,43 @@
     {
         "function": "new_properties",
         "options": {
-            "huge_mushroom_bits": [
-                "snbt",
-                "10"
-            ]
+            "huge_mushroom_bits": "10"
         }
     },
     {
         "function": "map_properties",
         "options": {
             "up": {
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "down": {
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "15"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "15"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -74,13 +68,13 @@
                 ]
             },
             "material": {
-                "brown": [
+                "\"brown\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:brown_mushroom_block"
                     }
                 ],
-                "red": [
+                "\"red\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_mushroom_block"

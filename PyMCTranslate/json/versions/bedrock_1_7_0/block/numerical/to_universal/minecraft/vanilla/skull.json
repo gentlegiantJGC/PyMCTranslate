@@ -51,7 +51,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "skeleton"
+                                                "mob": "\"skeleton\""
                                             }
                                         }
                                     ],
@@ -59,7 +59,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "wither_skeleton"
+                                                "mob": "\"wither_skeleton\""
                                             }
                                         }
                                     ],
@@ -67,7 +67,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "zombie"
+                                                "mob": "\"zombie\""
                                             }
                                         }
                                     ],
@@ -75,7 +75,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "player"
+                                                "mob": "\"player\""
                                             }
                                         }
                                     ],
@@ -83,7 +83,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "creeper"
+                                                "mob": "\"creeper\""
                                             }
                                         }
                                     ],
@@ -91,7 +91,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "mob": "dragon"
+                                                "mob": "\"dragon\""
                                             }
                                         }
                                     ]
@@ -155,7 +155,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "no_drop": "false"
+                            "no_drop": "\"false\""
                         }
                     }
                 ],
@@ -179,7 +179,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "no_drop": "true"
+                            "no_drop": "\"true\""
                         }
                     }
                 ],
@@ -191,8 +191,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "no_drop": "false"
+                            "facing": "\"north\"",
+                            "no_drop": "\"false\""
                         }
                     }
                 ],
@@ -204,8 +204,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "no_drop": "false"
+                            "facing": "\"south\"",
+                            "no_drop": "\"false\""
                         }
                     }
                 ],
@@ -217,8 +217,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "no_drop": "false"
+                            "facing": "\"west\"",
+                            "no_drop": "\"false\""
                         }
                     }
                 ],
@@ -230,8 +230,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "no_drop": "false"
+                            "facing": "\"east\"",
+                            "no_drop": "\"false\""
                         }
                     }
                 ],
@@ -243,8 +243,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "no_drop": "true"
+                            "facing": "\"north\"",
+                            "no_drop": "\"true\""
                         }
                     }
                 ],
@@ -256,8 +256,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "no_drop": "true"
+                            "facing": "\"south\"",
+                            "no_drop": "\"true\""
                         }
                     }
                 ],
@@ -269,8 +269,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "no_drop": "true"
+                            "facing": "\"west\"",
+                            "no_drop": "\"true\""
                         }
                     }
                 ],
@@ -282,8 +282,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "no_drop": "true"
+                            "facing": "\"east\"",
+                            "no_drop": "\"true\""
                         }
                     }
                 ]

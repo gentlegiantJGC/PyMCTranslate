@@ -6,17 +6,17 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "birch",
-            "stripped": "false"
+            "material": "\"birch\"",
+            "stripped": "\"false\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

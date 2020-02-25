@@ -6,31 +6,31 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "mossy_stone_brick"
+            "material": "\"mossy_stone_brick\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "east": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "north": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "south": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "up": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "west": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

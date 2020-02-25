@@ -7,93 +7,69 @@
         "function": "map_properties",
         "options": {
             "damage": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "damage": [
-                                "snbt",
-                                "\"undamaged\""
-                            ]
+                            "damage": "\"undamaged\""
                         }
                     }
                 ],
-                "chipped": [
+                "\"chipped\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "damage": [
-                                "snbt",
-                                "\"slightly_damaged\""
-                            ]
+                            "damage": "\"slightly_damaged\""
                         }
                     }
                 ],
-                "damaged": [
+                "\"damaged\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "damage": [
-                                "snbt",
-                                "\"very_damaged\""
-                            ]
+                            "damage": "\"very_damaged\""
                         }
                     }
                 ],
-                "broken": [
+                "\"broken\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "damage": [
-                                "snbt",
-                                "\"broken\""
-                            ]
+                            "damage": "\"broken\""
                         }
                     }
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]

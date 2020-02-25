@@ -7,21 +7,21 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "smooth_stone",
-                "sandstone",
-                "petrified_oak",
-                "cobblestone",
-                "brick",
-                "stone_brick",
-                "quartz",
-                "nether_brick"
+                "\"smooth_stone\"",
+                "\"sandstone\"",
+                "\"petrified_oak\"",
+                "\"cobblestone\"",
+                "\"brick\"",
+                "\"stone_brick\"",
+                "\"quartz\"",
+                "\"nether_brick\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "type": "double"
+            "type": "\"double\""
         }
     }
 ]

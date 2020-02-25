@@ -7,24 +7,24 @@
         "function": "carry_properties",
         "options": {
             "delay": [
-                "1",
-                "2",
-                "3",
-                "4"
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\""
             ],
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "locked": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

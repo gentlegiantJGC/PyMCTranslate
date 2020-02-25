@@ -1,13 +1,13 @@
 {
     "properties": {
         "facing": [
-            "south",
-            "north",
-            "east",
-            "west"
+            "\"south\"",
+            "\"north\"",
+            "\"east\"",
+            "\"west\""
         ]
     },
     "defaults": {
-        "facing": "south"
+        "facing": "\"south\""
     }
 }

@@ -6,33 +6,33 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "birch"
+            "material": "\"birch\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "half": [
-                "upper",
-                "lower"
+                "\"upper\"",
+                "\"lower\""
             ],
             "hinge": [
-                "left",
-                "right"
+                "\"left\"",
+                "\"right\""
             ],
             "open": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

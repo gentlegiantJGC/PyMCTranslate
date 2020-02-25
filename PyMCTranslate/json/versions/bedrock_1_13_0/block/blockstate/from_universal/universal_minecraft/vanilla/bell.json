@@ -89,117 +89,87 @@
         "function": "map_properties",
         "options": {
             "attachment": {
-                "floor": [
+                "\"floor\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"standing\""
-                            ]
+                            "attachment": "\"standing\""
                         }
                     }
                 ],
-                "ceiling": [
+                "\"ceiling\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"hanging\""
-                            ]
+                            "attachment": "\"hanging\""
                         }
                     }
                 ],
-                "single_wall": [
+                "\"single_wall\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"side\""
-                            ]
+                            "attachment": "\"side\""
                         }
                     }
                 ],
-                "double_wall": [
+                "\"double_wall\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"multiple\""
-                            ]
+                            "attachment": "\"multiple\""
                         }
                     }
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]
             },
             "toggle": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "toggle_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "toggle_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "toggle_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "toggle_bit": "1b"
                         }
                     }
                 ]

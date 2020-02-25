@@ -74,7 +74,7 @@
         "function": "map_properties",
         "options": {
             "mob": {
-                "skeleton": [
+                "\"skeleton\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -85,7 +85,7 @@
                         ]
                     }
                 ],
-                "wither_skeleton": [
+                "\"wither_skeleton\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -96,7 +96,7 @@
                         ]
                     }
                 ],
-                "zombie": [
+                "\"zombie\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -107,7 +107,7 @@
                         ]
                     }
                 ],
-                "player": [
+                "\"player\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -118,7 +118,7 @@
                         ]
                     }
                 ],
-                "creeper": [
+                "\"creeper\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -129,7 +129,7 @@
                         ]
                     }
                 ],
-                "dragon": [
+                "\"dragon\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -142,71 +142,53 @@
                 ]
             },
             "no_drop": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "no_drop_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "no_drop_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "no_drop_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "no_drop_bit": "1b"
                         }
                     }
                 ]
             },
             "facing": {
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "facing_direction": "2"
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "facing_direction": "3"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "facing_direction": "4"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "facing_direction": "5"
                         }
                     }
                 ]

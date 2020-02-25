@@ -7,128 +7,95 @@
         "function": "map_properties",
         "options": {
             "axis": {
-                "y": [
+                "\"y\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"y\""
-                            ]
+                            "pillar_axis": "\"y\""
                         }
                     }
                 ],
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"x\""
-                            ]
+                            "pillar_axis": "\"x\""
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"z\""
-                            ]
+                            "pillar_axis": "\"z\""
                         }
                     }
                 ]
             },
             "stripped": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stripped_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "stripped_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stripped_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "stripped_bit": "1b"
                         }
                     }
                 ]
             },
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"oak\""
-                            ]
+                            "wood_type": "\"oak\""
                         }
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"spruce\""
-                            ]
+                            "wood_type": "\"spruce\""
                         }
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"birch\""
-                            ]
+                            "wood_type": "\"birch\""
                         }
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"jungle\""
-                            ]
+                            "wood_type": "\"jungle\""
                         }
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"acacia\""
-                            ]
+                            "wood_type": "\"acacia\""
                         }
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wood_type": [
-                                "snbt",
-                                "\"dark_oak\""
-                            ]
+                            "wood_type": "\"dark_oak\""
                         }
                     }
                 ]

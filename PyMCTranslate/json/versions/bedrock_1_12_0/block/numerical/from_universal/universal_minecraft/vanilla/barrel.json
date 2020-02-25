@@ -80,12 +80,12 @@
         "function": "map_properties",
         "options": {
             "open": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "down": [
+                                "\"down\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -93,7 +93,7 @@
                                         }
                                     }
                                 ],
-                                "up": [
+                                "\"up\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -101,7 +101,7 @@
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -109,7 +109,7 @@
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -117,7 +117,7 @@
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -125,7 +125,7 @@
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -137,12 +137,12 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "down": [
+                                "\"down\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -150,7 +150,7 @@
                                         }
                                     }
                                 ],
-                                "up": [
+                                "\"up\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -158,7 +158,7 @@
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -166,7 +166,7 @@
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -174,7 +174,7 @@
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -182,7 +182,7 @@
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {

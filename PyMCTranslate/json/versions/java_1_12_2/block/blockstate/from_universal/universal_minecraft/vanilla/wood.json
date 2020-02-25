@@ -7,12 +7,12 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "oak",
-                "spruce",
-                "birch",
-                "jungle",
-                "acacia",
-                "dark_oak"
+                "\"oak\"",
+                "\"spruce\"",
+                "\"birch\"",
+                "\"jungle\"",
+                "\"acacia\"",
+                "\"dark_oak\""
             ]
         }
     },
@@ -20,37 +20,37 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:log"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:log"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:log"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:log"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:log2"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:log2"
@@ -62,7 +62,7 @@
     {
         "function": "new_properties",
         "options": {
-            "axis": "all"
+            "axis": "\"all\""
         }
     }
 ]

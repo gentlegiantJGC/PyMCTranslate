@@ -7,52 +7,40 @@
         "function": "map_properties",
         "options": {
             "face": {
-                "floor": [
+                "\"floor\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"up_north_south\""
-                                            ]
+                                            "lever_direction": "\"up_north_south\""
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"up_north_south\""
-                                            ]
+                                            "lever_direction": "\"up_north_south\""
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"up_east_west\""
-                                            ]
+                                            "lever_direction": "\"up_east_west\""
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"up_east_west\""
-                                            ]
+                                            "lever_direction": "\"up_east_west\""
                                         }
                                     }
                                 ]
@@ -60,52 +48,40 @@
                         }
                     }
                 ],
-                "ceiling": [
+                "\"ceiling\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"down_north_south\""
-                                            ]
+                                            "lever_direction": "\"down_north_south\""
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"down_north_south\""
-                                            ]
+                                            "lever_direction": "\"down_north_south\""
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"down_east_west\""
-                                            ]
+                                            "lever_direction": "\"down_east_west\""
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"down_east_west\""
-                                            ]
+                                            "lever_direction": "\"down_east_west\""
                                         }
                                     }
                                 ]
@@ -113,52 +89,40 @@
                         }
                     }
                 ],
-                "wall": [
+                "\"wall\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"north\""
-                                            ]
+                                            "lever_direction": "\"north\""
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"south\""
-                                            ]
+                                            "lever_direction": "\"south\""
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"east\""
-                                            ]
+                                            "lever_direction": "\"east\""
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
-                                            "lever_direction": [
-                                                "snbt",
-                                                "\"west\""
-                                            ]
+                                            "lever_direction": "\"west\""
                                         }
                                     }
                                 ]
@@ -168,25 +132,19 @@
                 ]
             },
             "powered": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "open_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "open_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "open_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "open_bit": "1b"
                         }
                     }
                 ]

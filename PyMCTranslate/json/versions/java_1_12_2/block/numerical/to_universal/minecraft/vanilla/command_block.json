@@ -11,9 +11,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "down",
-                            "conditional": "false",
-                            "mode": "impulse"
+                            "facing": "\"down\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -25,9 +25,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "up",
-                            "conditional": "false",
-                            "mode": "impulse"
+                            "facing": "\"up\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -39,9 +39,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "conditional": "false",
-                            "mode": "impulse"
+                            "facing": "\"north\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -53,9 +53,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "conditional": "false",
-                            "mode": "impulse"
+                            "facing": "\"south\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -67,9 +67,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "conditional": "false",
-                            "mode": "impulse"
+                            "facing": "\"west\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -81,9 +81,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "conditional": "false",
-                            "mode": "impulse"
+                            "facing": "\"east\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -95,9 +95,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "down",
-                            "conditional": "true",
-                            "mode": "impulse"
+                            "facing": "\"down\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -109,9 +109,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "up",
-                            "conditional": "true",
-                            "mode": "impulse"
+                            "facing": "\"up\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -123,9 +123,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "conditional": "true",
-                            "mode": "impulse"
+                            "facing": "\"north\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -137,9 +137,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "conditional": "true",
-                            "mode": "impulse"
+                            "facing": "\"south\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -151,9 +151,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "conditional": "true",
-                            "mode": "impulse"
+                            "facing": "\"west\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ],
@@ -165,9 +165,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "conditional": "true",
-                            "mode": "impulse"
+                            "facing": "\"east\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"impulse\""
                         }
                     }
                 ]

@@ -7,14 +7,14 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ],
             "mode": [
-                "compare",
-                "subtract"
+                "\"compare\"",
+                "\"subtract\""
             ]
         }
     },
@@ -22,8 +22,8 @@
         "function": "map_properties",
         "options": {
             "powered": {
-                "false": [],
-                "true": [
+                "\"false\"": [],
+                "\"true\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:powered_comparator"

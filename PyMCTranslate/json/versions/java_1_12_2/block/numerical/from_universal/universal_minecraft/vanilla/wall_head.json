@@ -54,7 +54,7 @@
         "function": "map_properties",
         "options": {
             "mob": {
-                "skeleton": [
+                "\"skeleton\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -65,7 +65,7 @@
                         ]
                     }
                 ],
-                "wither_skeleton": [
+                "\"wither_skeleton\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -76,7 +76,7 @@
                         ]
                     }
                 ],
-                "zombie": [
+                "\"zombie\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -87,7 +87,7 @@
                         ]
                     }
                 ],
-                "player": [
+                "\"player\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -98,7 +98,7 @@
                         ]
                     }
                 ],
-                "creeper": [
+                "\"creeper\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -109,7 +109,7 @@
                         ]
                     }
                 ],
-                "dragon": [
+                "\"dragon\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -122,7 +122,7 @@
                 ]
             },
             "facing": {
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -130,7 +130,7 @@
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -138,7 +138,7 @@
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -146,7 +146,7 @@
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {

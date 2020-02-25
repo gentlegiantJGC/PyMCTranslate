@@ -1,26 +1,26 @@
 {
     "properties": {
         "material": [
-            "oak",
-            "spruce",
-            "birch",
-            "jungle",
-            "acacia",
-            "dark_oak"
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\""
         ],
         "axis": [
-            "x",
-            "y",
-            "z"
+            "\"x\"",
+            "\"y\"",
+            "\"z\""
         ],
         "stripped": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ]
     },
     "defaults": {
-        "material": "oak",
-        "axis": "y",
-        "stripped": "false"
+        "material": "\"oak\"",
+        "axis": "\"y\"",
+        "stripped": "\"false\""
     }
 }

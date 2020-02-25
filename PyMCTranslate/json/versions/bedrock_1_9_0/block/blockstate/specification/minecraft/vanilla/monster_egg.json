@@ -1,15 +1,15 @@
 {
     "properties": {
         "material": [
-            "cobblestone",
-            "stone",
-            "stone_bricks",
-            "cracked_stone_bricks",
-            "mossy_stone_bricks",
-            "chiseled_stone_bricks"
+            "\"cobblestone\"",
+            "\"stone\"",
+            "\"stone_bricks\"",
+            "\"cracked_stone_bricks\"",
+            "\"mossy_stone_bricks\"",
+            "\"chiseled_stone_bricks\""
         ]
     },
     "defaults": {
-        "material": "stone"
+        "material": "\"stone\""
     }
 }

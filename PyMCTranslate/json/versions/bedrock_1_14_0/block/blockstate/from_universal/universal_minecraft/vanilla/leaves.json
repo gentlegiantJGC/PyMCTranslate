@@ -7,51 +7,39 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "old_leaf_type": [
-                                "snbt",
-                                "\"oak\""
-                            ]
+                            "old_leaf_type": "\"oak\""
                         }
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "old_leaf_type": [
-                                "snbt",
-                                "\"spruce\""
-                            ]
+                            "old_leaf_type": "\"spruce\""
                         }
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "old_leaf_type": [
-                                "snbt",
-                                "\"birch\""
-                            ]
+                            "old_leaf_type": "\"birch\""
                         }
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "old_leaf_type": [
-                                "snbt",
-                                "\"jungle\""
-                            ]
+                            "old_leaf_type": "\"jungle\""
                         }
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves2"
@@ -59,14 +47,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "new_leaf_type": [
-                                "snbt",
-                                "\"acacia\""
-                            ]
+                            "new_leaf_type": "\"acacia\""
                         }
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:leaves2"
@@ -74,58 +59,43 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "new_leaf_type": [
-                                "snbt",
-                                "\"dark_oak\""
-                            ]
+                            "new_leaf_type": "\"dark_oak\""
                         }
                     }
                 ]
             },
             "persistent": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "persistent_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "persistent_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "persistent_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "persistent_bit": "1b"
                         }
                     }
                 ]
             },
             "check_decay": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "update_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "update_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "update_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "update_bit": "1b"
                         }
                     }
                 ]

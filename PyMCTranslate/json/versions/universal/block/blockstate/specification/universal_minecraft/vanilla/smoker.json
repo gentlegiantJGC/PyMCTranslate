@@ -1,19 +1,19 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "lit": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "lit": "false"
+        "facing": "\"north\"",
+        "lit": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

@@ -67,7 +67,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "has_book": "false"
+                                                "has_book": "\"false\""
                                             }
                                         }
                                     ],
@@ -75,7 +75,7 @@
                                         {
                                             "function": "new_properties",
                                             "options": {
-                                                "has_book": "true"
+                                                "has_book": "\"true\""
                                             }
                                         }
                                     ]
@@ -123,14 +123,14 @@
         "function": "carry_properties",
         "options": {
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ]
         }
     }

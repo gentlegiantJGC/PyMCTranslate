@@ -7,17 +7,17 @@
         "function": "map_properties",
         "options": {
             "stage": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "leaves": {
-                                "none": [
+                                "\"none\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "thickness": {
-                                                "thin": [
+                                                "\"thin\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -25,7 +25,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "thick": [
+                                                "\"thick\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -37,12 +37,12 @@
                                         }
                                     }
                                 ],
-                                "small": [
+                                "\"small\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "thickness": {
-                                                "thin": [
+                                                "\"thin\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -50,7 +50,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "thick": [
+                                                "\"thick\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -62,12 +62,12 @@
                                         }
                                     }
                                 ],
-                                "large": [
+                                "\"large\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "thickness": {
-                                                "thin": [
+                                                "\"thin\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -75,7 +75,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "thick": [
+                                                "\"thick\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -91,17 +91,17 @@
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "leaves": {
-                                "none": [
+                                "\"none\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "thickness": {
-                                                "thin": [
+                                                "\"thin\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -109,7 +109,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "thick": [
+                                                "\"thick\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -121,12 +121,12 @@
                                         }
                                     }
                                 ],
-                                "small": [
+                                "\"small\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "thickness": {
-                                                "thin": [
+                                                "\"thin\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -134,7 +134,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "thick": [
+                                                "\"thick\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -146,12 +146,12 @@
                                         }
                                     }
                                 ],
-                                "large": [
+                                "\"large\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "thickness": {
-                                                "thin": [
+                                                "\"thin\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -159,7 +159,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "thick": [
+                                                "\"thick\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {

@@ -7,25 +7,19 @@
         "function": "map_properties",
         "options": {
             "half": {
-                "upper": [
+                "\"upper\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sea_grass_type": [
-                                "snbt",
-                                "\"double_top\""
-                            ]
+                            "sea_grass_type": "\"double_top\""
                         }
                     }
                 ],
-                "lower": [
+                "\"lower\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sea_grass_type": [
-                                "snbt",
-                                "\"double_bot\""
-                            ]
+                            "sea_grass_type": "\"double_bot\""
                         }
                     }
                 ]

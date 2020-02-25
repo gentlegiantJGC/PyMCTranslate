@@ -7,12 +7,12 @@
         "function": "map_properties",
         "options": {
             "triggered": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "down": [
+                                "\"down\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -24,7 +24,7 @@
                                         }
                                     }
                                 ],
-                                "up": [
+                                "\"up\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -36,7 +36,7 @@
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -48,7 +48,7 @@
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -60,7 +60,7 @@
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -72,7 +72,7 @@
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -88,12 +88,12 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "down": [
+                                "\"down\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -105,7 +105,7 @@
                                         }
                                     }
                                 ],
-                                "up": [
+                                "\"up\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -117,7 +117,7 @@
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -129,7 +129,7 @@
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -141,7 +141,7 @@
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"
@@ -153,7 +153,7 @@
                                         }
                                     }
                                 ],
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dispenser"

@@ -1,22 +1,22 @@
 {
     "properties": {
         "facing": [
-            "west",
-            "east",
-            "north",
-            "south"
+            "\"west\"",
+            "\"east\"",
+            "\"north\"",
+            "\"south\""
         ],
         "dead": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ],
         "type": [
-            "horn"
+            "\"horn\""
         ]
     },
     "defaults": {
-        "facing": "west",
-        "dead": "false",
-        "type": "horn"
+        "facing": "\"west\"",
+        "dead": "\"false\"",
+        "type": "\"horn\""
     }
 }

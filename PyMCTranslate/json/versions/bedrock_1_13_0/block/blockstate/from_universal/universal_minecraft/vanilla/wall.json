@@ -7,157 +7,115 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "cobblestone": [
+                "\"cobblestone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"cobblestone\""
-                            ]
+                            "wall_block_type": "\"cobblestone\""
                         }
                     }
                 ],
-                "mossy_cobblestone": [
+                "\"mossy_cobblestone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"mossy_cobblestone\""
-                            ]
+                            "wall_block_type": "\"mossy_cobblestone\""
                         }
                     }
                 ],
-                "granite": [
+                "\"granite\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"granite\""
-                            ]
+                            "wall_block_type": "\"granite\""
                         }
                     }
                 ],
-                "diorite": [
+                "\"diorite\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"diorite\""
-                            ]
+                            "wall_block_type": "\"diorite\""
                         }
                     }
                 ],
-                "andesite": [
+                "\"andesite\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"andesite\""
-                            ]
+                            "wall_block_type": "\"andesite\""
                         }
                     }
                 ],
-                "sandstone": [
+                "\"sandstone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"sandstone\""
-                            ]
+                            "wall_block_type": "\"sandstone\""
                         }
                     }
                 ],
-                "brick": [
+                "\"brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"brick\""
-                            ]
+                            "wall_block_type": "\"brick\""
                         }
                     }
                 ],
-                "stone_brick": [
+                "\"stone_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"stone_brick\""
-                            ]
+                            "wall_block_type": "\"stone_brick\""
                         }
                     }
                 ],
-                "mossy_stone_brick": [
+                "\"mossy_stone_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"mossy_stone_brick\""
-                            ]
+                            "wall_block_type": "\"mossy_stone_brick\""
                         }
                     }
                 ],
-                "nether_brick": [
+                "\"nether_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"nether_brick\""
-                            ]
+                            "wall_block_type": "\"nether_brick\""
                         }
                     }
                 ],
-                "end_stone_brick": [
+                "\"end_stone_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"end_brick\""
-                            ]
+                            "wall_block_type": "\"end_brick\""
                         }
                     }
                 ],
-                "prismarine": [
+                "\"prismarine\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"prismarine\""
-                            ]
+                            "wall_block_type": "\"prismarine\""
                         }
                     }
                 ],
-                "red_sandstone": [
+                "\"red_sandstone\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"red_sandstone\""
-                            ]
+                            "wall_block_type": "\"red_sandstone\""
                         }
                     }
                 ],
-                "red_nether_brick": [
+                "\"red_nether_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_block_type": [
-                                "snbt",
-                                "\"red_nether_brick\""
-                            ]
+                            "wall_block_type": "\"red_nether_brick\""
                         }
                     }
                 ]

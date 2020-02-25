@@ -1,27 +1,27 @@
 {
     "properties": {
         "conditional": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ],
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west",
-            "up",
-            "down"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
         ],
         "mode": [
-            "impulse",
-            "chain",
-            "repeating"
+            "\"impulse\"",
+            "\"chain\"",
+            "\"repeating\""
         ]
     },
     "defaults": {
-        "conditional": "false",
-        "facing": "north",
-        "mode": "impulse"
+        "conditional": "\"false\"",
+        "facing": "\"north\"",
+        "mode": "\"impulse\""
     },
     "nbt_identifier": [
         "universal_minecraft",

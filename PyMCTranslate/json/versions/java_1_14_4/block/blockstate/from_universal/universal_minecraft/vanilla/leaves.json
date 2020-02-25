@@ -7,37 +7,37 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:oak_leaves"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:spruce_leaves"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:birch_leaves"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:jungle_leaves"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:acacia_leaves"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:dark_oak_leaves"
@@ -50,17 +50,17 @@
         "function": "carry_properties",
         "options": {
             "distance": [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7"
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\"",
+                "\"5\"",
+                "\"6\"",
+                "\"7\""
             ],
             "persistent": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     }

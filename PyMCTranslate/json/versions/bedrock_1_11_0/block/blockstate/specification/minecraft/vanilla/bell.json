@@ -6,25 +6,25 @@
     "snbt": "{Direction: 0, Ringing: 0b, Ticks: 0, isMovable: 1b}",
     "properties": {
         "toggle": [
-            "0",
-            "1"
+            "\"0\"",
+            "\"1\""
         ],
         "attachment": [
-            "floor",
-            "ceiling",
-            "single_wall",
-            "double_wall"
+            "\"floor\"",
+            "\"ceiling\"",
+            "\"single_wall\"",
+            "\"double_wall\""
         ],
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\""
         ]
     },
     "defaults": {
-        "toggle": "0",
-        "attachment": "floor",
-        "facing": "north"
+        "toggle": "\"0\"",
+        "attachment": "\"floor\"",
+        "facing": "\"north\""
     }
 }

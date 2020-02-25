@@ -6,15 +6,15 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "dark_oak"
+            "material": "\"dark_oak\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "powered": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

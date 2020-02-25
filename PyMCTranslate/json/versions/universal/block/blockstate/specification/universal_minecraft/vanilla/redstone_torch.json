@@ -1,19 +1,19 @@
 {
     "properties": {
         "facing": [
-            "up",
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"up\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "lit": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "up",
-        "lit": "true"
+        "facing": "\"up\"",
+        "lit": "\"true\""
     }
 }

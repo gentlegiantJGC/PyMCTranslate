@@ -56,69 +56,51 @@
         "function": "map_properties",
         "options": {
             "mode": {
-                "data": [
+                "\"data\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_block_type": [
-                                "snbt",
-                                "\"data\""
-                            ]
+                            "structure_block_type": "\"data\""
                         }
                     }
                 ],
-                "save": [
+                "\"save\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_block_type": [
-                                "snbt",
-                                "\"save\""
-                            ]
+                            "structure_block_type": "\"save\""
                         }
                     }
                 ],
-                "load": [
+                "\"load\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_block_type": [
-                                "snbt",
-                                "\"load\""
-                            ]
+                            "structure_block_type": "\"load\""
                         }
                     }
                 ],
-                "corner": [
+                "\"corner\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_block_type": [
-                                "snbt",
-                                "\"corner\""
-                            ]
+                            "structure_block_type": "\"corner\""
                         }
                     }
                 ],
-                "invalid": [
+                "\"invalid\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_block_type": [
-                                "snbt",
-                                "\"invalid\""
-                            ]
+                            "structure_block_type": "\"invalid\""
                         }
                     }
                 ],
-                "export": [
+                "\"export\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "structure_block_type": [
-                                "snbt",
-                                "\"export\""
-                            ]
+                            "structure_block_type": "\"export\""
                         }
                     }
                 ]

@@ -1,21 +1,21 @@
 {
     "properties": {
         "material": [
-            "acacia",
-            "dark_oak"
+            "\"acacia\"",
+            "\"dark_oak\""
         ],
         "persistent": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "check_decay": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "material": "acacia",
-        "persistent": "false",
-        "check_decay": "true"
+        "material": "\"acacia\"",
+        "persistent": "\"false\"",
+        "check_decay": "\"true\""
     }
 }

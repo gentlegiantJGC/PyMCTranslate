@@ -1,40 +1,40 @@
 {
     "properties": {
         "mob": [
-            "skeleton",
-            "wither_skeleton",
-            "zombie",
-            "player",
-            "creeper",
-            "dragon"
+            "\"skeleton\"",
+            "\"wither_skeleton\"",
+            "\"zombie\"",
+            "\"player\"",
+            "\"creeper\"",
+            "\"dragon\""
         ],
         "rotation": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"
+            "\"0\"",
+            "\"1\"",
+            "\"2\"",
+            "\"3\"",
+            "\"4\"",
+            "\"5\"",
+            "\"6\"",
+            "\"7\"",
+            "\"8\"",
+            "\"9\"",
+            "\"10\"",
+            "\"11\"",
+            "\"12\"",
+            "\"13\"",
+            "\"14\"",
+            "\"15\""
         ],
         "no_drop": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "mob": "skeleton",
-        "rotation": "0",
-        "no_drop": "false"
+        "mob": "\"skeleton\"",
+        "rotation": "\"0\"",
+        "no_drop": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

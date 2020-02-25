@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "variant": "quartz_pillar"
+            "variant": "\"quartz_pillar\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

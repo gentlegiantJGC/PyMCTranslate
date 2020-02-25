@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "variant": "chiseled_quartz_block"
+            "variant": "\"chiseled_quartz_block\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

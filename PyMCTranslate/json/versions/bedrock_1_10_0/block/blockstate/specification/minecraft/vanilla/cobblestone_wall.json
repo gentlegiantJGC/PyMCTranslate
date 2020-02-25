@@ -1,22 +1,23 @@
 {
     "properties": {
         "material": [
-            "cobblestone",
-            "mossy_cobblestone",
-            "granite",
-            "diorite",
-            "andesite",
-            "sandstone",
-            "brick",
-            "stone_brickmossy_stone_brick",
-            "nether_brick",
-            "end_stone_brick",
-            "prismarine",
-            "red_sandstone",
-            "red_nether_brick"
+            "\"cobblestone\"",
+            "\"mossy_cobblestone\"",
+            "\"granite\"",
+            "\"diorite\"",
+            "\"andesite\"",
+            "\"sandstone\"",
+            "\"brick\"",
+            "\"stone_brick\"",
+            "\"mossy_stone_brick\"",
+            "\"nether_brick\"",
+            "\"end_stone_brick\"",
+            "\"prismarine\"",
+            "\"red_sandstone\"",
+            "\"red_nether_brick\""
         ]
     },
     "defaults": {
-        "material": "cobblestone"
+        "material": "\"cobblestone\""
     }
 }

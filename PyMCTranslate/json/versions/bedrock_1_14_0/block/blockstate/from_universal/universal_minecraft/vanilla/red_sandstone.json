@@ -7,47 +7,35 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sand_stone_type": [
-                                "snbt",
-                                "\"default\""
-                            ]
+                            "sand_stone_type": "\"default\""
                         }
                     }
                 ],
-                "chiseled": [
+                "\"chiseled\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sand_stone_type": [
-                                "snbt",
-                                "\"heiroglyphs\""
-                            ]
+                            "sand_stone_type": "\"heiroglyphs\""
                         }
                     }
                 ],
-                "cut": [
+                "\"cut\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sand_stone_type": [
-                                "snbt",
-                                "\"cut\""
-                            ]
+                            "sand_stone_type": "\"cut\""
                         }
                     }
                 ],
-                "smooth": [
+                "\"smooth\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sand_stone_type": [
-                                "snbt",
-                                "\"smooth\""
-                            ]
+                            "sand_stone_type": "\"smooth\""
                         }
                     }
                 ]

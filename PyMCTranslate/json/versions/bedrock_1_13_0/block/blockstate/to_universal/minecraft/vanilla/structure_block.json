@@ -47,7 +47,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "mode": "data"
+                            "mode": "\"data\""
                         }
                     }
                 ],
@@ -55,7 +55,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "mode": "save"
+                            "mode": "\"save\""
                         }
                     }
                 ],
@@ -63,7 +63,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "mode": "load"
+                            "mode": "\"load\""
                         }
                     }
                 ],
@@ -71,7 +71,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "mode": "corner"
+                            "mode": "\"corner\""
                         }
                     }
                 ],
@@ -79,7 +79,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "mode": "invalid"
+                            "mode": "\"invalid\""
                         }
                     }
                 ],
@@ -87,7 +87,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "mode": "export"
+                            "mode": "\"export\""
                         }
                     }
                 ]

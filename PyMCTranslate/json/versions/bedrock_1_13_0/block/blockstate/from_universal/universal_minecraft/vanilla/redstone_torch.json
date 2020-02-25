@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "lit": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:unlit_redstone_torch"
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:redstone_torch"
@@ -21,69 +21,51 @@
                 ]
             },
             "facing": {
-                "unknown": [
+                "\"unknown\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "torch_facing_direction": [
-                                "snbt",
-                                "\"unknown\""
-                            ]
+                            "torch_facing_direction": "\"unknown\""
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "torch_facing_direction": [
-                                "snbt",
-                                "\"east\""
-                            ]
+                            "torch_facing_direction": "\"east\""
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "torch_facing_direction": [
-                                "snbt",
-                                "\"west\""
-                            ]
+                            "torch_facing_direction": "\"west\""
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "torch_facing_direction": [
-                                "snbt",
-                                "\"south\""
-                            ]
+                            "torch_facing_direction": "\"south\""
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "torch_facing_direction": [
-                                "snbt",
-                                "\"north\""
-                            ]
+                            "torch_facing_direction": "\"north\""
                         }
                     }
                 ],
-                "up": [
+                "\"up\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "torch_facing_direction": [
-                                "snbt",
-                                "\"top\""
-                            ]
+                            "torch_facing_direction": "\"top\""
                         }
                     }
                 ]

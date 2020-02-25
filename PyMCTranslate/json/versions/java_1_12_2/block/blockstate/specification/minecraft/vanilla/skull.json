@@ -6,14 +6,14 @@
     "snbt": "{}",
     "properties": {
         "facing": [
-            "floor",
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"floor\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "facing": "floor"
+        "facing": "\"floor\""
     }
 }

@@ -1,16 +1,16 @@
 {
     "properties": {
         "mode": [
-            "save",
-            "load",
-            "corner",
-            "data",
-            "invalid",
-            "export"
+            "\"save\"",
+            "\"load\"",
+            "\"corner\"",
+            "\"data\"",
+            "\"invalid\"",
+            "\"export\""
         ]
     },
     "defaults": {
-        "mode": "save"
+        "mode": "\"save\""
     },
     "nbt_identifier": [
         "universal_minecraft",

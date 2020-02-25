@@ -7,8 +7,8 @@
         "function": "carry_properties",
         "options": {
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     },
@@ -16,43 +16,43 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "stone": [
+                "\"stone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_button"
                     }
                 ],
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wooden_button"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:acacia_button"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:birch_button"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:dark_oak_button"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:jungle_button"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:spruce_button"
@@ -60,31 +60,31 @@
                 ]
             },
             "face": {
-                "ceiling": [
+                "\"ceiling\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "down"
+                            "facing": "\"down\""
                         }
                     }
                 ],
-                "floor": [
+                "\"floor\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "up"
+                            "facing": "\"up\""
                         }
                     }
                 ],
-                "wall": [
+                "\"wall\"": [
                     {
                         "function": "carry_properties",
                         "options": {
                             "facing": [
-                                "north",
-                                "south",
-                                "west",
-                                "east"
+                                "\"north\"",
+                                "\"south\"",
+                                "\"west\"",
+                                "\"east\""
                             ]
                         }
                     }

@@ -1,18 +1,18 @@
 {
     "properties": {
         "variant": [
-            "quartz_block",
-            "chiseled_quartz_block",
-            "quartz_pillar"
+            "\"quartz_block\"",
+            "\"chiseled_quartz_block\"",
+            "\"quartz_pillar\""
         ],
         "axis": [
-            "x",
-            "y",
-            "z"
+            "\"x\"",
+            "\"y\"",
+            "\"z\""
         ]
     },
     "defaults": {
-        "variant": "quartz_block",
-        "axis": "y"
+        "variant": "\"quartz_block\"",
+        "axis": "\"y\""
     }
 }

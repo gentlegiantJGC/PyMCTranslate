@@ -6,20 +6,20 @@
     "snbt": "{Findable: 0b, Items: [], isMovable: 1b}",
     "properties": {
         "open": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ],
         "facing": [
-            "down",
-            "up",
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"down\"",
+            "\"up\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "open": "false",
-        "facing": "down"
+        "open": "\"false\"",
+        "facing": "\"down\""
     }
 }

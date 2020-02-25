@@ -105,73 +105,55 @@
         "function": "map_properties",
         "options": {
             "has_bottle_0": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brewing_stand_slot_a_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "brewing_stand_slot_a_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brewing_stand_slot_a_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "brewing_stand_slot_a_bit": "1b"
                         }
                     }
                 ]
             },
             "has_bottle_1": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brewing_stand_slot_b_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "brewing_stand_slot_b_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brewing_stand_slot_b_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "brewing_stand_slot_b_bit": "1b"
                         }
                     }
                 ]
             },
             "has_bottle_2": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brewing_stand_slot_c_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "brewing_stand_slot_c_bit": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brewing_stand_slot_c_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "brewing_stand_slot_c_bit": "1b"
                         }
                     }
                 ]

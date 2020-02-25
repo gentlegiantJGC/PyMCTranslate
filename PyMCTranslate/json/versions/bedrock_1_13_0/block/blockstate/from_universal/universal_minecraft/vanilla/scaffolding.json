@@ -7,115 +7,85 @@
         "function": "map_properties",
         "options": {
             "distance": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "0"
-                            ]
+                            "stability": "0"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "1"
-                            ]
+                            "stability": "1"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "2"
-                            ]
+                            "stability": "2"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "3"
-                            ]
+                            "stability": "3"
                         }
                     }
                 ],
-                "4": [
+                "\"4\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "4"
-                            ]
+                            "stability": "4"
                         }
                     }
                 ],
-                "5": [
+                "\"5\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "5"
-                            ]
+                            "stability": "5"
                         }
                     }
                 ],
-                "6": [
+                "\"6\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "6"
-                            ]
+                            "stability": "6"
                         }
                     }
                 ],
-                "7": [
+                "\"7\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability": [
-                                "snbt",
-                                "7"
-                            ]
+                            "stability": "7"
                         }
                     }
                 ]
             },
             "stability_checked": {
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability_check": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "stability_check": "1b"
                         }
                     }
                 ],
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "stability_check": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "stability_check": "0b"
                         }
                     }
                 ]

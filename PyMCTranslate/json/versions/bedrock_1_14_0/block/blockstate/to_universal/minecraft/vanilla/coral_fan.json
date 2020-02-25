@@ -6,8 +6,8 @@
     {
         "function": "new_properties",
         "options": {
-            "facing": "up",
-            "dead": "false"
+            "facing": "\"up\"",
+            "dead": "\"false\""
         }
     },
     {
@@ -18,7 +18,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "tube"
+                            "type": "\"tube\""
                         }
                     }
                 ],
@@ -26,7 +26,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "brain"
+                            "type": "\"brain\""
                         }
                     }
                 ],
@@ -34,7 +34,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "bubble"
+                            "type": "\"bubble\""
                         }
                     }
                 ],
@@ -42,7 +42,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "fire"
+                            "type": "\"fire\""
                         }
                     }
                 ],
@@ -50,7 +50,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "horn"
+                            "type": "\"horn\""
                         }
                     }
                 ]
@@ -60,7 +60,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_fan_direction": "0"
+                            "coral_fan_direction": "\"0\""
                         }
                     }
                 ],
@@ -68,7 +68,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_fan_direction": "1"
+                            "coral_fan_direction": "\"1\""
                         }
                     }
                 ]

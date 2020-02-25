@@ -7,82 +7,61 @@
         "function": "map_properties",
         "options": {
             "deprecated": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "deprecated": [
-                                "snbt",
-                                "0"
-                            ]
+                            "deprecated": "0"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "deprecated": [
-                                "snbt",
-                                "1"
-                            ]
+                            "deprecated": "1"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "deprecated": [
-                                "snbt",
-                                "2"
-                            ]
+                            "deprecated": "2"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "deprecated": [
-                                "snbt",
-                                "3"
-                            ]
+                            "deprecated": "3"
                         }
                     }
                 ]
             },
             "axis": {
-                "y": [
+                "\"y\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"y\""
-                            ]
+                            "pillar_axis": "\"y\""
                         }
                     }
                 ],
-                "x": [
+                "\"x\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"x\""
-                            ]
+                            "pillar_axis": "\"x\""
                         }
                     }
                 ],
-                "z": [
+                "\"z\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "pillar_axis": [
-                                "snbt",
-                                "\"z\""
-                            ]
+                            "pillar_axis": "\"z\""
                         }
                     }
                 ]

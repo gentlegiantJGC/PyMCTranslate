@@ -7,50 +7,44 @@
         "function": "map_properties",
         "options": {
             "up": {
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "down": {
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -58,30 +52,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "3"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "3"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -93,35 +81,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "2"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "2"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -129,30 +111,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "2"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "2"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -168,40 +144,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "9"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "9"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -209,30 +179,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "4"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "4"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "6"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "6"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -244,35 +208,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "7"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "7"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "8"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "8"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -280,30 +238,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "4"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "4"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "5"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "5"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -323,45 +275,39 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "3"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "3"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -369,30 +315,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "3"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "3"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -404,35 +344,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "2"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "2"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -440,30 +374,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "2"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "2"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -479,40 +407,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "7"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "7"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "9"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "9"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -520,30 +442,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "4"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "4"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "6"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "6"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -555,35 +471,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "7"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "7"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "8"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "8"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -591,30 +501,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "4"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "4"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "5"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "5"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -638,50 +542,44 @@
                         }
                     }
                 ],
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "down": {
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -689,30 +587,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "3"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "3"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -724,35 +616,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -760,30 +646,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -799,40 +679,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "9"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "9"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -840,30 +714,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -875,35 +743,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "7"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "7"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -911,30 +773,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -954,45 +810,39 @@
                                         }
                                     }
                                 ],
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "north": {
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "14"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "14"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "3"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "3"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1000,30 +850,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "3"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "3"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1035,35 +879,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1071,30 +909,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "1"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "1"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1110,40 +942,34 @@
                                                         }
                                                     }
                                                 ],
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "east": {
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "7"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "7"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "9"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "9"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1151,30 +977,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1186,35 +1006,29 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "map_properties",
                                                                         "options": {
                                                                             "south": {
-                                                                                "true": [
+                                                                                "\"true\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "7"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "7"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
@@ -1222,30 +1036,24 @@
                                                                                         }
                                                                                     }
                                                                                 ],
-                                                                                "false": [
+                                                                                "\"false\"": [
                                                                                     {
                                                                                         "function": "map_properties",
                                                                                         "options": {
                                                                                             "west": {
-                                                                                                "true": [
+                                                                                                "\"true\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ],
-                                                                                                "false": [
+                                                                                                "\"false\"": [
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": [
-                                                                                                                "snbt",
-                                                                                                                "0"
-                                                                                                            ]
+                                                                                                            "huge_mushroom_bits": "0"
                                                                                                         }
                                                                                                     }
                                                                                                 ]

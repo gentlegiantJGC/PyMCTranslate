@@ -1,19 +1,19 @@
 {
     "properties": {
         "face": [
-            "floor",
-            "wall",
-            "ceiling"
+            "\"floor\"",
+            "\"wall\"",
+            "\"ceiling\""
         ],
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "face": "wall",
-        "facing": "north"
+        "face": "\"wall\"",
+        "facing": "\"north\""
     }
 }

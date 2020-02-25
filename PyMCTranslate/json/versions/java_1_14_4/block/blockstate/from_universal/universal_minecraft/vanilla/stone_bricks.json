@@ -7,25 +7,25 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_bricks"
                     }
                 ],
-                "cracked": [
+                "\"cracked\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:cracked_stone_bricks"
                     }
                 ],
-                "mossy": [
+                "\"mossy\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:mossy_stone_bricks"
                     }
                 ],
-                "chiseled": [
+                "\"chiseled\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:chiseled_stone_bricks"

@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "polished": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone"
@@ -15,11 +15,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "diorite"
+                            "material": "\"diorite\""
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone"
@@ -27,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "polished_diorite"
+                            "material": "\"polished_diorite\""
                         }
                     }
                 ]

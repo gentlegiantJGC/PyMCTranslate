@@ -11,7 +11,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "update": "false"
+                            "update": "\"false\""
                         }
                     }
                 ],
@@ -23,7 +23,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "update": "true"
+                            "update": "\"true\""
                         }
                     }
                 ]
@@ -49,7 +49,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "dandelion"
+                                                        "plant": "\"dandelion\""
                                                     }
                                                 },
                                                 {
@@ -75,7 +75,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "dandelion"
+                                                                                    "plant": "\"dandelion\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -90,7 +90,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "poppy"
+                                                        "plant": "\"poppy\""
                                                     }
                                                 },
                                                 {
@@ -116,7 +116,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "poppy"
+                                                                                    "plant": "\"poppy\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -124,7 +124,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "blue_orchid"
+                                                                                    "plant": "\"blue_orchid\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -132,7 +132,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "allium"
+                                                                                    "plant": "\"allium\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -140,7 +140,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "azure_bluet"
+                                                                                    "plant": "\"azure_bluet\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -148,7 +148,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "red_tulip"
+                                                                                    "plant": "\"red_tulip\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -156,7 +156,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "orange_tulip"
+                                                                                    "plant": "\"orange_tulip\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -164,7 +164,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "white_tulip"
+                                                                                    "plant": "\"white_tulip\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -172,7 +172,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "pink_tulip"
+                                                                                    "plant": "\"pink_tulip\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -180,7 +180,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "oxeye_daisy"
+                                                                                    "plant": "\"oxeye_daisy\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -195,7 +195,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "oak_sapling"
+                                                        "plant": "\"oak_sapling\""
                                                     }
                                                 },
                                                 {
@@ -221,7 +221,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "oak_sapling"
+                                                                                    "plant": "\"oak_sapling\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -229,7 +229,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "spruce_sapling"
+                                                                                    "plant": "\"spruce_sapling\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -237,7 +237,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "birch_sapling"
+                                                                                    "plant": "\"birch_sapling\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -245,7 +245,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "jungle_sapling"
+                                                                                    "plant": "\"jungle_sapling\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -253,7 +253,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "acacia_sapling"
+                                                                                    "plant": "\"acacia_sapling\""
                                                                                 }
                                                                             }
                                                                         ],
@@ -261,7 +261,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "dark_oak_sapling"
+                                                                                    "plant": "\"dark_oak_sapling\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -276,7 +276,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "red_mushroom"
+                                                        "plant": "\"red_mushroom\""
                                                     }
                                                 },
                                                 {
@@ -302,7 +302,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "red_mushroom"
+                                                                                    "plant": "\"red_mushroom\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -317,7 +317,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "brown_mushroom"
+                                                        "plant": "\"brown_mushroom\""
                                                     }
                                                 },
                                                 {
@@ -343,7 +343,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "brown_mushroom"
+                                                                                    "plant": "\"brown_mushroom\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -358,7 +358,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "fern"
+                                                        "plant": "\"fern\""
                                                     }
                                                 },
                                                 {
@@ -384,7 +384,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "fern"
+                                                                                    "plant": "\"fern\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -399,7 +399,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "dead_bush"
+                                                        "plant": "\"dead_bush\""
                                                     }
                                                 },
                                                 {
@@ -425,7 +425,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "dead_bush"
+                                                                                    "plant": "\"dead_bush\""
                                                                                 }
                                                                             }
                                                                         ]
@@ -440,7 +440,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "plant": "cactus"
+                                                        "plant": "\"cactus\""
                                                     }
                                                 },
                                                 {
@@ -466,7 +466,7 @@
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
-                                                                                    "plant": "cactus"
+                                                                                    "plant": "\"cactus\""
                                                                                 }
                                                                             }
                                                                         ]

@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "shape": {
-                "north_south": [
+                "\"north_south\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -19,7 +19,7 @@
                         }
                     }
                 ],
-                "east_west": [
+                "\"east_west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -31,7 +31,7 @@
                         }
                     }
                 ],
-                "ascending_east": [
+                "\"ascending_east\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -43,7 +43,7 @@
                         }
                     }
                 ],
-                "ascending_west": [
+                "\"ascending_west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -55,7 +55,7 @@
                         }
                     }
                 ],
-                "ascending_north": [
+                "\"ascending_north\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -67,7 +67,7 @@
                         }
                     }
                 ],
-                "ascending_south": [
+                "\"ascending_south\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -79,7 +79,7 @@
                         }
                     }
                 ],
-                "south_east": [
+                "\"south_east\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -91,7 +91,7 @@
                         }
                     }
                 ],
-                "south_west": [
+                "\"south_west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -103,7 +103,7 @@
                         }
                     }
                 ],
-                "north_west": [
+                "\"north_west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"
@@ -115,7 +115,7 @@
                         }
                     }
                 ],
-                "north_east": [
+                "\"north_east\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:rail"

@@ -1,41 +1,41 @@
 {
     "properties": {
         "plant": [
-            "none",
-            "dandelion",
-            "poppy",
-            "blue_orchid",
-            "allium",
-            "azure_bluet",
-            "red_tulip",
-            "orange_tulip",
-            "white_tulip",
-            "pink_tulip",
-            "oxeye_daisy",
-            "oak_sapling",
-            "spruce_sapling",
-            "birch_sapling",
-            "jungle_sapling",
-            "acacia_sapling",
-            "dark_oak_sapling",
-            "red_mushroom",
-            "brown_mushroom",
-            "fern",
-            "dead_bush",
-            "cactus",
-            "bamboo",
-            "cornflower",
-            "lily_of_the_valley",
-            "wither_rose"
+            "\"none\"",
+            "\"dandelion\"",
+            "\"poppy\"",
+            "\"blue_orchid\"",
+            "\"allium\"",
+            "\"azure_bluet\"",
+            "\"red_tulip\"",
+            "\"orange_tulip\"",
+            "\"white_tulip\"",
+            "\"pink_tulip\"",
+            "\"oxeye_daisy\"",
+            "\"oak_sapling\"",
+            "\"spruce_sapling\"",
+            "\"birch_sapling\"",
+            "\"jungle_sapling\"",
+            "\"acacia_sapling\"",
+            "\"dark_oak_sapling\"",
+            "\"red_mushroom\"",
+            "\"brown_mushroom\"",
+            "\"fern\"",
+            "\"dead_bush\"",
+            "\"cactus\"",
+            "\"bamboo\"",
+            "\"cornflower\"",
+            "\"lily_of_the_valley\"",
+            "\"wither_rose\""
         ],
         "update": [
-            "false",
-            "true"
+            "\"false\"",
+            "\"true\""
         ]
     },
     "defaults": {
-        "plant": "none",
-        "update": "false"
+        "plant": "\"none\"",
+        "update": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

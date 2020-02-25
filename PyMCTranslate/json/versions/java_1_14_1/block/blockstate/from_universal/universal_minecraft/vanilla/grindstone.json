@@ -7,15 +7,15 @@
         "function": "carry_properties",
         "options": {
             "face": [
-                "floor",
-                "wall",
-                "ceiling"
+                "\"floor\"",
+                "\"wall\"",
+                "\"ceiling\""
             ],
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     }

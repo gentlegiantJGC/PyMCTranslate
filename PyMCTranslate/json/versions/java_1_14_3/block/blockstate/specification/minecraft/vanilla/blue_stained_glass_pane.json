@@ -1,26 +1,26 @@
 {
     "properties": {
         "east": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "north": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "south": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "west": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "east": "false",
-        "north": "false",
-        "south": "false",
-        "west": "false"
+        "east": "\"false\"",
+        "north": "\"false\"",
+        "south": "\"false\"",
+        "west": "\"false\""
     }
 }

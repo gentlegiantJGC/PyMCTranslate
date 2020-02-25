@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "lit": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:furnace"
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lit_furnace"
@@ -21,7 +21,7 @@
                 ]
             },
             "facing": {
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -29,7 +29,7 @@
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -37,7 +37,7 @@
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -45,7 +45,7 @@
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {

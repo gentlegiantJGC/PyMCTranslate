@@ -7,58 +7,43 @@
         "function": "map_properties",
         "options": {
             "type": {
-                "tube": [
+                "\"tube\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_color": [
-                                "snbt",
-                                "\"blue\""
-                            ]
+                            "coral_color": "\"blue\""
                         }
                     }
                 ],
-                "brain": [
+                "\"brain\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_color": [
-                                "snbt",
-                                "\"pink\""
-                            ]
+                            "coral_color": "\"pink\""
                         }
                     }
                 ],
-                "bubble": [
+                "\"bubble\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_color": [
-                                "snbt",
-                                "\"purple\""
-                            ]
+                            "coral_color": "\"purple\""
                         }
                     }
                 ],
-                "fire": [
+                "\"fire\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_color": [
-                                "snbt",
-                                "\"red\""
-                            ]
+                            "coral_color": "\"red\""
                         }
                     }
                 ],
-                "horn": [
+                "\"horn\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_color": [
-                                "snbt",
-                                "\"yellow\""
-                            ]
+                            "coral_color": "\"yellow\""
                         }
                     }
                 ]

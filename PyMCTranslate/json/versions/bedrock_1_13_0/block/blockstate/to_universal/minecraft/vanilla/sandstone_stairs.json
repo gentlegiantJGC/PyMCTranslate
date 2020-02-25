@@ -6,7 +6,7 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "sandstone"
+            "material": "\"sandstone\""
         }
     },
     {
@@ -17,7 +17,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "bottom"
+                            "half": "\"bottom\""
                         }
                     }
                 ],
@@ -25,7 +25,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "top"
+                            "half": "\"top\""
                         }
                     }
                 ]
@@ -35,7 +35,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east"
+                            "facing": "\"east\""
                         }
                     }
                 ],
@@ -43,7 +43,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west"
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -51,7 +51,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south"
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -59,7 +59,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north"
+                            "facing": "\"north\""
                         }
                     }
                 ]

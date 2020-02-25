@@ -1,21 +1,21 @@
 {
     "properties": {
         "extended": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west",
-            "up",
-            "down"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
         ]
     },
     "defaults": {
-        "extended": "false",
-        "facing": "north"
+        "extended": "\"false\"",
+        "facing": "\"north\""
     },
     "nbt_identifier": [
         "universal_minecraft",

@@ -6,23 +6,23 @@
     "snbt": "{OutputSignal: 0}",
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "mode": [
-            "compare",
-            "subtract"
+            "\"compare\"",
+            "\"subtract\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "mode": "compare",
-        "powered": "false"
+        "facing": "\"north\"",
+        "mode": "\"compare\"",
+        "powered": "\"false\""
     }
 }

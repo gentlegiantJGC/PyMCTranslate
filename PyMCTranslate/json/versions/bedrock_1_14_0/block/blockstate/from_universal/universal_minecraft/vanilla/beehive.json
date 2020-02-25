@@ -7,137 +7,101 @@
         "function": "map_properties",
         "options": {
             "facing_direction": {
-                "down": [
+                "\"down\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "facing_direction": "0"
                         }
                     }
                 ],
-                "up": [
+                "\"up\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "facing_direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "facing_direction": "2"
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "facing_direction": "3"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "4"
-                            ]
+                            "facing_direction": "4"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": [
-                                "snbt",
-                                "5"
-                            ]
+                            "facing_direction": "5"
                         }
                     }
                 ]
             },
             "honey_level": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "honey_level": [
-                                "snbt",
-                                "0"
-                            ]
+                            "honey_level": "0"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "honey_level": [
-                                "snbt",
-                                "1"
-                            ]
+                            "honey_level": "1"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "honey_level": [
-                                "snbt",
-                                "2"
-                            ]
+                            "honey_level": "2"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "honey_level": [
-                                "snbt",
-                                "3"
-                            ]
+                            "honey_level": "3"
                         }
                     }
                 ],
-                "4": [
+                "\"4\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "honey_level": [
-                                "snbt",
-                                "4"
-                            ]
+                            "honey_level": "4"
                         }
                     }
                 ],
-                "5": [
+                "\"5\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "honey_level": [
-                                "snbt",
-                                "5"
-                            ]
+                            "honey_level": "5"
                         }
                     }
                 ]

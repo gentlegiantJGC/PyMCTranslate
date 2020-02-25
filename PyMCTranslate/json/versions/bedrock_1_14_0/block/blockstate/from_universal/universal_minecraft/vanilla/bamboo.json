@@ -7,84 +7,63 @@
         "function": "map_properties",
         "options": {
             "stage": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "age_bit": "0b"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "age_bit": "1b"
                         }
                     }
                 ]
             },
             "leaves": {
-                "none": [
+                "\"none\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "bamboo_leaf_size": [
-                                "snbt",
-                                "\"no_leaves\""
-                            ]
+                            "bamboo_leaf_size": "\"no_leaves\""
                         }
                     }
                 ],
-                "small": [
+                "\"small\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "bamboo_leaf_size": [
-                                "snbt",
-                                "\"small_leaves\""
-                            ]
+                            "bamboo_leaf_size": "\"small_leaves\""
                         }
                     }
                 ],
-                "large": [
+                "\"large\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "bamboo_leaf_size": [
-                                "snbt",
-                                "\"large_leaves\""
-                            ]
+                            "bamboo_leaf_size": "\"large_leaves\""
                         }
                     }
                 ]
             },
             "thickness": {
-                "thin": [
+                "\"thin\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "bamboo_stalk_thickness": [
-                                "snbt",
-                                "\"thin\""
-                            ]
+                            "bamboo_stalk_thickness": "\"thin\""
                         }
                     }
                 ],
-                "thick": [
+                "\"thick\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "bamboo_stalk_thickness": [
-                                "snbt",
-                                "\"thick\""
-                            ]
+                            "bamboo_stalk_thickness": "\"thick\""
                         }
                     }
                 ]

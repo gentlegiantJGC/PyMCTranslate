@@ -3,13 +3,13 @@
         "function": "map_properties",
         "options": {
             "type": {
-                "default": [
+                "\"default\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:seagrass"
                     }
                 ],
-                "double_top": [
+                "\"double_top\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:tall_seagrass"
@@ -17,11 +17,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "upper"
+                            "half": "\"upper\""
                         }
                     }
                 ],
-                "double_bot": [
+                "\"double_bot\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:tall_seagrass"
@@ -29,7 +29,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "lower"
+                            "half": "\"lower\""
                         }
                     }
                 ]

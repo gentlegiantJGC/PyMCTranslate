@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "drag": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -15,7 +15,7 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {

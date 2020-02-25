@@ -11,8 +11,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia",
-                            "axis": "y"
+                            "material": "\"acacia\"",
+                            "axis": "\"y\""
                         }
                     }
                 ],
@@ -24,8 +24,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia",
-                            "axis": "x"
+                            "material": "\"acacia\"",
+                            "axis": "\"x\""
                         }
                     }
                 ],
@@ -37,8 +37,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia",
-                            "axis": "z"
+                            "material": "\"acacia\"",
+                            "axis": "\"z\""
                         }
                     }
                 ],
@@ -50,7 +50,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia"
+                            "material": "\"acacia\""
                         }
                     }
                 ]
@@ -60,7 +60,7 @@
     {
         "function": "new_properties",
         "options": {
-            "stripped": "true"
+            "stripped": "\"true\""
         }
     }
 ]

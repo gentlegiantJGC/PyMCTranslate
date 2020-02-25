@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "cobblestone": [
+                "\"cobblestone\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -15,7 +15,7 @@
                         }
                     }
                 ],
-                "mossy_cobblestone": [
+                "\"mossy_cobblestone\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -23,7 +23,7 @@
                         }
                     }
                 ],
-                "granite": [
+                "\"granite\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -31,7 +31,7 @@
                         }
                     }
                 ],
-                "diorite": [
+                "\"diorite\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -39,7 +39,7 @@
                         }
                     }
                 ],
-                "andesite": [
+                "\"andesite\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -47,7 +47,7 @@
                         }
                     }
                 ],
-                "sandstone": [
+                "\"sandstone\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -55,7 +55,7 @@
                         }
                     }
                 ],
-                "brick": [
+                "\"brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -63,7 +63,7 @@
                         }
                     }
                 ],
-                "stone_brickmossy_stone_brick": [
+                "\"stone_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -71,7 +71,7 @@
                         }
                     }
                 ],
-                "nether_brick": [
+                "\"mossy_stone_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -79,7 +79,7 @@
                         }
                     }
                 ],
-                "end_stone_brick": [
+                "\"nether_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -87,7 +87,7 @@
                         }
                     }
                 ],
-                "prismarine": [
+                "\"end_stone_brick\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -95,7 +95,7 @@
                         }
                     }
                 ],
-                "red_sandstone": [
+                "\"prismarine\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -103,11 +103,19 @@
                         }
                     }
                 ],
-                "red_nether_brick": [
+                "\"red_sandstone\"": [
                     {
                         "function": "new_properties",
                         "options": {
                             "block_data": "12"
+                        }
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "13"
                         }
                     }
                 ]

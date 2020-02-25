@@ -1,28 +1,28 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "half": [
-            "top",
-            "bottom"
+            "\"top\"",
+            "\"bottom\""
         ],
         "open": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "half": "bottom",
-        "open": "false",
-        "powered": "false"
+        "facing": "\"north\"",
+        "half": "\"bottom\"",
+        "open": "\"false\"",
+        "powered": "\"false\""
     }
 }

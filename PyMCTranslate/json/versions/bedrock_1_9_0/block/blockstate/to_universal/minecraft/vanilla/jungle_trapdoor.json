@@ -6,25 +6,25 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "jungle"
+            "material": "\"jungle\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "half": [
-                "top",
-                "bottom"
+                "\"top\"",
+                "\"bottom\""
             ],
             "open": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

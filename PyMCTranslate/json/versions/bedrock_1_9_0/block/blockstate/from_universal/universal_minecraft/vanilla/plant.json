@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "type": {
-                "grass": [
+                "\"grass\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:tallgrass"
@@ -15,11 +15,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "grass"
+                            "type": "\"grass\""
                         }
                     }
                 ],
-                "fern": [
+                "\"fern\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:tallgrass"
@@ -27,23 +27,23 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "fern"
+                            "type": "\"fern\""
                         }
                     }
                 ],
-                "dead_bush": [
+                "\"dead_bush\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:deadbush"
                     }
                 ],
-                "dandelion": [
+                "\"dandelion\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:yellow_flower"
                     }
                 ],
-                "poppy": [
+                "\"poppy\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -51,11 +51,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "poppy"
+                            "type": "\"poppy\""
                         }
                     }
                 ],
-                "blue_orchid": [
+                "\"blue_orchid\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -63,11 +63,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "blue_orchid"
+                            "type": "\"blue_orchid\""
                         }
                     }
                 ],
-                "allium": [
+                "\"allium\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -75,11 +75,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "allium"
+                            "type": "\"allium\""
                         }
                     }
                 ],
-                "azure_bluet": [
+                "\"azure_bluet\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -87,11 +87,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "azure_bluet"
+                            "type": "\"azure_bluet\""
                         }
                     }
                 ],
-                "red_tulip": [
+                "\"red_tulip\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -99,11 +99,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "red_tulip"
+                            "type": "\"red_tulip\""
                         }
                     }
                 ],
-                "orange_tulip": [
+                "\"orange_tulip\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -111,11 +111,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "orange_tulip"
+                            "type": "\"orange_tulip\""
                         }
                     }
                 ],
-                "white_tulip": [
+                "\"white_tulip\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -123,11 +123,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "white_tulip"
+                            "type": "\"white_tulip\""
                         }
                     }
                 ],
-                "pink_tulip": [
+                "\"pink_tulip\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -135,11 +135,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "pink_tulip"
+                            "type": "\"pink_tulip\""
                         }
                     }
                 ],
-                "oxeye_daisy": [
+                "\"oxeye_daisy\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -147,11 +147,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "oxeye_daisy"
+                            "type": "\"oxeye_daisy\""
                         }
                     }
                 ],
-                "cornflower": [
+                "\"cornflower\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -159,11 +159,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "cornflower"
+                            "type": "\"cornflower\""
                         }
                     }
                 ],
-                "lily_of_the_valley": [
+                "\"lily_of_the_valley\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_flower"
@@ -171,7 +171,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "lily_of_the_valley"
+                            "type": "\"lily_of_the_valley\""
                         }
                     }
                 ]

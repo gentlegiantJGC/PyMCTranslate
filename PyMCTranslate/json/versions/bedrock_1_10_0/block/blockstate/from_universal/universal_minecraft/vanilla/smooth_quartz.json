@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "variant": "smooth"
+            "variant": "\"smooth\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "axis": [
-                "x",
-                "y",
-                "z"
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
             ]
         }
     }

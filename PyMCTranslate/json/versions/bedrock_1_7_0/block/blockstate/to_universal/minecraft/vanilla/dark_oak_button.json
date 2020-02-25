@@ -6,15 +6,15 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "dark_oak"
+            "material": "\"dark_oak\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     },
@@ -22,55 +22,55 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "down": [
+                "\"down\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "ceiling"
+                            "face": "\"ceiling\""
                         }
                     }
                 ],
-                "up": [
+                "\"up\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "floor"
+                            "face": "\"floor\""
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "north"
+                            "face": "\"wall\"",
+                            "facing": "\"north\""
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "south"
+                            "face": "\"wall\"",
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "west"
+                            "face": "\"wall\"",
+                            "facing": "\"west\""
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "east"
+                            "face": "\"wall\"",
+                            "facing": "\"east\""
                         }
                     }
                 ]

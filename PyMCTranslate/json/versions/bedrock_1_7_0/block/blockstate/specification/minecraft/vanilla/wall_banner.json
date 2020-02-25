@@ -6,13 +6,13 @@
     "snbt": "{Type: 0, Base: 0, isMovable: 1b}",
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
-        "facing": "west"
+        "facing": "\"west\""
     }
 }

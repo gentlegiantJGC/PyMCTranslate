@@ -6,15 +6,15 @@
     {
         "function": "new_properties",
         "options": {
-            "facing": "up"
+            "facing": "\"up\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "lit": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

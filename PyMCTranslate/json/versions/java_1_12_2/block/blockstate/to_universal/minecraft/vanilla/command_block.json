@@ -7,23 +7,23 @@
         "function": "carry_properties",
         "options": {
             "conditional": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ],
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "mode": "impulse"
+            "mode": "\"impulse\""
         }
     },
     {

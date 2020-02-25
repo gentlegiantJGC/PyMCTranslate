@@ -7,187 +7,187 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:oak_stairs"
                     }
                 ],
-                "cobblestone": [
+                "\"cobblestone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_stairs"
                     }
                 ],
-                "brick": [
+                "\"brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:brick_stairs"
                     }
                 ],
-                "stone_brick": [
+                "\"stone_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_brick_stairs"
                     }
                 ],
-                "nether_brick": [
+                "\"nether_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:nether_brick_stairs"
                     }
                 ],
-                "sandstone": [
+                "\"sandstone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:sandstone_stairs"
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:spruce_stairs"
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:birch_stairs"
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:jungle_stairs"
                     }
                 ],
-                "quartz": [
+                "\"quartz\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:quartz_stairs"
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:acacia_stairs"
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:dark_oak_stairs"
                     }
                 ],
-                "red_sandstone": [
+                "\"red_sandstone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_sandstone_stairs"
                     }
                 ],
-                "purpur": [
+                "\"purpur\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:purpur_stairs"
                     }
                 ],
-                "prismarine": [
+                "\"prismarine\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:prismarine_stairs"
                     }
                 ],
-                "dark_prismarine": [
+                "\"dark_prismarine\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:dark_prismarine_stairs"
                     }
                 ],
-                "prismarine_brick": [
+                "\"prismarine_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:prismarine_bricks_stairs"
                     }
                 ],
-                "andesite": [
+                "\"andesite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:andesite_stairs"
                     }
                 ],
-                "diorite": [
+                "\"diorite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:diorite_stairs"
                     }
                 ],
-                "end_brick": [
+                "\"end_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:end_brick_stairs"
                     }
                 ],
-                "granite": [
+                "\"granite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:granite_stairs"
                     }
                 ],
-                "mossy_cobblestone": [
+                "\"mossy_cobblestone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:mossy_cobblestone_stairs"
                     }
                 ],
-                "mossy_stone_brick": [
+                "\"mossy_stone_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:mossy_stone_brick_stairs"
                     }
                 ],
-                "normal_stone": [
+                "\"normal_stone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:normal_stone_stairs"
                     }
                 ],
-                "polished_andesite": [
+                "\"polished_andesite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:polished_andesite_stairs"
                     }
                 ],
-                "polished_diorite": [
+                "\"polished_diorite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:polished_diorite_stairs"
                     }
                 ],
-                "polished_granite": [
+                "\"polished_granite\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:polished_granite_stairs"
                     }
                 ],
-                "red_nether_brick": [
+                "\"red_nether_brick\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:red_nether_brick_stairs"
                     }
                 ],
-                "smooth_quartz": [
+                "\"smooth_quartz\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:smooth_quartz_stairs"
                     }
                 ],
-                "smooth_red_sandstone": [
+                "\"smooth_red_sandstone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:smooth_red_sandstone_stairs"
                     }
                 ],
-                "smooth_sandstone": [
+                "\"smooth_sandstone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:smooth_sandstone_stairs"
@@ -195,12 +195,12 @@
                 ]
             },
             "half": {
-                "bottom": [
+                "\"bottom\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -208,7 +208,7 @@
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -216,7 +216,7 @@
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -224,7 +224,7 @@
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -236,12 +236,12 @@
                         }
                     }
                 ],
-                "top": [
+                "\"top\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "facing": {
-                                "east": [
+                                "\"east\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -249,7 +249,7 @@
                                         }
                                     }
                                 ],
-                                "west": [
+                                "\"west\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -257,7 +257,7 @@
                                         }
                                     }
                                 ],
-                                "south": [
+                                "\"south\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -265,7 +265,7 @@
                                         }
                                     }
                                 ],
-                                "north": [
+                                "\"north\"": [
                                     {
                                         "function": "new_properties",
                                         "options": {

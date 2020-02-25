@@ -7,16 +7,16 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "acacia",
-                "dark_oak"
+                "\"acacia\"",
+                "\"dark_oak\""
             ],
             "persistent": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "check_decay": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "half": {
-                "upper": [
+                "\"upper\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:seagrass"
@@ -19,7 +19,7 @@
                         }
                     }
                 ],
-                "lower": [
+                "\"lower\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:seagrass"

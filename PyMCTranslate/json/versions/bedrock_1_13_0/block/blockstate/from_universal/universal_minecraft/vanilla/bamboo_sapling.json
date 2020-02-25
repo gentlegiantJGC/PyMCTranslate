@@ -7,93 +7,69 @@
         "function": "map_properties",
         "options": {
             "stage": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age_bit": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "age_bit": "0b"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age_bit": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "age_bit": "1b"
                         }
                     }
                 ]
             },
             "sapling_type": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sapling_type": [
-                                "snbt",
-                                "\"oak\""
-                            ]
+                            "sapling_type": "\"oak\""
                         }
                     }
                 ],
-                "spruce": [
+                "\"spruce\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sapling_type": [
-                                "snbt",
-                                "\"spruce\""
-                            ]
+                            "sapling_type": "\"spruce\""
                         }
                     }
                 ],
-                "birch": [
+                "\"birch\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sapling_type": [
-                                "snbt",
-                                "\"birch\""
-                            ]
+                            "sapling_type": "\"birch\""
                         }
                     }
                 ],
-                "jungle": [
+                "\"jungle\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sapling_type": [
-                                "snbt",
-                                "\"jungle\""
-                            ]
+                            "sapling_type": "\"jungle\""
                         }
                     }
                 ],
-                "acacia": [
+                "\"acacia\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sapling_type": [
-                                "snbt",
-                                "\"acacia\""
-                            ]
+                            "sapling_type": "\"acacia\""
                         }
                     }
                 ],
-                "dark_oak": [
+                "\"dark_oak\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "sapling_type": [
-                                "snbt",
-                                "\"dark_oak\""
-                            ]
+                            "sapling_type": "\"dark_oak\""
                         }
                     }
                 ]

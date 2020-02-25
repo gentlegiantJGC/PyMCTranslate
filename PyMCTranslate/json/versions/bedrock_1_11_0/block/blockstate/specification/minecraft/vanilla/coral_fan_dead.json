@@ -1,22 +1,22 @@
 {
     "properties": {
         "facing": [
-            "up"
+            "\"up\""
         ],
         "dead": [
-            "true"
+            "\"true\""
         ],
         "type": [
-            "tube",
-            "brain",
-            "bubble",
-            "fire",
-            "horn"
+            "\"tube\"",
+            "\"brain\"",
+            "\"bubble\"",
+            "\"fire\"",
+            "\"horn\""
         ]
     },
     "defaults": {
-        "facing": "up",
-        "dead": "true",
-        "type": "tube"
+        "facing": "\"up\"",
+        "dead": "\"true\"",
+        "type": "\"tube\""
     }
 }

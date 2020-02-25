@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "type": {
-                "tube": [
+                "\"tube\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:tube_coral"
@@ -16,13 +16,13 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:tube_coral"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_tube_coral"
@@ -32,7 +32,7 @@
                         }
                     }
                 ],
-                "brain": [
+                "\"brain\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:brain_coral"
@@ -41,13 +41,13 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:brain_coral"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_brain_coral"
@@ -57,7 +57,7 @@
                         }
                     }
                 ],
-                "bubble": [
+                "\"bubble\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:bubble_coral"
@@ -66,13 +66,13 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:bubble_coral"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_bubble_coral"
@@ -82,7 +82,7 @@
                         }
                     }
                 ],
-                "fire": [
+                "\"fire\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:fire_coral"
@@ -91,13 +91,13 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:fire_coral"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_fire_coral"
@@ -107,7 +107,7 @@
                         }
                     }
                 ],
-                "horn": [
+                "\"horn\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:horn_coral"
@@ -116,13 +116,13 @@
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:horn_coral"
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:dead_horn_coral"

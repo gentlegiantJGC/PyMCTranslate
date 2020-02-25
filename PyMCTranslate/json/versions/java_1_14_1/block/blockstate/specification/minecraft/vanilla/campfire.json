@@ -6,23 +6,23 @@
     "snbt": "{Items: [], CookingTimes: [I;0, 0, 0, 0], CookingTotalTimes: [I;0, 0, 0, 0]}",
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "lit": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "signal_fire": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "lit": "true",
-        "signal_fire": "false"
+        "facing": "\"north\"",
+        "lit": "\"true\"",
+        "signal_fire": "\"false\""
     }
 }

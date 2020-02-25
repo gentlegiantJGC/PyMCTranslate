@@ -6,18 +6,18 @@
     "snbt": "{CookTime: 0s, BurnTime: 0s, CookTimeTotal: 0s, RecipesUsedSize: 0s, Items: [], Lock: \"\"}",
     "properties": {
         "facing": [
-            "north",
-            "east",
-            "south",
-            "west"
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\""
         ],
         "lit": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "lit": "false"
+        "facing": "\"north\"",
+        "lit": "\"false\""
     }
 }

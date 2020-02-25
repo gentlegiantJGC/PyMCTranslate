@@ -75,17 +75,17 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "material": "acacia"
+            "material": "\"acacia\""
         }
     }
 ]

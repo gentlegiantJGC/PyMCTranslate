@@ -7,18 +7,18 @@
         "function": "carry_properties",
         "options": {
             "level": [
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7"
+                "\"0\"",
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\"",
+                "\"5\"",
+                "\"6\"",
+                "\"7\""
             ],
             "falling": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     },
@@ -26,13 +26,13 @@
         "function": "map_properties",
         "options": {
             "flowing": {
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:flowing_lava"
                     }
                 ],
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lava"

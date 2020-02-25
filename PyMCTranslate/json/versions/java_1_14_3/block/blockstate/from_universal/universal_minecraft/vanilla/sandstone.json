@@ -7,25 +7,25 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "normal": [
+                "\"normal\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:sandstone"
                     }
                 ],
-                "chiseled": [
+                "\"chiseled\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:chiseled_sandstone"
                     }
                 ],
-                "cut": [
+                "\"cut\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:cut_sandstone"
                     }
                 ],
-                "smooth": [
+                "\"smooth\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:smooth_sandstone"

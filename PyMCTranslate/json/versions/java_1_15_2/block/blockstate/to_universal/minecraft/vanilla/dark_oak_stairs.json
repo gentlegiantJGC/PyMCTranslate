@@ -6,28 +6,28 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "dark_oak"
+            "material": "\"dark_oak\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "half": [
-                "top",
-                "bottom"
+                "\"top\"",
+                "\"bottom\""
             ],
             "shape": [
-                "straight",
-                "inner_left",
-                "inner_right",
-                "outer_left",
-                "outer_right"
+                "\"straight\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
             ]
         }
     }

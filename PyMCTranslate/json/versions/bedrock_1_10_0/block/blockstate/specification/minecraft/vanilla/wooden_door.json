@@ -1,33 +1,33 @@
 {
     "properties": {
         "facing": [
-            "north",
-            "south",
-            "west",
-            "east"
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ],
         "half": [
-            "upper",
-            "lower"
+            "\"upper\"",
+            "\"lower\""
         ],
         "hinge": [
-            "left",
-            "right"
+            "\"left\"",
+            "\"right\""
         ],
         "open": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ],
         "powered": [
-            "true",
-            "false"
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "facing": "north",
-        "half": "lower",
-        "hinge": "left",
-        "open": "false",
-        "powered": "false"
+        "facing": "\"north\"",
+        "half": "\"lower\"",
+        "hinge": "\"left\"",
+        "open": "\"false\"",
+        "powered": "\"false\""
     }
 }

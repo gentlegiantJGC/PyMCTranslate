@@ -7,17 +7,17 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "up": [
+                "\"up\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -25,7 +25,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -33,7 +33,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -41,7 +41,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -49,7 +49,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -61,12 +61,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -78,7 +78,7 @@
                                                         "options": "minecraft:coral_fan_dead"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -90,7 +90,7 @@
                                                         "options": "minecraft:coral_fan_dead"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -102,7 +102,7 @@
                                                         "options": "minecraft:coral_fan_dead"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -114,7 +114,7 @@
                                                         "options": "minecraft:coral_fan_dead"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -134,17 +134,17 @@
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -156,7 +156,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -168,7 +168,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -180,7 +180,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -192,7 +192,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -208,12 +208,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -225,7 +225,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -237,7 +237,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -249,7 +249,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -261,7 +261,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -281,17 +281,17 @@
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -303,7 +303,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -315,7 +315,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -327,7 +327,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -339,7 +339,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -355,12 +355,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -372,7 +372,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -384,7 +384,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -396,7 +396,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -408,7 +408,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -428,17 +428,17 @@
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -450,7 +450,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -462,7 +462,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -474,7 +474,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -486,7 +486,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -502,12 +502,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -519,7 +519,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -531,7 +531,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -543,7 +543,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -555,7 +555,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -575,17 +575,17 @@
                         }
                     }
                 ],
-                "south": [
+                "\"south\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "dead": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -597,7 +597,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -609,7 +609,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -621,7 +621,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -633,7 +633,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -649,12 +649,12 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "type": {
-                                                "tube": [
+                                                "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -666,7 +666,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "brain": [
+                                                "\"brain\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -678,7 +678,7 @@
                                                         "options": "minecraft:coral_fan_hang"
                                                     }
                                                 ],
-                                                "bubble": [
+                                                "\"bubble\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -690,7 +690,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "fire": [
+                                                "\"fire\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -702,7 +702,7 @@
                                                         "options": "minecraft:coral_fan_hang2"
                                                     }
                                                 ],
-                                                "horn": [
+                                                "\"horn\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {

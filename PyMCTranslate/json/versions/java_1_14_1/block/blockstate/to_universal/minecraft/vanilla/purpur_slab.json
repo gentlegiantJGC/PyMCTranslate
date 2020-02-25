@@ -6,16 +6,16 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "purpur"
+            "material": "\"purpur\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "type": [
-                "top",
-                "bottom",
-                "double"
+                "\"top\"",
+                "\"bottom\"",
+                "\"double\""
             ]
         }
     }

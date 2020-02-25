@@ -124,19 +124,19 @@
     {
         "function": "new_properties",
         "options": {
-            "color": "magenta"
+            "color": "\"magenta\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west",
-                "up",
-                "down"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
             ]
         }
     }

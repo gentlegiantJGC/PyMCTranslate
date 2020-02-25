@@ -7,22 +7,22 @@
         "function": "map_properties",
         "options": {
             "disarmed": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "attached": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "suspended": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -30,7 +30,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -42,12 +42,12 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -55,7 +55,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -71,17 +71,17 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "suspended": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -89,7 +89,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -101,12 +101,12 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -114,7 +114,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -134,22 +134,22 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "attached": {
-                                "false": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "suspended": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -157,7 +157,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -169,12 +169,12 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -182,7 +182,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -198,17 +198,17 @@
                                         }
                                     }
                                 ],
-                                "true": [
+                                "\"true\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
                                             "suspended": {
-                                                "false": [
+                                                "\"false\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -216,7 +216,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -228,12 +228,12 @@
                                                         }
                                                     }
                                                 ],
-                                                "true": [
+                                                "\"true\"": [
                                                     {
                                                         "function": "map_properties",
                                                         "options": {
                                                             "powered": {
-                                                                "false": [
+                                                                "\"false\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {
@@ -241,7 +241,7 @@
                                                                         }
                                                                     }
                                                                 ],
-                                                                "true": [
+                                                                "\"true\"": [
                                                                     {
                                                                         "function": "new_properties",
                                                                         "options": {

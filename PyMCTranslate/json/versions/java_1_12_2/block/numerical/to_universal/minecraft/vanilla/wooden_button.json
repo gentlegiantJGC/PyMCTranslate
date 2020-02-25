@@ -2,7 +2,7 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "oak"
+            "material": "\"oak\""
         }
     },
     {
@@ -17,8 +17,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "ceiling",
-                            "powered": "false"
+                            "face": "\"ceiling\"",
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -30,9 +30,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "east",
-                            "powered": "false"
+                            "face": "\"wall\"",
+                            "facing": "\"east\"",
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -44,9 +44,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "west",
-                            "powered": "false"
+                            "face": "\"wall\"",
+                            "facing": "\"west\"",
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -58,9 +58,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "south",
-                            "powered": "false"
+                            "face": "\"wall\"",
+                            "facing": "\"south\"",
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -72,9 +72,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "north",
-                            "powered": "false"
+                            "face": "\"wall\"",
+                            "facing": "\"north\"",
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -86,8 +86,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "floor",
-                            "powered": "false"
+                            "face": "\"floor\"",
+                            "powered": "\"false\""
                         }
                     }
                 ],
@@ -99,8 +99,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "ceiling",
-                            "powered": "true"
+                            "face": "\"ceiling\"",
+                            "powered": "\"true\""
                         }
                     }
                 ],
@@ -112,9 +112,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "east",
-                            "powered": "true"
+                            "face": "\"wall\"",
+                            "facing": "\"east\"",
+                            "powered": "\"true\""
                         }
                     }
                 ],
@@ -126,9 +126,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "west",
-                            "powered": "true"
+                            "face": "\"wall\"",
+                            "facing": "\"west\"",
+                            "powered": "\"true\""
                         }
                     }
                 ],
@@ -140,9 +140,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "south",
-                            "powered": "true"
+                            "face": "\"wall\"",
+                            "facing": "\"south\"",
+                            "powered": "\"true\""
                         }
                     }
                 ],
@@ -154,9 +154,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "wall",
-                            "facing": "north",
-                            "powered": "true"
+                            "face": "\"wall\"",
+                            "facing": "\"north\"",
+                            "powered": "\"true\""
                         }
                     }
                 ],
@@ -168,8 +168,8 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "face": "floor",
-                            "powered": "true"
+                            "face": "\"floor\"",
+                            "powered": "\"true\""
                         }
                     }
                 ]

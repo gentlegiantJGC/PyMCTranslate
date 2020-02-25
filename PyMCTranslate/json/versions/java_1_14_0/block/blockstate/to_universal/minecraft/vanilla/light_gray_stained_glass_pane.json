@@ -6,27 +6,27 @@
     {
         "function": "new_properties",
         "options": {
-            "color": "light_gray"
+            "color": "\"light_gray\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "east": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "north": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "south": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "west": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

@@ -11,9 +11,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "down",
-                            "conditional": "false",
-                            "mode": "repeating"
+                            "facing": "\"down\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -25,9 +25,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "up",
-                            "conditional": "false",
-                            "mode": "repeating"
+                            "facing": "\"up\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -39,9 +39,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "conditional": "false",
-                            "mode": "repeating"
+                            "facing": "\"north\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -53,9 +53,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "conditional": "false",
-                            "mode": "repeating"
+                            "facing": "\"south\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -67,9 +67,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "conditional": "false",
-                            "mode": "repeating"
+                            "facing": "\"west\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -81,9 +81,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "conditional": "false",
-                            "mode": "repeating"
+                            "facing": "\"east\"",
+                            "conditional": "\"false\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -95,9 +95,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "down",
-                            "conditional": "true",
-                            "mode": "repeating"
+                            "facing": "\"down\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -109,9 +109,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "up",
-                            "conditional": "true",
-                            "mode": "repeating"
+                            "facing": "\"up\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -123,9 +123,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "north",
-                            "conditional": "true",
-                            "mode": "repeating"
+                            "facing": "\"north\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -137,9 +137,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "south",
-                            "conditional": "true",
-                            "mode": "repeating"
+                            "facing": "\"south\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -151,9 +151,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "west",
-                            "conditional": "true",
-                            "mode": "repeating"
+                            "facing": "\"west\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ],
@@ -165,9 +165,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "east",
-                            "conditional": "true",
-                            "mode": "repeating"
+                            "facing": "\"east\"",
+                            "conditional": "\"true\"",
+                            "mode": "\"repeating\""
                         }
                     }
                 ]

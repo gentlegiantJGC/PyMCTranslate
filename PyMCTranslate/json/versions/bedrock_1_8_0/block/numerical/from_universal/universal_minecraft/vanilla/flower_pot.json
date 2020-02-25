@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "update": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -15,7 +15,7 @@
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -25,7 +25,7 @@
                 ]
             },
             "plant": {
-                "dandelion": [
+                "\"dandelion\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -36,7 +36,7 @@
                         ]
                     }
                 ],
-                "poppy": [
+                "\"poppy\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -47,7 +47,7 @@
                         ]
                     }
                 ],
-                "blue_orchid": [
+                "\"blue_orchid\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -58,7 +58,7 @@
                         ]
                     }
                 ],
-                "allium": [
+                "\"allium\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -69,7 +69,7 @@
                         ]
                     }
                 ],
-                "azure_bluet": [
+                "\"azure_bluet\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -80,7 +80,7 @@
                         ]
                     }
                 ],
-                "red_tulip": [
+                "\"red_tulip\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -91,7 +91,7 @@
                         ]
                     }
                 ],
-                "orange_tulip": [
+                "\"orange_tulip\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -102,7 +102,7 @@
                         ]
                     }
                 ],
-                "white_tulip": [
+                "\"white_tulip\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -113,7 +113,7 @@
                         ]
                     }
                 ],
-                "pink_tulip": [
+                "\"pink_tulip\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -124,7 +124,7 @@
                         ]
                     }
                 ],
-                "oxeye_daisy": [
+                "\"oxeye_daisy\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -135,7 +135,7 @@
                         ]
                     }
                 ],
-                "oak_sapling": [
+                "\"oak_sapling\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -146,7 +146,7 @@
                         ]
                     }
                 ],
-                "spruce_sapling": [
+                "\"spruce_sapling\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -157,7 +157,7 @@
                         ]
                     }
                 ],
-                "birch_sapling": [
+                "\"birch_sapling\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -168,7 +168,7 @@
                         ]
                     }
                 ],
-                "jungle_sapling": [
+                "\"jungle_sapling\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -179,7 +179,7 @@
                         ]
                     }
                 ],
-                "acacia_sapling": [
+                "\"acacia_sapling\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -190,7 +190,7 @@
                         ]
                     }
                 ],
-                "dark_oak_sapling": [
+                "\"dark_oak_sapling\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -201,7 +201,7 @@
                         ]
                     }
                 ],
-                "red_mushroom": [
+                "\"red_mushroom\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -212,7 +212,7 @@
                         ]
                     }
                 ],
-                "brown_mushroom": [
+                "\"brown_mushroom\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -223,7 +223,7 @@
                         ]
                     }
                 ],
-                "fern": [
+                "\"fern\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -234,7 +234,7 @@
                         ]
                     }
                 ],
-                "dead_bush": [
+                "\"dead_bush\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -245,7 +245,7 @@
                         ]
                     }
                 ],
-                "cactus": [
+                "\"cactus\"": [
                     {
                         "function": "new_nbt",
                         "options": [
@@ -256,7 +256,7 @@
                         ]
                     }
                 ],
-                "bamboo": [
+                "\"bamboo\"": [
                     {
                         "function": "new_nbt",
                         "options": [

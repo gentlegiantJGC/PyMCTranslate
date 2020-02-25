@@ -91,7 +91,7 @@
         "function": "map_properties",
         "options": {
             "cauldron_liquid": {
-                "water": [
+                "\"water\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:cauldron"
@@ -99,14 +99,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "cauldron_liquid": [
-                                "snbt",
-                                "\"water\""
-                            ]
+                            "cauldron_liquid": "\"water\""
                         }
                     }
                 ],
-                "lava": [
+                "\"lava\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lava_cauldron"
@@ -114,89 +111,65 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "cauldron_liquid": [
-                                "snbt",
-                                "\"lava\""
-                            ]
+                            "cauldron_liquid": "\"lava\""
                         }
                     }
                 ]
             },
             "level": {
-                "0": [
+                "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "0"
-                            ]
+                            "fill_level": "0"
                         }
                     }
                 ],
-                "0.5": [
+                "\"0.5\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "1"
-                            ]
+                            "fill_level": "1"
                         }
                     }
                 ],
-                "1": [
+                "\"1\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "2"
-                            ]
+                            "fill_level": "2"
                         }
                     }
                 ],
-                "1.5": [
+                "\"1.5\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "3"
-                            ]
+                            "fill_level": "3"
                         }
                     }
                 ],
-                "2": [
+                "\"2\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "4"
-                            ]
+                            "fill_level": "4"
                         }
                     }
                 ],
-                "2.5": [
+                "\"2.5\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "5"
-                            ]
+                            "fill_level": "5"
                         }
                     }
                 ],
-                "3": [
+                "\"3\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "fill_level": [
-                                "snbt",
-                                "6"
-                            ]
+                            "fill_level": "6"
                         }
                     }
                 ]

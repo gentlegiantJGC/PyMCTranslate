@@ -6,17 +6,17 @@
     {
         "function": "new_properties",
         "options": {
-            "color": "black"
+            "color": "\"black\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "facing": [
-                "south",
-                "north",
-                "east",
-                "west"
+                "\"south\"",
+                "\"north\"",
+                "\"east\"",
+                "\"west\""
             ]
         }
     }

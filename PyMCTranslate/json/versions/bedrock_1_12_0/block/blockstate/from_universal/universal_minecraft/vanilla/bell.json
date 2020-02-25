@@ -89,20 +89,20 @@
         "function": "carry_properties",
         "options": {
             "toggle": [
-                "0",
-                "1"
+                "\"0\"",
+                "\"1\""
             ],
             "attachment": [
-                "floor",
-                "ceiling",
-                "single_wall",
-                "double_wall"
+                "\"floor\"",
+                "\"ceiling\"",
+                "\"single_wall\"",
+                "\"double_wall\""
             ],
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\""
             ]
         }
     }

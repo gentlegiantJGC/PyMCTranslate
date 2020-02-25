@@ -6,31 +6,31 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "stone_brick"
+            "material": "\"stone_brick\""
         }
     },
     {
         "function": "carry_properties",
         "options": {
             "east": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "north": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "south": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "up": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "west": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

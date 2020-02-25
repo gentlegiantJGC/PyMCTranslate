@@ -7,18 +7,18 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "south",
-                "west",
-                "north",
-                "east"
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
             ],
             "mode": [
-                "compare",
-                "subtract"
+                "\"compare\"",
+                "\"subtract\""
             ],
             "powered": [
-                "false",
-                "true"
+                "\"false\"",
+                "\"true\""
             ]
         }
     },

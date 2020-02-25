@@ -7,7 +7,7 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lit_pumpkin"
@@ -19,7 +19,7 @@
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lit_pumpkin"
@@ -31,7 +31,7 @@
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lit_pumpkin"
@@ -43,7 +43,7 @@
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:lit_pumpkin"

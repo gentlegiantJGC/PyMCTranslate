@@ -152,14 +152,14 @@
         "function": "carry_properties",
         "options": {
             "lit": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ],
             "facing": [
-                "north",
-                "east",
-                "south",
-                "west"
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\""
             ]
         }
     }

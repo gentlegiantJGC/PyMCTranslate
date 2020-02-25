@@ -11,11 +11,11 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "acacia",
-                            "north": "true",
-                            "east": "true",
-                            "south": "true",
-                            "west": "true"
+                            "material": "\"acacia\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\""
                         }
                     },
                     {
@@ -35,7 +35,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "north": "false"
+                                                        "north": "\"false\""
                                                     }
                                                 }
                                             ]
@@ -57,7 +57,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "south": "false"
+                                                        "south": "\"false\""
                                                     }
                                                 }
                                             ]
@@ -79,7 +79,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "west": "false"
+                                                        "west": "\"false\""
                                                     }
                                                 }
                                             ]
@@ -101,7 +101,7 @@
                                                 {
                                                     "function": "new_properties",
                                                     "options": {
-                                                        "east": "false"
+                                                        "east": "\"false\""
                                                     }
                                                 }
                                             ]

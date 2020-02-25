@@ -7,13 +7,13 @@
         "function": "map_properties",
         "options": {
             "material": {
-                "oak": [
+                "\"oak\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:trapdoor"
                     }
                 ],
-                "iron": [
+                "\"iron\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:iron_trapdoor"
@@ -26,18 +26,18 @@
         "function": "carry_properties",
         "options": {
             "facing": [
-                "north",
-                "south",
-                "west",
-                "east"
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
             ],
             "half": [
-                "top",
-                "bottom"
+                "\"top\"",
+                "\"bottom\""
             ],
             "open": [
-                "true",
-                "false"
+                "\"true\"",
+                "\"false\""
             ]
         }
     }

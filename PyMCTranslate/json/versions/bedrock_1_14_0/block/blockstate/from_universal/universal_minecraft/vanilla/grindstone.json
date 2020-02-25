@@ -7,93 +7,69 @@
         "function": "map_properties",
         "options": {
             "face": {
-                "floor": [
+                "\"floor\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"standing\""
-                            ]
+                            "attachment": "\"standing\""
                         }
                     }
                 ],
-                "ceiling": [
+                "\"ceiling\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"hanging\""
-                            ]
+                            "attachment": "\"hanging\""
                         }
                     }
                 ],
-                "wall": [
+                "\"wall\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"side\""
-                            ]
+                            "attachment": "\"side\""
                         }
                     }
                 ],
-                "multiple": [
+                "\"multiple\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "attachment": [
-                                "snbt",
-                                "\"multiple\""
-                            ]
+                            "attachment": "\"multiple\""
                         }
                     }
                 ]
             },
             "facing": {
-                "south": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "0"
-                            ]
+                            "direction": "0"
                         }
                     }
                 ],
-                "west": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "1"
-                            ]
+                            "direction": "1"
                         }
                     }
                 ],
-                "north": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "2"
-                            ]
+                            "direction": "2"
                         }
                     }
                 ],
-                "east": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "direction": [
-                                "snbt",
-                                "3"
-                            ]
+                            "direction": "3"
                         }
                     }
                 ]

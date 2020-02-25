@@ -7,25 +7,19 @@
         "function": "map_properties",
         "options": {
             "drag": {
-                "false": [
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "drag_down": [
-                                "snbt",
-                                "0b"
-                            ]
+                            "drag_down": "0b"
                         }
                     }
                 ],
-                "true": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "drag_down": [
-                                "snbt",
-                                "1b"
-                            ]
+                            "drag_down": "1b"
                         }
                     }
                 ]

@@ -7,21 +7,21 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "smooth_sandstone"
+                "\"smooth_sandstone\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "type": "double"
+            "type": "\"double\""
         }
     },
     {
         "function": "map_properties",
         "options": {
             "material": {
-                "smooth_stone_block": [
+                "\"smooth_stone_block\"": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:smooth_stone"
@@ -34,21 +34,21 @@
         "function": "carry_properties",
         "options": {
             "material": [
-                "smooth_stone",
-                "sandstone",
-                "petrified_oak",
-                "cobblestone",
-                "brick",
-                "stone_brick",
-                "nether_brick",
-                "quartz"
+                "\"smooth_stone\"",
+                "\"sandstone\"",
+                "\"petrified_oak\"",
+                "\"cobblestone\"",
+                "\"brick\"",
+                "\"stone_brick\"",
+                "\"nether_brick\"",
+                "\"quartz\""
             ]
         }
     },
     {
         "function": "new_properties",
         "options": {
-            "type": "double"
+            "type": "\"double\""
         }
     }
 ]
