@@ -153,12 +153,10 @@ class BlockTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
         super(BlockTranslator, self).__init__(parent_version, universal_format, database, 'block')
         self._cache = {  # only blocks without a block entity can be cached
-            'to_universal': {
-
-            },
-            'from_universal': {
-
-            }
+            ('to_universal', False): {},
+            ('to_universal', True): {},
+            ('from_universal', False): {},
+            ('from_universal', True): {}
         }
 
     def to_universal(
@@ -184,9 +182,10 @@ class BlockTranslator(BaseTranslator):
             extra_needed - bool specifying if the location is needed to fully define the output
         """
         assert isinstance(object_input, Block), 'Input object must be a block'
+        cache_key = ('to_universal', force_blockstate)
         if extra_input is None:
-            if object_input in self._cache['to_universal']:
-                return self._cache['to_universal'][object_input]
+            if object_input in self._cache[cache_key]:
+                return self._cache[cache_key][object_input]
         else:
             assert isinstance(extra_input, BlockEntity), 'extra_input must be None or a BlockEntity'
 
@@ -209,7 +208,7 @@ class BlockTranslator(BaseTranslator):
         )
 
         if cacheable:
-            self._cache['to_universal'][object_input] = output, extra_output, extra_needed
+            self._cache[cache_key][object_input] = output, extra_output, extra_needed
 
         return output, extra_output, extra_needed
 
@@ -236,9 +235,10 @@ class BlockTranslator(BaseTranslator):
             extra_needed - bool specifying if the location is needed to fully define the output
         """
         assert isinstance(object_input, Block), 'Input object must be a block'
+        cache_key = ('from_universal', force_blockstate)
         if extra_input is None:
-            if object_input in self._cache['from_universal']:
-                return self._cache['from_universal'][object_input]
+            if object_input in self._cache[cache_key]:
+                return self._cache[cache_key][object_input]
         else:
             assert isinstance(extra_input, BlockEntity), 'extra_input must be None or a BlockEntity'
 
@@ -264,7 +264,7 @@ class BlockTranslator(BaseTranslator):
         )
 
         if cacheable:
-            self._cache['from_universal'][object_input] = output, extra_output, extra_needed
+            self._cache[cache_key][object_input] = output, extra_output, extra_needed
 
         return output, extra_output, extra_needed
 
