@@ -231,7 +231,7 @@ def translate(
 
 		for key, val in new_data['properties'].items():
 			properties[key] = val
-		output = Block(None, namespace, base_name, properties)
+		output = Block(namespace, base_name, properties)
 
 		if 'snbt' in spec:
 			namespace, base_name = spec.get('nbt_identifier', ['unknown', 'unknown'])

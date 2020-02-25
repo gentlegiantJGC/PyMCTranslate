@@ -23,7 +23,7 @@ if __name__ == '__main__':
 					for spec_ in itertools.product(*values):
 						spec = dict(zip(keys, spec_))
 						try:
-							output, extra_output, extra_needed = input_version.to_universal(None, Block(None, namespace_str, block_name, spec))
+							output, extra_output, extra_needed = input_version.to_universal(None, Block(namespace_str, block_name, spec))
 						except:
 							output = extra_output = None
 							print({'block_name': f'{namespace_str}:{block_name}', 'properties': spec})

@@ -7,6 +7,6 @@ if __name__ == '__main__':
 	for block_name in block_names:
 		print(block_name)
 		for data in range(16):
-			output = block_mappings.to_universal(None, 'bedrock', (1, 7, 0), Block(None, 'minecraft', block_name, {'block_data': str(data)}))
+			output = block_mappings.to_universal(None, 'bedrock', (1, 7, 0), Block('minecraft', block_name, {'block_data': str(data)}))
 			print(str(output[0]), str(output[1]), output[2])
 		print('')
