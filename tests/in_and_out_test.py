@@ -1,84 +1,86 @@
 import PyMCTranslate
+from PyMCTranslate import log
 import itertools
 import amulet_nbt as nbt
-
-test_block_list = None
+from typing import Optional, Any
 from amulet import Block
+
+test_block_list: Optional[list] = None
 
 print_extra_needed = False
 
 
-def in_and_out(platform_name, version_number, version, blockstate_version, numerical_version, input_blockstate):
+def in_and_out(platform_name: str, version_number: Any, version: PyMCTranslate.Version, input_blockstate: Block):
 	# blockstate to universal
 	try:
-		universal_output, extra_output, extra_needed = blockstate_version.to_universal(input_blockstate)
+		universal_output, extra_output, extra_needed = version.block.to_universal(input_blockstate, force_blockstate=True)
 	except:
-		print('=' * 150)
-		print(f'error to universal {platform_name} {version_number}')
-		print(f'Blockstate input: {input_blockstate}')
+		log.error('=' * 150)
+		log.error(f'error to universal {platform_name} {version_number}')
+		log.error(f'Blockstate input: {input_blockstate}')
 		return
 	if extra_needed or extra_output is not None:
 		if print_extra_needed:
-			print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
+			log.error(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 		return
 
 	if not universal_output.namespace.startswith('universal_'):
-		print('=' * 150)
-		print(f'Universal is not "universal_" {platform_name} {version_number}')
-		print(f'Blockstate input: {input_blockstate}')
-		print(f'Universal output: {universal_output}')
+		log.error('=' * 150)
+		log.error(f'Universal is not "universal_" {platform_name} {version_number}')
+		log.error(f'Blockstate input: {input_blockstate}')
+		log.error(f'Universal output: {universal_output}')
 
-	if numerical_version is not None:
+	if version.has_abstract_format:
 		# universal to numerical
 		try:
-			numerical_output, extra_output, extra_needed = numerical_version.from_universal(universal_output)
+			numerical_output, extra_output, extra_needed = version.block.from_universal(universal_output)
 		except:
-			print('=' * 150)
-			print(f'error from universal to numerical {platform_name} {version_number}')
-			print(f'Blockstate input: {input_blockstate}')
-			print(f'Universal output: {universal_output}')
+			log.error('=' * 150)
+			log.error(f'error from universal to numerical {platform_name} {version_number}')
+			log.error(f'Blockstate input: {input_blockstate}')
+			log.error(f'Universal output: {universal_output}')
 			return
 		if extra_needed or extra_output is not None:
 			if print_extra_needed:
-				print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
+				log.error(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 			return
 
 		# numerical to universal
 		try:
-			universal_output2, extra_output, extra_needed = numerical_version.to_universal(numerical_output)
+			universal_output2, extra_output, extra_needed = version.block.to_universal(numerical_output)
 		except:
-			print('=' * 150)
-			print(f'error from universal to blockstate {platform_name} {version_number}')
-			print(f'Blockstate input: {input_blockstate}')
-			print(f'Universal output: {universal_output}')
-			print(f'Numerical output: {numerical_output}')
+			log.error('=' * 150)
+			log.error(f'error from universal to blockstate {platform_name} {version_number}')
+			log.error(f'Blockstate input: {input_blockstate}')
+			log.error(f'Universal output: {universal_output}')
+			log.error(f'Numerical output: {numerical_output}')
 			return
 		if extra_needed or extra_output is not None:
 			if print_extra_needed:
-				print(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
+				log.error(f'skipping {platform_name} {version_number} {input_blockstate}. Needs more data')
 			return
 	else:
 		numerical_output = None
 		universal_output2 = universal_output
 
 	if not universal_output2.namespace.startswith('universal_'):
-		print('=' * 150)
-		print(f'Universal is not universal_ {platform_name} {version_number}')
-		print(f'Blockstate input: {input_blockstate}')
-		print(f'Universal output: {universal_output}')
-		print(f'Numerical output: {numerical_output}')
-		print(f'Universal output 2: {universal_output2}')
+		log.error('=' * 150)
+		log.error(f'Universal is not universal_ {platform_name} {version_number}')
+		log.error(f'Blockstate input: {input_blockstate}')
+		log.error(f'Universal output: {universal_output}')
+		log.error(f'Numerical output: {numerical_output}')
+		log.error(f'Universal output 2: {universal_output2}')
 
 	# universal to blockstate
 	try:
-		back_out, extra_output, extra_needed = blockstate_version.from_universal(universal_output2)
+		back_out, extra_output, extra_needed = version.block.from_universal(universal_output2, force_blockstate=True)
 	except:
-		print('=' * 150)
-		print(f'error from universal {platform_name} {version_number}')
-		print(f'Blockstate input: {input_blockstate}')
-		print(f'Universal output: {universal_output}')
-		print(f'Numerical output: {numerical_output}')
-		print(f'Universal output 2: {universal_output2}')
+		log.error('=' * 150)
+		log.error(f'error from universal {platform_name} {version_number}')
+		log.error(f'Blockstate input: {input_blockstate}')
+		log.error(f'Universal output: {universal_output}')
+		log.error(f'Numerical output: {numerical_output}')
+		log.error(f'Universal output 2: {universal_output2}')
 		return
 	if str(input_blockstate) != str(back_out):
 		if version.platform == 'java' and version.version_number[1] >= 13:
@@ -93,16 +95,16 @@ def in_and_out(platform_name, version_number, version, blockstate_version, numer
 					str(Block(namespace=back_out.namespace, base_name=back_out.base_name, properties=props2)):
 				return
 
-		print('=' * 150)
-		print(f"Conversion error: {input_blockstate} != {back_out} {platform_name} {version_number}")
-		print(f'Universal output: {universal_output}')
-		print(f'Numerical output: {numerical_output}')
-		print(f'Universal output 2: {universal_output2}')
-		print(f'Blockstate: {back_out}')
+		log.error('=' * 150)
+		log.error(f"Conversion error: {input_blockstate} != {back_out} {platform_name} {version_number}")
+		log.error(f'Universal output: {universal_output}')
+		log.error(f'Numerical output: {numerical_output}')
+		log.error(f'Universal output 2: {universal_output2}')
+		log.error(f'Blockstate: {back_out}')
 
 
-def get_blockstates(blockstate_version, namespace_str, base_name):
-	block_specification = blockstate_version.get_specification('block', namespace_str, base_name)
+def get_blockstates(version, namespace_str, base_name):
+	block_specification = version.block.get_specification(namespace_str, base_name, True)
 	properties = block_specification.get('properties', {})
 	if len(properties) > 0:
 		keys, values = zip(*properties.items())
@@ -122,16 +124,14 @@ def main():
 		for platform_name in translations.platforms():
 			for version_number in translations.version_numbers(platform_name):
 				version = translations.get_version(platform_name, version_number)
-				blockstate_version = version.get(True)
+				log.error(f'Checking version {platform_name} {version_number}')
 
-				if version.has_abstract_format:
-					numerical_version = version.get()
-				else:
-					numerical_version = None
-				for namespace_str in blockstate_version.namespaces('block'):
-					for base_name in blockstate_version.base_names('block', namespace_str):
-						for input_blockstate in get_blockstates(blockstate_version, namespace_str, base_name):
-							in_and_out(platform_name, version_number, version, blockstate_version, numerical_version, input_blockstate)
+				for namespace_str in version.block.namespaces(True):
+					for base_name in version.block.base_names(namespace_str, True):
+						for input_blockstate in get_blockstates(version, namespace_str, base_name):
+							in_and_out(platform_name, version_number, version, input_blockstate)
+				break
+			break
 
 	else:
 		for block in test_block_list:
@@ -139,14 +139,9 @@ def main():
 			namespace_str, base_name = block_str.split(':', 1)
 
 			version = translations.get_version(platform_name, version_number)
-			blockstate_version = version.get(True)
 
-			if version.has_abstract_format:
-				numerical_version = version.get()
-			else:
-				numerical_version = None
-			for input_blockstate in get_blockstates(blockstate_version, namespace_str, base_name):
-				in_and_out(platform_name, version_number, version, blockstate_version, numerical_version, input_blockstate)
+			for input_blockstate in get_blockstates(version, namespace_str, base_name):
+				in_and_out(platform_name, version_number, version, input_blockstate)
 
 
 if __name__ == '__main__':
