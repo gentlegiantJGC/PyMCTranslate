@@ -11,7 +11,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "\"end_stone_brick\"",
+                            "material": "\"mossy_stone_brick\"",
                             "type": "\"double\""
                         }
                     }
@@ -24,7 +24,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "\"smooth_red_sandstone\"",
+                            "material": "\"smooth_quartz\"",
                             "type": "\"double\""
                         }
                     }
@@ -37,7 +37,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "\"polished_andesite\"",
+                            "material": "\"stone\"",
                             "type": "\"double\""
                         }
                     }
@@ -50,7 +50,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "\"andesite\"",
+                            "material": "\"cut_sandstone\"",
                             "type": "\"double\""
                         }
                     }
@@ -63,46 +63,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "material": "\"diorite\"",
-                            "type": "\"double\""
-                        }
-                    }
-                ],
-                "5": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:slab"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "material": "\"polished_diorite\"",
-                            "type": "\"double\""
-                        }
-                    }
-                ],
-                "6": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:slab"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "material": "\"granite\"",
-                            "type": "\"double\""
-                        }
-                    }
-                ],
-                "7": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:slab"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "material": "\"polished_granite\"",
+                            "material": "\"cut_red_sandstone\"",
                             "type": "\"double\""
                         }
                     }

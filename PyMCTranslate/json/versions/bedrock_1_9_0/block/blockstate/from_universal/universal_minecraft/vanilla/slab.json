@@ -279,7 +279,7 @@
                                 "\"end_stone_brick\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -291,7 +291,7 @@
                                 "\"smooth_red_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -303,7 +303,7 @@
                                 "\"polished_andesite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -315,7 +315,7 @@
                                 "\"andesite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -327,7 +327,7 @@
                                 "\"diorite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -339,7 +339,7 @@
                                 "\"polished_diorite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -351,7 +351,7 @@
                                 "\"granite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -363,12 +363,72 @@
                                 "\"polished_granite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:double_stone_slab2"
+                                        "options": "minecraft:double_stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
                                         "options": {
                                             "material": "\"polished_granite\""
+                                        }
+                                    }
+                                ],
+                                "\"mossy_stone_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab4"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "\"mossy_stone_brick\""
+                                        }
+                                    }
+                                ],
+                                "\"smooth_quartz\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab4"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "\"smooth_quartz\""
+                                        }
+                                    }
+                                ],
+                                "\"stone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab4"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "\"stone\""
+                                        }
+                                    }
+                                ],
+                                "\"cut_sandstone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab4"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "\"cut_sandstone\""
+                                        }
+                                    }
+                                ],
+                                "\"cut_red_sandstone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:double_stone_slab4"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "material": "\"cut_red_sandstone\""
                                         }
                                     }
                                 ]
@@ -670,7 +730,7 @@
                                 "\"end_stone_brick\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -683,7 +743,7 @@
                                 "\"smooth_red_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -696,7 +756,7 @@
                                 "\"polished_andesite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -709,7 +769,7 @@
                                 "\"andesite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -722,7 +782,7 @@
                                 "\"diorite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -735,7 +795,7 @@
                                 "\"polished_diorite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -748,7 +808,7 @@
                                 "\"granite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -761,7 +821,7 @@
                                 "\"polished_granite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -774,7 +834,7 @@
                                 "\"mossy_stone_brick\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -787,7 +847,7 @@
                                 "\"smooth_quartz\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -800,7 +860,7 @@
                                 "\"stone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -813,7 +873,7 @@
                                 "\"cut_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -826,7 +886,7 @@
                                 "\"cut_red_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1134,7 +1194,7 @@
                                 "\"end_stone_brick\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1147,7 +1207,7 @@
                                 "\"smooth_red_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1160,7 +1220,7 @@
                                 "\"polished_andesite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1173,7 +1233,7 @@
                                 "\"andesite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1186,7 +1246,7 @@
                                 "\"diorite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1199,7 +1259,7 @@
                                 "\"polished_diorite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1212,7 +1272,7 @@
                                 "\"granite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1225,7 +1285,7 @@
                                 "\"polished_granite\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab3"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1238,7 +1298,7 @@
                                 "\"mossy_stone_brick\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1251,7 +1311,7 @@
                                 "\"smooth_quartz\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1264,7 +1324,7 @@
                                 "\"stone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1277,7 +1337,7 @@
                                 "\"cut_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
@@ -1290,7 +1350,7 @@
                                 "\"cut_red_sandstone\"": [
                                     {
                                         "function": "new_block",
-                                        "options": "minecraft:stone_slab2"
+                                        "options": "minecraft:stone_slab4"
                                     },
                                     {
                                         "function": "new_properties",
