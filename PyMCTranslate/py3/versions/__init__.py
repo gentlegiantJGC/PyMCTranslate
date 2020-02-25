@@ -3,6 +3,7 @@ import os
 from typing import Union, Tuple, Dict, TYPE_CHECKING
 import glob
 
+import amulet_nbt
 from PyMCTranslate import Block, minified, json_atlas, load_json_gz, log
 from PyMCTranslate.py3.versions.translate import translate
 from ..versions.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
@@ -197,9 +198,9 @@ class Version:
         elif block_id in self._numerical_block_map:
             namespace, base_name = self._numerical_block_map[block_id]
         else:
-            return Block(namespace="minecraft", base_name="numerical", properties={"block_id": str(block_id), "block_data": str(block_data)})
+            return Block(namespace="minecraft", base_name="numerical", properties={"block_id": amulet_nbt.TAG_Int(block_id), "block_data": amulet_nbt.TAG_Int(block_data)})
 
-        return Block(namespace=namespace, base_name=base_name, properties={"block_data": str(block_data)})
+        return Block(namespace=namespace, base_name=base_name, properties={"block_data": amulet_nbt.TAG_Int(block_data)})
 
     def block_to_ints(self, block: 'Block') -> Union[None, Tuple[int, int]]:
         block_id = None
@@ -209,12 +210,12 @@ class Version:
             block_id = self._translation_manager.block_registry.private_to_int(block.namespaced_name)
         elif block_tuple in self._numerical_block_map_inverse:
             block_id = self._numerical_block_map_inverse[block_tuple]
-        elif block_tuple == ("minecraft", "numerical") and "block_id" in block.properties and\
-            isinstance(block.properties["block_id"], str) and block.properties["block_id"].isnumeric():
-            block_id = int(block.properties["block_id"])
+        elif block_tuple == ("minecraft", "numerical") and \
+            "block_id" in block.properties and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int):
+            block_id = block.properties["block_id"].value
 
-        if "block_data" in block.properties and isinstance(block.properties["block_data"], str) and block.properties["block_data"].isnumeric():
-            block_data = int(block.properties["block_data"])
+        if "block_data" in block.properties and isinstance(block.properties["block_data"], amulet_nbt.TAG_Int):
+            block_data = block.properties["block_data"].value
 
         if block_id is not None and block_data is not None:
             return block_id, block_data
