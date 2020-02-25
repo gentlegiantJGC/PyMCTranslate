@@ -25,9 +25,9 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "stage": "\"1\"",
+                            "stage": "\"0\"",
                             "leaves": "\"none\"",
-                            "thickness": "\"thin\""
+                            "thickness": "\"thick\""
                         }
                     }
                 ],
@@ -39,7 +39,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "stage": "\"1\"",
+                            "stage": "\"0\"",
                             "leaves": "\"small\"",
                             "thickness": "\"thin\""
                         }
@@ -53,13 +53,111 @@
                     {
                         "function": "new_properties",
                         "options": {
+                            "stage": "\"0\"",
+                            "leaves": "\"small\"",
+                            "thickness": "\"thick\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"0\"",
+                            "leaves": "\"large\"",
+                            "thickness": "\"thin\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"0\"",
+                            "leaves": "\"large\"",
+                            "thickness": "\"thick\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"1\"",
+                            "leaves": "\"none\"",
+                            "thickness": "\"thin\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"1\"",
+                            "leaves": "\"none\"",
+                            "thickness": "\"thick\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"1\"",
+                            "leaves": "\"small\"",
+                            "thickness": "\"thin\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"1\"",
+                            "leaves": "\"small\"",
+                            "thickness": "\"thick\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:bamboo"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
                             "stage": "\"1\"",
                             "leaves": "\"large\"",
                             "thickness": "\"thin\""
                         }
                     }
                 ],
-                "4": [
+                "13": [
                     {
                         "function": "new_block",
                         "options": "universal_minecraft:bamboo"
