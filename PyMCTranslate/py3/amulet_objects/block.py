@@ -4,6 +4,7 @@ import copy
 from sys import getsizeof
 import re
 from typing import Dict, Iterable, List, Tuple, Union, overload, Generator
+import amulet_nbt
 
 
 class Block:
