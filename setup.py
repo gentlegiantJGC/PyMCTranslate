@@ -1,4 +1,3 @@
-import sys
 import os
 import os.path as op
 from setuptools import setup, Extension, find_packages
@@ -22,9 +21,9 @@ packages = find_packages(
         "*",
         "PyMCTranslate.*",
         "PyMCTranslate.py3.*",
-        "PyMCTranslate.py3.api.*",
-        "PyMCTranslate.py3.helpers.*",
-        "PyMCTranslate.json.*",
+        "PyMCTranslate.py3.amulet_objects.*",
+        "PyMCTranslate.py3.translation_manager.*",
+        "PyMCTranslate.py3.versions.*",
     ],
     exclude=[],
 )
