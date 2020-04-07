@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:double_plant"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "double_plant_type": {
+                "\"sunflower\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sunflower\""
+                        }
+                    }
+                ],
+                "\"syringa\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"lilac\""
+                        }
+                    }
+                ],
+                "\"grass\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"tall_grass\""
+                        }
+                    }
+                ],
+                "\"fern\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"large_fern\""
+                        }
+                    }
+                ],
+                "\"rose\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"rose_bush\""
+                        }
+                    }
+                ],
+                "\"paeonia\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"peony\""
+                        }
+                    }
+                ]
+            },
+            "upper_block_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"lower\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"upper\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

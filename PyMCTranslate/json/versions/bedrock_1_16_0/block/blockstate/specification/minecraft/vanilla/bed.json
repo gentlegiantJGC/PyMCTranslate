@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "head_piece_bit": [
+            "0b",
+            "1b"
+        ],
+        "occupied_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "direction": "0",
+        "head_piece_bit": "0b",
+        "occupied_bit": "0b"
+    },
+    "nbt_identifier": [
+        "minecraft",
+        "bed"
+    ],
+    "snbt": "{color: 14b, isMovable: 1b}"
+}

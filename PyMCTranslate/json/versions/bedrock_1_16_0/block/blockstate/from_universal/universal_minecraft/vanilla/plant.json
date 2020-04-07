@@ -1,0 +1,187 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:red_flower"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "\"grass\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:tallgrass"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tall_grass_type": "\"default\""
+                        }
+                    }
+                ],
+                "\"fern\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:tallgrass"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tall_grass_type": "\"fern\""
+                        }
+                    }
+                ],
+                "\"dead_bush\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:deadbush"
+                    }
+                ],
+                "\"dandelion\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_flower"
+                    }
+                ],
+                "\"poppy\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"poppy\""
+                        }
+                    }
+                ],
+                "\"blue_orchid\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"orchid\""
+                        }
+                    }
+                ],
+                "\"allium\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"allium\""
+                        }
+                    }
+                ],
+                "\"azure_bluet\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"houstonia\""
+                        }
+                    }
+                ],
+                "\"red_tulip\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"tulip_red\""
+                        }
+                    }
+                ],
+                "\"orange_tulip\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"tulip_orange\""
+                        }
+                    }
+                ],
+                "\"white_tulip\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"tulip_white\""
+                        }
+                    }
+                ],
+                "\"pink_tulip\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"tulip_pink\""
+                        }
+                    }
+                ],
+                "\"oxeye_daisy\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"oxeye\""
+                        }
+                    }
+                ],
+                "\"cornflower\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"cornflower\""
+                        }
+                    }
+                ],
+                "\"lily_of_the_valley\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_flower"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_type": "\"lily_of_the_valley\""
+                        }
+                    }
+                ],
+                "\"wither_rose\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wither_rose"
+                    }
+                ]
+            }
+        }
+    }
+]

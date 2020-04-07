@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "powered_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "direction": "0",
+        "powered_bit": "0b"
+    },
+    "nbt_identifier": [
+        "minecraft",
+        "lectern"
+    ],
+    "snbt": "{isMovable: 1b}"
+}

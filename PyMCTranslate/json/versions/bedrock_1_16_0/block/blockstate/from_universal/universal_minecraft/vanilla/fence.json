@@ -1,0 +1,67 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:fence"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"oak\""
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"spruce\""
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"birch\""
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"jungle\""
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"acacia\""
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"dark_oak\""
+                        }
+                    }
+                ],
+                "\"nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:nether_brick_fence"
+                    }
+                ]
+            }
+        }
+    }
+]

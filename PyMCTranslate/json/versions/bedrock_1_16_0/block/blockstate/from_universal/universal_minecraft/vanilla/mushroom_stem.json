@@ -1,0 +1,86 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:red_mushroom_block"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "huge_mushroom_bits": "10"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "up": {
+                "\"true\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "down": {
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "north": {
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "15"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "material": {
+                "\"brown\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brown_mushroom_block"
+                    }
+                ],
+                "\"red\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_mushroom_block"
+                    }
+                ]
+            }
+        }
+    }
+]

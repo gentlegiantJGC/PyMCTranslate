@@ -1,0 +1,95 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bee_nest"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing_direction": {
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "2"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "3"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "4"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "5"
+                        }
+                    }
+                ]
+            },
+            "honey_level": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "1"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "2"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "3"
+                        }
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "4"
+                        }
+                    }
+                ],
+                "\"5\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "5"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

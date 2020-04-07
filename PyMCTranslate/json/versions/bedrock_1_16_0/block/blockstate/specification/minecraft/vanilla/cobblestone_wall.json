@@ -1,0 +1,52 @@
+{
+    "properties": {
+        "wall_block_type": [
+            "\"cobblestone\"",
+            "\"mossy_cobblestone\"",
+            "\"granite\"",
+            "\"diorite\"",
+            "\"andesite\"",
+            "\"sandstone\"",
+            "\"brick\"",
+            "\"stone_brick\"",
+            "\"mossy_stone_brick\"",
+            "\"nether_brick\"",
+            "\"end_brick\"",
+            "\"prismarine\"",
+            "\"red_sandstone\"",
+            "\"red_nether_brick\""
+        ],
+        "wall_connection_type_east": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_connection_type_north": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_connection_type_south": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_connection_type_west": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_post_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "wall_block_type": "\"cobblestone\"",
+        "wall_connection_type_east": "\"none\"",
+        "wall_connection_type_north": "\"none\"",
+        "wall_connection_type_south": "\"none\"",
+        "wall_connection_type_west": "\"none\"",
+        "wall_post_bit": "0b"
+    }
+}
