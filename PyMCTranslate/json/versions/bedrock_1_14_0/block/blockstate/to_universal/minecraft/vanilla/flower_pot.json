@@ -4,29 +4,6 @@
         "options": "universal_minecraft:flower_pot"
     },
     {
-        "function": "map_properties",
-        "options": {
-            "update_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "check_decay": "\"false\""
-                        }
-                    }
-                ],
-                "1b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "check_decay": "\"true\""
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",

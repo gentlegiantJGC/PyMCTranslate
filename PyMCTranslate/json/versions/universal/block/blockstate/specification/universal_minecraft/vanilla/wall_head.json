@@ -13,11 +13,16 @@
             "\"south\"",
             "\"west\"",
             "\"east\""
+        ],
+        "no_drop": [
+            "\"false\"",
+            "\"true\""
         ]
     },
     "defaults": {
         "mob": "\"skeleton\"",
-        "facing": "\"north\""
+        "facing": "\"north\"",
+        "no_drop": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

@@ -5,5 +5,5 @@ def main(nbt):
         }
     else:
         return {
-            "rotation": "0"
+            "rotation": "\"0\""
         }

@@ -47,27 +47,13 @@
                         }
                     }
                 ]
-            },
-            "top_slot_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "type": "\"double\"",
-                            "top_slot_bit": "\"0\""
-                        }
-                    }
-                ],
-                "1b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "type": "\"double\"",
-                            "top_slot_bit": "\"1\""
-                        }
-                    }
-                ]
             }
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "\"double\""
         }
     }
 ]

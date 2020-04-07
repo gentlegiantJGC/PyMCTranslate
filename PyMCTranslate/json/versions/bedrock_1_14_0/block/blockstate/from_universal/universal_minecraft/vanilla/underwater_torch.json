@@ -7,14 +7,6 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "\"unknown\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "torch_facing_direction": "\"unknown\""
-                        }
-                    }
-                ],
                 "\"west\"": [
                     {
                         "function": "new_properties",

@@ -11,24 +11,6 @@
                     {
                         "function": "map_properties",
                         "options": {
-                            "top_slot_bit": {
-                                "\"0\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "top_slot_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"1\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "top_slot_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            },
                             "material": {
                                 "\"smooth_stone\"": [
                                     {

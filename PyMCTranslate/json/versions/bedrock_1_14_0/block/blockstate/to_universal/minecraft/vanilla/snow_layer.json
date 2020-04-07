@@ -6,24 +6,6 @@
     {
         "function": "map_properties",
         "options": {
-            "covered_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "covered_bit": "\"0\""
-                        }
-                    }
-                ],
-                "1b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "covered_bit": "\"1\""
-                        }
-                    }
-                ]
-            },
             "height": {
                 "0": [
                     {
