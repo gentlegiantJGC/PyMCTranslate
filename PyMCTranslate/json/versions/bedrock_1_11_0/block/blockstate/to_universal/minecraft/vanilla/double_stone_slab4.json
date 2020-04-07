@@ -4,21 +4,75 @@
         "options": "universal_minecraft:slab"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "material": [
-                "\"mossy_stone_brick\"",
-                "\"smooth_quartz\"",
-                "\"stone\"",
-                "\"cut_sandstone\"",
-                "\"cut_red_sandstone\""
-            ]
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "\"double\""
+            "material": {
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_stone_brick\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"smooth_quartz\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"smooth_quartz\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"stone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"stone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"cut_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cut_sandstone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"cut_red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cut_red_sandstone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

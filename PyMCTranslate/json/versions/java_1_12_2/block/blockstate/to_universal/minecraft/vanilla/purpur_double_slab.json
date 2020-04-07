@@ -4,17 +4,23 @@
         "options": "universal_minecraft:slab"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "material": [
-                "\"purpur\""
-            ]
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "\"double\""
+            "material": {
+                "\"purpur\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"purpur\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

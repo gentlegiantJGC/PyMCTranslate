@@ -4,22 +4,88 @@
         "options": "universal_minecraft:slab"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "material": [
-                "\"oak\"",
-                "\"spruce\"",
-                "\"birch\"",
-                "\"jungle\"",
-                "\"acacia\"",
-                "\"dark_oak\""
-            ]
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "\"double\""
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"oak\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"spruce\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"birch\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"jungle\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"acacia\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"dark_oak\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

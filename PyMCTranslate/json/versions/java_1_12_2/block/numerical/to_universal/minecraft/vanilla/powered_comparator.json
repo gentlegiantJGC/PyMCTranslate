@@ -1,1 +1,233 @@
-[]
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "mode": "\"compare\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:comparator"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "mode": "\"subtract\"",
+                            "powered": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

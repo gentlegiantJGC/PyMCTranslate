@@ -4,24 +4,114 @@
         "options": "universal_minecraft:slab"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "material": [
-                "\"end_stone_brick\"",
-                "\"smooth_red_sandstone\"",
-                "\"polished_andesite\"",
-                "\"andesite\"",
-                "\"diorite\"",
-                "\"polished_diorite\"",
-                "\"granite\"",
-                "\"polished_granite\""
-            ]
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "\"double\""
+            "material": {
+                "\"end_stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"end_stone_brick\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"smooth_red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"smooth_red_sandstone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"polished_andesite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"polished_andesite\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"andesite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"andesite\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"diorite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"diorite\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"polished_diorite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"polished_diorite\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"granite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"granite\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"polished_granite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"polished_granite\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

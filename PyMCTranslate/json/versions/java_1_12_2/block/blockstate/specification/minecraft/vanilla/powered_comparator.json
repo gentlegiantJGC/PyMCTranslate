@@ -1,1 +1,23 @@
-{}
+{
+    "properties": {
+        "facing": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ],
+        "mode": [
+            "\"compare\"",
+            "\"subtract\""
+        ],
+        "powered": [
+            "\"false\"",
+            "\"true\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"south\"",
+        "mode": "\"compare\"",
+        "powered": "\"false\""
+    }
+}

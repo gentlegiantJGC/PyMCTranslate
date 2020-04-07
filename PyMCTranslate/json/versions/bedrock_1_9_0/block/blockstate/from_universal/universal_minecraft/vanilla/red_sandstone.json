@@ -4,14 +4,42 @@
         "options": "minecraft:red_sandstone"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "variant": [
-                "\"normal\"",
-                "\"chiseled\"",
-                "\"cut\"",
-                "\"smooth\""
-            ]
+            "variant": {
+                "\"normal\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"normal\""
+                        }
+                    }
+                ],
+                "\"chiseled\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"chiseled\""
+                        }
+                    }
+                ],
+                "\"cut\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cut\""
+                        }
+                    }
+                ],
+                "\"smooth\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"smooth\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

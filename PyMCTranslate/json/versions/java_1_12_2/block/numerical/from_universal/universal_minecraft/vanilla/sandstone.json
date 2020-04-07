@@ -42,6 +42,18 @@
                             "block_data": "2"
                         }
                     }
+                ],
+                "\"smooth\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:double_stone_slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "9"
+                        }
+                    }
                 ]
             }
         }

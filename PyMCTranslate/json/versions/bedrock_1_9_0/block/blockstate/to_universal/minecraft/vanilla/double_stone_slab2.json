@@ -4,24 +4,114 @@
         "options": "universal_minecraft:slab"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "material": [
-                "\"red_sandstone\"",
-                "\"purpur\"",
-                "\"prismarine\"",
-                "\"dark_prismarine\"",
-                "\"prismarine_brick\"",
-                "\"mossy_cobblestone\"",
-                "\"smooth_sandstone\"",
-                "\"red_nether_brick\""
-            ]
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "\"double\""
+            "material": {
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_sandstone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"purpur\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"purpur\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"dark_prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"dark_prismarine\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"prismarine_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine_brick\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"mossy_cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_cobblestone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"smooth_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"smooth_sandstone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_nether_brick\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

@@ -4,13 +4,46 @@
         "options": "minecraft:sandstone"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "variant": [
-                "\"normal\"",
-                "\"chiseled\"",
-                "\"cut\""
-            ]
+            "variant": {
+                "\"normal\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"normal\""
+                        }
+                    }
+                ],
+                "\"chiseled\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"chiseled\""
+                        }
+                    }
+                ],
+                "\"cut\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cut\""
+                        }
+                    }
+                ],
+                "\"smooth\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:double_stone_slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"smooth_sandstone\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

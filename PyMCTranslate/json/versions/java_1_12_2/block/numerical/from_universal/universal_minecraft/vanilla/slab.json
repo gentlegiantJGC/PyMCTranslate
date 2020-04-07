@@ -12,18 +12,6 @@
                         "function": "map_properties",
                         "options": {
                             "material": {
-                                "\"smooth_sandstone\"": [
-                                    {
-                                        "function": "new_block",
-                                        "options": "minecraft:double_stone_slab"
-                                    },
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "9"
-                                        }
-                                    }
-                                ],
                                 "\"smooth_stone\"": [
                                     {
                                         "function": "new_block",
