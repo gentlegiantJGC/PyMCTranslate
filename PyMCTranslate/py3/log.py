@@ -25,3 +25,10 @@ log.addHandler(_log_console)
 
 # TODO: find a proper way to implement this
 log.info(f'PyMCTranslate Version 0.{version}')
+
+
+def enable_console_log(enable=True):
+    if enable:
+        _log_console.setLevel(logging.INFO)
+    else:
+        _log_console.setLevel(logging.CRITICAL)
