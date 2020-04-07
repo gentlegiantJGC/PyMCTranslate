@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:stone_slab"
     },
     {
         "function": "map_properties",
@@ -55,7 +55,7 @@
                         "options": "minecraft:brick_slab"
                     }
                 ],
-                "\"stone\"": [
+                "\"smooth_stone\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:stone_slab"

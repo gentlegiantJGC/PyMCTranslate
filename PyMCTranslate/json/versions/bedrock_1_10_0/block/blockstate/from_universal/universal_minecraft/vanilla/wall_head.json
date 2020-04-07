@@ -1,5 +1,24 @@
 [
     {
+        "function": "new_block",
+        "options": "minecraft:skull"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "no_drop": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -141,25 +160,6 @@
                     }
                 ]
             }
-        }
-    },
-    {
-        "function": "new_block",
-        "options": "minecraft:skull"
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "no_drop": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "facing": [
-                "\"north\"",
-                "\"south\"",
-                "\"west\"",
-                "\"east\""
-            ]
         }
     }
 ]

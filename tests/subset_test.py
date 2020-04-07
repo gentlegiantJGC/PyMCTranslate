@@ -13,11 +13,12 @@ class SubSetTest(unittest.TestCase):
         translator = PyMCTranslate.new_translation_manager()
         universal_version = translator.get_version('universal', (1, 0, 0))
         universal_blocks = universal_version.block
-        for platform in translator.platforms():
+        platforms = ["bedrock", "java"]
+        for platform in platforms:
             for version_number in translator.version_numbers(platform):
                 version = translator.get_version(platform, version_number)
                 blocks = version.block
-                for force_blockstate in [False, True] if version.has_abstract_format else [False]:
+                for force_blockstate in [False, True] if version.has_abstract_format else [True]:
                     pymct_log.enable_console_log(force_blockstate)
                     print('To Universal', version, force_blockstate)
                     for namespace in blocks.namespaces(force_blockstate):
@@ -54,8 +55,6 @@ class SubSetTest(unittest.TestCase):
                                         blocks.get_specification(version_obj.namespace, version_obj.base_name, force_blockstate=force_blockstate),
                                         (version, force_blockstate, block)
                                     )
-
-
 
     def _is_sub_set(self, obj: Block, spec: dict, info: Tuple[Any, ...]):
         spec_properties = spec.get('properties', {})

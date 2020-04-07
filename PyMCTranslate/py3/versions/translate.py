@@ -281,7 +281,7 @@ def translate(
 		output = Entity(namespace, base_name, 0.0, 0.0, 0.0, nbt)
 
 	else:
-		raise Exception
+		raise Exception("No output object given.")
 	return output, extra_output, extra_needed, cacheable
 
 

@@ -1,9 +1,5 @@
 [
     {
-        "function": "new_block",
-        "options": "minecraft:air"
-    },
-    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -74,6 +70,10 @@
             ],
             "function": "bedrock_sign_fu"
         }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:standing_sign"
     },
     {
         "function": "map_properties",

@@ -1,5 +1,105 @@
 [
     {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"floor\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:head"
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "block_data": {
+                "1": [
+                    {
+                        "function": "code",
+                        "options": {
+                            "input": [
+                                "nbt"
+                            ],
+                            "output": [
+                                "new_properties"
+                            ],
+                            "function": "bedrock_skull_rotation_2u"
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "code",
+                        "options": {
+                            "input": [
+                                "nbt"
+                            ],
+                            "output": [
+                                "new_properties"
+                            ],
+                            "function": "bedrock_skull_rotation_2u"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "no_drop": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -128,106 +228,6 @@
                     "function": "carry_nbt",
                     "options": {}
                 }
-            ]
-        }
-    },
-    {
-        "function": "map_properties",
-        "options": {
-            "block_data": {
-                "1": [
-                    {
-                        "function": "code",
-                        "options": {
-                            "input": [
-                                "nbt"
-                            ],
-                            "output": [
-                                "new_properties"
-                            ],
-                            "function": "bedrock_skull_rotation_2u"
-                        }
-                    }
-                ],
-                "9": [
-                    {
-                        "function": "code",
-                        "options": {
-                            "input": [
-                                "nbt"
-                            ],
-                            "output": [
-                                "new_properties"
-                            ],
-                            "function": "bedrock_skull_rotation_2u"
-                        }
-                    }
-                ]
-            },
-            "facing": {
-                "\"floor\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:head"
-                    }
-                ],
-                "\"north\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:wall_head"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
-                        }
-                    }
-                ],
-                "\"south\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:wall_head"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"south\""
-                        }
-                    }
-                ],
-                "\"west\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:wall_head"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"west\""
-                        }
-                    }
-                ],
-                "\"east\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:wall_head"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"east\""
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "no_drop": [
-                "\"true\"",
-                "\"false\""
             ]
         }
     }

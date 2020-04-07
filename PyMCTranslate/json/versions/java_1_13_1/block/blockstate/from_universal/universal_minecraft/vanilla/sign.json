@@ -1,9 +1,5 @@
 [
     {
-        "function": "new_block",
-        "options": "minecraft:air"
-    },
-    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -95,6 +91,10 @@
                 }
             ]
         }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:sign"
     },
     {
         "function": "map_properties",
