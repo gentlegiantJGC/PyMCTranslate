@@ -431,6 +431,18 @@
                                             "stone_slab_type_4": "\"cut_red_sandstone\""
                                         }
                                     }
+                                ],
+                                "\"crimson\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_double_slab"
+                                    }
+                                ],
+                                "\"warped\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_double_slab"
+                                    }
                                 ]
                             }
                         }
@@ -834,6 +846,18 @@
                                             "stone_slab_type_4": "\"cut_red_sandstone\""
                                         }
                                     }
+                                ],
+                                "\"crimson\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_slab"
+                                    }
+                                ],
+                                "\"warped\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_slab"
+                                    }
                                 ]
                             }
                         }
@@ -1236,6 +1260,18 @@
                                         "options": {
                                             "stone_slab_type_4": "\"cut_red_sandstone\""
                                         }
+                                    }
+                                ],
+                                "\"crimson\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_slab"
+                                    }
+                                ],
+                                "\"warped\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_slab"
                                     }
                                 ]
                             }
