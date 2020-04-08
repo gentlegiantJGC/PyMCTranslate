@@ -547,6 +547,170 @@
                                                         ]
                                                     }
                                                 }
+                                            ],
+                                            "\"minecraft:crimson_fungus\"": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "plant": "\"crimson_fungus\""
+                                                    }
+                                                },
+                                                {
+                                                    "function": "walk_input_nbt",
+                                                    "path": [
+                                                        [
+                                                            "PlantBlock",
+                                                            "compound"
+                                                        ],
+                                                        [
+                                                            "states",
+                                                            "compound"
+                                                        ]
+                                                    ],
+                                                    "options": {
+                                                        "type": "compound",
+                                                        "functions": [
+                                                            {
+                                                                "function": "map_nbt",
+                                                                "options": {
+                                                                    "cases": {
+                                                                        "{}": [
+                                                                            {
+                                                                                "function": "new_properties",
+                                                                                "options": {
+                                                                                    "plant": "\"crimson_fungus\""
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "\"minecraft:crimson_roots\"": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "plant": "\"crimson_roots\""
+                                                    }
+                                                },
+                                                {
+                                                    "function": "walk_input_nbt",
+                                                    "path": [
+                                                        [
+                                                            "PlantBlock",
+                                                            "compound"
+                                                        ],
+                                                        [
+                                                            "states",
+                                                            "compound"
+                                                        ]
+                                                    ],
+                                                    "options": {
+                                                        "type": "compound",
+                                                        "functions": [
+                                                            {
+                                                                "function": "map_nbt",
+                                                                "options": {
+                                                                    "cases": {
+                                                                        "{}": [
+                                                                            {
+                                                                                "function": "new_properties",
+                                                                                "options": {
+                                                                                    "plant": "\"crimson_roots\""
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "\"minecraft:warped_fungus\"": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "plant": "\"warped_fungus\""
+                                                    }
+                                                },
+                                                {
+                                                    "function": "walk_input_nbt",
+                                                    "path": [
+                                                        [
+                                                            "PlantBlock",
+                                                            "compound"
+                                                        ],
+                                                        [
+                                                            "states",
+                                                            "compound"
+                                                        ]
+                                                    ],
+                                                    "options": {
+                                                        "type": "compound",
+                                                        "functions": [
+                                                            {
+                                                                "function": "map_nbt",
+                                                                "options": {
+                                                                    "cases": {
+                                                                        "{}": [
+                                                                            {
+                                                                                "function": "new_properties",
+                                                                                "options": {
+                                                                                    "plant": "\"warped_fungus\""
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "\"minecraft:warped_roots\"": [
+                                                {
+                                                    "function": "new_properties",
+                                                    "options": {
+                                                        "plant": "\"warped_roots\""
+                                                    }
+                                                },
+                                                {
+                                                    "function": "walk_input_nbt",
+                                                    "path": [
+                                                        [
+                                                            "PlantBlock",
+                                                            "compound"
+                                                        ],
+                                                        [
+                                                            "states",
+                                                            "compound"
+                                                        ]
+                                                    ],
+                                                    "options": {
+                                                        "type": "compound",
+                                                        "functions": [
+                                                            {
+                                                                "function": "map_nbt",
+                                                                "options": {
+                                                                    "cases": {
+                                                                        "{}": [
+                                                                            {
+                                                                                "function": "new_properties",
+                                                                                "options": {
+                                                                                    "plant": "\"warped_roots\""
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
                                             ]
                                         }
                                     }

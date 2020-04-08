@@ -330,6 +330,50 @@
                             }
                         ]
                     }
+                ],
+                "\"crimson_fungus\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:crimson_fungus\", states: {}, version: 17760256}"
+                            }
+                        ]
+                    }
+                ],
+                "\"crimson_roots\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:crimson_roots\", states: {}, version: 17760256}"
+                            }
+                        ]
+                    }
+                ],
+                "\"warped_fungus\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:warped_fungus\", states: {}, version: 17760256}"
+                            }
+                        ]
+                    }
+                ],
+                "\"warped_roots\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "PlantBlock",
+                                "value": "{name:\"minecraft:warped_roots\", states: {}, version: 17760256}"
+                            }
+                        ]
+                    }
                 ]
             }
         }

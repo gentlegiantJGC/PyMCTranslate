@@ -91,29 +91,117 @@
                         "options": "minecraft:diorite_wall"
                     }
                 ]
+            },
+            "north": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"false\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ]
+            },
+            "east": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"false\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ]
+            },
+            "south": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"false\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ]
+            },
+            "west": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"false\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"true\""
+                        }
+                    }
+                ]
             }
         }
     },
     {
         "function": "carry_properties",
         "options": {
-            "east": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "north": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "south": [
-                "\"true\"",
-                "\"false\""
-            ],
             "up": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "west": [
                 "\"true\"",
                 "\"false\""
             ]

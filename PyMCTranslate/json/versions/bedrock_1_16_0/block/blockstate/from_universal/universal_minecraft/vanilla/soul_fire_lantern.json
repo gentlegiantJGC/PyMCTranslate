@@ -1,6 +1,29 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:soul_lantern"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "hanging": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "1b"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

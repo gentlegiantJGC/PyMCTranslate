@@ -17,32 +17,36 @@
             "\"stone_brick\""
         ],
         "east": [
-            "\"true\"",
-            "\"false\""
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
         ],
         "north": [
-            "\"true\"",
-            "\"false\""
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
         ],
         "south": [
-            "\"true\"",
-            "\"false\""
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
         ],
         "up": [
             "\"true\"",
             "\"false\""
         ],
         "west": [
-            "\"true\"",
-            "\"false\""
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
         ]
     },
     "defaults": {
         "material": "\"cobblestone\"",
-        "east": "\"false\"",
-        "north": "\"false\"",
-        "south": "\"false\"",
+        "east": "\"none\"",
+        "north": "\"none\"",
+        "south": "\"none\"",
         "up": "\"true\"",
-        "west": "\"false\""
+        "west": "\"none\""
     }
 }

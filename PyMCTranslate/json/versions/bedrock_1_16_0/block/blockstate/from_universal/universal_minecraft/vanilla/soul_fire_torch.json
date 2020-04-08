@@ -1,6 +1,53 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:soul_torch"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"east\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"top\""
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

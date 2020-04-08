@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:soul_fire_lantern"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "hanging": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
