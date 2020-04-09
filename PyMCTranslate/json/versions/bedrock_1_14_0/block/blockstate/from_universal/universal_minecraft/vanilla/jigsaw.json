@@ -6,8 +6,8 @@
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "\"down\"": [
+            "orientation": {
+                "\"down_east\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -15,7 +15,31 @@
                         }
                     }
                 ],
-                "\"up\"": [
+                "\"down_north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "0"
+                        }
+                    }
+                ],
+                "\"down_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "0"
+                        }
+                    }
+                ],
+                "\"down_west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "0"
+                        }
+                    }
+                ],
+                "\"up_east\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -23,7 +47,31 @@
                         }
                     }
                 ],
-                "\"north\"": [
+                "\"up_north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "1"
+                        }
+                    }
+                ],
+                "\"up_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "1"
+                        }
+                    }
+                ],
+                "\"up_west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "1"
+                        }
+                    }
+                ],
+                "\"north_up\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -31,7 +79,7 @@
                         }
                     }
                 ],
-                "\"south\"": [
+                "\"south_up\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -39,7 +87,7 @@
                         }
                     }
                 ],
-                "\"west\"": [
+                "\"west_up\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -47,7 +95,7 @@
                         }
                     }
                 ],
-                "\"east\"": [
+                "\"east_up\"": [
                     {
                         "function": "new_properties",
                         "options": {

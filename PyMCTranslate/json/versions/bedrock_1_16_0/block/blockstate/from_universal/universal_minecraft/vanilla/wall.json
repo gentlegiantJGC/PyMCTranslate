@@ -229,7 +229,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_post_bit": "0"
+                            "wall_post_bit": "0b"
                         }
                     }
                 ],
@@ -237,7 +237,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "wall_post_bit": "1"
+                            "wall_post_bit": "1b"
                         }
                     }
                 ]

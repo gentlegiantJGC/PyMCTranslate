@@ -11,7 +11,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"down\""
+                            "orientation": "\"down_north\""
                         }
                     }
                 ],
@@ -19,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"up\""
+                            "orientation": "\"up_north\""
                         }
                     }
                 ],
@@ -27,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"north\""
+                            "orientation": "\"north_up\""
                         }
                     }
                 ],
@@ -35,7 +35,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"south\""
+                            "orientation": "\"south_up\""
                         }
                     }
                 ],
@@ -43,7 +43,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"west\""
+                            "orientation": "\"west_up\""
                         }
                     }
                 ],
@@ -51,7 +51,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"east\""
+                            "orientation": "\"east_up\""
                         }
                     }
                 ]

@@ -4,16 +4,106 @@
         "options": "minecraft:jigsaw"
     },
     {
-        "function": "carry_properties",
+        "function": "map_properties",
         "options": {
-            "facing": [
-                "\"north\"",
-                "\"east\"",
-                "\"south\"",
-                "\"west\"",
-                "\"up\"",
-                "\"down\""
-            ]
+            "orientation": {
+                "\"down_east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "\"down_north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "\"down_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "\"down_west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "\"up_east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"up_north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"up_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"up_west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"north_up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south_up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west_up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east_up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]
