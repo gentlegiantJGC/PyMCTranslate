@@ -1,7 +1,7 @@
 from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
 
-from PyMCTranslate import Block, BlockEntity, Entity, minified, json_atlas, log
+from PyMCTranslate import Block, BlockEntity, Entity, Item, BlockItem, minified, json_atlas, log
 from ..versions.translate import translate
 
 if TYPE_CHECKING:
@@ -151,7 +151,7 @@ class BaseTranslator:
 
 class BlockTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
-        super(BlockTranslator, self).__init__(parent_version, universal_format, database, 'block')
+        super().__init__(parent_version, universal_format, database, 'block')
         self._cache = {  # only blocks without a block entity can be cached
             ('to_universal', False): {},
             ('to_universal', True): {},
@@ -167,8 +167,7 @@ class BlockTranslator(BaseTranslator):
             extra_input: 'BlockEntity' = None
     ) -> Union[
         Tuple[Block, None, bool],
-        Tuple[Block, BlockEntity, bool],
-        Tuple[Entity, None, bool]
+        Tuple[Block, BlockEntity, bool]
     ]:
         """
         A method to translate a given Block object to the Universal format.
@@ -271,7 +270,7 @@ class BlockTranslator(BaseTranslator):
 
 class EntityTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
-        super(EntityTranslator, self).__init__(parent_version, universal_format, database, 'entity')
+        super().__init__(parent_version, universal_format, database, 'entity')
 
     def to_universal(
             self,
@@ -314,11 +313,7 @@ class EntityTranslator(BaseTranslator):
             self,
             object_input: 'Entity',
             force_blockstate: bool = False
-    ) -> Union[
-        Tuple[Block, None],
-        Tuple[Block, BlockEntity],
-        Tuple[Entity, None]
-    ]:
+    ) -> Entity:
         """
         A method to translate a given Entity object from the Universal format to the format of this class instance.
         :param object_input: The object to translate
@@ -335,9 +330,9 @@ class EntityTranslator(BaseTranslator):
             mapping = self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate)
         except KeyError:
             log.warning(f'Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla entity ignore this message')
-            return object_input, None
+            return object_input
 
-        output, extra_output, extra_needed, cacheable = self._translate(
+        output, _, _, _ = self._translate(
             object_input,
             input_spec,
             mapping,
@@ -346,9 +341,21 @@ class EntityTranslator(BaseTranslator):
             'from_universal'
         )
 
-        return output, extra_output
+        return output
 
 
 class ItemTranslator(BaseTranslator):
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
-        super(ItemTranslator, self).__init__(parent_version, universal_format, database, 'item')
+        super().__init__(parent_version, universal_format, database, 'item')
+
+    def to_universal(
+            self,
+            object_input: Union[Item, BlockItem]
+    ) -> Union[Item, BlockItem]:
+        raise NotImplementedError
+
+    def from_universal(
+            self,
+            object_input: Union[Item, BlockItem]
+    ) -> Union[Item, BlockItem]:
+        raise NotImplementedError
