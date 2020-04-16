@@ -88,17 +88,6 @@
                                 }
                             ]
                         },
-                        "CustomName": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "LastOutput": {
                             "type": "string",
                             "functions": [
@@ -156,6 +145,17 @@
                         },
                         "UpdateLastExecution": {
                             "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "CustomName": {
+                            "type": "string",
                             "functions": [
                                 {
                                     "function": "carry_nbt",

@@ -81,19 +81,7 @@
                 },
                 "CustomName": {
                     "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
+                    "functions": []
                 },
                 "LastOutput": {
                     "type": "string",
@@ -222,6 +210,18 @@
                     "options": {}
                 }
             ]
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_cmd_custom_name_2u"
         }
     }
 ]
