@@ -24,7 +24,7 @@ _log_console.setFormatter(_formatter)
 log.addHandler(_log_console)
 
 # TODO: find a proper way to implement this
-log.info(f'PyMCTranslate Version 0.{version}')
+log.info(f'PyMCTranslate Version {version}')
 
 
 def enable_console_log(enable=True):
