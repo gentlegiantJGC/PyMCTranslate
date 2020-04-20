@@ -23,7 +23,6 @@ _log_console.setLevel(logging.WARNING)
 _log_console.setFormatter(_formatter)
 log.addHandler(_log_console)
 
-# TODO: find a proper way to implement this
 log.info(f'PyMCTranslate Version {version}')
 
 
