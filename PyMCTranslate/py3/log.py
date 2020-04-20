@@ -23,7 +23,7 @@ _log_console.setLevel(logging.WARNING)
 _log_console.setFormatter(_formatter)
 log.addHandler(_log_console)
 
-log.info(f'PyMCTranslate Version {version}')
+log.info(f'PyMCTranslate Version {build_number}')
 
 
 def enable_console_log(enable=True):
