@@ -14,10 +14,16 @@ except ModuleNotFoundError:
     from PyMCTranslate.py3.amulet_objects.errors import ChunkLoadError
 
 from PyMCTranslate.py3.util import load_json_gz
-version = 5
-from PyMCTranslate.py3.log import log
 
 pymct_dir = os.path.dirname(__file__)
+try:
+    with open(os.path.join(pymct_dir, 'build_number')) as f:
+        build_number = int(f.read())
+except:
+    build_number = -1
+
+from PyMCTranslate.py3.log import log
+
 # have the json files been minified
 minified = os.path.isdir(os.path.join(pymct_dir, 'min_json'))
 if minified:

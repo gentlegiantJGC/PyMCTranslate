@@ -1,7 +1,7 @@
 import logging
 import sys
 import os
-from PyMCTranslate import version
+from PyMCTranslate import build_number
 
 log = logging.getLogger('pymctranslate')
 log.setLevel(logging.INFO)
