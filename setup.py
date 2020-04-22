@@ -34,27 +34,12 @@ extensions = [
     )
 ]
 
-package_data_locations = (("json", "versions"), ("code_functions",))
-
-package_data = []
-for location_data_tuple in package_data_locations:
-    location_files = []
-    for root, _, filenames in os.walk(
-        op.join(op.dirname(__file__), "PyMCTranslate", *location_data_tuple)
-    ):
-        for filename in filenames:
-            if "__pycache__" in root:
-                continue
-            location_files.append(op.join(root, filename))
-    package_data.extend(location_files)
-
 SETUP_PARAMS = {
     "name": "pymctranslate",
     "install_requires": requirements,
     "packages": packages,
     "include_package_data": True,
     "zip_safe": False,
-    "package_data": {"PyMCTranslate": package_data},
 }
 
 if CYTHON_COMPILE and os.path.exists(os.path.join(".", extensions[0].sources[0])):
