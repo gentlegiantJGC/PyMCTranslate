@@ -1,5 +1,5 @@
 recursive-include PyMCTranslate/json/versions/* *.*
-recursive-include PyMCTranslate/code_functions/* *.py
+include PyMCTranslate/code_functions/*.py
 include PyMCTranslate/build_number
 prune */__pycache__/*
 global-exclude *.py[cod]
