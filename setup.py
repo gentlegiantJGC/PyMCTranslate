@@ -40,7 +40,6 @@ SETUP_PARAMS = {
     "packages": packages,
     "include_package_data": True,
     "zip_safe": False,
-    "package_data": {"PyMCTranslate": package_data},
 }
 
 if CYTHON_COMPILE and os.path.exists(os.path.join(".", extensions[0].sources[0])):
