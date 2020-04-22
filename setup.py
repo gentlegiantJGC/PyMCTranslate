@@ -36,7 +36,7 @@ extensions = [
 
 package_data_locations = (("json", "versions"), ("code_functions",))
 
-package_data = []
+package_data = ["build_number",]
 for location_data_tuple in package_data_locations:
     location_files = []
     for root, _, filenames in os.walk(
