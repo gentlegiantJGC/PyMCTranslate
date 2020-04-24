@@ -26,7 +26,7 @@ while True:
     output_force_blockstate = output_force_blockstate.lower() == 'true'
     inp = get_version(input_platform, input_version)
     out = get_version(output_platform, output_version)
-    block = Block(blockstate=blockstate)
+    block = Block(*Block.parse_blockstate_string(blockstate))
     print(f'\tInput block {block}')
     ublock = inp.block.to_universal(block, force_blockstate=input_force_blockstate)[0]
     print(f'\tUniveral block {ublock}')
