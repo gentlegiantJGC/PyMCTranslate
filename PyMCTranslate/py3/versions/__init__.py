@@ -147,7 +147,7 @@ class Version:
     def data_version(self) -> int:
         """
         The DataVersion number of the version this class instance holds the data of.
-        This is an int but is only used for Java versions beyond 1.9 snapshot 15w32a. Other versions will default to 0.
+        This is an int but is only used for Java versions beyond 1.9 snapshot 15w32a and Bedrock versions beyond 1.10. Other versions will default to 0.
         """
         return self._data_version
 
