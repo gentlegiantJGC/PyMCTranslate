@@ -18,5 +18,10 @@
     "defaults": {
         "facing": "\"north\"",
         "honey_level": "\"0\""
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "beehive"
+    ],
+    "snbt": "{utags: {isMovable: 1b}}"
 }
