@@ -42,7 +42,7 @@ class Version:
                 }
             else:
                 _version_data[version_path]["meta"] = meta = {}
-                for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__block_entity_map__', '__numerical_block_map__']:
+                for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__numerical_block_map__']:
                     if os.path.isfile(os.path.join(version_path, f'{file_name}.json')):
                         with open(os.path.join(version_path, f'{file_name}.json')) as f:
                             meta[file_name] = json.load(f)
@@ -76,13 +76,6 @@ class Version:
             self._waterloggable = None
             self._always_waterlogged = None
         self._biome = BiomeTranslator(meta['__biome_data__'], translation_manager)
-
-        if init_file['block_entity_format'] == "str-id":
-            self.block_entity_map: Dict[str: str] = meta['__block_entity_map__']
-            self.block_entity_map_inverse: Dict[str: str] = {val: key for key, val in self.block_entity_map.items()}
-        else:
-            self.block_entity_map = None
-            self.block_entity_map_inverse = None
 
     def _load_translator(self, attr):
         """
