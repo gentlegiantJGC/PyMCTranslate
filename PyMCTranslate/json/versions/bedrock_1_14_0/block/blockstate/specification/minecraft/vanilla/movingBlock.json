@@ -2,8 +2,8 @@
     "properties": {},
     "defaults": {},
     "nbt_identifier": [
-        "minecraft",
-        "moving_block"
+        "",
+        "MovingBlock"
     ],
-    "snbt": "{blockState: {Name: \"minecraft:stone\"}, facing: 4, progress: 0.5f, source: 0b, extending: 1b}"
+    "snbt": "{blockState: {Name: \"minecraft:stone\"}, facing: 4, progress: 0.5f, source: 0b, extending: 1b, isMovable: 1b}"
 }
