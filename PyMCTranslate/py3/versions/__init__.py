@@ -59,7 +59,7 @@ class Version:
         self._block_format = init_file['block_format']
         self._has_abstract_format = self._block_format in ['numerical', 'pseudo-numerical']
 
-        if self.block_format == 'numerical':
+        if self.block_format in ('numerical', 'pseudo-numerical'):
             self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {
                 tuple(block_str.split(':', 1)): block_id for block_str, block_id in meta['__numerical_block_map__'].items()
                 if isinstance(block_str, str) and ':' in block_str and isinstance(block_id, int)
