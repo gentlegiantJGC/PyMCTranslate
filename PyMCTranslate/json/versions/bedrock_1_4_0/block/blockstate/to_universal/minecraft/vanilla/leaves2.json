@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:leaves"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "\"acacia\"",
+                "\"dark_oak\""
+            ],
+            "persistent": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "check_decay": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

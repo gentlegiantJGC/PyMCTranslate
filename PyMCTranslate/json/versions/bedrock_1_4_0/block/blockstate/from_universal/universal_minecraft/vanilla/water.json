@@ -1,0 +1,44 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "level": [
+                "\"0\"",
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\"",
+                "\"5\"",
+                "\"6\"",
+                "\"7\""
+            ],
+            "falling": [
+                "\"false\"",
+                "\"true\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "flowing": {
+                "\"true\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:flowing_water"
+                    }
+                ],
+                "\"false\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:water"
+                    }
+                ]
+            }
+        }
+    }
+]

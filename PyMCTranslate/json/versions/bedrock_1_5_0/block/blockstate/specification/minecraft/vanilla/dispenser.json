@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
+        ],
+        "triggered": [
+            "\"true\"",
+            "\"false\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "triggered": "\"false\""
+    },
+    "snbt": "{Items: [], isMovable: 1b}",
+    "nbt_identifier": [
+        "",
+        "Dispenser"
+    ]
+}

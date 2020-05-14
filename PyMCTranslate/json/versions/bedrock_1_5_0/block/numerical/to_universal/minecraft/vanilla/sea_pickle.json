@@ -1,0 +1,113 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"1\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"1\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"2\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"2\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"3\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"3\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"4\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sea_pickle"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pickles": "\"4\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

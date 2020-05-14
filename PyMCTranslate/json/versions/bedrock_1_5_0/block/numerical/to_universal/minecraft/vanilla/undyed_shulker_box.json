@@ -1,0 +1,151 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "\"default\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Findable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Items": {
+                    "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "facing": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "\"down\""
+                                            }
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "\"up\""
+                                            }
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "\"north\""
+                                            }
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "\"south\""
+                                            }
+                                        }
+                                    ],
+                                    "4b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "\"west\""
+                                            }
+                                        }
+                                    ],
+                                    "5b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "facing": "\"east\""
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    }
+]

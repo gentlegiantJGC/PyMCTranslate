@@ -1,0 +1,226 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"false\"",
+                            "has_bottle_1": "\"false\"",
+                            "has_bottle_2": "\"false\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"true\"",
+                            "has_bottle_1": "\"false\"",
+                            "has_bottle_2": "\"false\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"false\"",
+                            "has_bottle_1": "\"true\"",
+                            "has_bottle_2": "\"false\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"true\"",
+                            "has_bottle_1": "\"true\"",
+                            "has_bottle_2": "\"false\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"false\"",
+                            "has_bottle_1": "\"false\"",
+                            "has_bottle_2": "\"true\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"true\"",
+                            "has_bottle_1": "\"false\"",
+                            "has_bottle_2": "\"true\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"false\"",
+                            "has_bottle_1": "\"true\"",
+                            "has_bottle_2": "\"true\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:brewing_stand"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "has_bottle_0": "\"true\"",
+                            "has_bottle_1": "\"true\"",
+                            "has_bottle_2": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "FuelAmount": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "Fuel",
+                                "type": "short"
+                            }
+                        }
+                    ]
+                },
+                "CookTime": {
+                    "type": "short",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "BrewTime"
+                            }
+                        }
+                    ]
+                },
+                "FuelTotal": {
+                    "type": "short",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Items": {
+                    "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    }
+]

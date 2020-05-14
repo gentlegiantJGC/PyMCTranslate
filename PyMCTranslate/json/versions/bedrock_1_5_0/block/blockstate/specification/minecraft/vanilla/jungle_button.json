@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "facing": [
+            "\"down\"",
+            "\"up\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "powered": [
+            "\"false\"",
+            "\"true\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"up\"",
+        "powered": "\"false\""
+    }
+}

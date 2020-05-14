@@ -1,0 +1,16 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sandstone"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "variant": [
+                "\"normal\"",
+                "\"chiseled\"",
+                "\"cut\""
+            ]
+        }
+    }
+]

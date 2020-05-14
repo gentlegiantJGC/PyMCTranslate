@@ -1,0 +1,33 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cobblestone\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wall"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_cobblestone\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

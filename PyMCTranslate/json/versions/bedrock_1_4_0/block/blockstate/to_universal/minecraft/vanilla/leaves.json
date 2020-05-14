@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:leaves"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "\"oak\"",
+                "\"spruce\"",
+                "\"birch\"",
+                "\"jungle\""
+            ],
+            "persistent": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "check_decay": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

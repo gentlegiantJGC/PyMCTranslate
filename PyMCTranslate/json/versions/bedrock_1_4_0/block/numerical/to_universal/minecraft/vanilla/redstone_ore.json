@@ -1,0 +1,21 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:redstone_ore"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"false\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

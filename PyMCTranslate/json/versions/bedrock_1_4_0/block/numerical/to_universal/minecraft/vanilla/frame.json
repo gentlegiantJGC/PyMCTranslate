@@ -1,0 +1,199 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "ItemDropChance": {
+                    "type": "float",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "ItemRotation": {
+                    "type": "float",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Item": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"false\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"false\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"false\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"false\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"true\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"true\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"true\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:item_frame_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "map_item": "\"true\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:redstone_torch"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"east\"",
+                "\"west\"",
+                "\"south\"",
+                "\"north\"",
+                "\"up\""
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "lit": "\"true\""
+        }
+    }
+]

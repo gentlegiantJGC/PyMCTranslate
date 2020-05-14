@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:planks"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "\"oak\"",
+                "\"spruce\"",
+                "\"birch\"",
+                "\"jungle\"",
+                "\"acacia\"",
+                "\"dark_oak\""
+            ]
+        }
+    }
+]

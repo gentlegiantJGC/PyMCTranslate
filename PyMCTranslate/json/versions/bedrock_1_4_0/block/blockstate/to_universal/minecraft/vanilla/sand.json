@@ -1,0 +1,21 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"sand\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sand"
+                    }
+                ],
+                "\"red_sand\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:red_sand"
+                    }
+                ]
+            }
+        }
+    }
+]

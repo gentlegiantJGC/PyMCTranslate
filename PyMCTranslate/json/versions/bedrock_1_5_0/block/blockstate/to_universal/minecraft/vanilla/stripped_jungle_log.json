@@ -1,0 +1,74 @@
+[
+    {
+        "function": "carry_properties",
+        "options": {
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "\"x\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"jungle\""
+                        }
+                    }
+                ],
+                "\"y\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"jungle\""
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"jungle\""
+                        }
+                    }
+                ],
+                "\"all\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wood"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"y\"",
+                            "material": "\"jungle\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "stripped": "\"true\""
+        }
+    }
+]

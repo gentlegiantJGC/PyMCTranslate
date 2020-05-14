@@ -1,0 +1,94 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:lever"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "\"false\"",
+                "\"true\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "position": {
+                "\"floor_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"floor\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"floor_east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"floor\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "\"wall_east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"wall\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "\"wall_west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"wall\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"wall_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"wall\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"wall_north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"wall\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"ceiling_south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"ceiling\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"ceiling_east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "face": "\"ceiling\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

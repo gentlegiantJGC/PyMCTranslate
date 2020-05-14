@@ -1,0 +1,78 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_sandstone\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"purpur\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"purpur\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"dark_prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"dark_prismarine\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ],
+                "\"prismarine_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine_brick\"",
+                            "type": "\"double\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

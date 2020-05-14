@@ -1,17 +1,6 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:carved_pumpkin"
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "facing": [
-                "\"south\"",
-                "\"west\"",
-                "\"north\"",
-                "\"east\""
-            ]
-        }
+        "options": "minecraft:air"
     }
 ]

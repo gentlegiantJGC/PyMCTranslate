@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:double_plant"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "half": [
+                "\"lower\"",
+                "\"upper\""
+            ],
+            "type": [
+                "\"sunflower\"",
+                "\"lilac\"",
+                "\"tall_grass\"",
+                "\"large_fern\"",
+                "\"rose_bush\"",
+                "\"peony\""
+            ]
+        }
+    }
+]

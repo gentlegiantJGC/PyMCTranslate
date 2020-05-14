@@ -1,29 +1,6 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:bubble_column"
-    },
-    {
-        "function": "map_properties",
-        "options": {
-            "drag": {
-                "\"false\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "block_data": "0"
-                        }
-                    }
-                ],
-                "\"true\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "block_data": "1"
-                        }
-                    }
-                ]
-            }
-        }
+        "options": "minecraft:air"
     }
 ]

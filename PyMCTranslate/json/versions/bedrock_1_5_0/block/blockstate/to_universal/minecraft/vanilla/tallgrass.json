@@ -1,0 +1,33 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "\"grass\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:plant"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"grass\""
+                        }
+                    }
+                ],
+                "\"fern\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:plant"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"fern\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

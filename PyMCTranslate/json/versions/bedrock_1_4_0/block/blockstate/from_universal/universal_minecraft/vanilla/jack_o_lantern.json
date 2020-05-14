@@ -1,0 +1,17 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:lit_pumpkin"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"south\"",
+                "\"west\"",
+                "\"north\"",
+                "\"east\""
+            ]
+        }
+    }
+]

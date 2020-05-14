@@ -1,0 +1,69 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"tube\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"brain\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"bubble\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"fire\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"horn\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

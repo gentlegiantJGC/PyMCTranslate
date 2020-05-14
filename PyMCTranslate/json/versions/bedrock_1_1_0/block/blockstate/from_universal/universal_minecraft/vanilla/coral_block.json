@@ -1,22 +1,6 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:coral_block"
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "type": [
-                "\"tube\"",
-                "\"brain\"",
-                "\"bubble\"",
-                "\"fire\"",
-                "\"horn\""
-            ],
-            "dead": [
-                "\"true\"",
-                "\"false\""
-            ]
-        }
+        "options": "minecraft:air"
     }
 ]

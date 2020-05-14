@@ -1,0 +1,81 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:infested_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"stone\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:infested_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cobblestone\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:infested_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"stone_bricks\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:infested_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_stone_bricks\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:infested_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cracked_stone_bricks\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:infested_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"chiseled_stone_bricks\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

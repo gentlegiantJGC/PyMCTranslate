@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:coral_fan"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "\"tube\"",
+                "\"brain\"",
+                "\"bubble\"",
+                "\"fire\"",
+                "\"horn\""
+            ]
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "facing": "\"up\"",
+            "dead": "\"true\""
+        }
+    }
+]

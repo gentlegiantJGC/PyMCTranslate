@@ -1,0 +1,18 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:coral"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "\"tube\"",
+                "\"brain\"",
+                "\"bubble\"",
+                "\"fire\"",
+                "\"horn\""
+            ]
+        }
+    }
+]
