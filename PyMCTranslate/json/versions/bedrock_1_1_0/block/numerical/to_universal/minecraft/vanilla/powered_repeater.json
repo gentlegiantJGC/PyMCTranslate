@@ -1,0 +1,2063 @@
+[
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "\"true\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "delay": "\"1\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "delay": "\"1\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "delay": "\"1\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "delay": "\"1\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "delay": "\"2\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "delay": "\"2\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "delay": "\"2\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "delay": "\"2\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "delay": "\"3\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "delay": "\"3\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "delay": "\"3\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "delay": "\"3\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "delay": "\"4\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "delay": "\"4\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "delay": "\"4\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "11": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "15": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "9": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "13": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:repeater"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "delay": "\"4\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "10": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "14": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:powered_repeater": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "8": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "12": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "locked": "\"true\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

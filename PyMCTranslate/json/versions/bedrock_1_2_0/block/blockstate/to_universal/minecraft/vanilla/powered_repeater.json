@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:repeater"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "\"true\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "delay": [
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

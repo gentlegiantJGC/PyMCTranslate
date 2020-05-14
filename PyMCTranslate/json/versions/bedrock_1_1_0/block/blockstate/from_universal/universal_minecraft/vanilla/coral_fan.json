@@ -1,0 +1,792 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral_fan"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"up\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"tube\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"brain\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"fire\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"horn\""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_dead"
+                                    },
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"tube\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"brain\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"fire\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "type": "\"horn\""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"false\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "type": {
+                                                "\"tube\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"tube\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"brain\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"brain\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang"
+                                                    }
+                                                ],
+                                                "\"bubble\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"bubble\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"fire\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"fire\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang2"
+                                                    }
+                                                ],
+                                                "\"horn\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\"",
+                                                            "dead": "\"true\"",
+                                                            "type": "\"horn\""
+                                                        }
+                                                    },
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:coral_fan_hang3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

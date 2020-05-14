@@ -1,0 +1,45 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sandstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"normal\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sandstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"chiseled\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sandstone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"cut\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

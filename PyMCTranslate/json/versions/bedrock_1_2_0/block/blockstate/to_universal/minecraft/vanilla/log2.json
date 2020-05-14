@@ -1,0 +1,53 @@
+[
+    {
+        "function": "carry_properties",
+        "options": {
+            "material": [
+                "\"acacia\"",
+                "\"dark_oak\""
+            ],
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "\"x\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    }
+                ],
+                "\"y\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:log"
+                    }
+                ],
+                "\"all\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:wood"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"y\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

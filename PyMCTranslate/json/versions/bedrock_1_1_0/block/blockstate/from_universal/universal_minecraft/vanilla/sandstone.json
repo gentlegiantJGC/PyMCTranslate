@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sandstone"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "variant": {
+                "\"normal\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"normal\""
+                        }
+                    }
+                ],
+                "\"chiseled\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"chiseled\""
+                        }
+                    }
+                ],
+                "\"cut\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"cut\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

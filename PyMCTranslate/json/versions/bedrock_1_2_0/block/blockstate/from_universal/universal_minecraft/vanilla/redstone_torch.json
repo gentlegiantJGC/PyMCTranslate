@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "\"false\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:unlit_redstone_torch"
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:redstone_torch"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"east\"",
+                "\"west\"",
+                "\"south\"",
+                "\"north\"",
+                "\"up\""
+            ]
+        }
+    }
+]

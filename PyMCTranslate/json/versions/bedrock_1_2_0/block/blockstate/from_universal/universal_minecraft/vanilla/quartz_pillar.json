@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:quartz_block"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "variant": "\"quartz_pillar\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ]
+        }
+    }
+]

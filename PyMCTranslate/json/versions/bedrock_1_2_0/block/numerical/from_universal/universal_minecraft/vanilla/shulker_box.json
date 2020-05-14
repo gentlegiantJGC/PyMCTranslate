@@ -1,0 +1,352 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:shulker_box"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "\"default\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    }
+                ],
+                "\"white\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "\"orange\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ],
+                "\"magenta\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ],
+                "\"light_blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "\"yellow\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ],
+                "\"lime\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "5"
+                        }
+                    }
+                ],
+                "\"pink\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "6"
+                        }
+                    }
+                ],
+                "\"gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "7"
+                        }
+                    }
+                ],
+                "\"light_gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "8"
+                        }
+                    }
+                ],
+                "\"cyan\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "9"
+                        }
+                    }
+                ],
+                "\"purple\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "10"
+                        }
+                    }
+                ],
+                "\"blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "11"
+                        }
+                    }
+                ],
+                "\"brown\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "12"
+                        }
+                    }
+                ],
+                "\"green\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "13"
+                        }
+                    }
+                ],
+                "\"red\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "14"
+                        }
+                    }
+                ],
+                "\"black\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:undyed_shulker_box"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "15"
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "\"down\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "0b"
+                            }
+                        ]
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "1b"
+                            }
+                        ]
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "2b"
+                            }
+                        ]
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "3b"
+                            }
+                        ]
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "4b"
+                            }
+                        ]
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "facing",
+                                "value": "5b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Findable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "Items": {
+                            "type": "list",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:oak_stairs"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oak_stairs"
+                    }
+                ],
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_stairs"
+                    }
+                ],
+                "\"brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brick_stairs"
+                    }
+                ],
+                "\"stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_brick_stairs"
+                    }
+                ],
+                "\"nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:nether_brick_stairs"
+                    }
+                ],
+                "\"sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:sandstone_stairs"
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_stairs"
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_stairs"
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_stairs"
+                    }
+                ],
+                "\"quartz\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:quartz_stairs"
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_stairs"
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_stairs"
+                    }
+                ],
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone_stairs"
+                    }
+                ],
+                "\"purpur\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purpur_stairs"
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:prismarine_stairs"
+                    }
+                ],
+                "\"dark_prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_prismarine_stairs"
+                    }
+                ],
+                "\"prismarine_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:prismarine_bricks_stairs"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\""
+            ],
+            "half": [
+                "\"bottom\"",
+                "\"top\""
+            ]
+        }
+    }
+]

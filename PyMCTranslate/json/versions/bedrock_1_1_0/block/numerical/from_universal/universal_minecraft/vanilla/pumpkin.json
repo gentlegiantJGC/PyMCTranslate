@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pumpkin"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pumpkin"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pumpkin"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pumpkin"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "3"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "polished": {
+                "\"false\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

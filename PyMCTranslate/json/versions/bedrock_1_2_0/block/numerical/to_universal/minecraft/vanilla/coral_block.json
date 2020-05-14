@@ -1,0 +1,139 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"tube\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"brain\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"bubble\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"fire\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"horn\"",
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"tube\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"brain\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"bubble\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"fire\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"horn\"",
+                            "dead": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "half": {
+                "\"upper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:seagrass"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"double_top\""
+                        }
+                    }
+                ],
+                "\"lower\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:seagrass"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"double_bot\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

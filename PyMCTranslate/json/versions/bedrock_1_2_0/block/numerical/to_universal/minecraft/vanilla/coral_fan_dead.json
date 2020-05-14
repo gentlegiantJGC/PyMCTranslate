@@ -1,0 +1,79 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_fan"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "dead": "\"true\"",
+                            "type": "\"tube\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_fan"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "dead": "\"true\"",
+                            "type": "\"brain\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_fan"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "dead": "\"true\"",
+                            "type": "\"bubble\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_fan"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "dead": "\"true\"",
+                            "type": "\"fire\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:coral_fan"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "dead": "\"true\"",
+                            "type": "\"horn\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

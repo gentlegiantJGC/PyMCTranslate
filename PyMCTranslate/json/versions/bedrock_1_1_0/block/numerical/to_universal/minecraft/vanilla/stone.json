@@ -1,0 +1,87 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:stone"
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:granite"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "polished": "\"false\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:granite"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "polished": "\"true\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:diorite"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "polished": "\"false\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:diorite"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "polished": "\"true\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:andesite"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "polished": "\"false\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:andesite"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "polished": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

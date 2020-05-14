@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:purpur_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"purpur_pillar_x\""
+                        }
+                    }
+                ],
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"purpur_pillar_y\""
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "variant": "\"purpur_pillar_z\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

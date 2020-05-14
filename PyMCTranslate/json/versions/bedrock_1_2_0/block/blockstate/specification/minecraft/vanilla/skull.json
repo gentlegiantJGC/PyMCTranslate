@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "facing": [
+            "\"floor\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "no_drop": [
+            "\"true\"",
+            "\"false\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"floor\"",
+        "no_drop": "\"false\""
+    },
+    "snbt": "{MouthMoving: 0b, MouthTickCount: 0, Rotation: 0.f, SkullType: 0b, isMovable: 1b}",
+    "nbt_identifier": [
+        "",
+        "Skull"
+    ]
+}

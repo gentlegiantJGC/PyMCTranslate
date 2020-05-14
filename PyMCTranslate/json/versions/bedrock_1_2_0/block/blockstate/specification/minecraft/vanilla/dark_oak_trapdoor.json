@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "half": [
+            "\"top\"",
+            "\"bottom\""
+        ],
+        "open": [
+            "\"true\"",
+            "\"false\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "half": "\"bottom\"",
+        "open": "\"false\""
+    }
+}

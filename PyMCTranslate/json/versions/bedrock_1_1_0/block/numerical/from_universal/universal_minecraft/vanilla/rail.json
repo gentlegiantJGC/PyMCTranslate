@@ -1,0 +1,133 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "shape": {
+                "\"north_south\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "\"east_west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
+                        }
+                    }
+                ],
+                "\"ascending_east\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "2"
+                        }
+                    }
+                ],
+                "\"ascending_west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "3"
+                        }
+                    }
+                ],
+                "\"ascending_north\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "4"
+                        }
+                    }
+                ],
+                "\"ascending_south\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "5"
+                        }
+                    }
+                ],
+                "\"south_east\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "6"
+                        }
+                    }
+                ],
+                "\"south_west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "7"
+                        }
+                    }
+                ],
+                "\"north_west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "8"
+                        }
+                    }
+                ],
+                "\"north_east\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rail"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "9"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

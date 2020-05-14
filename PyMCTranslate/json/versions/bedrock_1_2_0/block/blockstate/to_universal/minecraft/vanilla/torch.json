@@ -1,0 +1,18 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:torch"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"east\"",
+                "\"west\"",
+                "\"south\"",
+                "\"north\"",
+                "\"up\""
+            ]
+        }
+    }
+]

@@ -1,0 +1,113 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sea_pickle"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "pickles": {
+                "\"1\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "0"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "4"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "1"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "5"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "2"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "6"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "3"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "block_data": "7"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
