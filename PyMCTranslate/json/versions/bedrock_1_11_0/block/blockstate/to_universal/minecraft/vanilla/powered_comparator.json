@@ -6,6 +6,10 @@
     {
         "function": "carry_properties",
         "options": {
+            "powered": [
+                "\"false\"",
+                "\"true\""
+            ],
             "facing": [
                 "\"south\"",
                 "\"west\"",
@@ -16,12 +20,6 @@
                 "\"compare\"",
                 "\"subtract\""
             ]
-        }
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "powered": "\"true\""
         }
     },
     {

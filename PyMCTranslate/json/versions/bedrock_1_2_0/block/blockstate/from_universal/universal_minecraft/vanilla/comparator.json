@@ -6,6 +6,10 @@
     {
         "function": "carry_properties",
         "options": {
+            "powered": [
+                "\"false\"",
+                "\"true\""
+            ],
             "facing": [
                 "\"south\"",
                 "\"west\"",
@@ -16,20 +20,6 @@
                 "\"compare\"",
                 "\"subtract\""
             ]
-        }
-    },
-    {
-        "function": "map_properties",
-        "options": {
-            "powered": {
-                "\"false\"": [],
-                "\"true\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:powered_comparator"
-                    }
-                ]
-            }
         }
     },
     {

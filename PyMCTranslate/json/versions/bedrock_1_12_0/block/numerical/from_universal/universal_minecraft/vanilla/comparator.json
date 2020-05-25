@@ -6,8 +6,8 @@
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "\"south\"": [
+            "powered": {
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
@@ -16,8 +16,8 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "powered": {
-                                                "\"false\"": [
+                                            "facing": {
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -25,58 +25,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "\"true\"": [
-                                                    {
-                                                        "function": "new_properties",
-                                                        "options": {
-                                                            "block_data": "8"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ],
-                                "\"subtract\"": [
-                                    {
-                                        "function": "map_properties",
-                                        "options": {
-                                            "powered": {
-                                                "\"false\"": [
-                                                    {
-                                                        "function": "new_properties",
-                                                        "options": {
-                                                            "block_data": "4"
-                                                        }
-                                                    }
-                                                ],
-                                                "\"true\"": [
-                                                    {
-                                                        "function": "new_properties",
-                                                        "options": {
-                                                            "block_data": "12"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"west\"": [
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "mode": {
-                                "\"compare\"": [
-                                    {
-                                        "function": "map_properties",
-                                        "options": {
-                                            "powered": {
-                                                "\"false\"": [
+                                                "\"west\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -84,58 +33,7 @@
                                                         }
                                                     }
                                                 ],
-                                                "\"true\"": [
-                                                    {
-                                                        "function": "new_properties",
-                                                        "options": {
-                                                            "block_data": "9"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ],
-                                "\"subtract\"": [
-                                    {
-                                        "function": "map_properties",
-                                        "options": {
-                                            "powered": {
-                                                "\"false\"": [
-                                                    {
-                                                        "function": "new_properties",
-                                                        "options": {
-                                                            "block_data": "5"
-                                                        }
-                                                    }
-                                                ],
-                                                "\"true\"": [
-                                                    {
-                                                        "function": "new_properties",
-                                                        "options": {
-                                                            "block_data": "13"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"north\"": [
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "mode": {
-                                "\"compare\"": [
-                                    {
-                                        "function": "map_properties",
-                                        "options": {
-                                            "powered": {
-                                                "\"false\"": [
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -143,11 +41,11 @@
                                                         }
                                                     }
                                                 ],
-                                                "\"true\"": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "block_data": "10"
+                                                            "block_data": "3"
                                                         }
                                                     }
                                                 ]
@@ -159,8 +57,24 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "powered": {
-                                                "\"false\"": [
+                                            "facing": {
+                                                "\"south\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "4"
+                                                        }
+                                                    }
+                                                ],
+                                                "\"west\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "5"
+                                                        }
+                                                    }
+                                                ],
+                                                "\"north\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -168,11 +82,11 @@
                                                         }
                                                     }
                                                 ],
-                                                "\"true\"": [
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "block_data": "14"
+                                                            "block_data": "7"
                                                         }
                                                     }
                                                 ]
@@ -184,7 +98,7 @@
                         }
                     }
                 ],
-                "\"east\"": [
+                "\"true\"": [
                     {
                         "function": "map_properties",
                         "options": {
@@ -193,16 +107,32 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "powered": {
-                                                "\"false\"": [
+                                            "facing": {
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "block_data": "3"
+                                                            "block_data": "8"
                                                         }
                                                     }
                                                 ],
-                                                "\"true\"": [
+                                                "\"west\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "9"
+                                                        }
+                                                    }
+                                                ],
+                                                "\"north\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "10"
+                                                        }
+                                                    }
+                                                ],
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
@@ -218,16 +148,32 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "powered": {
-                                                "\"false\"": [
+                                            "facing": {
+                                                "\"south\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "block_data": "7"
+                                                            "block_data": "12"
                                                         }
                                                     }
                                                 ],
-                                                "\"true\"": [
+                                                "\"west\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "13"
+                                                        }
+                                                    }
+                                                ],
+                                                "\"north\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "block_data": "14"
+                                                        }
+                                                    }
+                                                ],
+                                                "\"east\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {

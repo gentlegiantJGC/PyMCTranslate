@@ -1,5 +1,9 @@
 {
     "properties": {
+        "powered": [
+            "\"false\"",
+            "\"true\""
+        ],
         "facing": [
             "\"south\"",
             "\"west\"",
@@ -12,6 +16,7 @@
         ]
     },
     "defaults": {
+        "powered": "\"false\"",
         "facing": "\"south\"",
         "mode": "\"compare\""
     },
