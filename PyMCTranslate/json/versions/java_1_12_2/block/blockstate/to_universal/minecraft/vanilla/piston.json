@@ -1,18 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:piston_head"
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "type": "\"normal\""
-        }
+        "options": "universal_minecraft:piston"
     },
     {
         "function": "carry_properties",
         "options": {
-            "short": [
+            "powered": [
                 "\"false\"",
                 "\"true\""
             ],

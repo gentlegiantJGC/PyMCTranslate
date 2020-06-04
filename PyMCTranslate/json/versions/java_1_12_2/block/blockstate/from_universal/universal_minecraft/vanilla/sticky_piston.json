@@ -1,6 +1,23 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:sticky_piston"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "\"false\"",
+                "\"true\""
+            ],
+            "facing": [
+                "\"down\"",
+                "\"up\"",
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
     }
 ]

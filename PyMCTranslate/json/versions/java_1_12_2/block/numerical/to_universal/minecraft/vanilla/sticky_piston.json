@@ -1,0 +1,165 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"false\"",
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"false\"",
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"false\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"false\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"false\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"false\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"true\"",
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"true\"",
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"true\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"true\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"true\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extended": "\"true\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

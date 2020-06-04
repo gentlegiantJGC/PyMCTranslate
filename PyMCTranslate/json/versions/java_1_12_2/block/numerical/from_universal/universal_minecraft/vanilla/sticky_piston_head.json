@@ -1,6 +1,61 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:piston_head"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"down\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "8"
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "9"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "10"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "11"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "12"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "13"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

@@ -1,6 +1,29 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:piston_head"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "\"sticky\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "short": [
+                "\"false\"",
+                "\"true\""
+            ],
+            "facing": [
+                "\"down\"",
+                "\"up\"",
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
     }
 ]

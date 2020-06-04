@@ -1,0 +1,177 @@
+[
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\"",
+                            "short": "\"false\"",
+                            "type": "\"normal\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "short": "\"false\"",
+                            "type": "\"normal\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "short": "\"false\"",
+                            "type": "\"normal\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "short": "\"false\"",
+                            "type": "\"normal\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "short": "\"false\"",
+                            "type": "\"normal\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "short": "\"false\"",
+                            "type": "\"normal\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\"",
+                            "short": "\"false\"",
+                            "type": "\"sticky\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\"",
+                            "short": "\"false\"",
+                            "type": "\"sticky\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\"",
+                            "short": "\"false\"",
+                            "type": "\"sticky\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\"",
+                            "short": "\"false\"",
+                            "type": "\"sticky\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\"",
+                            "short": "\"false\"",
+                            "type": "\"sticky\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\"",
+                            "short": "\"false\"",
+                            "type": "\"sticky\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
