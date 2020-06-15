@@ -23,5 +23,107 @@
                 "\"red_nether_brick\""
             ]
         }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "north": "\"none\"",
+            "east": "\"none\"",
+            "south": "\"none\"",
+            "west": "\"none\""
+        }
+    },
+    {
+        "function": "multiblock",
+        "options": [
+            {
+                "coords": [
+                    0,
+                    0,
+                    -1
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "north": "\"low\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    0,
+                    0,
+                    1
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "south": "\"low\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    -1,
+                    0,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "west": "\"low\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    1,
+                    0,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "east": "\"low\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ]
