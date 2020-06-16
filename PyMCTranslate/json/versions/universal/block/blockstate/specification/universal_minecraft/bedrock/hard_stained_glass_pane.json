@@ -17,9 +17,29 @@
             "\"green\"",
             "\"red\"",
             "\"black\""
+        ],
+        "east": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "north": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "south": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "west": [
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
-        "color": "\"white\""
+        "color": "\"white\"",
+        "east": "\"false\"",
+        "north": "\"false\"",
+        "south": "\"false\"",
+        "west": "\"false\""
     }
 }
