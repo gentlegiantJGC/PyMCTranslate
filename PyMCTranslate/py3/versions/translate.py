@@ -462,6 +462,8 @@ def _translate(
 					new_absolute_location = (absolute_location[0] + multiblock['coords'][0], absolute_location[1] + multiblock['coords'][1], absolute_location[2] + multiblock['coords'][2])
 					try:
 						block_input_, nbt_input_ = get_block_callback(new_location)
+						if nbt_input_ is not None:
+							nbt_input_ = nbt_input_.nbt
 						output_name, output_type, new_data, extra_needed, cacheable = _translate(block_input_, nbt_input_, multiblock['functions'], get_block_callback, new_absolute_location, new_location, nbt_path, (output_name, output_type, new_data, extra_needed, cacheable))
 					except ChunkLoadError:
 						continue

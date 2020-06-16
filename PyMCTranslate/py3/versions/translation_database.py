@@ -7,6 +7,8 @@ from ..versions.translate import translate
 if TYPE_CHECKING:
     from ..versions import Version
 
+BlockCoordinates = Tuple[int, int, int]
+
 
 class BaseTranslator:
     def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict, mode: str):
@@ -28,6 +30,7 @@ class BaseTranslator:
             translation_direction: str,
             get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
             extra_input: BlockEntity = None,
+            block_location: BlockCoordinates = (0, 0, 0),
             pre_populate_defaults: bool = True
     ) -> Union[
         Tuple[Block, None, bool, bool],
@@ -43,7 +46,8 @@ class BaseTranslator:
                 force_blockstate,
                 get_block_callback,
                 extra_input,
-                pre_populate_defaults
+                pre_populate_defaults,
+                block_location
             )
             return output, extra_output, extra_needed, cacheable
         except Exception as e:
@@ -164,7 +168,8 @@ class BlockTranslator(BaseTranslator):
             object_input: 'Block',
             get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
             force_blockstate: bool = False,
-            extra_input: 'BlockEntity' = None
+            extra_input: 'BlockEntity' = None,
+            block_location: BlockCoordinates = (0, 0, 0),
     ) -> Union[
         Tuple[Block, None, bool],
         Tuple[Block, BlockEntity, bool]
@@ -175,6 +180,7 @@ class BlockTranslator(BaseTranslator):
         :param get_block_callback: see get_block_at function at the top of _translate for a template
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
+        :param block_location
         :return: output, extra_output, extra_needed
             output - a Block or Entity instance
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
@@ -203,7 +209,8 @@ class BlockTranslator(BaseTranslator):
             True,
             'to universal',
             get_block_callback,
-            extra_input
+            extra_input,
+            block_location
         )
 
         if cacheable:
@@ -216,7 +223,8 @@ class BlockTranslator(BaseTranslator):
             object_input: 'Block',
             get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
             force_blockstate: bool = False,
-            extra_input: 'BlockEntity' = None
+            extra_input: 'BlockEntity' = None,
+            block_location: BlockCoordinates = (0, 0, 0)
     ) -> Union[
         Tuple[Block, None, bool],
         Tuple[Block, BlockEntity, bool],
@@ -228,6 +236,7 @@ class BlockTranslator(BaseTranslator):
         :param get_block_callback: see get_block_at function at the top of _translate for a template
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
+        :param block_location:
         :return: output, extra_output, extra_needed
             output - a Block or Entity instance
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
@@ -259,7 +268,8 @@ class BlockTranslator(BaseTranslator):
             force_blockstate,
             'from_universal',
             get_block_callback,
-            extra_input
+            extra_input,
+            block_location
         )
 
         if cacheable:
