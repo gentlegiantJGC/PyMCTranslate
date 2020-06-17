@@ -73,12 +73,25 @@
         }
     },
     {
-        "function": "new_block",
-        "options": "minecraft:chest"
-    },
-    {
         "function": "map_properties",
         "options": {
+            "type": {
+                "\"right\"": [
+                    {
+                        "function": "code",
+                        "options": {
+                            "input": [
+                                "properties",
+                                "location"
+                            ],
+                            "output": [
+                                "new_nbt"
+                            ],
+                            "function": "bedrock_chest_fu"
+                        }
+                    }
+                ]
+            },
             "facing": {
                 "\"north\"": [
                     {
@@ -114,5 +127,9 @@
                 ]
             }
         }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:chest"
     }
 ]
