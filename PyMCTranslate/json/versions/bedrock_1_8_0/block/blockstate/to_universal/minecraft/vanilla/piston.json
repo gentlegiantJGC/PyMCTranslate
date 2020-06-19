@@ -101,6 +101,37 @@
                                     ]
                                 ]
                             }
+                        },
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "1b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "extended": "\"true\""
+                                            }
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "extended": "\"true\""
+                                            }
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_properties",
+                                            "options": {
+                                                "extended": "\"true\""
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     ]
                 },
