@@ -18,6 +18,25 @@
                                         "compound"
                                     ]
                                 ],
+                                "key": "bedrockBlockState"
+                            }
+                        }
+                    ]
+                },
+                "movingBlockExtra": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
                                 "key": "bedrockExtraBlockState"
                             }
                         }
@@ -25,51 +44,15 @@
                 },
                 "pistonPosX": {
                     "type": "int",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
+                    "functions": []
                 },
                 "pistonPosY": {
                     "type": "int",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
+                    "functions": []
                 },
                 "pistonPosZ": {
                     "type": "int",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
+                    "functions": []
                 },
                 "isMovable": {
                     "type": "byte",
@@ -100,6 +83,19 @@
                     "options": {}
                 }
             ]
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt",
+                "location"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_moving_block_pos_2u"
         }
     },
     {

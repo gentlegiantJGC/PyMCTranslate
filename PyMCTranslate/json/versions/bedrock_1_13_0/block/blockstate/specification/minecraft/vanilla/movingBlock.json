@@ -5,5 +5,5 @@
         "",
         "MovingBlock"
     ],
-    "snbt": "{blockState: {Name: \"minecraft:stone\"}, facing: 4, progress: 0.5f, source: 0b, extending: 1b, isMovable: 1b}"
+    "snbt": "{movingBlock: {name: \"minecraft:stone\", states: {\"stone_type\": \"stone\"}, version: 17629184}, movingBlockExtra: {name: \"minecraft:air\", states: {}, version: 17629184}, pistonPosX: 0, pistonPosY: 0, pistonPosZ: 0, isMovable: 1b}"
 }

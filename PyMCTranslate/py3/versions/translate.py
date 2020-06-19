@@ -206,6 +206,13 @@ def translate(
 			Entity, None, bool, bool
 	"""
 
+	if block_location is not None:
+		block_location = (  # force block locations to be ints
+			int(block_location[0]),
+			int(block_location[1]),
+			int(block_location[2])
+		)
+
 	# set up for the _translate function which does the actual conversion
 	if isinstance(object_input, Block):
 		block_input = object_input
