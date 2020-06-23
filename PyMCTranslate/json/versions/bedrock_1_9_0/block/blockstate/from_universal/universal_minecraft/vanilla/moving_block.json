@@ -9,6 +9,34 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
+                        "bedrockBlockState": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [],
+                                        "key": "movingBlock"
+                                    }
+                                }
+                            ]
+                        },
+                        "bedrockExtraBlockState": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [],
+                                        "key": "movingBlockExtra"
+                                    }
+                                }
+                            ]
+                        },
                         "isMovable": {
                             "type": "byte",
                             "functions": [
@@ -46,6 +74,19 @@
                     "options": {}
                 }
             ]
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt",
+                "location"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "bedrock_moving_block_pos_fu"
         }
     },
     {
