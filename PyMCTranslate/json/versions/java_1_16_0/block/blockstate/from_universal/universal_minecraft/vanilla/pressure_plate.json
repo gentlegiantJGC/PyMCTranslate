@@ -1,0 +1,64 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:oak_pressure_plate"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oak_pressure_plate"
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_pressure_plate"
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_pressure_plate"
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_pressure_plate"
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_pressure_plate"
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_pressure_plate"
+                    }
+                ],
+                "\"stone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_pressure_plate"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

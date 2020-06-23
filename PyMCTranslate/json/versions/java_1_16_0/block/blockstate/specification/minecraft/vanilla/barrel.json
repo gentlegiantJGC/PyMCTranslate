@@ -1,0 +1,25 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "barrel"
+    ],
+    "snbt": "{Items: [], Lock: \"\"}",
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
+        ],
+        "open": [
+            "\"true\"",
+            "\"false\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "open": "\"false\""
+    }
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wall"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"red_sandstone\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "north": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"none\""
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"low\""
+                        }
+                    }
+                ]
+            },
+            "east": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "east": "\"none\""
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "east": "\"low\""
+                        }
+                    }
+                ]
+            },
+            "south": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "south": "\"none\""
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "south": "\"low\""
+                        }
+                    }
+                ]
+            },
+            "west": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "west": "\"none\""
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "west": "\"low\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "up": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

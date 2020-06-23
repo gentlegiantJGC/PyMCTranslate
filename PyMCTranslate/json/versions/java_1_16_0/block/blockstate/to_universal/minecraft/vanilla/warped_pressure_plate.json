@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:warped_pressure_plate"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

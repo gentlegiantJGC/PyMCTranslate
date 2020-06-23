@@ -1,0 +1,17 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:warped_wall_sign"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]
