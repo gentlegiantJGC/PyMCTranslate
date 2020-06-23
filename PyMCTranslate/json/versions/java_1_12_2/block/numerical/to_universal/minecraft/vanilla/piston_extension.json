@@ -1,0 +1,305 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "blockId": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "javaNumericalBlockState",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "blockData": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "javaNumericalBlockState",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "facing": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "progress": {
+                    "type": "float",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "source": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "extending": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "keepPacked": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "block_data": {
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"normal\"",
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"normal\"",
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"normal\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"normal\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"normal\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"normal\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sticky\"",
+                            "facing": "\"down\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sticky\"",
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sticky\"",
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sticky\"",
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sticky\"",
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:moving_block"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"sticky\"",
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,174 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "blockId": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "javaNumericalBlockState",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "blockData": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "javaNumericalBlockState",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "facing": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "progress": {
+                    "type": "float",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "source": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "extending": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "keepPacked": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "\"normal\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:piston_head"
+                    }
+                ],
+                "\"sticky\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:sticky_piston_head"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
+            ]
+        }
+    }
+]
