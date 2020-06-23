@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:crimson_fence_gate"
+        "options": "universal_minecraft:fence_gate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"crimson\""
+        }
     },
     {
         "function": "carry_properties",

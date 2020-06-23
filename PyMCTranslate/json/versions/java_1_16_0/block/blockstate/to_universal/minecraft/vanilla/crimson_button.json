@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:crimson_button"
+        "options": "universal_minecraft:button"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"crimson\""
+        }
     },
     {
         "function": "carry_properties",

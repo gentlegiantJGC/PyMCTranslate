@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:polished_blackstone_button"
+        "options": "universal_minecraft:button"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"polished_blackstone\""
+        }
     },
     {
         "function": "carry_properties",

@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:polished_blackstone_pressure_plate"
+        "options": "universal_minecraft:pressure_plate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"polished_blackstone\""
+        }
     },
     {
         "function": "carry_properties",

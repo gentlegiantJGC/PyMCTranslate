@@ -90,109 +90,23 @@
                         "function": "new_block",
                         "options": "minecraft:diorite_wall"
                     }
-                ]
-            },
-            "north": {
-                "\"none\"": [
+                ],
+                "\"blackstone\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "north": "\"false\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:blackstone_wall"
                     }
                 ],
-                "\"low\"": [
+                "\"polished_blackstone_brick\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "north": "\"true\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_brick_wall"
                     }
                 ],
-                "\"tall\"": [
+                "\"polished_blackstone\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "north": "\"true\""
-                        }
-                    }
-                ]
-            },
-            "east": {
-                "\"none\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "east": "\"false\""
-                        }
-                    }
-                ],
-                "\"low\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "east": "\"true\""
-                        }
-                    }
-                ],
-                "\"tall\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "east": "\"true\""
-                        }
-                    }
-                ]
-            },
-            "south": {
-                "\"none\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "south": "\"false\""
-                        }
-                    }
-                ],
-                "\"low\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "south": "\"true\""
-                        }
-                    }
-                ],
-                "\"tall\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "south": "\"true\""
-                        }
-                    }
-                ]
-            },
-            "west": {
-                "\"none\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "west": "\"false\""
-                        }
-                    }
-                ],
-                "\"low\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "west": "\"true\""
-                        }
-                    }
-                ],
-                "\"tall\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "west": "\"true\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_wall"
                     }
                 ]
             }
@@ -201,9 +115,29 @@
     {
         "function": "carry_properties",
         "options": {
+            "east": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "north": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "south": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
             "up": [
                 "\"true\"",
                 "\"false\""
+            ],
+            "west": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
             ]
         }
     }

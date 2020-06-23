@@ -1,6 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:potted_crimson_roots"
+        "options": "universal_minecraft:flower_pot"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "plant": "\"crimson_roots\""
+        }
     }
 ]

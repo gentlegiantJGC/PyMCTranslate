@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:warped_fence_gate"
+        "options": "universal_minecraft:fence_gate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"warped\""
+        }
     },
     {
         "function": "carry_properties",
