@@ -1,6 +1,25 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:piston_extension"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "\"sticky\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
+            ]
+        }
     }
 ]
