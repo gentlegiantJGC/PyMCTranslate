@@ -75,26 +75,22 @@ class SubSetTest(unittest.TestCase):
             spec = dict(zip(keys, spec_))
             yield Block(namespace=namespace_str, base_name=base_name, properties=spec)
 
-
-class AllSubSetTest(SubSetTest):
     def test_sub_set(self):
         translator = PyMCTranslate.new_translation_manager()
-        universal_version = translator.get_version('universal', (1, 0, 0))
+        universal_version = translator.get_universal()
         platforms = ["bedrock", "java"]
         for platform in platforms:
             for version_number in translator.version_numbers(platform):
                 version = translator.get_version(platform, version_number)
                 self._test_sub_set(universal_version, version)
 
-
-@unittest.skip
-class OneSubSetTest(SubSetTest):
-    def test_sub_set(self):
+    @unittest.skip
+    def test_sub_set_single(self):
         translator = PyMCTranslate.new_translation_manager()
-        universal_version = translator.get_version('universal', (1, 0, 0))
+        universal_version = translator.get_universal()
         platform = 'java'
         # platform = 'bedrock'
-        version_number = (1, 13, 0)
+        version_number = (1, 16, 0)
         version = translator.get_version(platform, version_number)
         self._test_sub_set(universal_version, version)
 
