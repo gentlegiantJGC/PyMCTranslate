@@ -1,49 +1,65 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:respawn_anchor"
+        "options": "universal_minecraft:stairs"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"blackstone\""
+        }
     },
     {
         "function": "map_properties",
         "options": {
-            "charges": {
-                "\"0\"": [
+            "upside_down_bit": {
+                "0b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "0"
+                            "half": "\"bottom\""
                         }
                     }
                 ],
-                "\"1\"": [
+                "1b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "1"
+                            "half": "\"top\""
+                        }
+                    }
+                ]
+            },
+            "weirdo_direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
                         }
                     }
                 ],
-                "\"2\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "2"
+                            "facing": "\"west\""
                         }
                     }
                 ],
-                "\"3\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "3"
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "\"4\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "4"
+                            "facing": "\"north\""
                         }
                     }
                 ]

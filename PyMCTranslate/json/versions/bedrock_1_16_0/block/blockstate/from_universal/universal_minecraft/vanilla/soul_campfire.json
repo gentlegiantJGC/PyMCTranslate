@@ -1,6 +1,63 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:soul_campfire"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ]
+            },
+            "lit": {
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extinguished": "0b"
+                        }
+                    }
+                ],
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "extinguished": "1b"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

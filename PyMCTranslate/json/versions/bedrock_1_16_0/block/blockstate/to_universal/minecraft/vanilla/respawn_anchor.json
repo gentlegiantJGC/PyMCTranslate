@@ -1,49 +1,49 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:respawn_anchor"
+        "options": "universal_minecraft:respawn_anchor"
     },
     {
         "function": "map_properties",
         "options": {
-            "charges": {
-                "\"0\"": [
+            "respawn_anchor_charge": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "0"
+                            "charges": "\"0\""
                         }
                     }
                 ],
-                "\"1\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "1"
+                            "charges": "\"1\""
                         }
                     }
                 ],
-                "\"2\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "2"
+                            "charges": "\"2\""
                         }
                     }
                 ],
-                "\"3\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "3"
+                            "charges": "\"3\""
                         }
                     }
                 ],
-                "\"4\"": [
+                "4": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "4"
+                            "charges": "\"4\""
                         }
                     }
                 ]

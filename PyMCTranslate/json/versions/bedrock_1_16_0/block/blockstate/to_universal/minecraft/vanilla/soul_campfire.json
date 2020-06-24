@@ -1,49 +1,59 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:respawn_anchor"
+        "options": "universal_minecraft:soul_campfire"
     },
     {
         "function": "map_properties",
         "options": {
-            "charges": {
-                "\"0\"": [
+            "direction": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "0"
+                            "facing": "\"north\""
                         }
                     }
                 ],
-                "\"1\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "1"
+                            "facing": "\"east\""
                         }
                     }
                 ],
-                "\"2\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "2"
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "\"3\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "3"
+                            "facing": "\"west\""
+                        }
+                    }
+                ]
+            },
+            "extinguished": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"true\""
                         }
                     }
                 ],
-                "\"4\"": [
+                "1b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "respawn_anchor_charge": "4"
+                            "lit": "\"false\""
                         }
                     }
                 ]
