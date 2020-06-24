@@ -4,58 +4,22 @@
         "options": "universal_minecraft:jigsaw"
     },
     {
-        "function": "map_properties",
+        "function": "carry_properties",
         "options": {
-            "facing": {
-                "\"down\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "orientation": "\"down_north\""
-                        }
-                    }
-                ],
-                "\"up\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "orientation": "\"up_north\""
-                        }
-                    }
-                ],
-                "\"north\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "orientation": "\"north_up\""
-                        }
-                    }
-                ],
-                "\"south\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "orientation": "\"south_up\""
-                        }
-                    }
-                ],
-                "\"west\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "orientation": "\"west_up\""
-                        }
-                    }
-                ],
-                "\"east\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "orientation": "\"east_up\""
-                        }
-                    }
-                ]
-            }
+            "orientation": [
+                "\"down_east\"",
+                "\"down_north\"",
+                "\"down_south\"",
+                "\"down_west\"",
+                "\"up_east\"",
+                "\"up_north\"",
+                "\"up_south\"",
+                "\"up_west\"",
+                "\"west_up\"",
+                "\"east_up\"",
+                "\"north_up\"",
+                "\"south_up\""
+            ]
         }
     }
 ]
