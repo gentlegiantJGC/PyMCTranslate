@@ -1,12 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:pumpkin_stem"
+        "options": "universal_minecraft:soul_fire"
     },
     {
         "function": "map_properties",
         "options": {
-            "growth": {
+            "age": {
                 "0": [
                     {
                         "function": "new_properties",
@@ -68,6 +68,70 @@
                         "function": "new_properties",
                         "options": {
                             "age": "\"7\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"8\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"9\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"10\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"11\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"12\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"13\""
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"14\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"15\""
                         }
                     }
                 ]
