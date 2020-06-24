@@ -115,6 +115,9 @@ class TranslationManager:
             version_number = self._get_version_number(platform, version_number)
         return self._versions[platform][version_number]
 
+    def get_universal(self) -> "Version":
+        return self.get_version('universal', (1, 0, 0))
+
     def _get_version_number(self, platform: str, version_number: Union[int, Tuple[int, ...]]) -> Tuple[int, int, int]:
         if (platform, version_number) not in self._version_remap:
             if isinstance(version_number, int):
