@@ -1,6 +1,119 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:pumpkin_stem"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "0"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "2"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "3"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "4"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "5"
+                        }
+                    }
+                ]
+            },
+            "age": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "1"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "2"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "3"
+                        }
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "4"
+                        }
+                    }
+                ],
+                "\"5\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "5"
+                        }
+                    }
+                ],
+                "\"6\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "6"
+                        }
+                    }
+                ],
+                "\"7\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "7"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

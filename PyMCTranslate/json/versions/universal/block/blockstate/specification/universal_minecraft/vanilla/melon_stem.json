@@ -1,5 +1,12 @@
 {
     "properties": {
+        "facing": [
+            "\"none\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
         "age": [
             "\"0\"",
             "\"1\"",
@@ -12,6 +19,7 @@
         ]
     },
     "defaults": {
+        "facing": "\"none\"",
         "age": "\"0\""
     }
 }

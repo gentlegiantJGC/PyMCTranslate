@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:attached_pumpkin_stem"
+        "options": "universal_minecraft:pumpkin_stem"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "age": "\"7\""
+        }
     },
     {
         "function": "carry_properties",
