@@ -118,6 +118,24 @@
                             "wall_block_type": "\"red_nether_brick\""
                         }
                     }
+                ],
+                "\"polished_blackstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_wall"
+                    }
+                ],
+                "\"blackstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blackstone_wall"
+                    }
+                ],
+                "\"polished_blackstone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_brick_wall"
+                    }
                 ]
             },
             "north": {
