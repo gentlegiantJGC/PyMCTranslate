@@ -2,5 +2,11 @@
     {
         "function": "new_block",
         "options": "universal_minecraft:soul_torch"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "facing": "\"up\""
+        }
     }
 ]

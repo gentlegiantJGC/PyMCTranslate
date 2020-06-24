@@ -1,7 +1,14 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:crimson_stem"
+        "options": "universal_minecraft:log"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"crimson\"",
+            "stripped": "\"false\""
+        }
     },
     {
         "function": "carry_properties",

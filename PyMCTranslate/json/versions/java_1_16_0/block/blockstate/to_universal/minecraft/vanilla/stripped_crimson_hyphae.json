@@ -1,7 +1,14 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:stripped_crimson_hyphae"
+        "options": "universal_minecraft:wood"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"crimson\"",
+            "stripped": "\"true\""
+        }
     },
     {
         "function": "carry_properties",

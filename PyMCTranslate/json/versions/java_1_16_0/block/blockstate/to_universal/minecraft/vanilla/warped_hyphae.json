@@ -1,7 +1,14 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:warped_hyphae"
+        "options": "universal_minecraft:wood"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"warped\"",
+            "stripped": "\"false\""
+        }
     },
     {
         "function": "carry_properties",

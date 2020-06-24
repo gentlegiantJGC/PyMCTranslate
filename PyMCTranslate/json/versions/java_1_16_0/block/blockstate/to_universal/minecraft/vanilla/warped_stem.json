@@ -1,7 +1,14 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:warped_stem"
+        "options": "universal_minecraft:log"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"warped\"",
+            "stripped": "\"false\""
+        }
     },
     {
         "function": "carry_properties",

@@ -1,6 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:warped_planks"
+        "options": "universal_minecraft:planks"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"warped\""
+        }
     }
 ]
