@@ -1,5 +1,5 @@
 import PyMCTranslate
-from PyMCTranslate import Version, Block
+from PyMCTranslate.py3.api import Version, Block
 
 translations = PyMCTranslate.new_translation_manager()
 

@@ -3,7 +3,8 @@ from typing import Union, Tuple, List, Dict, Callable, TYPE_CHECKING, Type, Opti
 import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
-from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError, log
+from PyMCTranslate.py3.api import Block, BlockEntity, Entity, ChunkLoadError
+from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.api.version import code_functions
 
 if TYPE_CHECKING:

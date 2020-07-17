@@ -4,7 +4,10 @@ from typing import Union, Tuple, Dict, TYPE_CHECKING
 import glob
 
 import amulet_nbt
-from PyMCTranslate import Block, minified, json_atlas, load_json_gz, log
+from PyMCTranslate.py3.api import Block
+from PyMCTranslate.py3.log import log
+from PyMCTranslate.py3.util.json_gz import load_json_gz
+from PyMCTranslate import minified, json_atlas
 from ..version.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
 from .biomes import BiomeTranslator
 

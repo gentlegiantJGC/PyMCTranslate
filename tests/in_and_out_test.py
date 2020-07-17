@@ -1,5 +1,5 @@
 import PyMCTranslate
-from PyMCTranslate import log
+from PyMCTranslate.py3.log import log
 import itertools
 import amulet_nbt as nbt
 from typing import Optional, Any

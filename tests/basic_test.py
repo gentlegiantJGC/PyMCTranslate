@@ -1,5 +1,5 @@
 import PyMCTranslate
-from PyMCTranslate import Block
+from PyMCTranslate.py3.api import Block
 translations = PyMCTranslate.new_translation_manager()
 
 print('==== bedrock_1_7_0 ====')

@@ -1,4 +1,4 @@
-from PyMCTranslate.py3.raw_text import section_string_to_raw_text_list
+from PyMCTranslate.py3.util.raw_text import section_string_to_raw_text_list
 
 
 def main(nbt):

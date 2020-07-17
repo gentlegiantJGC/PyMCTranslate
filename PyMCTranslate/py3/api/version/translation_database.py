@@ -1,7 +1,9 @@
 from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
 
-from PyMCTranslate import Block, BlockEntity, Entity, Item, BlockItem, minified, json_atlas, log
+from PyMCTranslate import minified, json_atlas
+from PyMCTranslate.py3.api import Block, BlockEntity, Entity, Item, BlockItem
+from PyMCTranslate.py3.log import log
 from ..version.translate import translate
 
 if TYPE_CHECKING:

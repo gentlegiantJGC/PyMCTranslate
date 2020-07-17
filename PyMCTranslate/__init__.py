@@ -1,16 +1,7 @@
 import os
 from typing import Optional
 
-try:
-    from amulet.api.block import Block
-    from amulet.api.block_entity import BlockEntity
-    from amulet.api.entity import Entity
-    from amulet.api.item import Item, BlockItem
-    from amulet.api.errors import ChunkLoadError
-except ModuleNotFoundError:
-    from PyMCTranslate.py3.api.amulet_objects import Block, BlockEntity, Entity, Item, BlockItem, ChunkLoadError
-
-from PyMCTranslate.py3.util import load_json_gz
+from PyMCTranslate.py3.util.json_gz import load_json_gz
 
 pymct_dir = os.path.dirname(__file__)
 try:
@@ -58,7 +49,6 @@ else:
 
 from PyMCTranslate.py3.api.translation_manager import TranslationManager
 from PyMCTranslate.py3.api.version import Version
-from PyMCTranslate.py3 import raw_text
 
 
 def new_translation_manager() -> TranslationManager:

@@ -1,7 +1,7 @@
 from typing import Union, Dict, TYPE_CHECKING
 import numpy
 
-from PyMCTranslate import log
+from PyMCTranslate.py3.log import log
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
