@@ -4,11 +4,11 @@ import amulet_nbt
 from amulet_nbt import NBTFile, TAG_Byte, TAG_Short, TAG_Int, TAG_Long, TAG_Float, TAG_Double, TAG_Byte_Array, TAG_String, TAG_List, TAG_Compound, TAG_Int_Array, TAG_Long_Array
 
 from PyMCTranslate import Block, BlockEntity, Entity, ChunkLoadError, log
-from PyMCTranslate.py3.versions import code_functions
+from PyMCTranslate.py3.api.version import code_functions
 
 if TYPE_CHECKING:
 	from numpy import ndarray
-	from PyMCTranslate.py3.versions import Version
+	from PyMCTranslate.py3.api.version import Version
 
 BlockCoordinates = Tuple[int, int, int]
 
@@ -613,7 +613,7 @@ def _translate(
 				nbt_type = options.get('type', nbt_path[2][-1][1])
 
 				# TODO: some kind of check to make sure that the input data type nbt_path[-1][1] can be cast to nbt_type
-					# perhaps this should be done in the compiler rather than at runtime
+				#  perhaps this should be done in the compiler rather than at runtime
 				new_data['nbt'].append((outer_name, outer_type, path, key, datatype_to_nbt(nbt_type)(val)))
 
 		elif 'map_nbt' == function_name:

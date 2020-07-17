@@ -5,7 +5,7 @@ import importlib.util
 code_functions = {}
 
 
-for code_file in glob.iglob(os.path.join(os.path.dirname(__file__), '..', '..', 'code_functions', '**', '*.py'), recursive=True):
+for code_file in glob.iglob(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'code_functions', '**', '*.py'), recursive=True):
     code_function_name = os.path.splitext(os.path.basename(code_file))[0]
 
     spec = importlib.util.spec_from_file_location(

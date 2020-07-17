@@ -1,4 +1,5 @@
 import os
+from typing import Optional
 
 try:
     from amulet.api.block import Block
@@ -7,11 +8,7 @@ try:
     from amulet.api.item import Item, BlockItem
     from amulet.api.errors import ChunkLoadError
 except ModuleNotFoundError:
-    from PyMCTranslate.py3.amulet_objects.block import Block
-    from PyMCTranslate.py3.amulet_objects.block_entity import BlockEntity
-    from PyMCTranslate.py3.amulet_objects.entity import Entity
-    from PyMCTranslate.py3.amulet_objects.item import Item, BlockItem
-    from PyMCTranslate.py3.amulet_objects.errors import ChunkLoadError
+    from PyMCTranslate.py3.api.amulet_objects import Block, BlockEntity, Entity, Item, BlockItem, ChunkLoadError
 
 from PyMCTranslate.py3.util import load_json_gz
 
@@ -39,7 +36,7 @@ if minified:
                 entity.json.gz
     """
     # load the mega_json file and unpack
-    json_atlas: list = load_json_gz(os.path.join(pymct_dir, 'min_json', 'atlas.json.gz'))
+    json_atlas: Optional[list] = load_json_gz(os.path.join(pymct_dir, 'min_json', 'atlas.json.gz'))
     json_dir = os.path.join(pymct_dir, 'min_json')
 else:
     """
@@ -59,8 +56,8 @@ else:
     json_atlas = None
     json_dir = os.path.join(pymct_dir, 'json')
 
-from PyMCTranslate.py3.translation_manager import TranslationManager
-from PyMCTranslate.py3.versions import Version
+from PyMCTranslate.py3.api.translation_manager import TranslationManager
+from PyMCTranslate.py3.api.version import Version
 from PyMCTranslate.py3 import raw_text
 
 

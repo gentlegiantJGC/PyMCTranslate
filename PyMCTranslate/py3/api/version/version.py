@@ -5,12 +5,11 @@ import glob
 
 import amulet_nbt
 from PyMCTranslate import Block, minified, json_atlas, load_json_gz, log
-from PyMCTranslate.py3.versions.translate import translate
-from ..versions.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
+from ..version.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
 from .biomes import BiomeTranslator
 
 if TYPE_CHECKING:
-    from PyMCTranslate.py3.translation_manager import TranslationManager
+    from PyMCTranslate.py3.api.translation_manager import TranslationManager
 
 _version_data = {}
 
@@ -204,7 +203,7 @@ class Version:
         elif block_tuple in self._numerical_block_map_inverse:
             block_id = self._numerical_block_map_inverse[block_tuple]
         elif block_tuple == ("minecraft", "numerical") and \
-            "block_id" in block.properties and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int):
+                "block_id" in block.properties and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int):
             block_id = block.properties["block_id"].value
 
         if "block_data" in block.properties and isinstance(block.properties["block_data"], amulet_nbt.TAG_Int):

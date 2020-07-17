@@ -416,7 +416,7 @@ class BlockManager:
         ...
 
     @overload
-    def __getitem__(self, item: Int) -> Block:
+    def __getitem__(self, item: int) -> Block:
         ...
 
     def __getitem__(self, item):

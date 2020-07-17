@@ -2,10 +2,10 @@ from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
 
 from PyMCTranslate import Block, BlockEntity, Entity, Item, BlockItem, minified, json_atlas, log
-from ..versions.translate import translate
+from ..version.translate import translate
 
 if TYPE_CHECKING:
-    from ..versions import Version
+    from ..version import Version
 
 BlockCoordinates = Tuple[int, int, int]
 

@@ -1,13 +1,9 @@
 import os
-from typing import Union, Tuple, List, Dict, TYPE_CHECKING
+from typing import Union, Tuple, List, Dict
 
 from .registry import NumericalRegistry, UniversalBiomeRegistry
 from PyMCTranslate import minified
-from PyMCTranslate.py3.versions import Version
-from PyMCTranslate.py3.util import directories
-
-if TYPE_CHECKING:
-    from PyMCTranslate.py3.versions import Version
+from PyMCTranslate.py3.api.version import Version
 
 """
 Structure:
@@ -57,9 +53,11 @@ class TranslationManager:
         else:
             init_file = '__init__.json'
 
-        for version_name in directories(os.path.join(json_path, 'versions')):
-            if os.path.isfile(os.path.join(json_path, 'versions', version_name, init_file)):
-                version = Version(os.path.join(json_path, 'versions', version_name), self)
+        versions_path = os.path.join(json_path, 'versions')
+
+        for version_name in os.listdir(versions_path):
+            if os.path.isfile(os.path.join(versions_path, version_name, init_file)):
+                version = Version(os.path.join(versions_path, version_name), self)
                 self._versions.setdefault(version.platform, {})
                 self._versions[version.platform].setdefault(version.version_number, version)
                 self._version_remap[(version.platform, version.data_version)] = version.version_number
