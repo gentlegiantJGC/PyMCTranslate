@@ -2,7 +2,7 @@ import os
 from typing import Union, Tuple, List, Dict
 
 from .registry import NumericalRegistry, UniversalBiomeRegistry
-from PyMCTranslate import minified
+from PyMCTranslate.py3.meta import minified
 from PyMCTranslate.py3.api.version import Version
 
 """
@@ -32,14 +32,10 @@ class TranslationManager:
         :param json_path: The path to the json directory
         """
         # Storage for each of the Version classes
-        self._versions: Dict[str, Dict[Tuple[int, int, int], 'Version']] = {}
+        self._versions: Dict[str, Dict[Tuple[int, int, int], "Version"]] = {}
         # if a Version class for a specific version number does not exist the neareast will be found and stored here
         self._version_remap: Dict[
-            Tuple[
-                str,
-                Union[Tuple[int, ...], int]
-            ],
-            Tuple[int, int, int]
+            Tuple[str, Union[Tuple[int, ...], int]], Tuple[int, int, int]
         ] = {}
 
         self._biome_registry = NumericalRegistry()
@@ -49,19 +45,23 @@ class TranslationManager:
 
         # Create a class for each of the versions and store them
         if minified:
-            init_file = 'meta.json.gz'
+            init_file = "meta.json.gz"
         else:
-            init_file = '__init__.json'
+            init_file = "__init__.json"
 
-        versions_path = os.path.join(json_path, 'versions')
+        versions_path = os.path.join(json_path, "versions")
 
         for version_name in os.listdir(versions_path):
             if os.path.isfile(os.path.join(versions_path, version_name, init_file)):
                 version = Version(os.path.join(versions_path, version_name), self)
                 self._versions.setdefault(version.platform, {})
-                self._versions[version.platform].setdefault(version.version_number, version)
-                self._version_remap[(version.platform, version.data_version)] = version.version_number
-                if version_name == 'universal':
+                self._versions[version.platform].setdefault(
+                    version.version_number, version
+                )
+                self._version_remap[
+                    (version.platform, version.data_version)
+                ] = version.version_number
+                if version_name == "universal":
                     self._universal_format = version
 
     @property
@@ -96,10 +96,14 @@ class TranslationManager:
         :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
         :return: The a list of version numbers (tuples) for a given platform. Throws an AssertionError if the platform is not present.
         """
-        assert platform in self._versions, f'The requested platform "{platform}" is not present'
+        assert (
+            platform in self._versions
+        ), f'The requested platform "{platform}" is not present'
         return list(self._versions[platform].keys())
 
-    def get_version(self, platform: str, version_number: Union[int, Tuple[int, ...], List[int]]) -> 'Version':
+    def get_version(
+        self, platform: str, version_number: Union[int, Tuple[int, ...], List[int]]
+    ) -> "Version":
         """
         A method to get a Version class.
         :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
@@ -108,22 +112,31 @@ class TranslationManager:
         """
         if isinstance(version_number, list):
             version_number = tuple(version_number)
-        assert platform in self._versions, f'The requested platform "({platform})" is not present'
-        if isinstance(version_number, int) or version_number not in self._versions[platform]:
+        assert (
+            platform in self._versions
+        ), f'The requested platform "({platform})" is not present'
+        if (
+            isinstance(version_number, int)
+            or version_number not in self._versions[platform]
+        ):
             version_number = self._get_version_number(platform, version_number)
         return self._versions[platform][version_number]
 
     def get_universal(self) -> "Version":
-        return self.get_version('universal', (1, 0, 0))
+        return self.get_version("universal", (1, 0, 0))
 
-    def _get_version_number(self, platform: str, version_number: Union[int, Tuple[int, ...]]) -> Tuple[int, int, int]:
+    def _get_version_number(
+        self, platform: str, version_number: Union[int, Tuple[int, ...]]
+    ) -> Tuple[int, int, int]:
         if (platform, version_number) not in self._version_remap:
             if isinstance(version_number, int):
                 previous_version = None
                 next_version = None
                 for version_number_, version in self._versions[platform].items():
                     if version.data_version == version_number:
-                        self._version_remap[(platform, version_number)] = version_number_
+                        self._version_remap[
+                            (platform, version_number)
+                        ] = version_number_
                         return version_number_
                     elif version.data_version > version_number:
                         if next_version is None:
@@ -138,9 +151,13 @@ class TranslationManager:
                 if next_version is not None:
                     self._version_remap[(platform, version_number)] = next_version[1]
                 elif previous_version is not None:
-                    self._version_remap[(platform, version_number)] = previous_version[1]
+                    self._version_remap[(platform, version_number)] = previous_version[
+                        1
+                    ]
                 else:
-                    raise Exception(f'Could not find a version for DataVersion({platform}, {version_number})')
+                    raise Exception(
+                        f"Could not find a version for DataVersion({platform}, {version_number})"
+                    )
 
             elif isinstance(version_number, tuple):
                 previous_version = None
@@ -160,11 +177,18 @@ class TranslationManager:
                     self._version_remap[(platform, version_number)] = next_version
                 elif previous_version is not None:
                     self._version_remap[(platform, version_number)] = previous_version
-                elif version_number[:2] < (1, 12):  # TODO: this is a temporary workaround until more versions are added
+                elif version_number[:2] < (
+                    1,
+                    12,
+                ):  # TODO: this is a temporary workaround until more versions are added
                     self._version_remap[(platform, version_number)] = next_version
                 else:
-                    raise Exception(f'Could not find a version for Version({platform}, {version_number})')
+                    raise Exception(
+                        f"Could not find a version for Version({platform}, {version_number})"
+                    )
 
             else:
-                raise Exception(f'version number type {version_number.__class__} is not supported')
+                raise Exception(
+                    f"version number type {version_number.__class__} is not supported"
+                )
         return self._version_remap[(platform, version_number)]

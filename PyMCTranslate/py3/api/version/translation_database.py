@@ -1,7 +1,7 @@
 from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
 
-from PyMCTranslate import minified, json_atlas
+from PyMCTranslate.py3.meta import minified, json_atlas
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity, Item, BlockItem
 from PyMCTranslate.py3.log import log
 from ..version.translate import translate
@@ -13,31 +13,43 @@ BlockCoordinates = Tuple[int, int, int]
 
 
 class BaseTranslator:
-    def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict, mode: str):
+    def __init__(
+        self,
+        parent_version: "Version",
+        universal_format: "Version",
+        database: dict,
+        mode: str,
+    ):
         self._parent_version = parent_version
         self._universal_format = universal_format
         self._database = database
         self._mode = mode
 
     def _format_key(self, force_blockstate):
-        return 'numerical' if not force_blockstate and self._parent_version.has_abstract_format else 'blockstate'
+        return (
+            "numerical"
+            if not force_blockstate and self._parent_version.has_abstract_format
+            else "blockstate"
+        )
 
     def _translate(
-            self,
-            object_input: Union[Block, Entity],
-            input_spec: dict,
-            mappings: List[dict],
-            output_version: 'Version',
-            force_blockstate: bool,
-            translation_direction: str,
-            get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
-            extra_input: BlockEntity = None,
-            block_location: BlockCoordinates = (0, 0, 0),
-            pre_populate_defaults: bool = True
+        self,
+        object_input: Union[Block, Entity],
+        input_spec: dict,
+        mappings: List[dict],
+        output_version: "Version",
+        force_blockstate: bool,
+        translation_direction: str,
+        get_block_callback: Callable[
+            [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
+        ] = None,
+        extra_input: BlockEntity = None,
+        block_location: BlockCoordinates = (0, 0, 0),
+        pre_populate_defaults: bool = True,
     ) -> Union[
         Tuple[Block, None, bool, bool],
         Tuple[Block, BlockEntity, bool, bool],
-        Tuple[Entity, None, bool, bool]
+        Tuple[Entity, None, bool, bool],
     ]:
         try:
             output, extra_output, extra_needed, cacheable = translate(
@@ -49,11 +61,13 @@ class BaseTranslator:
                 get_block_callback,
                 extra_input,
                 pre_populate_defaults,
-                block_location
+                block_location,
             )
             return output, extra_output, extra_needed, cacheable
         except Exception as e:
-            log.error(f'Error converting {self._mode} {object_input} {translation_direction} in {self._parent_version}.')
+            log.error(
+                f"Error converting {self._mode} {object_input} {translation_direction} in {self._parent_version}."
+            )
             # traceback.print_stack()
             log.error(f'Error and traceback from the above "{e}"', exc_info=True)
             return object_input, extra_input, True, False
@@ -65,11 +79,9 @@ class BaseTranslator:
         :return: A list of all the namespaces
         """
         return list(
-            self._database.get(
-                self._format_key(force_blockstate), {}
-            ).get(
-                'specification', {}
-            ).keys()
+            self._database.get(self._format_key(force_blockstate), {})
+            .get("specification", {})
+            .keys()
         )
 
     def base_names(self, namespace: str, force_blockstate: bool = False) -> List[str]:
@@ -80,11 +92,9 @@ class BaseTranslator:
         :return: A list of base names
         """
         return list(
-            self._database.get(
-                self._format_key(force_blockstate), {}
-            ).get(
-                'specification', {}
-            )[namespace].keys()
+            self._database.get(self._format_key(force_blockstate), {})
+            .get("specification", {})[namespace]
+            .keys()
         )
 
     @staticmethod
@@ -94,7 +104,9 @@ class BaseTranslator:
         else:
             return copy.deepcopy(data)
 
-    def get_specification(self, namespace: str, base_name: str, force_blockstate: bool = False) -> dict:
+    def get_specification(
+        self, namespace: str, base_name: str, force_blockstate: bool = False
+    ) -> dict:
         """
         Get the specification file for the requested object.
         :param namespace: A namespace string as found using the namespaces method
@@ -103,16 +115,18 @@ class BaseTranslator:
         :return: A dictionary containing the specification for the object
         """
         try:
-            data = self._database.get(
-                self._format_key(force_blockstate), {}
-            ).get(
-                'specification', {}
+            data = self._database.get(self._format_key(force_blockstate), {}).get(
+                "specification", {}
             )[namespace][base_name]
             return self._get_data(data)
         except KeyError:
-            raise KeyError(f'Specification for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}')
+            raise KeyError(
+                f"Specification for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}"
+            )
 
-    def get_mapping_to_universal(self, namespace: str, base_name: str, force_blockstate: bool = False) -> List[dict]:
+    def get_mapping_to_universal(
+        self, namespace: str, base_name: str, force_blockstate: bool = False
+    ) -> List[dict]:
         """
         Get the mapping file for the requested object from this version format to the universal format.
         :param namespace: A namespace string as found using the namespaces method
@@ -121,16 +135,18 @@ class BaseTranslator:
         :return: A list of mapping functions to apply to the object
         """
         try:
-            data = self._database.get(
-                self._format_key(force_blockstate), {}
-            ).get(
-                'to_universal', {}
+            data = self._database.get(self._format_key(force_blockstate), {}).get(
+                "to_universal", {}
             )[namespace][base_name]
             return self._get_data(data)
         except KeyError:
-            raise KeyError(f'Mapping to universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}')
+            raise KeyError(
+                f"Mapping to universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}"
+            )
 
-    def get_mapping_from_universal(self, namespace: str, base_name: str, force_blockstate: bool = False) -> List[dict]:
+    def get_mapping_from_universal(
+        self, namespace: str, base_name: str, force_blockstate: bool = False
+    ) -> List[dict]:
         """
         Get the mapping file for the requested object from the universal format to this version format.
         :param namespace: A namespace string as found using the namespaces method
@@ -139,14 +155,14 @@ class BaseTranslator:
         :return: A list of mapping functions to apply to the object
         """
         try:
-            data = self._database.get(
-                self._format_key(force_blockstate), {}
-            ).get(
-                'from_universal', {}
+            data = self._database.get(self._format_key(force_blockstate), {}).get(
+                "from_universal", {}
             )[namespace][base_name]
             return self._get_data(data)
         except KeyError:
-            raise KeyError(f'Mapping from universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}')
+            raise KeyError(
+                f"Mapping from universal for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}"
+            )
 
     def to_universal(self, *args, **kwargs):
         raise NotImplementedError
@@ -156,26 +172,27 @@ class BaseTranslator:
 
 
 class BlockTranslator(BaseTranslator):
-    def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
-        super().__init__(parent_version, universal_format, database, 'block')
+    def __init__(
+        self, parent_version: "Version", universal_format: "Version", database: dict
+    ):
+        super().__init__(parent_version, universal_format, database, "block")
         self._cache = {  # only blocks without a block entity can be cached
-            ('to_universal', False): {},
-            ('to_universal', True): {},
-            ('from_universal', False): {},
-            ('from_universal', True): {}
+            ("to_universal", False): {},
+            ("to_universal", True): {},
+            ("from_universal", False): {},
+            ("from_universal", True): {},
         }
 
     def to_universal(
-            self,
-            object_input: 'Block',
-            get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
-            force_blockstate: bool = False,
-            extra_input: 'BlockEntity' = None,
-            block_location: BlockCoordinates = (0, 0, 0),
-    ) -> Union[
-        Tuple[Block, None, bool],
-        Tuple[Block, BlockEntity, bool]
-    ]:
+        self,
+        object_input: "Block",
+        get_block_callback: Callable[
+            [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
+        ] = None,
+        force_blockstate: bool = False,
+        extra_input: "BlockEntity" = None,
+        block_location: BlockCoordinates = (0, 0, 0),
+    ) -> Union[Tuple[Block, None, bool], Tuple[Block, BlockEntity, bool]]:
         """
         A method to translate a given Block object to the Universal format.
         :param object_input: The object to translate
@@ -188,19 +205,27 @@ class BlockTranslator(BaseTranslator):
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
             extra_needed - bool specifying if the location is needed to fully define the output
         """
-        assert isinstance(object_input, Block), 'Input object must be a block'
-        cache_key = ('to_universal', force_blockstate)
+        assert isinstance(object_input, Block), "Input object must be a block"
+        cache_key = ("to_universal", force_blockstate)
         if extra_input is None:
             if object_input in self._cache[cache_key]:
                 return self._cache[cache_key][object_input]
         else:
-            assert isinstance(extra_input, BlockEntity), 'extra_input must be None or a BlockEntity'
+            assert isinstance(
+                extra_input, BlockEntity
+            ), "extra_input must be None or a BlockEntity"
 
         try:
-            input_spec = self.get_specification(object_input.namespace, object_input.base_name, force_blockstate)
-            mapping = self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate)
+            input_spec = self.get_specification(
+                object_input.namespace, object_input.base_name, force_blockstate
+            )
+            mapping = self.get_mapping_to_universal(
+                object_input.namespace, object_input.base_name, force_blockstate
+            )
         except KeyError:
-            log.warning(f'Could not find translation information for {self._mode} {object_input} to universal in {self._parent_version}. If this is not a vanilla block ignore this message')
+            log.warning(
+                f"Could not find translation information for {self._mode} {object_input} to universal in {self._parent_version}. If this is not a vanilla block ignore this message"
+            )
             return object_input, extra_input, False
 
         output, extra_output, extra_needed, cacheable = self._translate(
@@ -209,10 +234,10 @@ class BlockTranslator(BaseTranslator):
             mapping,
             self._universal_format,
             True,
-            'to universal',
+            "to universal",
             get_block_callback,
             extra_input,
-            block_location
+            block_location,
         )
 
         if cacheable:
@@ -221,16 +246,18 @@ class BlockTranslator(BaseTranslator):
         return output, extra_output, extra_needed
 
     def from_universal(
-            self,
-            object_input: 'Block',
-            get_block_callback: Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]] = None,
-            force_blockstate: bool = False,
-            extra_input: 'BlockEntity' = None,
-            block_location: BlockCoordinates = (0, 0, 0)
+        self,
+        object_input: "Block",
+        get_block_callback: Callable[
+            [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
+        ] = None,
+        force_blockstate: bool = False,
+        extra_input: "BlockEntity" = None,
+        block_location: BlockCoordinates = (0, 0, 0),
     ) -> Union[
         Tuple[Block, None, bool],
         Tuple[Block, BlockEntity, bool],
-        Tuple[Entity, None, bool]
+        Tuple[Entity, None, bool],
     ]:
         """
         A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
@@ -244,22 +271,34 @@ class BlockTranslator(BaseTranslator):
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
             extra_needed - bool specifying if the location is needed to fully define the output
         """
-        assert isinstance(object_input, Block), 'Input object must be a block'
-        cache_key = ('from_universal', force_blockstate)
+        assert isinstance(object_input, Block), "Input object must be a block"
+        cache_key = ("from_universal", force_blockstate)
         if extra_input is None:
             if object_input in self._cache[cache_key]:
                 return self._cache[cache_key][object_input]
         else:
-            assert isinstance(extra_input, BlockEntity), 'extra_input must be None or a BlockEntity'
+            assert isinstance(
+                extra_input, BlockEntity
+            ), "extra_input must be None or a BlockEntity"
 
         try:
-            input_spec = self._universal_format.block.get_specification(object_input.namespace, object_input.base_name)
-            mapping = self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate)
+            input_spec = self._universal_format.block.get_specification(
+                object_input.namespace, object_input.base_name
+            )
+            mapping = self.get_mapping_from_universal(
+                object_input.namespace, object_input.base_name, force_blockstate
+            )
         except KeyError:
-            if object_input.namespace == 'minecraft' and list(object_input.properties.keys()) == ['block_data']:
-                log.debug(f'Probably just a quirk block {object_input} from universal in {self._parent_version}.')
+            if object_input.namespace == "minecraft" and list(
+                object_input.properties.keys()
+            ) == ["block_data"]:
+                log.debug(
+                    f"Probably just a quirk block {object_input} from universal in {self._parent_version}."
+                )
             else:
-                log.warning(f'Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla block ignore this message')
+                log.warning(
+                    f"Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla block ignore this message"
+                )
             return object_input, extra_input, False
 
         output, extra_output, extra_needed, cacheable = self._translate(
@@ -268,10 +307,10 @@ class BlockTranslator(BaseTranslator):
             mapping,
             self._parent_version,
             force_blockstate,
-            'from_universal',
+            "from_universal",
             get_block_callback,
             extra_input,
-            block_location
+            block_location,
         )
 
         if cacheable:
@@ -281,18 +320,14 @@ class BlockTranslator(BaseTranslator):
 
 
 class EntityTranslator(BaseTranslator):
-    def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
-        super().__init__(parent_version, universal_format, database, 'entity')
+    def __init__(
+        self, parent_version: "Version", universal_format: "Version", database: dict
+    ):
+        super().__init__(parent_version, universal_format, database, "entity")
 
     def to_universal(
-            self,
-            object_input: 'Entity',
-            force_blockstate: bool = False
-    ) -> Union[
-        Tuple[Block, None],
-        Tuple[Block, BlockEntity],
-        Tuple[Entity, None]
-    ]:
+        self, object_input: "Entity", force_blockstate: bool = False
+    ) -> Union[Tuple[Block, None], Tuple[Block, BlockEntity], Tuple[Entity, None]]:
         """
         A method to translate a given Entity object to the Universal format.
         :param object_input: The object to translate
@@ -301,13 +336,19 @@ class EntityTranslator(BaseTranslator):
             output - a Block or Entity instance
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
         """
-        assert isinstance(object_input, Entity), 'Input object must be an entity'
+        assert isinstance(object_input, Entity), "Input object must be an entity"
 
         try:
-            input_spec = self.get_specification(object_input.namespace, object_input.base_name, force_blockstate)
-            mapping = self.get_mapping_to_universal(object_input.namespace, object_input.base_name, force_blockstate)
+            input_spec = self.get_specification(
+                object_input.namespace, object_input.base_name, force_blockstate
+            )
+            mapping = self.get_mapping_to_universal(
+                object_input.namespace, object_input.base_name, force_blockstate
+            )
         except KeyError:
-            log.warning(f'Could not find translation information for {self._mode} {object_input} to universal in {self._parent_version}. If this is not a vanilla entity ignore this message')
+            log.warning(
+                f"Could not find translation information for {self._mode} {object_input} to universal in {self._parent_version}. If this is not a vanilla entity ignore this message"
+            )
             return object_input, None
 
         output, extra_output, extra_needed, cacheable = self._translate(
@@ -316,15 +357,13 @@ class EntityTranslator(BaseTranslator):
             mapping,
             self._universal_format,
             True,
-            'to universal'
+            "to universal",
         )
 
         return output, extra_output
 
     def from_universal(
-            self,
-            object_input: 'Entity',
-            force_blockstate: bool = False
+        self, object_input: "Entity", force_blockstate: bool = False
     ) -> Entity:
         """
         A method to translate a given Entity object from the Universal format to the format of this class instance.
@@ -335,13 +374,19 @@ class EntityTranslator(BaseTranslator):
             extra_output - None or BlockEntity if there is a BlockEntity to return (only if output is Block)
             extra_needed - bool specifying if the location is needed to fully define the output
         """
-        assert isinstance(object_input, Entity), 'Input object must be a block'
+        assert isinstance(object_input, Entity), "Input object must be a block"
 
         try:
-            input_spec = self._universal_format.entity.get_specification(object_input.namespace, object_input.base_name)
-            mapping = self.get_mapping_from_universal(object_input.namespace, object_input.base_name, force_blockstate)
+            input_spec = self._universal_format.entity.get_specification(
+                object_input.namespace, object_input.base_name
+            )
+            mapping = self.get_mapping_from_universal(
+                object_input.namespace, object_input.base_name, force_blockstate
+            )
         except KeyError:
-            log.warning(f'Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla entity ignore this message')
+            log.warning(
+                f"Could not find translation information for {self._mode} {object_input} from universal in {self._parent_version}. If this is not a vanilla entity ignore this message"
+            )
             return object_input
 
         output, _, _, _ = self._translate(
@@ -350,24 +395,24 @@ class EntityTranslator(BaseTranslator):
             mapping,
             self._parent_version,
             force_blockstate,
-            'from_universal'
+            "from_universal",
         )
 
         return output
 
 
 class ItemTranslator(BaseTranslator):
-    def __init__(self, parent_version: 'Version', universal_format: 'Version', database: dict):
-        super().__init__(parent_version, universal_format, database, 'item')
+    def __init__(
+        self, parent_version: "Version", universal_format: "Version", database: dict
+    ):
+        super().__init__(parent_version, universal_format, database, "item")
 
     def to_universal(
-            self,
-            object_input: Union[Item, BlockItem]
+        self, object_input: Union[Item, BlockItem]
     ) -> Union[Item, BlockItem]:
         raise NotImplementedError
 
     def from_universal(
-            self,
-            object_input: Union[Item, BlockItem]
+        self, object_input: Union[Item, BlockItem]
     ) -> Union[Item, BlockItem]:
         raise NotImplementedError

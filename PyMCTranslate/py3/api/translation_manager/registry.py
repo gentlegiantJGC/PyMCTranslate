@@ -7,7 +7,9 @@ class BaseNumericalRegistry:
         self._to_int: Dict[str, int] = {}
 
     def register(self, key: str, value: int):
-        assert isinstance(key, str) and isinstance(value, int), 'key must be a string and value must be an int'
+        assert isinstance(key, str) and isinstance(
+            value, int
+        ), "key must be a string and value must be an int"
         self._to_str[value] = key
         self._to_int[key] = value
 
@@ -42,7 +44,9 @@ class UniversalBiomeRegistry(BaseNumericalRegistry):
             while self._item_count in self._to_str:
                 self._item_count += 1
             value = self._item_count
-        assert isinstance(key, str) and isinstance(value, int), 'key must be a string and value must be an int'
+        assert isinstance(key, str) and isinstance(
+            value, int
+        ), "key must be a string and value must be an int"
         self._to_str[value] = key
         self._to_int[key] = value
 

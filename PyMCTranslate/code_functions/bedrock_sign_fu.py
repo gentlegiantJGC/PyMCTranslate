@@ -8,7 +8,7 @@ def main(nbt):
         line_number = 1
         more_lines = True
         while more_lines:
-            key = f'Text{line_number}'
+            key = f"Text{line_number}"
             if key in nbt[1]["utags"][1] and nbt[1]["utags"][1][key][0] == "string":
                 lines.append(nbt[1]["utags"][1][key][1])
             elif line_number <= 4:
@@ -19,6 +19,6 @@ def main(nbt):
 
         text = raw_text_list_to_section_string(lines)
     else:
-        text = ''
+        text = ""
 
     return [["", "compound", [], "Text", ["string", text]]]

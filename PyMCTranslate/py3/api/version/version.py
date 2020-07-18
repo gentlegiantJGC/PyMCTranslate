@@ -7,8 +7,12 @@ import amulet_nbt
 from PyMCTranslate.py3.api import Block
 from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.util.json_gz import load_json_gz
-from PyMCTranslate import minified, json_atlas
-from ..version.translation_database import BlockTranslator, EntityTranslator, ItemTranslator
+from PyMCTranslate.py3.meta import minified, json_atlas
+from ..version.translation_database import (
+    BlockTranslator,
+    EntityTranslator,
+    ItemTranslator,
+)
 from .biomes import BiomeTranslator
 
 if TYPE_CHECKING:
@@ -17,9 +21,9 @@ if TYPE_CHECKING:
 _version_data = {}
 
 _translator_classes = {
-    'block': BlockTranslator,
-    'entity': EntityTranslator,
-    'item': ItemTranslator
+    "block": BlockTranslator,
+    "entity": EntityTranslator,
+    "item": ItemTranslator,
 }
 
 
@@ -28,7 +32,8 @@ class Version:
     Container for the version data.
     There will be an instance of this class for each unique combination of platform and version number.
     """
-    def __init__(self, version_path: str, translation_manager: 'TranslationManager'):
+
+    def __init__(self, version_path: str, translation_manager: "TranslationManager"):
         self._version_path = version_path
         self._translation_manager = translation_manager
         self._block = None
@@ -40,44 +45,65 @@ class Version:
             if minified:
                 # load meta.json.gz and store in _version_data[version_path]["meta"]
                 _version_data[version_path]["meta"] = {
-                    key: json_atlas[value] for key, value in load_json_gz(os.path.join(version_path, 'meta.json.gz')).items()
+                    key: json_atlas[value]
+                    for key, value in load_json_gz(
+                        os.path.join(version_path, "meta.json.gz")
+                    ).items()
                 }
             else:
                 _version_data[version_path]["meta"] = meta = {}
-                for file_name in ['__init__', '__waterloggable__', '__always_waterlogged__', '__biome_data__', '__numerical_block_map__']:
-                    if os.path.isfile(os.path.join(version_path, f'{file_name}.json')):
-                        with open(os.path.join(version_path, f'{file_name}.json')) as f:
+                for file_name in [
+                    "__init__",
+                    "__waterloggable__",
+                    "__always_waterlogged__",
+                    "__biome_data__",
+                    "__numerical_block_map__",
+                ]:
+                    if os.path.isfile(os.path.join(version_path, f"{file_name}.json")):
+                        with open(os.path.join(version_path, f"{file_name}.json")) as f:
                             meta[file_name] = json.load(f)
 
         meta = _version_data[version_path]["meta"]
         # unpack the __init__.json file
-        init_file = meta['__init__']
-        assert isinstance(init_file['platform'], str), f'The platform name defined in {version_path}/__init__.json is not a string'
-        self._platform = init_file['platform']
-        assert isinstance(init_file['version'], list) and len(init_file['version']) == 3, f'The version number defined in {version_path}/__init__.json is incorrectly formatted'
-        self._version_number = tuple(init_file['version'])
-        self._data_version: int = init_file.get('data_version', 0)
-        assert isinstance(init_file['block_format'], str)
-        self._block_format = init_file['block_format']
-        self._has_abstract_format = self._block_format in ['numerical', 'pseudo-numerical']
+        init_file = meta["__init__"]
+        assert isinstance(
+            init_file["platform"], str
+        ), f"The platform name defined in {version_path}/__init__.json is not a string"
+        self._platform = init_file["platform"]
+        assert (
+            isinstance(init_file["version"], list) and len(init_file["version"]) == 3
+        ), f"The version number defined in {version_path}/__init__.json is incorrectly formatted"
+        self._version_number = tuple(init_file["version"])
+        self._data_version: int = init_file.get("data_version", 0)
+        assert isinstance(init_file["block_format"], str)
+        self._block_format = init_file["block_format"]
+        self._has_abstract_format = self._block_format in [
+            "numerical",
+            "pseudo-numerical",
+        ]
 
-        if self.block_format in ('numerical', 'pseudo-numerical'):
+        if self.block_format in ("numerical", "pseudo-numerical"):
             self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {
-                tuple(block_str.split(':', 1)): block_id for block_str, block_id in meta['__numerical_block_map__'].items()
-                if isinstance(block_str, str) and ':' in block_str and isinstance(block_id, int)
+                tuple(block_str.split(":", 1)): block_id
+                for block_str, block_id in meta["__numerical_block_map__"].items()
+                if isinstance(block_str, str)
+                and ":" in block_str
+                and isinstance(block_id, int)
             }
-            self._numerical_block_map: Dict[int, Tuple[str, str]] = {val: key for key, val in self._numerical_block_map_inverse.items()}
+            self._numerical_block_map: Dict[int, Tuple[str, str]] = {
+                val: key for key, val in self._numerical_block_map_inverse.items()
+            }
         else:
             self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
             self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
 
-        if self.platform == 'java' and '__waterloggable__' in meta:
-            self._waterloggable = set(meta['__waterloggable__'])
-            self._always_waterlogged = set(meta['__always_waterlogged__'])
+        if self.platform == "java" and "__waterloggable__" in meta:
+            self._waterloggable = set(meta["__waterloggable__"])
+            self._always_waterlogged = set(meta["__always_waterlogged__"])
         else:
             self._waterloggable = None
             self._always_waterlogged = None
-        self._biome = BiomeTranslator(meta['__biome_data__'], translation_manager)
+        self._biome = BiomeTranslator(meta["__biome_data__"], translation_manager)
 
     def _load_translator(self, attr):
         """
@@ -85,29 +111,40 @@ class Version:
         This allows loading to be deferred until it is needed (if at all)
         """
         if attr not in _translator_classes:
-            raise Exception(f'Unknown translator {attr}')
-        if getattr(self, f'_{attr}') is None:
+            raise Exception(f"Unknown translator {attr}")
+        if getattr(self, f"_{attr}") is None:
             if minified:
-                fpath = os.path.join(self._version_path, f'{attr}.json.gz')
+                fpath = os.path.join(self._version_path, f"{attr}.json.gz")
                 if os.path.isfile(fpath):
                     database = load_json_gz(fpath)
                 else:
-                    log.critical(f'Could not find {attr} database')
+                    log.critical(f"Could not find {attr} database")
                     database = {}
             else:
                 database = {}
-                for fpath in glob.iglob(os.path.join(self._version_path, attr, '**', '*.json'), recursive=True):
+                for fpath in glob.iglob(
+                    os.path.join(self._version_path, attr, "**", "*.json"),
+                    recursive=True,
+                ):
                     database_ = database
-                    rel_path = os.path.relpath(fpath, os.path.join(self._version_path, attr)).split(os.sep)
+                    rel_path = os.path.relpath(
+                        fpath, os.path.join(self._version_path, attr)
+                    ).split(os.sep)
                     assert len(rel_path) == 5
                     for directory in rel_path[:-2]:
                         database_ = database_.setdefault(directory, {})
                     with open(fpath) as f:
                         database_[rel_path[-1][:-5]] = json.load(f)
-            setattr(self, f'_{attr}', _translator_classes[attr](self, self._translation_manager.universal_format, database))
+            setattr(
+                self,
+                f"_{attr}",
+                _translator_classes[attr](
+                    self, self._translation_manager.universal_format, database
+                ),
+            )
 
     def __repr__(self):
-        return f'PyMCTranslate.Version({self.platform}, {self.version_number})'
+        return f"PyMCTranslate.Version({self.platform}, {self.version_number})"
 
     @property
     def block_format(self) -> str:
@@ -149,19 +186,19 @@ class Version:
     @property
     def block(self) -> BlockTranslator:
         """The BlockTranslator for this version"""
-        self._load_translator('block')
+        self._load_translator("block")
         return self._block
 
     @property
     def entity(self) -> EntityTranslator:
         """The EntityTranslator for this version"""
-        self._load_translator('entity')
+        self._load_translator("entity")
         return self._entity
 
     @property
     def item(self) -> ItemTranslator:
         """The ItemTranslator for this version"""
-        self._load_translator('item')
+        self._load_translator("item")
         return self._item
 
     @property
@@ -187,29 +224,52 @@ class Version:
                 return namespace_str in self._waterloggable
         return False
 
-    def ints_to_block(self, block_id: int, block_data: int) -> 'Block':
+    def ints_to_block(self, block_id: int, block_data: int) -> "Block":
         if block_id in self._translation_manager.block_registry:
-            namespace, base_name = self._translation_manager.block_registry.private_to_str(block_id).split(':', 1)
+            (
+                namespace,
+                base_name,
+            ) = self._translation_manager.block_registry.private_to_str(block_id).split(
+                ":", 1
+            )
         elif block_id in self._numerical_block_map:
             namespace, base_name = self._numerical_block_map[block_id]
         else:
-            return Block(namespace="minecraft", base_name="numerical", properties={"block_id": amulet_nbt.TAG_Int(block_id), "block_data": amulet_nbt.TAG_Int(block_data)})
+            return Block(
+                namespace="minecraft",
+                base_name="numerical",
+                properties={
+                    "block_id": amulet_nbt.TAG_Int(block_id),
+                    "block_data": amulet_nbt.TAG_Int(block_data),
+                },
+            )
 
-        return Block(namespace=namespace, base_name=base_name, properties={"block_data": amulet_nbt.TAG_Int(block_data)})
+        return Block(
+            namespace=namespace,
+            base_name=base_name,
+            properties={"block_data": amulet_nbt.TAG_Int(block_data)},
+        )
 
-    def block_to_ints(self, block: 'Block') -> Union[None, Tuple[int, int]]:
+    def block_to_ints(self, block: "Block") -> Union[None, Tuple[int, int]]:
         block_id = None
         block_data = None
         block_tuple = (block.namespace, block.base_name)
         if block.namespaced_name in self._translation_manager.block_registry:
-            block_id = self._translation_manager.block_registry.private_to_int(block.namespaced_name)
+            block_id = self._translation_manager.block_registry.private_to_int(
+                block.namespaced_name
+            )
         elif block_tuple in self._numerical_block_map_inverse:
             block_id = self._numerical_block_map_inverse[block_tuple]
-        elif block_tuple == ("minecraft", "numerical") and \
-                "block_id" in block.properties and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int):
+        elif (
+            block_tuple == ("minecraft", "numerical")
+            and "block_id" in block.properties
+            and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int)
+        ):
             block_id = block.properties["block_id"].value
 
-        if "block_data" in block.properties and isinstance(block.properties["block_data"], amulet_nbt.TAG_Int):
+        if "block_data" in block.properties and isinstance(
+            block.properties["block_data"], amulet_nbt.TAG_Int
+        ):
             block_data = block.properties["block_data"].value
 
         if block_id is not None and block_data is not None:
