@@ -93,6 +93,7 @@ class TranslationManager:
     def version_numbers(self, platform: str) -> List[Tuple[int, int, int]]:
         """
         Get a list of all the version numbers there are Version classes for, for a given platform.
+
         :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
         :return: The a list of version numbers (tuples) for a given platform. Throws an AssertionError if the platform is not present.
         """
@@ -106,6 +107,7 @@ class TranslationManager:
     ) -> "Version":
         """
         A method to get a Version class.
+
         :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
         :param version_number: The version number or DataVersion (use TranslationManager.version_numbers to get version numbers for a given platforms)
         :return: The Version class for the given inputs. Throws an AssertionError if it does not exist.

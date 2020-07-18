@@ -75,6 +75,7 @@ class BaseTranslator:
     def namespaces(self, force_blockstate: bool = False) -> List[str]:
         """
         A list of all the namespaces.
+
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A list of all the namespaces
         """
@@ -87,6 +88,7 @@ class BaseTranslator:
     def base_names(self, namespace: str, force_blockstate: bool = False) -> List[str]:
         """
         A list of all the base names present in a given namespace.
+
         :param namespace: A namespace string as found using the namespaces method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: A list of base names
@@ -109,6 +111,7 @@ class BaseTranslator:
     ) -> dict:
         """
         Get the specification file for the requested object.
+
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
@@ -129,6 +132,7 @@ class BaseTranslator:
     ) -> List[dict]:
         """
         Get the mapping file for the requested object from this version format to the universal format.
+
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
@@ -149,6 +153,7 @@ class BaseTranslator:
     ) -> List[dict]:
         """
         Get the mapping file for the requested object from the universal format to this version format.
+
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
@@ -195,6 +200,7 @@ class BlockTranslator(BaseTranslator):
     ) -> Union[Tuple[Block, None, bool], Tuple[Block, BlockEntity, bool]]:
         """
         A method to translate a given Block object to the Universal format.
+
         :param object_input: The object to translate
         :param get_block_callback: see get_block_at function at the top of _translate for a template
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
@@ -261,6 +267,7 @@ class BlockTranslator(BaseTranslator):
     ]:
         """
         A method to translate a given Block or Entity object from the Universal format to the format of this class instance.
+
         :param object_input: The object to translate
         :param get_block_callback: see get_block_at function at the top of _translate for a template
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
@@ -330,6 +337,7 @@ class EntityTranslator(BaseTranslator):
     ) -> Union[Tuple[Block, None], Tuple[Block, BlockEntity], Tuple[Entity, None]]:
         """
         A method to translate a given Entity object to the Universal format.
+
         :param object_input: The object to translate
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: output, extra_output, extra_needed
@@ -367,6 +375,7 @@ class EntityTranslator(BaseTranslator):
     ) -> Entity:
         """
         A method to translate a given Entity object from the Universal format to the format of this class instance.
+
         :param object_input: The object to translate
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
         :return: output, extra_output, extra_needed

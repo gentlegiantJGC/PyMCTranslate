@@ -426,6 +426,7 @@ def _translate(
     inherited_data: Tuple[Union[str, None], Union[str, None], dict, bool, bool] = None,
 ) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
     """
+
 	:param block_input:
 	:param nbt_input:
 	:param mappings:

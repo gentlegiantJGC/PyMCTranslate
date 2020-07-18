@@ -212,6 +212,7 @@ class Version:
         A method to check if a block can be waterlogged.
         This method is only valid for Java blockstate format worlds,
         Other formats either don't have waterlogged blocks or don't have a limit on what can be stacked.
+
         :param namespace_str: "<namespace>:<base_name>"
         :param always: True to check if the block does not have a waterlogged property but is always waterlogged
         :return: Bool. True if it can be waterlogged. False if not or another format.
