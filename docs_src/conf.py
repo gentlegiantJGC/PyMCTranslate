@@ -41,7 +41,9 @@ release = str(PyMCTranslate.build_number)
 # ones.
 extensions = [
     "sphinx_rtd_theme",
-    "sphinx.ext.autodoc"
+    "sphinx.ext.autodoc",
+    "sphinx_autodoc_typehints",
+    "sphinx.ext.intersphinx",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -66,3 +68,9 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 
 master_doc = 'index'
+
+
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3", None),
+    "NumPy [latest]": ("https://docs.scipy.org/doc/numpy/", None),
+}
