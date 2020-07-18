@@ -2,7 +2,7 @@ Python 3
 ========
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 4
     :caption: PyMCTranslate Python 3 Documentation
     :glob:
 

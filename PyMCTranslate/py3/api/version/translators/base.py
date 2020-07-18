@@ -74,7 +74,7 @@ class BaseTranslator:
 
     def namespaces(self, force_blockstate: bool = False) -> List[str]:
         """
-        A list of all the namespaces.
+        A list of all the valid namespaces for this object type.
 
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of all the namespaces
@@ -87,9 +87,9 @@ class BaseTranslator:
 
     def base_names(self, namespace: str, force_blockstate: bool = False) -> List[str]:
         """
-        A list of all the base names present in a given namespace.
+        A list of all the valid base names present in a given namespace for this object type.
 
-        :param namespace: A namespace string as found using the namespaces method
+        :param namespace: A namespace string as found using the ``namespaces`` method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of base names
         """
@@ -112,8 +112,8 @@ class BaseTranslator:
         """
         Get the specification file for the requested object.
 
-        :param namespace: A namespace string as found using the namespaces method
-        :param base_name: A base name string as found using the base_name method
+        :param namespace: A namespace string as found using the ``namespaces`` method
+        :param base_name: A base name string as found using the ``base_name`` method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A dictionary containing the specification for the object
         """
@@ -133,8 +133,8 @@ class BaseTranslator:
         """
         Get the mapping file for the requested object from this version format to the universal format.
 
-        :param namespace: A namespace string as found using the namespaces method
-        :param base_name: A base name string as found using the base_name method
+        :param namespace: A namespace string as found using the ``namespaces`` method
+        :param base_name: A base name string as found using the ``base_name`` method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of mapping functions to apply to the object
         """
@@ -154,8 +154,8 @@ class BaseTranslator:
         """
         Get the mapping file for the requested object from the universal format to this version format.
 
-        :param namespace: A namespace string as found using the namespaces method
-        :param base_name: A base name string as found using the base_name method
+        :param namespace: A namespace string as found using the ``namespaces`` method
+        :param base_name: A base name string as found using the ``base_name`` method
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of mapping functions to apply to the object
         """
