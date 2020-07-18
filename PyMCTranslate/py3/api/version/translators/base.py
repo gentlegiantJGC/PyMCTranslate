@@ -76,7 +76,7 @@ class BaseTranslator:
         """
         A list of all the namespaces.
 
-        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of all the namespaces
         """
         return list(
@@ -90,7 +90,7 @@ class BaseTranslator:
         A list of all the base names present in a given namespace.
 
         :param namespace: A namespace string as found using the namespaces method
-        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of base names
         """
         return list(
@@ -114,7 +114,7 @@ class BaseTranslator:
 
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
-        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A dictionary containing the specification for the object
         """
         try:
@@ -135,7 +135,7 @@ class BaseTranslator:
 
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
-        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of mapping functions to apply to the object
         """
         try:
@@ -156,7 +156,7 @@ class BaseTranslator:
 
         :param namespace: A namespace string as found using the namespaces method
         :param base_name: A base name string as found using the base_name method
-        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :return: A list of mapping functions to apply to the object
         """
         try:

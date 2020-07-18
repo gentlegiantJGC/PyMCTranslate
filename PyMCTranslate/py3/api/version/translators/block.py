@@ -42,7 +42,7 @@ class BlockTranslator(BaseTranslator):
         :param get_block_callback: A callable with relative coordinates that returns a Block and optional BlockEntity
         :return: A Block, optional BlockEntity and a bool. The bool specifies if block_location and get_block_callback are required to fully define the output data.
         """
-        assert isinstance(block, Block), "Input object must be a block"
+        assert isinstance(block, Block), "block must be a Block instance"
         cache_key = ("to_universal", force_blockstate)
         if block_entity is None:
             if block in self._cache[cache_key]:
@@ -103,10 +103,9 @@ class BlockTranslator(BaseTranslator):
         :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
         :param block_location: The location of the block in the world
         :param get_block_callback: A callable with relative coordinates that returns a Block and optional BlockEntity
-        :return: There are two formats that can be returned. The first is a Block, optional BlockEntity and a bool. The second is an Entity, None and a bool.
-        The bool specifies if block_location and get_block_callback are required to fully define the output data.
+        :return: There are two formats that can be returned. The first is a Block, optional BlockEntity and a bool. The second is an Entity, None and a bool. The bool specifies if block_location and get_block_callback are required to fully define the output data.
         """
-        assert isinstance(block, Block), "Input object must be a block"
+        assert isinstance(block, Block), "block must be a Block instance"
         cache_key = ("from_universal", force_blockstate)
         if block_entity is None:
             if block in self._cache[cache_key]:

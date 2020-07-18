@@ -272,7 +272,7 @@ def translate(
 		:param input_spec: the specification for the object_input from the input block_format
 		:param mappings: the mapping file for the input_object
 		:param output_version: A way for the function to look at the specification being converted to. (used to load default properties)
-		:param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same thing)
+		:param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
 		:param get_block_callback: A callable with relative coordinates that returns a Block and optional BlockEntity
 		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
 		:param pre_populate_defaults: should the nbt structure (if exists) be populated with the default values
