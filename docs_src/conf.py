@@ -42,9 +42,9 @@ release = str(PyMCTranslate.build_number)
 extensions = [
     "sphinx_rtd_theme",
     "sphinx.ext.autodoc",
-    "sphinx_autodoc_typehints",
+    # "sphinx_autodoc_typehints",
     "sphinx.ext.viewcode",
-    "sphinx.ext.intersphinx",
+    # "sphinx.ext.intersphinx",
 ]
 
 # Add any paths that contain templates here, relative to this directory.

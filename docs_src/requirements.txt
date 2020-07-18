@@ -1,4 +1,4 @@
 -r ../requirements.txt
-Sphinx
-sphinx-autodoc-typehints
-sphinx_rtd_theme
+Sphinx>=3.1.2
+sphinx-autodoc-typehints>=1.11.0
+sphinx_rtd_theme>=0.5.0
