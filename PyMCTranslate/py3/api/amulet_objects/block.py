@@ -3,26 +3,23 @@ from __future__ import annotations
 import copy
 from sys import getsizeof
 import re
-from typing import Dict, Iterable, List, Tuple, Union, overload, Generator
+from typing import Dict, Iterable, Tuple, Union
 import amulet_nbt
 
 
 class Block:
     """
-    Class to handle data about various blockstates and allow for extra blocks to be created and interacted with.
-
     .. important::
-       Creating version specific block objects via the `Block()` constructor instead of using
-       :meth:`api.world.World.get_block_instance` is supported but not encouraged. To avoid possible caveats of doing this,
-       make sure to either only instantiate blocks with Amulet blockstate data or use
-       :meth:`api.world.World.get_block_instance` instead
+       If you are using PyMCTranslate in conjunction with amulet_core you must use the amulet_core equivalent of this class
+
+    Class to handle data about various blockstates and allow for extra blocks to be created and interacted with.
 
     Here's a few examples on how create a Block object with extra blocks:
 
     Creating a new Block object with the base of ``stone`` and has an extra block of ``water[level=1]``:
 
-    >>> stone = blockstate_to_block("minecraft:stone")
-    >>> water_level_1 = blockstate_to_block("minecraft:water[level=1]")
+    >>> stone = Block("minecraft", "stone")
+    >>> water_level_1 = Block("minecraft", "water", {"level": amulet_nbt.TAG_String("1")})
     >>> stone_with_extra_block = stone + water_level_1
     >>> repr(stone_with_extra_block)
     'Block(minecraft:stone, minecraft:water[level=1])'
@@ -50,7 +47,7 @@ class Block:
 
     Creating a new Block object by removing a specific layer:
 
-    >>> oak_log_axis_x = blockstate_to_block("minecraft:oak_log[axis=x]")
+    >>> oak_log_axis_x = Block("minecraft", "oak_log", {"axis": amulet_nbt.TAG_String("x"))
     >>> stone_water_granite_water_oak_log = stone_water_granite + water_level_1 + oak_log_axis_x
     >>> repr(stone_water_granite_water_oak_log)
     'Block(minecraft:stone, minecraft:water[level=1], minecraft:granite, minecraft:water[level=1], minecraft:oak_log[axis=x])'
@@ -384,72 +381,3 @@ class Block:
         for eb in self.extra_blocks:
             size += getsizeof(eb)
         return size
-
-
-class BlockManager:
-    """
-    Class to handle the mappings between Block objects and their index-based internal IDs
-    """
-
-    def __init__(self):
-        """
-        Creates a new BlockManager object
-        """
-        self._index_to_block: List[Block] = []
-        self._block_to_index_map: Dict[Block, int] = {}
-
-    def __len__(self):
-        return len(self._index_to_block)
-
-    def __contains__(self, item: Block) -> bool:
-        return item in self._block_to_index_map
-
-    def blocks(self) -> Tuple[Block]:
-        return tuple(self._index_to_block)
-
-    def items(self) -> Generator[Tuple[int, Block]]:
-        for index, block in enumerate(self._index_to_block):
-            yield index, block
-
-    @overload
-    def __getitem__(self, item: Block) -> int:
-        ...
-
-    @overload
-    def __getitem__(self, item: int) -> Block:
-        ...
-
-    def __getitem__(self, item):
-        """
-        If a Block object is passed to this function, it'll return the internal ID/index of the
-        blockstate. If an int is given, this method will return the Block object at that specified index.
-
-        :param item: The Block object or int to get the mapping data of
-        :return: An int if a Block object was supplied, a Block object if an int was supplied
-        """
-        try:
-            if isinstance(item, Block):
-                return self._block_to_index_map[item]
-
-            return self._index_to_block[item]
-        except (KeyError, IndexError):
-            raise KeyError(
-                f"There is no {item} in the BlockManager. "
-                f"You might want to use the `add_block` function for your blocks before accessing them."
-            )
-
-    def get_add_block(self, block: Block) -> int:
-        """
-        Adds a Block object to the internal Block object/ID mappings. If the Block already exists in the mappings,
-        then the existing ID is returned
-
-        :param block: The Block to add to the manager
-        :return: The internal ID of the Block
-        """
-        if block in self._block_to_index_map:
-            return self._block_to_index_map[block]
-
-        self._block_to_index_map[block] = i = len(self._block_to_index_map)
-        self._index_to_block.append(block)
-
-        return i

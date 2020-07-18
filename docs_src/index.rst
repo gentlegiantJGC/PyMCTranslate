@@ -2,9 +2,11 @@ Welcome to PyMCTranslate's documentation!
 =========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
+   :glob:
 
+   py3/index
 
 
 Indices and tables

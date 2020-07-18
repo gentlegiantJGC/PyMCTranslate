@@ -8,6 +8,7 @@ class Item(amulet_nbt.TAG_Compound):
         "base_name": TAG_String,
         "metadata": TAG_Compound
     }
+
     """
 
     def __init__(self, namespace: str, base_name: str, metadata: dict = None):
@@ -40,6 +41,7 @@ class BlockItem(amulet_nbt.TAG_Compound):
         "properties": TAG_Compound
         "metadata": TAG_Compound
     }
+
     """
 
     def __init__(

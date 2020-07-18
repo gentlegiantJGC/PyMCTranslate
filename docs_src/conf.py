@@ -1,4 +1,6 @@
 import sphinx_rtd_theme
+import PyMCTranslate
+import datetime
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -20,11 +22,11 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'PyMCTranslate'
-copyright = '2020, gentlegiantJGC'
+copyright = f'2019 - {datetime.datetime.now().year}, gentlegiantJGC'
 author = 'gentlegiantJGC'
 
 # The full version, including alpha/beta/rc tags
-release = '80'
+release = str(PyMCTranslate.build_number)
 
 
 # -- General configuration ---------------------------------------------------
@@ -33,7 +35,8 @@ release = '80'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme"
+    "sphinx_rtd_theme",
+    "sphinx.ext.autodoc"
 ]
 
 # Add any paths that contain templates here, relative to this directory.

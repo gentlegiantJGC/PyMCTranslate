@@ -5,4 +5,5 @@ from .py3 import (
     BlockTranslator,
     EntityTranslator,
     ItemTranslator,
+    build_number,
 )

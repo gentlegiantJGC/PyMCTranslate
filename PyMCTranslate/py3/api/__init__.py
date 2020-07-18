@@ -15,3 +15,6 @@ except ModuleNotFoundError:
         BlockItem,
         ChunkLoadError,
     )
+
+from .translation_manager import TranslationManager
+from .version import Version, BlockTranslator, EntityTranslator, ItemTranslator

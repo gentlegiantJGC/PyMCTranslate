@@ -1,12 +1,12 @@
 from PyMCTranslate.py3.log import log
-from PyMCTranslate.py3.api.translation_manager import TranslationManager
-from PyMCTranslate.py3.api.version import (
+from PyMCTranslate.py3.api import (
+    TranslationManager,
     Version,
     BlockTranslator,
     EntityTranslator,
     ItemTranslator,
 )
-from PyMCTranslate.py3.meta import pymct_dir, json_dir, json_atlas, minified
+from PyMCTranslate.py3.meta import pymct_dir, json_dir, json_atlas, minified, build_number
 
 
 def new_translation_manager() -> TranslationManager:

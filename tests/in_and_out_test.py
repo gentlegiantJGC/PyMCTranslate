@@ -3,7 +3,7 @@ from PyMCTranslate.py3.log import log
 import itertools
 import amulet_nbt as nbt
 from typing import Optional, Any
-from amulet import Block
+from PyMCTranslate.py3.api import Block
 
 test_block_list: Optional[list] = None
 
