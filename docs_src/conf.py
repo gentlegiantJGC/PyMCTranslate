@@ -1,6 +1,6 @@
 import sphinx_rtd_theme
-import PyMCTranslate
 import datetime
+import os
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -26,7 +26,15 @@ copyright = f'2019 - {datetime.datetime.now().year}, gentlegiantJGC'
 author = 'gentlegiantJGC'
 
 # The full version, including alpha/beta/rc tags
-release = str(PyMCTranslate.build_number)
+with open(os.path.abspath(
+        os.path.join(
+            os.path.dirname(__file__),
+            "..",
+            "PyMCTranslate",
+            "build_number"
+        )
+)) as f:
+    release = f.read()
 
 
 # -- General configuration ---------------------------------------------------
