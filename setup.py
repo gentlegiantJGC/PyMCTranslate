@@ -1,5 +1,4 @@
 import os
-import os.path as op
 from setuptools import setup, Extension, find_packages
 
 CYTHON_COMPILE = False
@@ -21,16 +20,18 @@ packages = find_packages(
         "*",
         "PyMCTranslate.*",
         "PyMCTranslate.py3.*",
-        "PyMCTranslate.py3.amulet_objects.*",
-        "PyMCTranslate.py3.translation_manager.*",
-        "PyMCTranslate.py3.versions.*",
+        "PyMCTranslate.py3.api.*",
+        "PyMCTranslate.py3.api.amulet_objects.*",
+        "PyMCTranslate.py3.api.translation_manager.*",
+        "PyMCTranslate.py3.api.version.*",
+        "PyMCTranslate.py3.util.*",
     ],
     exclude=[],
 )
 
 extensions = [
     Extension(
-        name="PyMCTranslate.py3.translate", sources=["PyMCTranslate/py3/translate.pyx"]
+        name="PyMCTranslate.py3.api.version.translate", sources=["PyMCTranslate/py3/api/version/translate.pyx"]
     )
 ]
 
