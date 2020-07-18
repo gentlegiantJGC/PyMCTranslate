@@ -8,12 +8,12 @@ from PyMCTranslate.py3.api import Block
 from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.util.json_gz import load_json_gz
 from PyMCTranslate.py3.meta import minified, json_atlas
-from ..version.translation_database import (
+from .translators import (
     BlockTranslator,
     EntityTranslator,
     ItemTranslator,
+    BiomeTranslator,
 )
-from .biomes import BiomeTranslator
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.translation_manager import TranslationManager

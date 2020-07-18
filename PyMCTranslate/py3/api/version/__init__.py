@@ -1,2 +1,2 @@
 from .version import Version
-from .translation_database import BlockTranslator, EntityTranslator, ItemTranslator
+from .translators import BlockTranslator, EntityTranslator, ItemTranslator, BiomeTranslator

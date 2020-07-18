@@ -1,6 +1,6 @@
 BlockTranslator class
 =====================
 
-.. autoclass:: PyMCTranslate.py3.api.version.translation_database.BlockTranslator
+.. autoclass:: PyMCTranslate.py3.api.version.translators.block.BlockTranslator
     :members:
     :show-inheritance:

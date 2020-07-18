@@ -1,6 +1,6 @@
 BiomeTranslator class
 =====================
 
-.. autoclass:: PyMCTranslate.py3.api.version.biomes.BiomeTranslator
+.. autoclass:: PyMCTranslate.py3.api.version.translators.biome.BiomeTranslator
     :members:
     :show-inheritance:

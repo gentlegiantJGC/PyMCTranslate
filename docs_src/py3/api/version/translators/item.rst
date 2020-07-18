@@ -1,6 +1,6 @@
 ItemTranslator class
 ====================
 
-.. autoclass:: PyMCTranslate.py3.api.version.translation_database.ItemTranslator
+.. autoclass:: PyMCTranslate.py3.api.version.translators.item.ItemTranslator
     :members:
     :show-inheritance:
