@@ -18,16 +18,26 @@ TranslationManager
 
 class TranslationManager:
     """
-    Container and manager for the different translation versions.
-    A version in this context is a version of the game from a specific platform
-    (ie a unique combination of platform and version number)
+    The TranslationManager is a container for a number of different Version classes.
+
+    Each Version class contains the data for a given game platform and version.
+
+    The TranslationManager exists to be a loader and accessor for the Version classes as well as containing some extra data.
+
+    .. important::
+           This class should not be directly initiated. You should instead use ``PyMCTranslate.new_translation_manager()`` to request that a new translation manager be created.
+
+    .. important::
+       If you are using this library with Amulet an instance of this class will already exist in ``World.translation_manager``.
+
+       If you are for some reason directly interacting with the amulet_core's ``WorldFormatWrapper`` class it too has a ``translation_manager`` attribute.
     """
 
     def __init__(self, json_path: str):
         """
         Call this class with the path to the mapping json files.
-        Note if you are a developer using this library you can call PyMCTranslate.new_translation_manager()
-        to get a new instance of this class with the default mappings set up for you.
+        .. important::
+           This class should not be directly initiated. You should instead use ``PyMCTranslate.new_translation_manager()`` to request that a new translation manager be created.
 
         :param json_path: The path to the json directory
         """
@@ -64,13 +74,21 @@ class TranslationManager:
                 if version_name == "universal":
                     self._universal_format = version
 
+        if self._universal_format is None:
+            raise Exception("Universal format was not found. Something has probably not been set up correctly.")
+
     @property
     def universal_format(self) -> Version:
+        """
+        A simple way to access the Version class for the Universal format.
+
+        :return: The Version class for the Universal format.
+        """
         return self._universal_format
 
     @property
     def biome_registry(self) -> NumericalRegistry:
-        """Use this to register custom biomes"""
+        """A class used to register the biome string name that pairs with the arbitrary numerical id stored in chunk."""
         return self._biome_registry
 
     @property
@@ -80,7 +98,8 @@ class TranslationManager:
 
     @property
     def block_registry(self) -> NumericalRegistry:
-        """Use this to register custom numerical blocks"""
+        """A class used to register the block string name that pairs with the arbitrary numerical id stored in chunk.
+        This is only used in worlds where the blocks ids are stored in numerical format."""
         return self._block_registry
 
     def platforms(self) -> List[str]:
@@ -94,38 +113,35 @@ class TranslationManager:
         """
         Get a list of all the version numbers there are Version classes for, for a given platform.
 
-        :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
-        :return: The a list of version numbers (tuples) for a given platform. Throws an AssertionError if the platform is not present.
+        :param platform: The platform name (use ``TranslationManager.platforms`` to get the valid platforms)
+        :return: The a list of version numbers (tuples) for a given platform.
+        :raise: Raises a KeyError if the platform is not present.
         """
-        assert (
-            platform in self._versions
-        ), f'The requested platform "{platform}" is not present'
+        if platform not in self._versions:
+            raise KeyError(f'The requested platform "{platform}" is not present')
         return list(self._versions[platform].keys())
 
     def get_version(
         self, platform: str, version_number: Union[int, Tuple[int, ...], List[int]]
     ) -> "Version":
         """
-        A method to get a Version class.
+        Get a Version class for the requested platform and version number
 
-        :param platform: The platform name (use TranslationManager.platforms to get the valid platforms)
-        :param version_number: The version number or DataVersion (use TranslationManager.version_numbers to get version numbers for a given platforms)
-        :return: The Version class for the given inputs. Throws an AssertionError if it does not exist.
+        :param platform: The platform name (use ``TranslationManager.platforms`` to get the valid platforms)
+        :param version_number: The version number or DataVersion (use ``TranslationManager.version_numbers`` to get version numbers for a given platforms)
+        :return: The Version class for the given inputs.
+        :raise: Raises a KeyError if it does not exist.
         """
         if isinstance(version_number, list):
             version_number = tuple(version_number)
-        assert (
-            platform in self._versions
-        ), f'The requested platform "({platform})" is not present'
+        if platform not in self._versions:
+            raise KeyError(f'The requested platform "{platform}" is not present')
         if (
             isinstance(version_number, int)
             or version_number not in self._versions[platform]
         ):
             version_number = self._get_version_number(platform, version_number)
         return self._versions[platform][version_number]
-
-    def get_universal(self) -> "Version":
-        return self.get_version("universal", (1, 0, 0))
 
     def _get_version_number(
         self, platform: str, version_number: Union[int, Tuple[int, ...]]
@@ -157,7 +173,7 @@ class TranslationManager:
                         1
                     ]
                 else:
-                    raise Exception(
+                    raise KeyError(
                         f"Could not find a version for DataVersion({platform}, {version_number})"
                     )
 
@@ -185,12 +201,12 @@ class TranslationManager:
                 ):  # TODO: this is a temporary workaround until more versions are added
                     self._version_remap[(platform, version_number)] = next_version
                 else:
-                    raise Exception(
+                    raise KeyError(
                         f"Could not find a version for Version({platform}, {version_number})"
                     )
 
             else:
-                raise Exception(
+                raise KeyError(
                     f"version number type {version_number.__class__} is not supported"
                 )
         return self._version_remap[(platform, version_number)]

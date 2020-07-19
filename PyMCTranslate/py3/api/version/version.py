@@ -29,8 +29,11 @@ _translator_classes = {
 
 class Version:
     """
-    Container for the version data.
-    There will be an instance of this class for each unique combination of platform and version number.
+    This class contains all the specification and translation files for the game version that it represents.
+    There will be an instance of this class in the ``TranslationManager`` for each unique combination of platform and version number.
+
+    .. important::
+           This class should not be directly initiated. You should first create a ``TranslationManager`` class and call ``TranslationManager.get_version`` to get the required Version class.
     """
 
     def __init__(self, version_path: str, translation_manager: "TranslationManager"):
@@ -149,8 +152,18 @@ class Version:
     @property
     def block_format(self) -> str:
         """
-        The format of the blocks in the native SubVersion for this version.
-        This will be one of 'numerical', 'pseudo-numerical', 'blockstate' or 'nbt-blockstate'
+        The native format of the blocks for this game version.
+
+        This will be one of "numerical", "pseudo-numerical", "blockstate" or "nbt-blockstate".
+
+         "numerical" is the old storage format where both block id and data value were numerical values.
+
+         "pseudo-numerical" is the in-between Bedrock format where block ids were namespaced strings but data was still numerical.
+
+         "blockstate" is the new Java format where the block ids are all namespaced strings and the data is stored as properties in NBT.TAG_String format.
+
+         "nbt-blockstate" is the new Bedrock format where the block ids are all namespaced strings and the data is stored as properties in various NBT types.
+
         """
         return self._block_format
 
@@ -164,7 +177,9 @@ class Version:
 
     @property
     def has_abstract_format(self) -> bool:
-        """Property to access if the version has a second abstracted format"""
+        """Property to access if the version has a second custom blockstate format to abstract away the old numerical format.
+        If this is true the ``force_blockstate`` input to various methods can be used to switch between the native and abstract format.
+        If this is false the native format will be used regardless."""
         return self._has_abstract_format
 
     @property
@@ -214,7 +229,7 @@ class Version:
         Other formats either don't have waterlogged blocks or don't have a limit on what can be stacked.
 
         :param namespace_str: "<namespace>:<base_name>"
-        :param always: True to check if the block does not have a waterlogged property but is always waterlogged
+        :param always: True to check if the block does not have a waterlogged property but is always waterlogged. eg: seagrass
         :return: Bool. True if it can be waterlogged. False if not or another format.
         """
         if always:

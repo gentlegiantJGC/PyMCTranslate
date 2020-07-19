@@ -77,7 +77,7 @@ class SubSetTest(unittest.TestCase):
 
     def test_sub_set(self):
         translator = PyMCTranslate.new_translation_manager()
-        universal_version = translator.get_universal()
+        universal_version = translator.universal_format
         platforms = ["bedrock", "java"]
         for platform in platforms:
             for version_number in translator.version_numbers(platform):
@@ -87,7 +87,7 @@ class SubSetTest(unittest.TestCase):
     @unittest.skip
     def test_sub_set_single(self):
         translator = PyMCTranslate.new_translation_manager()
-        universal_version = translator.get_universal()
+        universal_version = translator.universal_format
         platform = 'java'
         # platform = 'bedrock'
         version_number = (1, 16, 0)
