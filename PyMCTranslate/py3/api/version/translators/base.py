@@ -95,7 +95,7 @@ class BaseTranslator:
         """
         return list(
             self._database.get(self._format_key(force_blockstate), {})
-            .get("specification", {})[namespace]
+            .get("specification", {}).get(namespace, {})
             .keys()
         )
 
