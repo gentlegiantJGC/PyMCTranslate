@@ -28,7 +28,7 @@ def main(pymct_path: str):
 
             elif os.path.isdir(os.path.join(versions_dir, version, path)):
                 database = versions.setdefault(version, {})[path] = {}
-                for fpath in glob.iglob(os.path.join(versions_dir, version, path, '**', '*.json'), recursive=True):
+                for fpath in glob.iglob(glob.escape(os.path.join(versions_dir, version, path, '**', '*.json')), recursive=True):
                     database_ = database
                     rel_path = os.path.relpath(fpath, os.path.join(versions_dir, version, path)).split(os.sep)
                     assert len(rel_path) == 5

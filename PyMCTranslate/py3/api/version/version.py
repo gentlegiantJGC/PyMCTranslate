@@ -126,7 +126,9 @@ class Version:
             else:
                 database = {}
                 for fpath in glob.iglob(
-                    os.path.join(self._version_path, attr, "**", "*.json"),
+                    glob.escape(
+                        os.path.join(self._version_path, attr, "**", "*.json")
+                    ),
                     recursive=True,
                 ):
                     database_ = database

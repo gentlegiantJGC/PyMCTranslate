@@ -6,8 +6,10 @@ code_functions = {}
 
 
 for code_file in glob.iglob(
-    os.path.join(
-        os.path.dirname(__file__), "..", "..", "..", "code_functions", "**", "*.py"
+    glob.escape(
+        os.path.join(
+            os.path.dirname(__file__), "..", "..", "..", "code_functions", "**", "*.py"
+        )
     ),
     recursive=True,
 ):
