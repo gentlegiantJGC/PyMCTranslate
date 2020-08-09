@@ -77,10 +77,10 @@ class BiomeTranslator:
 
     def to_universal(self, biome: Union[int, str]) -> int:
         if isinstance(biome, (int, numpy.integer)):
-            biome_str = self.unpack(biome)
+            biome = self.unpack(biome)
 
         # biome should now be a string
-        universal_biome = self.to_universal2(biome_str)
+        universal_biome = self.to_universal2(biome)
 
         if universal_biome not in self._translation_manager.universal_biome_registry:
             self._translation_manager.universal_biome_registry.register(universal_biome)
