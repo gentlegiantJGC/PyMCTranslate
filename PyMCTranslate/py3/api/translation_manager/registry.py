@@ -46,7 +46,7 @@ class UniversalBiomeRegistry(BaseNumericalRegistry):
             value = self._item_count
         assert isinstance(key, str) and isinstance(
             value, int
-        ), "key must be a string and value must be an int"
+        ), f"key must be a string and value must be an int. Got {key}, {value}"
         self._to_str[value] = key
         self._to_int[key] = value
 
