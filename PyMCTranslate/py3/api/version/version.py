@@ -94,7 +94,9 @@ class Version:
             self._block_extra_input[1] = meta["__waterloggable__"]
             self._block_extra_input[2] = meta["__always_waterlogged__"]
 
-        self._biome_callable = lambda: BiomeTranslator(meta["__biome_data__"], translation_manager)
+        self._biome_callable = lambda: BiomeTranslator(
+            meta["__biome_data__"], translation_manager
+        )
 
     def _load_translator(self, attr, *args):
         """
@@ -212,13 +214,22 @@ class Version:
         return self._biome
 
     def is_waterloggable(self, namespace_str: str, always=False):
-        warnings.warn("Version.is_waterloggable is depreciated and will be removed in the future. Please use Version.block.is_waterloggable instead", DeprecationWarning)
+        warnings.warn(
+            "Version.is_waterloggable is depreciated and will be removed in the future. Please use Version.block.is_waterloggable instead",
+            DeprecationWarning,
+        )
         return self.block.is_waterloggable(namespace_str, always)
 
     def ints_to_block(self, block_id: int, block_data: int) -> "Block":
-        warnings.warn("Version.ints_to_block is depreciated and will be removed in the future. Please use Version.block.ints_to_block instead", DeprecationWarning)
+        warnings.warn(
+            "Version.ints_to_block is depreciated and will be removed in the future. Please use Version.block.ints_to_block instead",
+            DeprecationWarning,
+        )
         return self.block.ints_to_block(block_id, block_data)
 
     def block_to_ints(self, block: "Block") -> Union[None, Tuple[int, int]]:
-        warnings.warn("Version.block_to_ints is depreciated and will be removed in the future. Please use Version.block.block_to_ints instead", DeprecationWarning)
+        warnings.warn(
+            "Version.block_to_ints is depreciated and will be removed in the future. Please use Version.block.block_to_ints instead",
+            DeprecationWarning,
+        )
         return self.block.block_to_ints(block)

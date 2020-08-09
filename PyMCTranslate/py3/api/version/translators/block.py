@@ -10,21 +10,20 @@ if TYPE_CHECKING:
     from PyMCTranslate.py3.api.version import Version
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
 
-
 BlockCoordinates = Tuple[int, int, int]
 
 
 class BlockTranslator(BaseTranslator):
     def __init__(
-            self,
-            translation_manager: "TranslationManager",
-            parent_version: "Version",
-            database: dict,
-            raw_numerical_block_map: Dict[str, int],
-            waterloggable,
-            always_waterlogged,
-            block_format,
-            *_
+        self,
+        translation_manager: "TranslationManager",
+        parent_version: "Version",
+        database: dict,
+        raw_numerical_block_map: Dict[str, int],
+        waterloggable,
+        always_waterlogged,
+        block_format,
+        *_,
     ):
         super().__init__(translation_manager, parent_version, database, "block")
         self._cache = {  # only blocks without a block entity can be cached
@@ -132,14 +131,14 @@ class BlockTranslator(BaseTranslator):
         elif block_tuple in self._numerical_block_map_inverse:
             block_id = self._numerical_block_map_inverse[block_tuple]
         elif (
-                block_tuple == ("minecraft", "numerical")
-                and "block_id" in block.properties
-                and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int)
+            block_tuple == ("minecraft", "numerical")
+            and "block_id" in block.properties
+            and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int)
         ):
             block_id = block.properties["block_id"].value
 
         if "block_data" in block.properties and isinstance(
-                block.properties["block_data"], amulet_nbt.TAG_Int
+            block.properties["block_data"], amulet_nbt.TAG_Int
         ):
             block_data = block.properties["block_data"].value
 
@@ -147,14 +146,14 @@ class BlockTranslator(BaseTranslator):
             return block_id, block_data
 
     def to_universal(
-            self,
-            block: "Block",
-            block_entity: "BlockEntity" = None,
-            force_blockstate: bool = False,
-            block_location: BlockCoordinates = (0, 0, 0),
-            get_block_callback: Callable[
-                [Tuple[int, int, int]], Tuple[Block, Optional[BlockEntity]]
-            ] = None,
+        self,
+        block: "Block",
+        block_entity: "BlockEntity" = None,
+        force_blockstate: bool = False,
+        block_location: BlockCoordinates = (0, 0, 0),
+        get_block_callback: Callable[
+            [Tuple[int, int, int]], Tuple[Block, Optional[BlockEntity]]
+        ] = None,
     ) -> Tuple[Block, Optional[BlockEntity], bool]:
         """
         Translate the given Block object and optional BlockEntity from the parent Version's format to the Universal format.
@@ -207,17 +206,16 @@ class BlockTranslator(BaseTranslator):
         return output, extra_output, extra_needed
 
     def from_universal(
-            self,
-            block: "Block",
-            block_entity: "BlockEntity" = None,
-            force_blockstate: bool = False,
-            block_location: BlockCoordinates = (0, 0, 0),
-            get_block_callback: Callable[
-                [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
-            ] = None,
+        self,
+        block: "Block",
+        block_entity: "BlockEntity" = None,
+        force_blockstate: bool = False,
+        block_location: BlockCoordinates = (0, 0, 0),
+        get_block_callback: Callable[
+            [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
+        ] = None,
     ) -> Union[
-        Tuple[Block, Optional[BlockEntity], bool],
-        Tuple[Entity, None, bool],
+        Tuple[Block, Optional[BlockEntity], bool], Tuple[Entity, None, bool],
     ]:
         """
         Translate the given Block object from the Universal format to the parent Version's format.
@@ -247,9 +245,9 @@ class BlockTranslator(BaseTranslator):
                 block.namespace, block.base_name, force_blockstate
             )
         except KeyError:
-            if block.namespace == "minecraft" and list(
-                    block.properties.keys()
-            ) == ["block_data"]:
+            if block.namespace == "minecraft" and list(block.properties.keys()) == [
+                "block_data"
+            ]:
                 log.debug(
                     f"Probably just a quirk block {block} from universal in {self._parent_version}."
                 )

@@ -12,11 +12,11 @@ BlockCoordinates = Tuple[int, int, int]
 
 class ItemTranslator(BaseTranslator):
     def __init__(
-            self,
-            translation_manager: "TranslationManager",
-            parent_version: "Version",
-            database: dict,
-            *_
+        self,
+        translation_manager: "TranslationManager",
+        parent_version: "Version",
+        database: dict,
+        *_
     ):
         super().__init__(translation_manager, parent_version, database, "item")
 

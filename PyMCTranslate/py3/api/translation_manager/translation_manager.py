@@ -75,7 +75,9 @@ class TranslationManager:
                     self._universal_format = version
 
         if self._universal_format is None:
-            raise Exception("Universal format was not found. Something has probably not been set up correctly.")
+            raise Exception(
+                "Universal format was not found. Something has probably not been set up correctly."
+            )
 
     @property
     def universal_format(self) -> Version:

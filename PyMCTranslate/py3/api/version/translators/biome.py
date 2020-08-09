@@ -6,7 +6,6 @@ from PyMCTranslate.py3.log import log
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
 
-
 """
 Biome translation pipeline
     version int

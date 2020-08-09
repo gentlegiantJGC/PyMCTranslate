@@ -13,19 +13,15 @@ BlockCoordinates = Tuple[int, int, int]
 
 class EntityTranslator(BaseTranslator):
     def __init__(
-            self,
-            translation_manager: "TranslationManager",
-            parent_version: "Version",
-            database: dict,
-            *_
+        self,
+        translation_manager: "TranslationManager",
+        parent_version: "Version",
+        database: dict,
+        *_,
     ):
         super().__init__(translation_manager, parent_version, database, "entity")
 
-    def to_universal(
-            self,
-            entity: "Entity",
-            force_blockstate: bool = False
-    ) -> Entity:
+    def to_universal(self, entity: "Entity", force_blockstate: bool = False) -> Entity:
         """
         A method to translate a given Entity object to the Universal format.
 
@@ -49,20 +45,13 @@ class EntityTranslator(BaseTranslator):
             return entity
 
         output, _, _, _ = self._translate(
-            entity,
-            input_spec,
-            mapping,
-            self._universal_format,
-            True,
-            "to universal",
+            entity, input_spec, mapping, self._universal_format, True, "to universal",
         )
 
         return output
 
     def from_universal(
-            self,
-            entity: "Entity",
-            force_blockstate: bool = False
+        self, entity: "Entity", force_blockstate: bool = False
     ) -> Union[Tuple[Block, Optional[BlockEntity]], Tuple[Entity, None]]:
         """
         A method to translate a given Entity object from the Universal format to the format of this class instance.
