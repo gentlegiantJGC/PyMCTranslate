@@ -1,9 +1,9 @@
 import json
 import os
-from typing import Union, Tuple, Dict, TYPE_CHECKING
+from typing import Union, Tuple, TYPE_CHECKING
 import glob
+import warnings
 
-import amulet_nbt
 from PyMCTranslate.py3.api import Block
 from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.util.json_gz import load_json_gz
@@ -42,6 +42,7 @@ class Version:
         self._block = None
         self._entity = None
         self._item = None
+        self._biome = None
 
         if version_path not in _version_data:
             _version_data[version_path] = {}
@@ -85,30 +86,17 @@ class Version:
             "pseudo-numerical",
         ]
 
-        if self.block_format in ("numerical", "pseudo-numerical"):
-            self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {
-                tuple(block_str.split(":", 1)): block_id
-                for block_str, block_id in meta["__numerical_block_map__"].items()
-                if isinstance(block_str, str)
-                and ":" in block_str
-                and isinstance(block_id, int)
-            }
-            self._numerical_block_map: Dict[int, Tuple[str, str]] = {
-                val: key for key, val in self._numerical_block_map_inverse.items()
-            }
-        else:
-            self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
-            self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
+        self._block_extra_input = [{}, None, None, self._block_format]
+        if self.has_abstract_format:
+            self._block_extra_input[0] = meta["__numerical_block_map__"]
 
         if self.platform == "java" and "__waterloggable__" in meta:
-            self._waterloggable = set(meta["__waterloggable__"])
-            self._always_waterlogged = set(meta["__always_waterlogged__"])
-        else:
-            self._waterloggable = None
-            self._always_waterlogged = None
-        self._biome = BiomeTranslator(meta["__biome_data__"], translation_manager)
+            self._block_extra_input[1] = meta["__waterloggable__"]
+            self._block_extra_input[2] = meta["__always_waterlogged__"]
 
-    def _load_translator(self, attr):
+        self._biome_callable = lambda: BiomeTranslator(meta["__biome_data__"], translation_manager)
+
+    def _load_translator(self, attr, *args):
         """
         Internal method to load the data related to this class.
         This allows loading to be deferred until it is needed (if at all)
@@ -142,7 +130,7 @@ class Version:
                 self,
                 f"_{attr}",
                 _translator_classes[attr](
-                    self, self._translation_manager.universal_format, database
+                    self._translation_manager, self, database, *args
                 ),
             )
 
@@ -201,7 +189,7 @@ class Version:
     @property
     def block(self) -> BlockTranslator:
         """The BlockTranslator for this version"""
-        self._load_translator("block")
+        self._load_translator("block", *self._block_extra_input)
         return self._block
 
     @property
@@ -219,74 +207,18 @@ class Version:
     @property
     def biome(self) -> BiomeTranslator:
         """The BiomeTranslator for this version"""
+        if self._biome is None:
+            self._biome = self._biome_callable()
         return self._biome
 
-    # TODO: consider moving these to the block translator
     def is_waterloggable(self, namespace_str: str, always=False):
-        """
-        A method to check if a block can be waterlogged.
-        This method is only valid for Java blockstate format worlds,
-        Other formats either don't have waterlogged blocks or don't have a limit on what can be stacked.
-
-        :param namespace_str: "<namespace>:<base_name>"
-        :param always: True to check if the block does not have a waterlogged property but is always waterlogged. eg: seagrass
-        :return: Bool. True if it can be waterlogged. False if not or another format.
-        """
-        if always:
-            if isinstance(self._always_waterlogged, set):
-                return namespace_str in self._always_waterlogged
-        else:
-            if isinstance(self._waterloggable, set):
-                return namespace_str in self._waterloggable
-        return False
+        warnings.warn("Version.is_waterloggable is depreciated and will be removed in the future. Please use Version.block.is_waterloggable instead", DeprecationWarning)
+        return self.block.is_waterloggable(namespace_str, always)
 
     def ints_to_block(self, block_id: int, block_data: int) -> "Block":
-        if block_id in self._translation_manager.block_registry:
-            (
-                namespace,
-                base_name,
-            ) = self._translation_manager.block_registry.private_to_str(block_id).split(
-                ":", 1
-            )
-        elif block_id in self._numerical_block_map:
-            namespace, base_name = self._numerical_block_map[block_id]
-        else:
-            return Block(
-                namespace="minecraft",
-                base_name="numerical",
-                properties={
-                    "block_id": amulet_nbt.TAG_Int(block_id),
-                    "block_data": amulet_nbt.TAG_Int(block_data),
-                },
-            )
-
-        return Block(
-            namespace=namespace,
-            base_name=base_name,
-            properties={"block_data": amulet_nbt.TAG_Int(block_data)},
-        )
+        warnings.warn("Version.ints_to_block is depreciated and will be removed in the future. Please use Version.block.ints_to_block instead", DeprecationWarning)
+        return self.block.ints_to_block(block_id, block_data)
 
     def block_to_ints(self, block: "Block") -> Union[None, Tuple[int, int]]:
-        block_id = None
-        block_data = None
-        block_tuple = (block.namespace, block.base_name)
-        if block.namespaced_name in self._translation_manager.block_registry:
-            block_id = self._translation_manager.block_registry.private_to_int(
-                block.namespaced_name
-            )
-        elif block_tuple in self._numerical_block_map_inverse:
-            block_id = self._numerical_block_map_inverse[block_tuple]
-        elif (
-            block_tuple == ("minecraft", "numerical")
-            and "block_id" in block.properties
-            and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int)
-        ):
-            block_id = block.properties["block_id"].value
-
-        if "block_data" in block.properties and isinstance(
-            block.properties["block_data"], amulet_nbt.TAG_Int
-        ):
-            block_data = block.properties["block_data"].value
-
-        if block_id is not None and block_data is not None:
-            return block_id, block_data
+        warnings.warn("Version.block_to_ints is depreciated and will be removed in the future. Please use Version.block.block_to_ints instead", DeprecationWarning)
+        return self.block.block_to_ints(block)

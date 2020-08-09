@@ -5,16 +5,21 @@ from PyMCTranslate.py3.log import log
 from .base import BaseTranslator
 
 if TYPE_CHECKING:
-    from ..version import Version
+    from PyMCTranslate.py3.api.version import Version
+    from PyMCTranslate.py3.api.translation_manager import TranslationManager
 
 BlockCoordinates = Tuple[int, int, int]
 
 
 class EntityTranslator(BaseTranslator):
     def __init__(
-            self, parent_version: "Version", universal_format: "Version", database: dict
+            self,
+            translation_manager: "TranslationManager",
+            parent_version: "Version",
+            database: dict,
+            *_
     ):
-        super().__init__(parent_version, universal_format, database, "entity")
+        super().__init__(translation_manager, parent_version, database, "entity")
 
     def to_universal(
             self,

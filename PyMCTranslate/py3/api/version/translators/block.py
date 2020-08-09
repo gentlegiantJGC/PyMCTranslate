@@ -1,26 +1,150 @@
-from typing import Tuple, Union, Callable, TYPE_CHECKING, Optional
+from typing import Tuple, Union, Callable, TYPE_CHECKING, Optional, Dict
+
+import amulet_nbt
 
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity
 from PyMCTranslate.py3.log import log
 from .base import BaseTranslator
 
 if TYPE_CHECKING:
-    from ..version import Version
+    from PyMCTranslate.py3.api.version import Version
+    from PyMCTranslate.py3.api.translation_manager import TranslationManager
+
 
 BlockCoordinates = Tuple[int, int, int]
 
 
 class BlockTranslator(BaseTranslator):
     def __init__(
-            self, parent_version: "Version", universal_format: "Version", database: dict
+            self,
+            translation_manager: "TranslationManager",
+            parent_version: "Version",
+            database: dict,
+            raw_numerical_block_map: Dict[str, int],
+            waterloggable,
+            always_waterlogged,
+            block_format,
+            *_
     ):
-        super().__init__(parent_version, universal_format, database, "block")
+        super().__init__(translation_manager, parent_version, database, "block")
         self._cache = {  # only blocks without a block entity can be cached
             ("to_universal", False): {},
             ("to_universal", True): {},
             ("from_universal", False): {},
             ("from_universal", True): {},
         }
+        self._block_format = block_format
+
+        if parent_version.has_abstract_format:
+            self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {
+                tuple(block_str.split(":", 1)): block_id
+                for block_str, block_id in raw_numerical_block_map.items()
+                if isinstance(block_str, str)
+                and ":" in block_str
+                and isinstance(block_id, int)
+            }
+            self._numerical_block_map: Dict[int, Tuple[str, str]] = {
+                val: key for key, val in self._numerical_block_map_inverse.items()
+            }
+        else:
+            self._numerical_block_map: Dict[int, Tuple[str, str]] = {}
+            self._numerical_block_map_inverse: Dict[Tuple[str, str], int] = {}
+
+        self._waterloggable = None
+        self._always_waterlogged = None
+
+        if waterloggable:
+            self._waterloggable = set(waterloggable)
+        if always_waterlogged:
+            self._always_waterlogged = set(always_waterlogged)
+
+    @property
+    def block_format(self) -> str:
+        """
+        The native format of the blocks for this game version.
+
+        This will be one of "numerical", "pseudo-numerical", "blockstate" or "nbt-blockstate".
+
+         "numerical" is the old storage format where both block id and data value were numerical values.
+
+         "pseudo-numerical" is the in-between Bedrock format where block ids were namespaced strings but data was still numerical.
+
+         "blockstate" is the new Java format where the block ids are all namespaced strings and the data is stored as properties in NBT.TAG_String format.
+
+         "nbt-blockstate" is the new Bedrock format where the block ids are all namespaced strings and the data is stored as properties in various NBT types.
+
+        """
+        return self._block_format
+
+    # TODO: consider moving these to the block translator
+    def is_waterloggable(self, namespace_str: str, always=False):
+        """
+        A method to check if a block can be waterlogged.
+        This method is only valid for Java blockstate format worlds,
+        Other formats either don't have waterlogged blocks or don't have a limit on what can be stacked.
+
+        :param namespace_str: "<namespace>:<base_name>"
+        :param always: True to check if the block does not have a waterlogged property but is always waterlogged. eg: seagrass
+        :return: Bool. True if it can be waterlogged. False if not or another format.
+        """
+        if always:
+            if isinstance(self._always_waterlogged, set):
+                return namespace_str in self._always_waterlogged
+        else:
+            if isinstance(self._waterloggable, set):
+                return namespace_str in self._waterloggable
+        return False
+
+    def ints_to_block(self, block_id: int, block_data: int) -> "Block":
+        if block_id in self._translation_manager.block_registry:
+            (
+                namespace,
+                base_name,
+            ) = self._translation_manager.block_registry.private_to_str(block_id).split(
+                ":", 1
+            )
+        elif block_id in self._numerical_block_map:
+            namespace, base_name = self._numerical_block_map[block_id]
+        else:
+            return Block(
+                namespace="minecraft",
+                base_name="numerical",
+                properties={
+                    "block_id": amulet_nbt.TAG_Int(block_id),
+                    "block_data": amulet_nbt.TAG_Int(block_data),
+                },
+            )
+
+        return Block(
+            namespace=namespace,
+            base_name=base_name,
+            properties={"block_data": amulet_nbt.TAG_Int(block_data)},
+        )
+
+    def block_to_ints(self, block: "Block") -> Union[None, Tuple[int, int]]:
+        block_id = None
+        block_data = None
+        block_tuple = (block.namespace, block.base_name)
+        if block.namespaced_name in self._translation_manager.block_registry:
+            block_id = self._translation_manager.block_registry.private_to_int(
+                block.namespaced_name
+            )
+        elif block_tuple in self._numerical_block_map_inverse:
+            block_id = self._numerical_block_map_inverse[block_tuple]
+        elif (
+                block_tuple == ("minecraft", "numerical")
+                and "block_id" in block.properties
+                and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int)
+        ):
+            block_id = block.properties["block_id"].value
+
+        if "block_data" in block.properties and isinstance(
+                block.properties["block_data"], amulet_nbt.TAG_Int
+        ):
+            block_data = block.properties["block_data"].value
+
+        if block_id is not None and block_data is not None:
+            return block_id, block_data
 
     def to_universal(
             self,
