@@ -65,45 +65,14 @@ class BiomeTranslator:
             )  # TODO: perhaps find a way to assign default dynamically
         return biome_int
 
-    def to_universal2(self, biome: str) -> str:
+    def to_universal(self, biome: str) -> str:
         """Convert the version namespaced string to the universal namespaced string"""
         if biome in self._biome_to_universal:
             biome = self._biome_to_universal[biome]
         return biome
 
-    def from_universal2(self, biome: str) -> str:
+    def from_universal(self, biome: str) -> str:
         """Convert the universal namespaced string to the version namespaced string"""
         if biome in self._biome_from_universal:
             biome = self._biome_from_universal[biome]
         return biome
-
-    def to_universal(self, biome: Union[int, str]) -> int:
-        if isinstance(biome, (int, numpy.integer)):
-            biome = self.unpack(biome)
-
-        # biome should now be a string
-        universal_biome = self.to_universal2(biome)
-
-        if universal_biome not in self._translation_manager.universal_biome_registry:
-            self._translation_manager.universal_biome_registry.register(universal_biome)
-        return self._translation_manager.universal_biome_registry.to_int(
-            universal_biome
-        )
-
-    def from_universal(self, biome: Union[int, str]) -> int:
-        if not isinstance(biome, int) and numpy.issubdtype(
-            biome.__class__, numpy.integer
-        ):
-            biome = int(biome)
-        if isinstance(biome, int):
-            if biome in self._translation_manager.universal_biome_registry:
-                biome = self._translation_manager.universal_biome_registry.to_str(biome)
-            else:
-                biome = "universal_minecraft:plains"
-
-        # biome is now the universal string
-        version_biome = self.from_universal2(biome)
-
-        version_biome = self.pack(version_biome)
-
-        return version_biome

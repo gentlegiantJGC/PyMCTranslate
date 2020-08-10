@@ -32,26 +32,3 @@ class NumericalRegistry(BaseNumericalRegistry):
     def private_to_int(self, key: str, default=None):
         """PRIVATE: Use the method in the Version class"""
         return self._to_int.get(key, default)
-
-
-class UniversalBiomeRegistry(BaseNumericalRegistry):
-    def __init__(self):
-        super(UniversalBiomeRegistry, self).__init__()
-        self._item_count = 0
-
-    def register(self, key: str, value: int = None):
-        if value is None:
-            while self._item_count in self._to_str:
-                self._item_count += 1
-            value = self._item_count
-        assert isinstance(key, str) and isinstance(
-            value, int
-        ), f"key must be a string and value must be an int. Got {key}, {value}"
-        self._to_str[value] = key
-        self._to_int[key] = value
-
-    def to_str(self, value: int, default=None):
-        return self._to_str.get(value, default)
-
-    def to_int(self, key: str, default=None):
-        return self._to_int.get(key, default)
