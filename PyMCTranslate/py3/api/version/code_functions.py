@@ -4,10 +4,15 @@ import importlib.util
 
 code_functions = {}
 
-
 for code_file in glob.iglob(
     os.path.join(
-        glob.escape(os.path.dirname(__file__)), "..", "..", "..", "code_functions", "**", "*.py"
+        glob.escape(os.path.dirname(__file__)),
+        "..",
+        "..",
+        "..",
+        "code_functions",
+        "**",
+        "*.py",
     ),
     recursive=True,
 ):

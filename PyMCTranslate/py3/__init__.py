@@ -6,7 +6,13 @@ from PyMCTranslate.py3.api import (
     EntityTranslator,
     ItemTranslator,
 )
-from PyMCTranslate.py3.meta import pymct_dir, json_dir, json_atlas, minified, build_number
+from PyMCTranslate.py3.meta import (
+    pymct_dir,
+    json_dir,
+    json_atlas,
+    minified,
+    build_number,
+)
 
 
 def new_translation_manager() -> TranslationManager:

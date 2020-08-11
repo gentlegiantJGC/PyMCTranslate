@@ -17,4 +17,10 @@ except ModuleNotFoundError:
     )
 
 from .translation_manager import TranslationManager
-from .version import Version, BlockTranslator, EntityTranslator, ItemTranslator, BiomeTranslator
+from .version import (
+    Version,
+    BlockTranslator,
+    EntityTranslator,
+    ItemTranslator,
+    BiomeTranslator,
+)

@@ -8,6 +8,7 @@ from PyMCTranslate.py3.api.version.translate import translate
 
 if TYPE_CHECKING:
     from ..version import Version
+    from PyMCTranslate import TranslationManager
 
 BlockCoordinates = Tuple[int, int, int]
 
@@ -15,13 +16,14 @@ BlockCoordinates = Tuple[int, int, int]
 class BaseTranslator:
     def __init__(
         self,
+        translation_manager: "TranslationManager",
         parent_version: "Version",
-        universal_format: "Version",
         database: dict,
         mode: str,
     ):
+        self._translation_manager = translation_manager
         self._parent_version = parent_version
-        self._universal_format = universal_format
+        self._universal_format = translation_manager.universal_format
         self._database = database
         self._mode = mode
 
@@ -95,7 +97,8 @@ class BaseTranslator:
         """
         return list(
             self._database.get(self._format_key(force_blockstate), {})
-            .get("specification", {}).get(namespace, {})
+            .get("specification", {})
+            .get(namespace, {})
             .keys()
         )
 

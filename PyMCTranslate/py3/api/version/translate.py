@@ -53,7 +53,6 @@ AnyNBTClass = Union[
     Type[TAG_Long_Array],
 ]
 
-
 _datatype_to_nbt: Dict[str, AnyNBTClass] = {
     "byte": TAG_Byte,
     "short": TAG_Short,
@@ -173,7 +172,6 @@ def nbt_from_list(
     ],
     default_template: str = None,
 ) -> NBTFile:
-
     if default_template is not None:
         nbt_object = amulet_nbt.from_snbt(default_template)
     else:

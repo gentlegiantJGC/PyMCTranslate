@@ -1,7 +1,7 @@
 import os
 from typing import Union, Tuple, List, Dict
 
-from .registry import NumericalRegistry, UniversalBiomeRegistry
+from .registry import NumericalRegistry
 from PyMCTranslate.py3.meta import minified
 from PyMCTranslate.py3.api.version import Version
 
@@ -49,7 +49,6 @@ class TranslationManager:
         ] = {}
 
         self._biome_registry = NumericalRegistry()
-        self._universal_biome_registry = UniversalBiomeRegistry()
         self._block_registry = NumericalRegistry()
         self._universal_format = None
 
@@ -75,7 +74,9 @@ class TranslationManager:
                     self._universal_format = version
 
         if self._universal_format is None:
-            raise Exception("Universal format was not found. Something has probably not been set up correctly.")
+            raise Exception(
+                "Universal format was not found. Something has probably not been set up correctly."
+            )
 
     @property
     def universal_format(self) -> Version:
@@ -90,11 +91,6 @@ class TranslationManager:
     def biome_registry(self) -> NumericalRegistry:
         """A class used to register the biome string name that pairs with the arbitrary numerical id stored in chunk."""
         return self._biome_registry
-
-    @property
-    def universal_biome_registry(self) -> UniversalBiomeRegistry:
-        """For internal use"""
-        return self._universal_biome_registry
 
     @property
     def block_registry(self) -> NumericalRegistry:
