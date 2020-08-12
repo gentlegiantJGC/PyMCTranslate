@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:piston"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "extended": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
+            ]
+        }
+    }
+]
