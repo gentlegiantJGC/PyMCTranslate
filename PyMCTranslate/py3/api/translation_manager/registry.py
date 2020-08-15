@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, Generator, Tuple
 
 
 class BaseNumericalRegistry:
@@ -19,6 +19,9 @@ class BaseNumericalRegistry:
         elif isinstance(item, str):
             return item in self._to_int
         return False
+
+    def __iter__(self) -> Generator[Tuple[int, str], None, None]:
+        yield from self._to_str.items()
 
 
 class NumericalRegistry(BaseNumericalRegistry):

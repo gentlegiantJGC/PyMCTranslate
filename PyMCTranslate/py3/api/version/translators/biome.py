@@ -1,4 +1,4 @@
-from typing import Union, Dict, TYPE_CHECKING
+from typing import Union, Dict, TYPE_CHECKING, List
 import numpy
 
 from PyMCTranslate.py3.log import log
@@ -76,3 +76,9 @@ class BiomeTranslator:
         if biome in self._biome_from_universal:
             biome = self._biome_from_universal[biome]
         return biome
+
+    @property
+    def biome_ids(self) -> List[str]:
+        biomes = set(self._biome_int_to_str.values())
+        biomes.update(dict(self._translation_manager.biome_registry).values())
+        return list(biomes)
