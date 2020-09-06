@@ -6,19 +6,19 @@
     {
         "function": "new_properties",
         "options": {
-            "huge_mushroom_bits": "10"
+            "huge_mushroom_bits": "15"
         }
     },
     {
         "function": "map_properties",
         "options": {
             "up": {
-                "\"true\"": [
+                "\"false\"": [
                     {
                         "function": "map_properties",
                         "options": {
                             "down": {
-                                "\"true\"": [
+                                "\"false\"": [
                                     {
                                         "function": "map_properties",
                                         "options": {
@@ -42,7 +42,7 @@
                                                                                                     {
                                                                                                         "function": "new_properties",
                                                                                                         "options": {
-                                                                                                            "huge_mushroom_bits": "15"
+                                                                                                            "huge_mushroom_bits": "10"
                                                                                                         }
                                                                                                     }
                                                                                                 ]
