@@ -19,5 +19,69 @@
                 "\"down\""
             ]
         }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "extended": {
+                "\"true\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "LastProgress",
+                                "value": "1.0f"
+                            },
+                            {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "Progress",
+                                "value": "1.0f"
+                            },
+                            {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "State",
+                                "value": "2b"
+                            },
+                            {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "NewState",
+                                "value": "2b"
+                            },
+                            {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "isMovable",
+                                "value": "0"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
     }
 ]
