@@ -6,6 +6,28 @@ import re
 from typing import Dict, Iterable, Tuple, Union
 import amulet_nbt
 
+PropertyValueType = Union[
+    amulet_nbt.TAG_Byte,
+    amulet_nbt.TAG_Short,
+    amulet_nbt.TAG_Int,
+    amulet_nbt.TAG_Long,
+    amulet_nbt.TAG_String,
+]
+PropertyType = Dict[str, PropertyValueType]
+
+PropertyDataTypes = (
+    amulet_nbt.TAG_Byte,
+    amulet_nbt.TAG_Short,
+    amulet_nbt.TAG_Int,
+    amulet_nbt.TAG_Long,
+    amulet_nbt.TAG_String,
+)
+
+
+def blockstate_to_block(blockstate: str) -> "Block":
+    namespace, base_name, properties = Block.parse_blockstate_string(blockstate)
+    return Block(namespace=namespace, base_name=base_name, properties=properties)
+
 
 class Block:
     """
@@ -18,8 +40,8 @@ class Block:
 
     Creating a new Block object with the base of ``stone`` and has an extra block of ``water[level=1]``:
 
-    >>> stone = Block("minecraft", "stone")
-    >>> water_level_1 = Block("minecraft", "water", {"level": amulet_nbt.TAG_String("1")})
+    >>> stone = blockstate_to_block("minecraft:stone")
+    >>> water_level_1 = blockstate_to_block("minecraft:water[level=1]")
     >>> stone_with_extra_block = stone + water_level_1
     >>> repr(stone_with_extra_block)
     'Block(minecraft:stone, minecraft:water[level=1])'
@@ -47,7 +69,7 @@ class Block:
 
     Creating a new Block object by removing a specific layer:
 
-    >>> oak_log_axis_x = Block("minecraft", "oak_log", {"axis": amulet_nbt.TAG_String("x"))
+    >>> oak_log_axis_x = blockstate_to_block("minecraft:oak_log[axis=x]")
     >>> stone_water_granite_water_oak_log = stone_water_granite + water_level_1 + oak_log_axis_x
     >>> repr(stone_water_granite_water_oak_log)
     'Block(minecraft:stone, minecraft:water[level=1], minecraft:granite, minecraft:water[level=1], minecraft:oak_log[axis=x])'
@@ -82,7 +104,7 @@ class Block:
         self,
         namespace: str,
         base_name: str,
-        properties: Dict[str, amulet_nbt.BaseValueType] = None,
+        properties: PropertyType = None,
         extra_blocks: Union[Block, Iterable[Block]] = None,
     ):
         self._blockstate = None
@@ -96,7 +118,7 @@ class Block:
         if properties is None:
             properties = {}
         assert isinstance(properties, dict) and all(
-            isinstance(val, amulet_nbt.BaseValueType) for val in properties.values()
+            isinstance(val, PropertyDataTypes) for val in properties.values()
         ), properties
 
         self._properties = properties
@@ -136,7 +158,7 @@ class Block:
         return self._base_name
 
     @property
-    def properties(self) -> Dict[str, amulet_nbt.BaseValueType]:
+    def properties(self) -> PropertyType:
         """
         The mapping of properties of the blockstate represented by the Block object (IE: `{"level": "1"}`)
 
@@ -170,13 +192,22 @@ class Block:
             )
 
     @property
-    def extra_blocks(self) -> Union[Tuple, Tuple[Block]]:
+    def extra_blocks(self) -> Tuple[Block, ...]:
         """
         Returns a tuple of the extra blocks contained in the Block instance
 
         :return: A tuple of Block objects
         """
         return self._extra_blocks
+
+    @property
+    def block_tuple(self) -> Tuple[Block, ...]:
+        """
+        Returns the stack of blocks represented by this object as a tuple.
+        This is a tuple of base_block and extra_blocks
+        :return: A tuple of Block objects
+        """
+        return (self.base_block,) + self.extra_blocks
 
     def _gen_blockstate(self):
         self._namespaced_name = self._blockstate = f"{self.namespace}:{self.base_name}"
@@ -192,9 +223,7 @@ class Block:
             )
 
     @staticmethod
-    def parse_blockstate_string(
-        blockstate: str,
-    ) -> Tuple[str, str, Dict[str, amulet_nbt.BaseValueType]]:
+    def parse_blockstate_string(blockstate: str,) -> Tuple[str, str, PropertyType]:
         match = Block.blockstate_regex.match(blockstate)
         namespace = match.group("namespace") or "minecraft"
         base_name = match.group("base_name")
