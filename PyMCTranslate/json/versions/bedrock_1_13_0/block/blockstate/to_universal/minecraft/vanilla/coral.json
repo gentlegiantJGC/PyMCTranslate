@@ -47,6 +47,24 @@
                         }
                     }
                 ]
+            },
+            "dead_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead": "\"true\""
+                        }
+                    }
+                ]
             }
         }
     }
