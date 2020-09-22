@@ -1,4 +1,5 @@
 from typing import Tuple, TYPE_CHECKING, Optional, Union
+import copy
 
 from PyMCTranslate.py3.api import Entity, Block, BlockEntity
 from PyMCTranslate.py3.log import log
@@ -42,10 +43,10 @@ class EntityTranslator(BaseTranslator):
             log.warning(
                 f"Could not find translation information for {self._mode} {entity} to universal in {self._parent_version}. If this is not a vanilla entity ignore this message"
             )
-            return entity
+            return copy.deepcopy(entity)
 
         output, _, _, _ = self._translate(
-            entity, input_spec, mapping, self._universal_format, True, "to universal",
+            copy.deepcopy(entity), input_spec, mapping, self._universal_format, True, "to universal",
         )
 
         return output
@@ -73,10 +74,10 @@ class EntityTranslator(BaseTranslator):
             log.warning(
                 f"Could not find translation information for {self._mode} {entity} from universal in {self._parent_version}. If this is not a vanilla entity ignore this message"
             )
-            return entity, None
+            return copy.deepcopy(entity), None
 
         output, extra_output, _, _ = self._translate(
-            entity,
+            copy.deepcopy(entity),
             input_spec,
             mapping,
             self._parent_version,

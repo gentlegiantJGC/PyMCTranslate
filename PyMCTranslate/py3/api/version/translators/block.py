@@ -1,4 +1,5 @@
 from typing import Tuple, Union, Callable, TYPE_CHECKING, Optional, Dict
+import copy
 
 import amulet_nbt
 
@@ -169,11 +170,14 @@ class BlockTranslator(BaseTranslator):
         cache_key = ("to_universal", force_blockstate)
         if block_entity is None:
             if block in self._cache[cache_key]:
-                return self._cache[cache_key][block]
+                output, extra_output, extra_needed = self._cache[cache_key][block]
+                extra_output = copy.deepcopy(extra_output)
+                return output, extra_output, extra_needed
         else:
             assert isinstance(
                 block_entity, BlockEntity
             ), "extra_input must be None or a BlockEntity"
+            block_entity = copy.deepcopy(block_entity)
 
         try:
             input_spec = self.get_specification(
@@ -203,7 +207,7 @@ class BlockTranslator(BaseTranslator):
         if cacheable:
             self._cache[cache_key][block] = output, extra_output, extra_needed
 
-        return output, extra_output, extra_needed
+        return output, copy.deepcopy(extra_output), extra_needed
 
     def from_universal(
         self,
@@ -231,11 +235,16 @@ class BlockTranslator(BaseTranslator):
         cache_key = ("from_universal", force_blockstate)
         if block_entity is None:
             if block in self._cache[cache_key]:
-                return self._cache[cache_key][block]
+                output, extra_output, extra_needed = self._cache[cache_key][block]
+                if isinstance(output, Entity):
+                    output = copy.deepcopy(output)
+                extra_output = copy.deepcopy(extra_output)
+                return output, extra_output, extra_needed
         else:
             assert isinstance(
                 block_entity, BlockEntity
             ), "extra_input must be None or a BlockEntity"
+            block_entity = copy.deepcopy(block_entity)
 
         try:
             input_spec = self._universal_format.block.get_specification(
@@ -272,4 +281,7 @@ class BlockTranslator(BaseTranslator):
         if cacheable:
             self._cache[cache_key][block] = output, extra_output, extra_needed
 
+        if isinstance(output, Entity):
+            output = copy.deepcopy(output)
+        extra_output = copy.deepcopy(extra_output)
         return output, extra_output, extra_needed
