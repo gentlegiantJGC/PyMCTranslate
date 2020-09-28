@@ -16,12 +16,12 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     }
                                                 ],
@@ -29,7 +29,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     }
                                                 ],
@@ -37,7 +37,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     }
                                                 ],
@@ -45,7 +45,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     }
                                                 ],
@@ -53,7 +53,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     }
                                                 ]
@@ -69,12 +69,12 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     }
                                                 ],
@@ -82,7 +82,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     }
                                                 ],
@@ -90,7 +90,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     }
                                                 ],
@@ -98,7 +98,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     }
                                                 ],
@@ -106,7 +106,7 @@
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     }
                                                 ]
@@ -127,14 +127,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -148,7 +148,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -162,7 +162,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -176,7 +176,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -190,7 +190,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -206,14 +206,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -227,7 +227,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -241,7 +241,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -255,7 +255,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -269,7 +269,7 @@
                                                         "options": {
                                                             "facing": "\"west\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -294,14 +294,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -315,7 +315,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -329,7 +329,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -343,7 +343,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -357,7 +357,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -373,14 +373,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -394,7 +394,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -408,7 +408,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -422,7 +422,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -436,7 +436,7 @@
                                                         "options": {
                                                             "facing": "\"east\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -461,14 +461,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -482,7 +482,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -496,7 +496,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -510,7 +510,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -524,7 +524,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -540,14 +540,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -561,7 +561,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -575,7 +575,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -589,7 +589,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -603,7 +603,7 @@
                                                         "options": {
                                                             "facing": "\"north\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -628,14 +628,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -649,7 +649,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -663,7 +663,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -677,7 +677,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -691,7 +691,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"false\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {
@@ -707,14 +707,14 @@
                                     {
                                         "function": "map_properties",
                                         "options": {
-                                            "type": {
+                                            "coral_type": {
                                                 "\"tube\"": [
                                                     {
                                                         "function": "new_properties",
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"tube\""
+                                                            "coral_type": "\"tube\""
                                                         }
                                                     },
                                                     {
@@ -728,7 +728,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"brain\""
+                                                            "coral_type": "\"brain\""
                                                         }
                                                     },
                                                     {
@@ -742,7 +742,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"bubble\""
+                                                            "coral_type": "\"bubble\""
                                                         }
                                                     },
                                                     {
@@ -756,7 +756,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"fire\""
+                                                            "coral_type": "\"fire\""
                                                         }
                                                     },
                                                     {
@@ -770,7 +770,7 @@
                                                         "options": {
                                                             "facing": "\"south\"",
                                                             "dead": "\"true\"",
-                                                            "type": "\"horn\""
+                                                            "coral_type": "\"horn\""
                                                         }
                                                     },
                                                     {

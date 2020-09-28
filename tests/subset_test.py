@@ -6,7 +6,7 @@ from amulet.api.block import Block
 from amulet.api.entity import Entity
 import amulet_nbt
 import PyMCTranslate
-from PyMCTranslate.py3 import log as pymct_log
+from PyMCTranslate.py3.log import enable_console_log
 
 
 class SubSetTest(unittest.TestCase):
@@ -14,7 +14,7 @@ class SubSetTest(unittest.TestCase):
         universal_blocks = universal_version.block
         blocks = version.block
         for force_blockstate in [False, True] if version.has_abstract_format else [True]:
-            pymct_log.enable_console_log(force_blockstate)
+            enable_console_log(force_blockstate)
             print('To Universal', version, force_blockstate)
             for namespace in blocks.namespaces(force_blockstate):
                 for base_name in blocks.base_names(namespace, force_blockstate):
@@ -34,7 +34,7 @@ class SubSetTest(unittest.TestCase):
                                     (version, force_blockstate, block)
                                 )
 
-            pymct_log.enable_console_log(True)
+            enable_console_log(True)
             print('From Universal', version, force_blockstate)
             for namespace in universal_blocks.namespaces():
                 for base_name in universal_blocks.base_names(namespace):

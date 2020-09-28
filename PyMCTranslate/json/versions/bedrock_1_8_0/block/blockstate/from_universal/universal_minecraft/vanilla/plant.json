@@ -6,7 +6,7 @@
     {
         "function": "map_properties",
         "options": {
-            "type": {
+            "plant_type": {
                 "\"grass\"": [
                     {
                         "function": "new_block",
@@ -15,7 +15,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"grass\""
+                            "plant_type": "\"grass\""
                         }
                     }
                 ],
@@ -27,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"fern\""
+                            "plant_type": "\"fern\""
                         }
                     }
                 ],
@@ -51,7 +51,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"poppy\""
+                            "plant_type": "\"poppy\""
                         }
                     }
                 ],
@@ -63,7 +63,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"blue_orchid\""
+                            "plant_type": "\"blue_orchid\""
                         }
                     }
                 ],
@@ -75,7 +75,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"allium\""
+                            "plant_type": "\"allium\""
                         }
                     }
                 ],
@@ -87,7 +87,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"azure_bluet\""
+                            "plant_type": "\"azure_bluet\""
                         }
                     }
                 ],
@@ -99,7 +99,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"red_tulip\""
+                            "plant_type": "\"red_tulip\""
                         }
                     }
                 ],
@@ -111,7 +111,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"orange_tulip\""
+                            "plant_type": "\"orange_tulip\""
                         }
                     }
                 ],
@@ -123,7 +123,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"white_tulip\""
+                            "plant_type": "\"white_tulip\""
                         }
                     }
                 ],
@@ -135,7 +135,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"pink_tulip\""
+                            "plant_type": "\"pink_tulip\""
                         }
                     }
                 ],
@@ -147,7 +147,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "type": "\"oxeye_daisy\""
+                            "plant_type": "\"oxeye_daisy\""
                         }
                     }
                 ]
