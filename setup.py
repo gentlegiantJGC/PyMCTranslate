@@ -1,5 +1,6 @@
 import os
 from setuptools import setup, Extension, find_packages
+import versioneer
 
 CYTHON_COMPILE = False
 try:
@@ -41,6 +42,8 @@ SETUP_PARAMS = {
     "packages": packages,
     "include_package_data": True,
     "zip_safe": False,
+    "version": versioneer.get_version(),
+    "cmdclass": versioneer.get_cmdclass()
 }
 
 if CYTHON_COMPILE and os.path.exists(os.path.join(".", extensions[0].sources[0])):
