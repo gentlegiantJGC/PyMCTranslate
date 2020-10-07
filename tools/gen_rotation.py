@@ -65,7 +65,11 @@ RotationInvariantProperties = (
     "bottom",
     "attached",
     "disarmed",
-    "suspended"
+    "suspended",
+    "stripped",
+    "distance",
+    "instrument",
+    "note"
 )
 
 # '[a-z_]+'
@@ -82,10 +86,9 @@ if __name__ == '__main__':
             if key in properties:
                 del properties[key]
         if properties:
-            property_tuple = tuple((key, tuple(sorted(value))) for key, value in sorted(properties.items(), key=lambda x: x[0]))
+            property_tuple = ",".join(f"{key}:[{','.join(sorted(value))}]" for key, value in sorted(properties.items(), key=lambda x: x[0]))
             blocks.setdefault(property_tuple, []).append(os.path.basename(path))
 
     with open("blockstates.txt", "w") as f:
-        f.write(
-            str(blocks).replace("((", "\n\t((").replace("}", "\n}")
-        )
+        for key, value in blocks.items():
+            f.write(f"{key}: {value}\n")
