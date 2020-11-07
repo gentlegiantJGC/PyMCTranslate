@@ -35,18 +35,25 @@ extensions = [
         name="PyMCTranslate.py3.api.version.translate", sources=["PyMCTranslate/py3/api/version/translate.pyx"]
     )
 ]
-
-SETUP_PARAMS = {
-    "name": "pymctranslate",
-    "install_requires": requirements,
-    "packages": packages,
-    "include_package_data": True,
-    "zip_safe": False,
-    "version": versioneer.get_version(),
-    "cmdclass": versioneer.get_cmdclass()
-}
+ext_modules = []
 
 if CYTHON_COMPILE and os.path.exists(os.path.join(".", extensions[0].sources[0])):
-    SETUP_PARAMS["ext_modules"] = cythonize(extensions, language_level=3, annotate=True)
+    ext_modules = cythonize(extensions, language_level=3, annotate=True)
 
-setup(**SETUP_PARAMS)
+setup(
+    name="PyMCTranslate",
+    version=versioneer.get_version(),
+    description="A Minecraft data translation system.",
+    author="James Clare",
+    author_email="amuleteditor@gmail.com",
+    install_requires=requirements,
+    packages=packages,
+    cmd_class=versioneer.get_cmdclass(),
+    include_package_data=True,
+    zip_safe=False,
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
+)
