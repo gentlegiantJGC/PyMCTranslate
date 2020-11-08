@@ -4,7 +4,7 @@ import glob
 from typing import List
 from setuptools import setup, Extension, find_packages
 import versioneer
-import minify_json
+from minify_json import main as _minify_json
 
 try:
     from wheel.bdist_wheel import bdist_wheel
@@ -46,6 +46,24 @@ def get_json_files(json_glob: str) -> List[str]:
     ]
 
 
+def minify_json(pymct_path: str):
+    global JSON_MINIFIED
+    json_path = os.path.join(pymct_path, "json")
+    min_json_path = os.path.join(pymct_path, "min_json")
+
+    if not JSON_MINIFIED:
+        if os.path.isdir(json_path):
+            if not SKIP_MINIFY_IF_EXISTS and os.path.isdir(min_json_path):
+                shutil.rmtree(min_json_path)
+
+            if not os.path.isdir(min_json_path):
+                print("Minifying JSON")
+                _minify_json(pymct_path)
+        else:
+            assert os.path.isdir(min_json_path), "Neither the PyMCTranslate/json or PyMCTranslate/min_json directories exists."
+        JSON_MINIFIED = True
+
+
 # there were issues with other builds carrying over their cache
 for d in glob.glob("*.egg-info"):
     shutil.rmtree(d)
@@ -80,18 +98,7 @@ cmdclass["sdist"] = CmdSDist
 if bdist_wheel:
     class CmdBDistWheel(bdist_wheel):
         def finalize_options(self):
-            global JSON_MINIFIED
-            if not JSON_MINIFIED:
-                if os.path.isdir(os.path.join("PyMCTranslate", "json")):
-                    if not SKIP_MINIFY_IF_EXISTS and os.path.isdir(os.path.join("PyMCTranslate", "min_json")):
-                        shutil.rmtree(os.path.join("PyMCTranslate", "min_json"))
-
-                    if not os.path.isdir(os.path.join("PyMCTranslate", "min_json")):
-                        self.announce("Minifying JSON. This may take a while.")
-                        minify_json.main("PyMCTranslate")
-                else:
-                    assert os.path.isdir(os.path.join("PyMCTranslate", "min_json")), "Neither the PyMCTranslate/json or PyMCTranslate/min_json directories exists."
-                JSON_MINIFIED = True
+            minify_json("PyMCTranslate")
             self.distribution.package_data["PyMCTranslate"] += get_json_files(
                 os.path.join("PyMCTranslate", "min_json", "**", "*.json.gz")
             )
