@@ -32,6 +32,7 @@ with open(os.path.join(".", "requirements.txt")) as requirements_fp:
         line for line in requirements_fp.readlines() if not line.startswith("git+")
     ]
 
+SKIP_MINIFY_IF_EXISTS = False
 JSON_MINIFIED = False  # a way to track if the json has been minified so it doesn't get run more than once
 
 
@@ -43,6 +44,11 @@ def get_json_files(json_glob: str) -> List[str]:
             recursive=True
         )
     ]
+
+
+# there were issues with other builds carrying over their cache
+for d in glob.glob("*.egg-info"):
+    shutil.rmtree(d)
 
 
 cmdclass = versioneer.get_cmdclass()
@@ -72,15 +78,17 @@ class CmdSDist(cmdclass["sdist"]):
 cmdclass["sdist"] = CmdSDist
 
 if bdist_wheel:
-    class CmdBDist(bdist_wheel):
+    class CmdBDistWheel(bdist_wheel):
         def finalize_options(self):
             global JSON_MINIFIED
             if not JSON_MINIFIED:
                 if os.path.isdir(os.path.join("PyMCTranslate", "json")):
-                    if os.path.isdir(os.path.join("PyMCTranslate", "min_json")):
+                    if not SKIP_MINIFY_IF_EXISTS and os.path.isdir(os.path.join("PyMCTranslate", "min_json")):
                         shutil.rmtree(os.path.join("PyMCTranslate", "min_json"))
-                    self.announce("Minifying JSON. This may take a while.")
-                    minify_json.main("PyMCTranslate")
+
+                    if not os.path.isdir(os.path.join("PyMCTranslate", "min_json")):
+                        self.announce("Minifying JSON. This may take a while.")
+                        minify_json.main("PyMCTranslate")
                 else:
                     assert os.path.isdir(os.path.join("PyMCTranslate", "min_json")), "Neither the PyMCTranslate/json or PyMCTranslate/min_json directories exists."
                 JSON_MINIFIED = True
@@ -89,8 +97,8 @@ if bdist_wheel:
             )
             super().finalize_options()
 
+    cmdclass["bdist_wheel"] = CmdBDistWheel
 
-    cmdclass["bdist_wheel"] = CmdBDist
 
 setup(
     name="PyMCTranslate",
