@@ -32,9 +32,9 @@ def get_block_at(
     relative_location: BlockCoordinates,
 ) -> Tuple[Union[Block, None], Union[BlockEntity, None]]:
     """A callback to access data from the world
-	Implement a function with this specification and give it to the translate function
-	to have the code reach back into the world if required.
-	"""
+    Implement a function with this specification and give it to the translate function
+    to have the code reach back into the world if required.
+    """
     return None, None
 
 
@@ -264,24 +264,24 @@ def translate(
     block_location: Optional[BlockCoordinates] = None,
 ) -> Tuple[Union[Block, Entity], Union[BlockEntity, None], bool, bool]:
     """
-		A function to translate the object input to the output version
+    A function to translate the object input to the output version
 
-		:param object_input: the Block or Entity object to be converted
-		:param input_spec: the specification for the object_input from the input block_format
-		:param mappings: the mapping file for the input_object
-		:param output_version: A way for the function to look at the specification being converted to. (used to load default properties)
-		:param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
-		:param get_block_callback: A callable with relative coordinates that returns a Block and optional BlockEntity
-		:param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
-		:param pre_populate_defaults: should the nbt structure (if exists) be populated with the default values
-		:param block_location: optional coordinate of where the block is in the world. Used in very few situations.
-		:return: output, extra_output, extra_needed, cacheable
-			extra_needed: a bool to specify if more data is needed beyond the object_input
-			cacheable: a bool to specify if the result can be cached to reduce future processing
-			Block, None, bool, bool
-			Block, BlockEntity, bool, bool
-			Entity, None, bool, bool
-	"""
+    :param object_input: the Block or Entity object to be converted
+    :param input_spec: the specification for the object_input from the input block_format
+    :param mappings: the mapping file for the input_object
+    :param output_version: A way for the function to look at the specification being converted to. (used to load default properties)
+    :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
+    :param get_block_callback: A callable with relative coordinates that returns a Block and optional BlockEntity
+    :param extra_input: secondary to the object_input a block entity can be given. This should only be used in the select block tool or plugins. Not compatible with location
+    :param pre_populate_defaults: should the nbt structure (if exists) be populated with the default values
+    :param block_location: optional coordinate of where the block is in the world. Used in very few situations.
+    :return: output, extra_output, extra_needed, cacheable
+            extra_needed: a bool to specify if more data is needed beyond the object_input
+            cacheable: a bool to specify if the result can be cached to reduce future processing
+            Block, None, bool, bool
+            Block, BlockEntity, bool, bool
+            Entity, None, bool, bool
+    """
 
     if block_location is not None:
         block_location = (  # force block locations to be ints
@@ -425,20 +425,20 @@ def _translate(
 ) -> Tuple[Union[str, None], Union[str, None], dict, bool, bool]:
     """
 
-	:param block_input:
-	:param nbt_input:
-	:param mappings:
-	:param get_block_callback:
-	:param absolute_location:
-	:param relative_location:
-	:param inherited_data:
-	:return:
-		output_name - string of the object being output
-		output_type - string of the type output name is (should be 'block' or 'entity')
-		new - a dictionary that looks like this {'properties': {}, 'nbt': []}
-		extra_needed - bool. Specifies if more data is needed (ie if the block callback needs to be given to do a full map)
-		cacheable - bool. Specifies if the input object is cachable. Only true for simple Blocks without BlockEntities
-	"""
+    :param block_input:
+    :param nbt_input:
+    :param mappings:
+    :param get_block_callback:
+    :param absolute_location:
+    :param relative_location:
+    :param inherited_data:
+    :return:
+            output_name - string of the object being output
+            output_type - string of the type output name is (should be 'block' or 'entity')
+            new - a dictionary that looks like this {'properties': {}, 'nbt': []}
+            extra_needed - bool. Specifies if more data is needed (ie if the block callback needs to be given to do a full map)
+            cacheable - bool. Specifies if the input object is cachable. Only true for simple Blocks without BlockEntities
+    """
     output_name: Optional[str]
 
     if inherited_data is not None:

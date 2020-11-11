@@ -218,9 +218,7 @@ class BlockTranslator(BaseTranslator):
         get_block_callback: Callable[
             [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
         ] = None,
-    ) -> Union[
-        Tuple[Block, Optional[BlockEntity], bool], Tuple[Entity, None, bool],
-    ]:
+    ) -> Union[Tuple[Block, Optional[BlockEntity], bool], Tuple[Entity, None, bool],]:
         """
         Translate the given Block object from the Universal format to the parent Version's format.
 
