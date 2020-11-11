@@ -46,7 +46,12 @@ class EntityTranslator(BaseTranslator):
             return copy.deepcopy(entity)
 
         output, _, _, _ = self._translate(
-            copy.deepcopy(entity), input_spec, mapping, self._universal_format, True, "to universal",
+            copy.deepcopy(entity),
+            input_spec,
+            mapping,
+            self._universal_format,
+            True,
+            "to universal",
         )
 
         return output

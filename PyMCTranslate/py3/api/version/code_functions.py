@@ -18,7 +18,10 @@ for code_file in glob.iglob(
 ):
     code_function_name = os.path.splitext(os.path.basename(code_file))[0]
 
-    spec = importlib.util.spec_from_file_location(code_function_name, code_file,)
+    spec = importlib.util.spec_from_file_location(
+        code_function_name,
+        code_file,
+    )
     code_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(code_module)
 
