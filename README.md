@@ -1,5 +1,10 @@
 # PyMCTranslate
 
+![Build](../../workflows/Build/badge.svg)
+![Unittests](../../workflows/Unittests/badge.svg?event=push)
+![Stylecheck](../../workflows/Stylecheck/badge.svg?event=push)
+[![Documentation](https://readthedocs.org/projects/pymctranslate/badge)](https://pymctranslate.readthedocs.io)
+
 PyMCTranslate is a translation system for Minecraft blocks, block entities, entities and items.
 It enables translating data between a large number of Minecraft versions and platforms via an in-between format known as the Universal format.
 This Universal format is a custom format independent of any Minecraft version and is designed to handle all data from any supported Minecraft version.  
