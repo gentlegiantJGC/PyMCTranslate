@@ -1,0 +1,111 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:beehive"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"down\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ]
+            },
+            "honey_level": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "1"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "2"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "3"
+                        }
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "4"
+                        }
+                    }
+                ],
+                "\"5\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "honey_level": "5"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:monster_egg"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"stone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "monster_egg_stone_type": "\"stone\""
+                        }
+                    }
+                ],
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "monster_egg_stone_type": "\"cobblestone\""
+                        }
+                    }
+                ],
+                "\"stone_bricks\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "monster_egg_stone_type": "\"stone_brick\""
+                        }
+                    }
+                ],
+                "\"mossy_stone_bricks\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "monster_egg_stone_type": "\"mossy_stone_brick\""
+                        }
+                    }
+                ],
+                "\"cracked_stone_bricks\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "monster_egg_stone_type": "\"cracked_stone_brick\""
+                        }
+                    }
+                ],
+                "\"chiseled_stone_bricks\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "monster_egg_stone_type": "\"chiseled_stone_brick\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

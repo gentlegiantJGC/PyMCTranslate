@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "facing_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "triggered_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "facing_direction": "0",
+        "triggered_bit": "0b"
+    },
+    "nbt_identifier": [
+        "",
+        "Dropper"
+    ],
+    "snbt": "{Items: [], isMovable: 1b}"
+}

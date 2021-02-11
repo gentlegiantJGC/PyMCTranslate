@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:coral"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "coral_type": {
+                "\"tube\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": "\"blue\""
+                        }
+                    }
+                ],
+                "\"brain\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": "\"pink\""
+                        }
+                    }
+                ],
+                "\"bubble\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": "\"purple\""
+                        }
+                    }
+                ],
+                "\"fire\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": "\"red\""
+                        }
+                    }
+                ],
+                "\"horn\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_color": "\"yellow\""
+                        }
+                    }
+                ]
+            },
+            "dead": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dead_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

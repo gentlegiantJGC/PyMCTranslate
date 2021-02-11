@@ -1,0 +1,45 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sweet_berry_bush"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "age": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"0\""
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"2\""
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"4\""
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age": "\"7\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

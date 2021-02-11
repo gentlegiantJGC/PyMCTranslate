@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "extinguished": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "direction": "0",
+        "extinguished": "0b"
+    },
+    "nbt_identifier": [
+        "",
+        "Campfire"
+    ],
+    "snbt": "{ItemTime1: 0, ItemTime2: 0, ItemTime3: 0, ItemTime4: 0, isMovable: 1b}"
+}

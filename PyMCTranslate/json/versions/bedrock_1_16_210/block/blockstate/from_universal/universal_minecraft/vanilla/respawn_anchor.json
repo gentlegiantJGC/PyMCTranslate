@@ -1,0 +1,53 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:respawn_anchor"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "charges": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "respawn_anchor_charge": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "respawn_anchor_charge": "1"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "respawn_anchor_charge": "2"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "respawn_anchor_charge": "3"
+                        }
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "respawn_anchor_charge": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

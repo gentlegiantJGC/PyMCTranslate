@@ -1,0 +1,34 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:stairs"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"cobblestone\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "half": [
+                "\"top\"",
+                "\"bottom\""
+            ],
+            "shape": [
+                "\"straight\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    }
+]
