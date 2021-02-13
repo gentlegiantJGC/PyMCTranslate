@@ -9,6 +9,10 @@
             "type": {
                 "\"double\"": [
                     {
+                        "function": "new_block",
+                        "options": "minecraft:double_stone_slab"
+                    },
+                    {
                         "function": "map_properties",
                         "options": {
                             "material": {
@@ -222,6 +226,16 @@
                 ],
                 "\"bottom\"": [
                     {
+                        "function": "new_block",
+                        "options": "minecraft:stone_slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    },
+                    {
                         "function": "map_properties",
                         "options": {
                             "material": {
@@ -422,6 +436,16 @@
                     }
                 ],
                 "\"top\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_slab"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "8"
+                        }
+                    },
                     {
                         "function": "map_properties",
                         "options": {
