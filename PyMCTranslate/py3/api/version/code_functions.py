@@ -1,32 +1,36 @@
-import glob
-import os
-import importlib.util
+import importlib
+import pkgutil
+import PyMCTranslate
+import PyMCTranslate.code_functions
 
 code_functions = {}
 
-for code_file in glob.iglob(
-    os.path.join(
-        glob.escape(os.path.dirname(__file__)),
-        "..",
-        "..",
-        "..",
-        "code_functions",
-        "**",
-        "*.py",
-    ),
-    recursive=True,
-):
-    code_function_name = os.path.splitext(os.path.basename(code_file))[0]
 
-    spec = importlib.util.spec_from_file_location(
-        code_function_name,
-        code_file,
-    )
-    code_module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(code_module)
-
+def _load_function(module_name: str):
+    code_module = importlib.import_module(module_name)
     assert hasattr(code_module, "main")
-    code_functions[code_function_name] = code_module.main
+    code_functions[module_name.split(".")[-1]] = code_module.main
+
+
+def _load_functions():
+    package = PyMCTranslate.code_functions
+    package_prefix = package.__name__ + "."
+
+    # python file support
+    for _, name, _ in pkgutil.walk_packages(package.__path__, package_prefix):
+        _load_function(name)
+
+    # pyinstaller support
+    toc = set()
+    for importer in pkgutil.iter_importers(PyMCTranslate.__name__):
+        if hasattr(importer, "toc"):
+            toc |= importer.toc
+    for module_name in toc:
+        if module_name.startswith(package_prefix):
+            _load_function(module_name)
+
+
+_load_functions()
 
 
 def run(function_name, inputs):
