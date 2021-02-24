@@ -9,5 +9,3 @@ hiddenimports = [
         PyMCTranslate.code_functions.__name__ + ".",
     )
 ]
-
-datas = collect_data_files("PyMCTranslate", excludes=["__pyinstaller", "json"])
