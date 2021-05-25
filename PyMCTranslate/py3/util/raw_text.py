@@ -71,32 +71,33 @@ def section_string_to_raw_text(section_str: str) -> str:
         if section_str[col] == "§":
             append_section()
             col += 1
-            if section_str[col] in code_to_colour_map:
-                colour = code_to_colour_map[section_str[col]]
-                col += 1
-            elif section_str[col] == "k":  # obfuscated
-                obfuscated = True
-                col += 1
-            elif section_str[col] == "l":  # bold
-                bold = True
-                col += 1
-            elif section_str[col] == "m":  # strikethrough
-                strikethrough = True
-                col += 1
-            elif section_str[col] == "n":  # underlined
-                underline = True
-                col += 1
-            elif section_str[col] == "o":  # italic
-                italic = True
-                col += 1
-            elif section_str[col] == "r":  # reset
-                obfuscated = False
-                bold = False
-                strikethrough = False
-                underline = False
-                italic = False
-                colour = ""
-                col += 1
+            if col < len(section_str):
+                if section_str[col] in code_to_colour_map:
+                    colour = code_to_colour_map[section_str[col]]
+                    col += 1
+                elif section_str[col] == "k":  # obfuscated
+                    obfuscated = True
+                    col += 1
+                elif section_str[col] == "l":  # bold
+                    bold = True
+                    col += 1
+                elif section_str[col] == "m":  # strikethrough
+                    strikethrough = True
+                    col += 1
+                elif section_str[col] == "n":  # underlined
+                    underline = True
+                    col += 1
+                elif section_str[col] == "o":  # italic
+                    italic = True
+                    col += 1
+                elif section_str[col] == "r":  # reset
+                    obfuscated = False
+                    bold = False
+                    strikethrough = False
+                    underline = False
+                    italic = False
+                    colour = ""
+                    col += 1
         else:
             buffer.append(section_str[col])
             col += 1
