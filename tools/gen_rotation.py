@@ -2,7 +2,20 @@ import os
 import json
 import glob
 
-root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "PyMCTranslate", "json", "versions", "universal", "block", "blockstate", "specification", "universal_minecraft"))
+root = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "PyMCTranslate",
+        "json",
+        "versions",
+        "universal",
+        "block",
+        "blockstate",
+        "specification",
+        "universal_minecraft",
+    )
+)
 
 RotationInvariantProperties = (
     "color",
@@ -69,13 +82,13 @@ RotationInvariantProperties = (
     "stripped",
     "distance",
     "instrument",
-    "note"
+    "note",
 )
 
 # '[a-z_]+'
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     blocks = {}
 
     for path in glob.glob(os.path.join(root, "*", "*.json")):
@@ -86,7 +99,10 @@ if __name__ == '__main__':
             if key in properties:
                 del properties[key]
         if properties:
-            property_tuple = ",".join(f"{key}:[{','.join(sorted(value))}]" for key, value in sorted(properties.items(), key=lambda x: x[0]))
+            property_tuple = ",".join(
+                f"{key}:[{','.join(sorted(value))}]"
+                for key, value in sorted(properties.items(), key=lambda x: x[0])
+            )
             blocks.setdefault(property_tuple, []).append(os.path.basename(path))
 
     with open("blockstates.txt", "w") as f:

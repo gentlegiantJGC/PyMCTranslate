@@ -28,5 +28,5 @@ jobs:
         pip install black
     - name: run stylecheck
       run: |
-        python -m black --check --diff --exclude PyMCTranslate/json PyMCTranslate tests
+        python -m black --check --diff --exclude PyMCTranslate/json .
         python -m black --check --diff tests

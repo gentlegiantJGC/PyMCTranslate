@@ -20,7 +20,8 @@ except ImportError:
 else:
     extensions = [
         Extension(
-            name="PyMCTranslate.py3.api.version.translate", sources=["PyMCTranslate/py3/api/version/translate.pyx"]
+            name="PyMCTranslate.py3.api.version.translate",
+            sources=["PyMCTranslate/py3/api/version/translate.pyx"],
         )
     ]
     if os.path.exists(os.path.join(".", extensions[0].sources[0])):
@@ -38,11 +39,8 @@ JSON_MINIFIED = False  # a way to track if the json has been minified so it does
 
 def get_json_files(json_glob: str) -> List[str]:
     return [
-        os.path.relpath(path, "PyMCTranslate") for path in
-        glob.glob(
-            json_glob,
-            recursive=True
-        )
+        os.path.relpath(path, "PyMCTranslate")
+        for path in glob.glob(json_glob, recursive=True)
     ]
 
 
@@ -60,7 +58,9 @@ def minify_json(pymct_path: str):
                 print("Minifying JSON")
                 _minify_json(pymct_path)
         else:
-            assert os.path.isdir(min_json_path), "Neither the PyMCTranslate/json or PyMCTranslate/min_json directories exists."
+            assert os.path.isdir(
+                min_json_path
+            ), "Neither the PyMCTranslate/json or PyMCTranslate/min_json directories exists."
         JSON_MINIFIED = True
 
 
@@ -86,8 +86,8 @@ class CmdSDist(cmdclass["sdist"]):
                     "minify_json.py",
                     "README.md",
                     "requirements.txt",
-                    "versioneer.py"
-                ]
+                    "versioneer.py",
+                ],
             )
         ]
         super().finalize_options()
@@ -96,6 +96,7 @@ class CmdSDist(cmdclass["sdist"]):
 cmdclass["sdist"] = CmdSDist
 
 if bdist_wheel:
+
     class CmdBDistWheel(bdist_wheel):
         def finalize_options(self):
             minify_json("PyMCTranslate")
@@ -116,10 +117,7 @@ setup(
     install_requires=requirements,
     packages=find_packages(),
     package_data={
-        "PyMCTranslate": [
-            "build_number",
-            os.path.join("code_functions", "*.py")
-        ]
+        "PyMCTranslate": ["build_number", os.path.join("code_functions", "*.py")]
     },
     cmdclass=cmdclass,
     zip_safe=False,
@@ -127,5 +125,5 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )
