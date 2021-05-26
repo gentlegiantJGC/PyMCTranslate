@@ -187,8 +187,12 @@ class BlockTranslator(BaseTranslator):
                 block.namespace, block.base_name, force_blockstate
             )
         except KeyError:
-            log.warning(
-                f"Could not find translation information for {self._mode} {block} to universal in {self._parent_version}. If this is not a vanilla block ignore this message"
+            self._warn_once(
+                (block,),
+                "Could not find translation information for {} {} to universal in {}. If this is not a vanilla block ignore this message",
+                self._mode,
+                block,
+                self._parent_version,
             )
             return block, block_entity, False
 
@@ -259,8 +263,12 @@ class BlockTranslator(BaseTranslator):
                     f"Probably just a quirk block {block} from universal in {self._parent_version}."
                 )
             else:
-                log.warning(
-                    f"Could not find translation information for {self._mode} {block} from universal in {self._parent_version}. If this is not a vanilla block ignore this message"
+                self._warn_once(
+                    (block,),
+                    "Could not find translation information for {} {} from universal in {}. If this is not a vanilla block ignore this message",
+                    self._mode,
+                    block,
+                    self._parent_version,
                 )
             return block, block_entity, False
 

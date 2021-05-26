@@ -31,6 +31,8 @@ class BiomeTranslator:
         self._biome_to_universal: Dict[str, str] = biome_data["version2universal"]
         self._biome_from_universal: Dict[str, str] = biome_data["universal2version"]
 
+        self._error_biomes = set()
+
     def unpack(self, biome: int) -> str:
         """Unpack the raw numerical biome value into the namespaced string format.
         This will first use any pre-registered mappings bound using TranslationManager.biome_registry.register
@@ -43,9 +45,11 @@ class BiomeTranslator:
         elif biome in self._biome_int_to_str:
             biome_str = self._biome_int_to_str[biome]
         else:
-            log.warning(
-                f"Could not find registered value for biome {biome}. Reverting to plains"
-            )
+            if biome not in self._error_biomes:
+                log.warning(
+                    f"Could not find registered value for biome {biome}. Reverting to plains"
+                )
+                self._error_biomes.add(biome)
             biome_str = "minecraft:plains"
         return biome_str
 

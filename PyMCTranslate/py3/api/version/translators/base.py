@@ -27,12 +27,24 @@ class BaseTranslator:
         self._database = database
         self._mode = mode
 
+        self._error_cache = set()
+
     def _format_key(self, force_blockstate):
         return (
             "numerical"
             if not force_blockstate and self._parent_version.has_abstract_format
             else "blockstate"
         )
+
+    def _error_once(self, unique, msg_fmt, *args):
+        if unique not in self._error_cache:
+            log.error(msg_fmt.format(*args), exc_info=True)
+            self._error_cache.add(unique)
+
+    def _warn_once(self, unique, msg_fmt, *args):
+        if unique not in self._error_cache:
+            log.warning(msg_fmt.format(*args))
+            self._error_cache.add(unique)
 
     def _translate(
         self,
@@ -67,11 +79,14 @@ class BaseTranslator:
             )
             return output, extra_output, extra_needed, cacheable
         except Exception as e:
-            log.error(
-                f"Error converting {self._mode} {object_input} {translation_direction} in {self._parent_version}."
+            self._error_once(
+                (object_input, str(e)),
+                "Error converting {} {} {} in {}.",
+                self._mode,
+                object_input,
+                translation_direction,
+                self._parent_version,
             )
-            # traceback.print_stack()
-            log.error(f'Error and traceback from the above "{e}"', exc_info=True)
             return object_input, extra_input, True, False
 
     def namespaces(self, force_blockstate: bool = False) -> List[str]:
