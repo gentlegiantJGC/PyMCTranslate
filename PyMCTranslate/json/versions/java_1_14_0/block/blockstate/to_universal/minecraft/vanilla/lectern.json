@@ -4,7 +4,7 @@
         "options": {
             "type": "compound",
             "keys": {
-                "book": {
+                "Book": {
                     "type": "compound",
                     "nested_default": [],
                     "self_default": [],
@@ -17,8 +17,7 @@
                                         "utags",
                                         "compound"
                                     ]
-                                ],
-                                "key": "Book"
+                                ]
                             }
                         }
                     ]
