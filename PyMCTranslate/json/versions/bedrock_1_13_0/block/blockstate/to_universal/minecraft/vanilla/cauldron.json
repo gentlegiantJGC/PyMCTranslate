@@ -90,14 +90,26 @@
         "options": "universal_minecraft:cauldron"
     },
     {
-        "function": "new_properties",
-        "options": {
-            "cauldron_liquid": "\"water\""
-        }
-    },
-    {
         "function": "map_properties",
         "options": {
+            "cauldron_liquid": {
+                "\"water\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cauldron_liquid": "\"water\""
+                        }
+                    }
+                ],
+                "\"lava\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "cauldron_liquid": "\"lava\""
+                        }
+                    }
+                ]
+            },
             "fill_level": {
                 "0": [
                     {

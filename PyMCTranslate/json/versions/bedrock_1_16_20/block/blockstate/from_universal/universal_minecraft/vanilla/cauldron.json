@@ -93,10 +93,6 @@
             "cauldron_liquid": {
                 "\"water\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:cauldron"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "cauldron_liquid": "\"water\""

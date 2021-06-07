@@ -1,0 +1,25 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "piston"
+    ],
+    "snbt": "{blockState: {Name: \"minecraft:stone\"}, facing: 4, progress: 0.5f, source: 0b, extending: 1b}",
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
+        ],
+        "type": [
+            "\"normal\"",
+            "\"sticky\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "type": "\"normal\""
+    }
+}

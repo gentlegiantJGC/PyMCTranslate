@@ -1,17 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:stone"
     },
     {
         "function": "map_properties",
         "options": {
             "polished": {
                 "\"false\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:stone"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -20,10 +16,6 @@
                     }
                 ],
                 "\"true\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:stone"
-                    },
                     {
                         "function": "new_properties",
                         "options": {

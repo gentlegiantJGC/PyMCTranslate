@@ -157,6 +157,14 @@
                         }
                     }
                 ]
+            },
+            "glowing": {
+                "\"false\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:frame"
+                    }
+                ]
             }
         }
     }
