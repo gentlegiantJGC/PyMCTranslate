@@ -1,0 +1,42 @@
+======================================================================================================================================================
+Conversion error: minecraft:piston_head[facing="north",type="sticky"] != minecraft:piston_head[facing="north",type="normal"] java (1, 12, 2)
+Universal output: universal_minecraft:sticky_piston_head[facing="north",short="false"]
+Numerical output: minecraft:piston_head[block_data=2]
+Universal output 2: universal_minecraft:piston_head[facing="north",short="false"]
+Blockstate: minecraft:piston_head[facing="north",type="normal"]
+======================================================================================================================================================
+Conversion error: minecraft:piston_head[facing="east",type="sticky"] != minecraft:piston_head[facing="east",type="normal"] java (1, 12, 2)
+Universal output: universal_minecraft:sticky_piston_head[facing="east",short="false"]
+Numerical output: minecraft:piston_head[block_data=5]
+Universal output 2: universal_minecraft:piston_head[facing="east",short="false"]
+Blockstate: minecraft:piston_head[facing="east",type="normal"]
+======================================================================================================================================================
+Conversion error: minecraft:piston_head[facing="south",type="sticky"] != minecraft:piston_head[facing="south",type="normal"] java (1, 12, 2)
+Universal output: universal_minecraft:sticky_piston_head[facing="south",short="false"]
+Numerical output: minecraft:piston_head[block_data=3]
+Universal output 2: universal_minecraft:piston_head[facing="south",short="false"]
+Blockstate: minecraft:piston_head[facing="south",type="normal"]
+======================================================================================================================================================
+Conversion error: minecraft:piston_head[facing="west",type="sticky"] != minecraft:piston_head[facing="west",type="normal"] java (1, 12, 2)
+Universal output: universal_minecraft:sticky_piston_head[facing="west",short="false"]
+Numerical output: minecraft:piston_head[block_data=4]
+Universal output 2: universal_minecraft:piston_head[facing="west",short="false"]
+Blockstate: minecraft:piston_head[facing="west",type="normal"]
+======================================================================================================================================================
+Conversion error: minecraft:piston_head[facing="up",type="sticky"] != minecraft:piston_head[facing="up",type="normal"] java (1, 12, 2)
+Universal output: universal_minecraft:sticky_piston_head[facing="up",short="false"]
+Numerical output: minecraft:piston_head[block_data=1]
+Universal output 2: universal_minecraft:piston_head[facing="up",short="false"]
+Blockstate: minecraft:piston_head[facing="up",type="normal"]
+======================================================================================================================================================
+Conversion error: minecraft:piston_head[facing="down",type="sticky"] != minecraft:piston_head[facing="down",type="normal"] java (1, 12, 2)
+Universal output: universal_minecraft:sticky_piston_head[facing="down",short="false"]
+Numerical output: minecraft:piston_head[block_data=0]
+Universal output 2: universal_minecraft:piston_head[facing="down",short="false"]
+Blockstate: minecraft:piston_head[facing="down",type="normal"]
+======================================================================================================================================================
+Conversion error: minecraft:tallgrass[plant_type="dead_bush"] != minecraft:deadbush java (1, 12, 2)
+Universal output: universal_minecraft:plant[plant_type="dead_bush"]
+Numerical output: minecraft:deadbush[block_data=0]
+Universal output 2: universal_minecraft:plant[plant_type="dead_bush"]
+Blockstate: minecraft:deadbush
