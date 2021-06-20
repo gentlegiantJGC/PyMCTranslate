@@ -2,6 +2,7 @@ import os
 from typing import Union, Tuple, List, Dict
 
 from .registry import NumericalRegistry
+from PyMCTranslate.py3 import log
 from PyMCTranslate.py3.meta import minified
 from PyMCTranslate.py3.api.version import Version
 
@@ -62,17 +63,27 @@ class TranslationManager:
 
         for version_name in os.listdir(versions_path):
             if os.path.isfile(os.path.join(versions_path, version_name, init_file)):
-                version = Version(os.path.join(versions_path, version_name), self)
-                self._versions.setdefault(version.platform, {})
-                self._versions[version.platform].setdefault(
-                    version.version_number, version
-                )
-                self._version_remap[
-                    (version.platform, version.data_version)
-                ] = version.version_number
-                if version_name == "universal":
-                    self._universal_format = version
+                try:
+                    version = Version(os.path.join(versions_path, version_name), self)
+                except:
+                    log.error(
+                        f"Failed loading translator for version {version_name}. Try deleting your Amulet directory and extrating the files agian.",
+                        exc_info=True,
+                    )
+                else:
+                    self._versions.setdefault(version.platform, {}).setdefault(
+                        version.version_number, version
+                    )
+                    self._version_remap[
+                        (version.platform, version.data_version)
+                    ] = version.version_number
+                    if version_name == "universal":
+                        self._universal_format = version
 
+        if len(self._version_remap) < 28:
+            raise Exception(
+                "Failed to load the translators. Something has probably not been set up correctly."
+            )
         if self._universal_format is None:
             raise Exception(
                 "Universal format was not found. Something has probably not been set up correctly."
