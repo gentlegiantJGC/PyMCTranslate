@@ -129,12 +129,38 @@
                 "\"south\"",
                 "\"west\"",
                 "\"east\""
-            ],
-            "type": [
-                "\"single\"",
-                "\"left\"",
-                "\"right\""
             ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "\"single\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "connection": "\"none\""
+                        }
+                    }
+                ],
+                "\"left\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "connection": "\"left\""
+                        }
+                    }
+                ],
+                "\"right\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "connection": "\"right\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

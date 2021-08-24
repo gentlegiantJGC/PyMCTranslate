@@ -15,25 +15,25 @@ def main(nbt, properties, location):
         if properties["facing_direction"].value == 2:  # north
             if dz == 0:
                 if dx == -1:
-                    return {"type": "right"}
+                    return {"connection": "right"}
                 elif dx == 1:
-                    return {"type": "left"}
+                    return {"connection": "left"}
         elif properties["facing_direction"].value == 3:  # south
             if dz == 0:
                 if dx == 1:
-                    return {"type": "right"}
+                    return {"connection": "right"}
                 elif dx == -1:
-                    return {"type": "left"}
+                    return {"connection": "left"}
         elif properties["facing_direction"].value == 4:  # west
             if dx == 0:
                 if dz == 1:
-                    return {"type": "right"}
+                    return {"connection": "right"}
                 elif dz == -1:
-                    return {"type": "left"}
+                    return {"connection": "left"}
         elif properties["facing_direction"].value == 5:  # east
             if dx == 0:
                 if dz == -1:
-                    return {"type": "right"}
+                    return {"connection": "right"}
                 elif dz == 1:
-                    return {"type": "left"}
+                    return {"connection": "left"}
     return {}
