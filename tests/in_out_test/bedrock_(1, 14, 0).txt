@@ -227,30 +227,6 @@ Numerical output: None
 Universal output 2: universal_minecraft:pressure_plate[material="birch",powered="true"]
 Blockstate: minecraft:birch_pressure_plate[redstone_signal=1]
 ======================================================================================================================================================
-Conversion error: minecraft:black_glazed_terracotta[facing_direction=0] != minecraft:black_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="black",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="black",facing="north"]
-Blockstate: minecraft:black_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:black_glazed_terracotta[facing_direction=1] != minecraft:black_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="black",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="black",facing="north"]
-Blockstate: minecraft:black_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:blue_glazed_terracotta[facing_direction=0] != minecraft:blue_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="blue",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="blue",facing="north"]
-Blockstate: minecraft:blue_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:blue_glazed_terracotta[facing_direction=1] != minecraft:blue_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="blue",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="blue",facing="north"]
-Blockstate: minecraft:blue_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
 Conversion error: minecraft:bone_block[deprecated=1,pillar_axis="y"] != minecraft:bone_block[deprecated=0,pillar_axis="y"] bedrock (1, 14, 0)
 Universal output: universal_minecraft:bone_block[axis="y"]
 Numerical output: None
@@ -304,18 +280,6 @@ Universal output: universal_minecraft:bone_block[axis="z"]
 Numerical output: None
 Universal output 2: universal_minecraft:bone_block[axis="z"]
 Blockstate: minecraft:bone_block[deprecated=0,pillar_axis="z"]
-======================================================================================================================================================
-Conversion error: minecraft:brown_glazed_terracotta[facing_direction=0] != minecraft:brown_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="brown",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="brown",facing="north"]
-Blockstate: minecraft:brown_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:brown_glazed_terracotta[facing_direction=1] != minecraft:brown_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="brown",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="brown",facing="north"]
-Blockstate: minecraft:brown_glazed_terracotta[facing_direction=2]
 ======================================================================================================================================================
 Conversion error: minecraft:brown_mushroom_block[huge_mushroom_bits=11] != minecraft:brown_mushroom_block[huge_mushroom_bits=14] bedrock (1, 14, 0)
 Universal output: universal_minecraft:brown_mushroom_block[down="true",east="true",north="true",south="true",up="true",west="true"]
@@ -466,18 +430,6 @@ Universal output: universal_minecraft:coral_fan[coral_type="horn",dead="true",fa
 Numerical output: None
 Universal output 2: universal_minecraft:coral_fan[coral_type="horn",dead="true",facing="south"]
 Blockstate: minecraft:coral_fan_hang3[coral_direction=3,coral_hang_type_bit=0b,dead_bit=1b]
-======================================================================================================================================================
-Conversion error: minecraft:cyan_glazed_terracotta[facing_direction=0] != minecraft:cyan_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="cyan",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="cyan",facing="north"]
-Blockstate: minecraft:cyan_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:cyan_glazed_terracotta[facing_direction=1] != minecraft:cyan_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="cyan",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="cyan",facing="north"]
-Blockstate: minecraft:cyan_glazed_terracotta[facing_direction=2]
 ======================================================================================================================================================
 Conversion error: minecraft:dark_oak_pressure_plate[redstone_signal=2] != minecraft:dark_oak_pressure_plate[redstone_signal=1] bedrock (1, 14, 0)
 Universal output: universal_minecraft:pressure_plate[material="dark_oak",powered="true"]
@@ -773,30 +725,6 @@ Numerical output: None
 Universal output 2: universal_minecraft:slab[material="dark_oak",type="double"]
 Blockstate: minecraft:double_wooden_slab[top_slot_bit=0b,wood_type="dark_oak"]
 ======================================================================================================================================================
-Conversion error: minecraft:gray_glazed_terracotta[facing_direction=0] != minecraft:gray_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="gray",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="gray",facing="north"]
-Blockstate: minecraft:gray_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:gray_glazed_terracotta[facing_direction=1] != minecraft:gray_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="gray",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="gray",facing="north"]
-Blockstate: minecraft:gray_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:green_glazed_terracotta[facing_direction=0] != minecraft:green_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="green",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="green",facing="north"]
-Blockstate: minecraft:green_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:green_glazed_terracotta[facing_direction=1] != minecraft:green_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="green",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="green",facing="north"]
-Blockstate: minecraft:green_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
 Conversion error: minecraft:grindstone[attachment="multiple",direction=0] != minecraft:grindstone[attachment="side",direction=0] bedrock (1, 14, 0)
 Universal output: universal_minecraft:grindstone[face="wall",facing="south"]
 Numerical output: None
@@ -971,83 +899,11 @@ Numerical output: None
 Universal output 2: universal_minecraft:ladder[facing="north"]
 Blockstate: minecraft:ladder[facing_direction=2]
 ======================================================================================================================================================
-Conversion error: minecraft:light_blue_glazed_terracotta[facing_direction=0] != minecraft:light_blue_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="light_blue",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="light_blue",facing="north"]
-Blockstate: minecraft:light_blue_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:light_blue_glazed_terracotta[facing_direction=1] != minecraft:light_blue_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="light_blue",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="light_blue",facing="north"]
-Blockstate: minecraft:light_blue_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:lime_glazed_terracotta[facing_direction=0] != minecraft:lime_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="lime",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="lime",facing="north"]
-Blockstate: minecraft:lime_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:lime_glazed_terracotta[facing_direction=1] != minecraft:lime_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="lime",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="lime",facing="north"]
-Blockstate: minecraft:lime_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:magenta_glazed_terracotta[facing_direction=0] != minecraft:magenta_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="magenta",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="magenta",facing="north"]
-Blockstate: minecraft:magenta_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:magenta_glazed_terracotta[facing_direction=1] != minecraft:magenta_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="magenta",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="magenta",facing="north"]
-Blockstate: minecraft:magenta_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:orange_glazed_terracotta[facing_direction=0] != minecraft:orange_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="orange",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="orange",facing="north"]
-Blockstate: minecraft:orange_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:orange_glazed_terracotta[facing_direction=1] != minecraft:orange_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="orange",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="orange",facing="north"]
-Blockstate: minecraft:orange_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:pink_glazed_terracotta[facing_direction=0] != minecraft:pink_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="pink",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="pink",facing="north"]
-Blockstate: minecraft:pink_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:pink_glazed_terracotta[facing_direction=1] != minecraft:pink_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="pink",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="pink",facing="north"]
-Blockstate: minecraft:pink_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
 Conversion error: minecraft:portal[portal_axis="unknown"] != minecraft:portal[portal_axis="x"] bedrock (1, 14, 0)
 Universal output: universal_minecraft:nether_portal[axis="x"]
 Numerical output: None
 Universal output 2: universal_minecraft:nether_portal[axis="x"]
 Blockstate: minecraft:portal[portal_axis="x"]
-======================================================================================================================================================
-Conversion error: minecraft:purple_glazed_terracotta[facing_direction=0] != minecraft:purple_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="purple",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="purple",facing="north"]
-Blockstate: minecraft:purple_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:purple_glazed_terracotta[facing_direction=1] != minecraft:purple_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="purple",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="purple",facing="north"]
-Blockstate: minecraft:purple_glazed_terracotta[facing_direction=2]
 ======================================================================================================================================================
 Conversion error: minecraft:purpur_block[chisel_type="default",pillar_axis="x"] != minecraft:purpur_block[chisel_type="default",pillar_axis="y"] bedrock (1, 14, 0)
 Universal output: universal_minecraft:purpur_block[axis="x"]
@@ -1103,18 +959,6 @@ Numerical output: None
 Universal output 2: universal_minecraft:redstone_torch[facing="up",lit="true"]
 Blockstate: minecraft:redstone_torch[torch_facing_direction="top"]
 ======================================================================================================================================================
-Conversion error: minecraft:red_glazed_terracotta[facing_direction=0] != minecraft:red_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="red",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="red",facing="north"]
-Blockstate: minecraft:red_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:red_glazed_terracotta[facing_direction=1] != minecraft:red_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="red",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="red",facing="north"]
-Blockstate: minecraft:red_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
 Conversion error: minecraft:red_mushroom_block[huge_mushroom_bits=11] != minecraft:red_mushroom_block[huge_mushroom_bits=14] bedrock (1, 14, 0)
 Universal output: universal_minecraft:red_mushroom_block[down="true",east="true",north="true",south="true",up="true",west="true"]
 Numerical output: None
@@ -1132,18 +976,6 @@ Universal output: universal_minecraft:red_mushroom_block[down="true",east="true"
 Numerical output: None
 Universal output 2: universal_minecraft:red_mushroom_block[down="true",east="true",north="true",south="true",up="true",west="true"]
 Blockstate: minecraft:red_mushroom_block[huge_mushroom_bits=14]
-======================================================================================================================================================
-Conversion error: minecraft:silver_glazed_terracotta[facing_direction=0] != minecraft:silver_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="light_gray",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="light_gray",facing="north"]
-Blockstate: minecraft:silver_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:silver_glazed_terracotta[facing_direction=1] != minecraft:silver_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="light_gray",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="light_gray",facing="north"]
-Blockstate: minecraft:silver_glazed_terracotta[facing_direction=2]
 ======================================================================================================================================================
 Conversion error: minecraft:snow_layer[covered_bit=1b,height=0] != minecraft:snow_layer[covered_bit=0b,height=0] bedrock (1, 14, 0)
 Universal output: universal_minecraft:snow[layers="1"]
@@ -1409,18 +1241,6 @@ Numerical output: None
 Universal output 2: universal_minecraft:redstone_torch[facing="up",lit="false"]
 Blockstate: minecraft:unlit_redstone_torch[torch_facing_direction="top"]
 ======================================================================================================================================================
-Conversion error: minecraft:white_glazed_terracotta[facing_direction=0] != minecraft:white_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="white",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="white",facing="north"]
-Blockstate: minecraft:white_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:white_glazed_terracotta[facing_direction=1] != minecraft:white_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="white",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="white",facing="north"]
-Blockstate: minecraft:white_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
 Conversion error: minecraft:wooden_pressure_plate[redstone_signal=2] != minecraft:wooden_pressure_plate[redstone_signal=1] bedrock (1, 14, 0)
 Universal output: universal_minecraft:pressure_plate[material="oak",powered="true"]
 Numerical output: None
@@ -1504,15 +1324,3 @@ Universal output: universal_minecraft:pressure_plate[material="oak",powered="tru
 Numerical output: None
 Universal output 2: universal_minecraft:pressure_plate[material="oak",powered="true"]
 Blockstate: minecraft:wooden_pressure_plate[redstone_signal=1]
-======================================================================================================================================================
-Conversion error: minecraft:yellow_glazed_terracotta[facing_direction=0] != minecraft:yellow_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="yellow",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="yellow",facing="north"]
-Blockstate: minecraft:yellow_glazed_terracotta[facing_direction=2]
-======================================================================================================================================================
-Conversion error: minecraft:yellow_glazed_terracotta[facing_direction=1] != minecraft:yellow_glazed_terracotta[facing_direction=2] bedrock (1, 14, 0)
-Universal output: universal_minecraft:glazed_terracotta[color="yellow",facing="north"]
-Numerical output: None
-Universal output 2: universal_minecraft:glazed_terracotta[color="yellow",facing="north"]
-Blockstate: minecraft:yellow_glazed_terracotta[facing_direction=2]
