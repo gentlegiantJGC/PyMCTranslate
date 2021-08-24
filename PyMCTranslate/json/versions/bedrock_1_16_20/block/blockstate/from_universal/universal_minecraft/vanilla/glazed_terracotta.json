@@ -105,6 +105,22 @@
                 ]
             },
             "facing": {
+                "\"null0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "0"
+                        }
+                    }
+                ],
+                "\"null1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "1"
+                        }
+                    }
+                ],
                 "\"north\"": [
                     {
                         "function": "new_properties",
