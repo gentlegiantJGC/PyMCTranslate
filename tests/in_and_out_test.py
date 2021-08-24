@@ -187,28 +187,32 @@ def main():
     if test_block_list is None:
         for platform_name in translations.platforms():
             for version_number in translations.version_numbers(platform_name):
-                with open(
-                    os.path.join(
-                        "in_out_test", f"{platform_name}_{version_number}.txt"
-                    ),
-                    "w",
-                ) as errors:
-                    version = translations.get_version(platform_name, version_number)
-                    log.info(f"Checking version {platform_name} {version_number}")
+                errors_path = os.path.join(
+                    "in_out_test", f"{platform_name}_{version_number}.txt"
+                )
+                errors = []
+                version = translations.get_version(platform_name, version_number)
+                log.info(f"Checking version {platform_name} {version_number}")
 
-                    for namespace_str in version.block.namespaces(True):
-                        for base_name in version.block.base_names(namespace_str, True):
-                            for input_blockstate in get_blockstates(
-                                version, namespace_str, base_name
-                            ):
-                                err = in_and_out(
-                                    platform_name,
-                                    version_number,
-                                    version,
-                                    input_blockstate,
-                                )
-                                if err:
-                                    errors.write("\n".join(err) + "\n")
+                for namespace_str in version.block.namespaces(True):
+                    for base_name in version.block.base_names(namespace_str, True):
+                        for input_blockstate in get_blockstates(
+                            version, namespace_str, base_name
+                        ):
+                            errors += in_and_out(
+                                platform_name,
+                                version_number,
+                                version,
+                                input_blockstate,
+                            )
+                if errors:
+                    with open(
+                        errors_path,
+                        "w",
+                    ) as errors_file:
+                        errors_file.write("\n".join(errors) + "\n")
+                elif os.path.isfile(errors_path):
+                    os.remove(errors_path)
 
     else:
         for block in test_block_list:
