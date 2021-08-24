@@ -11,14 +11,14 @@
             "\"west\"",
             "\"east\""
         ],
-        "connection": [
-            "\"none\"",
+        "type": [
+            "\"single\"",
             "\"left\"",
             "\"right\""
         ]
     },
     "defaults": {
         "facing": "\"north\"",
-        "connection": "\"none\""
+        "type": "\"single\""
     }
 }

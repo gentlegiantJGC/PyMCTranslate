@@ -9,30 +9,6 @@
         "function": "map_properties",
         "options": {
             "block_data": {
-                "0": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:glazed_terracotta"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"null0\""
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:glazed_terracotta"
-                    },
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"null1\""
-                        }
-                    }
-                ],
                 "2": [
                     {
                         "function": "new_block",
@@ -78,6 +54,30 @@
                         "function": "new_properties",
                         "options": {
                             "facing": "\"east\""
+                        }
+                    }
+                ],
+                "0": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:glazed_terracotta"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"null0\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:glazed_terracotta"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"null1\""
                         }
                     }
                 ]

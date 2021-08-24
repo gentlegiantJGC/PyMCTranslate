@@ -7,22 +7,6 @@
         "function": "map_properties",
         "options": {
             "facing": {
-                "\"null0\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "block_data": "0"
-                        }
-                    }
-                ],
-                "\"null1\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "block_data": "1"
-                        }
-                    }
-                ],
                 "\"north\"": [
                     {
                         "function": "new_properties",
@@ -52,6 +36,22 @@
                         "function": "new_properties",
                         "options": {
                             "block_data": "5"
+                        }
+                    }
+                ],
+                "\"null0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "0"
+                        }
+                    }
+                ],
+                "\"null1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "block_data": "1"
                         }
                     }
                 ]
