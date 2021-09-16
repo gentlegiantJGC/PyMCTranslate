@@ -13,6 +13,10 @@ if TYPE_CHECKING:
 BlockCoordinates = Tuple[int, int, int]
 
 
+class BaseSpecification(dict):
+    pass
+
+
 class BaseTranslator:
     def __init__(
         self,
@@ -124,17 +128,9 @@ class BaseTranslator:
         else:
             return copy.deepcopy(data)
 
-    def get_specification(
+    def _get_raw_specification(
         self, namespace: str, base_name: str, force_blockstate: bool = False
     ) -> dict:
-        """
-        Get the specification file for the requested object.
-
-        :param namespace: A namespace string as found using the ``namespaces`` method
-        :param base_name: A base name string as found using the ``base_name`` method
-        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
-        :return: A dictionary containing the specification for the object
-        """
         try:
             data = self._database.get(self._format_key(force_blockstate), {}).get(
                 "specification", {}
@@ -144,6 +140,19 @@ class BaseTranslator:
             raise KeyError(
                 f"Specification for {self._mode} {self._format_key(force_blockstate)} {namespace}:{base_name} does not exist in {self._parent_version}"
             )
+
+    def get_specification(
+        self, namespace: str, base_name: str, force_blockstate: bool = False
+    ) -> BaseSpecification:
+        """
+        Get the specification file for the requested object.
+
+        :param namespace: A namespace string as found using the ``namespaces`` method
+        :param base_name: A base name string as found using the ``base_name`` method
+        :param force_blockstate: True to get the blockstate format. False to get the native format (these are sometimes the same)
+        :return: A custom dictionary with a better documented API.
+        """
+        raise NotImplementedError
 
     def get_mapping_to_universal(
         self, namespace: str, base_name: str, force_blockstate: bool = False
