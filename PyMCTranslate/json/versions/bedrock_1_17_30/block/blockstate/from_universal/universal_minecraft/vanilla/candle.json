@@ -1,6 +1,167 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:candle"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "candles": {
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "0"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "1"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "2"
+                        }
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "3"
+                        }
+                    }
+                ]
+            },
+            "lit": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "1b"
+                        }
+                    }
+                ]
+            },
+            "color": {
+                "\"black\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:black_candle"
+                    }
+                ],
+                "\"blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blue_candle"
+                    }
+                ],
+                "\"brown\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brown_candle"
+                    }
+                ],
+                "\"default\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:candle"
+                    }
+                ],
+                "\"cyan\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cyan_candle"
+                    }
+                ],
+                "\"gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:gray_candle"
+                    }
+                ],
+                "\"green\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:green_candle"
+                    }
+                ],
+                "\"light_blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_blue_candle"
+                    }
+                ],
+                "\"light_gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_gray_candle"
+                    }
+                ],
+                "\"lime\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lime_candle"
+                    }
+                ],
+                "\"magenta\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:magenta_candle"
+                    }
+                ],
+                "\"orange\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:orange_candle"
+                    }
+                ],
+                "\"pink\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pink_candle"
+                    }
+                ],
+                "\"purple\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purple_candle"
+                    }
+                ],
+                "\"red\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_candle"
+                    }
+                ],
+                "\"white\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:white_candle"
+                    }
+                ],
+                "\"yellow\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_candle"
+                    }
+                ]
+            }
+        }
     }
 ]
