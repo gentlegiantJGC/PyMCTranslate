@@ -26,7 +26,10 @@ class BlockSpecification(BaseSpecification):
     @property
     def default_properties(self) -> Dict[str, amulet_nbt.AnyNBT]:
         if self._default_properties is NotInit:
-            self._default_properties = {key: amulet_nbt.from_snbt(val) for key, val in self.get("defaults", {}).items()}
+            self._default_properties = {
+                key: amulet_nbt.from_snbt(val)
+                for key, val in self.get("defaults", {}).items()
+            }
         return self._default_properties
 
     @property
@@ -191,7 +194,9 @@ class BlockTranslator(BaseTranslator):
     def get_specification(
         self, namespace: str, base_name: str, force_blockstate: bool = False
     ) -> BlockSpecification:
-        return BlockSpecification(self._get_raw_specification(namespace, base_name, force_blockstate))
+        return BlockSpecification(
+            self._get_raw_specification(namespace, base_name, force_blockstate)
+        )
 
     def to_universal(
         self,
