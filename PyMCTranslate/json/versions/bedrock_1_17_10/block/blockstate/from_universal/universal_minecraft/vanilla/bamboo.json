@@ -1,0 +1,73 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bamboo"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "stage": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age_bit": "0b"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "leaves": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bamboo_leaf_size": "\"no_leaves\""
+                        }
+                    }
+                ],
+                "\"small\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bamboo_leaf_size": "\"small_leaves\""
+                        }
+                    }
+                ],
+                "\"large\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bamboo_leaf_size": "\"large_leaves\""
+                        }
+                    }
+                ]
+            },
+            "thickness": {
+                "\"thin\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bamboo_stalk_thickness": "\"thin\""
+                        }
+                    }
+                ],
+                "\"thick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bamboo_stalk_thickness": "\"thick\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

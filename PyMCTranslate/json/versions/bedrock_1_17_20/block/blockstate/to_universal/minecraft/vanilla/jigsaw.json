@@ -1,0 +1,127 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:jigsaw"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing_direction": {
+                "0": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "rotation": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_north\""
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_west\""
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_south\""
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_east\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "rotation": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_north\""
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_east\""
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_south\""
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_west\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"north_up\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"south_up\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"west_up\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"east_up\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

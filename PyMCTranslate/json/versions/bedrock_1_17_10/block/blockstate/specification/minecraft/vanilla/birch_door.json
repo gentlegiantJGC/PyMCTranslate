@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "door_hinge_bit": [
+            "0b",
+            "1b"
+        ],
+        "open_bit": [
+            "0b",
+            "1b"
+        ],
+        "upper_block_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "direction": "0",
+        "door_hinge_bit": "0b",
+        "open_bit": "0b",
+        "upper_block_bit": "0b"
+    }
+}
