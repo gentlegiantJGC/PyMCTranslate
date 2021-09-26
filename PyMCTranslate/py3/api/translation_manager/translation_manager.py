@@ -80,7 +80,7 @@ class TranslationManager:
                 self._version_remap[
                     (version.platform, version.data_version)
                 ] = version.version_number
-                if version_name == "universal":
+                if version.platform == "universal":
                     self._universal_format = version
 
         if len(self._version_remap) < 28:
