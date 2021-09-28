@@ -20,6 +20,11 @@ class ItemTranslator(BaseTranslator):
     ):
         super().__init__(translation_manager, parent_version, database, "item")
 
+    def get_specification(
+        self, namespace: str, base_name: str, force_blockstate: bool = False
+    ):
+        raise NotImplementedError
+
     def to_universal(
         self, object_input: Union[Item, BlockItem]
     ) -> Union[Item, BlockItem]:

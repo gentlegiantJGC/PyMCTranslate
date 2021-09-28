@@ -343,7 +343,7 @@ def translate(
         # we should have a block output
         # create the block object based on output_name and new['properties']
         namespace, base_name = output_name.split(":", 1)
-        spec = output_version.block.get_specification(
+        spec = output_version.block._get_raw_specification(
             namespace, base_name, force_blockstate
         )
         properties = spec.get("defaults", {})
@@ -387,7 +387,7 @@ def translate(
         # we should have an entity output
         # create the entity object based on output_name and new['nbt']
         namespace, base_name = output_name.split(":", 1)
-        spec = output_version.entity.get_specification(
+        spec = output_version.entity._get_raw_specification(
             namespace, base_name, force_blockstate
         )
 

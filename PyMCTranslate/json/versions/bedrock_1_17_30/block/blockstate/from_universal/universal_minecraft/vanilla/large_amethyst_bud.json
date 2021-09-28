@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:large_amethyst_bud"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"down\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "0"
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "2"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "3"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "4"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "5"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

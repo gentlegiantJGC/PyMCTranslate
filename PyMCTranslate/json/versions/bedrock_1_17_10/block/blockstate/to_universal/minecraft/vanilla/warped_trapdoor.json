@@ -1,0 +1,87 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:trapdoor"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"warped\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ]
+            },
+            "open_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open": "\"true\""
+                        }
+                    }
+                ]
+            },
+            "upside_down_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"bottom\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"top\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

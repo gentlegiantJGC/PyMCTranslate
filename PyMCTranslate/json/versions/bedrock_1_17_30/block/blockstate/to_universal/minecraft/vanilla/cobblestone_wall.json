@@ -1,0 +1,247 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wall"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "wall_block_type": {
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"cobblestone\""
+                        }
+                    }
+                ],
+                "\"mossy_cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_cobblestone\""
+                        }
+                    }
+                ],
+                "\"granite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"granite\""
+                        }
+                    }
+                ],
+                "\"diorite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"diorite\""
+                        }
+                    }
+                ],
+                "\"andesite\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"andesite\""
+                        }
+                    }
+                ],
+                "\"sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"sandstone\""
+                        }
+                    }
+                ],
+                "\"brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"brick\""
+                        }
+                    }
+                ],
+                "\"stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"stone_brick\""
+                        }
+                    }
+                ],
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_stone_brick\""
+                        }
+                    }
+                ],
+                "\"nether_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"nether_brick\""
+                        }
+                    }
+                ],
+                "\"end_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"end_stone_brick\""
+                        }
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine\""
+                        }
+                    }
+                ],
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_sandstone\""
+                        }
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_nether_brick\""
+                        }
+                    }
+                ]
+            },
+            "wall_connection_type_north": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"none\""
+                        }
+                    }
+                ],
+                "\"short\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"low\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "north": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "wall_connection_type_east": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "east": "\"none\""
+                        }
+                    }
+                ],
+                "\"short\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "east": "\"low\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "east": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "wall_connection_type_south": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "south": "\"none\""
+                        }
+                    }
+                ],
+                "\"short\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "south": "\"low\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "south": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "wall_connection_type_west": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "west": "\"none\""
+                        }
+                    }
+                ],
+                "\"short\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "west": "\"low\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "west": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "wall_post_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "up": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "up": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

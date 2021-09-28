@@ -76,11 +76,14 @@ class TranslationManager:
                     self._versions.setdefault(version.platform, {}).setdefault(
                         version.version_number, version
                     )
-                    self._version_remap[
-                        (version.platform, version.data_version)
-                    ] = version.version_number
-                    if version_name == "universal":
-                        self._universal_format = version
+
+        for versions in self._versions.values():
+            for version in sorted(versions.values(), key=lambda v: v.version_number):
+                self._version_remap[
+                    (version.platform, version.data_version)
+                ] = version.version_number
+                if version.platform == "universal":
+                    self._universal_format = version
 
         if len(self._version_remap) < 28:
             raise Exception(
@@ -145,7 +148,7 @@ class TranslationManager:
         """
         if platform not in self._versions:
             raise KeyError(f'The requested platform "{platform}" is not present')
-        return list(self._versions[platform].keys())
+        return sorted(self._versions[platform].keys())
 
     def get_version(
         self, platform: str, version_number: Union[int, Tuple[int, ...], List[int]]

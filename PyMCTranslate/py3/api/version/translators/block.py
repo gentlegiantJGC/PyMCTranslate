@@ -1,17 +1,62 @@
-from typing import Tuple, Union, Callable, TYPE_CHECKING, Optional, Dict
+from typing import Tuple, Union, Callable, TYPE_CHECKING, Optional, Dict, Any
 import copy
 
 import amulet_nbt
 
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity
 from PyMCTranslate.py3.log import log
-from .base import BaseTranslator
+from .base import BaseTranslator, BaseSpecification
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.version import Version
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
 
 BlockCoordinates = Tuple[int, int, int]
+NotInit = object()
+
+
+class BlockSpecification(BaseSpecification):
+    def __init__(self, data: Dict[str, Any]):
+        super().__init__(data)
+        self._default_properties = NotInit
+        self._valid_properties = NotInit
+        self._nbt_identifier = NotInit
+        self._default_nbt = NotInit
+
+    @property
+    def default_properties(self) -> Dict[str, amulet_nbt.AnyNBT]:
+        if self._default_properties is NotInit:
+            self._default_properties = {
+                key: amulet_nbt.from_snbt(val)
+                for key, val in self.get("defaults", {}).items()
+            }
+        return self._default_properties
+
+    @property
+    def valid_properties(self) -> Dict[str, Tuple[amulet_nbt.AnyNBT]]:
+        if self._valid_properties is NotInit:
+            self._valid_properties = {
+                key: tuple(amulet_nbt.from_snbt(val) for val in vals)
+                for key, vals in self.get("properties", {}).items()
+            }
+        return self._valid_properties
+
+    @property
+    def nbt_identifier(self) -> Optional[Tuple[str, str]]:
+        if self._nbt_identifier is NotInit:
+            self._nbt_identifier = self.get("nbt_identifier", None)
+        return self._nbt_identifier
+
+    @property
+    def default_nbt(self) -> Optional[amulet_nbt.TAG_Compound]:
+        if self._default_nbt is NotInit:
+            snbt = self.get("snbt", None)
+            if isinstance(snbt, str):
+                nbt = amulet_nbt.from_snbt(snbt)
+            else:
+                nbt = None
+            self._default_nbt = nbt
+        return self._default_nbt
 
 
 class BlockTranslator(BaseTranslator):
@@ -146,6 +191,13 @@ class BlockTranslator(BaseTranslator):
         if block_id is not None and block_data is not None:
             return block_id, block_data
 
+    def get_specification(
+        self, namespace: str, base_name: str, force_blockstate: bool = False
+    ) -> BlockSpecification:
+        return BlockSpecification(
+            self._get_raw_specification(namespace, base_name, force_blockstate)
+        )
+
     def to_universal(
         self,
         block: "Block",
@@ -180,7 +232,7 @@ class BlockTranslator(BaseTranslator):
             block_entity = copy.deepcopy(block_entity)
 
         try:
-            input_spec = self.get_specification(
+            input_spec = self._get_raw_specification(
                 block.namespace, block.base_name, force_blockstate
             )
             mapping = self.get_mapping_to_universal(
@@ -250,7 +302,7 @@ class BlockTranslator(BaseTranslator):
             block_entity = copy.deepcopy(block_entity)
 
         try:
-            input_spec = self._universal_format.block.get_specification(
+            input_spec = self._universal_format.block._get_raw_specification(
                 block.namespace, block.base_name
             )
             mapping = self.get_mapping_from_universal(
