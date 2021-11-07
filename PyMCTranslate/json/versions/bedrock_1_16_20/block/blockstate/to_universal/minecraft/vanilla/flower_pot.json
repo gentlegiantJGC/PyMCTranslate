@@ -85,7 +85,7 @@
                                                                 "function": "map_nbt",
                                                                 "options": {
                                                                     "cases": {
-                                                                        "{\"flower_type\": \"poppy\"}": [
+                                                                        "{flower_type: \"poppy\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -93,7 +93,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"orchid\"}": [
+                                                                        "{flower_type: \"orchid\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -101,7 +101,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"allium\"}": [
+                                                                        "{flower_type: \"allium\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -109,7 +109,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"houstonia\"}": [
+                                                                        "{flower_type: \"houstonia\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -117,7 +117,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"tulip_red\"}": [
+                                                                        "{flower_type: \"tulip_red\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -125,7 +125,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"tulip_orange\"}": [
+                                                                        "{flower_type: \"tulip_orange\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -133,7 +133,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"tulip_white\"}": [
+                                                                        "{flower_type: \"tulip_white\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -141,7 +141,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"tulip_pink\"}": [
+                                                                        "{flower_type: \"tulip_pink\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -149,7 +149,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"oxeye\"}": [
+                                                                        "{flower_type: \"oxeye\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -157,7 +157,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"cornflower\"}": [
+                                                                        "{flower_type: \"cornflower\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -165,7 +165,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"flower_type\": \"lily_of_the_valley\"}": [
+                                                                        "{flower_type: \"lily_of_the_valley\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -206,7 +206,7 @@
                                                                 "function": "map_nbt",
                                                                 "options": {
                                                                     "cases": {
-                                                                        "{\"age_bit\": 0b, \"sapling_type\": \"oak\"}": [
+                                                                        "{age_bit: 0b, sapling_type: \"oak\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -214,7 +214,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"age_bit\": 0b, \"sapling_type\": \"spruce\"}": [
+                                                                        "{age_bit: 0b, sapling_type: \"spruce\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -222,7 +222,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"age_bit\": 0b, \"sapling_type\": \"birch\"}": [
+                                                                        "{age_bit: 0b, sapling_type: \"birch\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -230,7 +230,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"age_bit\": 0b, \"sapling_type\": \"jungle\"}": [
+                                                                        "{age_bit: 0b, sapling_type: \"jungle\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -238,7 +238,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"age_bit\": 0b, \"sapling_type\": \"acacia\"}": [
+                                                                        "{age_bit: 0b, sapling_type: \"acacia\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -246,7 +246,7 @@
                                                                                 }
                                                                             }
                                                                         ],
-                                                                        "{\"age_bit\": 0b, \"sapling_type\": \"dark_oak\"}": [
+                                                                        "{age_bit: 0b, sapling_type: \"dark_oak\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -369,7 +369,7 @@
                                                                 "function": "map_nbt",
                                                                 "options": {
                                                                     "cases": {
-                                                                        "{\"tall_grass_type\": \"fern\"}": [
+                                                                        "{tall_grass_type: \"fern\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {
@@ -492,7 +492,7 @@
                                                                 "function": "map_nbt",
                                                                 "options": {
                                                                     "cases": {
-                                                                        "{\"age_bit\": 0, \"bamboo_leaf_size\": \"no_leaves\", \"bamboo_stalk_thickness\": \"thin\"}": [
+                                                                        "{age_bit: 0, bamboo_leaf_size: \"no_leaves\", bamboo_stalk_thickness: \"thin\"}": [
                                                                             {
                                                                                 "function": "new_properties",
                                                                                 "options": {

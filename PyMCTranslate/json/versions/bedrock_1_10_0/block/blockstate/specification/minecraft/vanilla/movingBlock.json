@@ -3,5 +3,5 @@
         "",
         "MovingBlock"
     ],
-    "snbt": "{movingBlock: {name: \"minecraft:stone\", val: 0s}, movingBlockExtra: {name: \"minecraft:air\", val: 0s}, pistonPosX: 0, pistonPosY: 0, pistonPosZ: 0, isMovable: 1b}"
+    "snbt": "{isMovable: 1b, movingBlock: {name: \"minecraft:stone\", val: 0s}, movingBlockExtra: {name: \"minecraft:air\", val: 0s}, pistonPosX: 0, pistonPosY: 0, pistonPosZ: 0}"
 }
