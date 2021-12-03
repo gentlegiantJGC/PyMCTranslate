@@ -1,0 +1,67 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:redstone_torch"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "lit": "\"false\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "torch_facing_direction": {
+                "\"unknown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"top\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
