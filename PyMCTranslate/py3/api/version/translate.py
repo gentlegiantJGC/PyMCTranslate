@@ -69,18 +69,18 @@ _datatype_to_nbt: Dict[str, AnyNBTClass] = {
 }
 
 _nbt_to_datatype = {
-    "TAG_Byte": "byte",
-    "TAG_Short": "short",
-    "TAG_Int": "int",
-    "TAG_Long": "long",
-    "TAG_Float": "float",
-    "TAG_Double": "double",
-    "TAG_Byte_Array": "byte_array",
-    "TAG_String": "string",
-    "TAG_List": "list",
-    "TAG_Compound": "compound",
-    "TAG_Int_Array": "int_array",
-    "TAG_Long_Array": "long_array",
+    TAG_Byte: "byte",
+    TAG_Short: "short",
+    TAG_Int: "int",
+    TAG_Long: "long",
+    TAG_Float: "float",
+    TAG_Double: "double",
+    TAG_Byte_Array: "byte_array",
+    TAG_String: "string",
+    TAG_List: "list",
+    TAG_Compound: "compound",
+    TAG_Int_Array: "int_array",
+    TAG_Long_Array: "long_array",
 }
 
 _int_to_nbt = [
@@ -120,7 +120,7 @@ def datatype_to_nbt(datatype: str) -> AnyNBTClass:
 
 
 def nbt_to_datatype(nbt: amulet_nbt.BaseValueType) -> str:
-    return _nbt_to_datatype[nbt.__class__.__name__]
+    return _nbt_to_datatype[nbt.__class__]
 
 
 def index_nbt(
@@ -702,7 +702,7 @@ def _translate(
                         nbt_temp, datatype_to_nbt(custom_nbt_path[-1][-1])
                     ):
                         log.error(
-                            f"Expected nbt data at {custom_nbt_path} to be an {custom_nbt_path[-1][-1]} tag but got {nbt_temp.__class__.__name__}"
+                            f"Expected nbt data at {custom_nbt_path} to be an {custom_nbt_path[-1][-1]} tag but got {nbt_temp.__class__}"
                         )
                     else:
                         (
