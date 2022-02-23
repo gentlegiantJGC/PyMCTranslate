@@ -1,4 +1,3 @@
 from .rotate import RotateMode, RotationManager
 
-import axis
-import facing
+from . import axis, facing, rotation
