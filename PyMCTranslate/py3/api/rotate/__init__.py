@@ -1,3 +1,3 @@
 from .rotate import RotateMode, RotationManager
 
-from . import axis, facing, rotation
+from . import axis, facing, rotation, shape
