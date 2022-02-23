@@ -19,9 +19,9 @@ class PillarShape(BaseAbsVectorBlockShape):
     }
 
     def is_valid(
-            self, namespace: str, base_name: str, specification: BlockSpecification
+        self, namespace: str, base_name: str, specification: BlockSpecification
     ) -> bool:
-        return set(specification.valid_properties.get("facing", ())) == {
+        return set(specification.valid_properties.get("axis", ())) == {
             TAG_String("x"),
             TAG_String("y"),
             TAG_String("z"),
@@ -41,9 +41,9 @@ class PortalShape(BaseAbsVectorBlockShape):
     }
 
     def is_valid(
-            self, namespace: str, base_name: str, specification: BlockSpecification
+        self, namespace: str, base_name: str, specification: BlockSpecification
     ) -> bool:
-        return set(specification.valid_properties.get("facing", ())) == {
+        return set(specification.valid_properties.get("axis", ())) == {
             TAG_String("x"),
             TAG_String("z"),
         }
