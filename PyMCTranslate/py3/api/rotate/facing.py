@@ -7,7 +7,7 @@ from .rotate import BlockShapes, BaseVectorBlockShape
 
 
 @BlockShapes.register
-class StairBlockShape(BaseVectorBlockShape):
+class StairShape(BaseVectorBlockShape):
     Properties = ("half", "facing")
     Vectors = {
         (half, facing): (x, y, z)
