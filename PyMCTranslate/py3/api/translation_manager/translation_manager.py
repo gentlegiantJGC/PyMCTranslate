@@ -1,6 +1,8 @@
 import os
 from typing import Union, Tuple, List, Dict
 
+import numpy
+
 from .registry import NumericalRegistry
 from PyMCTranslate.py3 import log
 from PyMCTranslate.py3.meta import minified
@@ -104,10 +106,10 @@ class TranslationManager:
         """
         return self._universal_format
 
-    def rotate_universal_block(
+    def transform_universal_block(
         self,
         block: Block,
-        angle: Tuple[float, float, float],
+        transform: numpy.ndarray,
         mode: RotateMode = RotateMode.Nearest,
     ) -> Block:
         """
@@ -118,7 +120,7 @@ class TranslationManager:
         :param mode: The rotation mode. See :class:`RotateMode` for more information
         :return: The transformed block state
         """
-        return self._rotation_manger.rotate(block, angle, mode)
+        return self._rotation_manger.transform(block, transform, mode)
 
     @property
     def biome_registry(self) -> NumericalRegistry:

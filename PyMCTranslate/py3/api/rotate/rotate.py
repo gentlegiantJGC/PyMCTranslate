@@ -1,12 +1,15 @@
-from typing import Dict, Tuple, Type, List, Set, Optional
+from typing import Dict, Tuple, Type, Set, Optional, List
 from abc import ABC, abstractmethod
 from enum import IntEnum
+
+import numpy
+
 from PyMCTranslate.py3.api.version import Version
-from PyMCTranslate.py3.api import Block
+from PyMCTranslate.py3.api import Block, PropertyValueType
 
 
 # This is the dictionary stored under the properties key in the specification files
-SpecificationType = Dict[str, List[str]]
+from PyMCTranslate.py3.api.version.translators.block import BlockSpecification
 
 
 class RotateMode(IntEnum):
@@ -18,7 +21,7 @@ class RotateMode(IntEnum):
 class BaseBlockShape(ABC):
     @abstractmethod
     def is_valid(
-        self, namespace: str, base_name: str, specification: SpecificationType
+        self, namespace: str, base_name: str, specification: BlockSpecification
     ) -> bool:
         """
         Can this class rotate the given block.
@@ -31,17 +34,17 @@ class BaseBlockShape(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def rotate(
+    def transform(
         self,
         block: Block,
-        angle: Tuple[float, float, float],
+        transform: numpy.ndarray,
         mode: RotateMode = RotateMode.Nearest,
     ):
         """
         Rotate the given block and return a new block.
 
         :param block: The block to rotate
-        :param angle: The amount to rotate the block
+        :param transform: The transformation matrix to transform the block with
         :param mode: The rotation mode (This should only be Exact or Nearest because Null was handled before calling)
         :return: The rotated block
         """
@@ -49,6 +52,8 @@ class BaseBlockShape(ABC):
 
 
 class BlockShapeManager:
+    """A container to store and find block shapes."""
+
     def __init__(self):
         self._block_shapes: Set[BaseBlockShape] = set()
 
@@ -63,7 +68,7 @@ class BlockShapeManager:
         return block_shape
 
     def find_block_shape(
-        self, namespace: str, base_name: str, specification: SpecificationType
+        self, namespace: str, base_name: str, specification: BlockSpecification
     ) -> Optional[BaseBlockShape]:
         """
         Find the block shape class that is valid for this specification.
@@ -86,25 +91,72 @@ class BlockShapeManager:
 BlockShapes = BlockShapeManager()
 
 
-@BlockShapes.register
-class ExampleBlockShape(BaseBlockShape):
-    def is_valid(
-        self, namespace: str, base_name: str, specification: SpecificationType
-    ) -> bool:
-        # if something:
-        #   return True
-        return False
+class BaseVectorBlockShape(BaseBlockShape):
+    @property
+    @classmethod
+    @abstractmethod
+    def Properties(cls) -> Tuple[str, ...]:
+        """The names of the properties used in the vector map."""
+        raise NotImplementedError
 
-    def rotate(
+    @property
+    @classmethod
+    @abstractmethod
+    def Vectors(cls) -> Dict[Tuple[PropertyValueType, ...], Tuple[float, float, float]]:
+        """A map from the property values to a vector representing that rotation"""
+        raise NotImplementedError
+
+    def _block_to_vector(self, block: Block) -> Optional[Tuple[float, float, float]]:
+        """Convert the block state to a vector representing the rotation"""
+        return self.Vectors.get(
+            tuple(block.properties.get(prop, None) for prop in self.Properties), None
+        )
+
+    def _vector_to_properties(
+        self, vector: Tuple[float, float, float], mode: RotateMode
+    ) -> Optional[Tuple[PropertyValueType, ...]]:
+        """Convert a rotation vector back into properties"""
+
+        def dist(vec: Tuple[float, float, float]) -> float:
+            return sum((a - b) ** 2 for a, b in zip(vector, vec))
+
+        sorted_vectors: List[
+            Tuple[Tuple[PropertyValueType, ...], Tuple[float, float, float]]
+        ] = sorted(self.Vectors.items(), key=lambda a: dist(a[1]))
+        properties, closest_vector = sorted_vectors[0]
+        if mode is RotateMode.Exact and dist(closest_vector) > 0.01:
+            return None
+        return properties
+
+    @staticmethod
+    def _transform_vector(vector, transform):
+        return tuple(numpy.matmul(transform, (*vector, 0)).tolist())[:-1]
+
+    def transform(
         self,
         block: Block,
-        angle: Tuple[float, float, float],
+        transform: numpy.ndarray,
         mode: RotateMode = RotateMode.Nearest,
     ):
-        # do some magic and return a new transformed block
-        # base logic can be defined in the base class
-        # if multiple classes use similar logic use the class system to your advantage and create a base class for them
-        raise NotImplementedError
+        if not mode:
+            return block
+        vector = self._block_to_vector(block)
+        if vector is None:
+            return block
+        vector2 = self._transform_vector(vector, transform)
+        new_properties = self._vector_to_properties(vector2, mode)
+        if new_properties is None:
+            return block
+        properties = block.properties
+        properties.update(dict(zip(self.Properties, new_properties)))
+
+        return Block(block.namespace, block.base_name, properties)
+
+
+class BaseAbsVectorBlockShape(BaseVectorBlockShape):
+    @staticmethod
+    def _transform_vector(vector, transform):
+        return tuple(abs(numpy.matmul(transform, (*vector, 0))).tolist())[:-1]
 
 
 class RotationManager:
@@ -118,17 +170,17 @@ class RotationManager:
                     universal_version.block.get_specification(namespace, base_name),
                 )
                 if block_shape is not None:
-                    self._block_shapes[
-                        f"{namespace}:{base_name}"
-                    ] = block_shape
+                    self._block_shapes[f"{namespace}:{base_name}"] = block_shape
 
-    def rotate(
+    def transform(
         self,
         block: Block,
-        angle: Tuple[float, float, float],
+        transform: numpy.ndarray,
         mode: RotateMode = RotateMode.Nearest,
     ):
         if mode and block.namespaced_name in self._block_shapes:
-            return self._block_shapes[block.namespaced_name].rotate(block, angle, mode)
+            return self._block_shapes[block.namespaced_name].transform(
+                block, transform, mode
+            )
         else:
             return block
