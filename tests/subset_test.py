@@ -2,10 +2,9 @@ import unittest
 import itertools
 from typing import Generator, Tuple, Any
 
-from amulet.api.block import Block
-from amulet.api.entity import Entity
 import amulet_nbt
 import PyMCTranslate
+from PyMCTranslate.py3.api import Block, Entity
 from PyMCTranslate.py3.log import enable_console_log
 
 
