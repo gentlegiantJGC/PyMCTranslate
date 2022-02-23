@@ -1,4 +1,4 @@
-from typing import Dict, Tuple, Type, Set, Optional, List
+from typing import Dict, Tuple, Type, Set, Optional, List, Union
 from abc import ABC, abstractmethod
 from enum import IntEnum
 
@@ -102,15 +102,27 @@ class BaseVectorBlockShape(BaseBlockShape):
     @property
     @classmethod
     @abstractmethod
-    def Vectors(cls) -> Dict[Tuple[PropertyValueType, ...], Tuple[float, float, float]]:
+    def Vectors(
+        cls,
+    ) -> Dict[
+        Tuple[PropertyValueType, ...],
+        Union[
+            Tuple[float, float, float],
+            List[Tuple[float, float, float]],
+        ],
+    ]:
         """A map from the property values to a vector representing that rotation"""
         raise NotImplementedError
 
     def _block_to_vector(self, block: Block) -> Optional[Tuple[float, float, float]]:
         """Convert the block state to a vector representing the rotation"""
-        return self.Vectors.get(
+        vector = self.Vectors.get(
             tuple(block.properties.get(prop, None) for prop in self.Properties), None
         )
+        if isinstance(vector, list):
+            return vector[0]
+        else:
+            return vector
 
     def _vector_to_properties(
         self, vector: Tuple[float, float, float], mode: RotateMode
@@ -122,7 +134,12 @@ class BaseVectorBlockShape(BaseBlockShape):
 
         sorted_vectors: List[
             Tuple[Tuple[PropertyValueType, ...], Tuple[float, float, float]]
-        ] = sorted(self.Vectors.items(), key=lambda a: dist(a[1]))
+        ] = sorted(
+            self.Vectors.items(),
+            key=lambda a: min([dist(v) for v in a[1]])
+            if isinstance(a[1], list)
+            else dist(a[1]),
+        )
         properties, closest_vector = sorted_vectors[0]
         if mode is RotateMode.Exact and dist(closest_vector) > 0.01:
             return None
@@ -151,12 +168,6 @@ class BaseVectorBlockShape(BaseBlockShape):
         properties.update(dict(zip(self.Properties, new_properties)))
 
         return Block(block.namespace, block.base_name, properties)
-
-
-class BaseAbsVectorBlockShape(BaseVectorBlockShape):
-    @staticmethod
-    def _transform_vector(vector, transform):
-        return tuple(abs(numpy.matmul(transform, (*vector, 0))).tolist())[:-1]
 
 
 class RotationManager:
