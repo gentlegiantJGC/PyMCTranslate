@@ -99,6 +99,44 @@ class TrapdoorShape(BaseVectorBlockShape):
 
 
 @BlockShapes.register
+class ButtonShape(BaseVectorBlockShape):
+    Properties = ("face", "facing")
+    Vectors = {
+        (TAG_String("ceiling"), TAG_String("east")): (1, 10, 0),
+        (TAG_String("ceiling"), TAG_String("north")): (0, 10, -1),
+        (TAG_String("ceiling"), TAG_String("south")): (0, 10, 1),
+        (TAG_String("ceiling"), TAG_String("west")): (-1, 10, 0),
+        (TAG_String("floor"), TAG_String("east")): (1, -10, 0),
+        (TAG_String("floor"), TAG_String("north")): (0, -10, -1),
+        (TAG_String("floor"), TAG_String("south")): (0, -10, 1),
+        (TAG_String("floor"), TAG_String("west")): (-1, -10, 0),
+        (TAG_String("wall"), TAG_String("east")): (-10, 1, 0),
+        (TAG_String("wall"), TAG_String("north")): (0, 1, 10),
+        (TAG_String("wall"), TAG_String("south")): (0, 1, -10),
+        (TAG_String("wall"), TAG_String("west")): (10, 1, 0),
+    }
+
+    def is_valid(
+            self, namespace: str, base_name: str, specification: BlockSpecification
+    ) -> bool:
+        return (
+                set(specification.valid_properties.get("facing", ()))
+                == {
+                    TAG_String("north"),
+                    TAG_String("south"),
+                    TAG_String("west"),
+                    TAG_String("east"),
+                }
+                and set(specification.valid_properties.get("face", ()))
+                == {
+                    TAG_String("ceiling"),
+                    TAG_String("floor"),
+                    TAG_String("wall"),
+                }
+        )
+
+
+@BlockShapes.register
 class StairShape(BaseVectorBlockShape):
     Properties = ("half", "facing")
     Vectors = {
