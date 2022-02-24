@@ -3,7 +3,7 @@
         "minecraft",
         "command_block"
     ],
-    "snbt": "{conditionMet: 0b, auto: 0b, powered: 0b, Command: \"\", SuccessCount: 0, TrackOutput: 1b, UpdateLastExecution: 1b, CustomName: \"{\\\"text\\\":\\\"@\\\"}\"}",
+    "snbt": "{auto: 0b, Command: \"\", conditionMet: 0b, CustomName: \"{\\\"text\\\":\\\"@\\\"}\", powered: 0b, SuccessCount: 0, TrackOutput: 1b, UpdateLastExecution: 1b}",
     "properties": {
         "conditional": [
             "\"true\"",

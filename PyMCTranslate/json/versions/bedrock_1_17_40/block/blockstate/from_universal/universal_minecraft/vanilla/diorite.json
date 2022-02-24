@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:stone"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "polished": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stone_type": "\"diorite\""
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stone_type": "\"diorite_smooth\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

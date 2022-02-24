@@ -1,0 +1,247 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:cauldron"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "level": {
+                "\"0.5\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "cauldron_liquid": {
+                                "\"water\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:water_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"1\""
+                                        }
+                                    }
+                                ],
+                                "\"lava\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:lava_cauldron"
+                                    }
+                                ],
+                                "\"powder_snow\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:powder_snow_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"1\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"1.0\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "cauldron_liquid": {
+                                "\"water\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:water_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"1\""
+                                        }
+                                    }
+                                ],
+                                "\"lava\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:lava_cauldron"
+                                    }
+                                ],
+                                "\"powder_snow\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:powder_snow_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"1\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"1.5\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "cauldron_liquid": {
+                                "\"water\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:water_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"2\""
+                                        }
+                                    }
+                                ],
+                                "\"lava\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:lava_cauldron"
+                                    }
+                                ],
+                                "\"powder_snow\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:powder_snow_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"2\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"2.0\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "cauldron_liquid": {
+                                "\"water\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:water_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"2\""
+                                        }
+                                    }
+                                ],
+                                "\"lava\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:lava_cauldron"
+                                    }
+                                ],
+                                "\"powder_snow\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:powder_snow_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"2\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"2.5\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "cauldron_liquid": {
+                                "\"water\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:water_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"3\""
+                                        }
+                                    }
+                                ],
+                                "\"lava\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:lava_cauldron"
+                                    }
+                                ],
+                                "\"powder_snow\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:powder_snow_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"3\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"3.0\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "cauldron_liquid": {
+                                "\"water\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:water_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"3\""
+                                        }
+                                    }
+                                ],
+                                "\"lava\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:lava_cauldron"
+                                    }
+                                ],
+                                "\"powder_snow\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:powder_snow_cauldron"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "level": "\"3\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

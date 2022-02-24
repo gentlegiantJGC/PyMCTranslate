@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:bubble_column"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "drag": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "drag_down": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "drag_down": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

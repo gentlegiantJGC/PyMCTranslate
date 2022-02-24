@@ -83,6 +83,6 @@ class BiomeTranslator:
 
     @property
     def biome_ids(self) -> List[str]:
-        biomes = set(self._biome_int_to_str.values())
+        biomes = set(self._biome_str_to_int.keys())
         biomes.update(dict(self._translation_manager.biome_registry).values())
         return list(biomes)
