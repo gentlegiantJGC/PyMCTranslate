@@ -117,23 +117,18 @@ class ButtonShape(BaseVectorBlockShape):
     }
 
     def is_valid(
-            self, namespace: str, base_name: str, specification: BlockSpecification
+        self, namespace: str, base_name: str, specification: BlockSpecification
     ) -> bool:
-        return (
-                set(specification.valid_properties.get("facing", ()))
-                == {
-                    TAG_String("north"),
-                    TAG_String("south"),
-                    TAG_String("west"),
-                    TAG_String("east"),
-                }
-                and set(specification.valid_properties.get("face", ()))
-                == {
-                    TAG_String("ceiling"),
-                    TAG_String("floor"),
-                    TAG_String("wall"),
-                }
-        )
+        return set(specification.valid_properties.get("facing", ())) == {
+            TAG_String("north"),
+            TAG_String("south"),
+            TAG_String("west"),
+            TAG_String("east"),
+        } and set(specification.valid_properties.get("face", ())) == {
+            TAG_String("ceiling"),
+            TAG_String("floor"),
+            TAG_String("wall"),
+        }
 
 
 @BlockShapes.register
