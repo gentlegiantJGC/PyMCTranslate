@@ -55,7 +55,7 @@ class BlockShapeManager:
     """A container to store and find block shapes."""
 
     def __init__(self):
-        self._block_shapes: Set[BaseBlockShape] = set()
+        self._block_shapes: List[BaseBlockShape] = []
 
     def register(self, block_shape: Type[BaseBlockShape]) -> Type[BaseBlockShape]:
         """
@@ -64,7 +64,7 @@ class BlockShapeManager:
         :param block_shape: A subclass of BaseBlockShape
         :return: The same class that was given so that this method can be used as a decorator
         """
-        self._block_shapes.add(block_shape())
+        self._block_shapes.append(block_shape())
         return block_shape
 
     def find_block_shape(
