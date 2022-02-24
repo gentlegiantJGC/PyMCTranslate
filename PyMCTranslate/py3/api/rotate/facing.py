@@ -7,6 +7,52 @@ from .rotate import BlockShapes, BaseVectorBlockShape
 
 
 @BlockShapes.register
+class DoorShape(BaseVectorBlockShape):
+    Properties = ("hinge", "half", "facing")
+    Vectors = {
+        (TAG_String("left"), TAG_String("lower"), TAG_String("east")): (2, 1, 1),
+        (TAG_String("left"), TAG_String("lower"), TAG_String("north")): (1, 1, -2),
+        (TAG_String("left"), TAG_String("lower"), TAG_String("south")): (-1, 1, 2),
+        (TAG_String("left"), TAG_String("lower"), TAG_String("west")): (-2, 1, -1),
+        (TAG_String("left"), TAG_String("upper"), TAG_String("east")): (2, -1, 1),
+        (TAG_String("left"), TAG_String("upper"), TAG_String("north")): (1, -1, -2),
+        (TAG_String("left"), TAG_String("upper"), TAG_String("south")): (-1, -1, 2),
+        (TAG_String("left"), TAG_String("upper"), TAG_String("west")): (-2, -1, -1),
+        (TAG_String("right"), TAG_String("lower"), TAG_String("east")): (2, 1, -1),
+        (TAG_String("right"), TAG_String("lower"), TAG_String("north")): (-1, 1, -2),
+        (TAG_String("right"), TAG_String("lower"), TAG_String("south")): (1, 1, 2),
+        (TAG_String("right"), TAG_String("lower"), TAG_String("west")): (-2, 1, 1),
+        (TAG_String("right"), TAG_String("upper"), TAG_String("east")): (2, -1, -1),
+        (TAG_String("right"), TAG_String("upper"), TAG_String("north")): (-1, -1, -2),
+        (TAG_String("right"), TAG_String("upper"), TAG_String("south")): (1, -1, 2),
+        (TAG_String("right"), TAG_String("upper"), TAG_String("west")): (-2, -1, 1),
+    }
+
+    def is_valid(
+        self, namespace: str, base_name: str, specification: BlockSpecification
+    ) -> bool:
+        return (
+            set(specification.valid_properties.get("facing", ()))
+            == {
+                TAG_String("north"),
+                TAG_String("south"),
+                TAG_String("west"),
+                TAG_String("east"),
+            }
+            and set(specification.valid_properties.get("half", ()))
+            == {
+                TAG_String("lower"),
+                TAG_String("upper"),
+            }
+            and set(specification.valid_properties.get("hinge", ()))
+            == {
+                TAG_String("left"),
+                TAG_String("right"),
+            }
+        )
+
+
+@BlockShapes.register
 class TrapdoorShape(BaseVectorBlockShape):
     Properties = ("open", "half", "facing")
     Vectors = {
