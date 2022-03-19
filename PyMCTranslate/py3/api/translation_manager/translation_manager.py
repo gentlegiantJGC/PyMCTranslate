@@ -75,8 +75,13 @@ class TranslationManager:
                         version.version_number, version
                     )
 
-        for versions in self._versions.values():
-            for version in sorted(versions.values(), key=lambda v: v.version_number):
+        for platform, versions in self._versions.items():
+            # sort the dictionaries by version number
+            versions = self._versions[platform] = dict(
+                sorted(versions.items(), key=lambda v: v[0])
+            )
+
+            for version in versions.values():
                 self._version_remap[
                     (version.platform, version.data_version)
                 ] = version.version_number
@@ -166,15 +171,17 @@ class TranslationManager:
                             (platform, version_number)
                         ] = version_number_
                         return version_number_
-                    elif version.data_version > version_number:
-                        if next_version is None:
-                            next_version = version.data_version, version_number_
-                        elif version.data_version < next_version[0]:
+                    elif version_number < version.data_version:
+                        if (
+                            next_version is None
+                            or version.data_version < next_version[0]
+                        ):
                             next_version = version.data_version, version_number_
                     else:
-                        if previous_version is None:
-                            previous_version = version.data_version, version_number_
-                        elif version.data_version > previous_version[0]:
+                        if (
+                            previous_version is None
+                            or version.data_version >= previous_version[0]
+                        ):
                             previous_version = version.data_version, version_number_
                 if next_version is not None:
                     self._version_remap[(platform, version_number)] = next_version[1]
