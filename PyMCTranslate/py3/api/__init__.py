@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 try:
-    from amulet.api.block import Block
+    from amulet.api.block import Block, PropertyValueType, PropertyType
     from amulet.api.block_entity import BlockEntity
     from amulet.api.entity import Entity
     from amulet.api.item import Item, BlockItem
@@ -9,6 +9,8 @@ try:
 except ModuleNotFoundError:
     from PyMCTranslate.py3.api.amulet_objects import (
         Block,
+        PropertyValueType,
+        PropertyType,
         BlockEntity,
         Entity,
         Item,

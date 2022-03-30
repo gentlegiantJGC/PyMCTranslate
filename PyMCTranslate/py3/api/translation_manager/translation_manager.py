@@ -1,9 +1,13 @@
 import os
 from typing import Union, Tuple, List, Dict
 
+import numpy
+
 from .registry import NumericalRegistry
 from PyMCTranslate.py3 import log
 from PyMCTranslate.py3.meta import minified
+from PyMCTranslate.py3.api import Block
+from PyMCTranslate.py3.api.rotate import RotateMode, RotationManager
 from PyMCTranslate.py3.api.version import Version
 
 """
@@ -96,6 +100,7 @@ class TranslationManager:
             raise Exception(
                 "Universal format was not found. Something has probably not been set up correctly."
             )
+        self._rotation_manger = RotationManager(self.universal_format)
 
     @property
     def universal_format(self) -> Version:
@@ -105,6 +110,22 @@ class TranslationManager:
         :return: The Version class for the Universal format.
         """
         return self._universal_format
+
+    def transform_universal_block(
+        self,
+        block: Block,
+        transform: numpy.ndarray,
+        mode: RotateMode = RotateMode.Nearest,
+    ) -> Block:
+        """
+        Rotate the given universal block by the given angle.
+
+        :param block: The block to rotate. Must be a valid block from the universal format.
+        :param angle: The angle around the x, y and z axis to rotate.
+        :param mode: The rotation mode. See :class:`RotateMode` for more information
+        :return: The transformed block state
+        """
+        return self._rotation_manger.transform(block, transform, mode)
 
     @property
     def biome_registry(self) -> NumericalRegistry:
