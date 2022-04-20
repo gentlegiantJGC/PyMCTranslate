@@ -1,10 +1,11 @@
 from typing import Union, Dict, TYPE_CHECKING, List
 import numpy
-
-from PyMCTranslate.py3.log import log
+import logging
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
+
+log = logging.getLogger(__name__)
 
 """
 Biome translation pipeline

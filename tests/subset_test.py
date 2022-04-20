@@ -1,11 +1,13 @@
 import unittest
 import itertools
 from typing import Generator, Tuple, Any
+import logging
 
 import amulet_nbt
 import PyMCTranslate
 from PyMCTranslate.py3.api import Block, Entity
-from PyMCTranslate.py3.log import enable_console_log
+
+log = logging.getLogger("PyMCTranslate")
 
 
 class SubSetTest(unittest.TestCase):
@@ -17,7 +19,7 @@ class SubSetTest(unittest.TestCase):
         for force_blockstate in (
             [False, True] if version.has_abstract_format else [True]
         ):
-            enable_console_log(force_blockstate)
+            log.setLevel(logging.INFO if force_blockstate else logging.CRITICAL)
             print("To Universal", version, force_blockstate)
             for namespace in blocks.namespaces(force_blockstate):
                 for base_name in blocks.base_names(namespace, force_blockstate):
@@ -47,7 +49,7 @@ class SubSetTest(unittest.TestCase):
                                     (version, force_blockstate, block),
                                 )
 
-            enable_console_log(True)
+            log.setLevel(logging.INFO)
             print("From Universal", version, force_blockstate)
             for namespace in universal_blocks.namespaces():
                 for base_name in universal_blocks.base_names(namespace):

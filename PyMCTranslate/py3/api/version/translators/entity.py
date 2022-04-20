@@ -1,14 +1,16 @@
 from typing import Tuple, TYPE_CHECKING, Optional, Union, Dict, Any
 import copy
+import logging
 
 import amulet_nbt
 from PyMCTranslate.py3.api import Entity, Block, BlockEntity
-from PyMCTranslate.py3.log import log
 from .base import BaseTranslator, BaseSpecification
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.version import Version
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
+
+log = logging.getLogger(__name__)
 
 BlockCoordinates = Tuple[int, int, int]
 NotInit = object()

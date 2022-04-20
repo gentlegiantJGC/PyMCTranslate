@@ -1,10 +1,12 @@
+import logging
 import os
 import PyMCTranslate
-from PyMCTranslate.py3.log import log, enable_console_log
 import itertools
 import amulet_nbt as nbt
 from typing import Optional, Any, List
 from PyMCTranslate.py3.api import Block
+
+log = logging.getLogger("PyMCTranslate")
 
 test_block_list: Optional[list] = None
 
@@ -226,5 +228,4 @@ def main():
 
 
 if __name__ == "__main__":
-    enable_console_log()
     main()

@@ -1,14 +1,16 @@
 import os
 from typing import Union, Tuple, List, Dict
+import logging
 
 import numpy
 
 from .registry import NumericalRegistry
-from PyMCTranslate.py3 import log
 from PyMCTranslate.py3.meta import minified
 from PyMCTranslate.py3.api import Block
 from PyMCTranslate.py3.api.rotate import RotateMode, RotationManager
 from PyMCTranslate.py3.api.version import Version
+
+log = logging.getLogger(__name__)
 
 """
 Structure:
