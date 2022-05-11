@@ -6,24 +6,6 @@
     {
         "function": "map_properties",
         "options": {
-            "no_drop": {
-                "\"false\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "no_drop_bit": "0b"
-                        }
-                    }
-                ],
-                "\"true\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "no_drop_bit": "1b"
-                        }
-                    }
-                ]
-            },
             "facing": {
                 "\"north\"": [
                     {
