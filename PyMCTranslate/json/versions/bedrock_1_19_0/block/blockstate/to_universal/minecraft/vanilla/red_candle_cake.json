@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:candle_cake"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "color": "\"red\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

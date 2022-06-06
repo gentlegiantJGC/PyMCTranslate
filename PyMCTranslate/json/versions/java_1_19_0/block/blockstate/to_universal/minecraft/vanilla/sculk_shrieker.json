@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sculk_shrieker"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "can_summon": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "shrieking": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

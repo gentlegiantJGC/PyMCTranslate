@@ -1,0 +1,27 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:candle"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "color": "\"orange\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "candles": [
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\""
+            ],
+            "lit": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]
