@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sculk_catalyst"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "bloom": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bloom": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "bloom": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

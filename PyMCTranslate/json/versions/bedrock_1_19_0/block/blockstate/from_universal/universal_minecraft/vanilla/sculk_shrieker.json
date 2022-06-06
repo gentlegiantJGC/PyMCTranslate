@@ -1,0 +1,47 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sculk_shrieker"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "can_summon": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "can_summon": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "can_summon": "1b"
+                        }
+                    }
+                ]
+            },
+            "shrieking": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

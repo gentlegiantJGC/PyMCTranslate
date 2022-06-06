@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sculk_sensor"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "sculk_sensor_phase": {
+                "\"inactive\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "0b"
+                        }
+                    }
+                ],
+                "\"active\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,28 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "lectern"
+    ],
+    "snbt": "{}",
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "has_book": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "powered": [
+            "\"true\"",
+            "\"false\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "has_book": "\"false\"",
+        "powered": "\"false\""
+    }
+}
