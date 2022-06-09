@@ -6,26 +6,12 @@
     {
         "function": "map_properties",
         "options": {
-            "hanging": {
-                "\"false\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:mangrove_propagule"
-                    }
-                ],
-                "\"true\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:mangrove_propagule_hanging"
-                    }
-                ]
-            },
             "age": {
                 "\"0\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "0"
+                            "propagule_stage": "0"
                         }
                     }
                 ],
@@ -33,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "1"
+                            "propagule_stage": "1"
                         }
                     }
                 ],
@@ -41,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "2"
+                            "propagule_stage": "2"
                         }
                     }
                 ],
@@ -49,7 +35,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "3"
+                            "propagule_stage": "3"
                         }
                     }
                 ],
@@ -57,31 +43,25 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "4"
+                            "propagule_stage": "4"
                         }
                     }
-                ],
-                "\"5\"": [
+                ]
+            },
+            "hanging": {
+                "\"false\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "5"
+                            "hanging": "0b"
                         }
                     }
                 ],
-                "\"6\"": [
+                "\"true\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "6"
-                        }
-                    }
-                ],
-                "\"7\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "growth": "7"
+                            "hanging": "1b"
                         }
                     }
                 ]
