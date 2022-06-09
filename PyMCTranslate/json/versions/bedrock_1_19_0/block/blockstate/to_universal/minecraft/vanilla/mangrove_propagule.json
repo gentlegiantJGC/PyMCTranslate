@@ -4,15 +4,9 @@
         "options": "universal_minecraft:mangrove_propagule"
     },
     {
-        "function": "new_properties",
-        "options": {
-            "hanging": "\"false\""
-        }
-    },
-    {
         "function": "map_properties",
         "options": {
-            "growth": {
+            "propagule_stage": {
                 "0": [
                     {
                         "function": "new_properties",
@@ -52,28 +46,22 @@
                             "age": "\"4\""
                         }
                     }
-                ],
-                "5": [
+                ]
+            },
+            "hanging": {
+                "0b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "\"5\""
+                            "hanging": "\"false\""
                         }
                     }
                 ],
-                "6": [
+                "1b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "age": "\"6\""
-                        }
-                    }
-                ],
-                "7": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "age": "\"7\""
+                            "hanging": "\"true\""
                         }
                     }
                 ]
