@@ -46,7 +46,7 @@ def minify_json(pymct_path, remove_origin=False):
             atlas.append(obj)
             return len(atlas) - 1
 
-    json_dir = os.path.join(pymct_path, "json", "versions")
+    json_dir = os.path.join(pymct_path, "json")
     versions_dir = os.path.join(json_dir, "versions")
     min_json_dir = os.path.join(pymct_path, "min_json")
 
