@@ -1,4 +1,3 @@
 recursive-include PyMCTranslate *.py *.json
 include PyMCTranslate/build_number
-include minify_json.py
-include versioneer.py
+recursive-include build_tools *.py
