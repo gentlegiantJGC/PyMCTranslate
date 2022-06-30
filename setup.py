@@ -4,14 +4,9 @@ import glob
 from typing import List
 from setuptools import setup, find_packages
 import versioneer
-
+from wheel.bdist_wheel import bdist_wheel
 # from Cython.Build import cythonize
-from minify_json import main as _minify_json
 
-try:
-    from wheel.bdist_wheel import bdist_wheel
-except ImportError:
-    bdist_wheel = False
 
 # future possible Cython support
 # ext = []
@@ -36,6 +31,7 @@ def get_paths(path_glob: str) -> List[str]:
 
 
 def minify_json(pymct_path: str):
+    from minify_json import main as _minify_json
     global JSON_MINIFIED
     if not JSON_MINIFIED:
         json_path = os.path.join(pymct_path, "json")
@@ -56,17 +52,16 @@ def minify_json(pymct_path: str):
 
 cmdclass = versioneer.get_cmdclass()
 
-if bdist_wheel:
 
-    class CmdBDistWheel(bdist_wheel):
-        def finalize_options(self):
-            minify_json("PyMCTranslate")
-            self.distribution.package_data.setdefault("PyMCTranslate", []).extend(
-                get_paths(os.path.join("PyMCTranslate", "min_json", "**", "*.json.gz"))
-            )
-            super().finalize_options()
+class CmdBDistWheel(bdist_wheel):
+    def finalize_options(self):
+        minify_json("PyMCTranslate")
+        self.distribution.package_data.setdefault("PyMCTranslate", []).extend(
+            get_paths(os.path.join("PyMCTranslate", "min_json", "**", "*.json.gz"))
+        )
+        super().finalize_options()
 
-    cmdclass["bdist_wheel"] = CmdBDistWheel
+cmdclass["bdist_wheel"] = CmdBDistWheel
 
 
 setup(
