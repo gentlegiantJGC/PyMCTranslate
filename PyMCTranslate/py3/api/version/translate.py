@@ -2,7 +2,8 @@ from typing import Union, Tuple, List, Dict, Callable, TYPE_CHECKING, Type, Opti
 
 import amulet_nbt
 from amulet_nbt import (
-    NBTFile,
+    AbstractBaseTag,
+    NamedTag,
     TAG_Byte,
     TAG_Short,
     TAG_Int,
@@ -119,30 +120,30 @@ def datatype_to_nbt(datatype: str) -> AnyNBTClass:
     return _datatype_to_nbt[datatype]
 
 
-def nbt_to_datatype(nbt: amulet_nbt.BaseValueType) -> str:
+def nbt_to_datatype(nbt: AbstractBaseTag) -> str:
     return _nbt_to_datatype[nbt.__class__]
 
 
 def index_nbt(
-    nbt: NBTFile, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]]
+    nbt: NamedTag, nbt_path: Tuple[str, str, List[Tuple[Union[str, int], str]]]
 ):
     outer_name, outer_type, nbt_path = nbt_path
     if (
-        not isinstance(nbt, NBTFile)
+        not isinstance(nbt, NamedTag)
         or nbt.name != outer_name
-        or not isinstance(nbt.value, datatype_to_nbt(outer_type))
+        or not isinstance(nbt.tag, datatype_to_nbt(outer_type))
     ):
         return None
-    nbt = nbt.value
+    tag = nbt.tag
 
     for path, nbt_type in nbt_path:
-        if isinstance(path, int) and isinstance(nbt, TAG_List) and len(nbt) > path:
-            nbt = nbt[path]
-        elif isinstance(path, str) and isinstance(nbt, TAG_Compound) and path in nbt:
-            nbt = nbt[path]
+        if isinstance(path, int) and isinstance(tag, TAG_List) and len(tag) > path:
+            tag = tag[path]
+        elif isinstance(path, str) and isinstance(tag, TAG_Compound) and path in tag:
+            tag = tag[path]
         else:
             return None
-    return nbt
+    return tag
 
 
 def nbt_from_list(
@@ -171,7 +172,7 @@ def nbt_from_list(
         ]
     ],
     default_template: str = None,
-) -> NBTFile:
+) -> NamedTag:
     if default_template is not None:
         nbt_object = amulet_nbt.from_snbt(default_template)
     else:
@@ -247,7 +248,7 @@ def nbt_from_list(
             # elif isinstance(nbt_temp, TAG_Int_Array) and isinstance(data, TAG_Int):
             # elif isinstance(nbt_temp, TAG_Long_Array) and isinstance(data, TAG_Long):
 
-    return NBTFile(nbt_object, outer_name)
+    return NamedTag(nbt_object, outer_name)
 
 
 def translate(
@@ -310,7 +311,7 @@ def translate(
                     0,
                     0,
                     0,
-                    NBTFile(amulet_nbt.from_snbt(input_spec["snbt"])),
+                    NamedTag(amulet_nbt.from_snbt(input_spec["snbt"])),
                 )
             nbt_input = extra_input.nbt
 
@@ -415,7 +416,7 @@ def translate(
 
 def _translate(
     block_input: Union[Block, None],
-    nbt_input: Union[NBTFile, None],
+    nbt_input: Union[NamedTag, None],
     mappings: List[dict],
     get_block_callback: Callable = None,
     absolute_location: BlockCoordinates = (0, 0, 0),
@@ -530,7 +531,7 @@ def _translate(
             for key in translate_function["options"]:
                 if key in block_input.properties:
                     val = block_input.properties[key]
-                    if isinstance(val, amulet_nbt.BaseValueType):
+                    if isinstance(val, AbstractBaseTag):
                         hash_val = val.to_snbt()
                     else:
                         continue
@@ -552,7 +553,7 @@ def _translate(
             for key in translate_function["options"]:
                 if key in block_input.properties:
                     val = block_input.properties[key]
-                    if isinstance(val, amulet_nbt.BaseValueType):
+                    if isinstance(val, AbstractBaseTag):
                         val = val.to_snbt()
                     else:
                         continue
@@ -828,7 +829,7 @@ def _translate(
                     raise Exception(
                         "This code should not be run because it should be caught by other code before it gets here."
                     )
-                val = nbt.value
+                val = nbt.py_data
 
                 options = translate_function.get("options", {})
                 outer_name = options.get("outer_name", "")
@@ -969,13 +970,13 @@ def _translate(
     return output_name, output_type, new_data, extra_needed, cacheable
 
 
-def objectify_nbt(nbt: NBTFile) -> Tuple[str, dict]:
-    return _objectify_nbt(nbt.value)
+def objectify_nbt(nbt: NamedTag) -> Tuple[str, dict]:
+    return _objectify_nbt(nbt.tag)
 
 
 def _objectify_nbt(nbt: amulet_nbt.AnyNBT) -> Tuple[str, Union[dict, list, int, str]]:
     nbt_type = nbt_to_datatype(nbt)
-    nbt_data = nbt.value
+    nbt_data = nbt.py_data
     if isinstance(nbt_data, dict):
         return nbt_type, {key: _objectify_nbt(nbt_) for key, nbt_ in nbt_data.items()}
     elif isinstance(nbt_data, list):
@@ -1010,7 +1011,7 @@ def unobjectify_nbt(nbt: Tuple[str, Union[dict, list, int, str, "ndarray"]]):
 
 def _convert_walk_input_nbt(
     block_input: Union[Block, None],
-    nbt_input: Union[NBTFile, None],
+    nbt_input: Union[NamedTag, None],
     mappings: dict,
     get_block_callback: Callable,
     absolute_location: BlockCoordinates = (0, 0, 0),
@@ -1090,7 +1091,7 @@ def _convert_walk_input_nbt(
     if isinstance(nbt, datatype_to_nbt(datatype)):
         # datatypes match
         if datatype == "compound":
-            for key in nbt.value:
+            for key in nbt:
                 if key in mappings.get("keys", {}):
                     (
                         output_name,
@@ -1108,14 +1109,14 @@ def _convert_walk_input_nbt(
                         (
                             nbt_path[0],
                             nbt_path[1],
-                            nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))],
+                            nbt_path[2] + [(key, nbt_to_datatype(nbt[key]))],
                         ),
                         (output_name, output_type, new_data, extra_needed, cacheable),
                     )
                 elif "nested_default" in mappings:
                     if mappings["nested_default"] == [{"function": "carry_nbt"}]:
                         log.info(
-                            f"Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))])}"
+                            f"Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(key, nbt_to_datatype(nbt[key]))])}"
                         )
                     (
                         output_name,
@@ -1133,7 +1134,7 @@ def _convert_walk_input_nbt(
                         (
                             nbt_path[0],
                             nbt_path[1],
-                            nbt_path[2] + [(key, nbt_to_datatype(nbt.value[key]))],
+                            nbt_path[2] + [(key, nbt_to_datatype(nbt[key]))],
                         ),
                         (output_name, output_type, new_data, extra_needed, cacheable),
                     )
@@ -1157,14 +1158,14 @@ def _convert_walk_input_nbt(
                         (
                             nbt_path[0],
                             nbt_path[1],
-                            nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))],
+                            nbt_path[2] + [(index, nbt_to_datatype(nbt[index]))],
                         ),
                         (output_name, output_type, new_data, extra_needed, cacheable),
                     )
                 elif "nested_default" in mappings:
                     if mappings["nested_default"] == [{"function": "carry_nbt"}]:
                         log.info(
-                            f"Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))])}"
+                            f"Unnaccounted data at {(nbt_path[0], nbt_path[1], nbt_path[2] + [(index, nbt_to_datatype(nbt[index]))])}"
                         )
                     (
                         output_name,
@@ -1182,7 +1183,7 @@ def _convert_walk_input_nbt(
                         (
                             nbt_path[0],
                             nbt_path[1],
-                            nbt_path[2] + [(index, nbt_to_datatype(nbt.value[index]))],
+                            nbt_path[2] + [(index, nbt_to_datatype(nbt[index]))],
                         ),
                         (output_name, output_type, new_data, extra_needed, cacheable),
                     )
