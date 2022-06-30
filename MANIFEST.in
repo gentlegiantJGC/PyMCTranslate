@@ -1,9 +1,4 @@
-graft PyMCTranslate*
-prune PyMCTranslate/min_json*
-include LICENSE
+recursive-include PyMCTranslate *.py *.json
+include PyMCTranslate/build_number
 include minify_json.py
-include README.md
-include requirements.txt
 include versioneer.py
-prune */__pycache__/*
-global-exclude *.py[cod]
