@@ -1,10 +1,8 @@
 import os
 import json
-import pickle
 import glob
 import gzip
 import shutil
-from pathlib import Path
 
 from setuptools import Command
 from setuptools.dist import Distribution
