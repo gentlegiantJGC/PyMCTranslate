@@ -1,10 +1,39 @@
-import json
-import gzip
 import os
+import json
 import glob
+import gzip
+import shutil
+
+from setuptools import Command
+from setuptools.dist import Distribution
+
+# Template for how to do this from here https://github.com/abravalheri/experiment-setuptools-plugin
 
 
-def main(pymct_path: str):
+ProjectName = "PyMCTranslate"
+
+
+def install(dist: Distribution):
+    # register a new command class
+    dist.cmdclass["minify_json"] = MinifyJson
+    # get the build command class
+    build = dist.get_command_obj("build")
+    # register our command class as a subcommand of the build command class
+    build.sub_commands.append(("minify_json", None))
+
+
+class MinifyJson(Command):
+    def initialize_options(self):
+        self.build_lib = None
+
+    def finalize_options(self):
+        self.set_undefined_options("build_py", ("build_lib", "build_lib"))
+
+    def run(self):
+        minify_json(os.path.join(self.build_lib, ProjectName), True)
+
+
+def minify_json(pymct_path, remove_origin=False):
     atlas = []
     versions = {}
 
@@ -15,8 +44,11 @@ def main(pymct_path: str):
             atlas.append(obj)
             return len(atlas) - 1
 
-    versions_dir = os.path.join(pymct_path, "json", "versions")
+    json_dir = os.path.join(pymct_path, "json")
+    versions_dir = os.path.join(json_dir, "versions")
     min_json_dir = os.path.join(pymct_path, "min_json")
+
+    shutil.rmtree(min_json_dir, ignore_errors=True)
 
     for version in os.listdir(versions_dir):
         meta = versions.setdefault(version, {})["meta"] = {}
@@ -58,6 +90,9 @@ def main(pymct_path: str):
         f.write(json.dumps(atlas).encode("utf-8"))
     print("Written atlas")
 
+    if remove_origin:
+        shutil.rmtree(json_dir, ignore_errors=True)
+
 
 if __name__ == "__main__":
-    main("./PyMCTranslate")
+    minify_json(os.path.abspath(os.path.join(__file__, "..", "..", ProjectName)))
