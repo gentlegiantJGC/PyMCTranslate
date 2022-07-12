@@ -6,7 +6,7 @@ from .util.json_gz import load_json_gz
 pymct_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 try:
-    with open(os.path.join(pymct_dir, "build_number")) as f:
+    with open(os.path.join(pymct_dir, "build_number.json")) as f:
         build_number = int(f.read())
 except:
     build_number = -1
