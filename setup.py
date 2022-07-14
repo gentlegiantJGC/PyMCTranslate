@@ -1,5 +1,10 @@
 from setuptools import setup
 import versioneer
+import os
+import sys
+
+# https://github.com/pypa/setuptools/issues/3447
+sys.path.insert(0, os.path.dirname(__file__))
 
 # from Cython.Build import cythonize
 
