@@ -6,3 +6,7 @@ requires = [
     "versioneer-518"
 ]
 build-backend = "setuptools.build_meta"
+
+
+[tool.black]
+exclude = 'PyMCTranslate/json'
