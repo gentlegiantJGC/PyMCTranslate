@@ -3,8 +3,14 @@ import versioneer
 import os
 import sys
 
-# https://github.com/pypa/setuptools/issues/3447
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), "build_tools"))
+
+import minify_json
+
+cmdclass=versioneer.get_cmdclass()
+
+minify_json.register(cmdclass)
+
 
 # from Cython.Build import cythonize
 
@@ -22,6 +28,6 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 setup(
     version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    cmdclass=cmdclass,
     # ext_modules=ext,
 )
