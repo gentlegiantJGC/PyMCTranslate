@@ -1,7 +1,22 @@
-import amulet_nbt
+from __future__ import annotations
+from typing import Tuple
+import copy
+import numpy
+
+from amulet_nbt import NamedTag
+from .abstract_base_entity import AbstractBaseEntity
+
+BlockCoordinates = Tuple[int, int, int]
 
 
-class BlockEntity:
+class BlockEntity(AbstractBaseEntity):
+    """
+    A class to contain all the data to define a BlockEntity.
+    """
+
+    obj_name = "BlockEntity"
+    coord_types = (int, numpy.integer)
+
     def __init__(
         self,
         namespace: str,
@@ -9,104 +24,50 @@ class BlockEntity:
         x: int,
         y: int,
         z: int,
-        nbt: amulet_nbt.NBTFile,
+        nbt: NamedTag,
     ):
-        self._namespace = namespace
-        self._base_name = base_name
-        self._namespaced_name = None
-        self._gen_namespaced_name()
-        self._x = x
-        self._y = y
-        self._z = z
-        self._nbt = nbt
-
-    def _gen_namespaced_name(self):
-        self._namespaced_name = (
-            "" if self.namespace in ["", None] else f"{self.namespace}:"
-        ) + self.base_name
-
-    def __repr__(self):
-        return f"BlockEntity[{self.namespaced_name}, {self.x}, {self.y}, {self.z}]"
-
-    @property
-    def namespaced_name(self) -> str:
         """
-        The namespace:base_name of the block entity represented by the BlockEntity object (IE: `minecraft:creeper`)
-        If the given namespace is an empty string it will just return the base name.
+        Constructs a :class:`BlockEntity` instance.
 
-        :return: The namespace:base_name of the block entity or just base_name if no namespace
+        :param namespace: The namespace of the block entity eg "minecraft"
+        :param base_name: The base name of the block entity eg "chest"
+        :param x: The x coordinate of the block entity
+        :param y: The y coordinate of the block entity
+        :param z: The z coordinate of the block entity
+        :param nbt: The NBT stored with the block entity
         """
-        return self._namespaced_name
-
-    @namespaced_name.setter
-    def namespaced_name(self, value: str):
-        self._namespaced_name = value
-        if ":" in value:
-            self._namespace, self._base_name = value.split(":", 1)
-        else:
-            self._namespace, self._base_name = None, value
-
-    @property
-    def namespace(self) -> str:
-        """
-        The namespace of the block entity represented by the BlockEntity object (IE: `minecraft`)
-
-        :return: The namespace of the block entity
-        """
-        return self._namespace
-
-    @namespace.setter
-    def namespace(self, value: str):
-        self._namespace = value
-        self._gen_namespaced_name()
-
-    @property
-    def base_name(self) -> str:
-        """
-        The base name of the block entity represented by the BlockEntity object (IE: `creeper`, `pig`)
-
-        :return: The base name of the block entity
-        """
-        return self._base_name
-
-    @base_name.setter
-    def base_name(self, value: str):
-        self._base_name = value
-        self._gen_namespaced_name()
+        super().__init__(namespace, base_name, x, y, z, nbt)
 
     @property
     def x(self) -> int:
+        """The x location of the BlockEntity. Read Only"""
         return self._x
-
-    @x.setter
-    def x(self, value: int):
-        self._x = value
 
     @property
     def y(self) -> int:
+        """The y location of the BlockEntity. Read Only"""
         return self._y
-
-    @y.setter
-    def y(self, value: int):
-        self._y = value
 
     @property
     def z(self) -> int:
+        """The z location of the BlockEntity. Read Only"""
         return self._z
 
-    @z.setter
-    def z(self, value: int):
-        self._z = value
-
     @property
-    def nbt(self) -> amulet_nbt.NBTFile:
-        """
-        The nbt behind the BlockEntity object
+    def location(self) -> BlockCoordinates:
+        """The location of the BlockEntity. Read Only"""
+        return self._x, self._y, self._z
 
-        :return: An amulet_nbt.NBTFile
+    def new_at_location(self, x: int, y: int, z: int) -> BlockEntity:
         """
-        return self._nbt
-
-    @nbt.setter
-    def nbt(self, value: str):
-        self._nbt = value
+        Creates a copy of this BlockEntity at a new location
+        BlockEntities are stored in the chunk based on their location so location cannot be mutable
+        """
+        return BlockEntity(
+            self._namespace,
+            self._base_name,
+            x,
+            y,
+            z,
+            copy.deepcopy(self._nbt),
+        )
