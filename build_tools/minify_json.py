@@ -3,9 +3,10 @@ import json
 import glob
 import gzip
 import shutil
+from typing import Dict, Type
 
 from setuptools import Command
-from setuptools.dist import Distribution
+from setuptools.command.build import build as build_
 
 # Template for how to do this from here https://github.com/abravalheri/experiment-setuptools-plugin
 
@@ -13,11 +14,11 @@ from setuptools.dist import Distribution
 ProjectName = "PyMCTranslate"
 
 
-def install(dist: Distribution):
+def register(cmdclass: Dict[str, Type[Command]]):
     # register a new command class
-    dist.cmdclass["minify_json"] = MinifyJson
+    cmdclass["minify_json"] = MinifyJson
     # get the build command class
-    build = dist.get_command_obj("build")
+    build = cmdclass.get("build", build_)
     # register our command class as a subcommand of the build command class
     build.sub_commands.append(("minify_json", None))
 
