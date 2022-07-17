@@ -7,7 +7,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "build_tools"))
 
 import minify_json
 
-cmdclass=versioneer.get_cmdclass()
+cmdclass = versioneer.get_cmdclass()
 
 minify_json.register(cmdclass)
 
