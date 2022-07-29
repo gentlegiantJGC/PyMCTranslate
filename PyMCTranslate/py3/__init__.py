@@ -23,10 +23,7 @@ def new_translation_manager() -> TranslationManager:
 
 
 # init a default logger
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(levelname)s - %(message)s")
 
 _log = logging.getLogger(__name__)
 _log.info(f"PyMCTranslate Version {build_number}")
