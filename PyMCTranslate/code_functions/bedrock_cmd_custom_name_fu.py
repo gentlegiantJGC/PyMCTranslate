@@ -8,9 +8,9 @@ def main(nbt):
         nbt[0] == "compound"
         and "utags" in nbt[1]
         and nbt[1]["utags"][0] == "compound"
-        and "CustomName" in nbt[1]["utags"][0]
-        and nbt[1]["utags"][0]["CustomName"][0] == "string"
+        and "CustomName" in nbt[1]["utags"][1]
+        and nbt[1]["utags"][1]["CustomName"][0] == "string"
     ):
-        text = raw_text_to_section_string(nbt[1]["utags"][0]["CustomName"][1])
+        text = raw_text_to_section_string(nbt[1]["utags"][1]["CustomName"][1])
 
-    return [["", "compound", [], "Text", ["string", text]]]
+    return [["", "compound", [], "CustomName", ["string", text]]]

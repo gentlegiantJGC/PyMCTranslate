@@ -1,0 +1,30 @@
+{
+    "properties": {
+        "attachment": [
+            "\"standing\"",
+            "\"hanging\"",
+            "\"side\"",
+            "\"multiple\""
+        ],
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "toggle_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "attachment": "\"standing\"",
+        "direction": "0",
+        "toggle_bit": "0b"
+    },
+    "nbt_identifier": [
+        "",
+        "Bell"
+    ],
+    "snbt": "{Direction: 0, isMovable: 1b, Ringing: 0b, Ticks: 0}"
+}

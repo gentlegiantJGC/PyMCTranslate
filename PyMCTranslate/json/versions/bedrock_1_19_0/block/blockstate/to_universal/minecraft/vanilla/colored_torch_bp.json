@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:colored_torch_bp"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "\"0\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "color": "\"1\""
+                        }
+                    }
+                ]
+            },
+            "torch_facing_direction": {
+                "\"unknown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"top\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

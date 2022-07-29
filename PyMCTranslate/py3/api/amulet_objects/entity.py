@@ -1,7 +1,19 @@
-import amulet_nbt
+from __future__ import annotations
+
+import numpy
+from typing import Tuple, Union
+from amulet_nbt import NamedTag
+from .abstract_base_entity import AbstractBaseEntity
 
 
-class Entity:
+class Entity(AbstractBaseEntity):
+    """
+    A class to contain all the data to define an Entity.
+    """
+
+    obj_name = "Entity"
+    coord_types = (float, numpy.floating)
+
     def __init__(
         self,
         namespace: str,
@@ -9,73 +21,23 @@ class Entity:
         x: float,
         y: float,
         z: float,
-        nbt: amulet_nbt.NBTFile,
+        nbt: NamedTag,
     ):
-        self._namespace = namespace
-        self._base_name = base_name
-        self._namespaced_name = None
-        self._gen_namespaced_name()
-        self._x = x
-        self._y = y
-        self._z = z
-        self._nbt = nbt
-
-    def _gen_namespaced_name(self):
-        self._namespaced_name = (
-            "" if self.namespace in ["", None] else f"{self.namespace}:"
-        ) + self.base_name
-
-    def __repr__(self):
-        return f"Entity[{self.namespaced_name}, {self.x}, {self.y}, {self.z}]"
-
-    @property
-    def namespaced_name(self) -> str:
         """
-        The namespace:base_name of the block entity represented by the BlockEntity object (IE: `minecraft:creeper`)
-        If the given namespace is an empty string it will just return the base name.
+        Constructs a :class:`Entity` instance.
 
-        :return: The namespace:base_name of the block entity or just base_name if no namespace
+        :param namespace: The namespace of the entity eg "minecraft"
+        :param base_name: The base name of the entity eg "creeper"
+        :param x: The x coordinate of the entity
+        :param y: The y coordinate of the entity
+        :param z: The z coordinate of the entity
+        :param nbt: The NBT stored with the entity
         """
-        return self._namespaced_name
-
-    @namespaced_name.setter
-    def namespaced_name(self, value: str):
-        self._namespaced_name = value
-        if ":" in value:
-            self._namespace, self._base_name = value.split(":", 1)
-        else:
-            self._namespace, self._base_name = None, value
-
-    @property
-    def namespace(self) -> str:
-        """
-        The namespace of the block entity represented by the BlockEntity object (IE: `minecraft`)
-
-        :return: The namespace of the block entity
-        """
-        return self._namespace
-
-    @namespace.setter
-    def namespace(self, value: str):
-        self._namespace = value
-        self._gen_namespaced_name()
-
-    @property
-    def base_name(self) -> str:
-        """
-        The base name of the block entity represented by the BlockEntity object (IE: `creeper`, `pig`)
-
-        :return: The base name of the block entity
-        """
-        return self._base_name
-
-    @base_name.setter
-    def base_name(self, value: str):
-        self._base_name = value
-        self._gen_namespaced_name()
+        super().__init__(namespace, base_name, x, y, z, nbt)
 
     @property
     def x(self) -> float:
+        """The x location of the Entity."""
         return self._x
 
     @x.setter
@@ -84,6 +46,7 @@ class Entity:
 
     @property
     def y(self) -> float:
+        """The y location of the Entity."""
         return self._y
 
     @y.setter
@@ -92,6 +55,7 @@ class Entity:
 
     @property
     def z(self) -> float:
+        """The z location of the Entity."""
         return self._z
 
     @z.setter
@@ -99,14 +63,12 @@ class Entity:
         self._z = value
 
     @property
-    def nbt(self) -> amulet_nbt.NBTFile:
-        """
-        The nbt behind the BlockEntity object
+    def location(self) -> Tuple[float, float, float]:
+        """The location of the Entity."""
+        return self._x, self._y, self._z
 
-        :return: An amulet_nbt.NBTFile
-        """
-        return self._nbt
-
-    @nbt.setter
-    def nbt(self, value: str):
-        self._nbt = value
+    @location.setter
+    def location(
+        self, location: Tuple[Union[int, float], Union[int, float], Union[int, float]]
+    ):
+        self._x, self._y, self._z = location

@@ -66,58 +66,9 @@
                 ],
                 "\"upper\"": [
                     {
-                        "function": "map_properties",
+                        "function": "new_properties",
                         "options": {
-                            "plant_type": {
-                                "\"sunflower\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "8"
-                                        }
-                                    }
-                                ],
-                                "\"lilac\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "9"
-                                        }
-                                    }
-                                ],
-                                "\"tall_grass\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "10"
-                                        }
-                                    }
-                                ],
-                                "\"large_fern\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "11"
-                                        }
-                                    }
-                                ],
-                                "\"rose_bush\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "12"
-                                        }
-                                    }
-                                ],
-                                "\"peony\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "block_data": "13"
-                                        }
-                                    }
-                                ]
-                            }
+                            "block_data": "10"
                         }
                     }
                 ]

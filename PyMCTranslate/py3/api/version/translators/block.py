@@ -183,12 +183,12 @@ class BlockTranslator(BaseTranslator):
             and "block_id" in block.properties
             and isinstance(block.properties["block_id"], amulet_nbt.TAG_Int)
         ):
-            block_id = block.properties["block_id"].value
+            block_id = block.properties["block_id"].py_data
 
         if "block_data" in block.properties and isinstance(
             block.properties["block_data"], amulet_nbt.TAG_Int
         ):
-            block_data = block.properties["block_data"].value
+            block_data = block.properties["block_data"].py_data
 
         if block_id is not None and block_data is not None:
             return block_id, block_data

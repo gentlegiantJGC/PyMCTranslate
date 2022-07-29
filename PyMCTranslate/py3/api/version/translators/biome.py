@@ -1,4 +1,4 @@
-from typing import Union, Dict, TYPE_CHECKING, List
+from typing import Dict, TYPE_CHECKING, List, Optional
 import numpy
 import logging
 
@@ -24,9 +24,9 @@ class BiomeTranslator:
         self._translation_manager = translation_manager
 
         # convert the biome information between int id and string id (the ones registered in TranslationManager.biomes will take precedent)
-        self._biome_str_to_int: Dict[str, int] = biome_data["int_map"]
+        self._biome_str_to_int: Dict[str, Optional[int]] = biome_data["int_map"]
         self._biome_int_to_str: Dict[int, str] = {
-            d: b for b, d in biome_data["int_map"].items()
+            d: b for b, d in biome_data["int_map"].items() if d is not None
         }
         # convert the string id to a universal string id
         self._biome_to_universal: Dict[str, str] = biome_data["version2universal"]
@@ -60,15 +60,15 @@ class BiomeTranslator:
         If it can't be found there it will fall back to the vanilla ones.
         If it still can't be found it will fall back to plains"""
         if biome in self._translation_manager.biome_registry:
-            biome_int = self._translation_manager.biome_registry.private_to_int(biome)
+            return self._translation_manager.biome_registry.private_to_int(biome)
         elif biome in self._biome_str_to_int:
             biome_int = self._biome_str_to_int[biome]
-        else:
-            log.warning(f"Error processing biome {biome}. Setting to plains.")
-            biome_int = self.pack(
-                "minecraft:plains"
-            )  # TODO: perhaps find a way to assign default dynamically
-        return biome_int
+            if biome_int is not None:
+                return biome_int
+        log.warning(f"Error processing biome {biome}. Setting to plains.")
+        return self.pack(
+            "minecraft:plains"
+        )  # TODO: perhaps find a way to assign default dynamically
 
     def to_universal(self, biome: str) -> str:
         """Convert the version namespaced string to the universal namespaced string"""

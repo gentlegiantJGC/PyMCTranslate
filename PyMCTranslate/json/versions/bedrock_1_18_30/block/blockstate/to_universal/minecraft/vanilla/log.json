@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:log"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "old_log_type": {
+                "\"oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"oak\""
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"spruce\""
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"birch\""
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"jungle\""
+                        }
+                    }
+                ]
+            },
+            "pillar_axis": {
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"y\""
+                        }
+                    }
+                ],
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"x\""
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"z\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

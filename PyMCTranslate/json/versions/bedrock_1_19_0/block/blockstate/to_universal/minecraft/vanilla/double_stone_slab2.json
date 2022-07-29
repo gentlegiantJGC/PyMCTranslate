@@ -1,0 +1,83 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "stone_slab_type_2": {
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_sandstone\""
+                        }
+                    }
+                ],
+                "\"purpur\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"purpur\""
+                        }
+                    }
+                ],
+                "\"prismarine_rough\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine\""
+                        }
+                    }
+                ],
+                "\"prismarine_dark\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"dark_prismarine\""
+                        }
+                    }
+                ],
+                "\"prismarine_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"prismarine_brick\""
+                        }
+                    }
+                ],
+                "\"mossy_cobblestone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"mossy_cobblestone\""
+                        }
+                    }
+                ],
+                "\"smooth_sandstone\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"smooth_sandstone\""
+                        }
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "material": "\"red_nether_brick\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "type": "\"double\""
+        }
+    }
+]

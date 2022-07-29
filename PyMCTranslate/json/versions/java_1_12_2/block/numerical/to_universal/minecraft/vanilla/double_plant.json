@@ -1,13 +1,13 @@
 [
     {
+        "function": "new_block",
+        "options": "universal_minecraft:double_plant"
+    },
+    {
         "function": "map_properties",
         "options": {
             "block_data": {
                 "0": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -18,10 +18,6 @@
                 ],
                 "1": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "half": "\"lower\"",
@@ -30,10 +26,6 @@
                     }
                 ],
                 "2": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -44,10 +36,6 @@
                 ],
                 "3": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "half": "\"lower\"",
@@ -56,10 +44,6 @@
                     }
                 ],
                 "4": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -70,10 +54,6 @@
                 ],
                 "5": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "half": "\"lower\"",
@@ -81,82 +61,822 @@
                         }
                     }
                 ],
-                "8": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
+                "6": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "\"upper\"",
+                            "half": "\"lower\"",
                             "plant_type": "\"sunflower\""
                         }
                     }
                 ],
-                "9": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
+                "7": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "\"upper\"",
-                            "plant_type": "\"lilac\""
+                            "half": "\"lower\"",
+                            "plant_type": "\"sunflower\""
                         }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"upper\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"upper\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "10": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
-                            "half": "\"upper\"",
-                            "plant_type": "\"tall_grass\""
+                            "half": "\"upper\""
                         }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "11": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
-                            "half": "\"upper\"",
-                            "plant_type": "\"large_fern\""
+                            "half": "\"upper\""
                         }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "12": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
-                            "half": "\"upper\"",
-                            "plant_type": "\"rose_bush\""
+                            "half": "\"upper\""
                         }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "13": [
                     {
-                        "function": "new_block",
-                        "options": "universal_minecraft:double_plant"
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"upper\""
+                        }
                     },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "14": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "half": "\"upper\"",
-                            "plant_type": "\"peony\""
+                            "half": "\"upper\""
                         }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"upper\""
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:double_plant": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "block_data": {
+                                                            "0": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "1": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"lilac\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "2": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"tall_grass\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "3": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"large_fern\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "4": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"rose_bush\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "5": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"peony\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "6": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "7": [
+                                                                {
+                                                                    "function": "new_properties",
+                                                                    "options": {
+                                                                        "plant_type": "\"sunflower\""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
