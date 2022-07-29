@@ -1,4 +1,4 @@
-from PyMCTranslate.py3.log import log
+import PyMCTranslate.py3._log
 from PyMCTranslate.py3.api import (
     TranslationManager,
     Version,

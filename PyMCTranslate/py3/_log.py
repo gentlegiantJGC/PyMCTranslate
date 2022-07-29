@@ -14,22 +14,20 @@ but there is no harm in doing it and if you don't everything may get logged to t
 """
 
 
-log = logging.getLogger("PyMCTranslate")
-
-
 def _init_logging():
-    if not log.handlers:
+    main_log = logging.getLogger("PyMCTranslate")
+    if not main_log.handlers:
         # if no handlers have been bound then set up a default one
-        log.setLevel(logging.DEBUG if "amulet-debug" in sys.argv else logging.INFO)
+        main_log.setLevel(logging.DEBUG if "amulet-debug" in sys.argv else logging.INFO)
 
-        formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        )
+        formatter = logging.Formatter("%(levelname)s - %(message)s")
 
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(formatter)
-        log.addHandler(console_handler)
+        main_log.addHandler(console_handler)
 
 
 _init_logging()
+
+log = logging.getLogger(__name__)
 log.info(f"PyMCTranslate Version {build_number}")
