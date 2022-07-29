@@ -1,14 +1,16 @@
 from typing import List, Tuple, Union, Callable, TYPE_CHECKING
 import copy
+import logging
 
 from PyMCTranslate.py3.meta import minified, json_atlas
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity
-from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.api.version.translate import translate
 
 if TYPE_CHECKING:
     from ..version import Version
     from PyMCTranslate import TranslationManager
+
+log = logging.getLogger(__name__)
 
 BlockCoordinates = Tuple[int, int, int]
 

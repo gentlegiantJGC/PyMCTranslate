@@ -3,9 +3,9 @@ import os
 from typing import Union, Tuple, TYPE_CHECKING
 import glob
 import warnings
+import logging
 
 from PyMCTranslate.py3.api import Block
-from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.util.json_gz import load_json_gz
 from PyMCTranslate.py3.meta import minified, json_atlas
 from .translators import (
@@ -17,6 +17,8 @@ from .translators import (
 
 if TYPE_CHECKING:
     from PyMCTranslate.py3.api.translation_manager import TranslationManager
+
+log = logging.getLogger(__name__)
 
 _version_data = {}
 

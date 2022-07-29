@@ -1,4 +1,5 @@
 from typing import Union, Tuple, List, Dict, Callable, TYPE_CHECKING, Type, Optional
+import logging
 
 import amulet_nbt
 from amulet_nbt import (
@@ -19,12 +20,13 @@ from amulet_nbt import (
 )
 
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity, ChunkLoadError
-from PyMCTranslate.py3.log import log
 from PyMCTranslate.py3.api.version import code_functions
 
 if TYPE_CHECKING:
     from numpy import ndarray
     from PyMCTranslate.py3.api.version import Version
+
+log = logging.getLogger(__name__)
 
 BlockCoordinates = Tuple[int, int, int]
 
