@@ -189,9 +189,20 @@ class RotationManager:
         transform: numpy.ndarray,
         mode: RotateMode = RotateMode.Nearest,
     ):
-        if mode and block.namespaced_name in self._block_shapes:
-            return self._block_shapes[block.namespaced_name].transform(
-                block, transform, mode
-            )
-        else:
+        if mode == RotateMode.Null:
             return block
+
+        blocks = []
+        for sub_block in block:
+            blocks.append(
+                self._block_shapes[sub_block.namespaced_name].transform(
+                    sub_block.base_block, transform, mode
+                )
+                if sub_block.namespaced_name in self._block_shapes
+                else sub_block
+            )
+
+        # TODO: replace this with Block.join(blocks)
+        return Block(
+            blocks[0].namespace, blocks[0].base_name, blocks[0].properties, blocks[1:]
+        )
