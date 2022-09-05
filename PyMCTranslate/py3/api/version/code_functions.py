@@ -16,18 +16,8 @@ def _load_functions():
     package = PyMCTranslate.code_functions
     package_prefix = package.__name__ + "."
 
-    # python file support
     for _, name, _ in pkgutil.walk_packages(package.__path__, package_prefix):
         _load_function(name)
-
-    # pyinstaller support
-    toc = set()
-    for importer in pkgutil.iter_importers(PyMCTranslate.__name__):
-        if hasattr(importer, "toc"):
-            toc |= importer.toc
-    for module_name in toc:
-        if module_name.startswith(package_prefix):
-            _load_function(module_name)
 
 
 _load_functions()
