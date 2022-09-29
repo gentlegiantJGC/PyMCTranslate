@@ -27,5 +27,10 @@
     "defaults": {
         "power": "\"0\"",
         "sculk_sensor_phase": "\"inactive\""
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "sculk_sensor"
+    ],
+    "snbt": "{utags: {isMovable: 1b,VibrationListener: {selector: {}}}}"
 }

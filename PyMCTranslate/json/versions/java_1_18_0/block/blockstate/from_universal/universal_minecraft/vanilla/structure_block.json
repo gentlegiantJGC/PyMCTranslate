@@ -20,17 +20,6 @@
                                 }
                             ]
                         },
-                        "mirror": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
                         "ignoreEntities": {
                             "type": "byte",
                             "functions": [
@@ -203,6 +192,62 @@
                                     "function": "carry_nbt",
                                     "options": {
                                         "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "mirror": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "map_nbt",
+                                    "options": {
+                                        "cases": {
+                                            "\"NONE\"": [
+                                                {
+                                                    "function": "new_nbt",
+                                                    "options": [
+                                                        {
+                                                            "key": "mirror",
+                                                            "value": "\"NONE\""
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "\"X\"": [
+                                                {
+                                                    "function": "new_nbt",
+                                                    "options": [
+                                                        {
+                                                            "key": "mirror",
+                                                            "value": "\"LEFT_RIGHT\""
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "\"Z\"": [
+                                                {
+                                                    "function": "new_nbt",
+                                                    "options": [
+                                                        {
+                                                            "key": "mirror",
+                                                            "value": "\"FRONT_BACK\""
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "\"XZ\"": [
+                                                {
+                                                    "function": "new_nbt",
+                                                    "options": [
+                                                        {
+                                                            "key": "mirror",
+                                                            "value": "\"LEFT_RIGHT\""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
                                     }
                                 }
                             ]

@@ -20,22 +20,6 @@
                         }
                     ]
                 },
-                "mirror": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "ignoreEntities": {
                     "type": "byte",
                     "functions": [
@@ -288,6 +272,51 @@
                                         "compound"
                                     ]
                                 ]
+                            }
+                        }
+                    ]
+                },
+                "mirror": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "\"NONE\"": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"NONE\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "\"LEFT_RIGHT\"": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"X\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "\"FRONT_BACK\"": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"Z\""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             }
                         }
                     ]

@@ -12,5 +12,10 @@
     "defaults": {
         "can_summon": "\"false\"",
         "shrieking": "\"false\""
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "sculk_shrieker"
+    ],
+    "snbt": "{utags: {isMovable: 1b,VibrationListener: {selector: {}}}}"
 }
