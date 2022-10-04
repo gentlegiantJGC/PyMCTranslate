@@ -20,66 +20,66 @@ class SubSetTest(unittest.TestCase):
             [False, True] if version.has_abstract_format else [True]
         ):
             log.setLevel(logging.INFO if force_blockstate else logging.CRITICAL)
-            print("To Universal", version, force_blockstate)
-            for namespace in blocks.namespaces(force_blockstate):
-                for base_name in blocks.base_names(namespace, force_blockstate):
-                    for block in self._blockstates(
-                        blocks.get_specification(
-                            namespace, base_name, force_blockstate
-                        ),
-                        namespace,
-                        base_name,
-                    ):
-                        universal_obj = blocks.to_universal(
-                            block, force_blockstate=force_blockstate
-                        )[0]
-                        if isinstance(universal_obj, Block):
-                            if force_blockstate:
+            with self.subTest(f"To Universal, {version}, {force_blockstate}"):
+                for namespace in blocks.namespaces(force_blockstate):
+                    for base_name in blocks.base_names(namespace, force_blockstate):
+                        for block in self._blockstates(
+                            blocks.get_specification(
+                                namespace, base_name, force_blockstate
+                            ),
+                            namespace,
+                            base_name,
+                        ):
+                            universal_obj = blocks.to_universal(
+                                block, force_blockstate=force_blockstate
+                            )[0]
+                            if isinstance(universal_obj, Block):
+                                if force_blockstate:
+                                    self.assertEqual(
+                                        universal_obj.namespace,
+                                        "universal_minecraft",
+                                        (version, force_blockstate, block, universal_obj),
+                                    )
+                                if universal_obj.namespace == "universal_minecraft":
+                                    self._is_sub_set(
+                                        universal_obj,
+                                        universal_version.block.get_specification(
+                                            universal_obj.namespace, universal_obj.base_name
+                                        ),
+                                        (version, force_blockstate, block),
+                                    )
+
+            log.setLevel(logging.INFO)
+            with self.subTest(f"From Universal, {version}, {force_blockstate}"):
+                for namespace in universal_blocks.namespaces():
+                    for base_name in universal_blocks.base_names(namespace):
+                        for block in self._blockstates(
+                            universal_blocks.get_specification(namespace, base_name),
+                            namespace,
+                            base_name,
+                        ):
+                            version_obj = blocks.from_universal(
+                                block, force_blockstate=force_blockstate
+                            )[0]
+                            if isinstance(version_obj, Block):
                                 self.assertEqual(
-                                    universal_obj.namespace,
-                                    "universal_minecraft",
-                                    (version, force_blockstate, block, universal_obj),
+                                    version_obj.namespace,
+                                    "minecraft",
+                                    (version, force_blockstate, block, version_obj),
                                 )
-                            if universal_obj.namespace == "universal_minecraft":
                                 self._is_sub_set(
-                                    universal_obj,
-                                    universal_version.block.get_specification(
-                                        universal_obj.namespace, universal_obj.base_name
+                                    version_obj,
+                                    blocks.get_specification(
+                                        version_obj.namespace,
+                                        version_obj.base_name,
+                                        force_blockstate=force_blockstate,
                                     ),
                                     (version, force_blockstate, block),
                                 )
-
-            log.setLevel(logging.INFO)
-            print("From Universal", version, force_blockstate)
-            for namespace in universal_blocks.namespaces():
-                for base_name in universal_blocks.base_names(namespace):
-                    for block in self._blockstates(
-                        universal_blocks.get_specification(namespace, base_name),
-                        namespace,
-                        base_name,
-                    ):
-                        version_obj = blocks.from_universal(
-                            block, force_blockstate=force_blockstate
-                        )[0]
-                        if isinstance(version_obj, Block):
-                            self.assertEqual(
-                                version_obj.namespace,
-                                "minecraft",
-                                (version, force_blockstate, block, version_obj),
-                            )
-                            self._is_sub_set(
-                                version_obj,
-                                blocks.get_specification(
-                                    version_obj.namespace,
-                                    version_obj.base_name,
-                                    force_blockstate=force_blockstate,
-                                ),
-                                (version, force_blockstate, block),
-                            )
-                        elif isinstance(version_obj, Entity):
-                            pass
-                        else:
-                            print("Error from Universal", block, version_obj)
+                            elif isinstance(version_obj, Entity):
+                                pass
+                            else:
+                                log.error("Error from Universal", block, version_obj)
 
     def _is_sub_set(self, obj: Block, spec: dict, info: Tuple[Any, ...]):
         spec_properties = spec.get("properties", {})
