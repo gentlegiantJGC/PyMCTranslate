@@ -38,13 +38,19 @@ class SubSetTest(unittest.TestCase):
                                     self.assertEqual(
                                         universal_obj.namespace,
                                         "universal_minecraft",
-                                        (version, force_blockstate, block, universal_obj),
+                                        (
+                                            version,
+                                            force_blockstate,
+                                            block,
+                                            universal_obj,
+                                        ),
                                     )
                                 if universal_obj.namespace == "universal_minecraft":
                                     self._is_sub_set(
                                         universal_obj,
                                         universal_version.block.get_specification(
-                                            universal_obj.namespace, universal_obj.base_name
+                                            universal_obj.namespace,
+                                            universal_obj.base_name,
                                         ),
                                         (version, force_blockstate, block),
                                     )
