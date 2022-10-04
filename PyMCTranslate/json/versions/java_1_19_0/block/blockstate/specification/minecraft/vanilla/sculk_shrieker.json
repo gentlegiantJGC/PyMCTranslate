@@ -12,5 +12,10 @@
     "defaults": {
         "can_summon": "\"false\"",
         "shrieking": "\"false\""
-    }
+    },
+    "snbt": "{listener: {event_delay: 0, event_distance: 0.0f, range: 8, source: {pos: [I;0, 0, 0], type: \"minecraft:block\"}}, warning_level: 0}",
+    "nbt_identifier": [
+        "minecraft",
+        "sculk_shrieker"
+    ]
 }
