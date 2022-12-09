@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:lantern"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "hanging": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

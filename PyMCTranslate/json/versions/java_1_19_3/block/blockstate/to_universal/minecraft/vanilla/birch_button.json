@@ -1,0 +1,32 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:button"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"birch\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "face": [
+                "\"floor\"",
+                "\"wall\"",
+                "\"ceiling\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

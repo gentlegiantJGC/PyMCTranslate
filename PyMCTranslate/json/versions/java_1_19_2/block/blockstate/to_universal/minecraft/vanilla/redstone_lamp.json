@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:redstone_lamp"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "lit": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]
