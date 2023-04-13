@@ -1,0 +1,17 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:decorated_pot"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

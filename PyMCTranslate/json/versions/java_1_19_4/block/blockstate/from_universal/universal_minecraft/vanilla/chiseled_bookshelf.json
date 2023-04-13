@@ -1,0 +1,41 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:chiseled_bookshelf"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "slot_0_occupied": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "slot_1_occupied": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "slot_2_occupied": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "slot_3_occupied": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "slot_4_occupied": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "slot_5_occupied": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

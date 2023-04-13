@@ -9,62 +9,392 @@
             "material": {
                 "\"oak\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:oak_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:oak_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:oak_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:oak_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"spruce\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:spruce_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"birch\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:birch_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"acacia\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:acacia_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"jungle\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:jungle_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"dark_oak\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:dark_oak_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:dark_oak_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:dark_oak_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:dark_oak_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"crimson\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:crimson_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"warped\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:warped_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"mangrove\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:mangrove_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:mangrove_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:mangrove_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:mangrove_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ],
                 "\"bamboo\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:bamboo_wall_sign"
+                        "function": "map_properties",
+                        "options": {
+                            "connection": {
+                                "\"down\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:bamboo_wall_sign"
+                                    }
+                                ],
+                                "\"up\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:bamboo_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "\"up_chain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:bamboo_wall_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
             }

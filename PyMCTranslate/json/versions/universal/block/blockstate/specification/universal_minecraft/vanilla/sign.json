@@ -28,12 +28,19 @@
             "\"mangrove\"",
             "\"crimson\"",
             "\"warped\"",
-            "\"bamboo\""
+            "\"bamboo\"",
+            "\"cherry\""
+        ],
+        "connection": [
+            "\"down\"",
+            "\"up\"",
+            "\"up_chain\""
         ]
     },
     "defaults": {
         "rotation": "\"0\"",
-        "material": "\"oak\""
+        "material": "\"oak\"",
+        "connection": "\"down\""
     },
     "nbt_identifier": [
         "universal_minecraft",
