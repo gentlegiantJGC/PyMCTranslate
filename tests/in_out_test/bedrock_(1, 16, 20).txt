@@ -1295,6 +1295,102 @@ Numerical output: None
 Universal output 2: universal_minecraft:colored_torch_rg[color="1",facing="up"]
 Blockstate: minecraft:colored_torch_rg[color_bit=1b,torch_facing_direction="top"]
 ======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="white"] != minecraft:concretePowder[color="white"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="white"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="white"]
+Blockstate: minecraft:concretePowder[color="white"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="orange"] != minecraft:concretePowder[color="orange"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="orange"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="orange"]
+Blockstate: minecraft:concretePowder[color="orange"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="magenta"] != minecraft:concretePowder[color="magenta"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="magenta"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="magenta"]
+Blockstate: minecraft:concretePowder[color="magenta"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="light_blue"] != minecraft:concretePowder[color="light_blue"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="light_blue"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="light_blue"]
+Blockstate: minecraft:concretePowder[color="light_blue"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="yellow"] != minecraft:concretePowder[color="yellow"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="yellow"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="yellow"]
+Blockstate: minecraft:concretePowder[color="yellow"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="lime"] != minecraft:concretePowder[color="lime"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="lime"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="lime"]
+Blockstate: minecraft:concretePowder[color="lime"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="pink"] != minecraft:concretePowder[color="pink"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="pink"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="pink"]
+Blockstate: minecraft:concretePowder[color="pink"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="gray"] != minecraft:concretePowder[color="gray"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="gray"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="gray"]
+Blockstate: minecraft:concretePowder[color="gray"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="silver"] != minecraft:concretePowder[color="silver"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="light_gray"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="light_gray"]
+Blockstate: minecraft:concretePowder[color="silver"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="cyan"] != minecraft:concretePowder[color="cyan"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="cyan"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="cyan"]
+Blockstate: minecraft:concretePowder[color="cyan"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="purple"] != minecraft:concretePowder[color="purple"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="purple"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="purple"]
+Blockstate: minecraft:concretePowder[color="purple"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="blue"] != minecraft:concretePowder[color="blue"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="blue"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="blue"]
+Blockstate: minecraft:concretePowder[color="blue"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="brown"] != minecraft:concretePowder[color="brown"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="brown"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="brown"]
+Blockstate: minecraft:concretePowder[color="brown"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="green"] != minecraft:concretePowder[color="green"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="green"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="green"]
+Blockstate: minecraft:concretePowder[color="green"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="red"] != minecraft:concretePowder[color="red"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="red"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="red"]
+Blockstate: minecraft:concretePowder[color="red"]
+======================================================================================================================================================
+Conversion error: minecraft:concrete_powder[color="black"] != minecraft:concretePowder[color="black"] bedrock (1, 16, 20)
+Universal output: universal_minecraft:concrete_powder[color="black"]
+Numerical output: None
+Universal output 2: universal_minecraft:concrete_powder[color="black"]
+Blockstate: minecraft:concretePowder[color="black"]
+======================================================================================================================================================
 Conversion error: minecraft:coral_fan[coral_color="blue",coral_fan_direction=1] != minecraft:coral_fan[coral_color="blue",coral_fan_direction=0] bedrock (1, 16, 20)
 Universal output: universal_minecraft:coral_fan[coral_type="tube",dead="false",facing="up"]
 Numerical output: None
@@ -2009,6 +2105,42 @@ Numerical output: None
 Universal output 2: universal_minecraft:melon_stem[age="7",facing="none"]
 Blockstate: minecraft:melon_stem[facing_direction=0,growth=7]
 ======================================================================================================================================================
+Conversion error: minecraft:piston_arm_collision[facing_direction=0] != minecraft:pistonArmCollision[facing_direction=0] bedrock (1, 16, 20)
+Universal output: universal_minecraft:piston_head[facing="down",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:piston_head[facing="down",short="false"]
+Blockstate: minecraft:pistonArmCollision[facing_direction=0]
+======================================================================================================================================================
+Conversion error: minecraft:piston_arm_collision[facing_direction=1] != minecraft:pistonArmCollision[facing_direction=1] bedrock (1, 16, 20)
+Universal output: universal_minecraft:piston_head[facing="up",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:piston_head[facing="up",short="false"]
+Blockstate: minecraft:pistonArmCollision[facing_direction=1]
+======================================================================================================================================================
+Conversion error: minecraft:piston_arm_collision[facing_direction=2] != minecraft:pistonArmCollision[facing_direction=2] bedrock (1, 16, 20)
+Universal output: universal_minecraft:piston_head[facing="south",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:piston_head[facing="south",short="false"]
+Blockstate: minecraft:pistonArmCollision[facing_direction=2]
+======================================================================================================================================================
+Conversion error: minecraft:piston_arm_collision[facing_direction=3] != minecraft:pistonArmCollision[facing_direction=3] bedrock (1, 16, 20)
+Universal output: universal_minecraft:piston_head[facing="north",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:piston_head[facing="north",short="false"]
+Blockstate: minecraft:pistonArmCollision[facing_direction=3]
+======================================================================================================================================================
+Conversion error: minecraft:piston_arm_collision[facing_direction=4] != minecraft:pistonArmCollision[facing_direction=4] bedrock (1, 16, 20)
+Universal output: universal_minecraft:piston_head[facing="east",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:piston_head[facing="east",short="false"]
+Blockstate: minecraft:pistonArmCollision[facing_direction=4]
+======================================================================================================================================================
+Conversion error: minecraft:piston_arm_collision[facing_direction=5] != minecraft:pistonArmCollision[facing_direction=5] bedrock (1, 16, 20)
+Universal output: universal_minecraft:piston_head[facing="west",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:piston_head[facing="west",short="false"]
+Blockstate: minecraft:pistonArmCollision[facing_direction=5]
+======================================================================================================================================================
 Conversion error: minecraft:polished_blackstone_brick_double_slab[top_slot_bit=1b] != minecraft:polished_blackstone_brick_double_slab[top_slot_bit=0b] bedrock (1, 16, 20)
 Universal output: universal_minecraft:slab[material="polished_blackstone_brick",type="double"]
 Numerical output: None
@@ -2369,6 +2501,42 @@ Numerical output: None
 Universal output 2: universal_minecraft:pressure_plate[material="spruce",powered="true"]
 Blockstate: minecraft:spruce_pressure_plate[redstone_signal=1]
 ======================================================================================================================================================
+Conversion error: minecraft:sticky_piston_arm_collision[facing_direction=0] != minecraft:stickyPistonArmCollision[facing_direction=0] bedrock (1, 16, 20)
+Universal output: universal_minecraft:sticky_piston_head[facing="down",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:sticky_piston_head[facing="down",short="false"]
+Blockstate: minecraft:stickyPistonArmCollision[facing_direction=0]
+======================================================================================================================================================
+Conversion error: minecraft:sticky_piston_arm_collision[facing_direction=1] != minecraft:stickyPistonArmCollision[facing_direction=1] bedrock (1, 16, 20)
+Universal output: universal_minecraft:sticky_piston_head[facing="up",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:sticky_piston_head[facing="up",short="false"]
+Blockstate: minecraft:stickyPistonArmCollision[facing_direction=1]
+======================================================================================================================================================
+Conversion error: minecraft:sticky_piston_arm_collision[facing_direction=2] != minecraft:stickyPistonArmCollision[facing_direction=2] bedrock (1, 16, 20)
+Universal output: universal_minecraft:sticky_piston_head[facing="south",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:sticky_piston_head[facing="south",short="false"]
+Blockstate: minecraft:stickyPistonArmCollision[facing_direction=2]
+======================================================================================================================================================
+Conversion error: minecraft:sticky_piston_arm_collision[facing_direction=3] != minecraft:stickyPistonArmCollision[facing_direction=3] bedrock (1, 16, 20)
+Universal output: universal_minecraft:sticky_piston_head[facing="north",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:sticky_piston_head[facing="north",short="false"]
+Blockstate: minecraft:stickyPistonArmCollision[facing_direction=3]
+======================================================================================================================================================
+Conversion error: minecraft:sticky_piston_arm_collision[facing_direction=4] != minecraft:stickyPistonArmCollision[facing_direction=4] bedrock (1, 16, 20)
+Universal output: universal_minecraft:sticky_piston_head[facing="east",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:sticky_piston_head[facing="east",short="false"]
+Blockstate: minecraft:stickyPistonArmCollision[facing_direction=4]
+======================================================================================================================================================
+Conversion error: minecraft:sticky_piston_arm_collision[facing_direction=5] != minecraft:stickyPistonArmCollision[facing_direction=5] bedrock (1, 16, 20)
+Universal output: universal_minecraft:sticky_piston_head[facing="west",short="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:sticky_piston_head[facing="west",short="false"]
+Blockstate: minecraft:stickyPistonArmCollision[facing_direction=5]
+======================================================================================================================================================
 Conversion error: minecraft:stonebrick[stone_brick_type="smooth"] != minecraft:stonebrick[stone_brick_type="default"] bedrock (1, 16, 20)
 Universal output: universal_minecraft:stone_bricks[variant="normal"]
 Numerical output: None
@@ -2704,6 +2872,102 @@ Universal output: universal_minecraft:torch[facing="up"]
 Numerical output: None
 Universal output 2: universal_minecraft:torch[facing="up"]
 Blockstate: minecraft:torch[torch_facing_direction="top"]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=0b,powered_bit=0b,suspended_bit=0b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=0b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=0b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=0b,powered_bit=0b,suspended_bit=1b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=0b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=0b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=0b,powered_bit=1b,suspended_bit=0b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=1b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=1b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=0b,powered_bit=1b,suspended_bit=1b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=1b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="false",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=0b,powered_bit=1b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=1b,powered_bit=0b,suspended_bit=0b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=0b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=0b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=1b,powered_bit=0b,suspended_bit=1b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=0b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=0b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=1b,powered_bit=1b,suspended_bit=0b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=1b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=1b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=0b,disarmed_bit=1b,powered_bit=1b,suspended_bit=1b] != minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=1b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="false",disarmed="true",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=0b,disarmed_bit=1b,powered_bit=1b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=0b,powered_bit=0b,suspended_bit=0b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=0b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=0b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=0b,powered_bit=0b,suspended_bit=1b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=0b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=0b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=0b,powered_bit=1b,suspended_bit=0b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=1b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=1b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=0b,powered_bit=1b,suspended_bit=1b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=1b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="false",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=0b,powered_bit=1b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=1b,powered_bit=0b,suspended_bit=0b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=0b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="false",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=0b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=1b,powered_bit=0b,suspended_bit=1b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=0b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="false",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=0b,suspended_bit=1b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=1b,powered_bit=1b,suspended_bit=0b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=1b,suspended_bit=0b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="true",south="false",suspended="false",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=1b,suspended_bit=0b]
+======================================================================================================================================================
+Conversion error: minecraft:trip_wire[attached_bit=1b,disarmed_bit=1b,powered_bit=1b,suspended_bit=1b] != minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=1b,suspended_bit=1b] bedrock (1, 16, 20)
+Universal output: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Numerical output: None
+Universal output 2: universal_minecraft:tripwire[attached="true",disarmed="true",east="false",north="false",powered="true",south="false",suspended="true",west="false"]
+Blockstate: minecraft:tripWire[attached_bit=1b,disarmed_bit=1b,powered_bit=1b,suspended_bit=1b]
 ======================================================================================================================================================
 Conversion error: minecraft:underwater_torch[torch_facing_direction="unknown"] != minecraft:underwater_torch[torch_facing_direction="top"] bedrock (1, 16, 20)
 Universal output: universal_minecraft:underwater_torch[facing="up"]
