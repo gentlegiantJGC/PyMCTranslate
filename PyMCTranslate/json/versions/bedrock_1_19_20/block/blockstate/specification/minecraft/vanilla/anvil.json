@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "damage": [
+            "\"undamaged\"",
+            "\"slightly_damaged\"",
+            "\"very_damaged\"",
+            "\"broken\""
+        ],
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    "defaults": {
+        "damage": "\"undamaged\"",
+        "direction": "0"
+    }
+}

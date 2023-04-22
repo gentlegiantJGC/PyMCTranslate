@@ -1,0 +1,143 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:trapdoor"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:trapdoor"
+                    }
+                ],
+                "\"iron\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:iron_trapdoor"
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_trapdoor"
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_trapdoor"
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_trapdoor"
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_trapdoor"
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_trapdoor"
+                    }
+                ],
+                "\"crimson\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:crimson_trapdoor"
+                    }
+                ],
+                "\"warped\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:warped_trapdoor"
+                    }
+                ],
+                "\"mangrove\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mangrove_trapdoor"
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ]
+            },
+            "open": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "half": {
+                "\"bottom\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upside_down_bit": "0b"
+                        }
+                    }
+                ],
+                "\"top\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upside_down_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

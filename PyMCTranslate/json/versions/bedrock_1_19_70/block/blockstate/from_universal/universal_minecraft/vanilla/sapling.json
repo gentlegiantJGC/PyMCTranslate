@@ -1,0 +1,79 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sapling"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "stage": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age_bit": "0b"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "age_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": "\"oak\""
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": "\"spruce\""
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": "\"birch\""
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": "\"jungle\""
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": "\"acacia\""
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sapling_type": "\"dark_oak\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

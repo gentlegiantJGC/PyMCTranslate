@@ -1,0 +1,85 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:planks"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"oak\""
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"spruce\""
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"birch\""
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"jungle\""
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"acacia\""
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wood_type": "\"dark_oak\""
+                        }
+                    }
+                ],
+                "\"crimson\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:crimson_planks"
+                    }
+                ],
+                "\"warped\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:warped_planks"
+                    }
+                ],
+                "\"mangrove\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mangrove_planks"
+                    }
+                ],
+                "\"bamboo\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:bamboo_planks"
+                    }
+                ]
+            }
+        }
+    }
+]

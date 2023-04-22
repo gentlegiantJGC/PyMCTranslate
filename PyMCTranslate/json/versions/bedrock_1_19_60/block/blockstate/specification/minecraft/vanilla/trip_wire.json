@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "attached_bit": [
+            "0b",
+            "1b"
+        ],
+        "disarmed_bit": [
+            "0b",
+            "1b"
+        ],
+        "powered_bit": [
+            "0b",
+            "1b"
+        ],
+        "suspended_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "attached_bit": "0b",
+        "disarmed_bit": "0b",
+        "powered_bit": "0b",
+        "suspended_bit": "0b"
+    }
+}

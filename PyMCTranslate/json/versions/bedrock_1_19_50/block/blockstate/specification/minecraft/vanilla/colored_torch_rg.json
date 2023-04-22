@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "color_bit": [
+            "0b",
+            "1b"
+        ],
+        "torch_facing_direction": [
+            "\"top\"",
+            "\"west\"",
+            "\"east\"",
+            "\"north\"",
+            "\"south\"",
+            "\"unknown\""
+        ]
+    },
+    "defaults": {
+        "color_bit": "0b",
+        "torch_facing_direction": "\"top\""
+    }
+}
