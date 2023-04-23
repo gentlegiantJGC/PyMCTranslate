@@ -6,30 +6,8 @@
     {
         "function": "new_properties",
         "options": {
-            "material": "\"bamboo\""
-        }
-    },
-    {
-        "function": "map_properties",
-        "options": {
-            "attached": {
-                "\"false\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "connection": "\"up\""
-                        }
-                    }
-                ],
-                "\"true\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "connection": "\"up_chain\""
-                        }
-                    }
-                ]
-            }
+            "material": "\"bamboo\"",
+            "hanging": "\"true\""
         }
     },
     {
