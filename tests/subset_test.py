@@ -20,6 +20,7 @@ class SubSetTest(unittest.TestCase):
             [False, True] if version.has_abstract_format else [True]
         ):
             log.setLevel(logging.INFO if force_blockstate else logging.CRITICAL)
+            print(f"To Universal, {version}, {force_blockstate}")
             with self.subTest(f"To Universal, {version}, {force_blockstate}"):
                 for namespace in blocks.namespaces(force_blockstate):
                     for base_name in blocks.base_names(namespace, force_blockstate):
