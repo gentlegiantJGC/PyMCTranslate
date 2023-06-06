@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:amethyst_cluster"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"east\"",
+                "\"south\"",
+                "\"west\"",
+                "\"up\"",
+                "\"down\""
+            ]
+        }
+    }
+]

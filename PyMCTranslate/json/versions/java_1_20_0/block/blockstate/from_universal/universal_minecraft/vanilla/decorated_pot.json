@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:decorated_pot"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "cracked": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

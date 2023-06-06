@@ -1,0 +1,15 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:deepslate_redstone_ore"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "lit": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

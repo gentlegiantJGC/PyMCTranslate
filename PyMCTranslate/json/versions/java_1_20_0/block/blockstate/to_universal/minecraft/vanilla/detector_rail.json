@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:detector_rail"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "shape": [
+                "\"north_south\"",
+                "\"east_west\"",
+                "\"ascending_east\"",
+                "\"ascending_west\"",
+                "\"ascending_north\"",
+                "\"ascending_south\""
+            ]
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:mangrove_propagule"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "age": [
+                "\"0\"",
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\""
+            ],
+            "hanging": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "stage": [
+                "\"0\"",
+                "\"1\""
+            ]
+        }
+    }
+]

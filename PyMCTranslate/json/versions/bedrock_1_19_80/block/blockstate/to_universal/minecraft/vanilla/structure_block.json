@@ -1,0 +1,542 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "dataField": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "metadata"
+                            }
+                        }
+                    ]
+                },
+                "ignoreEntities": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isPowered": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "powered"
+                            }
+                        }
+                    ]
+                },
+                "seed": {
+                    "type": "long",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "xStructureOffset": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "posX"
+                            }
+                        }
+                    ]
+                },
+                "yStructureOffset": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "posY"
+                            }
+                        }
+                    ]
+                },
+                "zStructureOffset": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "posZ"
+                            }
+                        }
+                    ]
+                },
+                "xStructureSize": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "sizeX"
+                            }
+                        }
+                    ]
+                },
+                "yStructureSize": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "sizeY"
+                            }
+                        }
+                    ]
+                },
+                "zStructureSize": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "sizeZ"
+                            }
+                        }
+                    ]
+                },
+                "integrity": {
+                    "type": "float",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "structureName": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "name"
+                            }
+                        }
+                    ]
+                },
+                "showBoundingBox": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "showboundingbox"
+                            }
+                        }
+                    ]
+                },
+                "includePlayers": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "removeBlocks": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "redstoneSaveMode": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "mirror": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"NONE\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"X\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"Z\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mirror",
+                                                    "value": "\"XZ\""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "rotation": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "0b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "rotation",
+                                                    "value": "\"NONE\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "1b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "rotation",
+                                                    "value": "\"CLOCKWISE_90\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "2b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "rotation",
+                                                    "value": "\"CLOCKWISE_180\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "3b": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "rotation",
+                                                    "value": "\"COUNTERCLOCKWISE_90\""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "data": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "map_nbt",
+                            "options": {
+                                "cases": {
+                                    "1": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mode",
+                                                    "value": "\"SAVE\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "2": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mode",
+                                                    "value": "\"LOAD\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "3": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mode",
+                                                    "value": "\"CORNER\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "4": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mode",
+                                                    "value": "\"DATA\""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "5": [
+                                        {
+                                            "function": "new_nbt",
+                                            "options": [
+                                                {
+                                                    "key": "mode",
+                                                    "value": "\"3D_EXPORT\""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:structure_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "structure_block_type": {
+                "\"data\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"data\""
+                        }
+                    }
+                ],
+                "\"save\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"save\""
+                        }
+                    }
+                ],
+                "\"load\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"load\""
+                        }
+                    }
+                ],
+                "\"corner\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"corner\""
+                        }
+                    }
+                ],
+                "\"invalid\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"invalid\""
+                        }
+                    }
+                ],
+                "\"export\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"export\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"cut_copper\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "top_slot_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"bottom\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"top\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
