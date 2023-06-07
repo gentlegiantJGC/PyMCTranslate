@@ -34,5 +34,10 @@
         "facing": "\"north\"",
         "power": "\"0\"",
         "sculk_sensor_phase": "\"inactive\""
-    }
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "calibrated_sculk_sensor"
+    ],
+    "snbt": "{utags: {isMovable: 1b,listener: {selector: {}}}}"
 }
