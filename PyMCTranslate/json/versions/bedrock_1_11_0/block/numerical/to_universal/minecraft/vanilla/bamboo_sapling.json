@@ -1,12 +1,22 @@
 [
     {
+        "function": "new_block",
+        "options": "universal_minecraft:sapling"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"bamboo\""
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
             "block_data": {
                 "0": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:bamboo_sapling"
+                        "options": "universal_minecraft:sapling"
                     },
                     {
                         "function": "new_properties",
@@ -18,7 +28,7 @@
                 "1": [
                     {
                         "function": "new_block",
-                        "options": "universal_minecraft:bamboo_sapling"
+                        "options": "universal_minecraft:sapling"
                     },
                     {
                         "function": "new_properties",
