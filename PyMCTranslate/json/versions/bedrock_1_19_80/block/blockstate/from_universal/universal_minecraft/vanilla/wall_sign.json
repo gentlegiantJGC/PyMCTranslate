@@ -122,104 +122,307 @@
     {
         "function": "map_properties",
         "options": {
-            "material": {
-                "\"oak\"": [
+            "hanging": {
+                "\"false\"": [
                     {
                         "function": "new_block",
                         "options": "minecraft:wall_sign"
-                    }
-                ],
-                "\"spruce\"": [
+                    },
                     {
-                        "function": "new_block",
-                        "options": "minecraft:spruce_wall_sign"
-                    }
-                ],
-                "\"dark_oak\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:darkoak_wall_sign"
-                    }
-                ],
-                "\"birch\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:birch_wall_sign"
-                    }
-                ],
-                "\"jungle\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:jungle_wall_sign"
-                    }
-                ],
-                "\"acacia\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:acacia_wall_sign"
-                    }
-                ],
-                "\"crimson\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:crimson_wall_sign"
-                    }
-                ],
-                "\"warped\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:warped_wall_sign"
-                    }
-                ],
-                "\"mangrove\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:mangrove_wall_sign"
-                    }
-                ],
-                "\"bamboo\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:bamboo_wall_sign"
-                    }
-                ],
-                "\"cherry\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:cherry_wall_sign"
-                    }
-                ]
-            },
-            "facing": {
-                "\"north\"": [
-                    {
-                        "function": "new_properties",
+                        "function": "map_properties",
                         "options": {
-                            "facing_direction": "2"
+                            "material": {
+                                "\"oak\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:wall_sign"
+                                    }
+                                ],
+                                "\"spruce\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_wall_sign"
+                                    }
+                                ],
+                                "\"dark_oak\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:darkoak_wall_sign"
+                                    }
+                                ],
+                                "\"birch\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_wall_sign"
+                                    }
+                                ],
+                                "\"jungle\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_wall_sign"
+                                    }
+                                ],
+                                "\"acacia\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_wall_sign"
+                                    }
+                                ],
+                                "\"crimson\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_wall_sign"
+                                    }
+                                ],
+                                "\"warped\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_wall_sign"
+                                    }
+                                ],
+                                "\"mangrove\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:mangrove_wall_sign"
+                                    }
+                                ],
+                                "\"bamboo\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:bamboo_wall_sign"
+                                    }
+                                ],
+                                "\"cherry\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:cherry_wall_sign"
+                                    }
+                                ]
+                            },
+                            "facing": {
+                                "\"north\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "2"
+                                        }
+                                    }
+                                ],
+                                "\"south\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "3"
+                                        }
+                                    }
+                                ],
+                                "\"west\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "4"
+                                        }
+                                    }
+                                ],
+                                "\"east\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "5"
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     }
                 ],
-                "\"south\"": [
+                "\"true\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": "3"
-                        }
-                    }
-                ],
-                "\"west\"": [
+                        "function": "new_block",
+                        "options": "minecraft:oak_hanging_sign"
+                    },
                     {
-                        "function": "new_properties",
+                        "function": "map_properties",
                         "options": {
-                            "facing_direction": "4"
-                        }
-                    }
-                ],
-                "\"east\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": "5"
+                            "material": {
+                                "\"acacia\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"bamboo\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:bamboo_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"birch\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"crimson\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"dark_oak\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:dark_oak_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"jungle\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"mangrove\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:mangrove_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"oak\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:oak_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"spruce\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"warped\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"cherry\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:cherry_hanging_sign"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "attached_bit": "0b",
+                                            "hanging": "0b"
+                                        }
+                                    }
+                                ]
+                            },
+                            "facing": {
+                                "\"north\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "2"
+                                        }
+                                    }
+                                ],
+                                "\"south\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "3"
+                                        }
+                                    }
+                                ],
+                                "\"west\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "4"
+                                        }
+                                    }
+                                ],
+                                "\"east\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing_direction": "5"
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     }
                 ]
