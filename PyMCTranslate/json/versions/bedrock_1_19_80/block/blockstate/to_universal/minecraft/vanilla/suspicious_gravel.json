@@ -1,59 +1,51 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:coral"
+        "options": "universal_minecraft:suspicious_gravel"
     },
     {
         "function": "map_properties",
         "options": {
-            "coral_color": {
-                "\"blue\"": [
+            "brushed_progress": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_type": "\"tube\""
+                            "dusted": "\"0\""
                         }
                     }
                 ],
-                "\"pink\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_type": "\"brain\""
+                            "dusted": "\"1\""
                         }
                     }
                 ],
-                "\"purple\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_type": "\"bubble\""
+                            "dusted": "\"2\""
                         }
                     }
                 ],
-                "\"red\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "coral_type": "\"fire\""
-                        }
-                    }
-                ],
-                "\"yellow\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "coral_type": "\"horn\""
+                            "dusted": "\"3\""
                         }
                     }
                 ]
             },
-            "dead_bit": {
+            "hanging": {
                 "0b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "dead": "\"false\""
+                            "hanging": "\"false\""
                         }
                     }
                 ],
@@ -61,7 +53,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "dead": "\"true\""
+                            "hanging": "\"true\""
                         }
                     }
                 ]

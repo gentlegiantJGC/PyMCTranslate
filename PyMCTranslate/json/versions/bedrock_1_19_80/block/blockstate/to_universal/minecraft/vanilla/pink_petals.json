@@ -1,137 +1,107 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:carpet"
+        "options": "universal_minecraft:pink_petals"
     },
     {
         "function": "map_properties",
         "options": {
-            "color": {
-                "\"white\"": [
+            "direction": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"white\""
+                            "facing": "\"east\""
                         }
                     }
                 ],
-                "\"orange\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"orange\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
-                "\"magenta\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"magenta\""
+                            "facing": "\"west\""
                         }
                     }
                 ],
-                "\"light_blue\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"light_blue\""
+                            "facing": "\"north\""
+                        }
+                    }
+                ]
+            },
+            "growth": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "flower_amount": "\"1\""
                         }
                     }
                 ],
-                "\"yellow\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"yellow\""
+                            "flower_amount": "\"2\""
                         }
                     }
                 ],
-                "\"lime\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"lime\""
+                            "flower_amount": "\"3\""
                         }
                     }
                 ],
-                "\"pink\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"pink\""
+                            "flower_amount": "\"4\""
                         }
                     }
                 ],
-                "\"gray\"": [
+                "4": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"gray\""
+                            "flower_amount": "\"4\""
                         }
                     }
                 ],
-                "\"silver\"": [
+                "5": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"light_gray\""
+                            "flower_amount": "\"4\""
                         }
                     }
                 ],
-                "\"cyan\"": [
+                "6": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"cyan\""
+                            "flower_amount": "\"4\""
                         }
                     }
                 ],
-                "\"purple\"": [
+                "7": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "color": "\"purple\""
-                        }
-                    }
-                ],
-                "\"blue\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"blue\""
-                        }
-                    }
-                ],
-                "\"brown\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"brown\""
-                        }
-                    }
-                ],
-                "\"green\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"green\""
-                        }
-                    }
-                ],
-                "\"red\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"red\""
-                        }
-                    }
-                ],
-                "\"black\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"black\""
+                            "flower_amount": "\"4\""
                         }
                     }
                 ]

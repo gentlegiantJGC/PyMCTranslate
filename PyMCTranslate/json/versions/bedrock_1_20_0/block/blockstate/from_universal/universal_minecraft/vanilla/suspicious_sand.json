@@ -1,6 +1,63 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:suspicious_sand"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "dusted": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brushed_progress": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brushed_progress": "1"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brushed_progress": "2"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "brushed_progress": "3"
+                        }
+                    }
+                ]
+            },
+            "hanging": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "1b"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

@@ -1,59 +1,59 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:suspicious_sand"
+        "options": "universal_minecraft:suspicious_sand"
     },
     {
         "function": "map_properties",
         "options": {
-            "dusted": {
-                "\"0\"": [
+            "brushed_progress": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brushed_progress": "0"
+                            "dusted": "\"0\""
                         }
                     }
                 ],
-                "\"1\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brushed_progress": "1"
+                            "dusted": "\"1\""
                         }
                     }
                 ],
-                "\"2\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brushed_progress": "2"
+                            "dusted": "\"2\""
                         }
                     }
                 ],
-                "\"3\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "brushed_progress": "3"
+                            "dusted": "\"3\""
                         }
                     }
                 ]
             },
             "hanging": {
-                "\"false\"": [
+                "0b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "hanging": "0b"
+                            "hanging": "\"false\""
                         }
                     }
                 ],
-                "\"true\"": [
+                "1b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "hanging": "1b"
+                            "hanging": "\"true\""
                         }
                     }
                 ]
