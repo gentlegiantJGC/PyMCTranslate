@@ -1,25 +1,25 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:torchflower_crop"
+        "options": "universal_minecraft:pitcher_plant"
     },
     {
         "function": "map_properties",
         "options": {
-            "age": {
-                "\"0\"": [
+            "upper_block_bit": {
+                "0b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "0"
+                            "half": "\"lower\""
                         }
                     }
                 ],
-                "\"1\"": [
+                "1b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "1"
+                            "half": "\"upper\""
                         }
                     }
                 ]

@@ -1,6 +1,29 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:torchflower_crop"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "age": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "1"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

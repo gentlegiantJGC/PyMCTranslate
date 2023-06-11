@@ -6,8 +6,8 @@
     {
         "function": "map_properties",
         "options": {
-            "direction": {
-                "0": [
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -15,7 +15,7 @@
                         }
                     }
                 ],
-                "1": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -23,7 +23,7 @@
                         }
                     }
                 ],
-                "2": [
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -31,7 +31,7 @@
                         }
                     }
                 ],
-                "3": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {

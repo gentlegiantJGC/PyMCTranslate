@@ -109,10 +109,6 @@
                 ],
                 "\"lava\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:lava_cauldron"
-                    },
-                    {
                         "function": "new_properties",
                         "options": {
                             "cauldron_liquid": "\"lava\""
@@ -122,6 +118,12 @@
             },
             "level": {
                 "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "0"
+                        }
+                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -147,9 +149,21 @@
                         "options": {
                             "fill_level": "1"
                         }
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "1"
+                        }
                     }
                 ],
                 "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "2"
+                        }
+                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -175,9 +189,21 @@
                         "options": {
                             "fill_level": "3"
                         }
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "3"
+                        }
                     }
                 ],
                 "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "4"
+                        }
+                    },
                     {
                         "function": "new_properties",
                         "options": {
@@ -203,9 +229,21 @@
                         "options": {
                             "fill_level": "5"
                         }
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "5"
+                        }
                     }
                 ],
                 "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "fill_level": "6"
+                        }
+                    },
                     {
                         "function": "new_properties",
                         "options": {

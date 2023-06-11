@@ -1,41 +1,33 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:pumpkin"
+        "options": "universal_minecraft:sniffer_egg"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "\"south\"": [
+            "cracked_state": {
+                "\"no_cracks\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"south\""
+                            "hatch": "\"0\""
                         }
                     }
                 ],
-                "\"west\"": [
+                "\"cracked\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"west\""
+                            "hatch": "\"1\""
                         }
                     }
                 ],
-                "\"north\"": [
+                "\"max_cracked\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"north\""
-                        }
-                    }
-                ],
-                "\"east\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "minecraft:cardinal_direction": "\"east\""
+                            "hatch": "\"2\""
                         }
                     }
                 ]
