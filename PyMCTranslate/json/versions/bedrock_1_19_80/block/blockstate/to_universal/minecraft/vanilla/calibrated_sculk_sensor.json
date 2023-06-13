@@ -1,50 +1,11 @@
 [
     {
-        "function": "new_block",
-        "options": "universal_minecraft:chiseled_bookshelf"
-    },
-    {
-        "function": "carry_properties",
-        "options": {
-            "facing": [
-                "\"north\"",
-                "\"south\"",
-                "\"west\"",
-                "\"east\""
-            ],
-            "slot_0_occupied": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "slot_1_occupied": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "slot_2_occupied": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "slot_3_occupied": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "slot_4_occupied": [
-                "\"true\"",
-                "\"false\""
-            ],
-            "slot_5_occupied": [
-                "\"true\"",
-                "\"false\""
-            ]
-        }
-    },
-    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
             "keys": {
-                "Items": {
-                    "type": "list",
+                "VibrationListener": {
+                    "type": "compound",
                     "nested_default": [],
                     "self_default": [],
                     "functions": [
@@ -61,8 +22,8 @@
                         }
                     ]
                 },
-                "last_interacted_slot": {
-                    "type": "int",
+                "isMovable": {
+                    "type": "byte",
                     "functions": [
                         {
                             "function": "carry_nbt",
@@ -90,6 +51,35 @@
                     "options": {}
                 }
             ]
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:calibrated_sculk_sensor"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "powered_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"0\"",
+                            "sculk_sensor_phase": "\"inactive\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"1\"",
+                            "sculk_sensor_phase": "\"active\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

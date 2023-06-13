@@ -14,5 +14,10 @@
     "defaults": {
         "direction": "0",
         "powered_bit": "0b"
-    }
+    },
+    "nbt_identifier": [
+        "",
+        "CalibratedSculkSensor"
+    ],
+    "snbt": "{isMovable: 1b, VibrationListener: {selector: {}}}"
 }

@@ -60,8 +60,8 @@
     {
         "function": "map_properties",
         "options": {
-            "powered_bit": {
-                "0b": [
+            "sculk_sensor_phase": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -70,12 +70,21 @@
                         }
                     }
                 ],
-                "1b": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
                             "power": "\"1\"",
                             "sculk_sensor_phase": "\"active\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"1\"",
+                            "sculk_sensor_phase": "\"cooldown\""
                         }
                     }
                 ]

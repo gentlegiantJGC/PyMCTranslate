@@ -73,7 +73,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered_bit": "0b"
+                            "sculk_sensor_phase": "0"
                         }
                     }
                 ],
@@ -81,7 +81,15 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "powered_bit": "1b"
+                            "sculk_sensor_phase": "1"
+                        }
+                    }
+                ],
+                "\"cooldown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "sculk_sensor_phase": "2"
                         }
                     }
                 ]
