@@ -1,0 +1,32 @@
+{
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "material": [
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\"",
+            "\"mangrove\"",
+            "\"crimson\"",
+            "\"warped\"",
+            "\"bamboo\"",
+            "\"cherry\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "material": "\"oak\""
+    },
+    "nbt_identifier": [
+        "universal_minecraft",
+        "hanging_sign"
+    ],
+    "snbt": "{}"
+}

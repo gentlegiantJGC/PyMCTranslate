@@ -1,13 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:wall_sign"
+        "options": "universal_minecraft:wall_hanging_sign"
     },
     {
         "function": "new_properties",
         "options": {
-            "material": "\"dark_oak\"",
-            "hanging": "\"true\""
+            "material": "\"dark_oak\""
         }
     },
     {
@@ -26,70 +25,6 @@
         "options": {
             "type": "compound",
             "keys": {
-                "Text1": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "Text2": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "Text3": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "Text4": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
                 "keepPacked": {
                     "type": "byte",
                     "functions": [
