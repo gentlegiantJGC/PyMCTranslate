@@ -8,12 +8,18 @@ def main(nbt):
         text = nbt[1]["Text"][1]
         if text:
             for line_num, line in enumerate(section_string_to_raw_text_list(text)):
-                out.append([
-                    "",
-                    "compound",
-                    [("utags", "compound"), ("front_text", "compound"), ("messages", "list")],
-                    line_num,
-                    ["string", line],
-                ])
+                out.append(
+                    [
+                        "",
+                        "compound",
+                        [
+                            ("utags", "compound"),
+                            ("front_text", "compound"),
+                            ("messages", "list"),
+                        ],
+                        line_num,
+                        ["string", line],
+                    ]
+                )
 
     return out

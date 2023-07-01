@@ -137,7 +137,8 @@ class TranslationManager:
     @property
     def block_registry(self) -> NumericalRegistry:
         """A class used to register the block string name that pairs with the arbitrary numerical id stored in chunk.
-        This is only used in worlds where the blocks ids are stored in numerical format."""
+        This is only used in worlds where the blocks ids are stored in numerical format.
+        """
         return self._block_registry
 
     def platforms(self) -> List[str]:

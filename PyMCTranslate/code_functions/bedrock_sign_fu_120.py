@@ -18,12 +18,22 @@ def main(nbt):
 
     if nbt[0] == "compound" and "utags" in nbt[1] and nbt[1]["utags"][0] == "compound":
         utags = nbt[1]["utags"][1]
-        if "front_text" in utags and utags["front_text"][0] == "compound" and "messages" in utags["front_text"][1] and utags["front_text"][1]["messages"][0] == "list":
+        if (
+            "front_text" in utags
+            and utags["front_text"][0] == "compound"
+            and "messages" in utags["front_text"][1]
+            and utags["front_text"][1]["messages"][0] == "list"
+        ):
             front_text = pack_text(utags["front_text"][1]["messages"][1])
-        if "back_text" in utags and utags["back_text"][0] == "compound" and "messages" in utags["back_text"][1] and utags["back_text"][1]["messages"][0] == "list":
+        if (
+            "back_text" in utags
+            and utags["back_text"][0] == "compound"
+            and "messages" in utags["back_text"][1]
+            and utags["back_text"][1]["messages"][0] == "list"
+        ):
             back_text = pack_text(utags["back_text"][1]["messages"][1])
 
     return [
         ["", "compound", [("FrontText", "compound")], "Text", ["string", front_text]],
-        ["", "compound", [("BackText", "compound")], "Text", ["string", back_text]]
+        ["", "compound", [("BackText", "compound")], "Text", ["string", back_text]],
     ]
