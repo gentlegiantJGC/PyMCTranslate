@@ -79,49 +79,67 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "Text1": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
+                        "front_text": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "keys": {
+                                "messages": {
+                                    "type": "list",
+                                    "nested_default": [],
+                                    "self_default": [],
+                                    "index": {
+                                        "0": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [],
+                                                        "key": "Text1"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "1": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [],
+                                                        "key": "Text2"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [],
+                                                        "key": "Text3"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [],
+                                                        "key": "Text4"
+                                                    }
+                                                }
+                                            ]
+                                        }
                                     }
                                 }
-                            ]
-                        },
-                        "Text2": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "Text3": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "Text4": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
+                            }
                         },
                         "keepPacked": {
                             "type": "byte",

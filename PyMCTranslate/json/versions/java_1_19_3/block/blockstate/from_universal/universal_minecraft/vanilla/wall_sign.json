@@ -91,8 +91,8 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "Text1": {
-                            "type": "string",
+                        "is_waxed": {
+                            "type": "byte",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
@@ -102,38 +102,257 @@
                                 }
                             ]
                         },
-                        "Text2": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
+                        "front_text": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "keys": {
+                                "has_glowing_text": {
+                                    "type": "byte",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "front_text",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "color": {
+                                    "type": "string",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "front_text",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "messages": {
+                                    "type": "list",
+                                    "nested_default": [],
+                                    "self_default": [],
+                                    "index": {
+                                        "0": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "front_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "1": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "front_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "front_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "front_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
                                     }
                                 }
-                            ]
+                            }
                         },
-                        "Text3": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
+                        "back_text": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "keys": {
+                                "has_glowing_text": {
+                                    "type": "byte",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "back_text",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "color": {
+                                    "type": "string",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "back_text",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "messages": {
+                                    "type": "list",
+                                    "nested_default": [],
+                                    "self_default": [],
+                                    "index": {
+                                        "0": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "back_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "1": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "back_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "back_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "type": "string",
+                                            "functions": [
+                                                {
+                                                    "function": "carry_nbt",
+                                                    "options": {
+                                                        "path": [
+                                                            [
+                                                                "back_text",
+                                                                "compound"
+                                                            ],
+                                                            [
+                                                                "messages",
+                                                                "list"
+                                                            ]
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
                                     }
                                 }
-                            ]
-                        },
-                        "Text4": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
+                            }
                         },
                         "keepPacked": {
                             "type": "byte",

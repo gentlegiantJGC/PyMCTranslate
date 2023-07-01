@@ -9,60 +9,159 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "TextOwner": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
-                        },
-                        "IgnoreLighting": {
+                        "is_waxed": {
                             "type": "byte",
                             "functions": [
                                 {
                                     "function": "carry_nbt",
                                     "options": {
-                                        "path": []
+                                        "path": [],
+                                        "key": "IsWaxed"
                                     }
                                 }
                             ]
                         },
-                        "PersistFormatting": {
-                            "type": "byte",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
+                        "front_text": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "keys": {
+                                "IgnoreLighting": {
+                                    "type": "byte",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "FrontText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "PersistFormatting": {
+                                    "type": "byte",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "FrontText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "SignTextColor": {
+                                    "type": "int",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "FrontText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "TextOwner": {
+                                    "type": "string",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "FrontText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
                                 }
-                            ]
+                            }
                         },
-                        "SignTextColor": {
-                            "type": "int",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
+                        "back_text": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "keys": {
+                                "IgnoreLighting": {
+                                    "type": "byte",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "BackText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "PersistFormatting": {
+                                    "type": "byte",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "BackText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "SignTextColor": {
+                                    "type": "int",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "BackText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "TextOwner": {
+                                    "type": "string",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": [
+                                                    [
+                                                        "BackText",
+                                                        "compound"
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    ]
                                 }
-                            ]
-                        },
-                        "TextIgnoreLegacyBugResolved": {
-                            "type": "byte",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
-                                }
-                            ]
+                            }
                         },
                         "isMovable": {
                             "type": "byte",
@@ -112,7 +211,7 @@
             "output": [
                 "new_nbt"
             ],
-            "function": "bedrock_sign_fu"
+            "function": "bedrock_sign_fu_120"
         }
     },
     {

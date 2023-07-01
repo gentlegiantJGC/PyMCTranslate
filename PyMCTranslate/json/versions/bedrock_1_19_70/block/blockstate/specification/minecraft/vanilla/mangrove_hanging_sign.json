@@ -43,7 +43,7 @@
     },
     "nbt_identifier": [
         "",
-        "Sign"
+        "HangingSign"
     ],
-    "snbt": "{IgnoreLighting: 0b, isMovable: 1b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextIgnoreLegacyBugResolved: 0b, TextOwner: \"\"}"
+    "snbt": "{BackText: {IgnoreLighting: 0b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextOwner: \"\"}, FrontText: {IgnoreLighting: 0b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextOwner: \"\"}, isMovable: 1b, IsWaxed: 0b}"
 }

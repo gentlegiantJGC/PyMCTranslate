@@ -13,16 +13,23 @@
                     "nested_default": [],
                     "self_default": [],
                     "keys": {
-                        "TextOwner": {
-                            "type": "string",
-                            "functions": [
-                                {
-                                    "function": "carry_nbt",
-                                    "options": {
-                                        "path": []
-                                    }
+                        "front_text": {
+                            "type": "compound",
+                            "nested_default": [],
+                            "self_default": [],
+                            "keys": {
+                                "TextOwner": {
+                                    "type": "string",
+                                    "functions": [
+                                        {
+                                            "function": "carry_nbt",
+                                            "options": {
+                                                "path": []
+                                            }
+                                        }
+                                    ]
                                 }
-                            ]
+                            }
                         },
                         "isMovable": {
                             "type": "byte",

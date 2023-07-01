@@ -4,27 +4,7 @@
         "options": {
             "type": "compound",
             "keys": {
-                "TextOwner": {
-                    "type": "string",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "Text": {
-                    "type": "string",
-                    "functions": []
-                },
-                "IgnoreLighting": {
+                "IsWaxed": {
                     "type": "byte",
                     "functions": [
                         {
@@ -35,58 +15,193 @@
                                         "utags",
                                         "compound"
                                     ]
-                                ]
+                                ],
+                                "key": "is_waxed"
                             }
                         }
                     ]
                 },
-                "PersistFormatting": {
-                    "type": "byte",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
+                "FrontText": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "IgnoreLighting": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "front_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "PersistFormatting": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "front_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "SignTextColor": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "front_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "Text": {
+                            "type": "string",
+                            "functions": []
+                        },
+                        "TextOwner": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "front_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
                         }
-                    ]
+                    }
                 },
-                "SignTextColor": {
-                    "type": "int",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
+                "BackText": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "IgnoreLighting": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "back_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "PersistFormatting": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "back_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "SignTextColor": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "back_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "Text": {
+                            "type": "string",
+                            "functions": []
+                        },
+                        "TextOwner": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": [
+                                            [
+                                                "utags",
+                                                "compound"
+                                            ],
+                                            [
+                                                "back_text",
+                                                "compound"
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
                         }
-                    ]
-                },
-                "TextIgnoreLegacyBugResolved": {
-                    "type": "byte",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
+                    }
                 },
                 "isMovable": {
                     "type": "byte",
@@ -128,7 +243,7 @@
             "output": [
                 "new_nbt"
             ],
-            "function": "bedrock_sign_2u"
+            "function": "bedrock_sign_2u_120"
         }
     },
     {
