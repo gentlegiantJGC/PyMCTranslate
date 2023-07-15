@@ -25,6 +25,106 @@
         "options": {
             "type": "compound",
             "keys": {
+                "Text1": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "front_text",
+                                        "compound"
+                                    ],
+                                    [
+                                        "messages",
+                                        "list"
+                                    ]
+                                ],
+                                "key": 0
+                            }
+                        }
+                    ]
+                },
+                "Text2": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "front_text",
+                                        "compound"
+                                    ],
+                                    [
+                                        "messages",
+                                        "list"
+                                    ]
+                                ],
+                                "key": 1
+                            }
+                        }
+                    ]
+                },
+                "Text3": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "front_text",
+                                        "compound"
+                                    ],
+                                    [
+                                        "messages",
+                                        "list"
+                                    ]
+                                ],
+                                "key": 2
+                            }
+                        }
+                    ]
+                },
+                "Text4": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ],
+                                    [
+                                        "front_text",
+                                        "compound"
+                                    ],
+                                    [
+                                        "messages",
+                                        "list"
+                                    ]
+                                ],
+                                "key": 3
+                            }
+                        }
+                    ]
+                },
                 "keepPacked": {
                     "type": "byte",
                     "functions": [
