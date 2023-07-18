@@ -1,0 +1,63 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:suspicious_sand"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "brushed_progress": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dusted": "\"0\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dusted": "\"1\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dusted": "\"2\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "dusted": "\"3\""
+                        }
+                    }
+                ]
+            },
+            "hanging": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hanging": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

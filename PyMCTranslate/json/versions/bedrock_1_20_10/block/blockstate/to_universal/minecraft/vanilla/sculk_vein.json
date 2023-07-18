@@ -1,0 +1,845 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sculk_vein"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "multi_face_direction_bits": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "16": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "17": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "18": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "19": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "20": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "21": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "22": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "23": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "24": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "25": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "26": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "27": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "28": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "29": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "30": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "31": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"false\""
+                        }
+                    }
+                ],
+                "32": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "33": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "34": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "35": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "36": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "37": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "38": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "39": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "40": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "41": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "42": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "43": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "44": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "45": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "46": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "47": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"false\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "48": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "49": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "50": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "51": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "52": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "53": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "54": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "55": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "56": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "57": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "58": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "59": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"false\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "60": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "61": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"false\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "62": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"false\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ],
+                "63": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "down": "\"true\"",
+                            "up": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

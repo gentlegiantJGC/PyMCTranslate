@@ -1,0 +1,45 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:carved_pumpkin"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
