@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "output_lit_bit": [
+            "0b",
+            "1b"
+        ],
+        "output_subtract_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "direction": "0",
+        "output_lit_bit": "0b",
+        "output_subtract_bit": "0b"
+    },
+    "nbt_identifier": [
+        "",
+        "Comparator"
+    ],
+    "snbt": "{isMovable: 1b, OutputSignal: 0}"
+}
