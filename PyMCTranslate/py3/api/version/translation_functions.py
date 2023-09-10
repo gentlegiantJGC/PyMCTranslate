@@ -90,6 +90,15 @@ class HashableMapping(Mapping[K, V]):
 
 _translation_functions: Dict[str, Type[AbstractBaseTranslationFunction]] = {}
 
+def from_json(data) -> AbstractBaseTranslationFunction:
+    if isinstance(data, (list, Sequence)):
+        return TranslationFunctionSequence.from_json(data)
+    elif isinstance(data, (dict, Mapping)):
+        func_cls = _translation_functions[data["function"]]
+        return func_cls.from_json(data)
+    else:
+        raise TypeError
+
 
 class AbstractBaseTranslationFunction(ABC):
     Name: str = None
@@ -161,8 +170,7 @@ class TranslationFunctionSequence(AbstractBaseTranslationFunction):
     def from_json(cls, data: list) -> TranslationFunctionSequence:
         parsed = []
         for func in data:
-            func_cls = _translation_functions[func["function"]]
-            parsed.append(func_cls.from_json(func))
+            parsed.append(from_json(func))
 
         return cls.instance(parsed)
 
@@ -316,9 +324,9 @@ class MapProperties(AbstractBaseTranslationFunction):
     _instances = {}
 
     # instance variables
-    _properties: HashableMapping[str, HashableMapping[PropertyValueType, TranslationFunctionSequence]]
+    _properties: HashableMapping[str, HashableMapping[PropertyValueType, AbstractBaseTranslationFunction]]
 
-    def __init__(self, properties: Mapping[str, Mapping[PropertyValueType, TranslationFunctionSequence]]):
+    def __init__(self, properties: Mapping[str, Mapping[PropertyValueType, AbstractBaseTranslationFunction]]):
         hashable_properties = {}
 
         for prop, data in properties.items():
@@ -328,24 +336,24 @@ class MapProperties(AbstractBaseTranslationFunction):
             for val, func in hashable_data.items():
                 if not isinstance(val, PropertyValueClasses):
                     raise TypeError
-                if not isinstance(func, TranslationFunctionSequence):
+                if not isinstance(func, AbstractBaseTranslationFunction):
                     raise TypeError
             hashable_properties[prop] = hashable_data
 
         self._properties = HashableMapping(hashable_properties)
 
     @classmethod
-    def instance(cls, properties: Mapping[str, Mapping[PropertyValueType, TranslationFunctionSequence]]) -> MapProperties:
+    def instance(cls, properties: Mapping[str, Mapping[PropertyValueType, AbstractBaseTranslationFunction]]) -> MapProperties:
         self = cls(properties)
         return cls._instances.setdefault(self, self)
 
     @classmethod
-    def from_json(cls, data) -> AbstractBaseTranslationFunction:
+    def from_json(cls, data) -> MapProperties:
         if data.get("function") != "map_properties":
             raise ValueError("Incorrect function data given.")
         return cls.instance({
             property_name: {
-                from_snbt(snbt): TranslationFunctionSequence.from_json(func) for snbt, func in mapping.items
+                from_snbt(snbt): from_json(func) for snbt, func in mapping.items
             }
             for property_name, mapping in data["options"].items()
         })
@@ -373,7 +381,52 @@ class MapProperties(AbstractBaseTranslationFunction):
 
 
 class MultiBlock(AbstractBaseTranslationFunction):
-    pass
+    Name = "multiblock"
+    _blocks: tuple[tuple[BlockCoordinates, AbstractBaseTranslationFunction], ...]
+
+    def __init__(self, blocks: Sequence[tuple[BlockCoordinates, AbstractBaseTranslationFunction]]):
+        self._blocks = tuple(blocks)
+        for coords, func in self._blocks:
+            if not isinstance(coords, tuple) and len(coords) == 3 and all(isinstance(v, int) for v in coords):
+                raise TypeError
+            if not isinstance(func, AbstractBaseTranslationFunction):
+                raise TypeError
+
+    @classmethod
+    def instance(cls, blocks: Sequence[tuple[BlockCoordinates, AbstractBaseTranslationFunction]]) -> MultiBlock:
+        self = cls(blocks)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> MultiBlock:
+        if data.get("function") != "multiblock":
+            raise ValueError("Incorrect function data given.")
+        return cls.instance([
+            (block["coords"], block["functions"])
+            for block in data["options"].items()
+        ])
+
+    def to_json(self):
+        return {
+            "function": "multiblock",
+            "options": [
+                {
+                    "coords": list(coords),
+                    "functions": func.to_json()
+                } for coords, func in self._blocks
+            ]
+        }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._blocks)
+
+    def __eq__(self, other):
+        if not isinstance(other, MultiBlock):
+            return NotImplemented
+        return self._blocks == other._blocks
 
 
 class MapBlockName(AbstractBaseTranslationFunction):
