@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Type, Sequence, Optional, Dict, List, Callable, Tuple
-from types import MappingProxyType
+from typing import Union, Type, Sequence, Optional, Dict, List, Callable, Tuple, TypeVar, Iterator
 from abc import ABC, abstractmethod
 from collections.abc import Mapping
 from dataclasses import dataclass, field
@@ -9,6 +8,9 @@ from dataclasses import dataclass, field
 from amulet_nbt import ByteTag, ShortTag, IntTag, LongTag, FloatTag, DoubleTag, StringTag, ListTag, CompoundTag, ByteArrayTag, IntArrayTag, LongArrayTag, from_snbt, NamedTag
 
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity, ChunkLoadError
+
+K = TypeVar("K")
+V = TypeVar("V")
 
 
 BlockCoordinates = Tuple[int, int, int]
@@ -64,11 +66,38 @@ class DstData:
     cacheable: bool = True
 
 
+class HashableMapping(Mapping[K, V]):
+    """
+    A hashable Mapping class.
+    All values in the mapping must be hashable.
+    """
+    def __init__(self, mapping: Mapping):
+        self._map = dict(mapping)
+        self._hash = hash(frozenset(mapping.items()))
+
+    def __getitem__(self, k: K) -> V:
+        return self._map[k]
+
+    def __len__(self) -> int:
+        return len(self._map)
+
+    def __iter__(self) -> Iterator[K]:
+        return iter(self._map)
+
+    def __hash__(self):
+        return self._hash
+
+
 _translation_functions: Dict[str, Type[AbstractBaseTranslationFunction]] = {}
 
 
 class AbstractBaseTranslationFunction(ABC):
     Name: str = None
+    _instances = {}
+
+    @abstractmethod
+    def __init__(self, data):
+        raise NotImplementedError
 
     def __init_subclass__(cls, **kwargs):
         if cls.Name is None:
@@ -114,7 +143,6 @@ class AbstractBaseTranslationFunction(ABC):
 class TranslationFunctionSequence(AbstractBaseTranslationFunction):
     # class variables
     Name = "sequence"
-    _instances = {}
 
     # instance variables
     _functions: tuple[AbstractBaseTranslationFunction]
@@ -136,7 +164,7 @@ class TranslationFunctionSequence(AbstractBaseTranslationFunction):
             func_cls = _translation_functions[func["function"]]
             parsed.append(func_cls.from_json(func))
 
-        return cls(parsed)
+        return cls.instance(parsed)
 
     def to_json(self) -> list:
         return [func.to_json() for func in self._functions]
@@ -156,7 +184,6 @@ class TranslationFunctionSequence(AbstractBaseTranslationFunction):
 class NewBlock(AbstractBaseTranslationFunction):
     # class variables
     Name = "new_block"
-    _instances = {}
 
     # instance variables
     _block: str
@@ -175,7 +202,7 @@ class NewBlock(AbstractBaseTranslationFunction):
     def from_json(cls, data: dict) -> NewBlock:
         if data.get("function") != "new_block":
             raise ValueError("Incorrect function data given.")
-        return cls(data["options"])
+        return cls.instance(data["options"])
 
     def to_json(self) -> dict:
         return {
@@ -198,7 +225,6 @@ class NewBlock(AbstractBaseTranslationFunction):
 class NewEntity(AbstractBaseTranslationFunction):
     # class variables
     Name = "new_entity"
-    _instances = {}
 
     # instance variables
     _entity: str
@@ -217,7 +243,7 @@ class NewEntity(AbstractBaseTranslationFunction):
     def from_json(cls, data: dict) -> NewEntity:
         if data.get("function") != "new_entity":
             raise ValueError("Incorrect function data given.")
-        return cls(data["options"])
+        return cls.instance(data["options"])
 
     def to_json(self) -> dict:
         return {
@@ -243,10 +269,10 @@ class NewProperties(AbstractBaseTranslationFunction):
     _instances = {}
 
     # instance variables
-    _properties: Mapping[str, PropertyValueType]
+    _properties: HashableMapping[str, PropertyValueType]
 
     def __init__(self, properties: Mapping[str, PropertyValueType]):
-        self._properties = dict(properties)
+        self._properties = HashableMapping(properties)
         if not all(isinstance(key, str) for key in self._properties.keys()):
             raise TypeError
         if not all(isinstance(value, PropertyValueClasses) for value in self._properties.values()):
@@ -261,7 +287,7 @@ class NewProperties(AbstractBaseTranslationFunction):
     def from_json(cls, data: dict) -> NewProperties:
         if data.get("function") != "new_properties":
             raise ValueError("Incorrect function data given.")
-        return cls({
+        return cls.instance({
             property_name: from_snbt(snbt)
             for property_name, snbt in data["options"].items()
         })
@@ -276,7 +302,7 @@ class NewProperties(AbstractBaseTranslationFunction):
         raise NotImplementedError
 
     def __hash__(self):
-        return hash(frozenset(self._properties.items()))
+        return hash(self._properties)
 
     def __eq__(self, other):
         if not isinstance(other, NewProperties):
@@ -290,7 +316,60 @@ class MapProperties(AbstractBaseTranslationFunction):
     _instances = {}
 
     # instance variables
-    _properties: Mapping[str, Mapping[PropertyValueType, TranslationFunctionSequence]]
+    _properties: HashableMapping[str, HashableMapping[PropertyValueType, TranslationFunctionSequence]]
+
+    def __init__(self, properties: Mapping[str, Mapping[PropertyValueType, TranslationFunctionSequence]]):
+        hashable_properties = {}
+
+        for prop, data in properties.items():
+            if not isinstance(prop, str):
+                raise TypeError
+            hashable_data = HashableMapping(data)
+            for val, func in hashable_data.items():
+                if not isinstance(val, PropertyValueClasses):
+                    raise TypeError
+                if not isinstance(func, TranslationFunctionSequence):
+                    raise TypeError
+            hashable_properties[prop] = hashable_data
+
+        self._properties = HashableMapping(hashable_properties)
+
+    @classmethod
+    def instance(cls, properties: Mapping[str, Mapping[PropertyValueType, TranslationFunctionSequence]]) -> MapProperties:
+        self = cls(properties)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> AbstractBaseTranslationFunction:
+        if data.get("function") != "map_properties":
+            raise ValueError("Incorrect function data given.")
+        return cls.instance({
+            property_name: {
+                from_snbt(snbt): TranslationFunctionSequence.from_json(func) for snbt, func in mapping.items
+            }
+            for property_name, mapping in data["options"].items()
+        })
+
+    def to_json(self):
+        return {
+            "function": "map_properties",
+            "options": {
+                property_name: {
+                    nbt.to_snbt(): func.to_json() for nbt, func in mapping.items()
+                } for property_name, mapping in self._properties.items()
+            }
+        }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._properties)
+
+    def __eq__(self, other):
+        if not isinstance(other, MapProperties):
+            return NotImplemented
+        return self._properties == other._properties
 
 
 class MultiBlock(AbstractBaseTranslationFunction):
