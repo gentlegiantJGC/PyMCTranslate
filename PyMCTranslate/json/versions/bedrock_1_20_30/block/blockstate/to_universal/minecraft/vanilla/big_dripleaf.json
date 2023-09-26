@@ -1,23 +1,31 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:big_dripleaf"
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "big_dripleaf_head": "1b"
-        }
+        "options": "universal_minecraft:big_dripleaf"
     },
     {
         "function": "map_properties",
         "options": {
-            "tilt": {
+            "big_dripleaf_head": {
+                "0b": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:big_dripleaf_stem"
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:big_dripleaf"
+                    }
+                ]
+            },
+            "big_dripleaf_tilt": {
                 "\"none\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "big_dripleaf_tilt": "\"none\""
+                            "tilt": "\"none\""
                         }
                     }
                 ],
@@ -25,33 +33,33 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "big_dripleaf_tilt": "\"unstable\""
+                            "tilt": "\"unstable\""
                         }
                     }
                 ],
-                "\"partial\"": [
+                "\"partial_tilt\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "big_dripleaf_tilt": "\"partial_tilt\""
+                            "tilt": "\"partial\""
                         }
                     }
                 ],
-                "\"full\"": [
+                "\"full_tilt\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "big_dripleaf_tilt": "\"full_tilt\""
+                            "tilt": "\"full\""
                         }
                     }
                 ]
             },
-            "facing": {
+            "minecraft:cardinal_direction": {
                 "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"south\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -59,7 +67,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"west\""
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -67,7 +75,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"north\""
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -75,7 +83,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"east\""
+                            "facing": "\"east\""
                         }
                     }
                 ]

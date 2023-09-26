@@ -1,6 +1,79 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:anvil"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "damage": {
+                "\"normal\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "\"undamaged\""
+                        }
+                    }
+                ],
+                "\"chipped\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "\"slightly_damaged\""
+                        }
+                    }
+                ],
+                "\"damaged\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "\"very_damaged\""
+                        }
+                    }
+                ],
+                "\"broken\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "\"broken\""
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

@@ -1,31 +1,33 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:blast_furnace"
+        "options": "universal_minecraft:medium_amethyst_bud"
     },
     {
         "function": "map_properties",
         "options": {
-            "lit": {
-                "\"false\"": [
+            "minecraft:block_face": {
+                "\"down\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:blast_furnace"
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"down\""
+                        }
                     }
                 ],
-                "\"true\"": [
+                "\"up\"": [
                     {
-                        "function": "new_block",
-                        "options": "minecraft:lit_blast_furnace"
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
                     }
-                ]
-            },
-            "facing": {
+                ],
                 "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"north\""
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -33,7 +35,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"south\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -41,7 +43,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"west\""
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -49,7 +51,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"east\""
+                            "facing": "\"east\""
                         }
                     }
                 ]

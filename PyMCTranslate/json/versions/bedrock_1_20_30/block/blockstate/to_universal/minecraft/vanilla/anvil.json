@@ -1,41 +1,51 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:large_amethyst_bud"
+        "options": "universal_minecraft:anvil"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
-                "\"down\"": [
+            "damage": {
+                "\"undamaged\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:block_face": "\"down\""
+                            "damage": "\"normal\""
                         }
                     }
                 ],
-                "\"up\"": [
+                "\"slightly_damaged\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:block_face": "\"up\""
+                            "damage": "\"chipped\""
                         }
                     }
                 ],
-                "\"north\"": [
+                "\"very_damaged\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:block_face": "\"north\""
+                            "damage": "\"damaged\""
                         }
                     }
                 ],
+                "\"broken\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "damage": "\"broken\""
+                        }
+                    }
+                ]
+            },
+            "minecraft:cardinal_direction": {
                 "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:block_face": "\"south\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -43,7 +53,15 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:block_face": "\"west\""
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -51,7 +69,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:block_face": "\"east\""
+                            "facing": "\"east\""
                         }
                     }
                 ]

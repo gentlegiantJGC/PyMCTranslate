@@ -1,31 +1,23 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:blast_furnace"
+        "options": "universal_minecraft:smoker"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "lit": "\"false\""
+        }
     },
     {
         "function": "map_properties",
         "options": {
-            "lit": {
-                "\"false\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:blast_furnace"
-                    }
-                ],
-                "\"true\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:lit_blast_furnace"
-                    }
-                ]
-            },
-            "facing": {
+            "minecraft:cardinal_direction": {
                 "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"north\""
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -33,7 +25,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"south\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -41,7 +33,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"west\""
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -49,7 +41,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"east\""
+                            "facing": "\"east\""
                         }
                     }
                 ]
