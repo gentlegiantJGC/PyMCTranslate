@@ -15,6 +15,7 @@ from typing import (
 from abc import ABC, abstractmethod
 from collections.abc import Mapping
 from dataclasses import dataclass, field
+from inspect import isclass
 
 from amulet_nbt import (
     ByteTag,
@@ -31,6 +32,7 @@ from amulet_nbt import (
     LongArrayTag,
     from_snbt,
     NamedTag,
+    AbstractBaseTag,
 )
 
 from PyMCTranslate.py3.api import Block, BlockEntity, Entity, ChunkLoadError
@@ -42,6 +44,81 @@ V = TypeVar("V")
 BlockCoordinates = Tuple[int, int, int]
 PropertyValueClasses = (ByteTag, IntTag, StringTag)
 PropertyValueType = Union[ByteTag, IntTag, StringTag]
+
+NBTTagT = Union[
+    ByteTag,
+    ShortTag,
+    IntTag,
+    LongTag,
+    FloatTag,
+    DoubleTag,
+    ByteArrayTag,
+    StringTag,
+    ListTag,
+    CompoundTag,
+    IntArrayTag,
+    LongArrayTag,
+]
+
+NBTTagClasses = (
+    ByteTag,
+    ShortTag,
+    IntTag,
+    LongTag,
+    FloatTag,
+    DoubleTag,
+    ByteArrayTag,
+    StringTag,
+    ListTag,
+    CompoundTag,
+    IntArrayTag,
+    LongArrayTag,
+)
+
+NBTTagClsT = Union[
+    Type[ByteTag],
+    Type[ShortTag],
+    Type[IntTag],
+    Type[LongTag],
+    Type[FloatTag],
+    Type[DoubleTag],
+    Type[ByteArrayTag],
+    Type[StringTag],
+    Type[ListTag],
+    Type[CompoundTag],
+    Type[IntArrayTag],
+    Type[LongArrayTag],
+]
+
+StrToNBTCls = {
+    "byte": ByteTag,
+    "short": ShortTag,
+    "int": IntTag,
+    "long": LongTag,
+    "float": FloatTag,
+    "double": DoubleTag,
+    "byte_array": ByteArrayTag,
+    "string": StringTag,
+    "list": ListTag,
+    "compound": CompoundTag,
+    "int_array": IntArrayTag,
+    "long_array": LongArrayTag,
+}
+
+NBTClsToStr = {
+    ByteTag: "byte",
+    ShortTag: "short",
+    IntTag: "int",
+    LongTag: "long",
+    FloatTag: "float",
+    DoubleTag: "double",
+    ByteArrayTag: "byte_array",
+    StringTag: "string",
+    ListTag: "list",
+    CompoundTag: "compound",
+    IntArrayTag: "int_array",
+    LongArrayTag: "long_array",
+}
 
 
 @dataclass
@@ -72,20 +149,7 @@ class DstData:
             str,
             List[Union[str, int], str],
             Union[str, int],
-            Union[
-                ByteTag,
-                ShortTag,
-                IntTag,
-                LongTag,
-                FloatTag,
-                DoubleTag,
-                ByteArrayTag,
-                StringTag,
-                ListTag,
-                CompoundTag,
-                IntArrayTag,
-                LongArrayTag,
-            ],
+            NBTTagT,
         ]
     ] = field(default_factory=list)
     extra_needed: bool = False
@@ -133,7 +197,7 @@ class AbstractBaseTranslationFunction(ABC):
     _instances = {}
 
     @abstractmethod
-    def __init__(self, data):
+    def __init__(self, *args, **kwargs):
         raise NotImplementedError
 
     def __init_subclass__(cls, **kwargs):
@@ -147,7 +211,7 @@ class AbstractBaseTranslationFunction(ABC):
 
     @classmethod
     @abstractmethod
-    def instance(cls, data) -> AbstractBaseTranslationFunction:
+    def instance(cls, *args, **kwargs) -> AbstractBaseTranslationFunction:
         """
         Get the translation function for this data.
         This will return a cached instance if it already exists.
@@ -536,20 +600,310 @@ class MapBlockName(AbstractBaseTranslationFunction):
 
 
 class WalkInputNBT(AbstractBaseTranslationFunction):
-    pass
+    Name = "walk_input_nbt"
+    _blocks: HashableMapping[str, AbstractBaseTranslationFunction]
+
+    def __init__(
+            self, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ):
+        # self._blocks = HashableMapping(blocks)
+        # for block_name, func in self._blocks.items():
+        #     if not isinstance(block_name, str):
+        #         raise TypeError
+        #     if not isinstance(func, AbstractBaseTranslationFunction):
+        #         raise TypeError
+
+    @classmethod
+    def instance(
+            cls, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ) -> WalkInputNBT:
+        self = cls(blocks)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> WalkInputNBT:
+        # if data.get("function") != "map_block_name":
+        #     raise ValueError("Incorrect function data given.")
+        # return cls.instance({
+        #     block_name: from_json(function) for block_name, function in data["options"].items()
+        # })
+
+    def to_json(self):
+        # return {
+        #     "function": "map_block_name",
+        #     "options": {
+        #         block_name: func.to_json() for block_name, func in self._blocks.items()
+        #     },
+        # }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._blocks)
+
+    def __eq__(self, other):
+        if not isinstance(other, WalkInputNBT):
+            return NotImplemented
+        return self._blocks == other._blocks
 
 
 class NewNBT(AbstractBaseTranslationFunction):
-    pass
+    # Class variables
+    Name = "new_nbt"
+
+    # Instance variables
+    _outer_name: str
+    _outer_type: NBTTagClsT
+    _path: Optional[tuple[tuple[Union[str, int], str], ...]]
+    _key: Union[str, int]
+    _value: NBTTagT
+
+    def __init__(
+        self,
+        outer_name: str,
+        outer_type: NBTTagClsT,
+        path: Optional[Sequence[tuple[Union[str, int], NBTTagClsT]]],
+        key: Union[str, int],
+        value: NBTTagT
+    ):
+        if not isinstance(outer_name, str):
+            raise TypeError
+        self._outer_name = outer_name
+
+        if outer_type not in NBTClsToStr:
+            raise ValueError
+        self._outer_type = outer_type
+
+        if path is not None:
+            path = list(path)
+            for i, (key, val) in enumerate(path):
+                if val not in {CompoundTag, ListTag}: #, ByteArrayTag, IntArrayTag, LongArrayTag}:
+                    raise ValueError
+
+                if i:
+                    last_cls = path[i-1][1]
+                else:
+                    last_cls = self._outer_type
+
+                if isinstance(key, str):
+                    if last_cls is not CompoundTag:
+                        raise TypeError
+                elif isinstance(key, int):
+                    if last_cls not in {ListTag, ByteArrayTag, IntArrayTag, LongArrayTag}:
+                        raise TypeError
+                else:
+                    raise TypeError
+
+                path[i] = (key, val)
+            path = tuple(path)
+        self._path = path
+
+        # TODO: validate this better
+        if not isinstance(key, (str, int)):
+            raise TypeError
+        self._key = key
+
+        if not isinstance(value, NBTTagClasses):
+            raise TypeError
+        self._value = value
+
+    @classmethod
+    def instance(
+            cls, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ) -> NewNBT:
+        self = cls(blocks)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> NewNBT:
+        if data.get("function") != "new_nbt":
+            raise ValueError("Incorrect function data given.")
+        return cls.instance({
+            block_name: from_json(function) for block_name, function in data["options"].items()
+        })
+
+    def to_json(self):
+
+    # return {
+    #     "function": "map_block_name",
+    #     "options": {
+    #         block_name: func.to_json() for block_name, func in self._blocks.items()
+    #     },
+    # }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._blocks)
+
+    def __eq__(self, other):
+        if not isinstance(other, NewNBT):
+            return NotImplemented
+        return self._blocks == other._blocks
 
 
 class CarryNBT(AbstractBaseTranslationFunction):
-    pass
+    # Class variables
+    Name = "carry_nbt"
+
+    # Instance variables
+    _blocks: HashableMapping[str, AbstractBaseTranslationFunction]
+
+    def __init__(
+            self, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ):
+
+    # self._blocks = HashableMapping(blocks)
+    # for block_name, func in self._blocks.items():
+    #     if not isinstance(block_name, str):
+    #         raise TypeError
+    #     if not isinstance(func, AbstractBaseTranslationFunction):
+    #         raise TypeError
+
+    @classmethod
+    def instance(
+            cls, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ) -> CarryNBT:
+        self = cls(blocks)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> CarryNBT:
+
+    # if data.get("function") != "map_block_name":
+    #     raise ValueError("Incorrect function data given.")
+    # return cls.instance({
+    #     block_name: from_json(function) for block_name, function in data["options"].items()
+    # })
+
+    def to_json(self):
+
+    # return {
+    #     "function": "map_block_name",
+    #     "options": {
+    #         block_name: func.to_json() for block_name, func in self._blocks.items()
+    #     },
+    # }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._blocks)
+
+    def __eq__(self, other):
+        if not isinstance(other, CarryNBT):
+            return NotImplemented
+        return self._blocks == other._blocks
 
 
 class MapNBT(AbstractBaseTranslationFunction):
-    pass
+    # Class variables
+    Name = "map_nbt"
+
+    # Instance variables
+    _blocks: HashableMapping[str, AbstractBaseTranslationFunction]
+
+    def __init__(
+            self, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ):
+
+    # self._blocks = HashableMapping(blocks)
+    # for block_name, func in self._blocks.items():
+    #     if not isinstance(block_name, str):
+    #         raise TypeError
+    #     if not isinstance(func, AbstractBaseTranslationFunction):
+    #         raise TypeError
+
+    @classmethod
+    def instance(
+            cls, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ) -> MapNBT:
+        self = cls(blocks)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> MapNBT:
+
+    # if data.get("function") != "map_block_name":
+    #     raise ValueError("Incorrect function data given.")
+    # return cls.instance({
+    #     block_name: from_json(function) for block_name, function in data["options"].items()
+    # })
+
+    def to_json(self):
+
+    # return {
+    #     "function": "map_block_name",
+    #     "options": {
+    #         block_name: func.to_json() for block_name, func in self._blocks.items()
+    #     },
+    # }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._blocks)
+
+    def __eq__(self, other):
+        if not isinstance(other, MapNBT):
+            return NotImplemented
+        return self._blocks == other._blocks
 
 
 class Code(AbstractBaseTranslationFunction):
-    pass
+    # Class variables
+    Name = "code"
+
+    # Instance variables
+    _blocks: HashableMapping[str, AbstractBaseTranslationFunction]
+
+    def __init__(
+            self, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ):
+
+    # self._blocks = HashableMapping(blocks)
+    # for block_name, func in self._blocks.items():
+    #     if not isinstance(block_name, str):
+    #         raise TypeError
+    #     if not isinstance(func, AbstractBaseTranslationFunction):
+    #         raise TypeError
+
+    @classmethod
+    def instance(
+            cls, blocks: Mapping[str, AbstractBaseTranslationFunction]
+    ) -> Code:
+        self = cls(blocks)
+        return cls._instances.setdefault(self, self)
+
+    @classmethod
+    def from_json(cls, data) -> Code:
+
+    # if data.get("function") != "map_block_name":
+    #     raise ValueError("Incorrect function data given.")
+    # return cls.instance({
+    #     block_name: from_json(function) for block_name, function in data["options"].items()
+    # })
+
+    def to_json(self):
+
+    # return {
+    #     "function": "map_block_name",
+    #     "options": {
+    #         block_name: func.to_json() for block_name, func in self._blocks.items()
+    #     },
+    # }
+
+    def run(self, *args, **kwargs):
+        pass
+
+    def __hash__(self):
+        return hash(self._blocks)
+
+    def __eq__(self, other):
+        if not isinstance(other, Code):
+            return NotImplemented
+        return self._blocks == other._blocks
