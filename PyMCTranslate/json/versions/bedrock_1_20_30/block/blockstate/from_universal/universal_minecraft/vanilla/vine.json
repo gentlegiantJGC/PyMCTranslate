@@ -1,0 +1,267 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:vine"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "east": {
+                "\"false\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "north": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "0"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "1"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "2"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "3"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "4"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "5"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "6"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "7"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "north": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "8"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "9"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "10"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "11"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "12"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "13"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "14"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "new_properties",
+                                                                        "options": {
+                                                                            "vine_direction_bits": "15"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

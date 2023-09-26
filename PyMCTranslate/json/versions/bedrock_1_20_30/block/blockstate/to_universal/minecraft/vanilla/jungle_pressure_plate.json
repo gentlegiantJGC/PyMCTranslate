@@ -1,0 +1,147 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:pressure_plate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"jungle\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "redstone_signal": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
