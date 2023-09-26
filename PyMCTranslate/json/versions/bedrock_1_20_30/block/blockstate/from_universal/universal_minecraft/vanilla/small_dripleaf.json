@@ -1,0 +1,63 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:small_dripleaf_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ]
+            },
+            "half": {
+                "\"lower\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "0b"
+                        }
+                    }
+                ],
+                "\"upper\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

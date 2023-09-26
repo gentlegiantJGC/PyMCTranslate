@@ -1,0 +1,63 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:pitcher_crop"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "half": {
+                "\"lower\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "0b"
+                        }
+                    }
+                ],
+                "\"upper\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "age": {
+                "\"0\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "0"
+                        }
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "1"
+                        }
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "2"
+                        }
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "growth": "3"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
