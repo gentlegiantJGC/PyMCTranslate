@@ -89,8 +89,8 @@
                     }
                 ]
             },
-            "direction": {
-                "0": [
+            "minecraft:cardinal_direction": {
+                "\"north\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -98,7 +98,7 @@
                         }
                     }
                 ],
-                "1": [
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -106,7 +106,7 @@
                         }
                     }
                 ],
-                "2": [
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -114,7 +114,7 @@
                         }
                     }
                 ],
-                "3": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {

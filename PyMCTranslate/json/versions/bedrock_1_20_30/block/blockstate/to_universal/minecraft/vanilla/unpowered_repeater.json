@@ -1,17 +1,23 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:end_portal_frame"
+        "options": "universal_minecraft:repeater"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "\"false\""
+        }
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
+            "minecraft:cardinal_direction": {
                 "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"south\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -19,7 +25,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"west\""
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -27,7 +33,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"north\""
+                            "facing": "\"north\""
                         }
                     }
                 ],
@@ -35,25 +41,41 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"east\""
+                            "facing": "\"east\""
                         }
                     }
                 ]
             },
-            "eye": {
-                "\"false\"": [
+            "repeater_delay": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "end_portal_eye_bit": "0b"
+                            "delay": "\"1\""
                         }
                     }
                 ],
-                "\"true\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "end_portal_eye_bit": "1b"
+                            "delay": "\"2\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "delay": "\"3\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "delay": "\"4\""
                         }
                     }
                 ]

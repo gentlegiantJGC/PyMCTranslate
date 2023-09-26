@@ -4,10 +4,8 @@
         "options": {
             "type": "compound",
             "keys": {
-                "VibrationListener": {
-                    "type": "compound",
-                    "nested_default": [],
-                    "self_default": [],
+                "OutputSignal": {
+                    "type": "int",
                     "functions": [
                         {
                             "function": "carry_nbt",
@@ -55,58 +53,19 @@
     },
     {
         "function": "new_block",
-        "options": "universal_minecraft:calibrated_sculk_sensor"
+        "options": "universal_minecraft:comparator"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "\"true\""
+        }
     },
     {
         "function": "map_properties",
         "options": {
-            "sculk_sensor_phase": {
-                "0": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "power": "\"0\"",
-                            "sculk_sensor_phase": "\"inactive\""
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "power": "\"1\"",
-                            "sculk_sensor_phase": "\"active\""
-                        }
-                    }
-                ],
-                "2": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "power": "\"1\"",
-                            "sculk_sensor_phase": "\"cooldown\""
-                        }
-                    }
-                ]
-            },
-            "direction": {
-                "0": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"east\""
-                        }
-                    }
-                ],
-                "2": [
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -114,11 +73,45 @@
                         }
                     }
                 ],
-                "3": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
                             "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "output_subtract_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"compare\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "mode": "\"subtract\""
                         }
                     }
                 ]

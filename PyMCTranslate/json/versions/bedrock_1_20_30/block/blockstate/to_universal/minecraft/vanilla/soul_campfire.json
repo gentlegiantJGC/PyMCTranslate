@@ -4,56 +4,7 @@
         "options": {
             "type": "compound",
             "keys": {
-                "BurnTime": {
-                    "type": "short",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "CookTime": {
-                    "type": "short",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "BurnDuration": {
-                    "type": "short",
-                    "functions": [
-                        {
-                            "function": "carry_nbt",
-                            "options": {
-                                "path": [
-                                    [
-                                        "utags",
-                                        "compound"
-                                    ]
-                                ],
-                                "key": "CookTimeTotal"
-                            }
-                        }
-                    ]
-                },
-                "StoredXPInt": {
+                "ItemTime1": {
                     "type": "int",
                     "functions": [
                         {
@@ -69,8 +20,110 @@
                         }
                     ]
                 },
-                "Items": {
-                    "type": "list",
+                "ItemTime2": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "ItemTime3": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "ItemTime4": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Item1": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Item2": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Item3": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Item4": {
+                    "type": "compound",
                     "nested_default": [],
                     "self_default": [],
                     "functions": [
@@ -120,13 +173,7 @@
     },
     {
         "function": "new_block",
-        "options": "universal_minecraft:smoker"
-    },
-    {
-        "function": "new_properties",
-        "options": {
-            "lit": "\"true\""
-        }
+        "options": "universal_minecraft:soul_campfire"
     },
     {
         "function": "map_properties",
@@ -137,6 +184,14 @@
                         "function": "new_properties",
                         "options": {
                             "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
                         }
                     }
                 ],
@@ -155,12 +210,22 @@
                             "facing": "\"west\""
                         }
                     }
-                ],
-                "\"east\"": [
+                ]
+            },
+            "extinguished": {
+                "0b": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing": "\"east\""
+                            "lit": "\"true\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"false\""
                         }
                     }
                 ]
