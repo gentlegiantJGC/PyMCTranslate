@@ -1,138 +1,106 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:concrete_powder"
+        "options": "minecraft:white_concrete_powder"
     },
     {
         "function": "map_properties",
         "options": {
             "color": {
-                "\"white\"": [
+                "\"black\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"white\""
-                        }
-                    }
-                ],
-                "\"orange\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"orange\""
-                        }
-                    }
-                ],
-                "\"magenta\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"magenta\""
-                        }
-                    }
-                ],
-                "\"light_blue\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"light_blue\""
-                        }
-                    }
-                ],
-                "\"yellow\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"yellow\""
-                        }
-                    }
-                ],
-                "\"lime\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"lime\""
-                        }
-                    }
-                ],
-                "\"pink\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"pink\""
-                        }
-                    }
-                ],
-                "\"gray\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"gray\""
-                        }
-                    }
-                ],
-                "\"light_gray\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"silver\""
-                        }
-                    }
-                ],
-                "\"cyan\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"cyan\""
-                        }
-                    }
-                ],
-                "\"purple\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"purple\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:black_concrete_powder"
                     }
                 ],
                 "\"blue\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"blue\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:blue_concrete_powder"
                     }
                 ],
                 "\"brown\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"brown\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:brown_concrete_powder"
+                    }
+                ],
+                "\"cyan\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cyan_concrete_powder"
+                    }
+                ],
+                "\"gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:gray_concrete_powder"
                     }
                 ],
                 "\"green\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"green\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:green_concrete_powder"
+                    }
+                ],
+                "\"light_blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_blue_concrete_powder"
+                    }
+                ],
+                "\"light_gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_gray_concrete_powder"
+                    }
+                ],
+                "\"lime\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lime_concrete_powder"
+                    }
+                ],
+                "\"magenta\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:magenta_concrete_powder"
+                    }
+                ],
+                "\"orange\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:orange_concrete_powder"
+                    }
+                ],
+                "\"pink\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pink_concrete_powder"
+                    }
+                ],
+                "\"purple\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purple_concrete_powder"
                     }
                 ],
                 "\"red\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"red\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:red_concrete_powder"
                     }
                 ],
-                "\"black\"": [
+                "\"white\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"black\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:white_concrete_powder"
+                    }
+                ],
+                "\"yellow\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_concrete_powder"
                     }
                 ]
             }
