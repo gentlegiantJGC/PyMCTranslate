@@ -1,5 +1,5 @@
 import json
-from typing import List, Union
+from typing import List, Union, overload, Literal
 
 # section_string is a raw string containing section (§) codes
 # raw text is a stringified json object
@@ -27,12 +27,27 @@ colour_to_code_map = {val: key for key, val in code_to_colour_map.items()}
 
 
 def section_string_to_raw_text_list(section_str: str) -> List[str]:
-    # convert section_string to list of raw text each element represting one line
-    # split input string around newlines and call section_string_to_raw_text for each element
-    return [section_string_to_raw_text(line) for line in section_str.split("\n")]
+    # convert section_string to list of raw text each element representing one line
+    return _section_string_to_raw_text(section_str, True)
 
 
 def section_string_to_raw_text(section_str: str) -> str:
+    return _section_string_to_raw_text(section_str, False)
+
+
+@overload
+def _section_string_to_raw_text(
+    section_str: str, split_newline: Literal[True]
+) -> list[str]:
+    ...
+
+
+@overload
+def _section_string_to_raw_text(section_str: str, split_newline: Literal[False]) -> str:
+    ...
+
+
+def _section_string_to_raw_text(section_str, split_newline=False):
     # convert section_string to raw text (including new lines) in string form
     colour = ""
     obfuscated = False
@@ -44,7 +59,7 @@ def section_string_to_raw_text(section_str: str) -> str:
 
     buffer = []
     processed_text = []
-    col = 0
+    processed_texts = []
 
     def append_section():
         nonlocal buffer
@@ -67,43 +82,57 @@ def section_string_to_raw_text(section_str: str) -> str:
                 processed_text.append("".join(buffer))
             buffer = []
 
-    while col < len(section_str):
-        if section_str[col] == "§":
+    index = 0
+    section_str_len = len(section_str)
+    while index < section_str_len:
+        char = section_str[index]
+        if char == "§":
             append_section()
-            col += 1
-            if col < len(section_str):
-                if section_str[col] in code_to_colour_map:
-                    colour = code_to_colour_map[section_str[col]]
-                    col += 1
-                elif section_str[col] == "k":  # obfuscated
+            index += 1
+            if index < section_str_len:
+                char = section_str[index]
+                if char in code_to_colour_map:
+                    colour = code_to_colour_map[char]
+                    index += 1
+                elif char == "k":  # obfuscated
                     obfuscated = True
-                    col += 1
-                elif section_str[col] == "l":  # bold
+                    index += 1
+                elif char == "l":  # bold
                     bold = True
-                    col += 1
-                elif section_str[col] == "m":  # strikethrough
+                    index += 1
+                elif char == "m":  # strikethrough
                     strikethrough = True
-                    col += 1
-                elif section_str[col] == "n":  # underlined
+                    index += 1
+                elif char == "n":  # underlined
                     underline = True
-                    col += 1
-                elif section_str[col] == "o":  # italic
+                    index += 1
+                elif char == "o":  # italic
                     italic = True
-                    col += 1
-                elif section_str[col] == "r":  # reset
+                    index += 1
+                elif char == "r":  # reset
                     obfuscated = False
                     bold = False
                     strikethrough = False
                     underline = False
                     italic = False
                     colour = ""
-                    col += 1
+                    index += 1
+        elif split_newline and char == "\n":
+            append_section()
+            processed_texts.append(processed_text)
+            processed_text = []
+            index += 1
         else:
-            buffer.append(section_str[col])
-            col += 1
+            buffer.append(section_str[index])
+            index += 1
 
     append_section()
-    return json.dumps(processed_text)
+    if split_newline:
+        if processed_text:
+            processed_texts.append(processed_text)
+        return list(map(json.dumps, processed_texts))
+    else:
+        return json.dumps(processed_text)
 
 
 def minify_raw_text(obj):
