@@ -1,0 +1,83 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:trip_wire"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "attached": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "disarmed": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "disarmed_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "powered": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "suspended": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "suspended_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "suspended_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
