@@ -93,19 +93,11 @@
                 ]
             },
             "facing": {
-                "\"north\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing_direction": "2"
-                        }
-                    }
-                ],
                 "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": "3"
+                            "minecraft:cardinal_direction": "\"south\""
                         }
                     }
                 ],
@@ -113,7 +105,15 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": "4"
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
                         }
                     }
                 ],
@@ -121,7 +121,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "facing_direction": "5"
+                            "minecraft:cardinal_direction": "\"east\""
                         }
                     }
                 ]

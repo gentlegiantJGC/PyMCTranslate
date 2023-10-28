@@ -89,14 +89,14 @@
             "output": [
                 "new_properties"
             ],
-            "function": "bedrock_chest_connection_self"
+            "function": "bedrock_chest_connection_self_120"
         }
     },
     {
         "function": "map_properties",
         "options": {
-            "facing_direction": {
-                "2": [
+            "minecraft:cardinal_direction": {
+                "\"north\"": [
                     {
                         "function": "multiblock",
                         "options": [
@@ -114,8 +114,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "2": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"north\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -127,7 +127,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_left"
+                                                                        "function": "bedrock_chest_connection_other_left_120"
                                                                     }
                                                                 }
                                                             ]
@@ -153,8 +153,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "2": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"north\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -166,7 +166,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_right"
+                                                                        "function": "bedrock_chest_connection_other_right_120"
                                                                     }
                                                                 }
                                                             ]
@@ -187,7 +187,7 @@
                         }
                     }
                 ],
-                "3": [
+                "\"south\"": [
                     {
                         "function": "multiblock",
                         "options": [
@@ -205,8 +205,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "3": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"south\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -218,7 +218,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_left"
+                                                                        "function": "bedrock_chest_connection_other_left_120"
                                                                     }
                                                                 }
                                                             ]
@@ -244,8 +244,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "3": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"south\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -257,7 +257,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_right"
+                                                                        "function": "bedrock_chest_connection_other_right_120"
                                                                     }
                                                                 }
                                                             ]
@@ -278,7 +278,7 @@
                         }
                     }
                 ],
-                "4": [
+                "\"west\"": [
                     {
                         "function": "multiblock",
                         "options": [
@@ -296,8 +296,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "4": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"west\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -309,7 +309,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_left"
+                                                                        "function": "bedrock_chest_connection_other_left_120"
                                                                     }
                                                                 }
                                                             ]
@@ -335,8 +335,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "4": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"west\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -348,7 +348,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_right"
+                                                                        "function": "bedrock_chest_connection_other_right_120"
                                                                     }
                                                                 }
                                                             ]
@@ -369,7 +369,7 @@
                         }
                     }
                 ],
-                "5": [
+                "\"east\"": [
                     {
                         "function": "multiblock",
                         "options": [
@@ -387,8 +387,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "5": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"east\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -400,7 +400,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_left"
+                                                                        "function": "bedrock_chest_connection_other_left_120"
                                                                     }
                                                                 }
                                                             ]
@@ -426,8 +426,8 @@
                                                 {
                                                     "function": "map_properties",
                                                     "options": {
-                                                        "facing_direction": {
-                                                            "5": [
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"east\"": [
                                                                 {
                                                                     "function": "code",
                                                                     "options": {
@@ -439,7 +439,7 @@
                                                                         "output": [
                                                                             "new_properties"
                                                                         ],
-                                                                        "function": "bedrock_chest_connection_other_right"
+                                                                        "function": "bedrock_chest_connection_other_right_120"
                                                                     }
                                                                 }
                                                             ]
@@ -457,22 +457,6 @@
                         "function": "new_properties",
                         "options": {
                             "facing": "\"east\""
-                        }
-                    }
-                ],
-                "0": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
                         }
                     }
                 ]

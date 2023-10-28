@@ -58,32 +58,8 @@
     {
         "function": "map_properties",
         "options": {
-            "facing_direction": {
-                "0": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
-                        }
-                    }
-                ],
-                "1": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
-                        }
-                    }
-                ],
-                "2": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "facing": "\"north\""
-                        }
-                    }
-                ],
-                "3": [
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -91,7 +67,7 @@
                         }
                     }
                 ],
-                "4": [
+                "\"west\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -99,7 +75,15 @@
                         }
                     }
                 ],
-                "5": [
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
