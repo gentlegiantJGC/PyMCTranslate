@@ -232,9 +232,7 @@ class TranslationManager:
                             next_version = version_number_
                         elif version_number_ < next_version:
                             next_version = version_number_
-                if next_version is not None and next_version[:2] == version_number[:2]:
-                    self._version_remap[(platform, version_number)] = next_version
-                elif previous_version is not None:
+                if previous_version is not None:
                     self._version_remap[(platform, version_number)] = previous_version
                 elif version_number[:2] < (
                     1,
