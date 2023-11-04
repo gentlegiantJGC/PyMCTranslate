@@ -1,0 +1,45 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:plant"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "tall_grass_type": {
+                "\"default\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "plant_type": "\"grass\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "plant_type": "\"grass\""
+                        }
+                    }
+                ],
+                "\"fern\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "plant_type": "\"fern\""
+                        }
+                    }
+                ],
+                "\"snow\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "plant_type": "\"grass\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

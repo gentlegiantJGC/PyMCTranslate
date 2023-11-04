@@ -1,0 +1,244 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "final_state": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "joint": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "target_pool": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "pool"
+                            }
+                        }
+                    ]
+                },
+                "target": {
+                    "type": "string",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:jigsaw"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing_direction": {
+                "0": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "rotation": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_north\""
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_west\""
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_south\""
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"down_east\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "rotation": {
+                                "0": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_north\""
+                                        }
+                                    }
+                                ],
+                                "1": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_east\""
+                                        }
+                                    }
+                                ],
+                                "2": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_south\""
+                                        }
+                                    }
+                                ],
+                                "3": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "orientation": "\"up_west\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"north_up\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"south_up\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"west_up\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "orientation": "\"east_up\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
