@@ -1,0 +1,67 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:redstone_torch"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "\"false\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:unlit_redstone_torch"
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:redstone_torch"
+                    }
+                ]
+            },
+            "facing": {
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"east\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"top\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

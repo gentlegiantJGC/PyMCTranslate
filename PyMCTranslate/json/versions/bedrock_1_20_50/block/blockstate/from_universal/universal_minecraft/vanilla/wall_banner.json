@@ -1,0 +1,308 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "Patterns": {
+                            "type": "list",
+                            "nested_default": [],
+                            "self_default": [],
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "Type": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "\"black\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "0"
+                            }
+                        ]
+                    }
+                ],
+                "\"red\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "1"
+                            }
+                        ]
+                    }
+                ],
+                "\"green\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "2"
+                            }
+                        ]
+                    }
+                ],
+                "\"brown\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "3"
+                            }
+                        ]
+                    }
+                ],
+                "\"blue\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "4"
+                            }
+                        ]
+                    }
+                ],
+                "\"purple\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "5"
+                            }
+                        ]
+                    }
+                ],
+                "\"cyan\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "6"
+                            }
+                        ]
+                    }
+                ],
+                "\"light_gray\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "7"
+                            }
+                        ]
+                    }
+                ],
+                "\"gray\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "8"
+                            }
+                        ]
+                    }
+                ],
+                "\"pink\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "9"
+                            }
+                        ]
+                    }
+                ],
+                "\"lime\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "10"
+                            }
+                        ]
+                    }
+                ],
+                "\"yellow\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "11"
+                            }
+                        ]
+                    }
+                ],
+                "\"light_blue\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "12"
+                            }
+                        ]
+                    }
+                ],
+                "\"magenta\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "13"
+                            }
+                        ]
+                    }
+                ],
+                "\"orange\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "14"
+                            }
+                        ]
+                    }
+                ],
+                "\"white\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Base",
+                                "value": "15"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facing": {
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "2"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "3"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "4"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "5"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt"
+            ],
+            "output": [
+                "new_nbt"
+            ],
+            "function": "banner_pattern_fu"
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:wall_banner"
+    }
+]
