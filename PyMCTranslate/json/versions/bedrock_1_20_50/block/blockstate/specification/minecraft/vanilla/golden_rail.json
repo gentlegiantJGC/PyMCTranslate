@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "rail_data_bit": [
+            "0b",
+            "1b"
+        ],
+        "rail_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    "defaults": {
+        "rail_data_bit": "0b",
+        "rail_direction": "0"
+    }
+}

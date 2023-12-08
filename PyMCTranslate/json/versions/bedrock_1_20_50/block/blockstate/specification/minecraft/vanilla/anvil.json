@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "damage": [
+            "\"undamaged\"",
+            "\"slightly_damaged\"",
+            "\"very_damaged\"",
+            "\"broken\""
+        ],
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ]
+    },
+    "defaults": {
+        "damage": "\"undamaged\"",
+        "minecraft:cardinal_direction": "\"south\""
+    }
+}
