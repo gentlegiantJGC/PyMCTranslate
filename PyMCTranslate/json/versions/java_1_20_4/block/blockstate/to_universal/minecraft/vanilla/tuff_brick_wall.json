@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tuff_brick_wall"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "north": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "south": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "up": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "west": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ]
+        }
+    }
+]

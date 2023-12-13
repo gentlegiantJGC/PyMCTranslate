@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:cauldron"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "cauldron_liquid": "\"water\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "level": [
+                "\"1\"",
+                "\"2\"",
+                "\"3\""
+            ]
+        }
+    }
+]

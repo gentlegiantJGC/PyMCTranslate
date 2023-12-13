@@ -1,0 +1,35 @@
+{
+    "properties": {
+        "east": [
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
+        ],
+        "north": [
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
+        ],
+        "south": [
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
+        ],
+        "up": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "west": [
+            "\"none\"",
+            "\"low\"",
+            "\"tall\""
+        ]
+    },
+    "defaults": {
+        "east": "\"none\"",
+        "north": "\"none\"",
+        "south": "\"none\"",
+        "up": "\"true\"",
+        "west": "\"none\""
+    }
+}

@@ -1,0 +1,233 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:oak_wood"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:oak_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_oak_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_spruce_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_birch_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_jungle_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_acacia_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:dark_oak_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_dark_oak_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"warped\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:warped_hyphae"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_warped_hyphae"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"crimson\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:crimson_hyphae"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_crimson_hyphae"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"mangrove\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:mangrove_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_mangrove_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"cherry\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:cherry_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_cherry_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ]
+        }
+    }
+]

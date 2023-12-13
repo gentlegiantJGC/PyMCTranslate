@@ -1,0 +1,16 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:tuff_slab"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "\"top\"",
+                "\"bottom\"",
+                "\"double\""
+            ]
+        }
+    }
+]

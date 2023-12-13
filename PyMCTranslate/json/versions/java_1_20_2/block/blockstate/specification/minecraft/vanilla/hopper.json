@@ -1,0 +1,24 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "hopper"
+    ],
+    "snbt": "{Items: [], Lock: \"\", TransferCooldown: -1}",
+    "properties": {
+        "enabled": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "facing": [
+            "\"down\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ]
+    },
+    "defaults": {
+        "enabled": "\"true\"",
+        "facing": "\"down\""
+    }
+}

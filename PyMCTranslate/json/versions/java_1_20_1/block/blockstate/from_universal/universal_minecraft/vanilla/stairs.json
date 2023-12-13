@@ -1,0 +1,353 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:oak_stairs"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oak_stairs"
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_stairs"
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_stairs"
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_stairs"
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_stairs"
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_stairs"
+                    }
+                ],
+                "\"brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brick_stairs"
+                    }
+                ],
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cobblestone_stairs"
+                    }
+                ],
+                "\"stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_brick_stairs"
+                    }
+                ],
+                "\"sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:sandstone_stairs"
+                    }
+                ],
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone_stairs"
+                    }
+                ],
+                "\"nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:nether_brick_stairs"
+                    }
+                ],
+                "\"quartz\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:quartz_stairs"
+                    }
+                ],
+                "\"purpur\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purpur_stairs"
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:prismarine_stairs"
+                    }
+                ],
+                "\"prismarine_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:prismarine_brick_stairs"
+                    }
+                ],
+                "\"dark_prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_prismarine_stairs"
+                    }
+                ],
+                "\"polished_granite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_granite_stairs"
+                    }
+                ],
+                "\"smooth_red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:smooth_red_sandstone_stairs"
+                    }
+                ],
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_stone_brick_stairs"
+                    }
+                ],
+                "\"polished_diorite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_diorite_stairs"
+                    }
+                ],
+                "\"mossy_cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_cobblestone_stairs"
+                    }
+                ],
+                "\"end_stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:end_stone_brick_stairs"
+                    }
+                ],
+                "\"stone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_stairs"
+                    }
+                ],
+                "\"smooth_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:smooth_sandstone_stairs"
+                    }
+                ],
+                "\"smooth_quartz\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:smooth_quartz_stairs"
+                    }
+                ],
+                "\"granite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:granite_stairs"
+                    }
+                ],
+                "\"andesite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:andesite_stairs"
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_nether_brick_stairs"
+                    }
+                ],
+                "\"polished_andesite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_andesite_stairs"
+                    }
+                ],
+                "\"diorite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:diorite_stairs"
+                    }
+                ],
+                "\"crimson\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:crimson_stairs"
+                    }
+                ],
+                "\"warped\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:warped_stairs"
+                    }
+                ],
+                "\"blackstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blackstone_stairs"
+                    }
+                ],
+                "\"polished_blackstone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_brick_stairs"
+                    }
+                ],
+                "\"polished_blackstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_stairs"
+                    }
+                ],
+                "\"oxidized_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oxidized_cut_copper_stairs"
+                    }
+                ],
+                "\"weathered_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:weathered_cut_copper_stairs"
+                    }
+                ],
+                "\"exposed_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:exposed_cut_copper_stairs"
+                    }
+                ],
+                "\"cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cut_copper_stairs"
+                    }
+                ],
+                "\"waxed_oxidized_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_oxidized_cut_copper_stairs"
+                    }
+                ],
+                "\"waxed_weathered_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_weathered_cut_copper_stairs"
+                    }
+                ],
+                "\"waxed_exposed_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_exposed_cut_copper_stairs"
+                    }
+                ],
+                "\"waxed_cut_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_cut_copper_stairs"
+                    }
+                ],
+                "\"cobbled_deepslate\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cobbled_deepslate_stairs"
+                    }
+                ],
+                "\"polished_deepslate\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_deepslate_stairs"
+                    }
+                ],
+                "\"deepslate_tile\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:deepslate_tile_stairs"
+                    }
+                ],
+                "\"deepslate_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:deepslate_brick_stairs"
+                    }
+                ],
+                "\"mangrove\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mangrove_stairs"
+                    }
+                ],
+                "\"mud_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mud_brick_stairs"
+                    }
+                ],
+                "\"bamboo\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:bamboo_stairs"
+                    }
+                ],
+                "\"bamboo_mosaic\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:bamboo_mosaic_stairs"
+                    }
+                ],
+                "\"cherry\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cherry_stairs"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "half": [
+                "\"top\"",
+                "\"bottom\""
+            ],
+            "shape": [
+                "\"straight\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    }
+]
