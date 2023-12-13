@@ -18,12 +18,17 @@
         "no_drop": [
             "\"false\"",
             "\"true\""
+        ],
+        "powered": [
+            "\"true\"",
+            "\"false\""
         ]
     },
     "defaults": {
         "mob": "\"skeleton\"",
         "facing": "\"north\"",
-        "no_drop": "\"false\""
+        "no_drop": "\"false\"",
+        "powered": "\"false\""
     },
     "nbt_identifier": [
         "universal_minecraft",

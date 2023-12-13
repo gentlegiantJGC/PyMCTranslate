@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:small_dripleaf"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "half": [
+                "\"upper\"",
+                "\"lower\""
+            ]
+        }
+    }
+]

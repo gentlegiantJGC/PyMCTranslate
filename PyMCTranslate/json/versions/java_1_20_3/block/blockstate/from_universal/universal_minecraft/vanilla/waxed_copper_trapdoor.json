@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:waxed_copper_trapdoor"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "half": [
+                "\"top\"",
+                "\"bottom\""
+            ],
+            "open": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

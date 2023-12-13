@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:trapdoor"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"birch\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "half": [
+                "\"top\"",
+                "\"bottom\""
+            ],
+            "open": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:fence_gate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"birch\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "in_wall": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "open": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

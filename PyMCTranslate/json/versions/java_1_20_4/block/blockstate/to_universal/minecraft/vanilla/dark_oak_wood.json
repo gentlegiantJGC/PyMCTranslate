@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wood"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"dark_oak\"",
+            "stripped": "\"false\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ]
+        }
+    }
+]
