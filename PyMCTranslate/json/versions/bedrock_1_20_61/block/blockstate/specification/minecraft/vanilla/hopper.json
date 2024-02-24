@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "toggle_bit": [
+            "0b",
+            "1b"
+        ],
+        "facing_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    "defaults": {
+        "toggle_bit": "0b",
+        "facing_direction": "0"
+    },
+    "nbt_identifier": [
+        "",
+        "Hopper"
+    ],
+    "snbt": "{isMovable: 1b, Items: [], TransferCooldown: -1}"
+}

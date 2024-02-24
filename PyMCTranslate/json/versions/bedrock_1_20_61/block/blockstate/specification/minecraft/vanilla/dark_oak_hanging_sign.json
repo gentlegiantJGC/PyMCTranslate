@@ -1,0 +1,49 @@
+{
+    "properties": {
+        "facing_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "attached_bit": [
+            "0b",
+            "1b"
+        ],
+        "ground_sign_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+        ],
+        "hanging": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "facing_direction": "0",
+        "attached_bit": "0b",
+        "ground_sign_direction": "0",
+        "hanging": "0b"
+    },
+    "nbt_identifier": [
+        "",
+        "HangingSign"
+    ],
+    "snbt": "{BackText: {IgnoreLighting: 0b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextOwner: \"\"}, FrontText: {IgnoreLighting: 0b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextOwner: \"\"}, isMovable: 1b, IsWaxed: 0b}"
+}

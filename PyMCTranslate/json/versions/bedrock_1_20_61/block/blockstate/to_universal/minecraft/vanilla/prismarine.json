@@ -1,0 +1,31 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:prismarine"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "prismarine_block_type": {
+                "\"default\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:prismarine"
+                    }
+                ],
+                "\"dark\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:dark_prismarine"
+                    }
+                ],
+                "\"bricks\"": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:prismarine_bricks"
+                    }
+                ]
+            }
+        }
+    }
+]
