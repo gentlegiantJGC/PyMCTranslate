@@ -7,6 +7,12 @@
         "function": "map_properties",
         "options": {
             "lit": {
+                "\"false\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:redstone_lamp"
+                    }
+                ],
                 "\"true\"": [
                     {
                         "function": "new_block",
