@@ -38,13 +38,13 @@ def section_string_to_raw_text(section_str: str) -> str:
 @overload
 def _section_string_to_raw_text(
     section_str: str, split_newline: Literal[True]
-) -> list[str]:
-    ...
+) -> list[str]: ...
 
 
 @overload
-def _section_string_to_raw_text(section_str: str, split_newline: Literal[False]) -> str:
-    ...
+def _section_string_to_raw_text(
+    section_str: str, split_newline: Literal[False]
+) -> str: ...
 
 
 def _section_string_to_raw_text(section_str, split_newline=False):

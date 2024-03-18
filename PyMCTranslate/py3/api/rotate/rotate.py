@@ -136,9 +136,9 @@ class BaseVectorBlockShape(BaseBlockShape):
             Tuple[Tuple[PropertyValueType, ...], Tuple[float, float, float]]
         ] = sorted(
             self.Vectors.items(),
-            key=lambda a: min([dist(v) for v in a[1]])
-            if isinstance(a[1], list)
-            else dist(a[1]),
+            key=lambda a: (
+                min([dist(v) for v in a[1]]) if isinstance(a[1], list) else dist(a[1])
+            ),
         )
         properties, closest_vector = sorted_vectors[0]
         if mode is RotateMode.Exact and dist(closest_vector) > 0.01:

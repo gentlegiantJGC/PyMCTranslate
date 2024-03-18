@@ -19,7 +19,10 @@ class BaseAxisStateShape(BaseBlockShape):
     @abstractmethod
     def Vectors(
         cls,
-    ) -> Dict[str, Tuple[float, float, float],]:
+    ) -> Dict[
+        str,
+        Tuple[float, float, float],
+    ]:
         """A map from the property names to a vector representing that rotation"""
         raise NotImplementedError
 
