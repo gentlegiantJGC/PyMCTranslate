@@ -88,9 +88,9 @@ class TranslationManager:
             )
 
             for version in versions.values():
-                self._version_remap[
-                    (version.platform, version.data_version)
-                ] = version.version_number
+                self._version_remap[(version.platform, version.data_version)] = (
+                    version.version_number
+                )
                 if version.platform == "universal":
                     self._universal_format = version
 
@@ -191,9 +191,9 @@ class TranslationManager:
                 next_version = None
                 for version_number_, version in self._versions[platform].items():
                     if version.data_version == version_number:
-                        self._version_remap[
-                            (platform, version_number)
-                        ] = version_number_
+                        self._version_remap[(platform, version_number)] = (
+                            version_number_
+                        )
                         return version_number_
                     elif version_number < version.data_version:
                         if (
