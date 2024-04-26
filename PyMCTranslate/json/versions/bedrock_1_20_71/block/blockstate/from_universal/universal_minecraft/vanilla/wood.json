@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:wood"
+        "options": "minecraft:oak_wood"
     },
     {
         "function": "map_properties",
@@ -33,192 +33,6 @@
                 ]
             },
             "material": {
-                "\"oak\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "wood_type": "\"oak\""
-                        }
-                    },
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "stripped": {
-                                "\"false\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"true\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"spruce\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "wood_type": "\"spruce\""
-                        }
-                    },
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "stripped": {
-                                "\"false\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"true\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"birch\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "wood_type": "\"birch\""
-                        }
-                    },
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "stripped": {
-                                "\"false\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"true\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"jungle\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "wood_type": "\"jungle\""
-                        }
-                    },
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "stripped": {
-                                "\"false\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"true\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"acacia\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "wood_type": "\"acacia\""
-                        }
-                    },
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "stripped": {
-                                "\"false\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"true\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "\"dark_oak\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "wood_type": "\"dark_oak\""
-                        }
-                    },
-                    {
-                        "function": "map_properties",
-                        "options": {
-                            "stripped": {
-                                "\"false\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "0b"
-                                        }
-                                    }
-                                ],
-                                "\"true\"": [
-                                    {
-                                        "function": "new_properties",
-                                        "options": {
-                                            "stripped_bit": "1b"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ],
                 "\"crimson\"": [
                     {
                         "function": "map_properties",
@@ -297,6 +111,132 @@
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:stripped_cherry_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:acacia_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_acacia_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:birch_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_birch_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:dark_oak_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_dark_oak_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:jungle_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_jungle_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"oak\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:oak_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_oak_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:spruce_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_spruce_wood"
                                     }
                                 ]
                             }

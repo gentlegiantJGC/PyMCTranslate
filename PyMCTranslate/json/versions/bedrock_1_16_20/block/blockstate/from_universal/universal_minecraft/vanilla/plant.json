@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:red_flower"
+        "options": "minecraft:tallgrass"
     },
     {
         "function": "map_properties",
@@ -15,7 +15,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "tall_grass_type": "\"default\""
+                            "tall_grass_type": "\"tall\""
                         }
                     }
                 ],
