@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "minecraft:vertical_half": [
+            "\"bottom\"",
+            "\"top\""
+        ],
+        "stone_slab_type": [
+            "\"smooth_stone\"",
+            "\"sandstone\"",
+            "\"wood\"",
+            "\"cobblestone\"",
+            "\"brick\"",
+            "\"stone_brick\"",
+            "\"quartz\"",
+            "\"nether_brick\""
+        ]
+    },
+    "defaults": {
+        "minecraft:vertical_half": "\"bottom\"",
+        "stone_slab_type": "\"smooth_stone\""
+    }
+}

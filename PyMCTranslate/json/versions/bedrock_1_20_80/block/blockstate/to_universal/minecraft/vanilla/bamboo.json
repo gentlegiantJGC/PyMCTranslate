@@ -1,0 +1,73 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:bamboo"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "age_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"0\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "stage": "\"1\""
+                        }
+                    }
+                ]
+            },
+            "bamboo_leaf_size": {
+                "\"no_leaves\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "leaves": "\"none\""
+                        }
+                    }
+                ],
+                "\"small_leaves\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "leaves": "\"small\""
+                        }
+                    }
+                ],
+                "\"large_leaves\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "leaves": "\"large\""
+                        }
+                    }
+                ]
+            },
+            "bamboo_stalk_thickness": {
+                "\"thin\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "thickness": "\"thin\""
+                        }
+                    }
+                ],
+                "\"thick\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "thickness": "\"thick\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

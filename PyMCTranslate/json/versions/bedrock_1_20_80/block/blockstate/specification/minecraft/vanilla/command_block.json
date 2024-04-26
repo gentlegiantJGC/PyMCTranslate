@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "conditional_bit": [
+            "0b",
+            "1b"
+        ],
+        "facing_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    "defaults": {
+        "conditional_bit": "0b",
+        "facing_direction": "0"
+    },
+    "nbt_identifier": [
+        "",
+        "CommandBlock"
+    ],
+    "snbt": "{auto: 0b, Command: \"\", conditionMet: 0b, CustomName: \"\", ExecuteOnFirstTick: 0b, isMovable: 1b, LastExecution: 0L, LastOutput: \"\", LastOutputParams: [], LPCommandMode: 16064, LPCondionalMode: 63b, LPRedstoneMode: 0b, powered: 0b, SuccessCount: 0, TickDelay: 0, TrackOutput: 1b, Version: 10}"
+}

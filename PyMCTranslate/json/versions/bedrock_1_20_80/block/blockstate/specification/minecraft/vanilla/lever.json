@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "open_bit": [
+            "0b",
+            "1b"
+        ],
+        "lever_direction": [
+            "\"down_east_west\"",
+            "\"east\"",
+            "\"west\"",
+            "\"south\"",
+            "\"north\"",
+            "\"up_north_south\"",
+            "\"up_east_west\"",
+            "\"down_north_south\""
+        ]
+    },
+    "defaults": {
+        "open_bit": "0b",
+        "lever_direction": "\"down_east_west\""
+    }
+}

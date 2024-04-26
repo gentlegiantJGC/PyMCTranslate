@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ],
+        "big_dripleaf_head": [
+            "0b",
+            "1b"
+        ],
+        "big_dripleaf_tilt": [
+            "\"none\"",
+            "\"unstable\"",
+            "\"partial_tilt\"",
+            "\"full_tilt\""
+        ]
+    },
+    "defaults": {
+        "minecraft:cardinal_direction": "\"south\"",
+        "big_dripleaf_head": "0b",
+        "big_dripleaf_tilt": "\"none\""
+    }
+}

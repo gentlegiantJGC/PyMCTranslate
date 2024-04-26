@@ -1,0 +1,85 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:repeater"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "powered": "\"false\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "repeater_delay": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "delay": "\"1\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "delay": "\"2\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "delay": "\"3\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "delay": "\"4\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
