@@ -199,6 +199,10 @@ def nbt_from_list(
             ] = nbt_object
             for path, nbt_type in nbt_path:
                 # if the nested NBT object does not exist then create it
+                if nbt_type not in {"list", "compound", "byte_array", "int_array", "long_array"}:
+                    log.warning(f"Invalid NBT path {nbt_path}")
+                    break
+                    
                 if isinstance(nbt_temp, TAG_Compound):
                     if (
                         path not in nbt_temp
