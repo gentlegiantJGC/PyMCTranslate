@@ -288,6 +288,12 @@
                                             "function": "new_nbt",
                                             "options": [
                                                 {
+                                                    "path": [
+                                                        [
+                                                            "utags",
+                                                            "compound"
+                                                        ]
+                                                    ],
                                                     "key": "mirror",
                                                     "value": "\"NONE\""
                                                 }
@@ -299,6 +305,12 @@
                                             "function": "new_nbt",
                                             "options": [
                                                 {
+                                                    "path": [
+                                                        [
+                                                            "utags",
+                                                            "compound"
+                                                        ]
+                                                    ],
                                                     "key": "mirror",
                                                     "value": "\"X\""
                                                 }
@@ -310,6 +322,12 @@
                                             "function": "new_nbt",
                                             "options": [
                                                 {
+                                                    "path": [
+                                                        [
+                                                            "utags",
+                                                            "compound"
+                                                        ]
+                                                    ],
                                                     "key": "mirror",
                                                     "value": "\"Z\""
                                                 }
