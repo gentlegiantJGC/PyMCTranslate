@@ -1,19 +1,19 @@
 {
     "properties": {
-        "extinguished": [
-            "0b",
-            "1b"
-        ],
         "minecraft:cardinal_direction": [
             "\"south\"",
             "\"west\"",
             "\"north\"",
             "\"east\""
+        ],
+        "extinguished": [
+            "0b",
+            "1b"
         ]
     },
     "defaults": {
-        "extinguished": "0b",
-        "minecraft:cardinal_direction": "\"south\""
+        "minecraft:cardinal_direction": "\"south\"",
+        "extinguished": "0b"
     },
     "nbt_identifier": [
         "",

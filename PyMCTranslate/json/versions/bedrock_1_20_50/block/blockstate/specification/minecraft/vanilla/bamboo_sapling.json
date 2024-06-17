@@ -1,9 +1,5 @@
 {
     "properties": {
-        "age_bit": [
-            "0b",
-            "1b"
-        ],
         "sapling_type": [
             "\"oak\"",
             "\"spruce\"",
@@ -11,10 +7,14 @@
             "\"jungle\"",
             "\"acacia\"",
             "\"dark_oak\""
+        ],
+        "age_bit": [
+            "0b",
+            "1b"
         ]
     },
     "defaults": {
-        "age_bit": "0b",
-        "sapling_type": "\"oak\""
+        "sapling_type": "\"oak\"",
+        "age_bit": "0b"
     }
 }

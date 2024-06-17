@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ],
+        "vault_state": [
+            "\"inactive\"",
+            "\"active\"",
+            "\"unlocking\"",
+            "\"ejecting\""
+        ]
+    },
+    "defaults": {
+        "minecraft:cardinal_direction": "\"south\"",
+        "vault_state": "\"inactive\""
+    }
+}

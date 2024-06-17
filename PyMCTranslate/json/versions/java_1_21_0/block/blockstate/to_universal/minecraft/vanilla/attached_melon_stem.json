@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:melon_stem"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "age": "\"7\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

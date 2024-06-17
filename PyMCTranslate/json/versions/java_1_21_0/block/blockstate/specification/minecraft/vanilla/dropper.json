@@ -1,0 +1,25 @@
+{
+    "nbt_identifier": [
+        "minecraft",
+        "dropper"
+    ],
+    "snbt": "{Items: [], Lock: \"\"}",
+    "properties": {
+        "facing": [
+            "\"north\"",
+            "\"east\"",
+            "\"south\"",
+            "\"west\"",
+            "\"up\"",
+            "\"down\""
+        ],
+        "triggered": [
+            "\"true\"",
+            "\"false\""
+        ]
+    },
+    "defaults": {
+        "facing": "\"north\"",
+        "triggered": "\"false\""
+    }
+}

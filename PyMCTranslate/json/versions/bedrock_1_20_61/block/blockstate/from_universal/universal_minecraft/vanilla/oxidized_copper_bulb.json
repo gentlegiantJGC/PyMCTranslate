@@ -1,6 +1,47 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:oxidized_copper_bulb"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "1b"
+                        }
+                    }
+                ]
+            },
+            "powered": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

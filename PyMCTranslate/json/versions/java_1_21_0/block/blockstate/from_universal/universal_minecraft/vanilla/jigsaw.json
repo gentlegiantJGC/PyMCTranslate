@@ -1,0 +1,129 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "final_state": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "joint": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "name": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "pool": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "target": {
+                            "type": "string",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "keepPacked": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "minecraft:jigsaw"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "orientation": [
+                "\"down_east\"",
+                "\"down_north\"",
+                "\"down_south\"",
+                "\"down_west\"",
+                "\"up_east\"",
+                "\"up_north\"",
+                "\"up_south\"",
+                "\"up_west\"",
+                "\"west_up\"",
+                "\"east_up\"",
+                "\"north_up\"",
+                "\"south_up\""
+            ]
+        }
+    }
+]

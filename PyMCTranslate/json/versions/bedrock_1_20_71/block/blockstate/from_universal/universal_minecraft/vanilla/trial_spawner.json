@@ -1,6 +1,61 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:trial_spawner"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "trial_spawner_state": {
+                "\"inactive\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "trial_spawner_state": "0"
+                        }
+                    }
+                ],
+                "\"waiting_for_players\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "trial_spawner_state": "1"
+                        }
+                    }
+                ],
+                "\"active\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "trial_spawner_state": "2"
+                        }
+                    }
+                ],
+                "\"waiting_for_reward_ejection\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "trial_spawner_state": "3"
+                        }
+                    }
+                ],
+                "\"ejecting_reward\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "trial_spawner_state": "4"
+                        }
+                    }
+                ],
+                "\"cooldown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "trial_spawner_state": "5"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

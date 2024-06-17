@@ -1,0 +1,109 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:oak_leaves"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"azalea\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:azalea_leaves"
+                    }
+                ],
+                "\"flowering_azalea\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:azalea_leaves_flowered"
+                    }
+                ],
+                "\"mangrove\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mangrove_leaves"
+                    }
+                ],
+                "\"cherry\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cherry_leaves"
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_leaves"
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_leaves"
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_leaves"
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_leaves"
+                    }
+                ],
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oak_leaves"
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_leaves"
+                    }
+                ]
+            },
+            "persistent": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "persistent_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "persistent_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "check_decay": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "update_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "update_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

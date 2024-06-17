@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:copper_trapdoor"
+        "options": "universal_minecraft:trapdoor"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"copper\""
+        }
     },
     {
         "function": "carry_properties",
