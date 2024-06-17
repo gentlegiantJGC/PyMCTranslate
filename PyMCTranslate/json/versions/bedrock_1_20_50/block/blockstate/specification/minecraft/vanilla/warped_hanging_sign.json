@@ -1,9 +1,5 @@
 {
     "properties": {
-        "attached_bit": [
-            "0b",
-            "1b"
-        ],
         "facing_direction": [
             "0",
             "1",
@@ -11,6 +7,10 @@
             "3",
             "4",
             "5"
+        ],
+        "attached_bit": [
+            "0b",
+            "1b"
         ],
         "ground_sign_direction": [
             "0",
@@ -36,8 +36,8 @@
         ]
     },
     "defaults": {
-        "attached_bit": "0b",
         "facing_direction": "0",
+        "attached_bit": "0b",
         "ground_sign_direction": "0",
         "hanging": "0b"
     },

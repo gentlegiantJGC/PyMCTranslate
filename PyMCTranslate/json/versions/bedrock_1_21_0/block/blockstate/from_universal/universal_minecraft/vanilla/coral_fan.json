@@ -1,0 +1,499 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:tube_coral_fan"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_direction": "0"
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "1b"
+                                        }
+                                    }
+                                ]
+                            },
+                            "coral_type": {
+                                "\"tube\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"brain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"bubble\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"fire\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"horn\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang3"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_direction": "1"
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "1b"
+                                        }
+                                    }
+                                ]
+                            },
+                            "coral_type": {
+                                "\"tube\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"brain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"bubble\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"fire\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"horn\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang3"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_direction": "2"
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "1b"
+                                        }
+                                    }
+                                ]
+                            },
+                            "coral_type": {
+                                "\"tube\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"brain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"bubble\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"fire\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"horn\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang3"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "coral_direction": "3"
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "dead": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "dead_bit": "1b"
+                                        }
+                                    }
+                                ]
+                            },
+                            "coral_type": {
+                                "\"tube\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"brain\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"bubble\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ],
+                                "\"fire\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang2"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "1b"
+                                        }
+                                    }
+                                ],
+                                "\"horn\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:coral_fan_hang3"
+                                    },
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "coral_hang_type_bit": "0b"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "coral_type": {
+                                "\"brain\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "dead": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:brain_coral_fan"
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:dead_brain_coral_fan"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"bubble\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "dead": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:bubble_coral_fan"
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:dead_bubble_coral_fan"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"fire\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "dead": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:fire_coral_fan"
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:dead_fire_coral_fan"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"horn\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "dead": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:horn_coral_fan"
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:dead_horn_coral_fan"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"tube\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "dead": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:tube_coral_fan"
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "new_block",
+                                                        "options": "minecraft:dead_tube_coral_fan"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,14 +1,14 @@
 {
     "properties": {
+        "persistent_bit": [
+            "0b",
+            "1b"
+        ],
         "old_leaf_type": [
             "\"oak\"",
             "\"spruce\"",
             "\"birch\"",
             "\"jungle\""
-        ],
-        "persistent_bit": [
-            "0b",
-            "1b"
         ],
         "update_bit": [
             "0b",
@@ -16,8 +16,8 @@
         ]
     },
     "defaults": {
-        "old_leaf_type": "\"oak\"",
         "persistent_bit": "0b",
+        "old_leaf_type": "\"oak\"",
         "update_bit": "0b"
     }
 }

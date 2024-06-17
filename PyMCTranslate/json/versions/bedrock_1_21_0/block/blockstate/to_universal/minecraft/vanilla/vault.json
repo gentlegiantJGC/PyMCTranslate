@@ -1,0 +1,74 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:vault"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "vault_state": [
+                "\"inactive\"",
+                "\"active\"",
+                "\"unlocking\"",
+                "\"ejecting\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "minecraft:cardinal_direction": {
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "ominous": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "ominous": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "ominous": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

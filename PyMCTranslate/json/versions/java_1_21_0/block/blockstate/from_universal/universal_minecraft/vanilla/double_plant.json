@@ -1,0 +1,58 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:dandelion"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "plant_type": {
+                "\"sunflower\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:sunflower"
+                    }
+                ],
+                "\"lilac\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lilac"
+                    }
+                ],
+                "\"rose_bush\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rose_bush"
+                    }
+                ],
+                "\"peony\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:peony"
+                    }
+                ],
+                "\"tall_grass\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:tall_grass"
+                    }
+                ],
+                "\"large_fern\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:large_fern"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "half": [
+                "\"upper\"",
+                "\"lower\""
+            ]
+        }
+    }
+]

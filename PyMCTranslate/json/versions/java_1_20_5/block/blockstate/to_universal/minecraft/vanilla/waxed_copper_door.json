@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:waxed_copper_door"
+        "options": "universal_minecraft:door"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_copper\""
+        }
     },
     {
         "function": "carry_properties",

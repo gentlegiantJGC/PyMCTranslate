@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:structure_void"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "type": {
+                "\"void\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_void_type": "\"void\""
+                        }
+                    }
+                ],
+                "\"air\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "structure_void_type": "\"air\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

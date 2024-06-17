@@ -1,0 +1,950 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Items": {
+                    "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "LastInteractedSlot": {
+                    "type": "int",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ],
+                                "key": "last_interacted_slot"
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:chiseled_bookshelf"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "books_stored": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "16": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "17": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "18": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "19": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "20": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "21": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "22": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "23": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "24": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "25": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "26": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "27": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "28": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "29": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "30": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "31": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"true\""
+                        }
+                    }
+                ],
+                "32": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "33": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "34": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "35": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "36": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "37": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "38": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "39": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "40": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "41": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "42": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "43": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "44": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "45": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "46": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "47": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"true\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "48": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "49": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "50": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "51": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "52": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "53": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "54": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "55": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"true\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "56": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "57": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "58": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "59": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"true\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "60": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "61": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"true\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "62": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"true\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ],
+                "63": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "slot_0_occupied": "\"false\"",
+                            "slot_1_occupied": "\"false\"",
+                            "slot_2_occupied": "\"false\"",
+                            "slot_3_occupied": "\"false\"",
+                            "slot_4_occupied": "\"false\"",
+                            "slot_5_occupied": "\"false\""
+                        }
+                    }
+                ]
+            },
+            "direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:vault"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "vault_state": [
+                "\"inactive\"",
+                "\"active\"",
+                "\"unlocking\"",
+                "\"ejecting\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "ominous": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "ominous": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "ominous": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

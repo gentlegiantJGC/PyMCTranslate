@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:stone_block_slab"
+        "options": "minecraft:mangrove_slab"
     },
     {
         "function": "map_properties",
@@ -563,6 +563,24 @@
                                         "function": "new_block",
                                         "options": "minecraft:cherry_double_slab"
                                     }
+                                ],
+                                "\"tuff\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:tuff_double_slab"
+                                    }
+                                ],
+                                "\"tuff_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:tuff_brick_double_slab"
+                                    }
+                                ],
+                                "\"polished_tuff\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:polished_tuff_double_slab"
+                                    }
                                 ]
                             }
                         }
@@ -767,6 +785,10 @@
                                 ],
                                 "\"smooth_stone\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"smooth_stone\""
@@ -774,6 +796,10 @@
                                     }
                                 ],
                                 "\"sandstone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -783,6 +809,10 @@
                                 ],
                                 "\"petrified_oak\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"wood\""
@@ -790,6 +820,10 @@
                                     }
                                 ],
                                 "\"cobblestone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -799,6 +833,10 @@
                                 ],
                                 "\"brick\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"brick\""
@@ -806,6 +844,10 @@
                                     }
                                 ],
                                 "\"stone_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -815,6 +857,10 @@
                                 ],
                                 "\"quartz\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"quartz\""
@@ -822,6 +868,10 @@
                                     }
                                 ],
                                 "\"nether_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -1097,6 +1147,24 @@
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:cherry_slab"
+                                    }
+                                ],
+                                "\"tuff\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:tuff_slab"
+                                    }
+                                ],
+                                "\"tuff_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:tuff_brick_slab"
+                                    }
+                                ],
+                                "\"polished_tuff\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:polished_tuff_slab"
                                     }
                                 ]
                             }
@@ -1302,6 +1370,10 @@
                                 ],
                                 "\"smooth_stone\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"smooth_stone\""
@@ -1309,6 +1381,10 @@
                                     }
                                 ],
                                 "\"sandstone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -1318,6 +1394,10 @@
                                 ],
                                 "\"petrified_oak\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"wood\""
@@ -1325,6 +1405,10 @@
                                     }
                                 ],
                                 "\"cobblestone\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -1334,6 +1418,10 @@
                                 ],
                                 "\"brick\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"brick\""
@@ -1341,6 +1429,10 @@
                                     }
                                 ],
                                 "\"stone_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -1350,6 +1442,10 @@
                                 ],
                                 "\"quartz\"": [
                                     {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
+                                    {
                                         "function": "new_properties",
                                         "options": {
                                             "stone_slab_type": "\"quartz\""
@@ -1357,6 +1453,10 @@
                                     }
                                 ],
                                 "\"nether_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stone_block_slab"
+                                    },
                                     {
                                         "function": "new_properties",
                                         "options": {
@@ -1632,6 +1732,24 @@
                                     {
                                         "function": "new_block",
                                         "options": "minecraft:cherry_slab"
+                                    }
+                                ],
+                                "\"tuff\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:tuff_slab"
+                                    }
+                                ],
+                                "\"tuff_brick\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:tuff_brick_slab"
+                                    }
+                                ],
+                                "\"polished_tuff\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:polished_tuff_slab"
                                     }
                                 ]
                             }

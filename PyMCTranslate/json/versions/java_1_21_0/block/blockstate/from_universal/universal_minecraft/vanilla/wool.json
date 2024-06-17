@@ -1,0 +1,109 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:white_wool"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "color": {
+                "\"white\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:white_wool"
+                    }
+                ],
+                "\"orange\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:orange_wool"
+                    }
+                ],
+                "\"magenta\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:magenta_wool"
+                    }
+                ],
+                "\"light_blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_blue_wool"
+                    }
+                ],
+                "\"yellow\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:yellow_wool"
+                    }
+                ],
+                "\"lime\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lime_wool"
+                    }
+                ],
+                "\"pink\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pink_wool"
+                    }
+                ],
+                "\"gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:gray_wool"
+                    }
+                ],
+                "\"light_gray\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:light_gray_wool"
+                    }
+                ],
+                "\"cyan\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cyan_wool"
+                    }
+                ],
+                "\"purple\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:purple_wool"
+                    }
+                ],
+                "\"blue\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blue_wool"
+                    }
+                ],
+                "\"brown\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brown_wool"
+                    }
+                ],
+                "\"green\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:green_wool"
+                    }
+                ],
+                "\"red\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_wool"
+                    }
+                ],
+                "\"black\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:black_wool"
+                    }
+                ]
+            }
+        }
+    }
+]

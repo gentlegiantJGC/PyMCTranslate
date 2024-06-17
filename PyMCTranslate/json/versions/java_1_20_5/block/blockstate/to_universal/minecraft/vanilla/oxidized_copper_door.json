@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:oxidized_copper_door"
+        "options": "universal_minecraft:door"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"oxidized_copper\""
+        }
     },
     {
         "function": "carry_properties",
