@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "minecraft:facing_direction": [
+            "\"down\"",
+            "\"up\"",
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "powered_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "minecraft:facing_direction": "\"down\"",
+        "powered_bit": "0b"
+    }
+}

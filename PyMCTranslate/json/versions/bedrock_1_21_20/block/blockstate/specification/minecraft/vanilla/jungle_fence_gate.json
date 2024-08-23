@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "direction": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "in_wall_bit": [
+            "0b",
+            "1b"
+        ],
+        "open_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "direction": "0",
+        "in_wall_bit": "0b",
+        "open_bit": "0b"
+    }
+}
