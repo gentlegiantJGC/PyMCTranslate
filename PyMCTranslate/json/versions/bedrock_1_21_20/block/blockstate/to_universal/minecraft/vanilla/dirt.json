@@ -1,21 +1,6 @@
 [
     {
-        "function": "map_properties",
-        "options": {
-            "dirt_type": {
-                "\"normal\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:dirt"
-                    }
-                ],
-                "\"coarse\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:coarse_dirt"
-                    }
-                ]
-            }
-        }
+        "function": "new_block",
+        "options": "universal_minecraft:dirt"
     }
 ]

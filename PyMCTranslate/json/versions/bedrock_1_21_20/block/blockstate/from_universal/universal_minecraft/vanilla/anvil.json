@@ -7,36 +7,22 @@
         "function": "map_properties",
         "options": {
             "damage": {
-                "\"normal\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"undamaged\""
-                        }
-                    }
-                ],
                 "\"chipped\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"slightly_damaged\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:chipped_anvil"
                     }
                 ],
                 "\"damaged\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"very_damaged\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:damaged_anvil"
                     }
                 ],
                 "\"broken\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"broken\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:deprecated_anvil"
                     }
                 ]
             },

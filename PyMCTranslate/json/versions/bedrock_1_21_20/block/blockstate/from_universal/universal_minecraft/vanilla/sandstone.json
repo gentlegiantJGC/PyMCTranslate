@@ -7,36 +7,22 @@
         "function": "map_properties",
         "options": {
             "variant": {
-                "\"normal\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "sand_stone_type": "\"default\""
-                        }
-                    }
-                ],
                 "\"chiseled\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "sand_stone_type": "\"heiroglyphs\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:chiseled_sandstone"
                     }
                 ],
                 "\"cut\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "sand_stone_type": "\"cut\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:cut_sandstone"
                     }
                 ],
                 "\"smooth\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "sand_stone_type": "\"smooth\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:smooth_sandstone"
                     }
                 ]
             }

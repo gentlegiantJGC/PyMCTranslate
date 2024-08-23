@@ -4,42 +4,14 @@
         "options": "universal_minecraft:anvil"
     },
     {
+        "function": "new_properties",
+        "options": {
+            "damage": "\"normal\""
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
-            "damage": {
-                "\"undamaged\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"normal\""
-                        }
-                    }
-                ],
-                "\"slightly_damaged\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"chipped\""
-                        }
-                    }
-                ],
-                "\"very_damaged\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"damaged\""
-                        }
-                    }
-                ],
-                "\"broken\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "damage": "\"broken\""
-                        }
-                    }
-                ]
-            },
             "minecraft:cardinal_direction": {
                 "\"south\"": [
                     {

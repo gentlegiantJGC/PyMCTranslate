@@ -6,32 +6,6 @@
     {
         "function": "map_properties",
         "options": {
-            "chisel_type": {
-                "\"default\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:quartz_block"
-                    }
-                ],
-                "\"chiseled\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:chiseled_quartz_block"
-                    }
-                ],
-                "\"lines\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:quartz_pillar"
-                    }
-                ],
-                "\"smooth\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:smooth_quartz"
-                    }
-                ]
-            },
             "pillar_axis": {
                 "\"y\"": [
                     {

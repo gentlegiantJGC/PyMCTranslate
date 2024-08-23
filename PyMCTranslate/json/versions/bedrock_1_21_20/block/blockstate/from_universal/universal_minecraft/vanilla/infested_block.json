@@ -1,58 +1,40 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:monster_egg"
+        "options": "minecraft:infested_stone"
     },
     {
         "function": "map_properties",
         "options": {
             "material": {
-                "\"stone\"": [
+                "\"chiseled_stone_bricks\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "monster_egg_stone_type": "\"stone\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:infested_chiseled_stone_bricks"
                     }
                 ],
                 "\"cobblestone\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "monster_egg_stone_type": "\"cobblestone\""
-                        }
-                    }
-                ],
-                "\"stone_bricks\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "monster_egg_stone_type": "\"stone_brick\""
-                        }
-                    }
-                ],
-                "\"mossy_stone_bricks\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "monster_egg_stone_type": "\"mossy_stone_brick\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:infested_cobblestone"
                     }
                 ],
                 "\"cracked_stone_bricks\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "monster_egg_stone_type": "\"cracked_stone_brick\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:infested_cracked_stone_bricks"
                     }
                 ],
-                "\"chiseled_stone_bricks\"": [
+                "\"mossy_stone_bricks\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "monster_egg_stone_type": "\"chiseled_stone_brick\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:infested_mossy_stone_bricks"
+                    }
+                ],
+                "\"stone_bricks\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:infested_stone_bricks"
                     }
                 ]
             }

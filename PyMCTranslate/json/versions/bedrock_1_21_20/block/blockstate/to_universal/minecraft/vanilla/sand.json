@@ -1,21 +1,6 @@
 [
     {
-        "function": "map_properties",
-        "options": {
-            "sand_type": {
-                "\"normal\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:sand"
-                    }
-                ],
-                "\"red\"": [
-                    {
-                        "function": "new_block",
-                        "options": "universal_minecraft:red_sand"
-                    }
-                ]
-            }
-        }
+        "function": "new_block",
+        "options": "universal_minecraft:sand"
     }
 ]
