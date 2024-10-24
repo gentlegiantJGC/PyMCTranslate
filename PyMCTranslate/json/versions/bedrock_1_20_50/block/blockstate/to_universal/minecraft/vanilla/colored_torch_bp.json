@@ -1,26 +1,16 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:colored_torch_bp"
+        "options": "universal_minecraft:colored_torch_blue"
     },
     {
         "function": "map_properties",
         "options": {
             "color_bit": {
-                "0b": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"0\""
-                        }
-                    }
-                ],
                 "1b": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "color": "\"1\""
-                        }
+                        "function": "new_block",
+                        "options": "universal_minecraft:colored_torch_purple"
                     }
                 ]
             },

@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "brewing_stand_slot_a_bit": [
+            "0b",
+            "1b"
+        ],
+        "brewing_stand_slot_b_bit": [
+            "0b",
+            "1b"
+        ],
+        "brewing_stand_slot_c_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "brewing_stand_slot_a_bit": "0b",
+        "brewing_stand_slot_b_bit": "0b",
+        "brewing_stand_slot_c_bit": "0b"
+    },
+    "nbt_identifier": [
+        "",
+        "BrewingStand"
+    ],
+    "snbt": "{CookTime: 0s, FuelAmount: 0s, FuelTotal: 0s, isMovable: 1b, Items: []}"
+}

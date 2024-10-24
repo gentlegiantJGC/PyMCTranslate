@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:amethyst_cluster"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"down\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:block_face": "\"down\""
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:block_face": "\"up\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:block_face": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:block_face": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:block_face": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:block_face": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

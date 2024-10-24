@@ -1,0 +1,77 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:farmland"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "moisturized_amount": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"0\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"1\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"2\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"3\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"4\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"5\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"6\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "moisture": "\"7\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

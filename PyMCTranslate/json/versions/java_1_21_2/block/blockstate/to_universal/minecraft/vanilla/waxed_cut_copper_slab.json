@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_cut_copper\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "\"top\"",
+                "\"bottom\"",
+                "\"double\""
+            ]
+        }
+    }
+]
