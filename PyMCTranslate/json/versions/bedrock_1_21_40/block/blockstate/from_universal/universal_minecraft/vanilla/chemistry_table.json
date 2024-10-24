@@ -1,7 +1,7 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:chemistry_table"
+        "options": "minecraft:lab_table"
     },
     {
         "function": "map_properties",
@@ -9,34 +9,26 @@
             "chemistry_table_type": {
                 "\"compound_creator\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "chemistry_table_type": "\"compound_creator\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:compound_creator"
                     }
                 ],
                 "\"material_reducer\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "chemistry_table_type": "\"material_reducer\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:material_reducer"
                     }
                 ],
                 "\"element_constructor\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "chemistry_table_type": "\"element_constructor\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:element_constructor"
                     }
                 ],
                 "\"lab_table\"": [
                     {
-                        "function": "new_properties",
-                        "options": {
-                            "chemistry_table_type": "\"lab_table\""
-                        }
+                        "function": "new_block",
+                        "options": "minecraft:lab_table"
                     }
                 ]
             },
