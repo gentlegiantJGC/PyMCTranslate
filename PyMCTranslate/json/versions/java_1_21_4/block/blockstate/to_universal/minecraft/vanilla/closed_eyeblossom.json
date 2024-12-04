@@ -1,6 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:closed_eyeblossom"
+        "options": "universal_minecraft:plant"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "plant_type": "\"closed_eyeblossom\""
+        }
     }
 ]

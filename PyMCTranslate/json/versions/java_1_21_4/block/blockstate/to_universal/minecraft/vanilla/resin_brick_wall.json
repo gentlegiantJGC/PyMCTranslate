@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:resin_brick_wall"
+        "options": "universal_minecraft:wall"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"resin_brick\""
+        }
     },
     {
         "function": "carry_properties",
