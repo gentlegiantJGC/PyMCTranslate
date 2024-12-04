@@ -1,0 +1,28 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:resin_brick_stairs"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "half": [
+                "\"top\"",
+                "\"bottom\""
+            ],
+            "shape": [
+                "\"straight\"",
+                "\"inner_left\"",
+                "\"inner_right\"",
+                "\"outer_left\"",
+                "\"outer_right\""
+            ]
+        }
+    }
+]

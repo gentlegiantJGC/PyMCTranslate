@@ -1,0 +1,192 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:cobblestone_wall"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cobblestone_wall"
+                    }
+                ],
+                "\"mossy_cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_cobblestone_wall"
+                    }
+                ],
+                "\"brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:brick_wall"
+                    }
+                ],
+                "\"prismarine\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:prismarine_wall"
+                    }
+                ],
+                "\"red_sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_sandstone_wall"
+                    }
+                ],
+                "\"mossy_stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mossy_stone_brick_wall"
+                    }
+                ],
+                "\"granite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:granite_wall"
+                    }
+                ],
+                "\"stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:stone_brick_wall"
+                    }
+                ],
+                "\"nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:nether_brick_wall"
+                    }
+                ],
+                "\"andesite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:andesite_wall"
+                    }
+                ],
+                "\"red_nether_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:red_nether_brick_wall"
+                    }
+                ],
+                "\"sandstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:sandstone_wall"
+                    }
+                ],
+                "\"end_stone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:end_stone_brick_wall"
+                    }
+                ],
+                "\"diorite\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:diorite_wall"
+                    }
+                ],
+                "\"blackstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:blackstone_wall"
+                    }
+                ],
+                "\"polished_blackstone_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_brick_wall"
+                    }
+                ],
+                "\"polished_blackstone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_blackstone_wall"
+                    }
+                ],
+                "\"cobbled_deepslate\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cobbled_deepslate_wall"
+                    }
+                ],
+                "\"polished_deepslate\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_deepslate_wall"
+                    }
+                ],
+                "\"deepslate_tile\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:deepslate_tile_wall"
+                    }
+                ],
+                "\"deepslate_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:deepslate_brick_wall"
+                    }
+                ],
+                "\"mud_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mud_brick_wall"
+                    }
+                ],
+                "\"tuff\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:tuff_wall"
+                    }
+                ],
+                "\"tuff_brick\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:tuff_brick_wall"
+                    }
+                ],
+                "\"polished_tuff\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:polished_tuff_wall"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "north": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "south": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "up": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "west": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ]
+        }
+    }
+]
