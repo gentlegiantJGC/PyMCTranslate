@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:slab"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"exposed_cut_copper\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "minecraft:vertical_half": {
+                "\"bottom\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"bottom\""
+                        }
+                    }
+                ],
+                "\"top\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "type": "\"top\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

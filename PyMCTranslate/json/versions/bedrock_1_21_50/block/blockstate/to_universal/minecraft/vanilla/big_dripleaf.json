@@ -1,0 +1,93 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:big_dripleaf"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "big_dripleaf_head": {
+                "0b": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:big_dripleaf_stem"
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:big_dripleaf"
+                    }
+                ]
+            },
+            "big_dripleaf_tilt": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tilt": "\"none\""
+                        }
+                    }
+                ],
+                "\"unstable\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tilt": "\"unstable\""
+                        }
+                    }
+                ],
+                "\"partial_tilt\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tilt": "\"partial\""
+                        }
+                    }
+                ],
+                "\"full_tilt\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tilt": "\"full\""
+                        }
+                    }
+                ]
+            },
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
