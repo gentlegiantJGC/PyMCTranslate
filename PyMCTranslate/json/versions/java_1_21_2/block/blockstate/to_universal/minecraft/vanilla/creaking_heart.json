@@ -10,12 +10,38 @@
                 "\"x\"",
                 "\"y\"",
                 "\"z\""
-            ],
-            "creaking": [
-                "\"disabled\"",
-                "\"dormant\"",
-                "\"active\""
             ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "creaking": {
+                "\"disabled\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "\"false\""
+                        }
+                    }
+                ],
+                "\"dormant\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "\"false\""
+                        }
+                    }
+                ],
+                "\"active\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "\"true\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

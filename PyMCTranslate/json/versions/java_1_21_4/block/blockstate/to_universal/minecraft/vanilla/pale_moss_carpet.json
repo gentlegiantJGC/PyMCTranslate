@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:pale_moss_carpet"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "bottom": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "east": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "north": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "south": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ],
+            "west": [
+                "\"none\"",
+                "\"low\"",
+                "\"tall\""
+            ]
+        }
+    }
+]

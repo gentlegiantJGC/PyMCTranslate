@@ -1,0 +1,51 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:anvil"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "damage": "\"chipped\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

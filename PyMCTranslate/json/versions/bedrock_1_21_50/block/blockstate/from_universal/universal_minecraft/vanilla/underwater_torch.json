@@ -1,0 +1,53 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:underwater_torch"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"east\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"up\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "torch_facing_direction": "\"top\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:creaking_heart"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "active": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ],
+            "natural": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

@@ -10,12 +10,30 @@
                 "\"x\"",
                 "\"y\"",
                 "\"z\""
-            ],
-            "creaking": [
-                "\"disabled\"",
-                "\"dormant\"",
-                "\"active\""
             ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "active": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "creaking": "\"disabled\""
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "creaking": "\"active\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]
