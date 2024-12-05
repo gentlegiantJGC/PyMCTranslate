@@ -11,5 +11,10 @@
     },
     "defaults": {
         "facing_direction": "0"
-    }
+    },
+    "nbt_identifier": [
+        "",
+        "Sign"
+    ],
+    "snbt": "{BackText: {IgnoreLighting: 0b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextOwner: \"\"}, FrontText: {IgnoreLighting: 0b, PersistFormatting: 1b, SignTextColor: -16777216, Text: \"\", TextOwner: \"\"}, isMovable: 1b, IsWaxed: 0b}"
 }

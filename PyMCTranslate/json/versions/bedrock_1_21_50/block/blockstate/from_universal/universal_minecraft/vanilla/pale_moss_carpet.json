@@ -1,6 +1,133 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:pale_moss_carpet"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "bottom": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "north": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_north": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_north": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_north": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "east": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_east": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_east": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_east": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "south": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_south": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_south": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_south": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "west": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_west": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_west": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pale_moss_carpet_side_west": "\"tall\""
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

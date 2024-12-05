@@ -364,6 +364,19 @@
                             "hanging": "0b"
                         }
                     }
+                ],
+                "\"pale_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pale_oak_hanging_sign"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached_bit": "0b",
+                            "hanging": "0b"
+                        }
+                    }
                 ]
             },
             "facing": {

@@ -242,6 +242,27 @@
                             }
                         }
                     }
+                ],
+                "\"pale_oak\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "stripped": {
+                                "\"false\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:pale_oak_wood"
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "new_block",
+                                        "options": "minecraft:stripped_pale_oak_wood"
+                                    }
+                                ]
+                            }
+                        }
+                    }
                 ]
             }
         }

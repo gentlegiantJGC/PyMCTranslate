@@ -1,6 +1,29 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:pale_hanging_moss"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "tip": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tip": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tip": "1b"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]

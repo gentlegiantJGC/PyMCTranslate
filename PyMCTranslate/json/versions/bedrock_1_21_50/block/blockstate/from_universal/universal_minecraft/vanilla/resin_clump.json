@@ -1,6 +1,1083 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:resin_clump"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "east": {
+                "\"false\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "north": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "0"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "1"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "2"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "3"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "4"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "5"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "6"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "7"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "8"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "9"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "10"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "11"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "12"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "13"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "15"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "16"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "17"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "18"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "19"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "20"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "21"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "22"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "23"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "24"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "25"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "26"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "27"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "28"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "29"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "30"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "31"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "north": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "32"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "33"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "34"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "35"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "36"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "37"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "38"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "39"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "40"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "41"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "42"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "43"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "44"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "45"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "46"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "47"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "west": {
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "48"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "49"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "50"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "51"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "52"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "53"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "54"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "55"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "south": {
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "56"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "57"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "58"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "59"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "up": {
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "60"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "61"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "down": {
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "62"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "multi_face_direction_bits": "63"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]
