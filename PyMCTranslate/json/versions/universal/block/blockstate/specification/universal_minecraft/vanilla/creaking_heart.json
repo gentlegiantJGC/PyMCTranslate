@@ -1,13 +1,14 @@
 {
     "properties": {
-        "active": [
-            "\"true\"",
-            "\"false\""
-        ],
         "axis": [
             "\"x\"",
             "\"y\"",
             "\"z\""
+        ],
+        "creaking_heart_state": [
+            "\"uprooted\"",
+            "\"dormant\"",
+            "\"awake\""
         ],
         "natural": [
             "\"true\"",
@@ -15,8 +16,8 @@
         ]
     },
     "defaults": {
-        "active": "\"false\"",
         "axis": "\"y\"",
+        "creaking_heart_state": "\"uprooted\"",
         "natural": "\"false\""
     }
 }
