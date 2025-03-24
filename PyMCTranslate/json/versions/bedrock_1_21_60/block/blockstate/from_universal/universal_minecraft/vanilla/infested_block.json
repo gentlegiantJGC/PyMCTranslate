@@ -1,0 +1,43 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:infested_stone"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"chiseled_stone_bricks\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:infested_chiseled_stone_bricks"
+                    }
+                ],
+                "\"cobblestone\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:infested_cobblestone"
+                    }
+                ],
+                "\"cracked_stone_bricks\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:infested_cracked_stone_bricks"
+                    }
+                ],
+                "\"mossy_stone_bricks\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:infested_mossy_stone_bricks"
+                    }
+                ],
+                "\"stone_bricks\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:infested_stone_bricks"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -6,8 +6,8 @@
     {
         "function": "map_properties",
         "options": {
-            "active": {
-                "\"false\"": [
+            "creaking_heart_state": {
+                "\"uprooted\"": [
                     {
                         "function": "new_properties",
                         "options": {
@@ -15,7 +15,15 @@
                         }
                     }
                 ],
-                "\"true\"": [
+                "\"dormant\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "0b"
+                        }
+                    }
+                ],
+                "\"awake\"": [
                     {
                         "function": "new_properties",
                         "options": {

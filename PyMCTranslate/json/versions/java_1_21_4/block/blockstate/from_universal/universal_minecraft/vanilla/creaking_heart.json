@@ -6,19 +6,46 @@
     {
         "function": "carry_properties",
         "options": {
-            "active": [
-                "\"true\"",
-                "\"false\""
-            ],
             "axis": [
                 "\"x\"",
                 "\"y\"",
                 "\"z\""
             ],
             "natural": [
-                "\"true\"",
-                "\"false\""
+                "\"false\"",
+                "\"true\""
             ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "creaking_heart_state": {
+                "\"uprooted\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "\"false\""
+                        }
+                    }
+                ],
+                "\"dormant\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "\"false\""
+                        }
+                    }
+                ],
+                "\"awake\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "\"true\""
+                        }
+                    }
+                ]
+            }
         }
     }
 ]

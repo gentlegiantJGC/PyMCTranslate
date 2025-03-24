@@ -1,0 +1,310 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:skull"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "facing_direction": "1"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "mob": {
+                "\"creeper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:creeper_head"
+                    }
+                ],
+                "\"dragon\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dragon_head"
+                    }
+                ],
+                "\"piglin\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:piglin_head"
+                    }
+                ],
+                "\"player\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:player_head"
+                    }
+                ],
+                "\"skeleton\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:skeleton_skull"
+                    }
+                ],
+                "\"wither_skeleton\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wither_skeleton_skull"
+                    }
+                ],
+                "\"zombie\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:zombie_head"
+                    }
+                ]
+            },
+            "rotation": {
+                "\"0\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "0.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"1\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "22.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"2\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "45.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"3\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "67.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"4\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "90.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"5\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "112.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"6\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "135.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"7\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "157.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"8\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "180.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"9\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-157.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"10\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-135.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"11\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-112.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"12\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-90.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"13\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-67.5f"
+                            }
+                        ]
+                    }
+                ],
+                "\"14\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-45.0f"
+                            }
+                        ]
+                    }
+                ],
+                "\"15\"": [
+                    {
+                        "function": "new_nbt",
+                        "options": [
+                            {
+                                "key": "Rotation",
+                                "value": "-22.5f"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "MouthMoving": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "MouthTickCount": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    }
+]
