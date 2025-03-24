@@ -1,0 +1,73 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:creaking_heart"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "active": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "active": "1b"
+                        }
+                    }
+                ]
+            },
+            "natural": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "natural": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "natural": "1b"
+                        }
+                    }
+                ]
+            },
+            "axis": {
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": "\"x\""
+                        }
+                    }
+                ],
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": "\"y\""
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": "\"z\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

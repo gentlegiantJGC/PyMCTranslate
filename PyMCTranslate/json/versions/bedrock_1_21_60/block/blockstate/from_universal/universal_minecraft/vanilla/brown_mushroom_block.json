@@ -1,0 +1,1083 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:brown_mushroom_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "up": {
+                "\"true\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "down": {
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "north": {
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "north": {
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "3"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "1"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "2"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "9"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "6"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "7"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "8"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "4"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "5"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "\"false\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "down": {
+                                "\"true\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "north": {
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "north": {
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "3"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "1"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "2"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "\"false\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "9"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "14"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "6"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "\"false\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "7"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "8"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "\"false\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "4"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "\"false\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "0"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

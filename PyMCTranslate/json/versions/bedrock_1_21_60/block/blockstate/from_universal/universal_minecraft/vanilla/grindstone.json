@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:grindstone"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "face": {
+                "\"floor\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "\"standing\""
+                        }
+                    }
+                ],
+                "\"ceiling\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "\"hanging\""
+                        }
+                    }
+                ],
+                "\"wall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attachment": "\"side\""
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
