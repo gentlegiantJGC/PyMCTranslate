@@ -4,26 +4,18 @@
         "options": "minecraft:creaking_heart"
     },
     {
+        "function": "carry_properties",
+        "options": {
+            "creaking_heart_state": [
+                "\"uprooted\"",
+                "\"dormant\"",
+                "\"awake\""
+            ]
+        }
+    },
+    {
         "function": "map_properties",
         "options": {
-            "active": {
-                "\"false\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "active": "0b"
-                        }
-                    }
-                ],
-                "\"true\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "active": "1b"
-                        }
-                    }
-                ]
-            },
             "natural": {
                 "\"false\"": [
                     {
