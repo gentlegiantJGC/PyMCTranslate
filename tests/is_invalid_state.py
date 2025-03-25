@@ -5,7 +5,7 @@ Bedrock has a number of states that are unused.
 
 from typing import Any
 
-from amulet_nbt import StringTag, IntTag
+from amulet_nbt import StringTag, ByteTag, IntTag
 import PyMCTranslate
 from PyMCTranslate.py3.api import Block
 
@@ -19,7 +19,12 @@ def is_invalid_state(
     """Skip over invalid states."""
     namespaced_name = input_blockstate.namespaced_name
     if platform_name == "java":
-        pass
+        if version_number <= (1, 12, 2):
+            if namespaced_name == "minecraft:tallgrass":
+                return input_blockstate.properties.get("plant_type", StringTag()).py_str == "dead_bush"
+            if namespaced_name == "minecraft:piston_head":
+                # Numerical does not store sticky state
+                return input_blockstate.properties.get("type", StringTag()).py_str == "sticky"
     elif platform_name == "bedrock":
         if (1, 19, 80) <= version_number and namespaced_name in {
             "minecraft:fence",
@@ -27,7 +32,31 @@ def is_invalid_state(
             "minecraft:log2",
         }:
             return True
+        elif version_number < (1, 18, 30) and namespaced_name in {
+            "minecraft:concrete_powder",
+            "minecraft:piston_arm_collision",
+            "minecraft:trip_wire",
+            "minecraft:invisible_bedrock",
+            "minecraft:sea_lantern",
+            "minecraft:sticky_piston_arm_collision",
+        }:
+            return True
+        elif (1, 18, 30) <= version_number and namespaced_name in {
+            "minecraft:concretePowder",
+            "minecraft:pistonArmCollision",
+            "minecraft:tripWire",
+            "minecraft:invisibleBedrock",
+            "minecraft:seaLantern",
+            "minecraft:stickyPistonArmCollision",
+        }:
+            return True
         elif (1, 13, 0) <= version_number:
+            # if namespaced_name in {
+            #     "minecraft:blue_orchid",
+            #
+            # }:
+            #     # known issues
+            #     return True
             if namespaced_name in {
                 "minecraft:acacia_pressure_plate",
                 "minecraft:birch_pressure_plate",
@@ -99,10 +128,8 @@ def is_invalid_state(
                 "minecraft:dead_tube_coral_fan",
             }:
                 return input_blockstate.properties["coral_fan_direction"].py_int == 1
-            elif namespaced_name in {
-                "minecraft:coral_fan_hang3",
-            }:
-                pass
+            elif namespaced_name == "minecraft:coral_fan_hang3":
+                return input_blockstate.properties["coral_hang_type_bit"].py_int == 1
             elif namespaced_name in {
                 "minecraft:stone_slab",
                 "minecraft:double_stone_slab",
@@ -227,4 +254,15 @@ def is_invalid_state(
                 "minecraft:deprecated_purpur_block_2",
             }:
                 return True
+            elif namespaced_name == "minecraft:stonebrick":
+                return input_blockstate.properties["stone_brick_type"].py_str == "smooth"
+            elif namespaced_name in {
+                "minecraft:mangrove_wood",
+                "minecraft:cherry_wood",
+            }:
+                return input_blockstate.properties.get("stripped_bit", ByteTag()).py_int == 1
+            elif namespaced_name == "minecraft:pink_petals":
+                return 4 <= input_blockstate.properties["growth"].py_int
+            elif namespaced_name == "minecraft:grindstone":
+                return input_blockstate.properties["attachment"].py_str == "multiple"
     return False
