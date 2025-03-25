@@ -192,7 +192,9 @@ class InOutTestCase(TestCase):
 
         for platform_name in translations.platforms():
             for version_number in translations.version_numbers(platform_name):
-                with self.subTest(platform_name=platform_name, version_number=version_number):
+                with self.subTest(
+                    platform_name=platform_name, version_number=version_number
+                ):
                     errors = []
                     version = translations.get_version(platform_name, version_number)
                     log.info(f"Checking version {platform_name} {version_number}")
