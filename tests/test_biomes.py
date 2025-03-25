@@ -2,7 +2,7 @@ import unittest
 import re
 import PyMCTranslate
 
-ResourceID = re.compile(r"[a-z1-9_]*:[a-z1-9_]*")
+ResourceID = re.compile(r"[a-z1-9_]+:[a-z1-9_]+")
 
 
 class SubSetTest(unittest.TestCase):

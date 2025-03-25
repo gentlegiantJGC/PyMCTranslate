@@ -1,16 +1,15 @@
 import logging
 import os
+from unittest import TestCase
+import itertools
+from typing import Any, List
 
 import PyMCTranslate
-import itertools
 import amulet_nbt as nbt
-from typing import Optional, Any, List
 from PyMCTranslate.py3.api import Block
 from is_invalid_state import is_invalid_state
 
 log = logging.getLogger("PyMCTranslate")
-
-test_block_list: Optional[list[tuple[str, tuple[int, ...], str]]] = None
 
 print_extra_needed = False
 
@@ -187,49 +186,37 @@ def get_blockstates(version, namespace_str, base_name):
         yield Block(namespace=namespace_str, base_name=base_name, properties=spec)
 
 
-def main():
-    translations = PyMCTranslate.new_translation_manager()
+class InOutTestCase(TestCase):
+    def test_in_and_out(self) -> None:
+        translations = PyMCTranslate.new_translation_manager()
 
-    if test_block_list is None:
         for platform_name in translations.platforms():
             for version_number in translations.version_numbers(platform_name):
-                errors_path = os.path.join(
-                    "in_out_test", f"{platform_name}_{version_number}.txt"
-                )
-                errors = []
-                version = translations.get_version(platform_name, version_number)
-                log.info(f"Checking version {platform_name} {version_number}")
+                with self.subTest(platform_name=platform_name, version_number=version_number):
+                    errors = []
+                    version = translations.get_version(platform_name, version_number)
+                    log.info(f"Checking version {platform_name} {version_number}")
 
-                for namespace_str in version.block.namespaces(True):
-                    for base_name in version.block.base_names(namespace_str, True):
-                        for input_blockstate in get_blockstates(
-                            version, namespace_str, base_name
-                        ):
-                            errors += in_and_out(
-                                platform_name,
-                                version_number,
-                                version,
-                                input_blockstate,
-                            )
-                if errors:
-                    with open(
-                        errors_path,
-                        "w",
-                    ) as errors_file:
-                        errors_file.write("\n".join(errors) + "\n")
-                elif os.path.isfile(errors_path):
-                    os.remove(errors_path)
-
-    else:
-        for block in test_block_list:
-            platform_name, version_number, block_str = block
-            namespace_str, base_name = block_str.split(":", 1)
-
-            version = translations.get_version(platform_name, version_number)
-
-            for input_blockstate in get_blockstates(version, namespace_str, base_name):
-                in_and_out(platform_name, version_number, version, input_blockstate)
-
-
-if __name__ == "__main__":
-    main()
+                    for namespace_str in version.block.namespaces(True):
+                        for base_name in version.block.base_names(namespace_str, True):
+                            for input_blockstate in get_blockstates(
+                                version, namespace_str, base_name
+                            ):
+                                errors += in_and_out(
+                                    platform_name,
+                                    version_number,
+                                    version,
+                                    input_blockstate,
+                                )
+                    errors_path = os.path.join(
+                        "in_out_test", f"{platform_name}_{version_number}.txt"
+                    )
+                    if errors:
+                        with open(
+                            errors_path,
+                            "w",
+                        ) as errors_file:
+                            errors_file.write("\n".join(errors) + "\n")
+                    elif os.path.isfile(errors_path):
+                        os.remove(errors_path)
+                    self.assertEqual([], errors)
