@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:deprecated_purpur_block_2"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "axis": {
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": "\"y\""
+                        }
+                    }
+                ],
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": "\"x\""
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "pillar_axis": "\"z\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

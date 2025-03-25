@@ -2,5 +2,132 @@
     {
         "function": "new_block",
         "options": "minecraft:border_block"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "north": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_north": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_north": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_north": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "east": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_east": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_east": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_east": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "south": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_south": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_south": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_south": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "west": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_west": "\"none\""
+                        }
+                    }
+                ],
+                "\"low\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_west": "\"short\""
+                        }
+                    }
+                ],
+                "\"tall\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_connection_type_west": "\"tall\""
+                        }
+                    }
+                ]
+            },
+            "up": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_post_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "wall_post_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
     }
 ]
