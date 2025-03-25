@@ -1,5 +1,9 @@
 {
     "properties": {
+        "covered": [
+            "\"false\"",
+            "\"true\""
+        ],
         "layers": [
             "\"1\"",
             "\"2\"",
@@ -12,6 +16,7 @@
         ]
     },
     "defaults": {
+        "covered": "\"false\"",
         "layers": "\"1\""
     }
 }

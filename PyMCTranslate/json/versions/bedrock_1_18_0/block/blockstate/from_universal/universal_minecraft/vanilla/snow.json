@@ -71,6 +71,24 @@
                         }
                     }
                 ]
+            },
+            "covered": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "covered_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "covered_bit": "1b"
+                        }
+                    }
+                ]
             }
         }
     }
