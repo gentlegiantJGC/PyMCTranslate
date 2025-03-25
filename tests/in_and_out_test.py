@@ -1,14 +1,16 @@
 import logging
 import os
+
 import PyMCTranslate
 import itertools
 import amulet_nbt as nbt
 from typing import Optional, Any, List
 from PyMCTranslate.py3.api import Block
+from is_invalid_state import is_invalid_state
 
 log = logging.getLogger("PyMCTranslate")
 
-test_block_list: Optional[list] = None
+test_block_list: Optional[list[tuple[str, tuple[int, ...], str]]] = None
 
 print_extra_needed = False
 
@@ -19,8 +21,10 @@ def in_and_out(
     version: PyMCTranslate.Version,
     input_blockstate: Block,
 ) -> List[str]:
-    # blockstate to universal
     msg = []
+    if is_invalid_state(platform_name, version_number, version, input_blockstate):
+        return msg
+    # blockstate to universal
     try:
         universal_output, extra_output, extra_needed = version.block.to_universal(
             input_blockstate, force_blockstate=True
