@@ -1,0 +1,37 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:sniffer_egg"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "cracked_state": {
+                "\"no_cracks\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hatch": "\"0\""
+                        }
+                    }
+                ],
+                "\"cracked\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hatch": "\"1\""
+                        }
+                    }
+                ],
+                "\"max_cracked\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "hatch": "\"2\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

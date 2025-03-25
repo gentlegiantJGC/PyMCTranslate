@@ -1,0 +1,45 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:jack_o_lantern"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "minecraft:cardinal_direction": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

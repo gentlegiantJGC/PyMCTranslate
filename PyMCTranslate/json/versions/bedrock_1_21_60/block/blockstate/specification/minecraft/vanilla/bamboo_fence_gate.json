@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "in_wall_bit": [
+            "0b",
+            "1b"
+        ],
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ],
+        "open_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "in_wall_bit": "0b",
+        "minecraft:cardinal_direction": "\"south\"",
+        "open_bit": "0b"
+    }
+}

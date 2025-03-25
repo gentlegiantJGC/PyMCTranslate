@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:big_dripleaf"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "tilt": [
+                "\"none\"",
+                "\"unstable\"",
+                "\"partial\"",
+                "\"full\""
+            ]
+        }
+    }
+]

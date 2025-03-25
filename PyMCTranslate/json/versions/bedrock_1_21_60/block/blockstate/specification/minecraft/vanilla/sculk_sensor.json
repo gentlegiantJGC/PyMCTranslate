@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "sculk_sensor_phase": [
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    "defaults": {
+        "sculk_sensor_phase": "0"
+    },
+    "nbt_identifier": [
+        "",
+        "SculkSensor"
+    ],
+    "snbt": "{isMovable: 1b, VibrationListener: {selector: {}}}"
+}
