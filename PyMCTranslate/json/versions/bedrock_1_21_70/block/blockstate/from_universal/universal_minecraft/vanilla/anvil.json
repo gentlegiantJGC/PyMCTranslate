@@ -1,0 +1,65 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:anvil"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "damage": {
+                "\"chipped\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:chipped_anvil"
+                    }
+                ],
+                "\"damaged\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:damaged_anvil"
+                    }
+                ],
+                "\"broken\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:deprecated_anvil"
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
