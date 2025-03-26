@@ -1,17 +1,17 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:leaf_litter"
+        "options": "universal_minecraft:leaf_litter"
     },
     {
         "function": "map_properties",
         "options": {
-            "facing": {
+            "minecraft:cardinal_direction": {
                 "\"east\"": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"east\""
+                            "facing": "\"east\""
                         }
                     }
                 ],
@@ -19,7 +19,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"south\""
+                            "facing": "\"south\""
                         }
                     }
                 ],
@@ -27,7 +27,7 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"west\""
+                            "facing": "\"west\""
                         }
                     }
                 ],
@@ -35,41 +35,73 @@
                     {
                         "function": "new_properties",
                         "options": {
-                            "minecraft:cardinal_direction": "\"north\""
+                            "facing": "\"north\""
                         }
                     }
                 ]
             },
-            "segment_amount": {
-                "\"1\"": [
+            "growth": {
+                "0": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "0"
+                            "segment_amount": "\"1\""
                         }
                     }
                 ],
-                "\"2\"": [
+                "1": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "1"
+                            "segment_amount": "\"2\""
                         }
                     }
                 ],
-                "\"3\"": [
+                "2": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "2"
+                            "segment_amount": "\"3\""
                         }
                     }
                 ],
-                "\"4\"": [
+                "3": [
                     {
                         "function": "new_properties",
                         "options": {
-                            "growth": "3"
+                            "segment_amount": "\"4\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "segment_amount": "\"4\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "segment_amount": "\"4\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "segment_amount": "\"4\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "segment_amount": "\"4\""
                         }
                     }
                 ]

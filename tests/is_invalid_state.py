@@ -270,6 +270,12 @@ def is_invalid_state(
                 )
             elif namespaced_name == "minecraft:torchflower_crop":
                 return 2 <= input_blockstate.properties.get("growth", IntTag()).py_int
+            elif namespaced_name in {
+                "minecraft:leaf_litter",
+                "minecraft:pink_petals",
+                "minecraft:wildflowers",
+            }:
+                return 4 <= input_blockstate.properties["growth"].py_int
             elif namespaced_name == "minecraft:pitcher_crop":
                 return 5 <= input_blockstate.properties["growth"].py_int
             elif namespaced_name in {
@@ -303,8 +309,6 @@ def is_invalid_state(
                     input_blockstate.properties.get("stripped_bit", ByteTag()).py_int
                     == 1
                 )
-            elif namespaced_name == "minecraft:pink_petals":
-                return 4 <= input_blockstate.properties["growth"].py_int
             elif namespaced_name == "minecraft:grindstone":
                 return input_blockstate.properties["attachment"].py_str == "multiple"
     return False
