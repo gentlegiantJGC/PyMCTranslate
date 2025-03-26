@@ -1,6 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:short_dry_grass"
+        "options": "universal_minecraft:plant"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "plant_type": "\"short_dry_grass\""
+        }
     }
 ]
