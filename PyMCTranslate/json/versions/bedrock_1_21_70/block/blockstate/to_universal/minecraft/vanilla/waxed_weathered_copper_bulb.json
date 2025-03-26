@@ -1,0 +1,47 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:waxed_weathered_copper_bulb"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "lit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"true\""
+                        }
+                    }
+                ]
+            },
+            "powered_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
