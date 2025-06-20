@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:pressure_plate"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"spruce\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

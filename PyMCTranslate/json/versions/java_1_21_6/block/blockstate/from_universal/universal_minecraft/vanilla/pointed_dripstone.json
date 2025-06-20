@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:pointed_dripstone"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "thickness": [
+                "\"tip_merge\"",
+                "\"tip\"",
+                "\"frustum\"",
+                "\"middle\"",
+                "\"base\""
+            ],
+            "vertical_direction": [
+                "\"up\"",
+                "\"down\""
+            ]
+        }
+    }
+]
