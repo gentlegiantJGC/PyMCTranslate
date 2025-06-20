@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:chorus_plant"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "down": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "east": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "north": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "south": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "up": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "west": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

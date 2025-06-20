@@ -1,0 +1,51 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:leaves"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"pale_oak\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "distance": [
+                "\"1\"",
+                "\"2\"",
+                "\"3\"",
+                "\"4\"",
+                "\"5\"",
+                "\"6\"",
+                "\"7\""
+            ]
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "persistent": {
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "persistent": "\"true\"",
+                            "check_decay": "\"false\""
+                        }
+                    }
+                ],
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "persistent": "\"false\"",
+                            "check_decay": "\"false\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
