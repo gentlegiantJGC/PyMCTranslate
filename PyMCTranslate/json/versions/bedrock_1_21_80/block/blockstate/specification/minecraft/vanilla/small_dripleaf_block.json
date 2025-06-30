@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ],
+        "upper_block_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "minecraft:cardinal_direction": "\"south\"",
+        "upper_block_bit": "0b"
+    }
+}

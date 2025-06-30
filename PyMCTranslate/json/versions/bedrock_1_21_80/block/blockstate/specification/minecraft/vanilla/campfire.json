@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "extinguished": [
+            "0b",
+            "1b"
+        ],
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ]
+    },
+    "defaults": {
+        "extinguished": "0b",
+        "minecraft:cardinal_direction": "\"south\""
+    },
+    "nbt_identifier": [
+        "",
+        "Campfire"
+    ],
+    "snbt": "{isMovable: 1b, ItemTime1: 0, ItemTime2: 0, ItemTime3: 0, ItemTime4: 0}"
+}

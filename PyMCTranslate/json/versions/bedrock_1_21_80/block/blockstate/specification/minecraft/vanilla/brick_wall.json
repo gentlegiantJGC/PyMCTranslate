@@ -1,0 +1,35 @@
+{
+    "properties": {
+        "wall_connection_type_east": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_connection_type_north": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_connection_type_south": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_connection_type_west": [
+            "\"none\"",
+            "\"short\"",
+            "\"tall\""
+        ],
+        "wall_post_bit": [
+            "0b",
+            "1b"
+        ]
+    },
+    "defaults": {
+        "wall_connection_type_east": "\"none\"",
+        "wall_connection_type_north": "\"none\"",
+        "wall_connection_type_south": "\"none\"",
+        "wall_connection_type_west": "\"none\"",
+        "wall_post_bit": "0b"
+    }
+}

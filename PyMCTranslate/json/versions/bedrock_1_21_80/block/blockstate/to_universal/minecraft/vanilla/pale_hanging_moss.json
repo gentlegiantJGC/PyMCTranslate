@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:pale_hanging_moss"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "tip": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tip": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "tip": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

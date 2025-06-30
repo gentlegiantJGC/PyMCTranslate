@@ -1,0 +1,71 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:lab_table"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "chemistry_table_type": {
+                "\"compound_creator\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:compound_creator"
+                    }
+                ],
+                "\"material_reducer\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:material_reducer"
+                    }
+                ],
+                "\"element_constructor\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:element_constructor"
+                    }
+                ],
+                "\"lab_table\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lab_table"
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
