@@ -1,0 +1,1093 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:redstone_wire"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "redstone_signal": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"0\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"1\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"2\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"3\""
+                        }
+                    }
+                ],
+                "4": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"4\""
+                        }
+                    }
+                ],
+                "5": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"5\""
+                        }
+                    }
+                ],
+                "6": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"6\""
+                        }
+                    }
+                ],
+                "7": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"7\""
+                        }
+                    }
+                ],
+                "8": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"8\""
+                        }
+                    }
+                ],
+                "9": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"9\""
+                        }
+                    }
+                ],
+                "10": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"10\""
+                        }
+                    }
+                ],
+                "11": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"11\""
+                        }
+                    }
+                ],
+                "12": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"12\""
+                        }
+                    }
+                ],
+                "13": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"13\""
+                        }
+                    }
+                ],
+                "14": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"14\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "power": "\"15\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "north": "\"side\"",
+            "south": "\"side\"",
+            "west": "\"side\"",
+            "east": "\"side\""
+        }
+    },
+    {
+        "function": "multiblock",
+        "options": [
+            {
+                "coords": [
+                    0,
+                    0,
+                    -1
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "north": "\"none\""
+                                    }
+                                },
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glowstone": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:stained_glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    0,
+                    0,
+                    1
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "south": "\"none\""
+                                    }
+                                },
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glowstone": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:stained_glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    -1,
+                    0,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "west": "\"none\""
+                                    }
+                                },
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glowstone": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:stained_glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    1,
+                    0,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "east": "\"none\""
+                                    }
+                                },
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glowstone": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:stained_glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                -1,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"side\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    0,
+                    1,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glowstone": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "minecraft:stained_glass": [
+                                {
+                                    "function": "multiblock",
+                                    "options": [
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                -1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "north": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                0,
+                                                0,
+                                                1
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "south": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                -1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "west": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "coords": [
+                                                1,
+                                                0,
+                                                0
+                                            ],
+                                            "functions": [
+                                                {
+                                                    "function": "map_block_name",
+                                                    "options": {
+                                                        "minecraft:redstone_wire": [
+                                                            {
+                                                                "function": "new_properties",
+                                                                "options": {
+                                                                    "east": "\"up\""
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

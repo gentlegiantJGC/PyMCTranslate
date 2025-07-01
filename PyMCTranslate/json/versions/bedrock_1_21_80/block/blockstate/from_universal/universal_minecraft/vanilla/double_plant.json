@@ -1,0 +1,67 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:tall_grass"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "plant_type": {
+                "\"sunflower\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:sunflower"
+                    }
+                ],
+                "\"lilac\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lilac"
+                    }
+                ],
+                "\"rose_bush\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:rose_bush"
+                    }
+                ],
+                "\"peony\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:peony"
+                    }
+                ],
+                "\"tall_grass\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:tall_grass"
+                    }
+                ],
+                "\"large_fern\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:large_fern"
+                    }
+                ]
+            },
+            "half": {
+                "\"lower\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "0b"
+                        }
+                    }
+                ],
+                "\"upper\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "upper_block_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

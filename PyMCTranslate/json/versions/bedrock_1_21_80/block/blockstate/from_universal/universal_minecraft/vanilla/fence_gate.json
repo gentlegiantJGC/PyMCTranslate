@@ -1,0 +1,155 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:fence_gate"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:fence_gate"
+                    }
+                ],
+                "\"spruce\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:spruce_fence_gate"
+                    }
+                ],
+                "\"birch\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:birch_fence_gate"
+                    }
+                ],
+                "\"jungle\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:jungle_fence_gate"
+                    }
+                ],
+                "\"dark_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dark_oak_fence_gate"
+                    }
+                ],
+                "\"acacia\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:acacia_fence_gate"
+                    }
+                ],
+                "\"crimson\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:crimson_fence_gate"
+                    }
+                ],
+                "\"warped\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:warped_fence_gate"
+                    }
+                ],
+                "\"mangrove\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:mangrove_fence_gate"
+                    }
+                ],
+                "\"bamboo\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:bamboo_fence_gate"
+                    }
+                ],
+                "\"cherry\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:cherry_fence_gate"
+                    }
+                ],
+                "\"pale_oak\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:pale_oak_fence_gate"
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "in_wall": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "in_wall_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "in_wall_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "open": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "open_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
