@@ -1,19 +1,24 @@
 {
+    "nbt_identifier": [
+        "minecraft",
+        "chest"
+    ],
+    "snbt": "{Items: [], Lock: \"\"}",
     "properties": {
-        "type": [
-            "\"single\"",
-            "\"left\"",
-            "\"right\""
-        ],
         "facing": [
             "\"north\"",
             "\"south\"",
             "\"west\"",
             "\"east\""
+        ],
+        "type": [
+            "\"single\"",
+            "\"left\"",
+            "\"right\""
         ]
     },
     "defaults": {
-        "type": "\"single\"",
-        "facing": "\"north\""
+        "facing": "\"north\"",
+        "type": "\"single\""
     }
 }

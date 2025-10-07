@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:waxed_oxidized_copper_lantern"
+        "options": "universal_minecraft:lantern"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_oxidized_copper\""
+        }
     },
     {
         "function": "carry_properties",

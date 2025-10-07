@@ -1,6 +1,78 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:golem_statue"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:copper_golem_statue"
+                    }
+                ],
+                "\"exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:exposed_copper_golem_statue"
+                    }
+                ],
+                "\"weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:weathered_copper_golem_statue"
+                    }
+                ],
+                "\"oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oxidized_copper_golem_statue"
+                    }
+                ],
+                "\"waxed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_copper_golem_statue"
+                    }
+                ],
+                "\"waxed_exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_exposed_copper_golem_statue"
+                    }
+                ],
+                "\"waxed_weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_weathered_copper_golem_statue"
+                    }
+                ],
+                "\"waxed_oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_oxidized_copper_golem_statue"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "copper_golem_pose": [
+                "\"standing\"",
+                "\"sitting\"",
+                "\"running\"",
+                "\"star\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
     }
 ]

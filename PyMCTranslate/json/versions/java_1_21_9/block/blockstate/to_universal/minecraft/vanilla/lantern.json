@@ -4,6 +4,12 @@
         "options": "universal_minecraft:lantern"
     },
     {
+        "function": "new_properties",
+        "options": {
+            "material": "\"iron\""
+        }
+    },
+    {
         "function": "carry_properties",
         "options": {
             "hanging": [

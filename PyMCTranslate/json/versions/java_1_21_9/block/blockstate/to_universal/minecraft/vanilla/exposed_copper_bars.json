@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:exposed_copper_bars"
+        "options": "universal_minecraft:bars"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"exposed_copper\""
+        }
     },
     {
         "function": "carry_properties",

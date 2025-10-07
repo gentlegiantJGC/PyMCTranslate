@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:waxed_copper_golem_statue"
+        "options": "universal_minecraft:golem_statue"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_copper\""
+        }
     },
     {
         "function": "carry_properties",

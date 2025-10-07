@@ -1,6 +1,7 @@
 {
     "properties": {
         "material": [
+            "\"iron\"",
             "\"copper\"",
             "\"exposed_copper\"",
             "\"weathered_copper\"",
@@ -16,7 +17,7 @@
         ]
     },
     "defaults": {
-        "material": "\"copper\"",
+        "material": "\"iron\"",
         "hanging": "\"false\""
     }
 }

@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:iron_chain"
+        "options": "universal_minecraft:chain"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"iron\""
+        }
     },
     {
         "function": "carry_properties",

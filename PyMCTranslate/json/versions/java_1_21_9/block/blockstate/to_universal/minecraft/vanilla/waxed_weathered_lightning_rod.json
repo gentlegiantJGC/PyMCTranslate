@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:waxed_weathered_lightning_rod"
+        "options": "universal_minecraft:lightning_rod"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_weathered_copper\""
+        }
     },
     {
         "function": "carry_properties",

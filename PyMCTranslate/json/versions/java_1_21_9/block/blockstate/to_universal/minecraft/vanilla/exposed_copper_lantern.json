@@ -1,7 +1,13 @@
 [
     {
         "function": "new_block",
-        "options": "universal_minecraft:exposed_copper_lantern"
+        "options": "universal_minecraft:lantern"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"exposed_copper\""
+        }
     },
     {
         "function": "carry_properties",

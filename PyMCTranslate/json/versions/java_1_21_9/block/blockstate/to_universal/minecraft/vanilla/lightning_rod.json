@@ -4,6 +4,12 @@
         "options": "universal_minecraft:lightning_rod"
     },
     {
+        "function": "new_properties",
+        "options": {
+            "material": "\"copper\""
+        }
+    },
+    {
         "function": "carry_properties",
         "options": {
             "facing": [
