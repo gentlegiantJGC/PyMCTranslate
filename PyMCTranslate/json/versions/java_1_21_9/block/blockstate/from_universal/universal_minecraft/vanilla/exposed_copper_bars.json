@@ -1,0 +1,27 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:exposed_copper_bars"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "east": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "north": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "south": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "west": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

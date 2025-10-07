@@ -1,0 +1,23 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:dried_ghast"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ],
+            "hydration": [
+                "\"0\"",
+                "\"1\"",
+                "\"2\"",
+                "\"3\""
+            ]
+        }
+    }
+]

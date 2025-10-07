@@ -1,0 +1,69 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:candle"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "color": "\"light_gray\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "candles": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "\"1\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "\"2\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "\"3\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "candles": "\"4\""
+                        }
+                    }
+                ]
+            },
+            "lit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "lit": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

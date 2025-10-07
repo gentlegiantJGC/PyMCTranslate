@@ -1,0 +1,72 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:mushroom_stem"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "huge_mushroom_bits": "15"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "up": {
+                "\"false\"": [
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "down": {
+                                "\"false\"": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "north": {
+                                                "\"true\"": [
+                                                    {
+                                                        "function": "map_properties",
+                                                        "options": {
+                                                            "east": {
+                                                                "\"true\"": [
+                                                                    {
+                                                                        "function": "map_properties",
+                                                                        "options": {
+                                                                            "south": {
+                                                                                "\"true\"": [
+                                                                                    {
+                                                                                        "function": "map_properties",
+                                                                                        "options": {
+                                                                                            "west": {
+                                                                                                "\"true\"": [
+                                                                                                    {
+                                                                                                        "function": "new_properties",
+                                                                                                        "options": {
+                                                                                                            "huge_mushroom_bits": "10"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

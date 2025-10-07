@@ -1,0 +1,47 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:mushroom_stem"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "huge_mushroom_bits": {
+                "10": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:mushroom_stem"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "up": "\"false\"",
+                            "down": "\"false\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\""
+                        }
+                    }
+                ],
+                "15": [
+                    {
+                        "function": "new_block",
+                        "options": "universal_minecraft:mushroom_stem"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "up": "\"true\"",
+                            "down": "\"true\"",
+                            "north": "\"true\"",
+                            "east": "\"true\"",
+                            "south": "\"true\"",
+                            "west": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

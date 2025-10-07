@@ -1,0 +1,44 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:wood"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"cherry\"",
+            "stripped": "\"true\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "pillar_axis": {
+                "\"y\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"y\""
+                        }
+                    }
+                ],
+                "\"x\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"x\""
+                        }
+                    }
+                ],
+                "\"z\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "axis": "\"z\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

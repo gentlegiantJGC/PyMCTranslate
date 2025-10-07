@@ -1,0 +1,81 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:tripwire_hook"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "attached": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "attached_bit": "1b"
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "0"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "1"
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "2"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "direction": "3"
+                        }
+                    }
+                ]
+            },
+            "powered": {
+                "\"false\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "0b"
+                        }
+                    }
+                ],
+                "\"true\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "powered_bit": "1b"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

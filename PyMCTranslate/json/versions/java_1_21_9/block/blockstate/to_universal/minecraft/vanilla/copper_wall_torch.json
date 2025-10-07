@@ -1,0 +1,17 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:copper_wall_torch"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

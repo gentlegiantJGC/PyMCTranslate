@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "button_pressed_bit": [
+            "0b",
+            "1b"
+        ],
+        "facing_direction": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    "defaults": {
+        "button_pressed_bit": "0b",
+        "facing_direction": "0"
+    }
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tripwire"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "attached": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "disarmed": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "east": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "north": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "south": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "west": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:test_block"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "mode": [
+                "\"start\"",
+                "\"log\"",
+                "\"fail\"",
+                "\"accept\""
+            ]
+        }
+    }
+]

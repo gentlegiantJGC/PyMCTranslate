@@ -1,0 +1,35 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:tnt"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "underwater": "\"false\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "explode_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "unstable": "\"false\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "unstable": "\"true\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

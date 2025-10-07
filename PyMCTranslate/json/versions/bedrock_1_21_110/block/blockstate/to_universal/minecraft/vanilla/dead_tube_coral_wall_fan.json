@@ -1,0 +1,52 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:coral_fan"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "coral_type": "\"tube\"",
+            "dead": "\"true\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "coral_direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

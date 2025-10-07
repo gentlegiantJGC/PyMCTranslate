@@ -1,0 +1,25 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:creaking_heart"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "axis": [
+                "\"x\"",
+                "\"y\"",
+                "\"z\""
+            ],
+            "creaking_heart_state": [
+                "\"uprooted\"",
+                "\"dormant\"",
+                "\"awake\""
+            ],
+            "natural": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:copper_chest"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "type": [
+                "\"single\"",
+                "\"left\"",
+                "\"right\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

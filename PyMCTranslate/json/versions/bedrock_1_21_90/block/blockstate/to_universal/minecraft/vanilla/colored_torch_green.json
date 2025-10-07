@@ -1,0 +1,61 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:colored_torch_green"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "torch_facing_direction": {
+                "\"unknown\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"top\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"up\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
