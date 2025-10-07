@@ -1,5 +1,9 @@
 {
     "properties": {
+        "material": [
+            "\"normal\"",
+            "\"copper\""
+        ],
         "facing": [
             "\"up\"",
             "\"north\"",
@@ -9,6 +13,7 @@
         ]
     },
     "defaults": {
+        "material": "\"normal\"",
         "facing": "\"up\""
     }
 }

@@ -1,0 +1,40 @@
+{
+    "properties": {
+        "material": [
+            "\"oak\"",
+            "\"spruce\"",
+            "\"birch\"",
+            "\"jungle\"",
+            "\"acacia\"",
+            "\"dark_oak\"",
+            "\"mangrove\"",
+            "\"crimson\"",
+            "\"warped\"",
+            "\"bamboo\"",
+            "\"cherry\"",
+            "\"pale_oak\""
+        ],
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
+        ],
+        "powered": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "side_chain": [
+            "\"unconnected\"",
+            "\"right\"",
+            "\"center\"",
+            "\"left\""
+        ]
+    },
+    "defaults": {
+        "material": "\"oak\"",
+        "facing": "\"north\"",
+        "powered": "\"false\"",
+        "side_chain": "\"unconnected\""
+    }
+}

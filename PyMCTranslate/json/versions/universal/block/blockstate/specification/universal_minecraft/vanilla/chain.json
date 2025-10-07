@@ -1,6 +1,7 @@
 {
     "properties": {
         "material": [
+            "\"iron\"",
             "\"copper\"",
             "\"exposed_copper\"",
             "\"weathered_copper\"",
@@ -10,13 +11,14 @@
             "\"waxed_weathered_copper\"",
             "\"waxed_oxidized_copper\""
         ],
-        "hanging": [
-            "\"true\"",
-            "\"false\""
+        "axis": [
+            "\"x\"",
+            "\"y\"",
+            "\"z\""
         ]
     },
     "defaults": {
-        "material": "\"copper\"",
-        "hanging": "\"false\""
+        "material": "\"iron\"",
+        "axis": "\"y\""
     }
 }

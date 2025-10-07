@@ -10,13 +10,22 @@
             "\"waxed_weathered_copper\"",
             "\"waxed_oxidized_copper\""
         ],
-        "hanging": [
-            "\"true\"",
-            "\"false\""
+        "copper_golem_pose": [
+            "\"standing\"",
+            "\"sitting\"",
+            "\"running\"",
+            "\"star\""
+        ],
+        "facing": [
+            "\"north\"",
+            "\"south\"",
+            "\"west\"",
+            "\"east\""
         ]
     },
     "defaults": {
         "material": "\"copper\"",
-        "hanging": "\"false\""
+        "copper_golem_pose": "\"standing\"",
+        "facing": "\"north\""
     }
 }

@@ -1,6 +1,7 @@
 {
     "properties": {
         "material": [
+            "\"iron\"",
             "\"copper\"",
             "\"exposed_copper\"",
             "\"weathered_copper\"",
@@ -10,13 +11,28 @@
             "\"waxed_weathered_copper\"",
             "\"waxed_oxidized_copper\""
         ],
-        "hanging": [
+        "east": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "north": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "south": [
+            "\"true\"",
+            "\"false\""
+        ],
+        "west": [
             "\"true\"",
             "\"false\""
         ]
     },
     "defaults": {
-        "material": "\"copper\"",
-        "hanging": "\"false\""
+        "material": "\"iron\"",
+        "east": "\"false\"",
+        "north": "\"false\"",
+        "south": "\"false\"",
+        "west": "\"false\""
     }
 }

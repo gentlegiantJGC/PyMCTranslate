@@ -1,5 +1,15 @@
 {
     "properties": {
+        "material": [
+            "\"copper\"",
+            "\"exposed_copper\"",
+            "\"weathered_copper\"",
+            "\"oxidized_copper\"",
+            "\"waxed_copper\"",
+            "\"waxed_exposed_copper\"",
+            "\"waxed_weathered_copper\"",
+            "\"waxed_oxidized_copper\""
+        ],
         "facing": [
             "\"north\"",
             "\"east\"",
@@ -14,6 +24,7 @@
         ]
     },
     "defaults": {
+        "material": "\"copper\"",
         "facing": "\"up\"",
         "powered": "\"false\""
     }
