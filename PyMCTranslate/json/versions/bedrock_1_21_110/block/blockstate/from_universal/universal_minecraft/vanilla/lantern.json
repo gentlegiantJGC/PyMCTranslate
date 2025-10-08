@@ -23,6 +23,62 @@
                         }
                     }
                 ]
+            },
+            "material": {
+                "\"iron\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:lantern"
+                    }
+                ],
+                "\"copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:copper_lantern"
+                    }
+                ],
+                "\"exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:exposed_copper_lantern"
+                    }
+                ],
+                "\"weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:weathered_copper_lantern"
+                    }
+                ],
+                "\"oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oxidized_copper_lantern"
+                    }
+                ],
+                "\"waxed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_copper_lantern"
+                    }
+                ],
+                "\"waxed_exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_exposed_copper_lantern"
+                    }
+                ],
+                "\"waxed_weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_weathered_copper_lantern"
+                    }
+                ],
+                "\"waxed_oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_oxidized_copper_lantern"
+                    }
+                ]
             }
         }
     }

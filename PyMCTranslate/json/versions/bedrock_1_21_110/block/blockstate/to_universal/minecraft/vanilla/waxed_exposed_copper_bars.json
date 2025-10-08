@@ -1,0 +1,114 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:iron_bars"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_exposed_copper\""
+        }
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "north": "\"true\"",
+            "east": "\"true\"",
+            "south": "\"true\"",
+            "west": "\"true\""
+        }
+    },
+    {
+        "function": "multiblock",
+        "options": [
+            {
+                "coords": [
+                    0,
+                    0,
+                    -1
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "north": "\"false\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    0,
+                    0,
+                    1
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "south": "\"false\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    -1,
+                    0,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "west": "\"false\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "coords": [
+                    1,
+                    0,
+                    0
+                ],
+                "functions": [
+                    {
+                        "function": "map_block_name",
+                        "options": {
+                            "minecraft:air": [
+                                {
+                                    "function": "new_properties",
+                                    "options": {
+                                        "east": "\"false\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

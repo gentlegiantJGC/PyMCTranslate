@@ -466,5 +466,11 @@
     {
         "function": "new_block",
         "options": "universal_minecraft:chest"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"wood\""
+        }
     }
 ]

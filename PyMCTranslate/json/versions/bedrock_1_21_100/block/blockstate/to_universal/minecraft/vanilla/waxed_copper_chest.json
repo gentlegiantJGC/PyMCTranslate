@@ -1,0 +1,476 @@
+[
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "Findable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Items": {
+                    "type": "list",
+                    "nested_default": [],
+                    "self_default": [],
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "isMovable": {
+                    "type": "byte",
+                    "functions": [
+                        {
+                            "function": "carry_nbt",
+                            "options": {
+                                "path": [
+                                    [
+                                        "utags",
+                                        "compound"
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "pairlead": {
+                    "type": "byte"
+                },
+                "pairx": {
+                    "type": "int"
+                },
+                "pairz": {
+                    "type": "int"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    },
+    {
+        "function": "code",
+        "options": {
+            "input": [
+                "nbt",
+                "properties",
+                "location"
+            ],
+            "output": [
+                "new_properties"
+            ],
+            "function": "bedrock_chest_connection_self_120"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "minecraft:cardinal_direction": {
+                "\"north\"": [
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"north\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_left_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"north\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_right_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    -1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"south\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_left_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"south\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_right_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"west\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_left_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"west\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_right_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"east\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_left_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "coords": [
+                                    0,
+                                    0,
+                                    -1
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_block_name",
+                                        "options": {
+                                            "minecraft:chest": [
+                                                {
+                                                    "function": "map_properties",
+                                                    "options": {
+                                                        "minecraft:cardinal_direction": {
+                                                            "\"east\"": [
+                                                                {
+                                                                    "function": "code",
+                                                                    "options": {
+                                                                        "input": [
+                                                                            "nbt",
+                                                                            "properties",
+                                                                            "location"
+                                                                        ],
+                                                                        "output": [
+                                                                            "new_properties"
+                                                                        ],
+                                                                        "function": "bedrock_chest_connection_other_right_120"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:chest"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_copper\""
+        }
+    }
+]

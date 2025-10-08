@@ -2,5 +2,66 @@
     {
         "function": "new_block",
         "options": "minecraft:air"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "material": {
+                "\"iron\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:iron_bars"
+                    }
+                ],
+                "\"copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:copper_bars"
+                    }
+                ],
+                "\"exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:exposed_copper_bars"
+                    }
+                ],
+                "\"weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:weathered_copper_bars"
+                    }
+                ],
+                "\"oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oxidized_copper_bars"
+                    }
+                ],
+                "\"waxed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_copper_bars"
+                    }
+                ],
+                "\"waxed_exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_exposed_copper_bars"
+                    }
+                ],
+                "\"waxed_weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_weathered_copper_bars"
+                    }
+                ],
+                "\"waxed_oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_oxidized_copper_bars"
+                    }
+                ]
+            }
+        }
     }
 ]
