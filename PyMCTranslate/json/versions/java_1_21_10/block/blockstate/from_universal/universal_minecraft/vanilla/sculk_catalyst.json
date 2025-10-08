@@ -1,0 +1,45 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:sculk_catalyst"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "bloom": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {}
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    }
+]
