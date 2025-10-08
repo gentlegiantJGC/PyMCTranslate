@@ -1,6 +1,12 @@
 [
     {
         "function": "new_block",
-        "options": "minecraft:air"
+        "options": "minecraft:iron_bars"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "block_data": "0"
+        }
     }
 ]
