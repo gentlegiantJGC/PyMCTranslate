@@ -1,0 +1,85 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:big_dripleaf"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "big_dripleaf_head": "0b"
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "tilt": {
+                "\"none\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "big_dripleaf_tilt": "\"none\""
+                        }
+                    }
+                ],
+                "\"unstable\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "big_dripleaf_tilt": "\"unstable\""
+                        }
+                    }
+                ],
+                "\"partial\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "big_dripleaf_tilt": "\"partial_tilt\""
+                        }
+                    }
+                ],
+                "\"full\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "big_dripleaf_tilt": "\"full_tilt\""
+                        }
+                    }
+                ]
+            },
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

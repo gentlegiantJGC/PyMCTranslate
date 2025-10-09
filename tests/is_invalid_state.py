@@ -32,7 +32,9 @@ def is_invalid_state(
                     == "sticky"
                 )
     elif platform_name == "bedrock":
-        if (1, 19, 80) <= version_number and namespaced_name in {
+        if (1, 21, 110) <= version_number and namespaced_name == "minecraft:chain":
+            return True
+        elif (1, 19, 80) <= version_number and namespaced_name in {
             "minecraft:fence",
             "minecraft:log",
             "minecraft:log2",
@@ -122,6 +124,7 @@ def is_invalid_state(
                 "minecraft:colored_torch_red",
                 "minecraft:colored_torch_green",
                 "minecraft:torch",
+                "minecraft:copper_torch",
                 "minecraft:underwater_torch",
                 "minecraft:unlit_redstone_torch",
                 "minecraft:redstone_torch",

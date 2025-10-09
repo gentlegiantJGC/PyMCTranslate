@@ -1,0 +1,69 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:stairs"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"smooth_red_sandstone\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "upside_down_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"bottom\""
+                        }
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"top\""
+                        }
+                    }
+                ]
+            },
+            "weirdo_direction": {
+                "0": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ],
+                "1": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "2": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "3": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

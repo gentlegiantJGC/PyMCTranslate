@@ -1,0 +1,29 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:golem_statue"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"exposed_copper\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "copper_golem_pose": [
+                "\"standing\"",
+                "\"sitting\"",
+                "\"running\"",
+                "\"star\""
+            ],
+            "facing": [
+                "\"north\"",
+                "\"south\"",
+                "\"west\"",
+                "\"east\""
+            ]
+        }
+    }
+]

@@ -1,0 +1,30 @@
+{
+    "properties": {
+        "minecraft:cardinal_direction": [
+            "\"south\"",
+            "\"west\"",
+            "\"north\"",
+            "\"east\""
+        ],
+        "powered_bit": [
+            "0b",
+            "1b"
+        ],
+        "powered_shelf_type": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    "defaults": {
+        "minecraft:cardinal_direction": "\"south\"",
+        "powered_bit": "0b",
+        "powered_shelf_type": "0"
+    },
+    "nbt_identifier": [
+        "",
+        "Shelf"
+    ],
+    "snbt": "{isMovable: 1b, Items: []}"
+}

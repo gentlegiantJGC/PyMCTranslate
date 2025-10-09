@@ -1,0 +1,36 @@
+{
+    "properties": {
+        "power": [
+            "\"0\"",
+            "\"1\"",
+            "\"2\"",
+            "\"3\"",
+            "\"4\"",
+            "\"5\"",
+            "\"6\"",
+            "\"7\"",
+            "\"8\"",
+            "\"9\"",
+            "\"10\"",
+            "\"11\"",
+            "\"12\"",
+            "\"13\"",
+            "\"14\"",
+            "\"15\""
+        ],
+        "sculk_sensor_phase": [
+            "\"inactive\"",
+            "\"active\"",
+            "\"cooldown\""
+        ]
+    },
+    "defaults": {
+        "power": "\"0\"",
+        "sculk_sensor_phase": "\"inactive\""
+    },
+    "snbt": "{last_vibration_frequency: 0, listener: {event_delay: 0, event_distance: 0.0f, range: 8, source: {pos: [I;0, 0, 0], type: \"minecraft:block\"}}}",
+    "nbt_identifier": [
+        "minecraft",
+        "sculk_sensor"
+    ]
+}

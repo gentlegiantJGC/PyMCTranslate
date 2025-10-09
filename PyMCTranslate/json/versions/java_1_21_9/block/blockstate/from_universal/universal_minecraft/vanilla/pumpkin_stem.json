@@ -1,0 +1,78 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:pumpkin_stem"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"none\"": [
+                    {
+                        "function": "carry_properties",
+                        "options": {
+                            "age": [
+                                "\"0\"",
+                                "\"1\"",
+                                "\"2\"",
+                                "\"3\"",
+                                "\"4\"",
+                                "\"5\"",
+                                "\"6\"",
+                                "\"7\""
+                            ]
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:attached_pumpkin_stem"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"north\""
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:attached_pumpkin_stem"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:attached_pumpkin_stem"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"west\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:attached_pumpkin_stem"
+                    },
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing": "\"east\""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

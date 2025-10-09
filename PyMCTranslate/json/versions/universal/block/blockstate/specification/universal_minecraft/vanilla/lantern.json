@@ -1,11 +1,23 @@
 {
     "properties": {
+        "material": [
+            "\"iron\"",
+            "\"copper\"",
+            "\"exposed_copper\"",
+            "\"weathered_copper\"",
+            "\"oxidized_copper\"",
+            "\"waxed_copper\"",
+            "\"waxed_exposed_copper\"",
+            "\"waxed_weathered_copper\"",
+            "\"waxed_oxidized_copper\""
+        ],
         "hanging": [
             "\"true\"",
             "\"false\""
         ]
     },
     "defaults": {
+        "material": "\"iron\"",
         "hanging": "\"false\""
     }
 }

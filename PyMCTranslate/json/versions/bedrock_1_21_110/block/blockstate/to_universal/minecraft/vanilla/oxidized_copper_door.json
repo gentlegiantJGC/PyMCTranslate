@@ -1,0 +1,223 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:door"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"oxidized_copper\""
+        }
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "upper_block_bit": {
+                "0b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"lower\""
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": {
+                                "\"east\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "\"east\""
+                                        }
+                                    }
+                                ],
+                                "\"south\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "\"south\""
+                                        }
+                                    }
+                                ],
+                                "\"west\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "\"west\""
+                                        }
+                                    }
+                                ],
+                                "\"north\"": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "facing": "\"north\""
+                                        }
+                                    }
+                                ]
+                            },
+                            "open_bit": {
+                                "0b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "open": "\"false\""
+                                        }
+                                    }
+                                ],
+                                "1b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "open": "\"true\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "door_hinge_bit": {
+                                                "0b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "hinge": "\"left\""
+                                                        }
+                                                    }
+                                                ],
+                                                "1b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "hinge": "\"right\""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "1b": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "half": "\"upper\""
+                        }
+                    },
+                    {
+                        "function": "map_properties",
+                        "options": {
+                            "door_hinge_bit": {
+                                "0b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "hinge": "\"left\""
+                                        }
+                                    }
+                                ],
+                                "1b": [
+                                    {
+                                        "function": "new_properties",
+                                        "options": {
+                                            "hinge": "\"right\""
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "function": "multiblock",
+                        "options": [
+                            {
+                                "coords": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "functions": [
+                                    {
+                                        "function": "map_properties",
+                                        "options": {
+                                            "minecraft:cardinal_direction": {
+                                                "\"east\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"east\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"south\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"south\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"west\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"west\""
+                                                        }
+                                                    }
+                                                ],
+                                                "\"north\"": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "facing": "\"north\""
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "open_bit": {
+                                                "0b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "open": "\"false\""
+                                                        }
+                                                    }
+                                                ],
+                                                "1b": [
+                                                    {
+                                                        "function": "new_properties",
+                                                        "options": {
+                                                            "open": "\"true\""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

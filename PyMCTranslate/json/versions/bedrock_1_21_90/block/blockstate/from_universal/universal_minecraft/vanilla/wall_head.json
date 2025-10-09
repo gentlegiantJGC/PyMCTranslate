@@ -1,0 +1,160 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:skull"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "2"
+                        }
+                    }
+                ],
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "3"
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "4"
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "facing_direction": "5"
+                        }
+                    }
+                ]
+            },
+            "mob": {
+                "\"creeper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:creeper_head"
+                    }
+                ],
+                "\"dragon\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:dragon_head"
+                    }
+                ],
+                "\"piglin\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:piglin_head"
+                    }
+                ],
+                "\"player\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:player_head"
+                    }
+                ],
+                "\"skeleton\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:skeleton_skull"
+                    }
+                ],
+                "\"wither_skeleton\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:wither_skeleton_skull"
+                    }
+                ],
+                "\"zombie\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:zombie_head"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound",
+                    "nested_default": [],
+                    "self_default": [],
+                    "keys": {
+                        "MouthMoving": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "MouthTickCount": {
+                            "type": "int",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        },
+                        "isMovable": {
+                            "type": "byte",
+                            "functions": [
+                                {
+                                    "function": "carry_nbt",
+                                    "options": {
+                                        "path": []
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "walk_input_nbt",
+        "options": {
+            "type": "compound",
+            "keys": {
+                "utags": {
+                    "type": "compound"
+                }
+            },
+            "self_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ],
+            "nested_default": [
+                {
+                    "function": "carry_nbt",
+                    "options": {}
+                }
+            ]
+        }
+    }
+]

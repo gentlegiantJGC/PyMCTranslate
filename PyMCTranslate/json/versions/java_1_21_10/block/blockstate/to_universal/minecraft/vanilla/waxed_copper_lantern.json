@@ -1,0 +1,21 @@
+[
+    {
+        "function": "new_block",
+        "options": "universal_minecraft:lantern"
+    },
+    {
+        "function": "new_properties",
+        "options": {
+            "material": "\"waxed_copper\""
+        }
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "hanging": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]

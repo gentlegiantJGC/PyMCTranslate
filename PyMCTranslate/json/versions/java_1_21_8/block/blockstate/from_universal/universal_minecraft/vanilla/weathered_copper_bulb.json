@@ -1,0 +1,19 @@
+[
+    {
+        "function": "new_block",
+        "options": "minecraft:weathered_copper_bulb"
+    },
+    {
+        "function": "carry_properties",
+        "options": {
+            "lit": [
+                "\"true\"",
+                "\"false\""
+            ],
+            "powered": [
+                "\"true\"",
+                "\"false\""
+            ]
+        }
+    }
+]
