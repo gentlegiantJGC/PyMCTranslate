@@ -214,6 +214,7 @@ class InOutTestCase(TestCase):
                         "in_out_test", f"{platform_name}_{version_number}.txt"
                     )
                     if errors:
+                        os.makedirs(os.path.dirname(errors_path), exist_ok=True)
                         with open(
                             errors_path,
                             "w",
