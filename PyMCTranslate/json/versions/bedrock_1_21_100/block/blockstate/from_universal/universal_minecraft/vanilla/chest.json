@@ -1,5 +1,121 @@
 [
     {
+        "function": "new_block",
+        "options": "minecraft:chest"
+    },
+    {
+        "function": "map_properties",
+        "options": {
+            "facing": {
+                "\"south\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"south\""
+                        }
+                    }
+                ],
+                "\"west\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"west\""
+                        }
+                    }
+                ],
+                "\"north\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"north\""
+                        }
+                    }
+                ],
+                "\"east\"": [
+                    {
+                        "function": "new_properties",
+                        "options": {
+                            "minecraft:cardinal_direction": "\"east\""
+                        }
+                    }
+                ]
+            },
+            "connection": {
+                "\"right\"": [
+                    {
+                        "function": "code",
+                        "options": {
+                            "input": [
+                                "properties",
+                                "location"
+                            ],
+                            "output": [
+                                "new_nbt"
+                            ],
+                            "function": "bedrock_chest_fu"
+                        }
+                    }
+                ]
+            },
+            "material": {
+                "\"wood\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:chest"
+                    }
+                ],
+                "\"copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:copper_chest"
+                    }
+                ],
+                "\"exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:exposed_copper_chest"
+                    }
+                ],
+                "\"oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:oxidized_copper_chest"
+                    }
+                ],
+                "\"waxed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_copper_chest"
+                    }
+                ],
+                "\"waxed_exposed_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_exposed_copper_chest"
+                    }
+                ],
+                "\"waxed_oxidized_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_oxidized_copper_chest"
+                    }
+                ],
+                "\"waxed_weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:waxed_weathered_copper_chest"
+                    }
+                ],
+                "\"weathered_copper\"": [
+                    {
+                        "function": "new_block",
+                        "options": "minecraft:weathered_copper_chest"
+                    }
+                ]
+            }
+        }
+    },
+    {
         "function": "walk_input_nbt",
         "options": {
             "type": "compound",
@@ -71,121 +187,5 @@
                 }
             ]
         }
-    },
-    {
-        "function": "map_properties",
-        "options": {
-            "connection": {
-                "\"right\"": [
-                    {
-                        "function": "code",
-                        "options": {
-                            "input": [
-                                "properties",
-                                "location"
-                            ],
-                            "output": [
-                                "new_nbt"
-                            ],
-                            "function": "bedrock_chest_fu"
-                        }
-                    }
-                ]
-            },
-            "facing": {
-                "\"south\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "minecraft:cardinal_direction": "\"south\""
-                        }
-                    }
-                ],
-                "\"west\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "minecraft:cardinal_direction": "\"west\""
-                        }
-                    }
-                ],
-                "\"north\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "minecraft:cardinal_direction": "\"north\""
-                        }
-                    }
-                ],
-                "\"east\"": [
-                    {
-                        "function": "new_properties",
-                        "options": {
-                            "minecraft:cardinal_direction": "\"east\""
-                        }
-                    }
-                ]
-            },
-            "material": {
-                "\"wood\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:chest"
-                    }
-                ],
-                "\"copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:copper_chest"
-                    }
-                ],
-                "\"exposed_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:exposed_copper_chest"
-                    }
-                ],
-                "\"oxidized_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:oxidized_copper_chest"
-                    }
-                ],
-                "\"waxed_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:waxed_copper_chest"
-                    }
-                ],
-                "\"waxed_exposed_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:waxed_exposed_copper_chest"
-                    }
-                ],
-                "\"waxed_oxidized_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:waxed_oxidized_copper_chest"
-                    }
-                ],
-                "\"waxed_weathered_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:waxed_weathered_copper_chest"
-                    }
-                ],
-                "\"weathered_copper\"": [
-                    {
-                        "function": "new_block",
-                        "options": "minecraft:weathered_copper_chest"
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "function": "new_block",
-        "options": "minecraft:chest"
     }
 ]
