@@ -222,9 +222,10 @@ def nbt_from_list(
                         _int_to_datatype[int(nbt_temp.list_data_type)] != nbt_type
                         and len(nbt_temp) > 0
                     ):
-                        nbt_temp.list_data_type = datatype_to_nbt(nbt_type).tag_id
-                        for index in range(len(nbt_temp)):
-                            nbt_temp[index] = datatype_to_nbt(nbt_type)()
+                        size = len(nbt_temp)
+                        nbt_temp.clear()
+                        for index in range(size):
+                            nbt_temp.append(datatype_to_nbt(nbt_type)())
 
                     # pad out the list to the length of path
                     if path + 1 > len(nbt_temp):
@@ -241,9 +242,10 @@ def nbt_from_list(
             elif isinstance(nbt_temp, TAG_List):
                 # if the list is a different type to data replace it with type(data)
                 if nbt_temp.list_data_type != data.tag_id and len(nbt_temp) > 0:
-                    nbt_temp.list_data_type = data.tag_id
-                    for index in range(len(nbt_temp)):
-                        nbt_temp[index] = data.__class__()
+                    size = len(nbt_temp)
+                    nbt_temp.clear()
+                    for index in range(size):
+                        nbt_temp.append(data.__class__())
 
                 # pad out the list to the length of path
                 if data_path + 1 > len(nbt_temp):
