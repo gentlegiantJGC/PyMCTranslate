@@ -142,7 +142,7 @@ class BlockTranslator(BaseTranslator):
                 return namespace_str in self._waterloggable
         return False
 
-    def ints_to_block(self, block_id: int, block_data: int) -> "Block":
+    def ints_to_block(self, block_id: int, block_data: int) -> Block:
         if block_id in self._translation_manager.block_registry:
             (
                 namespace,
@@ -168,7 +168,7 @@ class BlockTranslator(BaseTranslator):
             properties={"block_data": amulet_nbt.TAG_Int(block_data)},
         )
 
-    def block_to_ints(self, block: "Block") -> Union[None, Tuple[int, int]]:
+    def block_to_ints(self, block: Block) -> Union[None, Tuple[int, int]]:
         block_id = None
         block_data = None
         block_tuple = (block.namespace, block.base_name)
@@ -202,12 +202,12 @@ class BlockTranslator(BaseTranslator):
 
     def to_universal(
         self,
-        block: "Block",
-        block_entity: "BlockEntity" = None,
+        block: Block,
+        block_entity: Optional[BlockEntity] = None,
         force_blockstate: bool = False,
         block_location: BlockCoordinates = (0, 0, 0),
-        get_block_callback: Callable[
-            [Tuple[int, int, int]], Tuple[Block, Optional[BlockEntity]]
+        get_block_callback: Optional[
+            Callable[[Tuple[int, int, int]], Tuple[Block, Optional[BlockEntity]]]
         ] = None,
     ) -> Tuple[Block, Optional[BlockEntity], bool]:
         """
@@ -270,12 +270,12 @@ class BlockTranslator(BaseTranslator):
 
     def from_universal(
         self,
-        block: "Block",
-        block_entity: "BlockEntity" = None,
+        block: Block,
+        block_entity: Optional[BlockEntity] = None,
         force_blockstate: bool = False,
         block_location: BlockCoordinates = (0, 0, 0),
-        get_block_callback: Callable[
-            [Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]
+        get_block_callback: Optional[
+            Callable[[Tuple[int, int, int]], Tuple[Block, Union[None, BlockEntity]]]
         ] = None,
     ) -> Union[
         Tuple[Block, Optional[BlockEntity], bool],
