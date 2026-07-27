@@ -249,7 +249,9 @@ class BlockTranslator(BaseTranslator):
                     block,
                     self._parent_version,
                 )
-            return block, block_entity, False
+            if block_entity is None and get_block_callback is not None:
+                block, block_entity = get_block_callback((0, 0, 0))
+            return block, block_entity, True
 
         output, extra_output, extra_needed, cacheable = self._translate(
             block,
@@ -328,7 +330,9 @@ class BlockTranslator(BaseTranslator):
                     block,
                     self._parent_version,
                 )
-            return block, block_entity, False
+            if block_entity is None and get_block_callback is not None:
+                block, block_entity = get_block_callback((0, 0, 0))
+            return block, block_entity, True
 
         output, extra_output, extra_needed, cacheable = self._translate(
             block,
